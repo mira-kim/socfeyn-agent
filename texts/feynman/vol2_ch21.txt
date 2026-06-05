@@ -1,0 +1,1054 @@
+The Feynman Lectures on Physics Vol. II Ch. 21: Solutions of Maxwell’s Equations with Currents and Charges
+==========================================================================================================
+
+Sections: 21–1 Light and electromagnetic waves | 21–2 Spherical waves from a point source | 21–3 The general solution of Maxwell’s equations | 21–4 The fields of an oscillating dipole | 21–5 The potentials of a moving charge; the general solution of Liénard and
+Wiechert | 21–6 The potentials for a charge moving with constant velocity; the Lorentz formula
+
+
+
+We saw in the last chapter that among their solutions, Maxwell’s
+equations have waves of electricity and magnetism. These waves correspond to the
+phenomena of radio, light, x-rays, and so on, depending on the wavelength. We
+have already studied light in great detail in Vol. I. In this chapter we want
+to tie together the two subjects—we want to show that Maxwell’s equations can
+indeed form the base for our earlier treatment of the phenomena of light.
+
+When we studied light, we began by writing down equations for the electric and
+magnetic fields produced by a charge which moves in any arbitrary way. Those
+equations were
+\begin{equation}
+\label{Eq:II:21:1}
+\FLPE=\frac{q}{4\pi\epsO}\biggl[
+\frac{\FLPe_{r'}}{r'^2}+\frac{r'}{c}\,\ddt{}{t}\biggl(
+\frac{\FLPe_{r'}}{r'^2}\biggr)+\frac{1}{c^2}\,\frac{d^2}{dt^2}\,\FLPe_{r'}
+\biggr]
+\end{equation}
+and
+\begin{equation*}
+c\FLPB=\FLPe_{r'}\times\FLPE.
+\end{equation*}
+[See Eqs. ( 28.3 ) and ( 28.4 ), Vol. I. As
+explained below, the signs here are the negatives of the old ones.]
+
+If a charge moves in an arbitrary way, the electric field we would find
+ now at some point depends only on the position and motion of the
+charge not now, but at an earlier time—at an instant which is
+earlier by the time it would take light, going at the speed [eq], to
+travel the distance [eq] from the charge to the field point. In other
+words, if we want the electric field at point [eq] at the time [eq], we
+must calculate the location [eq] of the charge and its motion at the
+time [eq], where [eq] is the distance to the point [eq] from the
+position of the charge [eq] at the time [eq]. The prime is to
+remind you that [eq] is the so-called “retarded distance” from the
+point [eq] to the point [eq], and not the actual distance between
+point [eq], the position of the charge at the time [eq], and the field
+point [eq] (see Fig.  21-1 ). Note that we are using a
+different convention now for the direction of the unit
+vector [eq]. In Chapters 28 and  34 of Vol. I
+it was convenient to take [eq] (and hence [eq]) pointing
+ toward the source. Now we are following the definition we took
+for Coulomb’s law, in which [eq] is directed from the charge,
+at [eq], toward the field point at [eq]. The only difference,
+of course, is that our new [eq] (and [eq]) are the negatives of
+the old ones.
+
+We have also seen that if the velocity [eq] of a charge is always much
+less than [eq], and if we consider only points at large distances from
+the charge, so that only the last term of Eq. ( 21.1 ) is
+important, the fields can also be written as
+ 
+\begin{equation*}
+\label{Eq:II:21:1s}
+\FLPE=\frac{q}{4\pi\epsO c^2r'}
+\begin{bmatrix}
+\text{acceleration of the charge at [eq]}\\[-.5ex]
+\text{projected at right angles to [eq]}\phantom{(t-r'/c)}
+\end{bmatrix}
+\tag{[eq]}
+\end{equation*}
+and
+\begin{equation*}
+c\FLPB=\FLPe_{r'}\times\FLPE.
+\end{equation*}
+ 
+ 
+\begin{equation*}
+\label{Eq:II:21:1s}
+\FLPE=\frac{q}{4\pi\epsO c^2r'}
+\begin{bmatrix}
+\text{acceleration of the charge}\\[-.5ex]
+\text{at [eq]}\\[-.5ex]
+\text{projected at right angles to [eq]}
+\end{bmatrix}
+\tag{[eq]}
+\end{equation*}
+and
+\begin{equation*}
+c\FLPB=\FLPe_{r'}\times\FLPE.
+\end{equation*}
+
+Let’s look at what the complete equation, Eq. ( 21.1 ),
+says in a little more detail. The vector [eq] is the unit
+vector to point [eq] from the retarded position [eq]. The first
+term, then, is what we would expect for the Coulomb field of the
+charge at its retarded position—we may call this “the retarded
+Coulomb field.” The electric field depends inversely on the square
+of the distance and is directed away from the retarded position of the
+charge (that is, in the direction of [eq]).
+
+But that is only the first term. The other terms tell us that the laws
+of electricity do not say that all the fields are the same as
+the static ones, but just retarded (which is what people sometimes
+like to say). To the “retarded Coulomb field” we must add the other
+two terms. The second term says that there is a “correction” to the
+retarded Coulomb field which is the rate of change of the
+retarded Coulomb field multiplied by [eq], the retardation delay. In
+a way of speaking, this term tends to compensate for the
+retardation in the first term. The first two terms correspond
+to computing the “retarded Coulomb field” and then extrapolating it
+toward the future by the amount [eq], that is, right up to the
+time  [eq]! The extrapolation is linear, as if we were to assume that
+the “retarded Coulomb field” would continue to change at the rate
+computed for the charge at the point [eq]. If the field is changing
+slowly, the effect of the retardation is almost completely removed by
+the correction term, and the two terms together give us an electric
+field that is the “instantaneous Coulomb field”—that is, the
+Coulomb field of the charge at the point [eq]—to a very good
+approximation.
+
+Finally, there is a third term in Eq. ( 21.1 ) which is
+the second derivative of the unit vector [eq]. For our study
+of the phenomena of light, we made use of the fact that far away from
+the charge the first two terms went inversely as the square of the
+distance and, for large distances, became very weak in comparison to
+the last term, which decreases as [eq]. So we concentrated entirely
+on the last term, and we showed that it is (again, for large
+distances) proportional to the component of the acceleration of the
+charge at right angles to the line of sight. (Also, for most of our
+work in Vol. I, we took the case in which the charges were moving
+nonrelativistically. We considered the relativistic effects in only
+one chapter, Chapter  34 .)
+
+Now we should try to connect the two things together. We have the
+Maxwell equations, and we have Eq. ( 21.1 ) for the field
+of a point charge. We should certainly ask whether they are
+equivalent. If we can deduce Eq. ( 21.1 ) from Maxwell’s
+equations, we will really understand the connection between light and
+electromagnetism. To make this connection is the main purpose of this
+chapter.
+
+It turns out that we won’t quite make it—that the mathematical
+details get too complicated for us to carry through in all their gory
+details. But we will come close enough so that you should easily see
+how the connection could be made. The missing pieces will only be in
+the mathematical details. Some of you may find the mathematics in this
+chapter rather complicated, and you may not wish to follow the
+argument very closely. We think it is important, however, to make the
+connection between what you have learned earlier and what you are
+learning now, or at least to indicate how such a connection can be
+made. You will notice, if you look over the earlier chapters, that
+whenever we have taken a statement as a starting point for a
+discussion, we have carefully explained whether it is a new
+“assumption” that is a “basic law,” or whether it can ultimately
+be deduced from some other laws. We owe it to you in the spirit of
+these lectures to make the connection between light and Maxwell’s
+equations. If it gets difficult in places, well, that’s life—there
+is no other way.
+
+In Chapter  18 we found that Maxwell’s equations could be
+solved by letting
+\begin{equation}
+\label{Eq:II:21:2}
+\FLPE=-\FLPgrad{\phi}-\ddp{\FLPA}{t}
+\end{equation}
+and
+\begin{equation}
+\label{Eq:II:21:3}
+\FLPB=\FLPcurl{\FLPA},
+\end{equation}
+where [eq] and [eq] must then be solutions of the equations
+\begin{equation}
+\label{Eq:II:21:4}
+\nabla^2\phi-\frac{1}{c^2}\,\frac{\partial^2\phi}{\partial t^2}=
+-\frac{\rho}{\epsO}
+\end{equation}
+and
+\begin{equation}
+\label{Eq:II:21:5}
+\nabla^2\FLPA-\frac{1}{c^2}\,\frac{\partial^2\FLPA}{\partial t^2}=
+-\frac{\FLPj}{\epsO c^2},
+\end{equation}
+and must also satisfy the condition that
+\begin{equation}
+\label{Eq:II:21:6}
+\FLPdiv{\FLPA}=-\frac{1}{c^2}\,\ddp{\phi}{t}.
+\end{equation}
+
+Now we will find the solution of Eqs. ( 21.4 )
+and ( 21.5 ). To do that we have to find the solution [eq], of the
+equation
+\begin{equation}
+\label{Eq:II:21:7}
+\nabla^2\psi-\frac{1}{c^2}\,\frac{\partial^2\psi}{\partial t^2}=
+-s,
+\end{equation}
+where [eq], which we call the source, is known. Of course, [eq]
+corresponds to [eq] and [eq] to [eq] for
+Eq. ( 21.4 ), or [eq] is [eq] if [eq] is [eq],
+etc., but we want to solve Eq. ( 21.7 ) as a mathematical
+problem no matter what [eq] and [eq] are physically.
+
+In places where [eq] and [eq] are zero—in what we have called
+“free” space—the potentials [eq] and [eq], and the fields
+[eq] and [eq], all satisfy the three-dimensional wave equation
+without sources, whose mathematical form is
+\begin{equation}
+\label{Eq:II:21:8}
+\nabla^2\psi-\frac{1}{c^2}\,\frac{\partial^2\psi}{\partial t^2}=
+0.
+\end{equation}
+In Chapter  20 we saw that solutions of this equation can
+represent waves of various kinds: plane waves in the [eq]-direction,
+[eq]; plane waves in the [eq]- or [eq]-direction, or in any
+other direction; or spherical waves of the form
+\begin{equation}
+\label{Eq:II:21:9}
+\psi(x,y,z,t)=\frac{f(t-r/c)}{r}.
+\end{equation}
+(The solutions can be written in still other ways, for example
+cylindrical waves that spread out from an axis.)
+
+We also remarked that, physically, Eq. ( 21.9 ) does not
+represent a wave in free space—that there must be charges at the
+origin to get the outgoing wave started. In other words,
+Eq. ( 21.9 ) is a solution of Eq. ( 21.8 )
+everywhere except right near [eq], where it must be a solution of the
+complete equation ( 21.7 ), including some sources. Let’s see
+how that works. What kind of a source [eq] in Eq. ( 21.7 )
+would give rise to a wave like Eq. ( 21.9 )?
+
+Suppose we have the spherical wave of Eq. ( 21.9 ) and
+look at what is happening for very small [eq]. Then the
+retardation [eq] in [eq] can be neglected—provided [eq] is a smooth
+function—and [eq] becomes
+\begin{equation}
+\label{Eq:II:21:10}
+\psi=\frac{f(t)}{r}\quad(r\to0).
+\end{equation}
+So [eq] is just like a Coulomb field for a charge at the origin that
+varies with time. That is, if we had a little lump of charge, limited
+to a very small region near the origin, with a density [eq], we know
+that
+\begin{equation*}
+\phi=\frac{Q/4\pi\epsO}{r},
+\end{equation*}
+where [eq]. Now we know that such a [eq] satisfies the
+equation
+\begin{equation*}
+\nabla^2\phi=-\frac{\rho}{\epsO}.
+\end{equation*}
+
+Following the same mathematics, we would say that the [eq] of
+Eq. ( 21.10 ) satisfies
+\begin{equation}
+\label{Eq:II:21:11}
+\nabla^2\psi=-s\quad(r\to0),
+\end{equation}
+where [eq] is related to [eq] by
+\begin{equation*}
+f=\frac{S}{4\pi},
+\end{equation*}
+with
+\begin{equation*}
+S=\int s\,dV.
+\end{equation*}
+The only difference is that in the general case, [eq], and
+therefore [eq], can be a function of time.
+
+Now the important thing is that if [eq] satisfies
+Eq. ( 21.11 ) for small [eq], it also satisfies
+Eq. ( 21.7 ). As we go very close to the origin, the
+[eq] dependence of [eq] causes the space derivatives to become very large.
+But the time derivatives keep their same values. [They are just the time
+derivatives of [eq].] So as [eq] goes to zero, the
+term [eq] in Eq. ( 21.7 ) can be neglected
+in comparison with [eq], and Eq. ( 21.7 ) becomes
+equivalent to Eq. ( 21.11 ).
+
+To summarize, then, if the source function [eq] of
+Eq. ( 21.7 ) is localized at the origin and has the total
+strength
+\begin{equation}
+\label{Eq:II:21:12}
+S(t)=\int s(t)\,dV,
+\end{equation}
+the solution of Eq. ( 21.7 ) is
+\begin{equation}
+\label{Eq:II:21:13}
+\psi(x,y,z,t)=\frac{1}{4\pi}\,\frac{S(t-r/c)}{r}.
+\end{equation}
+The only effect of the term [eq] in
+Eq. ( 21.7 ) is to introduce the retardation [eq] in the
+Coulomb-like potential.
+
+We have found the solution of Eq. ( 21.7 ) for a “point”
+source. The next question is: What is the solution for a spread-out
+source? That’s easy; we can think of any source [eq] as made
+up of the sum of many “point” sources, one for each volume
+element [eq], and each with the source strength [eq]. Since
+Eq. ( 21.7 ) is linear, the resultant field is the
+superposition of the fields from all of such source elements.
+
+Using the results of the preceding section [Eq. ( 21.13 )]
+we know that the field [eq] at the point [eq]—or [eq]
+for short—at the time [eq], from a source element [eq] at the
+point [eq]—or [eq] for short—is given by
+\begin{equation*}
+d\psi(1,t)=\frac{s(2,t-r_{12}/c)\,dV_2}{4\pi r_{12}},
+\end{equation*}
+where [eq] is the distance from [eq] to [eq]. Adding the
+contributions from all the pieces of the source means, of course,
+doing an integral over all regions where [eq]; so we have
+\begin{equation}
+\label{Eq:II:21:14}
+\psi(1,t)=\int\frac{s(2,t-r_{12}/c)}{4\pi r_{12}}\,dV_2.
+\end{equation}
+That is, the field at [eq] at the time [eq] is the sum of all the
+spherical waves which leave the source elements at [eq] at the
+times [eq]. This is the solution of our wave equation for any set
+of sources.
+
+We see now how to obtain a general solution for Maxwell’s equations. If
+for [eq] we mean the scalar potential [eq], the source function [eq]
+becomes [eq]. Or we can let [eq] represent any one of the three
+components of the vector potential [eq], replacing [eq] by the corresponding
+component of [eq]. Thus, if we know the charge
+density [eq] and the current density [eq] everywhere, we
+can immediately write down the solutions of Eqs. ( 21.4 )
+and ( 21.5 ). They are
+\begin{equation}
+\label{Eq:II:21:15}
+\phi(1,t)=\int\frac{\rho(2,t-r_{12}/c)}{4\pi\epsO r_{12}}\,dV_2
+\end{equation}
+and
+\begin{equation}
+\label{Eq:II:21:16}
+\FLPA(1,t)=\int\frac{\FLPj(2,t-r_{12}/c)}{4\pi\epsO c^2r_{12}}\,dV_2.
+\end{equation}
+The fields [eq] and [eq] can then be found by differentiating the
+potentials, using Eqs. ( 21.2 ) and ( 21.3 ).
+[Incidentally, it is possible to verify that the [eq] and [eq] obtained
+from Eqs. ( 21.15 ) and ( 21.16 ) do satisfy the
+equality ( 21.6 ).]
+
+We have solved Maxwell’s equations. Given the currents and charges in
+any circumstance, we can find the potentials directly from these
+integrals and then differentiate and get the fields. So we have
+finished with the Maxwell theory. Also this permits us to close the
+ring back to our theory of light, because to connect with our earlier
+work on light, we need only calculate the electric field from a moving
+charge. All that remains is to take a moving charge, calculate the
+potentials from these integrals, and then differentiate to
+find [eq] from [eq]. We should get
+Eq. ( 21.1 ). It turns out to be lots of work, but that’s the
+principle.
+
+So here is the center of the universe of electromagnetism—the
+complete theory of electricity and magnetism, and of light; a complete
+description of the fields produced by any moving charges; and more. It
+is all here. Here is the structure built by
+Maxwell, complete in all
+its power and beauty. It is probably one of the greatest
+accomplishments of physics. To remind you of its importance, we will
+put it all together in a nice frame.
+
+We have still not lived up to our promise to derive Eq. ( 21.1 ) for
+the electric field of a point charge in motion. Even with the results we already
+have, it is a relatively complicated thing to derive. We have not found
+Eq. ( 21.1 ) anywhere in the published literature except in Vol. I of
+these lectures. 1 So you can see that it is not easy to derive. (The
+fields of a moving charge have been written in many other forms that are
+equivalent, of course.) We will have to limit ourselves here just to showing
+that, in a few examples, Eqs. ( 21.15 ) and ( 21.16 )
+give the same results as Eq. ( 21.1 ). First, we will show that
+Eq. ( 21.1 ) gives the correct fields with only the restriction that
+the motion of the charged particle is nonrelativistic. (Just this special case
+will take care of [eq] percent, or more, of what we said about light.)
+
+We consider a situation in which we have a blob of charge that is
+moving about in some way, in a small region, and we will find the
+fields far away. To put it another way, we are finding the field at
+any distance from a point charge that is shaking up and down in very
+small motion. Since light is usually emitted from neutral objects such
+as atoms, we will consider that our wiggling charge [eq] is located
+near an equal and opposite charge at rest. If the separation between
+the centers of the charges is [eq], the charges will have a dipole
+moment [eq], which we take to be a function of time. Now we
+should expect that if we look at the fields close to the charges, we
+won’t have to worry about the delay; the electric field will be
+exactly the same as the one we have calculated earlier for an
+electrostatic dipole—using, of course, the instantaneous dipole
+moment [eq]. But if we go very far out, we ought to find a term
+in the field that goes as [eq] and depends on the acceleration of the
+charge perpendicular to the line of sight. Let’s see if we get such a
+result.
+
+We begin by calculating the vector potential [eq], using
+Eq. ( 21.16 ). Suppose that our moving charge is in a small
+blob whose charge density is given by [eq], and the whole thing
+is moving at any instant with the velocity [eq]. Then the current
+density [eq] will be equal to [eq]. It will be
+convenient to take our coordinate system so that the [eq]-axis is in the
+direction of [eq]; then the geometry of our problem is as shown in
+Fig.  21-2 . We want the integral
+\begin{equation}
+\label{Eq:II:21:17}
+\int\frac{\FLPj(2,t-r_{12}/c)}{r_{12}}\,dV_2.
+\end{equation}
+
+Now if the size of the charge-blob is really very small compared
+with [eq], we can set the [eq] term in the denominator equal
+to [eq], the distance to the center of the blob, and take [eq] outside the
+integral. Next, we are also going to set [eq] in the numerator,
+although that is not really quite right. It is not right because we
+should take [eq] at, say, the top of the blob at a slightly
+different time than we used for [eq] at the bottom of the
+blob. When we set [eq] in [eq], we are taking the
+current density for the whole blob at the same time [eq]. That is
+an approximation that will be good only if the velocity [eq] of the
+charge is much less than [eq]. So we are making a nonrelativistic
+calculation. Replacing [eq] by [eq], the
+integral ( 21.17 ) becomes
+\begin{equation*}
+\frac{1}{r}\int\FLPv\rho(2,t-r/c)\,dV_2.
+\end{equation*}
+Since all the charge has the same velocity, this integral is just
+[eq] times the total charge [eq]. But [eq] is
+just [eq], the rate of change of the dipole moment—which is,
+of course, to be evaluated at the retarded time [eq]. We will
+write it as [eq]. So we get for the vector potential
+\begin{equation}
+\label{Eq:II:21:18}
+\FLPA(1,t)=\frac{1}{4\pi\epsO c^2}\,\frac{\dot{\FLPp}(t-r/c)}{r}.
+\end{equation}
+
+Our result says that the current in a varying dipole produces a vector
+potential in the form of spherical waves whose source strength
+is [eq].
+
+We can now get the magnetic field from [eq].
+Since [eq] is totally in the [eq]-direction, [eq] has only a
+[eq]-component; there are only two nonzero derivatives in the curl. So
+[eq] and [eq]. Let’s first look at [eq]:
+\begin{equation}
+\label{Eq:II:21:19}
+B_x=\ddp{A_z}{y}=\frac{1}{4\pi\epsO c^2}\,\ddp{}{y}\,
+\frac{\dot{p}(t-r/c)}{r}.
+\end{equation}
+To carry out the differentiation, we must remember that
+[eq], so
+ 
+\begin{equation}
+\label{Eq:II:21:20}
+B_x=\frac{1}{4\pi\epsO c^2}\,\dot{p}(t-r/c)\,\ddp{}{y}\,
+\biggl(\frac{1}{r}\biggr)+\frac{1}{4\pi\epsO c^2}\,\frac{1}{r}\,
+\ddp{}{y}\,\dot{p}(t-r/c).
+\end{equation}
+ 
+ 
+\begin{align}
+B_x=\frac{1}{4\pi\epsO c^2}\,\dot{p}(t-r/c)\,&\ddp{}{y}\,
+\biggl(\frac{1}{r}\biggr)\,+\notag\\[1ex]
+\label{Eq:II:21:20}
+\frac{1}{4\pi\epsO c^2}\,\frac{1}{r}\,
+&\ddp{}{y}\,\dot{p}(t-r/c).
+\end{align}
+ 
+Remembering that [eq], the first term gives
+\begin{equation}
+\label{Eq:II:21:21}
+-\frac{1}{4\pi\epsO c^2}\,\frac{y\dot{p}(t-r/c)}{r^3},
+\end{equation}
+which drops off as [eq] like the potential of a static dipole
+(because [eq] is constant for a given direction).
+
+The second term in Eq. ( 21.20 ) gives us the new
+effects. Carrying out the differentiation, we get
+\begin{equation}
+\label{Eq:II:21:22}
+-\frac{1}{4\pi\epsO c^2}\,\frac{y}{cr^2}\,\ddot{p}(t-r/c),
+\end{equation}
+where [eq] means, of course, the second derivative of [eq] with
+respect to [eq]. This term, which comes from differentiating the
+numerator, is responsible for radiation. First, it describes a field
+which decreases with distance only as [eq]. Second, it depends on the
+ acceleration of the charge. You can begin to see how we are
+going to get a result like Eq. ( 21.1´ ), which describes
+the radiation of light.
+
+Let’s examine in a little more detail how this radiation term comes
+about—it is such an interesting and important result. We start with
+the expression ( 21.18 ), which has a [eq] dependence and
+is therefore like a Coulomb potential, except for the delay term in
+the numerator. Why is it then that when we differentiate with respect
+to space coordinates to get the fields, we don’t just get a [eq]
+field—with, of course, the corresponding time delays?
+
+We can see why in the following way: Suppose that we let our dipole
+oscillate up and down in a sinusoidal motion. Then we would have
+\begin{equation*}
+p=p_z=p_0\sin\omega t
+\end{equation*}
+and
+\begin{equation*}
+A_z=\frac{1}{4\pi\epsO c^2}\,\frac{\omega p_0\cos\omega(t-r/c)}{r}.
+\end{equation*}
+If we plot a graph of [eq] as a function of [eq] at a given instant,
+we get the curve shown in Fig.  21-3 . The peak amplitude
+decreases as [eq], but there is, in addition, an oscillation in
+space, bounded by the [eq] envelope. When we take the spatial
+derivatives, they will be proportional to the slope of the
+curve. From the figure we see that there are slopes much steeper than
+the slope of the [eq] curve itself. It is, in fact, evident that for
+a given frequency the peak slopes are proportional to the amplitude of
+the wave, which varies as [eq]. So that explains the drop-off rate of
+the radiation term.
+
+It all comes about because the variations with time at the
+source are translated into variations in space as the waves are
+propagated outward, and the magnetic fields depend on the
+ spatial derivatives of the potential.
+
+Let’s go back and finish our calculation of the magnetic field. We have
+for [eq] the two terms ( 21.21 ) and ( 21.22 ), so
+\begin{equation*}
+B_x=\frac{1}{4\pi\epsO c^2}\biggl[
+-\frac{y\dot{p}(t-r/c)}{r^3}-\frac{y\ddot{p}(t-r/c)}{cr^2}
+\biggr].
+\end{equation*}
+With the same kind of mathematics, we get
+\begin{equation*}
+B_y=\frac{1}{4\pi\epsO c^2}\biggl[
+\frac{x\dot{p}(t-r/c)}{r^3}+\frac{x\ddot{p}(t-r/c)}{cr^2}
+\biggr].
+\end{equation*}
+Or we can put it all together in a nice vector formula:
+\begin{equation}
+\label{Eq:II:21:23}
+\FLPB=\frac{1}{4\pi\epsO c^2}\,
+\frac{[\dot{\FLPp}+(r/c)\ddot{\FLPp}]_{t-r/c}\times\FLPr}{r^3}.
+\end{equation}
+
+Now let’s look at this formula. First of all, if we go very far out
+in [eq], only the [eq] term counts. The direction of [eq] is
+given by [eq], which is at right angles to the
+radius [eq] and also at right angles to the acceleration, as in
+Fig.  21-4 . Everything is coming out right; that is also
+the result we get from Eq. ( 21.1´ ).
+
+Now let’s look at what we are not used to—at what happens closer in.
+In Section  14-7 we worked out the law of Biot and
+Savart for the
+magnetic field of an element of current. We found that a current
+element [eq] contributes to the magnetic field the amount
+\begin{equation}
+\label{Eq:II:21:24}
+d\FLPB=\frac{1}{4\pi\epsO c^2}\,
+\frac{\FLPj\times\FLPr}{r^3}\,dV.
+\end{equation}
+You see that this formula looks very much like the first term of
+Eq. ( 21.23 ), if we remember that [eq] is the
+current. But there is one difference. In Eq. ( 21.23 ), the
+current is to be evaluated at the time [eq], which doesn’t appear
+in Eq. ( 21.24 ). Actually, however, Eq. ( 21.24 )
+is still very good for small [eq], because the second term of
+Eq. ( 21.23 ) tends to cancel out the effect of the
+retardation in the first term. The two together give a result
+very near to Eq. ( 21.24 ) when [eq] is small.
+
+We can see that this way: When [eq] is small, [eq] is not very
+different from [eq], so we can expand the bracket in
+Eq. ( 21.23 ) in a Taylor series. For the first term,
+\begin{equation*}
+\dot{\FLPp}(t-r/c)=\dot{\FLPp}(t)-\frac{r}{c}\,\ddot{\FLPp}(t)+\text{etc.},
+\end{equation*}
+and to the same order in [eq],
+\begin{equation*}
+\frac{r}{c}\,\ddot{\FLPp}(t-r/c)=\frac{r}{c}\,\ddot{\FLPp}(t)+\text{etc.}
+\end{equation*}
+When we take the sum, the two terms in [eq] cancel, and we
+are left with the unretarded current [eq]: that is,
+[eq]—plus terms of order [eq] or higher [e.g.,
+[eq]] which will be very small for [eq]
+small enough that [eq] does not alter markedly in the time [eq].
+
+So Eq. ( 21.23 ) gives fields very much like the
+instantaneous theory—much closer than the instantaneous theory with
+a delay; the first-order effects of the delay are taken out by the
+second term. The static formulas are very accurate, much more accurate
+than you might think. Of course, the compensation only works for
+points close in. For points far out the correction becomes very bad,
+because the time delays produce a very large effect, and we get the
+important [eq] term of the radiation.
+
+We still have the problem of computing the electric field and
+demonstrating that it is the same as Eq. ( 21.1´ ). For
+large distances we can see that the answer is going to come out all
+right. We know that far from the sources, where we have a propagating
+wave, [eq] is perpendicular to [eq] (and also to [eq]), as in
+Fig.  21-4 , and that [eq]. So [eq] is proportional
+to the acceleration [eq], as expected from
+Eq. ( 21.1´ ).
+
+To get the electric field completely for all distances, we need to
+solve for the electrostatic potential. When we computed the current
+integral for [eq] to get Eq. ( 21.18 ), we made an
+approximation by disregarding the slight variation of [eq] in the delay
+terms. This will not work for the electrostatic potential, because we
+would then get [eq] times the integral of the charge density, which
+is a constant. This approximation is too rough. We need to go to one
+higher order. Instead of getting involved in that higher-order
+computation directly, we can do something else—we can determine the
+scalar potential from Eq. ( 21.6 ), using the vector
+potential we have already found. The divergence of [eq], in our
+case, is just [eq]—since [eq] and [eq] are identically
+zero. Differentiating in the same way that we did above to
+find [eq],
+\begin{align*}
+\FLPdiv{\FLPA}&=\frac{1}{4\pi\epsO c^2}\biggl[
+\dot{p}(t-r/c)\,\ddp{}{z}\,\biggl(\frac{1}{r}\biggr)+
+\frac{1}{r}\,\ddp{}{z}\,\dot{p}(t-r/c)
+\biggr]\\[2ex]
+&=\frac{1}{4\pi\epsO c^2}\biggl[
+-\frac{z\dot{p}(t-r/c)}{r^3}-\frac{z\ddot{p}(t-r/c)}{cr^2}
+\biggr].
+\end{align*}
+Or, in vector notation,
+\begin{equation*}
+\FLPdiv{\FLPA}=-\frac{1}{4\pi\epsO c^2}\,
+\frac{[\dot{\FLPp}+(r/c)\ddot{\FLPp}]_{t-r/c}\cdot\FLPr}{r^3}.
+\end{equation*}
+Using Eq. ( 21.6 ), we have an equation for [eq]:
+\begin{equation*}
+\ddp{\phi}{t}=\frac{1}{4\pi\epsO}\,
+\frac{[\dot{\FLPp}+(r/c)\ddot{\FLPp}]_{t-r/c}\cdot\FLPr}{r^3}.
+\end{equation*}
+
+Integrating with respect to [eq] just removes one dot from each of
+the [eq]'s, so
+\begin{equation}
+\label{Eq:II:21:25}
+\phi(\FLPr,t)=\frac{1}{4\pi\epsO}\,
+\frac{[\FLPp+(r/c)\dot{\FLPp}]_{t-r/c}\cdot\FLPr}{r^3}.
+\end{equation}
+(The constant of integration would correspond to some superposed
+static field which could, of course, exist. For the oscillating dipole
+we have taken, there is no static field.)
+
+We are now able to find the electric field [eq] from
+\begin{equation*}
+\FLPE=-\FLPgrad{\phi}-\ddp{\FLPA}{t}.
+\end{equation*}
+Since the steps are tedious but straightforward [providing you
+remember that [eq] and its time derivatives depend on
+[eq], [eq], and [eq] through the retardation [eq]], we will just give the
+result:
+ 
+\begin{equation}
+\label{Eq:II:21:26}
+\FLPE(\FLPr,t)=\frac{1}{4\pi\epsO r^3}\biggl[
+\frac{3(\FLPp\stared\cdot\FLPr)\FLPr}{r^2}-
+\FLPp\stared+\frac{1}{c^2}
+\{\ddot{\FLPp}(t-r/c)\times\FLPr\}\times\FLPr
+\biggr]
+\end{equation}
+ 
+ 
+
+\begin{align}
+\FLPE(\FLPr,t)=\frac{1}{4\pi\epsO r^3}\biggl[
+&\frac{3(\FLPp\stared\cdot\FLPr)\FLPr}{r^2}-
+\FLPp\stared+\notag\\
+\label{Eq:II:21:26}
+&\frac{1}{c^2}
+\{\ddot{\FLPp}(t-r/c)\times\FLPr\}\times\FLPr
+\biggr]
+\end{align}
+
+ 
+with
+\begin{equation}
+\label{Eq:II:21:27}
+\FLPp\stared=\FLPp(t-r/c)+\frac{r}{c}\,\dot{\FLPp}(t-r/c).
+\end{equation}
+
+Although it looks rather complicated, the result is easily
+interpreted. The vector [eq] is the dipole moment retarded
+and then “corrected” for the retardation, so the two terms with
+[eq] give just the static dipole field when [eq] is
+small. [See Chapter  6 , Eq. ( 6.14 ).] When
+[eq] is large, the term in [eq] dominates, and the electric
+field is proportional to the acceleration of the charges, at right
+angles to [eq], and, in fact, directed along the projection
+of [eq] in a plane perpendicular to [eq].
+
+This result agrees with what we would have gotten using
+Eq. ( 21.1 ). Of course, Eq. ( 21.1 ) is more
+general; it works with any motion, while Eq. ( 21.26 ) is
+valid only for small motions for which we can take the retardation [eq]
+as constant over the source. At any rate, we have now provided the
+underpinnings for our entire previous discussion of light (excepting
+some matters discussed in Chapter  34 of Vol. I), for it
+all hinged on the last term of Eq. ( 21.26 ). We will discuss
+next how the fields can be obtained for more rapidly moving charges
+(leading to the relativistic effects of Chapter  34 of
+Vol. I).
+
+In the last section we made a simplification in calculating our
+integral for [eq] by considering only low velocities. But in doing
+so we missed an important point and also one where it is easy to go
+wrong. We will therefore take up now a calculation of the potentials
+for a point charge moving in any way whatever—even with a
+relativistic velocity. Once we have this result, we will have the
+complete electromagnetism of electric charges. Even
+Eq. ( 21.1 ) can then be derived by taking derivatives. The
+story will be complete. So bear with us.
+
+Let’s try to calculate the scalar potential [eq] at the
+point [eq] produced by a point charge, such as an
+electron, moving in any manner whatsoever. By a “point” charge we
+mean a very small ball of charge, shrunk down as small as you like,
+with a charge density [eq]. We can find [eq] from
+Eq. ( 21.15 ):
+\begin{equation}
+\label{Eq:II:21:28}
+\phi(1,t)=\frac{1}{4\pi\epsO}
+\int\frac{\rho(2,t-r_{12}/c)}{r_{12}}\,dV_2.
+\end{equation}
+The answer would seem to be—and almost everyone would, at first,
+think—that the integral of [eq] over such a “point” charge is
+just the total charge [eq], so that
+\begin{equation*}
+\phi(1,t)=\frac{1}{4\pi\epsO}\,\frac{q}{r_{12}'}\quad(\text{wrong}).
+\end{equation*}
+By [eq] we mean the radius vector from the charge at point [eq] to
+point [eq] at the retarded time [eq]. It is wrong.
+
+The correct answer is
+\begin{equation}
+\label{Eq:II:21:29}
+\phi(1,t)=\frac{1}{4\pi\epsO}\,\frac{q}{r_{12}'}\cdot
+\frac{1}{1-v_{r'}/c},
+\end{equation}
+where [eq], is the component of the velocity of the charge
+parallel to [eq]—namely, toward point [eq]. We will now
+show you why. To make the argument easier to follow, we will make the
+calculation first for a “point” charge which is in the form of a
+little cube of charge moving toward the point [eq] with the
+speed [eq], as shown in Fig.  21-5 (a). Let the length of a side
+of the cube be [eq], which we take to be much, much less than [eq],
+the distance from the center of the charge to the point [eq].
+
+Now to evaluate the integral of Eq. ( 21.28 ), we will
+return to basic principles; we will write it as the sum
+\begin{equation}
+\label{Eq:II:21:30}
+\sum_i\frac{\rho_i\,\Delta V_i}{r_i},
+\end{equation}
+where [eq] is the distance from point [eq] to the [eq]th volume
+element [eq] and [eq] is the charge density at $\Delta
+V_i[eq]t_i=t-r_i/c[eq]r_i\gg a$, always, it will be
+convenient to take our [eq] in the form of thin, rectangular
+slices perpendicular to [eq], as shown in
+Fig.  21-5 (b).
+
+Suppose we start by taking the volume elements [eq] with some
+thickness [eq] much less than [eq]. The individual elements will appear
+as shown in Fig.  21-6 (a), where we have put in more
+than enough to cover the charge. But we have not shown the
+charge, and for a good reason. Where should we draw it? For each
+volume element [eq] we are to take [eq] at the
+time [eq], but since the charge is moving , it is in a
+ different place for each volume element  [eq]!
+
+Let’s say that we begin with the volume element labeled “1” in
+Fig.  21-6 (a), chosen so that at the
+time [eq] the “back” edge of the charge occupies [eq],
+as shown in Fig.  21-6 (b). Then when we
+evaluate [eq], we must use the position of the charge at the
+slightly later time [eq], when the charge will be in
+the position shown in Fig.  21-6 (c). And so on, for
+[eq], [eq], etc. Now we can evaluate the sum.
+
+Since the thickness of each [eq] is [eq], its volume
+is [eq]. Then each volume element that overlaps the charge distribution
+contains the amount of charge [eq], where [eq] is the density
+of charge within the cube—which we take to be uniform. When the
+distance from the charge to point [eq] is large, we will make a
+negligible error by setting all the [eq]’s in the denominators equal
+to some average value, say the retarded position [eq] of the center of
+the charge. Then the sum ( 21.30 ) is
+\begin{equation*}
+\sum_{i=1}^N\frac{\rho wa^2}{r'},
+\end{equation*}
+where [eq] is the last [eq] that overlaps the charge
+distributions, as shown in Fig.  21-6 (e). The sum is,
+clearly,
+\begin{equation*}
+N\,\frac{\rho wa^2}{r'}=\frac{\rho a^3}{r'}\biggl(\frac{Nw}{a}\biggr).
+\end{equation*}
+Now [eq] is just the total charge [eq] and [eq] is the length [eq] shown
+in part (e) of the figure. So we have
+\begin{equation}
+\label{Eq:II:21:31}
+\phi=\frac{q}{4\pi\epsO r'}\biggl(\frac{b}{a}\biggr).
+\end{equation}
+
+What is [eq]? It is the length of the cube of charge increased 
+by the distance moved by the charge between [eq]
+and [eq]—which is the distance the charge moves in the time
+\begin{equation*}
+\Delta t=t_N-t_1=(r_1-r_N)/c=b/c.
+\end{equation*}
+Since the speed of the charge is [eq], the distance moved is $v\,\Delta
+t=vb/c[eq]b[eq]a$:
+\begin{equation*}
+b=a+\frac{v}{c}\,b.
+\end{equation*}
+Solving for [eq], we get
+\begin{equation*}
+b=\frac{a}{1-(v/c)}.
+\end{equation*}
+Of course by [eq] we mean the velocity at the retarded
+time [eq], which we can indicate by
+writing [eq], and Eq. ( 21.31 ) for the
+potential becomes
+\begin{equation*}
+\phi(1,t)=\frac{q}{4\pi\epsO r'}\,\frac{1}{[1-(v/c)]_{\text{ret}}}.
+\end{equation*}
+This result agrees with our assertion, Eq. ( 21.29 ). There is
+a correction term which comes about because the charge is moving as our
+integral “sweeps over the charge.” When the charge is moving toward
+the point [eq], its contribution to the integral is increased by the
+ratio [eq]. Therefore the correct integral is [eq] multiplied
+by [eq], which is [eq].
+
+If the velocity of the charge is not directed toward the observation
+point [eq], you can see that what matters is the component of
+its velocity toward point [eq]. Calling this velocity 
+component [eq], the correction factor is [eq]. Also, the
+analysis we have made goes exactly the same way for a charge
+distribution of any shape—it doesn’t have to be a
+cube. Finally, since the “size” of the charge [eq] doesn’t enter into
+the final result, the same result holds when we let the charge shrink
+to any size—even to a point. The general result is that the scalar
+potential for a point charge moving with any velocity is
+\begin{equation}
+\label{Eq:II:21:32}
+\phi(1,t)=\frac{q}{4\pi\epsO r'[1-(v_r/c)]_{\text{ret}}}.
+\end{equation}
+This equation is often written in the equivalent form
+\begin{equation}
+\label{Eq:II:21:33}
+\phi(1,t)=\frac{q}{4\pi\epsO[r-(\FLPv\cdot\FLPr/c)]_{\text{ret}}},
+\end{equation}
+where [eq] is the vector from the charge to the point [eq], where
+[eq] is being evaluated, and all the quantities in the bracket are
+to have their values at the retarded time [eq].
+
+The same thing happens when we compute [eq] for a point charge,
+from Eq. ( 21.16 ). The current density is [eq] and
+the integral over [eq] is the same as we found for [eq]. The
+vector potential is
+\begin{equation}
+\label{Eq:II:21:34}
+\FLPA(1,t)=\frac{q\FLPv_{\text{ret}}}
+{4\pi\epsO c^2[r-(\FLPv\cdot\FLPr/c)]_{\text{ret}}}.
+\end{equation}
+
+The potentials for a point charge were first deduced in this form by
+Liénard and
+Wiechert and are called
+the Liénard-Wiechert potentials .
+
+To close the ring back to Eq. ( 21.1 ) it is only
+necessary to compute [eq] and [eq] from these potentials (using
+[eq]
+and [eq]). It is now only
+arithmetic. The arithmetic, however, is fairly involved, so we will
+not write out the details. Perhaps you will take our word for it that
+Eq. ( 21.1 ) is equivalent to the Liénard-Wiechert
+potentials we have derived. 2
+
+We want next to use the Liénard-Wiechert potentials for a special
+case—to find the fields of a charge moving with uniform velocity in
+a straight line. We will do it again later, using the principle of
+relativity. We already know what the potentials are when we are
+standing in the rest frame of a charge. When the charge is moving, we
+can figure everything out by a relativistic transformation from one
+system to the other. But relativity had its origin in the theory of
+electricity and magnetism. The formulas of the Lorentz transformation
+(Chapter  15 , Vol. I) were discoveries made by
+Lorentz
+when he was studying the equations of electricity and magnetism. So
+that you can appreciate where things have come from, we would like to
+show that the Maxwell equations do lead to the Lorentz
+transformation. We begin by calculating the potentials of a charge
+moving with uniform velocity, directly from the electrodynamics of
+Maxwell’s equations. We have shown that Maxwell’s equations lead to
+the potentials for a moving charge that we got in the last section. So
+when we use these potentials, we are using Maxwell’s theory.
+
+Suppose we have a charge moving along the [eq]-axis with the
+speed [eq]. We want the potentials at the point [eq], as shown in
+Fig.  21-7 . If [eq] is the moment when the charge is at
+the origin, at the time [eq] the charge is at [eq], [eq]. What we
+need to know, however, is its position at the retarded time
+\begin{equation}
+\label{Eq:II:21:35}
+t'=t-\frac{r'}{c},
+\end{equation}
+where [eq] is the distance to the point [eq] from the charge at
+the retarded time . At the earlier time [eq], the charge was
+at [eq], so
+\begin{equation}
+\label{Eq:II:21:36}
+r'=\sqrt{(x-vt')^2+y^2+z^2}.
+\end{equation}
+To find [eq] or [eq] we have to combine this equation with
+Eq. ( 21.35 ). First, we eliminate [eq] by solving
+Eq. ( 21.35 ) for [eq] and substituting in
+Eq. ( 21.36 ). Then, squaring both sides, we get
+\begin{equation*}
+c^2(t-t')^2=(x-vt')^2+y^2+z^2,
+\end{equation*}
+which is a quadratic equation in [eq]. Expanding the squared binomials
+and collecting like terms in [eq], we get
+\begin{equation*}
+(v^2-c^2)t'^2-2(xv-c^2t)t'+x^2+y^2+z^2-(ct)^2=0.
+\end{equation*}
+Solving for [eq],
+ 
+\begin{equation}
+\label{Eq:II:21:37}
+\biggl(1-\frac{v^2}{c^2}\biggr)t'=t-\frac{vx}{c^2}-\frac{1}{c}
+\sqrt{(x-vt)^2+\biggl(1-\frac{v^2}{c^2}\biggr)(y^2+z^2)}.
+\end{equation}
+ 
+ 
+\begin{gather}
+\label{Eq:II:21:37}
+\biggl(1-\frac{v^2}{c^2}\biggr)t'=\\[1.5ex]
+t-\frac{vx}{c^2}-\frac{1}{c}
+\sqrt{(x-vt)^2+\biggl(1-\frac{v^2}{c^2}\biggr)(y^2+z^2)}.\notag
+\end{gather}
+ 
+To get [eq] we have to substitute this expression for [eq] into
+\begin{equation*}
+r'=c(t-t').
+\end{equation*}
+
+Now we are ready to find [eq] from Eq. ( 21.33 ), which,
+since [eq] is constant, becomes
+\begin{equation}
+\label{Eq:II:21:38}
+\phi(x,y,z,t)=\frac{q}{4\pi\epsO}\,
+\frac{1}{r'-(\FLPv\cdot\FLPr'/c)}.
+\end{equation}
+The component of [eq] in the direction of [eq] is
+[eq], so [eq] is just [eq],
+and the whole denominator is
+\begin{equation*}
+c(t-t')-\frac{v}{c}(x-vt')=c\biggl[
+t-\frac{vx}{c^2}-\biggl(
+1-\frac{v^2}{c^2}
+\biggr)t'
+\biggr].
+\end{equation*}
+Substituting for [eq] from Eq. ( 21.37 ), we
+get for [eq]
+ 
+\begin{equation*}
+\phi(x,y,z,t)=\frac{q}{4\pi\epsO}\,\frac{1}
+{\sqrt{(x-vt)^2+\biggl(1-\dfrac{v^2}{c^2}\biggr)(y^2+z^2)}}.
+\end{equation*}
+ 
+ 
+
+\begin{gather*}
+\phi(x,y,z,t)=\\[1ex]
+\frac{q}{4\pi\epsO}\,\frac{1}
+{\sqrt{(x-vt)^2+\biggl(1-\dfrac{v^2}{c^2}\biggr)(y^2+z^2)}}.
+\end{gather*}
+
+This equation is more understandable if we rewrite it as
+ 
+\begin{equation}
+\label{Eq:II:21:39}
+\phi(x,y,z,t)=\frac{q}{4\pi\epsO}\,
+\frac{1}{\sqrt{1-\dfrac{v^2}{c^2}}}\,
+\frac{1}
+{\biggl[\biggl(
+\dfrac{x-vt}{\sqrt{1-v^2/c^2}}
+\biggr)^2+y^2+z^2
+\biggr]^{1/2}}.
+\end{equation}
+ 
+ 
+
+\begin{gather}
+\label{Eq:II:21:39}
+\phi(x,y,z,t)=\\[1ex]
+\frac{q}{4\pi\epsO}
+\frac{1}{\sqrt{1\!-\!\dfrac{v^2}{c^2}}}
+\frac{1}
+{\biggl[\!\biggl(
+\dfrac{x-vt}{\sqrt{1\!-\!v^2/c^2}}\!
+\biggr)^2\kern{-1.75ex}+\!y^2\!+\!z^2
+\biggr]^{1/2}}.\notag
+\end{gather}
+
+ 
+The vector potential [eq] is the same expression with an additional
+factor of [eq]:
+\begin{equation*}
+\FLPA=\frac{\FLPv}{c^2}\,\phi.
+\end{equation*}
+
+In Eq. ( 21.39 ) you can clearly see the beginning of the
+Lorentz transformation. If the charge were at the origin in its own
+rest frame, its potential would be
+\begin{equation*}
+\phi(x,y,z)=\frac{q}{4\pi\epsO}\,
+\frac{1}{[x^2+y^2+z^2]^{1/2}}.
+\end{equation*}
+We are seeing it in a moving coordinate system, and it appears that
+the coordinates should be transformed by
+\begin{align*}
+&x\to\frac{x-vt}{\sqrt{1-v^2/c^2}},\\
+&y\to y,\\
+&z\to z.
+\end{align*}
+That is just the Lorentz transformation, and what we have done is
+essentially the way Lorentz
+discovered it.
+
+But what about that extra factor [eq] that appears at the front
+of Eq. ( 21.39 )? Also, how does the vector potential [eq] appear,
+when it is everywhere zero in the rest frame of the particle? We will soon show
+that (when [eq]) [eq] and [eq] together constitute a four-vector, like the
+momentum [eq] and the total energy [eq] of a particle. The
+extra [eq] in Eq. ( 21.39 ) is the same factor that
+always comes in when one transforms the components of a four-vector—just as
+the charge density [eq] transforms to [eq]. In fact, it is
+almost apparent from Eqs. ( 21.4 ) and ( 21.5 ) that
+[eq] and [eq] are components of a four-vector, because we have already
+shown in Chapter  13 that [eq] and [eq] are the components of a
+four-vector.
+
+Later we will take up in more detail the relativity of
+electrodynamics; here we only wished to show how naturally the Maxwell
+equations lead to the Lorentz transformation. You will not, then, be
+surprised to find that the laws of electricity and magnetism are
+already correct for Einstein’s relativity. We will not have to “fix
+them up,” as we had to do for Newton’s laws of mechanics.

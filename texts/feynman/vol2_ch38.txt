@@ -1,0 +1,908 @@
+The Feynman Lectures on Physics Vol. II Ch. 38: Elasticity
+==========================================================
+
+Sections: 38–1 Hooke’s law | 38–2 Uniform strains | 38–3 The torsion bar; shear waves | 38–4 The bent beam | 38–5 Buckling
+
+
+
+The subject of elasticity deals with the behavior of those
+substances which have the property of recovering their size and shape
+when the forces producing deformations are removed. We find this elastic
+property to some extent in all solid bodies. If we had the time to deal
+with the subject at length, we would want to look into many things: the
+behavior of materials, the general laws of elasticity, the general
+theory of elasticity, the atomic machinery that determine the elastic
+properties, and finally the limitations of elastic laws when the forces
+become so great that plastic flow and fracture occur. It would take more
+time than we have to cover all these subjects in detail, so we will have
+to leave out some things. For example, we will not discuss plasticity or
+the limitations of the elastic laws.
+(We touched on these subjects briefly when we were talking about
+dislocations in metals.) Also, we will not be able to discuss the
+internal mechanisms of elasticity—so our treatment will not have the
+completeness we have tried to achieve in the earlier chapters. Our aim
+is mainly to give you an acquaintance with some of the ways of dealing
+with such practical problems as the bending of beams.
+
+When you push on a piece of material, it “gives”—the material is
+deformed. If the force is small enough, the relative displacements of
+the various points in the material are proportional to the force—we
+say the behavior is elastic . We will discuss only the elastic
+behavior. First, we will write down the fundamental laws of
+elasticity, and then we will apply them to a number of different
+situations.
+
+Suppose we take a rectangular block of material of length [eq],
+width [eq], and height [eq], as shown in Fig.  38–1 . If we
+pull on the ends with a force [eq], then the length increases by an
+amount [eq]. We will suppose in all cases that the change in
+length is a small fraction of the original length. As a matter of fact,
+for materials like wood and steel, the material will break if the change
+in length is more than a few percent of the original length. For a large
+number of materials, experiments show that for sufficiently small
+extensions the force is proportional to the extension
+\begin{equation}
+\label{Eq:II:38:1}
+F\propto\Delta l.
+\end{equation}
+
+This relation is known as Hooke’s law .
+
+The lengthening [eq] of the bar will also depend on its
+length. We can figure out how by the following argument. If we cement
+two identical blocks together, end to end, the same forces act on each
+block; each will stretch by [eq]. Thus, the stretch of a block
+of length [eq] would be twice as big as a block of the same cross
+section, but of length [eq]. In order to get a number more
+characteristic of the material, and less of any particular shape, we
+choose to deal with the ratio [eq] of the extension to the
+original length. This ratio is proportional to the force but
+independent of [eq]:
+\begin{equation}
+\label{Eq:II:38:2}
+F\propto\frac{\Delta l}{l}.
+\end{equation}
+
+The force [eq] will also depend on the area of the block. Suppose that
+we put two blocks side by side. Then for a given stretch [eq] we
+would have the force [eq] on each block, or twice as much on the
+combination of the two blocks. The force, for a given amount of
+stretch, must be proportional to the cross-sectional area [eq] of the
+block. To obtain a law in which the coefficient of proportionality is
+independent of the dimensions of the body, we write Hooke’s law for a
+rectangular block in the form
+\begin{equation}
+\label{Eq:II:38:3}
+F=YA\,\frac{\Delta l}{l}.
+\end{equation}
+
+The constant [eq] is a property only of the nature of the material; it
+is known as Young’s modulus . (Usually you will see Young’s
+modulus called [eq]. But we’ve used [eq] for electric fields, energy,
+and emf’s, so we prefer to use a different letter.)
+
+The force per unit area is called the stress , and
+the
+stretch per unit length—the fractional stretch—is called
+the strain . Equation ( 38.3 ) can therefore be
+rewritten in the following way:
+\begin{gather}
+\label{Eq:II:38:4}
+\frac{F}{A}=Y\times\frac{\Delta l}{l},\\[6pt]
+\text{Stress}=(\text{Young’s modulus})\times(\text{Strain}).\notag
+\end{gather}
+
+There is another part to Hooke’s law: When you stretch a block
+of material in one direction it contracts at right angles to
+the stretch. The contraction in width is proportional to the width [eq]
+and also to [eq]. The sideways contraction is in the same
+proportion for both width and height, and is usually written
+\begin{equation}
+\label{Eq:II:38:5}
+\frac{\Delta w}{w}=\frac{\Delta h}{h}=-\sigma\,\frac{\Delta l}{l},
+\end{equation}
+
+where the constant [eq] is another property of the material called
+ Poisson’s ratio . It is always positive in sign and is a
+number less than [eq]. (It is “reasonable” that [eq] should be
+generally positive, but it is not quite clear that it must be
+so.)
+
+The two constants [eq] and [eq] specify completely the elastic
+properties of a homogeneous isotropic (that is,
+noncrystalline) material. In crystalline materials the stretches and
+contractions can be different in different directions, so there can be
+many more elastic constants. We will restrict our discussion
+temporarily to homogeneous isotropic materials whose properties can
+be described by [eq] and [eq]. As usual there are different ways of
+describing things—some people like to describe the elastic
+properties of materials by different constants. It always takes two,
+and they can be related to [eq] and [eq].
+
+The last general law we need is the principle of superposition. Since
+the two laws ( 38.4 ) and ( 38.5 ) are linear in
+the forces and in the displacements, superposition will work. If you
+have one set of forces and get some displacements, and then you add a
+new set of forces and get some additional displacements, the resulting
+displacements will be the sum of the ones you would get with the two
+sets of forces acting independently.
+
+Now we have all the general principles—the superposition principle and
+Eqs. ( 38.4 ) and ( 38.5 )—and that’s all there is
+to elasticity. But that is like saying that once you have Newton’s laws that’s
+all there is to mechanics. Or, given Maxwell’s
+equations, that’s all there is to
+electricity. It is, of course, true that with these principles you have a great
+deal, because with your present mathematical ability you could go a long way. We
+will, however, work out a few special applications.
+
+As our first example let’s find out what happens to a rectangular block
+under uniform hydrostatic pressure. Let’s put a block under water in a
+pressure tank. Then there will be a force acting inward on every face of
+the block proportional to the area (see Fig.  38–2 ). Since
+the hydrostatic pressure is uniform, the stress (force per unit
+area) on each face of the block is the same. We will work out first the
+change in the length. The change in length of the block can be thought
+of as the sum of changes in length that would occur in the three
+independent problems which are sketched in Fig.  38–3 .
+
+Problem 1 . If we push on the ends of the block with a
+pressure [eq], the compressional strain is [eq], and it is negative,
+\begin{equation*}
+\frac{\Delta l_1}{l}=-\frac{p}{Y}.
+\end{equation*}
+
+Problem 2 . If we push on the two sides of the block with
+pressure [eq], the compressional strain is again [eq], but now we want
+the lengthwise strain. We can get that from the sideways strain
+multiplied by [eq]. The sideways strain is
+\begin{equation*}
+\frac{\Delta w}{w}=-\frac{p}{Y};
+\end{equation*}
+
+so
+\begin{equation*}
+\frac{\Delta l_2}{l}=+\sigma\,\frac{p}{Y}.
+\end{equation*}
+
+Problem 3 . If we push on the top of the block, the
+compressional strain is once more [eq], and the corresponding strain
+in the sideways direction is again [eq]. We get
+\begin{equation*}
+\frac{\Delta l_3}{l}=+\sigma\,\frac{p}{Y}.
+\end{equation*}
+
+Combining the results of the three problems—that is, taking $\Delta
+l=\Delta l_1+\Delta l_2+\Delta l_3$—we get
+\begin{equation}
+\label{Eq:II:38:6}
+\frac{\Delta l}{l}=-\frac{p}{Y}\,(1-2\sigma).
+\end{equation}
+
+The problem is, of course, symmetrical in all three directions; it
+follows that
+\begin{equation}
+\label{Eq:II:38:7}
+\frac{\Delta w}{w}=\frac{\Delta h}{h}=-\frac{p}{Y}\,(1-2\sigma).
+\end{equation}
+
+The change in the volume under hydrostatic pressure is also of
+some interest. Since [eq], we can write, for small displacements,
+\begin{equation*}
+\frac{\Delta V}{V}=\frac{\Delta l}{l}+\frac{\Delta w}{w}+
+\frac{\Delta h}{h}.
+\end{equation*}
+
+Using ( 38.6 ) and ( 38.7 ), we have
+\begin{equation}
+\label{Eq:II:38:8}
+\frac{\Delta V}{V}=-3\,\frac{p}{Y}\,(1-2\sigma).
+\end{equation}
+
+People like to call [eq] the volume strain and write
+\begin{equation*}
+p=-K\,\frac{\Delta V}{V}.
+\end{equation*}
+
+The volume stress  [eq] is proportional to the volume strain—Hooke’s
+law once more. The coefficient [eq] is called
+the bulk modulus ; it is related to the other
+constants by
+\begin{equation}
+\label{Eq:II:38:9}
+K=\frac{Y}{3(1-2\sigma)}.
+\end{equation}
+
+Since [eq] is of some practical interest, many handbooks give [eq] and [eq]
+instead of [eq] and [eq]. If you want [eq] you can always get it
+from Eq. ( 38.9 ). We can also see from Eq. ( 38.9 )
+that Poisson’s ratio, [eq], must be less than one-half. If it were
+not, the bulk modulus [eq] would be negative, and the material would
+expand under increasing pressure. That would allow us to get mechanical
+energy out of any old block—it would mean that the block was in
+unstable equilibrium. If it started to expand it would continue by
+itself with a release of energy.
+
+Now we want to consider what happens when you put a “shear” strain on
+something. By shear strain we mean the kind of distortion shown in
+Fig.  38–4 . As a preliminary to this, let us look at the
+strains in a cube of material subjected to the forces shown in
+Fig.  38–5 . Again we can break it up into two problems: the
+vertical pushes, and the horizontal pulls. Calling [eq] the area of the
+cube face, we have for the change in horizontal length
+\begin{equation}
+\label{Eq:II:38:10}
+\frac{\Delta l}{l}=\frac{1}{Y}\,\frac{F}{A}+
+\sigma\,\frac{1}{Y}\,\frac{F}{A}=
+\frac{1+\sigma}{Y}\,\frac{F}{A}.
+\end{equation}
+
+The change in the vertical height is just the negative of this.
+
+Now suppose we have the same cube and subject it to the shearing forces
+shown in Fig.  38–6 (a). Note that all the forces have to be
+equal if there are to be no net torques and the cube is to be in
+equilibrium. (Similar forces must also exist in Fig.  38–4 ,
+since the block is in equilibrium. They are provided through the
+“glue” that holds the block to the table.) The cube is then said to be
+in a state of pure shear. But note that if we cut the cube by a plane
+at [eq]—say along the diagonal [eq] in the figure—the total force
+acting across the plane is normal to the plane and is equal
+to [eq]. The area over which this force acts is [eq];
+therefore, the tensile stress normal to this plane is simply [eq].
+Similarly, if we examine a plane at an angle of [eq] the other
+way—the diagonal [eq] in the figure—we see that there is a
+compressional stress normal to this plane of [eq]. From this, we see
+that the stress in a “pure shear” is equivalent to a
+combination of tension and compression stresses of equal strength and at
+right angles to each other, and at [eq] to the original faces of
+the cube. The internal stresses and strains are the same as we would
+find in the larger block of material with the forces shown in
+Fig.  38–6 (b). But this is the problem we have already
+solved. The change in length of the diagonal is given by
+Eq. ( 38.10 ),
+\begin{equation}
+\label{Eq:II:38:11}
+\frac{\Delta D}{D}=\frac{1+\sigma}{Y}\,\frac{G}{A}.
+\end{equation}
+
+(One diagonal is shortened; the other is elongated.)
+
+It is often convenient to express a shear strain in terms of the angle
+by which the cube is twisted—the angle [eq] in
+Fig.  38–7 . From the geometry of the figure you can see that
+the horizontal shift [eq] of the top edge is equal
+to [eq]. So
+\begin{equation}
+\label{Eq:II:38:12}
+\theta=\frac{\delta}{l}=\frac{\sqrt{2}\,\Delta D}{l}=2\,\frac{\Delta D}{D}.
+\end{equation}
+
+The shear stress [eq] is defined as the tangential force on one face
+divided by the area, [eq]. Using Eq. ( 38.11 )
+in ( 38.12 ), we get
+\begin{equation*}
+\theta=2\,\frac{1+\sigma}{Y}\,g.
+\end{equation*}
+
+Or, writing this in the form “stress[eq]constant times strain,”
+\begin{equation}
+\label{Eq:II:38:13}
+g=\mu\theta.
+\end{equation}
+
+The proportionality coefficient [eq] is called the shear
+modulus (or, sometimes, the coefficient of
+rigidity). It is given in terms of [eq] and [eq] by
+\begin{equation}
+\label{Eq:II:38:14}
+\mu=\frac{Y}{2(1+\sigma)}.
+\end{equation}
+
+Incidentally, the shear modulus must be
+positive—otherwise you could
+get work out of a self-shearing block. From Eq. ( 38.14 ),
+[eq] must be greater than [eq]. We know, then, that [eq] must
+be between [eq] and [eq]; in practice, however, it is
+always greater than zero.
+
+As a last example of the type of situation where the stresses are
+uniform through the material, let’s consider the problem of a block
+which is stretched, while it is at the same time constrained so
+that no lateral contraction can take place. (Technically, it’s a
+little easier to compress it while keeping the sides from bulging
+out—but it’s the same problem.) What happens? Well, there must be
+sideways forces which keep it from changing its thickness—forces we
+don’t know off-hand but will have to calculate. It’s the same kind of
+problem we have already done, only with a little different algebra. We
+imagine forces on all three sides, as shown in Fig.  38–8 ; we
+calculate the changes in dimensions, and we choose the transverse
+forces to make the width and height remain constant. Following the
+usual arguments, we get for the three strains:
+ 
+\begin{align}
+\label{Eq:II:38:15}
+\frac{\Delta l_x}{l_x}&=\frac{1}{Y}\,\frac{F_x}{A_x}-
+\frac{\sigma}{Y}\,\frac{F_y}{A_y}-
+\frac{\sigma}{Y}\,\frac{F_z}{A_z}=
+\frac{1}{Y}\biggl[\frac{F_x}{A_x}-\sigma\biggl(
+\frac{F_y}{A_y}+\frac{F_z}{A_z}
+\biggr)\biggr],\\[3pt]
+\label{Eq:II:38:16}
+\frac{\Delta l_y}{l_y}&=\frac{1}{Y}
+\biggl[\frac{F_y}{A_y}-\sigma\biggl(
+\frac{F_x}{A_x}+\frac{F_z}{A_z}
+\biggr)\biggr],\\[5pt]
+\label{Eq:II:38:17}
+\frac{\Delta l_z}{l_z}&=\frac{1}{Y}
+\biggl[\frac{F_z}{A_z}-\sigma\biggl(
+\frac{F_x}{A_x}+\frac{F_y}{A_y}
+\biggr)\biggr].
+\end{align}
+ 
+ 
+\begin{align}
+\frac{\Delta l_x}{l_x}&=\frac{1}{Y}\,\frac{F_x}{A_x}-
+\frac{\sigma}{Y}\,\frac{F_y}{A_y}-
+\frac{\sigma}{Y}\,\frac{F_z}{A_z}\notag\\[.75ex]
+\label{Eq:II:38:15}
+% ebook insert: \label{Eq:II:0:0}
+&=\frac{1}{Y}\biggl[\frac{F_x}{A_x}-\sigma\biggl(
+\frac{F_y}{A_y}+\frac{F_z}{A_z}
+\biggr)\biggr],\\[1ex]
+\label{Eq:II:38:16}
+\frac{\Delta l_y}{l_y}&=\frac{1}{Y}
+\biggl[\frac{F_y}{A_y}-\sigma\biggl(
+\frac{F_x}{A_x}+\frac{F_z}{A_z}
+\biggr)\biggr],\\[1ex]
+\label{Eq:II:38:17}
+\frac{\Delta l_z}{l_z}&=\frac{1}{Y}
+\biggl[\frac{F_z}{A_z}-\sigma\biggl(
+\frac{F_x}{A_x}+\frac{F_y}{A_y}
+\biggr)\biggr].
+\end{align}
+
+Now since [eq] and [eq] are supposed to be zero, Eqs.
+( 38.16 ) and ( 38.17 ) give two equations relating [eq]
+and [eq] to [eq]. Solving them together, we get that
+\begin{equation}
+\label{Eq:II:38:18}
+\frac{F_y}{A_y}=\frac{F_z}{A_z}=\frac{\sigma}{1-\sigma}\,\frac{F_x}{A_x}.
+\end{equation}
+
+Substituting in ( 38.15 ), we have
+ 
+\begin{equation}
+\label{Eq:II:38:19}
+\frac{\Delta l_x}{l_x}=\frac{1}{Y}\biggl(
+1-\frac{2\sigma^2}{1-\sigma}
+\biggr)\frac{F_x}{A_x}=\frac{1}{Y}\biggl(
+\frac{1-\sigma-2\sigma^2}{1-\sigma}
+\biggr)\frac{F_x}{A_x}.
+\end{equation}
+ 
+ 
+\begin{align}
+\frac{\Delta l_x}{l_x}&=\frac{1}{Y}\biggl(
+1-\frac{2\sigma^2}{1-\sigma}
+\biggr)\frac{F_x}{A_x}\notag\\[1ex]
+\label{Eq:II:38:19}
+&=\frac{1}{Y}\biggl(
+\frac{1-\sigma-2\sigma^2}{1-\sigma}
+\biggr)\frac{F_x}{A_x}.
+\end{align}
+ 
+Often, you will see this turned around, and with the quadratic
+in [eq] factored out, it is then written
+\begin{equation}
+\label{Eq:II:38:20}
+\frac{F}{A}=\frac{1-\sigma}{(1+\sigma)(1-2\sigma)}
+\,Y\,\frac{\Delta l}{l}.
+\end{equation}
+
+When we constrain the sides, Young’s modulus gets multiplied by a
+complicated function of [eq]. As you can most easily see from
+Eq. ( 38.19 ), the factor in front of [eq] is always
+greater than [eq]. It is harder to stretch the block when the sides are
+held—which also means that a block is stronger when the sides
+are held than when they are not.
+
+Let’s now turn our attention to an example which is more complicated
+because different parts of the material are stressed by different
+amounts. We consider a twisted rod such as you would find in a drive
+shaft of some machinery, or in a quartz fiber suspension used in a
+delicate instrument. As you probably know from experiments with the
+torsion pendulum, the torque on a twisted rod is proportional
+to the angle —the constant of proportionality obviously
+depending upon the length of the rod, on the radius of the rod, and on
+the properties of the material. The question is: In what way? We are
+now in a position to answer this question; it’s just a matter of
+working out some geometry.
+
+Fig.  38–9 (a) shows a cylindrical rod of length [eq], and radius [eq],
+with one end twisted by the angle [eq] with respect to the other. If
+we want to relate the strains to what we already know, we can think of
+the rod as being made up of many cylindrical shells and work out
+separately what happens to each shell. We start by looking at a thin,
+short cylinder of radius [eq] (less than [eq]) and thickness $\Delta
+r$—as drawn in Fig.  38–9 (b). Now if we look at a piece of this
+cylinder that was originally a small square, we see that it has been
+distorted into a parallelogram. Each such element of the cylinder is
+in shear, and the shear angle [eq] is
+\begin{equation*}
+\theta=\frac{r\phi}{L}.
+\end{equation*}
+
+The shear stress [eq] in the material is, therefore [from
+Eq. ( 38.13 )],
+\begin{equation}
+\label{Eq:II:38:21}
+g=\mu\theta=\mu\,\frac{r\phi}{L}.
+\end{equation}
+
+The shear stress is the tangential force [eq] on the end of the
+square divided by the area [eq] of the end [see
+Fig.  38–9 (c)]
+\begin{equation*}
+g=\frac{\Delta F}{\Delta l\,\Delta r}.
+\end{equation*}
+
+The force [eq] on the end of such a square contributes a
+torque [eq] around the axis of the rod equal to
+\begin{equation}
+\label{Eq:II:38:22}
+\Delta\tau=r\,\Delta F=rg\,\Delta l\,\Delta r.
+\end{equation}
+
+The total torque [eq] is the sum of such torques around a complete
+circumference of the cylinder. So putting together enough pieces so
+that the [eq]’s add up to [eq], we find that the total
+torque, for a hollow tube , is
+\begin{equation}
+\label{Eq:II:38:23}
+rg(2\pi r)\,\Delta r.
+\end{equation}
+
+Or, using ( 38.21 ),
+\begin{equation}
+\label{Eq:II:38:24}
+\tau=2\pi\mu\,\frac{r^3\,\Delta r\phi}{L}.
+\end{equation}
+
+We get that the rotational stiffness, [eq], of a hollow tube is
+proportional to the cube of the radius [eq] and to the
+thickness [eq], and inversely proportional to the length [eq].
+
+We can now imagine a solid rod to be made up of a series of concentric
+tubes, each twisted by the same angle [eq] (although the internal
+ stresses are different for each tube). The total torque is the
+sum of the torques required to rotate each shell; for the solid 
+rod
+\begin{equation*}
+\tau=2\pi\mu\,\frac{\phi}{L}\int r^3\,dr,
+\end{equation*}
+
+where the integral goes from [eq] to [eq], the radius of the
+rod. Integrating, we have
+\begin{equation}
+\label{Eq:II:38:25}
+\tau=\mu\,\frac{\pi a^4}{2L}\,\phi.
+\end{equation}
+
+For a rod in torsion, the torque is proportional to the angle and is
+proportional to the fourth power of the diameter—a rod twice
+as thick is sixteen times as stiff for torsion.
+
+Before leaving the subject of torsion, let us apply what we have just
+learned to an interesting problem: torsional waves. If you take a long
+rod and suddenly twist one end, a wave of twist works its way along the
+rod, as sketched in Fig.  38–10 (a). That’s a little more exciting
+than a steady twist—let’s see whether we can work out what happens.
+
+Let [eq] be the distance to some point down the rod. For a static torsion
+the torque is the same everywhere along the rod, and is proportional
+to [eq], the total torsion angle over the total length. What matters to
+the material is the local torsional strain, which is, you will
+appreciate, [eq]. When the torsion along the rod is not
+uniform, we should replace Eq. ( 38.25 ) by
+\begin{equation}
+\label{Eq:II:38:26}
+\tau(z)=\mu\,\frac{\pi a^4}{2}\,\ddp{\phi}{z}.
+\end{equation}
+
+Now let’s look at what happens to an element of length [eq]
+shown magnified in Fig.  38–10 (b). There is a torque [eq] at
+end [eq] of the little hunk of rod, and a different torque $\tau(z+\Delta
+z)[eq]2[eq]\Delta z$ is small enough, we can use a Taylor
+expansion and write
+\begin{equation}
+\label{Eq:II:38:27}
+\tau(z+\Delta z)=\tau(z)+\biggl(\ddp{\tau}{z}\biggr)\Delta z.
+\end{equation}
+
+The net torque [eq] acting on the little piece of rod
+between [eq] and [eq] is clearly the difference between [eq]
+and [eq], or [eq].
+Differentiating Eq. ( 38.26 ), we get
+\begin{equation}
+\label{Eq:II:38:28}
+\Delta\tau=\mu\,\frac{\pi a^4}{2}\,
+\frac{\partial^2\phi}{\partial z^2}\,\Delta z.
+\end{equation}
+
+The effect of this net torque is to give an angular acceleration to
+the little slice of the rod. The mass of the slice is
+\begin{equation*}
+\Delta M=(\pi a^2\,\Delta z)\rho,
+\end{equation*}
+
+where [eq] is the density of the material. We worked out in
+Chapter  19 , Vol. I, that the moment of inertia of a
+circular cylinder is [eq]; calling the moment of inertia of our
+piece [eq], we have
+\begin{equation}
+\label{Eq:II:38:29}
+\Delta I=\frac{\pi}{2}\,\rho a^4\,\Delta z.
+\end{equation}
+
+Newton’s law says the torque is equal to the moment of inertia times
+the angular acceleration, or
+\begin{equation}
+\label{Eq:II:38:30}
+\Delta\tau=\Delta I\,\frac{\partial^2\phi}{\partial t^2}.
+\end{equation}
+
+Pulling everything together, we get
+\begin{equation}
+\mu\,\frac{\pi a^4}{2}\,
+\frac{\partial^2\phi}{\partial z^2}\,\Delta z=
+\frac{\pi}{2}\,\rho a^4\,\Delta z\,
+\frac{\partial^2\phi}{\partial t^2},\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:38:31}
+\frac{\partial^2\phi}{\partial z^2}-\frac{\rho}{\mu}\,
+\frac{\partial^2\phi}{\partial t^2}=0.
+\end{equation}
+
+You will recognize this as the one-dimensional wave equation. We have
+found that waves of torsion will propagate down the rod with the speed
+\begin{equation}
+\label{Eq:II:38:32}
+C_{\text{shear}}=\sqrt{\frac{\mu}{\rho}}.
+\end{equation}
+
+The denser the rod—for the same stiffness—the slower 
+the waves; and the stiffer the rod, the quicker the waves work
+their way down. The speed does not depend upon the diameter of
+the rod.
+
+Torsional waves are a special example of shear waves . In
+general, shear waves are those in which the strains do not change the
+ volume of any part of the material. In torsional waves, we have
+a particular distribution of such shear stresses—namely, distributed
+on a circle. But for any arrangement of shear stresses, waves will
+propagate with the same speed—the one given in
+Eq. ( 38.32 ). For example, the seismologists find such shear
+waves travelling in the interior of the earth.
+
+We can have another kind of a wave in the elastic world inside a solid
+material. If you push something, you can start “longitudinal”
+waves—also called “compressional” waves. They are like the sound
+waves in air or in water—the displacements are in the same direction
+as the wave propagation. (At the surfaces of an elastic body there can
+also be other types of waves—called “Rayleigh waves” or
+“Love waves.” In them, the strains are neither purely longitudinal
+nor purely transverse. We will not have time to study them.)
+
+While we’re on the subject of waves, what is the velocity of the pure
+compressional waves in a large solid body like the earth? We
+say “large” because the speed of sound in a thick body is different
+from what it is, for instance, along a thin rod. By a “thick” body
+we mean one in which the transverse dimensions are much larger than
+the wavelength of the sound. Then, when we push on the object, it
+cannot expand sideways—it can only compress in one
+dimension. Fortunately, we have already worked out the special case of
+the compression of a constrained elastic material. We have also worked
+out in Chapter  47 , Vol. I, the speed of sound waves in
+a gas. Following the same arguments you can see that the speed of
+sound in a solid is equal to [eq], where [eq] is the
+“longitudinal modulus”—or pressure divided by the relative change
+in length—for the constrained case. This is just the ratio of
+[eq] to [eq] we got in Eq. ( 38.20 ). So the
+speed of the longitudinal waves is given by
+\begin{equation}
+\label{Eq:II:38:33}
+C_{\text{long}}^2=\frac{Y'}{\rho}=
+\frac{1-\sigma}{(1+\sigma)(1-2\sigma)}\,\frac{Y}{\rho}.
+\end{equation}
+
+So long as [eq] is between zero and [eq], the shear modulus [eq]
+is less than Young’s modulus [eq], and also [eq] is greater than [eq],
+so
+\begin{equation*}
+\mu<Y<Y'.
+\end{equation*}
+
+This means that longitudinal waves travel faster than shear waves. One
+of the most precise ways of measuring the elastic constants of a
+substance is by measuring the density of the material and the speeds
+of the two kinds of waves. From this information one can get both [eq]
+and [eq]. It is, incidentally, by measuring the difference in the
+arrival times of the two kinds of waves from an earthquake that a
+seismologist can estimate—even from the signals at only one
+station—the distance to the quake.
+
+We want now to look at another practical matter—the bending 
+of a rod or a beam. What are the forces when we bend a bar of some
+arbitrary cross section? We will work it out thinking of a bar with a
+circular cross section, but our answer will be good for any shape. To
+save time, however, we will cut some corners, so our theory we will
+work out is only approximate. Our results will be correct only when
+the radius of the bend is much larger than the thickness of the beam.
+
+Suppose you grab the two ends of a straight bar and bend it into some
+curve like the one shown in Fig.  38–11 . What goes on inside the
+bar?
+Well, if it is curved, that means that the material on the inside of
+the curve is compressed and the material on the outside is
+stretched. There is some surface which goes along more or less
+parallel to the axis of the bar that is neither stretched nor
+compressed. This is called the neutral surface. You would
+expect this surface to be near the “middle” of the cross section. It
+can be shown (but we won’t do it here) that, for small bending of
+simple beams, the neutral surface goes through the “center of
+gravity” of the cross section. This is true only for “pure”
+bending—if you are not stretching or compressing the beam at the
+same time.
+
+For pure bending, then, a thin transverse slice of the bar is
+distorted as shown in Fig.  38–12 (a). The material below the neutral
+surface has a compressional strain which is proportional to the
+distance from the neutral surface; and the material above is
+stretched, also in proportion to its distance from the neutral
+surface. So the longitudinal stretch  [eq] is proportional
+to the height [eq]. The constant of proportionality is just [eq] over
+the radius of curvature of the bar—see Fig.  38–12 :
+\begin{equation*}
+\frac{\Delta l}{l}=\frac{y}{R}.
+\end{equation*}
+
+So the force per unit area—the stress—in a small strip at [eq] is
+also proportional to the distance from the neutral surface
+\begin{equation}
+\label{Eq:II:38:34}
+\frac{\Delta F}{\Delta A}=Y\,\frac{y}{R}.
+\end{equation}
+
+Now let’s look at the forces that would produce such a strain.
+The forces acting on the little segment drawn in Fig.  38–12 
+are shown in the figure. If we think of any transverse cut, the forces
+acting across it are one way above the neutral surface and the other way
+below. They come in pairs to make a “bending
+moment” [eq]—by which we mean the torque about the neutral
+line. We can compute the total moment by integrating the force times the
+distance from the neutral surface for one of the faces of the segment of
+Fig.  38–12 :
+\begin{equation}
+\label{Eq:II:38:35}
+\bendingMom=\underset{\substack{\text{cross}\\\text{sect}}}{\int}
+y\,dF.
+\end{equation}
+
+From Eq. ( 38.34 ), [eq], so
+\begin{equation*}
+\bendingMom=\frac{Y}{R}\int y^2\,dA.
+\end{equation*}
+
+The integral of [eq] is what we can call the “moment of
+inertia” of the geometric cross section about a horizontal axis
+through its “center of mass”; 1 we will
+call it [eq]:
+\begin{align}
+\label{Eq:II:38:36}
+\bendingMom&=\frac{YI}{R}\\[2ex]
+\label{Eq:II:38:37}
+I&=\int y^2\,dA.
+\end{align}
+
+Equation ( 38.36 ), then, gives us the relation between the
+bending moment [eq] and the curvature [eq] of the beam. The
+“stiffness” of the beam is proportional to [eq] and to the moment of
+inertia [eq]. In other words, if you want the stiffest possible beam
+with a given amount of, say, aluminum, you want to put as much of it
+as possible as far as you can from the neutral surface, to make a
+large moment of inertia. You can’t carry this to an extreme, however,
+because then the thing will not curve as we have supposed—it will
+buckle or twist and become weaker again. But now you see why
+structural beams are made in the form of an I or an H—as shown in
+Fig.  38–13 .
+
+As an example of the use of our beam equation ( 38.36 ), let’s
+work out the deflection of a cantilevered beam
+with a concentrated force [eq] acting at the free end, as sketched in
+Fig.  38–14 . (By “cantilevered” we simply mean that the
+beam is supported in such a way that both the position and the
+slope are fixed at one end—it is stuck into a cement wall.) What is
+the shape of the beam? Let’s call the deflection at the distance [eq]
+from the fixed end [eq]; we want to know [eq]. We’ll work it out only
+for small deflections. We will also assume that the beam is long in
+comparison with its cross section. Now, as you know from your
+mathematics courses, the curvature [eq] of any curve [eq] is given by
+\begin{equation}
+\label{Eq:II:38:38}
+\frac{1}{R}=\frac{d^2z/dx^2}{[1+(dz/dx)^2]^{3/2}}.
+\end{equation}
+
+Since we are interested only in small slopes—this is usually the
+case in engineering structures—we neglect [eq] in comparison
+with [eq], and take
+\begin{equation}
+\label{Eq:II:38:39}
+\frac{1}{R}=\frac{d^2z}{dx^2}.
+\end{equation}
+
+We also need to know the bending moment [eq]. It is a function
+of [eq] because it is equal to the torque about the neutral axis of any
+cross section. Let’s neglect the weight of the beam and take only the
+downward force [eq] at the end of the beam. (You can put in the beam
+weight yourself if you want.) Then the bending moment at [eq] is
+\begin{equation*}
+\bendingMom(x)=W(L-x),
+\end{equation*}
+
+because that is the torque about the point at [eq], exerted by the
+weight [eq]—the torque which the beam must support at [eq]. We get
+\begin{equation}
+W(L-x)=\frac{YI}{R}=YI\,\frac{d^2z}{dx^2}\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:38:40}
+\frac{d^2z}{dx^2}=\frac{W}{YI}\,(L-x).
+\end{equation}
+
+This one we can integrate without any tricks; we get
+\begin{equation}
+\label{Eq:II:38:41}
+z=\frac{W}{YI}\biggl(
+\frac{Lx^2}{2}-\frac{x^3}{6}
+\biggr),
+\end{equation}
+
+using our assumptions that [eq] and that [eq] is also zero
+at [eq]. That is the shape of the beam. The displacement of the end is
+\begin{equation}
+\label{Eq:II:38:42}
+z(L)=\frac{W}{YI}\,\frac{L^3}{3};
+\end{equation}
+
+the displacement of the end of a beam increases as the cube of the
+length.
+
+In deriving our approximate beam theory, we have assumed that the cross
+section of the beam did not change when the beam was bent. When the
+thickness of the beam is small compared to the radius of curvature, the
+cross section changes very little and our result is O.K. In general,
+however, this effect cannot be neglected, as you can easily demonstrate
+for yourselves by bending a soft-rubber eraser in your fingers. If the
+cross section was originally rectangular, you will find that when it is
+bent it bulges at the bottom (see Fig.  38–15 ). This happens
+because when we compress the bottom, the material expands sideways—as
+described by Poisson’s ratio. Rubber is easy to bend or stretch,
+but it is somewhat like a liquid in that it’s hard to change the
+ volume —as shows up nicely when you bend the eraser. For an
+incompressible material, Poisson’s ratio would be
+exactly [eq]—for rubber it is nearly that.
+
+We want now to use our beam theory to understand the theory of the
+“buckling” of beams, or columns, or rods. Consider the situation
+sketched in Fig.  38–16 in which a rod that would normally be
+straight is held in its bent shape by two opposite forces that push on
+the ends of the rod. We would like to calculate the shape of the rod
+and the magnitude of the forces on the ends.
+
+Let the deflection of the rod from the straight line between the ends
+be [eq], where [eq] is the distance from one end. The bending
+moment [eq] at the point [eq] in the figure is equal to the force [eq]
+multiplied by the moment arm, which is the perpendicular distance [eq],
+\begin{equation}
+\label{Eq:II:38:43}
+\bendingMom(x)=Fy.
+\end{equation}
+
+Using the beam equation ( 38.36 ), we have
+\begin{equation}
+\label{Eq:II:38:44}
+\frac{YI}{R}=Fy.
+\end{equation}
+
+For small deflections, we can take [eq] (the minus sign
+because the curvature is downward). We get
+\begin{equation}
+\label{Eq:II:38:45}
+\frac{d^2y}{dx^2}=-\frac{F}{YI}\,y,
+\end{equation}
+
+which is the differential equation of a sine wave. So for small 
+deflections, the curve of such a bent beam is a sine curve. The
+“wavelength” [eq] of the sine wave is twice the distance [eq]
+between the ends. If the bending is small, this is just twice the
+unbent length of the rod. So the curve is
+\begin{equation*}
+y=K\sin\pi x/L.
+\end{equation*}
+
+Taking the second derivative, we get
+\begin{equation*}
+\frac{d^2y}{dx^2}=-\frac{\pi^2}{L^2}\,y.
+\end{equation*}
+
+Comparing this to Eq. ( 38.45 ), we see that the force is
+\begin{equation}
+\label{Eq:II:38:46}
+F=\pi^2\,\frac{YI}{L^2}.
+\end{equation}
+
+For small bendings the force is independent of the bending
+displacement [eq]!
+
+We have, then, the following thing physically. If the force is less
+than the [eq] given in Eq. ( 38.46 ), there will be no
+bending at all. But if it is slightly greater than this force,
+the material will suddenly bend a large amount—that is, for forces above the critical
+force [eq] (often called the “Euler force”) the beam will “buckle.” If the
+loading on the second floor of a building exceeds the Euler
+force for the supporting columns, the building will collapse.
+Another place where the buckling force is most
+important is in space rockets. On one hand, the rocket must be able to
+hold its own weight on the launching pad and endure the stresses during
+acceleration; on the other hand, it is important to keep the weight of
+the structure to a minimum, so that the payload and fuel capacity may be
+made as large as possible.
+
+Actually a beam will not necessarily collapse completely when the force
+exceeds the Euler force. When the
+displacements get large, the force is larger than what we have found
+because of the terms in [eq] in Eq. ( 38.38 ) that we have
+neglected. To find the forces for a large bending of the beam, we have
+to go back to the exact equation, Eq. ( 38.44 ), which we had
+before we used the approximate relation between [eq] and [eq].
+Equation ( 38.44 ) has a rather simple geometrical
+property. 2 It’s
+a little complicated to work out, but rather
+interesting. Instead of describing the curve in terms of [eq] and [eq], we
+can use two new variables: [eq], the distance along the curve, and
+[eq] the slope of the tangent to the curve. See
+Fig.  38–17 . The curvature is the rate of change of angle
+with distance:
+\begin{equation*}
+\frac{1}{R}=\ddt{\theta}{S}.
+\end{equation*}
+
+We can, therefore write the exact equation ( 38.44 ) as
+\begin{equation*}
+\ddt{\theta}{S}=-\frac{F}{YI}\,y.
+\end{equation*}
+
+If we take the derivative of this equation with respect to [eq] and
+replace [eq] by [eq], we get
+\begin{equation}
+\label{Eq:II:38:47}
+\frac{d^2\theta}{dS^2}=-\frac{F}{YI}\sin\theta.
+\end{equation}
+
+[If [eq] is small, we get back Eq. ( 38.45 ). Everything
+is O.K.]
+
+Now it may or may not delight you to know that Eq. ( 38.47 )
+is exactly the same one you get for the large amplitude oscillations of
+a pendulum—with [eq] replaced by another constant, of course. We
+learned way back in Chapter  9 , Vol. I, how to find the
+solution of such an equation by a numerical calculation. 3 The
+answers you get are some fascinating curves—known as the curves of the “Elastica.”
+Figure  38–18 shows three curves for different values
+of [eq].

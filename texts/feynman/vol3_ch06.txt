@@ -1,0 +1,1004 @@
+The Feynman Lectures on Physics Vol. III Ch. 6: Spin One-Half
+=============================================================
+
+Sections: 6–1 Transforming amplitudes | 6–2 Transforming to a rotated coordinate system | 6–3 Rotations about the [eq]-axis | 6–4 Rotations of 180[eq] and
+90[eq] about [eq] | 6–5 Rotations about [eq] | 6–6 Arbitrary rotations
+
+
+
+In the last chapter, using a system of spin one as an
+example, we outlined the general principles of quantum mechanics:
+
+Any state [eq] can be described in terms of a set of base states 
+ by giving the amplitudes to be in each of the base states.
+
+The amplitude to go from any state to another can, in general, be 
+ written as a sum of products, each product being the amplitude to go 
+ into one of the base states times the amplitude to go from that base 
+ state to the final condition, with the sum including a term for each 
+ base state:
+\begin{equation}
+\label{Eq:III:6:1}
+\braket{\chi}{\psi}=\sum_i\braket{\chi}{i}\braket{i}{\psi}.
+\end{equation}
+ The base states are orthogonal—the amplitude to be in one if you are in the
+ other is zero:
+\begin{equation}
+\label{Eq:III:6:2}
+\braket{i}{j}=\delta_{ij}.
+\end{equation}
+ The amplitude to get from one state to another directly is the complex conjugate
+ of the reverse:
+\begin{equation}
+\label{Eq:III:6:3}
+\braket{\chi}{\psi}\cconj=\braket{\psi}{\chi}.
+\end{equation}
+
+We also discussed a little bit about the fact that there can be more
+than one base for the states and that we can use Eq. ( 6.1 )
+to convert from one base to another. Suppose, for example, that we have
+the amplitudes [eq] to find the state [eq] in every one
+of the base states [eq] of a base system [eq], but that we then decide
+that we would prefer to describe the state in terms of another set of
+base states, say the states [eq] belonging to the base [eq]. In the
+general formula, Eq. ( 6.1 ), we could substitute [eq]
+for [eq] and obtain this formula:
+\begin{equation}
+\label{Eq:III:6:4}
+\braket{jT}{\psi}=\sum_i\braket{jT}{iS}\braket{iS}{\psi}.
+\end{equation}
+The amplitudes for the state [eq] to be in the base states [eq]
+are related to the amplitudes to be in the base states [eq] by the set
+of coefficients [eq]. If there are [eq] base states, there
+are [eq] such coefficients. Such a set of coefficients is often called
+the “ transformation matrix to go from the
+[eq]- representation to the [eq]- representation .” This looks
+rather formidable mathematically, but with a little renaming we can see
+that it is really not so bad. If we call [eq] the amplitude that the
+state [eq] is in the base state [eq]—that is,
+[eq]—and call [eq] the corresponding amplitudes
+for the base system [eq]—that is, [eq], then
+Eq. ( 6.4 ) can be written as
+\begin{equation}
+\label{Eq:III:6:5}
+C_j'=\sum_iR_{ji}C_i,
+\end{equation}
+where [eq] means the same thing as [eq]. Each
+amplitude [eq] is equal to a sum over all [eq] of one of the
+coefficients [eq] times each amplitude [eq]. It has the same form
+as the transformation of a vector from one coordinate system to another.
+
+In order to avoid being too abstract for too long, we have given you
+some examples of these coefficients for the spin-one case, so you can
+see how to use them in practice. On the other hand, there is a very
+beautiful thing in quantum mechanics—that from the sheer fact that
+there are three states and from the symmetry properties of space under
+rotations, these coefficients can be found purely by abstract reasoning.
+Showing you such arguments at this early stage has a disadvantage in
+that you are immersed in another set of abstractions before we get
+“down to earth.” However, the thing is so beautiful that we are going
+to do it anyway.
+
+We will show you in this chapter how the transformation coefficients can
+be derived for spin one-half particles. We pick this case, rather than
+spin one, because it is somewhat easier. Our problem is to determine the
+coefficients [eq] for a particle—an atomic system—which is split
+into two beams in a Stern-Gerlach apparatus. We are going to derive all
+the coefficients for the transformation from one representation to
+another by pure reasoning—plus a few assumptions. Some 
+assumptions are always necessary in order to use “pure” reasoning!
+Although the arguments will be abstract and somewhat involved, the
+result we get will be relatively simple to state and easy to
+understand—and the result is the most important thing. You may, if you
+wish, consider this as a sort of cultural excursion. We have, in fact,
+arranged that all the essential results derived here are also derived in
+some other way when they are needed in later chapters. So you need have
+no fear of losing the thread of our study of quantum mechanics if you
+omit this chapter entirely, or study it at some later time. The
+excursion is “cultural” in the sense that it is intended to show that
+the principles of quantum mechanics are not only interesting, but are so
+deep that by adding only a few extra hypotheses about the structure of
+space, we can deduce a great many properties of physical systems. Also,
+it is important that we know where the different consequences of quantum
+mechanics come from, because so long as our laws of physics are
+incomplete—as we know they are—it is interesting to find out whether
+the places where our theories fail to agree with experiment is where our
+logic is the best or where our logic is the worst. Until now, it appears
+that where our logic is the most abstract it always gives correct
+results—it agrees with experiment. Only when we try to make specific
+models of the internal machinery of the fundamental particles and their
+interactions are we unable to find a theory that agrees with experiment.
+The theory then that we are about to describe agrees with experiment
+wherever it has been tested—for the strange particles as well as for
+electrons, protons, and so on.
+
+One remark on an annoying, but interesting, point before we proceed:
+It is not possible to determine the coefficients [eq] uniquely,
+because there is always some arbitrariness in the probability
+amplitudes. If you have a set of amplitudes of any kind, say the
+amplitudes to arrive at some place by a whole lot of different routes,
+and if you multiply every single amplitude by the same phase
+factor—say by [eq]—you have another set that is just as
+good. So, it is always possible to make an arbitrary change in phase
+of all the amplitudes in any given problem if you want to.
+
+Suppose you calculate some probability by writing a sum of several
+amplitudes, say [eq] and taking the absolute square. Then
+somebody else calculates the same thing by using the sum of the
+amplitudes [eq] and taking the absolute square. If all
+the [eq], [eq], [eq], etc., are equal to the [eq], [eq], [eq], etc.,
+except for a factor [eq], all probabilities obtained by
+taking the absolute squares will be exactly the same, since
+[eq] is then equal to [eq]. Or
+suppose, for instance, that we were computing something with
+Eq. ( 6.1 ), but then we suddenly change all of the phases of
+a certain base system. Every one of the amplitudes [eq]
+would be multiplied by the same factor [eq]. Similarly, the
+amplitudes [eq] would also be changed by [eq],
+but the amplitudes [eq] are the complex conjugates of the
+amplitudes [eq]; therefore, the former gets changed by the
+factor [eq]. The plus and minus [eq]’s in the exponents
+cancel out, and we would have the same expression we had before. So it
+is a general rule that if we change all the amplitudes with respect to a
+given base system by the same phase—or even if we just change
+ all the amplitudes in any problem by the same phase—it makes no
+difference. There is, therefore, some freedom to choose the phases in
+our transformation matrix. Every now and then we will make such an
+arbitrary choice—usually following the conventions that are in general
+use.
+
+We consider again the “improved” Stern-Gerlach apparatus described
+in the last chapter. A beam of spin one-half particles, entering at
+the left, would, in general, be split into two beams, as shown
+schematically in Fig. 6-1 . (There were three beams for
+spin one .) As before, the beams are put back together again
+unless one or the other of them is blocked off by a “stop” which
+intercepts the beam at its half-way point. In the figure we show an
+arrow which points in the direction of the increase of the
+ magnitude of the field—say toward the magnet pole with the
+sharp edges. This arrow we take to represent the “up” axis of
+any particular apparatus. It is fixed relative to the apparatus and
+will allow us to indicate the relative orientations when we use
+several apparatuses together. We also assume that the direction of the
+magnetic field in each magnet is always the same with respect to the
+arrow.
+
+We will say that those atoms which go in the “upper” beam are in the
+[eq] state with respect to that apparatus and that those in
+the “lower” beam are in the [eq] state. (There is no “zero” state
+for spin one-half particles.)
+
+Now suppose we put two of our modified Stern-Gerlach apparatuses in
+sequence, as shown in Fig. 6-2 (a). The first one,
+which we call [eq], can be used to prepare a pure [eq] or a pure
+[eq] state by blocking one beam or the other. [As shown it prepares
+a pure [eq] state.] For each condition, there is some amplitude for
+a particle that comes out of [eq] to be in either the [eq] or the
+[eq] beam of the second apparatus. There are, in fact, just four
+amplitudes: the amplitude to go from [eq] to [eq], from [eq]
+to [eq], from [eq] to [eq], from [eq] to [eq]. These amplitudes
+are just the four coefficients of the transformation matrix [eq]
+to go from the [eq]-representation to the [eq]-representation. We can
+consider that the first apparatus “prepares” a particular state in
+one representation and that the second apparatus “analyzes” that
+state in terms of the second representation. The kind of question we
+want to answer, then, is this: If an atom has been prepared in a given
+condition—say the [eq] state—by blocking one of the beams in the
+apparatus [eq], what is the chance that it will get through the second
+apparatus [eq] if this is set for, say, the [eq] state. The result
+will depend, of course, on the angles between the two systems [eq]
+and [eq].
+
+We should explain why it is that we could have any hope of finding the
+coefficients [eq] by deduction. You know that it is almost
+impossible to believe that if a particle has its spin lined up in the
+[eq]-direction, that there is some chance of finding the same particle
+with its spin pointing in the [eq]-direction—or in any other
+direction at all. In fact, it is almost impossible, but not
+quite. It is so nearly impossible that there is only one way it
+can be done, and that is the reason we can find out what that unique
+way is.
+
+The first kind of argument we can make is this. Suppose we have a
+setup like the one in Fig. 6-2 (a), in which we have
+the two apparatuses [eq] and [eq], with [eq] cocked at the angle [eq]
+with respect to [eq], and we let only the [eq] beam through [eq] and
+the [eq] beam through [eq]. We would observe a certain number for the
+probability that the particles coming out of [eq] get through [eq]. Now
+suppose we make another measurement with the apparatus of
+Fig. 6-2 (b). The relative orientation of [eq]
+and [eq] is the same, but the whole system sits at a different angle in
+space. We want to assume that both of these experiments give the
+same number for the chance that a particle in a pure state with respect
+to [eq] will get into some particular state with respect to [eq]. We are
+assuming, in other words, that the result of any experiment of this type
+is the same—that the physics is the same—no matter how the
+ whole apparatus is oriented in space. (You say, “That’s
+obvious.” But it is an assumption, and it is “right” only if
+it is actually what happens.) That means that the coefficients [eq]
+depend only on the relation in space of [eq] and [eq], and not on the
+absolute situation of [eq] and [eq]. To say this in another way, [eq]
+depends only on the rotation which carries [eq] to [eq], for
+evidently what is the same in Fig. 6-2 (a) and
+Fig. 6-2 (b) is the three-dimensional rotation which would
+carry apparatus [eq] into the orientation of apparatus [eq]. When the
+transformation matrix [eq] depends only on a rotation, as it does
+here, it is called a rotation matrix .
+
+For our next step we will need one more piece of information. Suppose
+we add a third apparatus which we can call [eq], which follows [eq] at
+some arbitrary angle, as in Fig. 6-3 (a). (It’s
+beginning to look horrible, but that’s the fun of abstract
+thinking—you can make the most weird experiments just by drawing
+lines!) Now what is the [eq] transformation? What we really
+want to ask for is the amplitude to go from some state with respect
+to [eq] to some other state with respect to [eq], when we know the
+transformation from [eq] to [eq] and from [eq] to [eq]. We are then asking
+about an experiment in which both channels of [eq] are open. We can get
+the answer by applying Eq. ( 6.5 ) twice in
+succession. For going from the [eq]-representation to the
+[eq]-representation, we have
+\begin{equation}
+\label{Eq:III:6:6}
+C_j'=\sum_iR_{ji}^{TS}C_i,
+\end{equation}
+where we put the superscripts [eq] on the [eq], so that we can
+distinguish it from the coefficients [eq] we will have for going
+from [eq] to [eq].
+
+Assuming the amplitudes to be in the base states of the
+[eq]-representation [eq], we can relate them to the [eq]-amplitudes
+by using Eq. ( 6.5 ) once more; we get
+\begin{equation}
+\label{Eq:III:6:7}
+C_k''=\sum_jR_{kj}^{UT}C_j'.
+\end{equation}
+Now we can combine Eqs. ( 6.6 ) and ( 6.7 ) to
+get the transformation to [eq] directly from [eq]. Substituting [eq]
+from Eq. ( 6.6 ) in Eq. ( 6.7 ), we have
+\begin{equation}
+\label{Eq:III:6:8}
+C_k''=\sum_jR_{kj}^{UT}\sum_iR_{ji}^{TS}C_i.
+\end{equation}
+Or, since [eq] does not appear in [eq], we can put the
+[eq]-summation also in front, and write
+\begin{equation}
+\label{Eq:III:6:9}
+C_k''=\sum_i\sum_jR_{kj}^{UT}R_{ji}^{TS}C_i.
+\end{equation}
+This is the formula for a double transformation.
+
+Notice, however, that so long as all the beams in [eq] are unblocked,
+the state coming out of [eq] is the same as the one that went in. We
+could just as well have made a transformation from the
+[eq]-representation directly to the [eq]-representation. It should be
+the same as putting the [eq] apparatus right after [eq], as in
+Fig. 6-3 (b). In that case, we would have written
+\begin{equation}
+\label{Eq:III:6:10}
+C_k''=\sum_iR_{ki}^{US}C_i,
+\end{equation}
+with the coefficients [eq] belonging to this
+transformation. Now, clearly, Eqs. ( 6.9 )
+and ( 6.10 ) should give the same amplitudes [eq], and
+this should be true no matter what the original state [eq] was which
+gave us the amplitudes [eq]. So it must be that
+\begin{equation}
+\label{Eq:III:6:11}
+R_{ki}^{US}=\sum_jR_{kj}^{UT}R_{ji}^{TS}.
+\end{equation}
+In other words, for any rotation [eq] of a reference base, which
+is viewed as a compounding of two successive rotations [eq]
+and [eq], the rotation matrix [eq] can be obtained from the
+matrices of the two partial rotations by Eq. ( 6.11 ). If
+you wish, you can find Eq. ( 6.11 ) directly from
+Eq. ( 6.1 ), for it is only a different notation
+for [eq].
+
+To be thorough, we should add the following parenthetical
+remarks. They are not terribly important, however, so you can skip to
+the next section if you want. What we have said is not quite right. We
+cannot really say that Eq. ( 6.9 ) and
+Eq. ( 6.10 ) must give exactly the same amplitudes.
+Only the physics should be the same; all the amplitudes could be
+different by some common phase factor like [eq] without
+changing the result of any calculation about the real world. So, instead
+of Eq. ( 6.11 ), all we can say, really, is that
+\begin{equation}
+\label{Eq:III:6:12}
+e^{i\delta}R_{ki}^{US}=\sum_jR_{kj}^{UT}R_{ji}^{TS},
+\end{equation}
+where [eq] is some real constant. What this extra factor
+of [eq] means, of course, is that the amplitudes we get if we
+use the matrix [eq] might all differ by the same
+phase [eq] from the amplitude we would get using the two
+rotations [eq] and [eq]. We know that it doesn’t matter if all
+amplitudes are changed by the same phase, so we could just ignore this
+phase factor if we wanted to. It turns out, however, that if we define
+all of our rotation matrices in a particular way, this extra phase
+factor will never appear—the [eq] in Eq. ( 6.12 )
+will always be zero. Although it is not important for the rest of our
+arguments, we can give a quick proof by using a mathematical theorem
+about determinants. [If you don’t yet know much about determinants,
+don’t worry about the proof and just skip to the definition of
+Eq. ( 6.15 ).]
+
+First, we should say that Eq. ( 6.11 ) is the
+mathematical definition of a “product” of two matrices. (It is just
+convenient to be able to say: “[eq] is the product of [eq]
+and [eq].” ) Second, there is a theorem of mathematics—which
+you can easily prove for the two-by-two matrices we have here—which
+says that the determinant of a “product” of two matrices is the
+product of their determinants. Applying this theorem to
+Eq. ( 6.12 ), we get
+\begin{equation}
+\label{Eq:III:6:13}
+e^{i2\delta}\,(\Det R^{US})=(\Det R^{UT})\cdot(\Det R^{TS}).
+\end{equation}
+(We leave off the subscripts, because they don’t tell us anything
+useful.) Yes, the [eq] is right. Remember that we are dealing
+with two-by-two matrices; every term in the matrix [eq] is
+multiplied by [eq], so each product in the
+determinant—which has two factors—gets multiplied
+by [eq]. Now let’s take the square root of
+Eq. ( 6.13 ) and divide it into Eq. ( 6.12 ); we
+get
+\begin{equation}
+\label{Eq:III:6:14}
+\frac{R_{ki}^{US}}{\sqrt{\Det R^{US}}}=\sum_j
+\frac{R_{kj}^{UT}}{\sqrt{\Det R^{UT}}}\,
+\frac{R_{ji}^{TS}}{\sqrt{\Det R^{TS}}}.
+\end{equation}
+The extra phase factor has disappeared.
+
+Now it turns out that if we want all of our amplitudes in any given
+representation to be normalized (which means, you remember, that
+[eq]), the rotation matrices
+will all have determinants that are pure imaginary exponentials,
+like [eq]. (We won’t prove it; you will see that it always comes
+out that way.) So we can, if we wish, choose to make all our rotation
+matrices [eq] have a unique phase by making [eq]. It is done like
+this. Suppose we find a rotation matrix [eq] in some arbitrary way. We
+make it a rule to “convert” it to “standard form” by defining
+\begin{equation}
+\label{Eq:III:6:15}
+R_{\text{standard}}=\frac{R}{\sqrt{\Det R}}.
+\end{equation}
+We can do this because we are just multiplying each term of [eq] by the
+same phase factor, to get the phases we want. In what follows, we will
+always assume that our matrices have been put in the “standard
+form” ; then we can use Eq. ( 6.11 ) without having any
+extra phase factors.
+
+We are now ready to find the transformation matrix [eq] between
+two different representations. With our rule for compounding rotations
+and our assumption that space has no preferred direction, we have the
+keys we need for finding the matrix of any arbitrary rotation. There
+is only one solution. We begin with the transformation which
+corresponds to a rotation about the [eq]-axis. Suppose we have two
+apparatuses [eq] and [eq] placed in series along a straight line with
+their axes parallel and pointing out of the page, as shown in
+Fig. 6-4 (a). We take our “[eq]-axis” in this direction.
+Surely, if the beam goes “up” (toward [eq]) in the [eq] apparatus, it
+will do the same in the [eq] apparatus. Similarly, if it goes down
+in [eq], it will go down in [eq]. Suppose, however, that the [eq] apparatus
+were placed at some other angle, but still with its axis parallel to the
+axis of [eq], as in Fig. 6-4 (b). Intuitively, you would
+say that a [eq] beam in [eq] would still go with a [eq] beam in [eq],
+because the fields and field gradients are still in the same physical
+direction. And that would be quite right. Also, a [eq] beam in [eq]
+would still go into a [eq] beam in [eq]. The same result would apply for
+any orientation of [eq] in the [eq]-plane of [eq]. What does this tell us
+about the relation between [eq],
+[eq] and [eq],
+[eq]? You might conclude that any rotation about the
+[eq]-axis of the “frame of reference” for base states leaves the
+amplitudes to be “up” and “down” the same as before. We could write
+[eq] and [eq]—but that is wrong . All we can 
+conclude is that for such rotations the probabilities to be in the
+“up” beam are the same for the [eq] and [eq] apparatuses. That is,
+\begin{equation*}
+\abs{C_+'}=\abs{C_+}\quad
+\text{and}\quad
+\abs{C_-'}=\abs{C_-}.
+\end{equation*}
+We cannot say that the phases of the amplitudes referred to the
+[eq] apparatus may not be different for the two different orientations
+in (a) and (b) of Fig. 6-4 .
+
+The two apparatuses in (a) and (b) of Fig. 6-4 are, in
+fact, different, as we can see in the following way. Suppose that we
+put an apparatus in front of [eq] which produces a pure [eq] state.
+(The [eq]-axis points toward the bottom of the figure.) Such
+particles would be split into [eq] and [eq] beams in [eq], but the
+two beams would be recombined to give a [eq] state again
+at [eq]—the exit of [eq]. The same thing happens again in [eq]. If we
+follow [eq] by a third apparatus [eq], whose axis is in the
+[eq] direction and, as shown in Fig. 6-5 (a), all the
+particles would go into the [eq] beam of [eq]. Now imagine what
+happens if [eq] and [eq] are swung around together by [eq]
+to the positions shown in Fig. 6-5 (b). Again, the
+[eq] apparatus puts out just what it takes in, so the particles that enter
+[eq] are in a [eq] state with respect to [eq]. But [eq] now analyzes
+for the [eq] state with respect to [eq], which is different. (By
+symmetry, we would now expect only one-half of the particles to go into the [eq] beam of [eq].)
+
+What could have changed? The apparatuses [eq] and [eq] are still in the
+same physical relationship to each other. Can the
+ physics be changed just because [eq] and [eq] are in a different
+orientation? Our original assumption is that it should not. It must be
+that the amplitudes with respect to [eq] are different in the
+two cases shown in Fig. 6-5 —and, therefore, also in
+Fig. 6-4 . There must be some way for a particle to
+know that it has turned the corner at [eq]. How could it tell? Well,
+all we have decided is that the magnitudes of [eq] and [eq]
+are the same in the two cases, but they could—in fact,
+ must —have different phases . We conclude that [eq]
+and [eq] must be related by
+\begin{equation*}
+C_+'=e^{i\lambda}C_+,
+\end{equation*}
+and that [eq] and [eq] must be related by
+\begin{equation*}
+C_-'=e^{i\mu}C_-,
+\end{equation*}
+where [eq] and [eq] are real numbers which must be related in
+some way to the angle between [eq] and [eq].
+
+The only thing we can say at the moment about [eq] and [eq] is
+that they must not be equal [except for the special case shown in
+Fig. 6-5 (a), when [eq] is in the same orientation
+as [eq]]. We have seen that equal phase changes in all amplitudes have no
+physical consequence. For the same reason, we can always add the same
+arbitrary amount to both [eq] and [eq] without changing
+anything. So we are permitted to choose to make [eq]
+and [eq] equal to plus and minus the same number. That is, we can always
+take
+\begin{equation*}
+\lambda'=\lambda-\frac{(\lambda+\mu)}{2},\quad
+\mu'=\mu-\frac{(\lambda+\mu)}{2}.
+\end{equation*}
+Then
+\begin{equation*}
+\lambda'=\frac{\lambda}{2}-\frac{\mu}{2}=-\mu'.
+\end{equation*}
+So we adopt the convention 2 
+that [eq]. We have then the general rule that for a rotation of
+the reference apparatus by some angle about the [eq]-axis, the
+transformation is
+\begin{equation}
+\label{Eq:III:6:16}
+C_+'=e^{+i\lambda}C_+,\quad
+C_-'=e^{-i\lambda}C_-.
+\end{equation}
+The absolute values are the same, only the phases are different. These
+phase factors are responsible for the different results in the two
+experiments of Fig. 6-5 .
+
+Now we would like to know the law that relates [eq] to the angle
+between [eq] and [eq]. We already know the answer for one case. If the
+angle is zero, [eq] is zero. Now we will assume that the
+phase shift [eq] is a continuous function of angle [eq] between
+[eq] and [eq] (see Fig. 6-4 ) as [eq] goes to zero—as
+only seems reasonable. In other words, if we rotate [eq] from the
+straight line through [eq] by the small angle [eq], the [eq]
+is also a small quantity, say [eq], where [eq] is some
+number. We write it this way because we can show that [eq] must
+be proportional to [eq]. Suppose we were to put after [eq]
+another apparatus [eq] which makes the angle [eq] with [eq], and,
+therefore, the angle [eq] with [eq]. Then, with respect to [eq],
+we have
+\begin{equation*}
+C_+'=e^{i\lambda}C_+,
+\end{equation*}
+and with respect to [eq], we have
+\begin{equation*}
+C_+''=e^{i\lambda}C_+'=e^{i2\lambda}C_+.
+\end{equation*}
+But we know that we should get the same result if we put [eq] right
+after [eq]. Thus, when the angle is doubled, the phase is doubled. We
+can evidently extend the argument and build up any rotation at all by
+a sequence of infinitesimal rotations. We conclude that for any 
+angle [eq], [eq] is proportional to the angle. We can,
+therefore, write [eq].
+
+The general result we get, then, is that for [eq] rotated about the
+[eq]-axis by the angle [eq] with respect to [eq]
+\begin{equation}
+\label{Eq:III:6:17}
+C_+'=e^{im\phi}C_+,\quad
+C_-'=e^{-im\phi}C_-.
+\end{equation}
+For the angle [eq], and for all rotations we speak of in the future,
+we adopt the standard convention that a positive rotation is a
+ right-handed rotation about the positive direction of the
+reference axis. A positive [eq] has the sense of rotation of a
+right-handed screw advancing in the positive [eq]-direction.
+
+Now we have to find what [eq] must be. First, we might try this
+argument: Suppose [eq] is rotated by [eq]; then, clearly, it is
+right back at zero degrees, and we should have [eq]
+and [eq], or, what is the same thing, [eq]. We
+get [eq]. This argument is wrong! To see that it is, consider that
+[eq] is rotated by [eq]. If [eq] were equal to [eq], we would have
+[eq] [eq] [eq] and [eq] [eq] [eq]. However, this
+is just the original state all over again. Both 
+amplitudes are just multiplied by [eq] which gives back the original
+physical system. (It is again a case of a common phase change.) This
+means that if the angle between [eq] and [eq] in Fig. 6-5 (b)
+is increased to [eq], the system (with respect to [eq]) would be
+indistinguishable from the zero-degree situation, and the particles
+would again go through the [eq] state of the [eq] apparatus.
+At [eq], though, the [eq] state of the [eq] apparatus is the
+[eq] state of the original [eq] apparatus. So a [eq] state would become a
+[eq] state. But we have done nothing to change the original
+state; the answer is wrong. We cannot have [eq].
+
+We must have the situation that a rotation by [eq] and no
+smaller angle reproduces the same physical state. This will happen
+if [eq]. Then, and only then, will the first angle that
+reproduces the same physical state
+be [eq]. 3 It gives
+\begin{equation}
+\left.
+\begin{aligned}
+C_+'&=-C_+\\
+\\
+C_-'&=-C_-
+\end{aligned}
+\right\}
+\text{[eq] about [eq]-axis}.
+\label{Eq:III:6:18}
+\end{equation}
+It is very curious to say that if you turn the apparatus [eq]
+you get new amplitudes. They aren’t really new, though, because the
+common change of sign doesn’t give any different physics. If someone
+else had decided to change all the signs of the amplitudes because he
+thought he had turned [eq], that’s all right; he gets the same
+physics. 4 So our final
+answer is that if we know the amplitudes [eq] and [eq] for spin
+one-half particles with respect to a reference frame [eq], and we then
+use a base system referred to [eq] which is obtained from [eq] by a
+rotation of [eq] around the [eq]-axis, the new amplitudes are given
+in terms of the old by
+\begin{equation}
+\left.
+\begin{aligned}
+C_+'=e^{i\phi/2}C_+&\\
+\\
+C_-'=e^{-i\phi/2}C_-&
+\end{aligned}
+\right\}
+\text{[eq] about [eq]}.
+\label{Eq:III:6:19}
+\end{equation}
+
+Next, we will try to guess the transformation for a rotation of [eq]
+with respect to [eq] of [eq] around an axis perpendicular 
+to the [eq]-axis—say, about the [eq]-axis. (We have defined the
+coordinate axes in Fig. 6-1 .) In other words, we
+start with two identical Stern-Gerlach equipments, with the second
+one, [eq], turned “upside down” with respect to the first one, [eq],
+as in Fig. 6-6 . Now if we think of our particles as
+little magnetic dipoles, a particle that is in the [eq] state—so
+that it goes on the “upper” path in the first apparatus—will also
+take the “upper” path in the second, so that it will be in the
+ minus state with respect to [eq]. (In the inverted
+[eq] apparatus, both the gradients and the field direction are
+reversed; for a particle with its magnetic moment in a given
+direction, the force is unchanged.) Anyway, what is “up” with
+respect to [eq] will be “down” with respect to [eq]. For these
+relative positions of [eq] and [eq], then, we know that the
+transformation must give
+\begin{equation*}
+\abs{C_+'}=\abs{C_-},\quad
+\abs{C_-'}=\abs{C_+}.
+\end{equation*}
+As before, we cannot rule out some additional phase factors; we could
+have (for [eq] about the [eq]-axis)
+\begin{equation}
+\label{Eq:III:6:20}
+C_+'=e^{i\beta}C_-\quad
+\text{and}\quad
+C_-'=e^{i\gamma}C_+,
+\end{equation}
+where [eq] and [eq] are still to be determined.
+
+What about a rotation of [eq] about the [eq]-axis? Well, we
+already know the answer for a rotation of [eq] about the
+[eq]-axis—the amplitude to be in any state changes sign. A rotation
+of [eq] around any axis always brings us back to the original
+position. It must be that for any [eq] rotation, the
+result is the same as a [eq] rotation about the [eq]-axis—all
+amplitudes simply change sign. Now suppose we imagine two successive
+rotations of [eq] about [eq]—using Eq. ( 6.20 )—we
+should get the result of Eq. ( 6.18 ). In other words,
+\begin{equation*}
+C_+''=e^{i\beta}C_-'=e^{i\beta}e^{i\gamma}C_+=-C_+
+\end{equation*}
+and
+\begin{equation}
+\label{Eq:III:6:21}
+C_-''=e^{i\gamma}C_+'=e^{i\gamma}e^{i\beta}C_-=-C_-.
+\end{equation}
+This means that
+\begin{equation*}
+e^{i\beta}e^{i\gamma}=-1\quad
+\text{or}\quad
+e^{i\gamma}=-e^{-i\beta}.
+\end{equation*}
+So the transformation for a rotation of [eq] about the [eq]-axis
+can be written
+\begin{equation}
+\label{Eq:III:6:22}
+C_+'=e^{i\beta}C_-,\quad
+C_-'=-e^{-i\beta}C_+.
+\end{equation}
+
+The arguments we have just used would apply equally well to a rotation
+of [eq] about any axis in the [eq]-plane, although
+different axes can, of course, give different numbers for [eq].
+However, that is the only way they can differ. Now there is a
+certain amount of arbitrariness in the number [eq], but once it is
+specified for one axis of rotation in the [eq]-plane it is determined
+for any other axis. It is conventional to choose to
+set [eq] for a [eq] rotation about the [eq]-axis.
+
+To show that we have this choice, suppose we imagine that [eq] was
+not equal to zero for a rotation about the [eq]-axis; then we can show
+that there is some other axis in the [eq]-plane, for which the
+corresponding phase factor will be zero. Let’s find the phase
+factor [eq] for an axis [eq] that makes the angle [eq] with
+the [eq]-axis, as shown in Fig. 6-7 (a). (For clarity,
+the figure is drawn with [eq] equal to a negative number, but that
+doesn’t matter.) Now if we take a [eq] apparatus which is initially
+lined up with the [eq] apparatus and is then rotated [eq] about
+the axis [eq], its axes—which we will call [eq], [eq],
+
+and [eq]—will be as shown in Fig. 6-7 (a). The
+amplitudes with respect to [eq] will then be
+\begin{equation}
+\label{Eq:III:6:23}
+C_+''=e^{i\beta_A}C_-,\quad
+C_-''=-e^{-i\beta_A}C_+.
+\end{equation}
+
+We can now think of getting to the same orientation by the two
+successive rotations shown in (b) and (c) of the figure. First, we
+imagine an apparatus [eq] which is rotated with respect to [eq]
+by [eq] about the [eq]-axis. The axes [eq], [eq], and [eq] of [eq]
+will be as shown in Fig. 6-7 (b), and the amplitudes
+ with respect to [eq] are given by ( 6.22 ).
+
+Now notice that we can go from [eq] to [eq] by a rotation about the
+“[eq]-axis” of [eq], namely about [eq], as shown in
+Fig. 6-7 (c). From the figure you can see that the angle
+required is two times the angle [eq] but in the opposite direction
+(with respect to [eq]). Using the transformation of ( 6.19 )
+with [eq], we get
+\begin{equation}
+\label{Eq:III:6:24}
+C_+''=e^{-i\alpha}C_+',\quad
+C_-''=e^{+i\alpha}C_-'.
+\end{equation}
+Combining Eqs. ( 6.24 ) and ( 6.22 ), we get
+that
+\begin{equation}
+\label{Eq:III:6:25}
+C_+''=e^{i(\beta-\alpha)}C_-,\quad
+C_-''=-e^{-i(\beta-\alpha)}C_+.
+\end{equation}
+These amplitudes must, of course, be the same as we got
+in ( 6.23 ). So [eq] must be related to [eq]
+and [eq] by
+\begin{equation}
+\label{Eq:III:6:26}
+\beta_A=\beta-\alpha.
+\end{equation}
+This means that if the angle [eq] between the [eq]-axis and the
+[eq]-axis (of [eq]) is equal to [eq], the transformation for a
+rotation of [eq] about [eq] will have [eq].
+
+Now so long as some axis perpendicular to the [eq]-axis is going
+to have [eq], we may as well take it to be the [eq]-axis. It is
+purely a matter of convention , and we adopt the one in general
+use. Our result: For a rotation of [eq] about the [eq]-axis, we
+have
+\begin{equation}
+\left.
+\begin{aligned}
+C_+'&=C_-\\
+\\
+C_-'&=-C_+
+\end{aligned}
+\right\}
+\text{[eq] about [eq]}.
+\label{Eq:III:6:27}
+\end{equation}
+
+While we are thinking about the [eq]-axis, let’s next ask for the
+transformation matrix for a rotation of [eq] about [eq]. We can
+find it because we know that two successive [eq] rotations about
+the same axis must equal one [eq] rotation. We start by writing
+the transformation for [eq] in the most general form:
+\begin{equation}
+\label{Eq:III:6:28}
+C_+'=aC_++bC_-,\quad
+C_-'=cC_++dC_-.
+\end{equation}
+A second rotation of [eq] about the same axis would have the
+same coefficients:
+\begin{equation}
+\label{Eq:III:6:29}
+C_+''=aC_+'+bC_-',\quad
+C_-''=cC_+'+dC_-'.
+\end{equation}
+Combining Eqs. ( 6.28 ) and ( 6.29 ), we have
+\begin{equation}
+\begin{alignedat}{2}
+C_+''&=a(aC_++bC_-)&+\,b(cC_++dC_-),\\[1ex]
+C_-''&=c(aC_++bC_-)&+\,d(cC_++dC_-).
+\end{alignedat}
+\label{Eq:III:6:30}
+\end{equation}
+However, from ( 6.27 ) we know that
+\begin{equation*}
+C_+''=C_-,\quad
+C_-''=-C_+,
+\end{equation*}
+so that we must have that
+\begin{equation}
+\begin{aligned}
+ab+bd&=1,\\
+a^2+bc&=0,\\
+ac+cd&=-1,\\
+bc+d^2&=0.
+\end{aligned}
+\label{Eq:III:6:31}
+\end{equation}
+These four equations are enough to determine all our unknowns: [eq], [eq],
+[eq], and [eq]. It is not hard to do. Look at the second and fourth
+equations. Deduce that [eq], which means that [eq] or else that
+[eq]. But [eq] is out, because then the first equation wouldn’t be
+right. So [eq]. Using this, we have immediately that [eq] and
+that [eq]. Now we have everything in terms of [eq]. Putting, say,
+the second equation all in terms of [eq], we have
+\begin{equation*}
+a^2-\frac{1}{4a^2}=0\quad
+\text{or}\quad
+a^4=\frac{1}{4}.
+\end{equation*}
+This equation has four different solutions, but only two of them give
+the standard value for the determinant. We might as well
+take [eq]; then 5 
+\begin{alignat*}{2}
+a&=1/\sqrt{2},&\quad
+b&=1/\sqrt{2},\\\\
+c&=-1/\sqrt{2},&\quad
+d&=1/\sqrt{2}.
+\end{alignat*}
+
+In other words, for two apparatuses [eq] and [eq], with [eq] rotated with
+respect to [eq] by [eq] about the [eq]-axis, the transformation is
+\begin{equation}
+\left.
+\begin{aligned}
+C_+'&=\frac{1}{\sqrt{2}}\,(C_++C_-)\\
+\\
+C_-'&=\frac{1}{\sqrt{2}}\,(-C_++C_-)
+\end{aligned}
+\right\}
+\text{[eq] about [eq]}.
+\label{Eq:III:6:32}
+\end{equation}
+
+We can, of course, solve these equations for [eq] and [eq], which will
+give us the transformation for a rotation of minus [eq]
+about [eq]. Changing the primes around, we would conclude that
+\begin{equation}
+\left.
+\begin{aligned}
+C_+'&=\frac{1}{\sqrt{2}}\,(C_+-C_-)\\
+\\
+C_-'&=\frac{1}{\sqrt{2}}\,(C_++C_-)
+\end{aligned}
+\right\}
+\text{[eq] about [eq]}.
+\label{Eq:III:6:33}
+\end{equation}
+
+You may be thinking: “This is getting ridiculous. What are they going
+to do next, [eq] around [eq], then [eq] about [eq], and so on,
+forever?” No, we are almost finished. With just two of the
+transformations we have—[eq] about [eq], and an arbitrary angle
+about [eq] (which we did first if you remember)—we can generate any
+rotation at all.
+
+As an illustration, suppose that we want the angle [eq] around [eq].
+We know how to deal with the angle [eq] around [eq], but now we want
+it around [eq]. How do we get it? First, we turn the axis [eq] down
+onto [eq]—which is a rotation of [eq] about [eq], as shown in
+Fig. 6-8 . Then we turn through the angle [eq]
+around [eq]. Then we rotate [eq] about [eq]. The net result of
+the three rotations is the same as turning around [eq] by the
+angle [eq]. It is a property of space.
+
+(These facts of the combinations of rotations, and what they produce,
+are hard to grasp intuitively. It is rather strange, because we live
+in three dimensions, but it is hard for us to appreciate what happens
+if we turn this way and then that way. Perhaps, if we were fish or
+birds and had a real appreciation of what happens when we turn
+somersaults in space, we could more easily appreciate such things.)
+
+Anyway, let’s work out the transformation for a rotation by [eq]
+around the [eq]-axis by using what we know. From the first rotation
+by [eq] around [eq] the amplitudes go according to
+Eq. ( 6.32 ). Calling the rotated axes [eq], [eq], and [eq],
+the next rotation by the angle [eq] around [eq] takes us to a frame
+[eq], [eq], [eq], for which
+\begin{equation*}
+C_+''=e^{i\alpha/2}C_+',\quad
+C_-''=e^{-i\alpha/2}C_-'.
+\end{equation*}
+The last rotation of [eq] about [eq] takes us to [eq],
+[eq], [eq]; by ( 6.33 ),
+\begin{equation*}
+C_+'''=\frac{1}{\sqrt{2}}\,(C_+''-C_-''),\quad
+C_-'''=\frac{1}{\sqrt{2}}\,(C_+''+C_-'').
+\end{equation*}
+Combining these last two transformations, we get
+\begin{align*}
+C_+'''&=\frac{1}{\sqrt{2}}\,
+(e^{+i\alpha/2}C_+'-e^{-i\alpha/2}C_-'),\\
+\\
+C_-'''&=\frac{1}{\sqrt{2}}\,
+(e^{+i\alpha/2}C_+'+e^{-i\alpha/2}C_-').
+\end{align*}
+Using Eqs. ( 6.32 ) for [eq] and [eq], we get the
+complete transformation:
+\begin{align*}
+C_+'''&=\tfrac{1}{2}
+\{e^{+i\alpha/2}(C_++C_-)-e^{-i\alpha/2}(-C_++C_-)\},\\
+\\
+C_-'''&=\tfrac{1}{2}
+\{e^{+i\alpha/2}(C_++C_-)+e^{-i\alpha/2}(-C_++C_-)\}.
+\end{align*}
+We can put these formulas in a simpler form by remembering that
+\begin{equation*}
+e^{i\theta}+e^{-i\theta}=2\cos\theta,\quad\text{and}\quad e^{i\theta}-e^{-i\theta}=2i\sin\theta.
+\end{equation*}
+We get
+\begin{equation}
+\left.
+\begin{alignedat}{3}
+C_+'''&=\phantom{i}\biggl(\!&\cos\frac{\alpha}{2}&\biggr)C_+\!+
+i\biggl(\!&\sin\frac{\alpha}{2}&\biggr)C_-\\
+\\[1ex]
+C_-'''&=i\biggl(\!&\sin\frac{\alpha}{2}&\biggr)C_+\!+
+\phantom{i}\biggl(\!&\cos\frac{\alpha}{2}&\biggr)C_-
+\end{alignedat}
+\!\! % ebook remove
+\right\}
+\text{[eq] about [eq]}.
+\label{Eq:III:6:34}
+\end{equation}
+Here is our transformation for a rotation about the [eq]-axis by
+ any angle [eq]. It is only a little more complicated than
+the others.
+
+Now we can see how to do any angle at all. First, notice that
+any relative orientation of two coordinate frames can be described in
+terms of three angles, as shown in Fig. 6-9 . If we
+have a set of axes [eq], [eq], and [eq] oriented in any way at all
+with respect to [eq], [eq], and [eq], we can describe the relationship
+between the two frames by means of the three Euler angles [eq], [eq],
+and [eq], which define three successive rotations that
+will bring the [eq], [eq], [eq] frame into the [eq], [eq], [eq]
+frame. Starting at [eq], [eq], [eq], we rotate our frame through the
+angle [eq] about the [eq]-axis, bringing the [eq]-axis to the
+line [eq]. Then, we rotate by [eq] about this temporary [eq]-axis, to
+bring [eq] down to [eq]. Finally, a rotation about the new [eq]-axis
+(that is, [eq]) by the angle [eq] will bring the [eq]-axis into [eq]
+and the [eq]-axis into [eq]. 6 We know the transformations for each of the three
+rotations—they are given in ( 6.19 )
+and ( 6.34 ). Combining them in the proper order, we get
+\begin{equation}
+\begin{alignedat}{3}
+C_+'&=\phantom{i}&\cos\frac{\alpha}{2}&e^{i(\beta+\gamma)/2}C_+\!+
+i&\sin\frac{\alpha}{2}&e^{-i(\beta-\gamma)/2}C_-,\\
+\\
+C_-'&=i&\sin\frac{\alpha}{2}&e^{i(\beta-\gamma)/2}C_+\!+
+\phantom{i}&\cos\frac{\alpha}{2}&e^{-i(\beta+\gamma)/2}C_-.
+\end{alignedat}
+\label{Eq:III:6:35}
+\end{equation}
+
+So just starting from some assumptions about the properties of space,
+we have derived the amplitude transformation for any rotation at
+all. That means that if we know the amplitudes for any state of a spin
+one-half particle to go into the two beams of a Stern-Gerlach
+apparatus [eq], whose axes are [eq], [eq], and [eq], we can calculate what
+fraction would go into either beam of an apparatus [eq] with the axes
+[eq], [eq], and [eq]. In other words, if we have a state [eq] of a
+spin one-half particle, whose amplitudes are [eq]
+and [eq] to be “up” and “down” with respect to
+the [eq]-axis of the [eq], [eq], [eq] frame, we also know the amplitudes
+[eq] and [eq] to be “up” and “down” with respect to the
+[eq]-axis of any other frame [eq], [eq], [eq]. The four coefficients
+in Eqs. ( 6.35 ) are the terms of the “transformation
+matrix” with which we can project the amplitudes of a spin one-half
+particle into any other coordinate system.
+
+We will now work out a few examples to show you how it all
+works. Let’s take the following simple question. We put a spin
+one-half atom through a Stern-Gerlach apparatus that transmits only the
+[eq] state. What is the amplitude that it will be in the [eq] state? 
+The [eq] axis is the same as the [eq] axis of a system
+rotated [eq] about the [eq]-axis. For this problem, then, it is
+simplest to use Eqs. ( 6.32 )—although you could, of
+course, use the complete equations of ( 6.35 ). Since
+[eq] and [eq], we get [eq]. The probabilities are
+the absolute square of these amplitudes; there is a [eq] percent
+chance that the particle will go through an apparatus that selects the
+[eq] state. If we had asked about the [eq] state the amplitude
+would have been [eq], which also gives a
+probability [eq]—as you would expect from the symmetry of space. So if a
+particle is in the [eq] state, it is equally likely to be in [eq]
+or [eq], but with opposite phase.
+
+There’s no prejudice in [eq] either. A particle in the [eq] state has a
+[eq]–[eq] chance of being in [eq] or in [eq]. However, for these
+(using the formula for rotating [eq] about [eq]), the amplitudes
+are [eq] and [eq]. In this case, the two amplitudes
+have a phase difference of [eq] instead of [eq], as they
+did for the [eq] and [eq]. In fact, that’s how the distinction
+between [eq] and [eq] shows up.
+
+As our final example, suppose that we know that a spin one-half
+particle is in a state [eq] such that it is polarized “up” along
+some axis [eq], defined by the angles [eq] and [eq] in
+Fig. 6-10 . We want to know the amplitude [eq] that the
+particle is “up” along [eq] and the amplitude [eq] that it is “down” 
+along [eq]. We can find these amplitudes by imagining that [eq] is the
+[eq]-axis of a system whose [eq]-axis lies in some arbitrary
+direction—say in the plane formed by [eq] and [eq]. We can then bring
+the frame of [eq] into [eq], [eq], [eq] by three rotations. First, we make a
+rotation by [eq] about the axis [eq], which brings the [eq]-axis into
+the line [eq] in the figure. Then we rotate by [eq] about line [eq]
+(the new [eq]-axis of frame [eq]) to bring [eq] to the [eq]-axis. Finally,
+we rotate by the angle [eq] about [eq]. Remembering that we
+have only a [eq] state with respect to [eq], we get
+\begin{equation}
+\label{Eq:III:6:36}
+C_+=\cos\frac{\theta}{2}\,e^{-i\phi/2},\quad
+C_-=\sin\frac{\theta}{2}\,e^{+i\phi/2}.
+\end{equation}
+
+We would like, finally, to summarize the results of this chapter in a
+form that will be useful for our later work. First, we remind you that
+our primary result in Eqs. ( 6.35 ) can be written in
+another notation. Note that Eqs. ( 6.35 ) mean just the
+same thing as Eq. ( 6.4 ). That is, in
+Eqs. ( 6.35 ) the coefficients of [eq]
+and [eq] are just the amplitudes [eq] of
+Eq. ( 6.4 )—the amplitudes that a particle in the
+[eq]-state with respect to [eq] will be in the [eq]-state with respect
+to [eq] (when the orientation of [eq] with respect to [eq] is given in terms
+of the angles [eq], [eq], and [eq]). We also called them
+[eq] in Eq. ( 6.6 ). (We have a plethora of
+notations!) For example, [eq] is the
+coefficient of [eq] in the formula for [eq], namely,
+[eq]. We can, therefore, make a
+summary of our results in the form of a table, as we have done in
+Table 6–1 .
+
+It will occasionally be handy to have these amplitudes already worked
+out for some simple special cases. Let’s let [eq] stand for a
+rotation by the angle [eq] about the [eq]-axis. We can also let it
+stand for the corresponding rotation matrix (omitting the subscripts [eq]
+and [eq], which are to be implicitly understood). In the same spirit
+[eq] and [eq] will stand for rotations by the angle [eq]
+about the [eq]-axis or the [eq]-axis. We give in Table 6–2 
+the matrices—the tables of amplitudes [eq]—which
+project the amplitudes from the [eq]-frame into the [eq]-frame, where [eq]
+is obtained from [eq] by the rotation specified.

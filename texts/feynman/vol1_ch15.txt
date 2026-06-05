@@ -1,0 +1,787 @@
+The Feynman Lectures on Physics Vol. I Ch. 15: The Special Theory of Relativity
+===============================================================================
+
+Sections: 15–1 The principle of relativity | 15–2 The Lorentz transformation | 15–3 The Michelson-Morley experiment | 15–4 Transformation of time | 15–5 The Lorentz contraction | 15–6 Simultaneity | 15–7 Four-vectors | 15–8 Relativistic dynamics | 15–9 Equivalence of mass and energy
+
+
+
+For over 200 years the equations of motion enunciated by
+Newton were believed to describe
+nature correctly, and the first time that an error in these laws was
+discovered, the way to correct it was also discovered. Both the error
+and its correction were discovered by Einstein in 1905.
+
+Newton’s Second Law, which we have expressed by the equation
+\begin{equation*}
+F=d(mv)/dt,
+\end{equation*}
+was stated with the tacit assumption that [eq] is a constant, but we now
+know that this is not true, and that the mass of a body
+increases with velocity. In Einstein’s corrected formula [eq] has the value
+\begin{equation}
+\label{Eq:I:15:1}
+m=\frac{m_0}{\sqrt{1-v^2/c^2}},
+\end{equation}
+where the “rest mass” [eq] represents the mass of a body that is not
+moving and [eq] is the speed of light, which is about
+[eq] [eq] or about
+[eq] [eq]
+
+For those who want to learn just enough about it so they can solve
+problems, that is all there is to the theory of relativity—it just
+changes Newton’s laws by introducing
+a correction factor to the mass. From the formula itself it is easy to
+see that this mass increase is very small in ordinary circumstances. If
+the velocity is even as great as that of a satellite, which goes around
+the earth at [eq] mi/sec, then [eq]: putting this value
+into the formula shows that the correction to the mass is only one part
+in two to three billion, which is nearly impossible to observe.
+Actually, the correctness of the formula has been amply confirmed by the
+observation of many kinds of particles, moving at speeds ranging up to
+practically the speed of light. However, because the effect is
+ordinarily so small, it seems remarkable that it was discovered
+theoretically before it was discovered experimentally. Empirically, at a
+sufficiently high velocity, the effect is very large, but it was not
+discovered that way. Therefore it is interesting to see how a law that
+involved so delicate a modification (at the time when it was first
+discovered) was brought to light by a combination of experiments and
+physical reasoning. Contributions to the discovery were made by a number
+of people, the final result of whose work was
+Einstein’s discovery.
+
+There are really two Einstein
+theories of relativity. This chapter is concerned with the Special
+Theory of Relativity, which dates from 1905. In 1915
+Einstein published an
+additional theory, called the General Theory of Relativity. This latter
+theory deals with the extension of the Special Theory to the case of the
+law of gravitation; we shall not discuss the General Theory here.
+
+The principle of relativity was first stated by Newton, in one of his corollaries to the laws of motion:
+“The motions of bodies included in a given space are the same among
+themselves, whether that space is at rest or moves uniformly forward in
+a straight line.” This means, for example, that if a space ship is
+drifting along at a uniform speed, all experiments performed in the
+space ship and all the phenomena in the space ship will appear the same
+as if the ship were not moving, provided, of course, that one does not
+look outside. That is the meaning of the principle of relativity. This
+is a simple enough idea, and the only question is whether it is
+ true that in all experiments performed inside a moving system the
+laws of physics will appear the same as they would if the system were
+standing still. Let us first investigate whether Newton’s
+laws appear the same in the moving system.
+
+Suppose that Moe is moving in the [eq]-direction with a uniform
+velocity [eq], and he measures the position of a certain point, shown
+in Fig.  15–1 . He designates the “[eq]-distance” of the
+point in his coordinate system as [eq]. Joe is at rest, and measures the
+position of the same point, designating its [eq]-coordinate in his system
+as [eq]. The relationship of the coordinates in the two systems is clear
+from the diagram. After time [eq] Moe’s origin has moved a distance [eq],
+and if the two systems originally coincided,
+\begin{equation}
+\begin{aligned}
+x'&=x-ut,\\
+y'&=y,\\
+z'&=z,\\
+t'&=t.
+\end{aligned}
+\label{Eq:I:15:2}
+\end{equation}
+If we substitute this transformation of coordinates into Newton’s
+laws we find that these laws transform to
+the same laws in the primed system; that is, the laws of Newton are of
+the same form in a moving system as in a stationary system, and
+therefore it is impossible to tell, by making mechanical experiments,
+whether the system is moving or not.
+
+The principle of relativity has been used in mechanics for a long time.
+It was employed by various people, in particular
+Huygens, to obtain the rules
+for the collision of billiard balls, in much the same way as we used it
+in Chapter  10 to discuss the conservation of momentum. In
+the 19th century interest in it was heightened as the result of
+investigations into the phenomena of electricity, magnetism, and light.
+A long series of careful studies of these phenomena by many people
+culminated in Maxwell’s equations of the electromagnetic field,
+which describe electricity, magnetism, and light in one uniform system.
+However, the Maxwell equations did not 
+seem to obey the principle of relativity. That is, if we transform
+Maxwell’s equations by the substitution of
+equations ( 15.2 ), their form does not remain the same; 
+therefore, in a moving space ship the electrical and optical phenomena
+should be different from those in a stationary ship. Thus one could use
+these optical phenomena to determine the speed of the ship; in
+particular, one could determine the absolute speed of the ship by making
+suitable optical or electrical measurements. One of the consequences of
+Maxwell’s equations is that if there is a disturbance in the
+field such that light is generated, these electromagnetic waves go out
+in all directions equally and at the same speed [eq], or
+[eq] mi/sec. Another consequence of the equations is that if the
+source of the disturbance is moving, the light emitted goes through
+space at the same speed [eq]. This is analogous to the case of sound, the
+speed of sound waves being likewise independent of the motion of the
+source.
+
+This independence of the motion of the source, in the case of light,
+brings up an interesting problem:
+
+Suppose we are riding in a car that is going at a speed [eq], and light
+from the rear is going past the car with speed [eq]. Differentiating the
+first equation in ( 15.2 ) gives
+\begin{equation*}
+dx'/dt=dx/dt-u,
+\end{equation*}
+which means that according to the Galilean
+transformation the apparent speed
+of the passing light, as we measure it in the car, should not be [eq] but
+should be [eq]. For instance, if the car is going [eq] mi/sec,
+and the light is going [eq] mi/sec, then apparently the light
+going past the car should go [eq] mi/sec. In any case, by
+measuring the speed of the light going past the car (if the
+Galilean transformation is
+correct for light), one could determine the speed of the car. A number
+of experiments based on this general idea were performed to determine
+the velocity of the earth, but they all failed—they gave no
+velocity at all . We shall discuss one of these experiments in detail,
+to show exactly what was done and what was the matter; something
+ was the matter, of course, something was wrong with the equations
+of physics. What could it be?
+
+When the failure of the equations of physics in the above case came to
+light, the first thought that occurred was that the trouble must lie in
+the new Maxwell equations of electrodynamics,
+which were only 20 years old at the time. It seemed almost obvious that
+these equations must be wrong, so the thing to do was to change them in
+such a way that under the Galilean
+transformation the principle of
+relativity would be satisfied. When this was tried, the new terms that
+had to be put into the equations led to predictions of new electrical
+phenomena that did not exist at all when tested experimentally, so this
+attempt had to be abandoned. Then it gradually became apparent that
+Maxwell’s laws of electrodynamics were correct, and the trouble must be
+sought elsewhere.
+
+In the meantime, H. A. Lorentz noticed a remarkable and curious thing when he made the
+following substitutions in the Maxwell equations:
+\begin{equation}
+\begin{aligned}
+x'&=\frac{x-ut}{\sqrt{1-u^2/c^2}},\\
+y'&=y,\\[2ex]
+z'&=z,\\
+t'&=\frac{t-ux/c^2}{\sqrt{1-u^2/c^2}},
+\end{aligned}
+\label{Eq:I:15:3}
+\end{equation}
+namely, Maxwell’s equations remain in the same form when this
+transformation is applied to them! Equations ( 15.3 ) are known
+as a Lorentz transformation . Einstein, following a suggestion originally made by
+Poincaré, then proposed that
+ all the physical laws should be of such a kind that they
+ remain unchanged under a Lorentz transformation . In other words,
+we should change, not the laws of electrodynamics, but the laws of
+mechanics. How shall we change Newton’s laws so that they will remain unchanged by the Lorentz
+transformation? If this goal is set, we then have to rewrite Newton’s
+equations in such a way that the conditions we have imposed are
+satisfied. As it turned out, the only requirement is that the mass [eq]
+in Newton’s equations must be replaced by the form shown in
+Eq. ( 15.1 ). When this change is made, Newton’s
+laws and the laws of electrodynamics will
+harmonize. Then if we use the Lorentz transformation in comparing Moe’s
+measurements with Joe’s, we shall never be able to detect whether either
+is moving, because the form of all the equations will be the same in
+both coordinate systems!
+
+It is interesting to discuss what it means that we replace the old
+transformation between the coordinates and time with a new one, because
+the old one (Galilean) seems to be self-evident, and the new one
+(Lorentz) looks peculiar. We wish to know whether it is logically and
+experimentally possible that the new, and not the old, transformation
+can be correct. To find that out, it is not enough to study the laws of
+mechanics but, as Einstein did,
+we too must analyze our ideas of space and time in order
+to understand this transformation. We shall have to discuss these ideas
+and their implications for mechanics at some length, so we say in
+advance that the effort will be justified, since the results agree with
+experiment.
+
+As mentioned above, attempts were made to determine the absolute
+velocity of the earth through the hypothetical “ether” that was
+supposed to pervade all space. The most famous of these experiments is
+one performed by Michelson
+and Morley in 1887. It was 18
+years later before the negative results of the experiment were finally
+explained, by Einstein.
+
+The Michelson-Morley experiment was performed with an apparatus like
+that shown schematically in Fig.  15–2 . This apparatus is
+essentially comprised of a light source [eq], a partially silvered glass
+plate [eq], and two mirrors [eq] and [eq], all mounted on a rigid base. The
+mirrors are placed at equal distances [eq] from [eq]. The plate [eq] splits
+an oncoming beam of light, and the two resulting beams continue in
+mutually perpendicular directions to the mirrors, where they are
+reflected back to [eq]. On arriving back at [eq], the two beams are
+recombined as two superposed beams, [eq] and [eq]. If the time taken for
+the light to go from [eq] to [eq] and back is the same as the time from
+[eq] to [eq] and back, the emerging beams [eq] and [eq] will be in phase and
+will reinforce each other, but if the two times differ slightly, the
+beams will be slightly out of phase and interference will result. If the
+apparatus is “at rest” in the ether, the times should be precisely
+equal, but if it is moving toward the right with a velocity [eq], there
+should be a difference in the times. Let us see why.
+
+First, let us calculate the time required for the light to go from [eq]
+to [eq] and back. Let us say that the time for light to go from plate [eq]
+to mirror [eq] is [eq], and the time for the return is [eq]. Now, while
+the light is on its way from [eq] to the mirror, the apparatus moves a
+distance [eq], so the light must traverse a distance [eq], at the
+speed [eq]. We can also express this distance as [eq], so we have
+\begin{equation*}
+ct_1=L+ut_1,\quad
+\text{or}\quad
+t_1=L/(c-u).
+\end{equation*}
+(This result is also obvious from the point of view that the velocity of
+light relative to the apparatus is [eq], so the time is the
+length [eq] divided by [eq].) In a like manner, the time [eq] can be
+calculated. During this time the plate [eq] advances a distance [eq],
+so the return distance of the light is [eq]. Then we have
+\begin{equation*}
+ct_2=L-ut_2,\quad
+\text{or}\quad
+t_2=L/(c+u).
+\end{equation*}
+Then the total time is
+\begin{equation*}
+t_1+t_2=2Lc/(c^2-u^2).
+\end{equation*}
+For convenience in later comparison of times we write this as
+\begin{equation}
+\label{Eq:I:15:4}
+t_1+t_2=\frac{2L/c}{1-u^2/c^2}.
+\end{equation}
+
+Our second calculation will be of the time [eq] for the light to go
+from [eq] to the mirror [eq]. As before, during time [eq] the mirror [eq]
+moves to the right a distance [eq] to the position [eq]; in the same
+time, the light travels a distance [eq] along the hypotenuse of a
+triangle, which is [eq]. For this right triangle we have
+\begin{equation*}
+(ct_3)^2 = L^2 + (ut_3)^2
+\end{equation*}
+or
+\begin{equation*}
+L^2 = c^2t_3^2 - u^2t_3^2 = (c^2 - u^2)t_3^2,
+\end{equation*}
+from which we get
+\begin{equation*}
+t_3=L/\sqrt{c^2-u^2}.
+\end{equation*}
+For the return trip from [eq] the distance is the same, as can be seen
+from the symmetry of the figure; therefore the return time is also the
+same, and the total time is [eq]. With a little rearrangement of the
+form we can write
+\begin{equation}
+\label{Eq:I:15:5}
+2t_3=\frac{2L}{\sqrt{c^2-u^2}}=\frac{2L/c}{\sqrt{1-u^2/c^2}}.
+\end{equation}
+
+We are now able to compare the times taken by the two beams of light. In
+expressions ( 15.4 ) and ( 15.5 ) the numerators are
+identical, and represent the time that would be taken if the apparatus
+were at rest. In the denominators, the term [eq] will be small,
+unless [eq] is comparable in size to [eq]. The denominators represent the
+modifications in the times caused by the motion of the apparatus. And
+behold, these modifications are not the same —the time to go
+to [eq] and back is a little less than the time to [eq] and back, even
+though the mirrors are equidistant from [eq], and all we have to do is to
+measure that difference with precision.
+
+Here a minor technical point arises—suppose the two lengths [eq] are
+not exactly equal? In fact, we surely cannot make them exactly equal. In
+that case we simply turn the apparatus [eq] degrees, so that [eq] is in
+the line of motion and [eq] is perpendicular to the
+motion. Any small difference in length then becomes unimportant, and
+what we look for is a shift in the interference fringes when we
+rotate the apparatus.
+
+In carrying out the experiment, Michelson and Morley
+oriented the apparatus so that the line [eq] was nearly parallel to the
+earth’s motion in its orbit (at certain times of the day and night).
+This orbital speed is about [eq] miles per second, and any “ether
+drift” should be at least that much at some time of the day or night
+and at some time during the year. The apparatus was amply sensitive to
+observe such an effect, but no time difference was found—the velocity
+of the earth through the ether could not be detected. The result of the
+experiment was null.
+
+The result of the Michelson-Morley experiment was very puzzling and most
+disturbing. The first fruitful idea for finding a way out of the impasse
+came from Lorentz. He
+suggested that material bodies contract when they are moving, and that
+this foreshortening is only in the direction of the motion, and also,
+that if the length is [eq] when a body is at rest, then when it moves
+with speed [eq] parallel to its length, the new length, which we
+call [eq] ([eq]-parallel), is given by
+\begin{equation}
+\label{Eq:I:15:6}
+L_\parallel=L_0\sqrt{1-u^2/c^2}.
+\end{equation}
+When this modification is applied to the Michelson-Morley
+interferometer apparatus the distance from [eq]
+to [eq] does not change, but the distance from [eq] to [eq] is shortened
+to [eq]. Therefore Eq. ( 15.5 ) is not
+changed, but the [eq] of Eq. ( 15.4 ) must be changed in
+accordance with Eq. ( 15.6 ). When this is done we obtain
+\begin{equation}
+\label{Eq:I:15:7}
+t_1+t_2=\frac{(2L/c)\sqrt{1-u^2/c^2}}{1-u^2/c^2}=
+\frac{2L/c}{\sqrt{1-u^2/c^2}}.
+\end{equation}
+Comparing this result with Eq. ( 15.5 ), we see that $t_1 + t_2
+= 2t_3$. So if the apparatus shrinks in the manner just described, we
+have a way of understanding why the Michelson-Morley experiment gives no
+effect at all. Although the contraction hypothesis successfully
+accounted for the negative result of the experiment, it was open to the
+objection that it was invented for the express purpose of explaining
+away the difficulty, and was too artificial. However, in many other
+experiments to discover an ether wind, similar difficulties arose, until
+it appeared that nature was in a “conspiracy” to thwart man by
+introducing some new phenomenon to undo every phenomenon that he thought
+would permit a measurement of [eq].
+
+It was ultimately recognized, as Poincaré pointed out, that a complete conspiracy is itself a
+law of nature! Poincaré then
+proposed that there is such a law of nature, that it is not
+possible to discover an ether wind by any experiment; that is,
+there is no way to determine an absolute velocity.
+
+In checking out whether the contraction idea is in harmony with the
+facts in other experiments, it turns out that everything is correct
+provided that the times are also modified, in the manner
+expressed in the fourth equation of the set ( 15.3 ). That is
+because the time [eq], calculated for the trip from [eq] to [eq] and
+back, is not the same when calculated by a man performing the experiment
+in a moving space ship as when calculated by a stationary observer who
+is watching the space ship. To the man in the ship the time is
+simply [eq], but to the other observer it is $(2L/c)/\sqrt{ 1 -
+u^2/c^2}$ (Eq.  15.5 ). In other words, when the outsider sees
+the man in the space ship lighting a cigar, all the actions appear to be
+slower than normal, while to the man inside, everything moves at a
+normal rate. So not only must the lengths shorten, but also the
+time-measuring instruments (“clocks”) must apparently slow down. That
+is, when the clock in the space ship records [eq] second elapsed, as seen
+by the man in the ship, it shows [eq] second to the
+man outside.
+
+This slowing of the clocks in a moving system is a very peculiar
+phenomenon, and is worth an explanation. In order to understand this, we
+have to watch the machinery of the clock and see what happens when it is
+moving. Since that is rather difficult, we shall take a very simple kind
+of clock. The one we choose is rather a silly kind of clock, but it will
+work in principle: it is a rod (meter stick) with a mirror at each end,
+and when we start a light signal between the mirrors, the light keeps
+going up and down, making a click every time it comes down, like a
+standard ticking clock. We build two such clocks, with exactly the same
+lengths, and synchronize them by starting them together; then they agree
+always thereafter, because they are the same in length, and light always
+travels with speed [eq]. We give one of these clocks to the man to take
+along in his space ship, and he mounts the rod perpendicular to the
+direction of motion of the ship; then the length of the rod will not
+change. How do we know that perpendicular lengths do not change? The men
+can agree to make marks on each other’s [eq]-meter stick as they pass
+each other. By symmetry, the two marks must come at the same [eq]-
+and [eq]-coordinates, since otherwise, when they get together to compare
+results, one mark will be above or below the other, and so we could tell
+who was really moving.
+
+Now let us see what happens to the moving clock. Before the man took it
+aboard, he agreed that it was a nice, standard clock, and when he goes
+along in the space ship he will not see anything peculiar. If he did, he
+would know he was moving—if anything at all changed because of the
+motion, he could tell he was moving. But the principle of relativity
+says this is impossible in a uniformly moving system, so nothing has
+changed. On the other hand, when the external observer looks at the
+clock going by, he sees that the light, in going from mirror to mirror,
+is “really” taking a zigzag path, since the rod is moving sidewise all
+the while. We have already analyzed such a zigzag motion in connection
+with the Michelson-Morley experiment.
+If in a given time the rod moves forward a distance proportional to [eq]
+in Fig.  15–3 , the distance the light travels in the same
+time is proportional to [eq], and the vertical distance is therefore
+proportional to [eq].
+
+That is, it takes a longer time for light to go from end to end
+in the moving clock than in the stationary clock. Therefore the apparent
+time between clicks is longer for the moving clock, in the same
+proportion as shown in the hypotenuse of the triangle (that is the
+source of the square root expressions in our equations). From the figure
+it is also apparent that the greater [eq] is, the more slowly the moving
+clock appears to run. Not only does this particular kind of clock run
+more slowly, but if the theory of relativity is correct, any other
+clock, operating on any principle whatsoever, would also appear to run
+slower, and in the same proportion—we can say this without further
+analysis. Why is this so?
+
+To answer the above question, suppose we had two other clocks made
+exactly alike with wheels and gears, or perhaps based on radioactive
+decay, or something else. Then we adjust these clocks so they both run
+in precise synchronism with our first clocks. When light goes up and
+back in the first clocks and announces its arrival with a click, the new
+models also complete some sort of cycle, which they simultaneously
+announce by some doubly coincident flash, or bong, or other signal. One
+of these clocks is taken into the space ship, along with the first kind.
+Perhaps this clock will not run slower, but will continue to keep
+the same time as its stationary counterpart, and thus disagree with the
+other moving clock. Ah no, if that should happen, the man in the ship
+could use this mismatch between his two clocks to determine the speed of
+his ship, which we have been supposing is impossible. We need not
+know anything about the machinery of the new clock that might cause the
+effect—we simply know that whatever the reason, it will appear to run
+slow, just like the first one.
+
+Now if all moving clocks run slower, if no way of measuring time
+gives anything but a slower rate, we shall just have to say, in a
+certain sense, that time itself appears to be slower in a space
+ship. All the phenomena there—the man’s pulse rate, his thought
+processes, the time he takes to light a cigar, how long it takes to grow
+up and get old—all these things must be slowed down in the same
+proportion, because he cannot tell he is moving. The biologists and
+medical men sometimes say it is not quite certain that the time it takes
+for a cancer to develop will be longer in a space ship, but from the
+viewpoint of a modern physicist it is nearly certain; otherwise one
+could use the rate of cancer development to determine the speed of the
+ship!
+
+A very interesting example of the slowing of time with motion is
+furnished by muons, which are particles that disintegrate
+spontaneously after an average lifetime of [eq] sec. They
+come to the earth in cosmic rays, and can also be produced artificially
+in the laboratory. Some of them disintegrate in midair, but the
+remainder disintegrate only after they encounter a piece of material and
+stop. It is clear that in its short lifetime a muon cannot travel, even
+at the speed of light, much more than [eq] meters. But although the
+muons are created at the top of the atmosphere, some [eq] kilometers up,
+yet they are actually found in a laboratory down here, in cosmic rays.
+How can that be? The answer is that different muons move at various
+speeds, some of which are very close to the speed of light. While from
+their own point of view they live only about [eq] [eq]sec, from our
+point of view they live considerably longer—enough longer that they
+may reach the earth. The factor by which the time is increased has
+already been given as [eq]. The average life has been
+measured quite accurately for muons of different velocities, and the
+values agree closely with the formula.
+
+We do not know why the muon disintegrates or what its machinery is, but
+we do know its behavior satisfies the principle of relativity. That is
+the utility of the principle of relativity—it permits us to make
+predictions, even about things that otherwise we do not know much about.
+For example, before we have any idea at all about what makes the muon
+disintegrate, we can still predict that when it is moving at nine-tenths
+of the speed of light, the apparent length of time that it lasts is
+[eq] sec; and our prediction
+works—that is the good thing about it.
+
+Now let us return to the Lorentz transformation ( 15.3 ) and
+try to get a better understanding of the relationship between
+the [eq] and the [eq] coordinate systems, which we
+shall call the [eq] and [eq] systems, or Joe and Moe systems,
+respectively. We have already noted that the first equation is based on
+the Lorentz suggestion of contraction along the [eq]-direction; how can
+we prove that a contraction takes place? In the Michelson-Morley
+experiment, we now appreciate that
+the transverse arm [eq] cannot change length, by the principle of
+relativity; yet the null result of the experiment demands that the
+ times must be equal. So, in order for the experiment to give a
+null result, the longitudinal arm [eq] must appear shorter, by the
+square root [eq]. What does this contraction mean, in
+terms of measurements made by Joe and Moe? Suppose that Moe, moving
+with the [eq] system in the [eq]-direction, is measuring the
+[eq]-coordinate of some point with a meter stick. He lays the stick down
+[eq] times, so he thinks the distance is [eq] meters. From the viewpoint
+of Joe in the [eq] system, however, Moe is using a foreshortened ruler,
+so the “real” distance measured is [eq] meters. Then
+if the [eq] system has travelled a distance [eq] away from the
+[eq] system, the [eq] observer would say that the same point, measured in
+his coordinates, is at a distance [eq], or
+\begin{equation*}
+x'=\frac{x-ut}{\sqrt{1-u^2/c^2}},
+\end{equation*}
+which is the first equation of the Lorentz transformation.
+
+In an analogous way, because of the difference in time scales, the
+denominator expression is introduced into the fourth equation of the
+Lorentz transformation. The most interesting term in that equation is
+the [eq] in the numerator, because that is quite new and unexpected.
+Now what does that mean? If we look at the situation carefully we see
+that events that occur at two separated places at the same time, as seen
+by Moe in [eq], do not happen at the same time as viewed by Joe
+in [eq]. If one event occurs at point [eq] at time [eq] and the other
+event at [eq] and [eq] (the same time), we find that the two
+corresponding times [eq] and [eq] differ by an amount
+\begin{equation*}
+t_2'-t_1'=\frac{u(x_1-x_2)/c^2}{\sqrt{1-u^2/c^2}}.
+\end{equation*}
+This circumstance is called “failure of simultaneity at a distance,”
+and to make the idea a little clearer let us consider the following
+experiment.
+
+Suppose that a man moving in a space ship (system [eq]) has placed a
+clock at each end of the ship and is interested in making sure that the
+two clocks are in synchronism. How can the clocks be synchronized? There
+are many ways. One way, involving very little calculation, would be
+first to locate exactly the midpoint between the clocks. Then from this
+station we send out a light signal which will go both ways at the same
+speed and will arrive at both clocks, clearly, at the same time. This
+simultaneous arrival of the signals can be used to synchronize the
+clocks. Let us then suppose that the man in [eq] synchronizes his clocks
+by this particular method. Let us see whether an observer in system [eq]
+would agree that the two clocks are synchronous. The man in [eq] has a
+right to believe they are, because he does not know that he is moving.
+But the man in [eq] reasons that since the ship is moving forward, the
+clock in the front end was running away from the light signal, hence the
+light had to go more than halfway in order to catch up; the rear clock,
+however, was advancing to meet the light signal, so this distance was
+shorter. Therefore the signal reached the rear clock first, although the
+man in [eq] thought that the signals arrived simultaneously. We thus see
+that when a man in a space ship thinks the times at two locations are
+simultaneous, equal values of [eq] in his coordinate system must
+correspond to different values of [eq] in the other coordinate
+system!
+
+Let us see what else we can discover in the Lorentz transformation. It
+is interesting to note that the transformation between the [eq]’s
+and [eq]’s is analogous in form to the transformation of the [eq]’s
+and [eq]’s that we studied in Chapter  11 for a rotation of
+coordinates. We then had
+\begin{equation}
+\begin{alignedat}{4}
+&x'&&=x&&\cos\theta+y&&\sin\theta,\\
+&y'&&=y&&\cos\theta-x&&\sin\theta,
+\end{alignedat}
+\label{Eq:I:15:8}
+\end{equation}
+in which the new [eq] mixes the old [eq] and [eq], and the new [eq] also
+mixes the old [eq] and [eq]; similarly, in the Lorentz transformation we
+find a new [eq] which is a mixture of [eq] and [eq], and a new [eq] which
+is a mixture of [eq] and [eq]. So the Lorentz transformation is analogous
+to a rotation, only it is a “rotation” in space and time , which
+appears to be a strange concept. A check of the analogy to rotation can
+be made by calculating the quantity
+\begin{equation}
+\label{Eq:I:15:9}
+x'^2\!+y'^2\!+z'^2\!-c^2t'^2\!=x^2\!+y^2\!+z^2\!-c^2t^2\!.
+\end{equation}
+In this equation the first three terms on each side represent, in
+three-dimensional geometry, the square of the distance between a point
+and the origin (surface of a sphere) which remains unchanged (invariant)
+regardless of rotation of the coordinate axes. Similarly,
+Eq. ( 15.9 ) shows that there is a certain combination which
+includes time, that is invariant to a Lorentz transformation. Thus, the
+analogy to a rotation is complete, and is of such a kind that vectors,
+i.e., quantities involving “components” which transform the same way
+as the coordinates and time, are also useful in connection with
+relativity.
+
+Thus we contemplate an extension of the idea of vectors, which we have
+so far considered to have only space components, to include a time
+component. That is, we expect that there will be vectors with four
+components, three of which are like the components of an ordinary
+vector, and with these will be associated a fourth component, which is
+the analog of the time part.
+
+This concept will be analyzed further in the next chapters, where we
+shall find that if the ideas of the preceding paragraph are applied to
+momentum, the transformation gives three space parts that are like
+ordinary momentum components, and a fourth component, the time part,
+which is the energy .
+
+We are now ready to investigate, more generally, what form the laws of
+mechanics take under the Lorentz transformation. [We have thus far
+explained how length and time change, but not how we get the modified
+formula for [eq] (Eq.  15.1 ). We shall do this in the next
+chapter.] To see the consequences of Einstein’s modification of [eq] for Newtonian mechanics, we
+start with the Newtonian law that force is the rate of change of
+momentum, or
+\begin{equation*}
+\FLPF=d(m\FLPv)/dt.
+\end{equation*}
+Momentum is still given by [eq], but when we use the new [eq] this becomes
+\begin{equation}
+\label{Eq:I:15:10}
+\FLPp=m\FLPv=\frac{m_0\FLPv}{\sqrt{1-v^2/c^2}}.
+\end{equation}
+This is Einstein’s modification of Newton’s
+laws. Under this modification, if action
+and reaction are still equal (which they may not be in detail, but are
+in the long run), there will be conservation of momentum in the same way
+as before, but the quantity that is being conserved is not the
+old [eq] with its constant mass, but instead is the quantity shown
+in ( 15.10 ), which has the modified mass. When this change is
+made in the formula for momentum, conservation of momentum still works.
+
+Now let us see how momentum varies with speed. In Newtonian mechanics it
+is proportional to the speed and, according to ( 15.10 ), over a
+considerable range of speed, but small compared with [eq], it is nearly
+the same in relativistic mechanics, because the square-root expression
+differs only slightly from [eq]. But when [eq] is almost equal to [eq], the
+square-root expression approaches zero, and the momentum therefore goes
+toward infinity.
+
+What happens if a constant force acts on a body for a long time? In
+Newtonian mechanics the body keeps picking up speed until it goes faster
+than light. But this is impossible in relativistic mechanics. In
+relativity, the body keeps picking up, not speed, but momentum, which
+can continually increase because the mass is increasing. After a while
+there is practically no acceleration in the sense of a change of
+velocity, but the momentum continues to increase. Of course, whenever a
+force produces very little change in the velocity of a body, we say that
+the body has a great deal of inertia, and that is exactly what our
+formula for relativistic mass says (see Eq.  15.10 )—it says
+that the inertia is very great when [eq] is nearly as great as [eq]. As an
+example of this effect, to deflect the high-speed electrons in the
+synchrotron that is used here at Caltech, we need a
+magnetic field that is [eq] times stronger than would be expected on
+the basis of Newton’s laws. In other
+words, the mass of the electrons in the synchrotron
+is [eq] times as great as their normal mass, and is as great as that
+of a proton! That [eq] should be [eq] times [eq] means that $1 -
+v^2/c^2[eq]1/4{,}000{,}000[eq]v$ differs from
+[eq] by one part in [eq], so the electrons are getting pretty
+close to the speed of light. If the electrons and light were both to
+start from the synchrotron (estimated as [eq] feet
+away) and rush out to Bridge Lab, which would arrive first? The light,
+of course, because light always travels faster. 1 How much
+earlier? That is too hard to tell—instead, we tell by what distance
+the light is ahead: it is about [eq] of an inch, or
+[eq] the thickness of a piece of paper! When the electrons
+are going that fast their masses are enormous, but their speed cannot
+exceed the speed of light.
+
+Now let us look at some further consequences of relativistic change of
+mass. Consider the motion of the molecules in a small tank of gas. When
+the gas is heated, the speed of the molecules is increased, and
+therefore the mass is also increased and the gas is heavier. An
+approximate formula to express the increase of mass, for the case when
+the velocity is small, can be found by expanding $m_0/\sqrt{1 - v^2/c^2}
+= m_0(1 - v^2/c^2)^{-1/2}$ in a power series, using the binomial
+theorem. We get
+\begin{equation*}
+m_0(1 - v^2/c^2)^{-1/2}=m_0(1+\tfrac{1}{2}v^2/c^2+
+\tfrac{3}{8}v^4/c^4+\dotsb).
+\end{equation*}
+We see clearly from the formula that the series converges rapidly when
+[eq] is small, and the terms after the first two or three are negligible.
+So we can write
+\begin{equation}
+\label{Eq:I:15:11}
+m\cong m_0+\tfrac{1}{2}m_0v^2\biggl(\frac{1}{c^2}\biggr)
+\end{equation}
+in which the second term on the right expresses the increase of mass due
+to molecular velocity. When the temperature increases the [eq]
+increases proportionately, so we can say that the increase in mass is
+proportional to the increase in temperature. But
+since [eq] is the kinetic energy in the old-fashioned
+Newtonian sense, we can also say that the increase in mass of all this
+body of gas is equal to the increase in kinetic energy divided by [eq],
+or [eq].
+
+The above observation led Einstein to the suggestion that the mass of a body can be expressed
+more simply than by the formula ( 15.1 ), if we say that the
+mass is equal to the total energy content divided by [eq]. If
+Eq. ( 15.11 ) is multiplied by [eq] the result is
+\begin{equation}
+\label{Eq:I:15:12}
+mc^2=m_0c^2+\tfrac{1}{2}m_0v^2+\dotsb
+\end{equation}
+Here, the term on the left expresses the total energy of a body, and we
+recognize the last term as the ordinary kinetic energy.
+Einstein interpreted the large
+constant term, [eq], to be part of the total energy of the body, an
+intrinsic energy known as the “rest energy.”
+
+Let us follow out the consequences of assuming, with
+Einstein, that the energy
+of a body always equals [eq] . As an interesting result, we shall find
+the formula ( 15.1 ) for the variation of mass with speed,
+which we have merely assumed up to now. We start with the body at rest,
+when its energy is [eq]. Then we apply a force to the body, which
+starts it moving and gives it kinetic energy; therefore, since the
+energy has increased, the mass has increased—this is implicit in the
+original assumption. So long as the force continues, the energy and the
+mass both continue to increase. We have already seen
+(Chapter  13 ) that the rate of change of energy with time
+equals the force times the velocity, or
+\begin{equation}
+\label{Eq:I:15:13}
+\ddt{E}{t}=\FLPF\cdot \FLPv.
+\end{equation}
+We also have (Chapter  9 , Eq.  9.1 ) that $F =
+d(mv)/dt$. When these relations are put together with the definition
+of [eq], Eq. ( 15.13 ) becomes
+\begin{equation}
+\label{Eq:I:15:14}
+\ddt{(mc^2)}{t}=\FLPv\cdot\ddt{(m\FLPv)}{t}.
+\end{equation}
+We wish to solve this equation for [eq]. To do this we first use the
+mathematical trick of multiplying both sides by [eq], which changes the
+equation to
+\begin{equation}
+\label{Eq:I:15:15}
+c^2(2m)\,\ddt{m}{t}=2m\FLPv\cdot\ddt{(m\FLPv)}{t}.
+\end{equation}
+We need to get rid of the derivatives, which can be accomplished by
+integrating both sides. The quantity [eq] can be recognized as
+the time derivative of [eq], and [eq] is the
+time derivative of [eq]. So, Eq. ( 15.15 ) is the same as
+\begin{equation}
+\label{Eq:I:15:16}
+c^2\,\ddt{(m^2)}{t}=\ddt{(m^2v^2)}{t}.
+\end{equation}
+If the derivatives of two quantities are equal, the quantities
+themselves differ at most by a constant, say [eq]. This permits us to
+write
+\begin{equation}
+\label{Eq:I:15:17}
+m^2c^2=m^2v^2+C.
+\end{equation}
+We need to define the constant [eq] more explicitly. Since
+Eq. ( 15.17 ) must be true for all velocities, we can choose a
+special case where [eq], and say that in this case the mass is [eq].
+Substituting these values into Eq. ( 15.17 ) gives
+\begin{equation*}
+m_0^2c^2=0+C.
+\end{equation*}
+We can now use this value of [eq] in Eq. ( 15.17 ), which
+becomes
+\begin{equation}
+\label{Eq:I:15:18}
+m^2c^2=m^2v^2+m_0^2c^2.
+\end{equation}
+Dividing by [eq] and rearranging terms gives
+\begin{equation}
+m^2(1-v^2/c^2)=m_0^2,\notag
+\end{equation}
+from which we get
+\begin{equation}
+\label{Eq:I:15:19}
+m=m_0/\sqrt{1-v^2/c^2}.
+\end{equation}
+This is the formula ( 15.1 ), and is exactly what is necessary
+for the agreement between mass and energy in Eq. ( 15.12 ).
+
+Ordinarily these energy changes represent extremely slight changes in
+mass, because most of the time we cannot generate much energy from a
+given amount of material; but in an atomic bomb of explosive energy
+equivalent to [eq] kilotons of TNT, for example, it can be shown that
+the dirt after the explosion is lighter by [eq] gram than the initial
+mass of the reacting material, because of the energy that was released,
+i.e., the released energy had a mass of [eq] gram, according to the
+relationship [eq]. This theory of equivalence of mass
+and energy has been beautifully verified by experiments in which matter
+is annihilated—converted totally to energy: An electron and a positron
+come together at rest, each with a rest mass [eq]. When they come
+together they disintegrate and two gamma rays emerge, each with the
+measured energy of [eq]. This experiment furnishes a direct
+determination of the energy associated with the existence of the rest
+mass of a particle.

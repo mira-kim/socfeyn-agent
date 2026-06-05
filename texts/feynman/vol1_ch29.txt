@@ -1,0 +1,551 @@
+The Feynman Lectures on Physics Vol. I Ch. 29: Interference
+===========================================================
+
+Sections: 29–1 Electromagnetic waves | 29–2 Energy of radiation | 29–3 Sinusoidal waves | 29–4 Two dipole radiators | 29–5 The mathematics of interference
+
+
+
+In this chapter we shall discuss the subject of the preceding chapter
+more mathematically. We have qualitatively demonstrated that there are
+maxima and minima in the radiation field from two sources, and our
+problem now is to describe the field in mathematical detail, not just
+qualitatively.
+
+We have already physically analyzed the meaning of
+formula ( 28.6 ) quite satisfactorily, but there are a few
+points to be made about it mathematically. In the first place, if a
+charge is accelerating up and down along a line, in a motion of very
+small amplitude, the field at some angle [eq] from the axis of the
+motion is in a direction at right angles to the line of sight and in the
+plane containing both the acceleration and the line of sight
+(Fig.  29–1 ). If the distance is called [eq], then at time [eq]
+the electric field has the magnitude
+\begin{equation}
+\label{Eq:I:29:1}
+E(t)=\frac{-qa(t-r/c)\sin\theta}{4\pi\epsO c^2r},
+\end{equation}
+where [eq] is the acceleration at the time [eq], called
+the retarded acceleration.
+
+Now it would be interesting to draw a picture of the field under
+different conditions. The thing that is interesting, of course, is the
+factor [eq], and to understand it we can take the simplest
+case, [eq], and plot the field graphically. What we had
+been thinking of before is that we stand in one position and ask how
+the field there changes with time. But instead of that, we are now
+going to see what the field looks like at different positions in space
+at a given instant. So what we want is a “snapshot” picture which
+tells us what the field is in different places. Of course it depends
+upon the acceleration of the charge. Suppose that the charge at first
+had some particular motion: it was initially standing still, and it
+suddenly accelerated in some manner, as shown in Fig.  29–2 ,
+and then stopped. Then, a little bit later, we measure the field at a
+different place. Then we may assert that the field will appear as shown
+in Fig.  29–3 . At each point the field is determined by the
+acceleration of the charge at an earlier time, the amount earlier being
+the delay [eq]. The field at farther and farther points is determined
+by the acceleration at earlier and earlier times. So the curve in
+Fig.  29–3 is really, in a sense, a “reversed” plot of the
+acceleration as a function of time; the distance is related to time by a
+constant scale factor [eq], which we often take as unity. This is easily
+seen by considering the mathematical behavior of [eq].
+Evidently, if we add a little time [eq], we get the same value for
+[eq] as we would have if we had subtracted a little distance:
+[eq].
+
+Stated another way: if we add a little time [eq], we can restore
+[eq] to its former value by adding a little
+distance [eq]. That is, as time goes on the field
+moves as a wave outward from the source . That is the reason why we
+sometimes say light is propagated as waves. It is equivalent to saying
+that the field is delayed, or to saying that the electric field is
+moving outward as time goes on.
+
+An interesting special case is that where the charge [eq] is moving up
+and down in an oscillatory manner. The case which we studied
+experimentally in the last chapter was one in which the displacement [eq]
+at any time [eq] was equal to a certain constant [eq], the
+magnitude of the oscillation, times [eq]. Then the
+acceleration is
+\begin{equation}
+\label{Eq:I:29:2}
+a=-\omega^2x_0\cos\omega t=a_0\cos\omega t,
+\end{equation}
+where [eq] is the maximum acceleration, [eq]. Putting this
+formula into ( 29.1 ), we find
+\begin{equation}
+\label{Eq:I:29:3}
+E=-q\sin\theta\,
+\frac{a_0\cos\omega(t-r/c)}{4\pi\epsO rc^2}.
+\end{equation}
+Now, ignoring the angle [eq] and the constant factors, let us see
+what that looks like as a function of position or as a function of
+time.
+
+First of all, at any particular moment or in any particular place, the
+strength of the field varies inversely as the distance [eq], as we
+mentioned previously. Now we must point out that the energy 
+content of a wave, or the energy effects that such an electric field
+can have, are proportional to the square of the field, because
+if, for instance, we have some kind of a charge or an oscillator in
+the electric field, then if we let the field act on the oscillator, it
+makes it move. If this is a linear oscillator, the acceleration,
+velocity, and displacement produced by the electric field acting on
+the charge are all proportional to the field. So the kinetic energy
+which is developed in the charge is proportional to the square 
+of the field. So we shall take it that the energy that a field can
+deliver to a system is proportional somehow to the square of the
+field.
+
+This means that the energy that the source can deliver decreases as we
+get farther away; in fact, it varies inversely as the square of
+the distance . But that has a very simple interpretation: if we wanted
+to pick up all the energy we could from the wave in a certain cone at
+a distance [eq] (Fig.  29–4 ), and we do the same at
+another distance [eq], we find that the amount of energy per unit
+area at any one place goes inversely as the square of [eq], but the
+area of the surface intercepted by the cone goes directly as
+the square of [eq]. So the energy that we can take out of the wave
+within a given conical angle is the same, no matter how far away we
+are! In particular, the total energy that we could take out of the
+whole wave by putting absorbing oscillators all around is a certain
+fixed amount. So the fact that the amplitude of [eq] varies as [eq] is
+the same as saying that there is an energy flux which is never lost,
+an energy which goes on and on, spreading over a greater and greater
+effective area. Thus we see that after a charge has oscillated, it has
+lost some energy which it can never recover; the energy keeps going
+farther and farther away without diminution. So if we are far enough
+away that our basic approximation is good enough, the charge cannot
+recover the energy which has been, as we say, radiated away. Of course
+the energy still exists somewhere, and is available to be picked up by
+other systems. We shall study this energy “loss” further in
+Chapter  32 .
+
+Let us now consider more carefully how the wave ( 29.3 )
+varies as a function of time at a given place, and as a function of
+position at a given time. Again we ignore the [eq] variation and the
+constants.
+
+First let us fix the position [eq], and watch the field as a function
+of time. It is oscillatory at the angular frequency [eq]. The angular
+frequency [eq] can be defined as the rate of change of phase
+with time (radians per second). We have already studied such a thing,
+so it should be quite familiar to us by now. The period is the
+time needed for one oscillation, one complete cycle, and we have worked
+that out too; it is [eq], because [eq] times the period is
+one cycle of the cosine.
+
+Now we introduce a new quantity which is used a great deal in
+physics. This has to do with the opposite situation, in which we
+fix [eq] and look at the wave as a function of distance [eq]. Of course we
+notice that, as a function of [eq], the wave ( 29.3 ) is also
+oscillatory. That is, aside from [eq], which we are ignoring, we see
+that [eq] oscillates as we change the position. So, in analogy with
+[eq], we can define a quantity called the wave
+number , symbolized as [eq]. This is defined as
+ the rate of change of phase with distance (radians per meter).
+That is, as we move in space at a fixed time, the phase changes.
+
+There is another quantity that corresponds to the period, and we might
+call it the period in space, but it is usually called the
+wavelength, symbolized [eq]. The wavelength is
+the distance occupied by one complete cycle. It is easy to see, then,
+that the wavelength is [eq], because [eq] times the wavelength would
+be the number of radians that the whole thing changes, being the product
+of the rate of change of the radians per meter, times the number of
+meters, and we must make a [eq] change for one cycle. So $k\lambda =
+2\pi[eq]\omega t_0 = 2\pi$.
+
+Now in our particular wave there is a definite relationship between
+the frequency and the wavelength, but the above definitions of [eq]
+and [eq] are actually quite general. That is, the wavelength and the
+frequency may not be related in the same way in other physical
+circumstances. However, in our circumstance the rate of change of
+phase with distance is easily determined, because if we call $\phi =
+\omega(t - r/c)$ the phase, and differentiate (partially) with respect
+to distance [eq], the rate of change, [eq], is
+\begin{equation}
+\label{Eq:I:29:4}
+\biggl|\ddp{\phi}{r}\biggr|=
+k = \frac{\omega}{c}.
+\end{equation}
+There are many ways to represent the same thing, such as
+
+In a physical situation other than that of light, [eq] is not
+necessarily related to [eq] in this simple way. If we call the
+distance along an axis [eq], then the formula for a cosine wave moving
+in a direction [eq] with a wave number [eq] and an angular
+frequency [eq] will be written in general as [eq].
+
+Now that we have introduced the idea of wavelength, we may say
+something more about the circumstances in which ( 29.1 ) is a
+legitimate formula. We recall that the field is made up of several
+pieces, one of which varies inversely as [eq], another part which
+varies inversely as [eq], and others which vary even faster. It would
+be worthwhile to know in what circumstances the [eq] part of the
+field is the most important part, and the other parts are relatively
+small. Naturally, the answer is “if we go ‘far enough’ away,”
+because terms which vary inversely as the square ultimately become
+negligible compared with the [eq] term. How far is “far enough”?
+The answer is, qualitatively, that the other terms are of
+order [eq] smaller than the [eq] term. Thus, so long as we are
+beyond a few wavelengths, ( 29.1 ) is an excellent
+approximation to the field. Sometimes the region beyond a few
+wavelengths is called the “wave zone.”
+
+Next let us discuss the mathematics involved in combining the effects
+of two oscillators to find the net field at a given point. This is
+very easy in the few cases that we considered in the previous
+chapter. We shall first describe the effects qualitatively, and then
+more quantitatively. Let us take the simple case, where the
+oscillators are situated with their centers in the same horizontal
+plane as the detector, and the line of vibration is vertical.
+
+Figure  29–5 (a) represents the top view of two such
+oscillators, and in this particular example they are half a wavelength
+apart in a N–S direction, and are oscillating together in the same
+phase, which we call zero phase. Now we would like to know the
+intensity of the radiation in various directions. By the intensity we
+mean the amount of energy that the field carries past us per second,
+which is proportional to the square of the field, averaged in time. So
+the thing to look at, when we want to know how bright the light is, is
+the square of the electric field, not the electric field itself. (The
+electric field tells the strength of the force felt by a stationary
+charge, but the amount of energy that is going past, in watts per
+square meter, is proportional to the square of the electric field. We
+shall derive the constant of proportionality in Chapter  31 .) If
+we look at the array from the W side, both oscillators contribute
+equally and in phase, so the electric field is twice as strong as it
+would be from a single oscillator. Therefore the intensity is
+four times as strong as it would be if there were only one
+oscillator . (The numbers in Fig.  29–5 represent how
+strong the intensity would be in this case, compared with what it
+would be if there were only a single oscillator of unit strength.)
+Now, in either the N or S direction along the line of the oscillators,
+since they are half a wavelength apart, the effect of one oscillator
+turns out to be out of phase by exactly half an oscillation from the
+other, and therefore the fields add to zero. At a certain particular
+intermediate angle (in fact, at [eq]) the intensity is [eq], and
+it falls off, [eq], [eq], [eq], and so forth. We have to learn how to
+find these numbers at other angles. It is a question of adding two
+oscillations with different phases.
+
+Let us quickly look at some other cases of interest. Suppose the
+oscillators are again one-half a wavelength apart, but the
+phase [eq] of one is set half a period behind the other in its
+oscillation (Fig.  29–5 b). In the W direction the
+intensity is now zero, because one oscillator is “pushing” when the
+other one is “pulling.” But in the N direction the signal from the
+near one comes at a certain time, and that of the other comes half a
+period later. But the latter was originally half a period
+behind in timing, and therefore it is now exactly in time with
+the first one, and so the intensity in this direction is
+[eq] units. The intensity in the direction at [eq] is still [eq], as
+we can prove later.
+
+Now we come to an interesting case which shows up a possibly useful
+feature. Let us remark that one of the reasons that phase relations of
+oscillators are interesting is for beaming radio transmitters. For
+instance, if we build an antenna system and want to send a radio
+signal, say, to Hawaii, we set the antennas up as in
+Fig.  29–5 (a) and we broadcast with our two antennas in
+phase, because Hawaii is to the west of us. Then we decide that tomorrow
+we are going to broadcast toward Alberta, Canada. Since that is north,
+not west, all we have to do is to reverse the phase of one of our
+antennas, and we can broadcast to the north. So we can build antenna
+systems with various arrangements. Ours is one of the simplest possible
+ones; we can make them much more complicated, and by changing the phases
+in the various antennas we can send the beams in various directions and
+send most of the power in the direction in which we wish to transmit,
+without ever moving the antenna! In both of the preceding cases,
+however, while we are broadcasting toward Alberta we are wasting a lot
+of power on Easter Island, and it would be interesting to ask whether it
+is possible to send it in only one direction. At first sight we
+might think that with a pair of antennas of this nature the result is
+always going to be symmetrical. So let us consider a case that comes out
+unsymmetrical, to show the possible variety.
+
+If the antennas are separated by one-quarter wavelength, and if the N
+one is one-fourth period behind the S one in time, then what happens
+(Fig.  29–6 )? In the W direction we get [eq], as we will
+see later. In the S direction we get zero , because the signal
+from S comes at a certain time; that from N comes [eq] later in
+ time , but it is already [eq] behind in its built-in
+phase, therefore it arrives, altogether, [eq] out of phase, and
+there is no effect. On the other hand, in the N direction, the N
+signal arrives earlier than the S signal by [eq] in time,
+because it is a quarter wavelength closer. But its phase is set so
+that it is oscillating [eq] behind in time, which just
+compensates the delay difference, and therefore the two signals appear
+ together in phase, making the field strength twice as large,
+and the energy four times as great.
+
+Thus, by using some cleverness in spacing and phasing our antennas, we
+can send the power all in one direction. But still it is distributed
+over a great range of angles. Can we arrange it so that it is focused
+still more sharply in a particular direction? Let us consider the case
+of Hawaii again, where we are sending the beam east and west but it is
+spread over quite an angle, because even at [eq] we are still
+getting half the intensity—we are wasting the power. Can we do
+better than that? Let us take a situation in which the separation is
+ten wavelengths (Fig.  29–7 ), which is more nearly
+comparable to the situation in which we experimented in the previous
+chapter, with separations of several wavelengths rather than a small
+fraction of a wavelength. Here the picture is quite different.
+
+If the oscillators are ten wavelengths apart (we take the in-phase
+case to make it easy), we see that in the E–W direction, they are in
+phase, and we get a strong intensity, four times what we would get if
+one of them were there alone. On the other hand, at a very small angle
+away, the arrival times differ by [eq] and the intensity is
+zero. To be precise, if we draw a line from each oscillator to a
+distant point and the difference [eq] in the two distances
+is [eq], half an oscillation, then they will be out of phase. So
+this first null occurs when that happens. (The figure is not drawn to
+scale; it is only a rough sketch.) This means that we do indeed have a
+very sharp beam in the direction we want, because if we just move over
+a little bit we lose all our intensity. Unfortunately for practical
+purposes, if we were thinking of making a radio broadcasting array and
+we doubled the distance [eq], then we would be a whole cycle out of
+phase, which is the same as being exactly in phase again! Thus we
+get many successive maxima and minima, just as we found with the
+[eq] spacing in Chapter  28 .
+
+Now how can we arrange to get rid of all these extra maxima, or
+“lobes,” as they are called? We could get rid of the unwanted lobes
+in a rather interesting way. Suppose that we were to place another set
+of antennas between the two that we already have. That is, the outside
+ones are still [eq] apart, but between them, say
+every [eq], we have put another antenna, and we drive them all in
+phase. There are now six antennas, and if we looked at the intensity
+in the E–W direction, it would, of course, be much higher with six
+antennas than with one. The field would be six times and the intensity
+thirty-six times as great (the square of the field). We get [eq] units
+of intensity in that direction. Now if we look at neighboring points,
+we find a zero as before, roughly, but if we go farther, to where we
+used to get a big “bump,” we get a much smaller “bump” now. Let us
+try to see why.
+
+The reason is that although we might expect to get a big bump when the
+distance [eq] is exactly equal to the wavelength, it is true that
+dipoles [eq] and [eq] are then in phase and are cooperating in trying to
+get some strength in that direction. But numbers [eq] and [eq] are
+roughly [eq] a wavelength out of phase with [eq] and [eq], and
+although [eq] and [eq] push together, [eq] and [eq] push together too, but
+in opposite phase. Therefore there is very little intensity in this
+direction—but there is something; it does not balance exactly. This
+kind of thing keeps on happening; we get very little bumps, and we
+have the strong beam in the direction where we want it. But in this
+particular example, something else will happen: namely, since the
+distance between successive dipoles is [eq], it is possible to
+find an angle where the distance [eq] between successive
+dipoles is exactly one wavelength, so that the effects from all of
+them are in phase again. Each one is delayed relative to the next one
+by [eq], so they all come back in phase, and we have another
+strong beam in that direction! It is easy to avoid this in practice
+because it is possible to put the dipoles closer than one wavelength
+apart. If we put in more antennas, closer than one wavelength apart,
+then this cannot happen. But the fact that this can happen at
+certain angles, if the spacing is bigger than one wavelength, is a
+very interesting and useful phenomenon in other applications—not
+radio broadcasting, but in diffraction gratings .
+
+Now we have finished our analysis of the phenomena of dipole radiators
+qualitatively, and we must learn how to analyze them
+quantitatively. To find the effect of two sources at some particular
+angle in the most general case, where the two oscillators have some
+intrinsic relative phase [eq] from one another and the strengths
+[eq] and [eq] are not equal, we find that we have to add two cosines
+having the same frequency, but with different phases. It is very easy
+to find this phase difference; it is made up of a delay due to the
+difference in distance, and the intrinsic, built-in phase of the
+oscillation. Mathematically, we have to find the sum [eq] of two waves:
+[eq]. How
+do we do it?
+
+It is really very easy, and we presume that we already know how to do
+it. However, we shall outline the procedure in some detail. First, we
+can, if we are clever with mathematics and know enough about cosines
+and sines, simply work it out. The easiest such case is the one where
+[eq] and [eq] are equal, let us say they are both equal to [eq]. In
+those circumstances, for example (we could call this the trigonometric
+method of solving the problem), we have
+\begin{equation}
+\label{Eq:I:29:9}
+R = A[\cos\,(\omega t+\phi_1)+\cos\,(\omega t + \phi_2)].
+\end{equation}
+Once, in our trigonometry class, we may have learned the rule that
+\begin{equation}
+\label{Eq:I:29:10}
+\cos A+\cos B=2\cos\tfrac{1}{2}(A+B)\cos\tfrac{1}{2}(A-B).
+\end{equation}
+If we know that, then we can immediately write [eq] as
+\begin{equation}
+\label{Eq:I:29:11}
+R=2A\cos\tfrac{1}{2}(\phi_1-\phi_2)\cos\,(\omega t+\tfrac{1}{2}\phi_1+
+\tfrac{1}{2}\phi_2).
+\end{equation}
+So we find that we have an oscillatory wave with a new phase and a new
+amplitude. In general, the result will be an oscillatory wave
+with a new amplitude [eq], which we may call the resultant amplitude,
+oscillating at the same frequency but with a phase
+difference [eq], called the resultant phase. In view of this, our particular
+case has the following result: that the resultant amplitude is
+\begin{equation}
+\label{Eq:I:29:12}
+A_R=2A\cos\tfrac{1}{2}(\phi_1-\phi_2),
+\end{equation}
+and the resultant phase is the average of the two phases, and we have
+completely solved our problem.
+
+Now suppose that we cannot remember that the sum of two cosines is
+twice the cosine of half the sum times the cosine of half the
+difference. Then we may use another method of analysis which is more
+geometrical. Any cosine function of [eq] can be considered as
+the horizontal projection of a rotating vector . Suppose there
+were a vector [eq] of length [eq] rotating with time, so that
+its angle with the horizontal axis is [eq]. (We shall
+leave out the [eq] in a minute, and see that it makes no
+difference.) Suppose that we take a snapshot at the time [eq],
+although, in fact, the picture is rotating with angular
+velocity [eq] (Fig.  29–9 ). The projection of [eq] along
+the horizontal axis is precisely [eq]. Now
+at [eq] the second wave could be represented by another vector,
+[eq], of length [eq] and at an angle [eq], and also
+rotating. They are both rotating with the same angular
+velocity [eq], and therefore the relative positions of the two are
+fixed. The system goes around like a rigid body. The horizontal
+projection of [eq] is [eq]. But we know
+from the theory of vectors that if we add the two vectors in the
+ordinary way, by the parallelogram rule, and draw the resultant
+vector [eq], the [eq]-component of the resultant is the sum of the
+[eq]-components of the other two vectors. That solves our problem. It
+is easy to check that this gives the correct result for the special
+case we treated above, where [eq] [eq] [eq]. In this case, we see from
+Fig.  29–9 that [eq] lies midway between [eq]
+and [eq] and makes an angle [eq] with
+each. Therefore we see that $A_R = 2A\cos\tfrac{1}{2}(\phi_2 -
+\phi_1)$, as before. Also, as we see from the triangle, the phase
+of [eq], as it goes around, is the average angle of [eq]
+and [eq] when the two amplitudes are equal. Clearly, we can also
+solve for the case where the amplitudes are not equal, just as
+easily. We can call that the geometrical way of solving the
+problem.
+
+There is still another way of solving the problem, and that is the
+ analytical way. That is, instead of having actually to draw a
+picture like Fig.  29–9 , we can write something down
+which says the same thing as the picture: instead of drawing the
+vectors, we write a complex number to represent each of the
+vectors. The real parts of the complex numbers are the actual physical
+quantities. So in our particular case the waves could be written in
+this way: [eq] [the real part of this is
+[eq]] and [eq]. Now
+we can add the two:
+ 
+\begin{equation}
+\label{Eq:I:29:13}
+R=A_1e^{i(\omega t + \phi_1)}+A_2e^{i(\omega t + \phi_2)}=
+(A_1e^{i\phi_1}+A_2e^{i\phi_2})e^{i\omega t}
+\end{equation}
+ 
+ 
+\begin{align}
+R&=A_1e^{i(\omega t + \phi_1)}+A_2e^{i(\omega t + \phi_2)}\notag\\[1ex]
+&=(A_1e^{i\phi_1}+A_2e^{i\phi_2})e^{i\omega t}
+\label{Eq:I:29:13}
+\end{align}
+ 
+or
+\begin{equation}
+\label{Eq:I:29:14}
+\hat{R}=A_1e^{i\phi_1}+A_2e^{i\phi_2}=A_Re^{i\phi_R}.
+\end{equation}
+This solves the problem that we wanted to solve, because it represents
+the result as a complex number of magnitude [eq] and phase [eq].
+
+To see how this method works, let us find the amplitude [eq] which is
+the “length” of [eq]. To get the “length” of a complex
+quantity, we always multiply the quantity by its complex conjugate,
+which gives the length squared. The complex conjugate is the same
+expression, but with the sign of the [eq]’s reversed. Thus we have
+\begin{equation}
+\label{Eq:I:29:15}
+A_R^2=(A_1e^{i\phi_1}+A_2e^{i\phi_2})(A_1e^{-i\phi_1}+A_2e^{-i\phi_2}).
+\end{equation}
+In multiplying this out, we get [eq] (here the [eq]’s
+cancel), and for the cross terms we have
+\begin{equation*}
+A_1A_2(e^{i(\phi_1-\phi_2)}+e^{i(\phi_2-\phi_1)}).
+\end{equation*}
+Now
+\begin{equation*}
+e^{i\theta}+e^{-i\theta}=
+\cos\theta+i\sin\theta+\cos\theta-i\sin\theta.
+\end{equation*}
+That is to say, [eq]. Our final
+result is therefore
+\begin{equation}
+\label{Eq:I:29:16}
+A_R^2=A_1^2+A_2^2+2A_1A_2\cos\,(\phi_2-\phi_1).
+\end{equation}
+
+As we see, this agrees with the length of [eq] in
+Fig.  29–9 , using the rules of trigonometry.
+
+Thus the sum of the two effects has the intensity [eq] we would get
+with one of them alone, plus the intensity [eq] we would get with
+the other one alone, plus a correction. This correction we call the
+ interference effect . It is really only the difference between
+what we get simply by adding the intensities, and what actually
+happens. We call it interference whether it is positive or
+negative. (Interference in ordinary language usually suggests
+opposition or hindrance, but in physics we often do not use language
+the way it was originally designed!) If the interference term is
+positive, we call that case constructive interference, horrible
+though it may sound to anybody other than a physicist! The opposite
+case is called destructive interference.
+
+Now let us see how to apply our general formula ( 29.16 ) for
+the case of two oscillators to the special situations which we have
+discussed qualitatively. To apply this general formula, it is only
+necessary to find what phase difference, [eq], exists
+between the signals arriving at a given point. (It depends only on the
+phase difference, of course, and not on the phase itself.) So let us
+consider the case where the two oscillators, of equal amplitude, are
+separated by some distance [eq] and have an intrinsic relative
+phase [eq]. (When one is at phase zero, the phase of the other
+is [eq].) Then we ask what the intensity will be in some azimuth
+direction [eq] from the E–W line. [Note that this is not 
+the same [eq] as appears in ( 29.1 ). We are torn between
+using an unconventional symbol like [eq] or the conventional
+symbol [eq] (Fig.  29–10 ).] The phase relationship is
+found by noting that the difference in distance from [eq] to the two
+oscillators is [eq], so that the phase difference
+contribution from this is the number of wavelengths in [eq],
+multiplied by [eq]. (Those who are more sophisticated might want to
+multiply the wave number [eq], which is the rate of change of phase
+with distance, by [eq]; it is exactly the same.) The phase
+difference due to the distance difference is thus $2\pi
+d\sin\theta/\lambda$, but, due to the timing of the oscillators, there
+is an additional phase [eq]. So the phase difference at arrival
+would be
+\begin{equation}
+\label{Eq:I:29:17}
+\phi_2-\phi_1=\alpha+2\pi d\sin\theta/\lambda.
+\end{equation}
+This takes care of all the cases. Thus all we have to do is substitute
+this expression into ( 29.16 ) for the case [eq], and
+we can calculate all the various results for two antennas of equal
+intensity.
+
+Now let us see what happens in our various cases. The reason we know,
+for example, that the intensity is [eq] at [eq] in
+Fig.  29–5 is the following: the two oscillators
+are [eq] apart, so at [eq], [eq].
+Thus [eq] [eq] [eq], and so the
+interference term is zero. (We are adding two vectors at [eq].)
+The result is the hypotenuse of a [eq] right-angle triangle, which
+is [eq] times the unit amplitude; squaring it, we get twice the
+intensity of one oscillator alone. All the other cases can be worked out
+in this same way.

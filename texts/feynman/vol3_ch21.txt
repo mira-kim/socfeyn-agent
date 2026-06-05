@@ -1,0 +1,1433 @@
+The Feynman Lectures on Physics Vol. III Ch. 21: The Schrödinger Equation in a Classical Context: A Seminar on Superconductivity
+================================================================================================================================
+
+Sections: 21–1 Schrödinger’s equation in a magnetic field | 21–2 The equation of continuity for probabilities | 21–3 Two kinds of momentum | 21–4 The meaning of the wave function | 21–5 Superconductivity | 21–6 The Meissner effect | 21–7 Flux quantization | 21–8 The dynamics of superconductivity | 21–9 The Josephson junction
+
+
+
+This lecture is only for entertainment. I would like to give the
+lecture in a somewhat different style—just to see how it works
+out. It’s not a part of the course—in the sense that it is not
+supposed to be a last minute effort to teach you something new. But,
+rather, I imagine that I’m giving a seminar or research report on the
+subject to a more advanced audience, to people who have already been
+educated in quantum mechanics. The main difference between a seminar
+and a regular lecture is that the seminar speaker does not carry out
+all the steps, or all the algebra. He says: “If you do such and such,
+this is what comes out,” instead of showing all of the details. So in
+this lecture I’ll describe the ideas all the way along but just give
+you the results of the computations. You should realize that
+you’re not supposed to understand everything immediately, but believe
+(more or less) that things would come out if you went through the
+steps.
+
+All that aside, this is a subject I want to talk about. It is
+recent and modern and would be a perfectly legitimate talk to give at
+a research seminar. My subject is the Schrödinger equation in a
+classical setting—the case of superconductivity.
+
+Ordinarily, the wave function which appears in the Schrödinger
+equation applies to only one or two particles. And the wave function
+itself is not something that has a classical meaning—unlike the
+electric field, or the vector potential, or things of that kind. The
+wave function for a single particle is a “field”—in the
+sense that it is a function of position—but it does not generally
+have a classical significance. Nevertheless, there are some situations
+in which a quantum mechanical wave function does have classical
+significance, and they are the ones I would like to take up. The
+peculiar quantum mechanical behavior of matter on a small scale
+doesn’t usually make itself felt on a large scale except in the
+standard way that it produces Newton’s laws—the laws of the
+so-called classical mechanics. But there are certain situations in
+which the peculiarities of quantum mechanics can come out in a special
+way on a large scale.
+
+At low temperatures, when the energy of a system has been reduced
+very, very low, instead of a large number of states being involved,
+only a very, very small number of states near the ground state are
+involved. Under those circumstances the quantum mechanical character
+of that ground state can appear on a macroscopic scale. It is the
+purpose of this lecture to show a connection between quantum mechanics
+and large-scale effects—not the usual discussion of the way that
+quantum mechanics reproduces Newtonian mechanics on the average, but a
+special situation in which quantum mechanics will produce its own
+characteristic effects on a large or “macroscopic” scale.
+
+I will begin by reminding you of some of the properties of the
+Schrödinger equation. 1 I want to describe the behavior of a particle
+in a magnetic field using the Schrödinger equation, because the
+superconductive phenomena are involved with magnetic fields. An
+external magnetic field is described by a vector potential, and the
+problem is: what are the laws of quantum mechanics in a vector
+potential? The principle that describes the behavior of quantum
+mechanics in a vector potential is very simple. The amplitude that a
+particle goes from one place to another along a certain route when
+there’s a field present is the same as the amplitude that it would go
+along the same route when there’s no field, multiplied by the
+exponential of the line integral of the vector potential, times the
+electric charge divided by
+Planck’s constant 2 (see Fig.  21–1 ):
+\begin{equation}
+\label{Eq:III:21:1}
+\braket{b}{a}_{\text{in [eq]}}=\braket{b}{a}_{A=0}\cdot
+\exp\biggl[\frac{iq}{\hbar}\int_a^b\FLPA\cdot d\FLPs\biggr].
+\end{equation}
+
+It is a basic statement of quantum mechanics.
+
+Now without the vector potential the Schrödinger equation of a
+charged particle (nonrelativistic, no spin) is
+ 
+\begin{equation}
+\label{Eq:III:21:2}
+-\frac{\hbar}{i}\,\ddp{\psi}{t}=\Hcalop\psi=
+\frac{1}{2m}\biggl(\frac{\hbar}{i}\,\FLPnabla\biggr)\cdot
+\biggl(\frac{\hbar}{i}\,\FLPnabla\biggr)\psi+q\phi\psi,
+\end{equation}
+ 
+ 
+\begin{gather}
+\label{Eq:III:21:2}
+-\frac{\hbar}{i}\,\ddp{\psi}{t}=\Hcalop\psi=\\[1ex]
+\frac{1}{2m}\biggl(\frac{\hbar}{i}\,\FLPnabla\biggr)\cdot
+\biggl(\frac{\hbar}{i}\,\FLPnabla\biggr)\psi+q\phi\psi,\notag
+\end{gather}
+ 
+where [eq] is the electric potential so that [eq] is the
+potential energy. 3 Equation ( 21.1 ) is equivalent
+to the statement that in a magnetic field the gradients in the
+Hamiltonian are replaced in each case by the gradient minus [eq],
+so that Eq. ( 21.2 ) becomes
+ 
+\begin{equation}
+\label{Eq:III:21:3}
+-\frac{\hbar}{i}\,\ddp{\psi}{t}=\Hcalop\psi=
+\frac{1}{2m}\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\cdot
+\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\psi+q\phi\psi.
+\end{equation}
+ 
+ 
+\begin{gather}
+\label{Eq:III:21:3}
+-\frac{\hbar}{i}\,\ddp{\psi}{t}=\Hcalop\psi=\\[1ex]
+\frac{1}{2m}\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\cdot
+\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\psi+q\phi\psi.\notag
+\end{gather}
+ 
+This is the Schrödinger equation for a particle with charge [eq]
+moving in an electromagnetic field [eq] (nonrelativistic, no
+spin).
+
+To show that this is true I’d like to illustrate by a simple example
+in which instead of having a continuous situation we have a line of
+atoms along the [eq]-axis with the spacing [eq] and we have an
+amplitude [eq] per unit time for an electron to jump from one atom to another when there is no
+field. 4 Now according to Eq. ( 21.1 ) if
+there’s a vector potential in the [eq]-direction [eq], the
+amplitude to jump will be altered from what it was before by a
+factor [eq], the exponent being [eq] times the vector
+potential integrated from one atom to the next. For simplicity we will
+write [eq], since [eq], will, in general, depend
+on [eq]. If the amplitude to find the electron at the atom “[eq]”
+located at [eq] is called [eq], then the rate of change of
+that amplitude is given by the following equation:
+\begin{align}
+-\frac{\hbar}{i}\ddp{}{t}C(x)=E_0C(x)&\!-\!Ke^{-ibf(x+b/2)}C(x\!+\!b)\notag\\
+\label{Eq:III:21:4}
+&-\!Ke^{+ibf(x-b/2)}C(x\!-\!b).
+\end{align}
+
+There are three pieces. First, there’s some energy [eq] if the
+electron is located at [eq]. As usual, that gives the
+term [eq]. Next, there is the term [eq], which is the amplitude
+for the electron to have jumped backwards one step from
+atom “[eq],” located at [eq]. However, in doing so in a vector
+potential, the phase of the amplitude must be shifted according to the
+rule in Eq. ( 21.1 ). If [eq] is not changing
+appreciably in one atomic spacing, the integral can be written as just
+the value of [eq] at the midpoint, times the spacing [eq]. So
+[eq] times the integral is just [eq]. Since the
+electron is jumping backwards, I showed this phase shift with a minus
+sign. That gives the second piece. In the same manner there’s a
+certain amplitude to have jumped from the other side, but this time we
+need the vector potential at a distance [eq] on the other side
+of [eq], times the distance [eq]. That gives the third piece. The sum gives
+the equation for the amplitude to be at [eq] in a vector potential.
+
+Now we know that if the function [eq] is smooth enough (we take the
+long wavelength limit), and if we let the atoms get closer together,
+Eq. ( 21.4 ) will approach the behavior of an electron in
+free space. So the next step is to expand the right-hand side
+of ( 21.4 ) in powers of [eq], assuming [eq] is very small. For
+example, if [eq] is zero the right-hand side is just [eq], so
+in the zeroth approximation the energy is [eq]. Next comes the terms
+in [eq]. But because the two exponentials have opposite signs, only even
+powers of [eq] remain. So if you make a Taylor expansion of [eq],
+of [eq], and of the exponentials, and then collect the terms in [eq],
+you get
+ 
+\begin{align}
+-\frac{\hbar}{i}\,\ddp{C(x)}{t}&=E_0C(x)-2KC(x)\notag\\
+\label{Eq:III:21:5}
+&\quad-Kb^2\{C''(x)-2if(x)C'(x)-if'(x)C(x)-f^2(x)C(x)\}.
+\end{align}
+ 
+ 
+\begin{align}
+\label{Eq:III:21:5}
+-\frac{\hbar}{i}\,\ddp{C(x)}{t}&=E_0C(x)-2KC(x)\\[1ex]
+&-Kb^2\bigl\{C''(x)-2if(x)C'(x)\,-\notag\\[1ex]
+&\phantom{-Kb^2\{}\;if'(x)C(x)-f^2(x)C(x)\bigr\}.\notag
+\end{align}
+ 
+(The “primes” mean differentiation with respect to [eq].)
+
+Now this horrible combination of things looks quite complicated. But
+mathematically it’s exactly the same as
+ 
+\begin{equation}
+\label{Eq:III:21:6}
+-\frac{\hbar}{i}\,\ddp{C(x)}{t}=(E_0-2K)C(x)-Kb^2
+\biggl[\ddp{}{x}-if(x)\biggr]
+\biggl[\ddp{}{x}-if(x)\biggr]C(x).
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:III:21:6}
+-\frac{\hbar}{i}\ddp{C(x)}{t}&=(E_0-2K)C(x)\\
+&-Kb^2 \biggl[\ddp{}{x}-if(x)\biggr]
+\biggl[\ddp{}{x}-if(x)\biggr]C(x).\notag
+\end{align}
+ 
+The second bracket operating on [eq] gives [eq]
+minus [eq]. The first bracket operating on these two terms gives the
+[eq] term and terms in the first derivative of [eq] and the first
+derivative of [eq]. Now remember that the solutions for zero
+magnetic field 5 represent a
+particle with an effective mass [eq] given by
+\begin{equation*}
+Kb^2=\frac{\hbar^2}{2m_{\text{eff}}}.
+\end{equation*}
+
+If you then set [eq], and put back [eq], you can
+easily check that Eq. ( 21.6 ) is the same as the first
+part of Eq. ( 21.3 ). (The origin of the potential energy
+term is well known, so I haven’t bothered to include it in this
+discussion.) The proposition of Eq. ( 21.1 ) that the
+vector potential changes all the amplitudes by the exponential factor
+is the same as the rule that the momentum operator,
+[eq] gets replaced by
+\begin{equation*}
+\frac{\hbar}{i}\,\FLPnabla-q\FLPA,
+\end{equation*}
+
+as you see in the Schrödinger equation of ( 21.3 ).
+
+Now I turn to a second point. An important part of the Schrödinger
+equation for a single particle is the idea that the probability to
+find the particle at a position is given by the absolute square of the
+wave function. It is also characteristic of the quantum mechanics that
+probability is conserved in a local sense. When the probability of
+finding the electron somewhere decreases, while the probability of the
+electron being elsewhere increases (keeping the total probability
+unchanged), something must be going on in between. In other words, the
+electron has a continuity in the sense that if the probability
+decreases at one place and builds up at another place, there must be
+some kind of flow between. If you put a wall, for example, in the way,
+it will have an influence and the probabilities will not be the
+same. So the conservation of probability alone is not the complete
+statement of the conservation law, just as the conservation of energy
+alone is not as deep and important as the local conservation of
+energy. 6 If energy
+is disappearing, there must be a flow of energy to correspond. In the
+same way, we would like to find a “current” of probability such that
+if there is any change in the probability density (the probability of
+being found in a unit volume), it can be considered as coming from an
+inflow or an outflow due to some current. This current would be a vector
+which could be interpreted this way—the [eq]-component would be the net
+probability per second and per unit area that a particle passes in the
+[eq]-direction across a plane parallel to the [eq]-plane. Passage
+toward [eq] is considered a positive flow, and passage in the opposite
+direction, a negative flow.
+
+Is there such a current? Well, you know that the probability
+density [eq] is given in terms of the wave function by
+\begin{equation}
+\label{Eq:III:21:7}
+P(\FLPr,t)=\psi\cconj(\FLPr,t)\psi(\FLPr,t).
+\end{equation}
+
+I am asking: Is there a current [eq] such that
+\begin{equation}
+\label{Eq:III:21:8}
+\ddp{P}{t}=-\FLPdiv{\FLPJ}?
+\end{equation}
+
+If I take the time derivative of Eq. ( 21.7 ), I get two
+terms:
+\begin{equation}
+\label{Eq:III:21:9}
+\ddp{P}{t}=\psi\cconj\,\ddp{\psi}{t}+\psi\,\ddp{\psi\cconj}{t}.
+\end{equation}
+
+Now use the Schrödinger equation—Eq. ( 21.3 )—for [eq];
+and take the complex conjugate of it to get [eq]—each [eq]
+gets its sign reversed. You get
+ 
+\begin{equation}
+\begin{aligned}
+\ddp{P}{t}&=-\frac{i}{\hbar}\biggl[\psi\cconj\,\frac{1}{2m}
+\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\cdot
+\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\psi+
+q\phi\psi\cconj\psi\\[.5ex]
+&\hphantom{{}={}}-\psi\,\frac{1}{2m}
+\biggl(-\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\cdot
+\biggl(-\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\psi\cconj
+-q\phi\psi\psi\cconj\biggr].
+\end{aligned}
+\label{Eq:III:21:10}
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:III:21:10}
+&\ddp{P}{t}=\\
+&-\frac{i}{\hbar}\biggl[\psi\cconj\!\frac{1}{2m}
+\biggl(\!\frac{\hbar}{i}\FLPnabla\!-q\FLPA\!\biggr)\!\cdot\!
+\biggl(\!\frac{\hbar}{i}\FLPnabla\!-q\FLPA\!\biggr)\psi\!+\!
+q\phi\psi\cconj\psi\notag\\[1ex]
+&\kern{2em}-\psi\frac{1}{2m}
+\biggl(\!-\frac{\hbar}{i}\FLPnabla\!-q\FLPA\!\biggr)\!\cdot\!
+\biggl(\!-\frac{\hbar}{i}\FLPnabla\!-q\FLPA\!\biggr)\psi\cconj\!
+\!-\!q\phi\psi\psi\cconj\biggr].\notag
+\end{align}
+ 
+The potential terms and a lot of other stuff cancel out. And it turns
+out that what is left can indeed be written as a perfect
+divergence. The whole equation is equivalent to
+ 
+\begin{equation}
+\label{Eq:III:21:11}
+\ddp{P}{t}=-\FLPdiv{\biggl\{
+\frac{1}{2m}\,\psi\cconj
+\biggl(\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\psi+
+\frac{1}{2m}\,\psi
+\biggl(-\frac{\hbar}{i}\,\FLPnabla-q\FLPA\biggr)\psi\cconj
+\biggr\}}.
+\end{equation} 
+ 
+\begin{align}
+\label{Eq:III:21:11}
+\ddp{P}{t}\!=-\FLPdiv{\biggl\{\!
+&\frac{1}{2m}\psi\cconj
+\biggl(\!\frac{\hbar}{i}\FLPnabla\!-q\FLPA\!\biggr)\psi\,+\\[1ex]
+&\frac{1}{2m}\psi
+\biggl(\!-\frac{\hbar}{i}\FLPnabla\!-q\FLPA\!\biggr)\psi\cconj
+\!\biggr\}}.\notag
+\end{align}
+ 
+It is really not as complicated as it seems. It is a symmetrical
+combination of [eq] times a certain operation on [eq], plus
+[eq] times the complex conjugate operation on [eq]. It is
+some quantity plus its own complex conjugate, so the whole thing is
+real—as it ought to be. The operation can be remembered this way: it
+is just the momentum operator [eq] minus [eq]. I could
+write the current in Eq. ( 21.8 ) as
+\begin{equation}
+\label{Eq:III:21:12}
+\FLPJ\!=\!\frac{1}{2}\biggl\{\!
+\psi\cconj\biggl[\!\frac{\Pcalvecop\!-\!q\FLPA}{m}\!\biggr]\psi\!+\!
+\psi\biggl[\!\frac{\Pcalvecop\!-\!q\FLPA}{m}\!\biggr]\cconj\!\!\!\psi\cconj
+\!\biggr\}.
+\end{equation}
+
+There is then a current [eq] which completes Eq. ( 21.8 ).
+
+Equation ( 21.11 ) shows that the probability is conserved
+locally. If a particle disappears from one region it cannot appear in
+another without something going on in between. Imagine that the first
+region is surrounded by a closed surface far enough out that there is
+zero probability to find the electron at the surface. The total
+probability to find the electron somewhere inside the surface is the
+volume integral of [eq]. But according to Gauss’s theorem the volume integral of the
+divergence [eq] is equal to the surface integral of its normal component. If
+[eq] is zero at the surface, Eq. ( 21.12 ) says that
+[eq] is zero, so the total probability to find the particle inside
+can’t change. Only if some of the probability approaches the boundary
+can some of it leak out. We can say that it only gets out by moving
+through the surface—and that is local conservation.
+
+The equation for the current is rather interesting, and sometimes
+causes a certain amount of worry. You would think the current would be
+something like the density of particles times the velocity. The
+density should be something like [eq], which is o.k. And
+each term in Eq. ( 21.12 ) looks like the typical form
+for the average-value of the operator
+\begin{equation}
+\label{Eq:III:21:13}
+\frac{\Pcalvecop-q\FLPA}{m},
+\end{equation}
+
+so maybe we should think of it as the velocity of flow. It looks as
+though we have two suggestions for relations of velocity to momentum,
+because we would also think that momentum divided by mass,
+[eq], should be a velocity. The two possibilities differ by
+the vector potential.
+
+It happens that these two possibilities were also discovered in
+classical physics, when it was found that momentum could be defined in
+two ways. 7 One of them is called “kinematic
+momentum,” but for absolute clarity I will in this lecture call
+it the “[eq]-momentum.” This is the
+momentum obtained by multiplying mass by velocity. The other is a more
+mathematical, more abstract momentum, sometimes called the “dynamical
+momentum,” which I’ll call “[eq]-momentum.” The two possibilities are
+\begin{equation}
+\label{Eq:III:21:14}
+\text{[eq]-momentum}=m\FLPv,
+\end{equation}
+\begin{equation}
+\label{Eq:III:21:15}
+\text{[eq]-momentum}=m\FLPv + q\FLPA.
+\end{equation}
+It turns out that in quantum mechanics with magnetic fields it is the
+[eq]-momentum which is connected to the gradient operator [eq],
+so it follows that ( 21.13 ) is the operator of a velocity.
+
+I’d like to make a brief digression to show you what this is all
+about—why there must be something like Eq. ( 21.15 ) in
+the quantum mechanics. The wave function changes with time according
+to the Schrödinger equation in Eq. ( 21.3 ). If I would
+suddenly change the vector potential, the wave function wouldn’t
+change at the first instant; only its rate of change changes. Now
+think of what would happen in the following circumstance. Suppose I
+have a long solenoid, in which I can produce a flux of magnetic field
+([eq]-field), as shown in Fig.  21–2 . And there is a charged
+particle sitting nearby. Suppose this flux nearly instantaneously
+builds up from zero to something. I start with zero vector potential
+and then I turn on a vector potential. That means that I produce
+suddenly a circumferential vector potential [eq]. You’ll remember
+that the line integral of [eq] around a loop is the same as the flux
+of [eq] through the loop. 8 Now what
+happens if I suddenly turn on a vector potential? According to the
+quantum mechanical equation the sudden change of [eq] does not make a
+sudden change of [eq]; the wave function is still the same. So the
+gradient is also unchanged.
+
+But remember what happens electrically when I suddenly turn on a
+flux. During the short time that the flux is rising, there’s an
+electric field generated whose line integral is the rate of change of
+the flux with time:
+\begin{equation}
+\FLPE=-\ddp{\FLPA}{t}.
+\end{equation}
+
+That electric field is enormous if the flux is changing rapidly, and
+it gives a force on the particle. The force is the charge times the
+electric field, and so during the build up of the flux the particle
+obtains a total impulse (that is, a change in [eq]) equal
+to [eq]. In other words, if you suddenly turn on a vector potential
+at a charge, this charge immediately picks up an [eq]-momentum equal
+to [eq]. But there is something that isn’t changed immediately
+and that’s the difference between [eq] and [eq]. And so the
+sum [eq] is something which is not changed when you
+make a sudden change in the vector potential. This quantity [eq] is
+what we have called the [eq]-momentum and is of importance in classical
+mechanics in the theory of dynamics, but it also has a direct
+significance in quantum mechanics. It depends on the character of the
+wave function, and it is the one to be identified with the operator
+\begin{equation*}
+\Pcalvecop=\frac{\hbar}{i}\,\FLPnabla.
+\end{equation*}
+
+When Schrödinger first
+discovered his equation he discovered the conservation law of
+Eq. ( 21.8 ) as a consequence of his equation. But he
+imagined incorrectly that [eq] was the electric charge
+density of the electron and that [eq]
+was the electric current density, so he thought that the electrons
+interacted with the electromagnetic field through these charges and
+currents. When he solved his equations for the hydrogen atom and
+calculated [eq], he wasn’t calculating the probability of
+anything—there were no amplitudes at that time—the interpretation
+was completely different. The atomic nucleus was stationary but there
+were currents moving around; the charges [eq] and currents [eq] would
+generate electromagnetic fields and the thing would radiate light. He
+soon found on doing a number of problems that it didn’t work out quite
+right. It was at this point that Born
+made an essential contribution to our ideas regarding quantum mechanics.
+It was Born who correctly (as far as
+we know) interpreted the [eq] of the Schrödinger equation in terms of
+a probability amplitude—that very difficult idea that the square of
+the amplitude is not the charge density but is only the probability per
+unit volume of finding an electron there, and that when you do find the
+electron some place the entire charge is there. That whole idea is due
+to Born.
+
+The wave function [eq] for an electron in an atom does not,
+then, describe a smeared-out electron with a smooth charge
+density. The electron is either here, or there, or somewhere else, but
+wherever it is, it is a point charge. On the other hand, think of a
+situation in which there are an enormous number of particles in
+exactly the same state, a very large number of them with exactly the
+same wave function. Then what? One of them is here and one of them is
+there, and the probability of finding any one of them at a given place
+is proportional to [eq]. But since there are so many
+particles, if I look in any volume [eq] I will generally find
+a number close to [eq]. So in a situation in
+which [eq] is the wave function for each of an enormous number of
+particles which are all in the same state, [eq] can 
+be interpreted as the density of particles. If, under these
+circumstances, each particle carries the same charge [eq], we can, in
+fact, go further and interpret [eq] as the density of
+ electricity . Normally, [eq] is given the dimensions
+of a probability density, then [eq] should be multiplied by [eq] to
+give the dimensions of a charge density. For our present purposes we
+can put this constant factor into [eq], and take [eq]
+itself as the electric charge density. With this understanding,
+[eq] (the current of probability I have calculated) becomes
+directly the electric current density.
+
+So in the situation in which we can have very many particles in
+exactly the same state, there is possible a new physical
+interpretation of the wave functions. The charge density and the
+electric current can be calculated directly from the wave functions
+and the wave functions take on a physical meaning which extends into
+classical, macroscopic situations.
+
+Something similar can happen with neutral particles. When we have the
+wave function of a single photon, it is the amplitude to find a photon
+somewhere. Although we haven’t ever written it down there is an
+equation for the photon wave function analogous to the Schrödinger
+equation for the electron. The photon equation is just the same as
+Maxwell’s equations for the electromagnetic field, and the wave
+function is the same as the vector potential [eq]. The wave
+function turns out to be just the vector potential. The quantum
+physics is the same thing as the classical physics because photons are
+noninteracting Bose particles and many of them can be in the same
+state—as you know, they like to be in the same state. The
+moment that you have billions in the same state (that is, in the same
+electromagnetic wave), you can measure the wave function, which is the
+vector potential, directly. Of course, it worked historically the
+other way. The first observations were on situations with many photons
+in the same state, and so we were able to discover the correct
+equation for a single photon by observing directly with our hands on a
+macroscopic level the nature of the wave function.
+
+Now the trouble with the electron is that you cannot put more than one
+in the same state. Therefore, it was long believed that the wave
+function of the Schrödinger equation would never have a macroscopic
+representation analogous to the macroscopic representation of the
+amplitude for photons. On the other hand, it is now realized that the
+phenomenon of superconductivity presents us with just this situation.
+
+As you know, very many metals become superconducting below a certain
+temperature 9 —the temperature is different for different metals. When you
+reduce the temperature sufficiently the metals conduct electricity
+without any resistance. This phenomenon has been observed for a very
+large number of metals but not for all, and the theory of this
+phenomenon has caused a great deal of difficulty. It took a very long
+time to understand what was going on inside of superconductors, and I
+will only describe enough of it for our present purposes. It turns out
+that due to the interactions of the electrons with the vibrations of the
+atoms in the lattice, there is a small net effective attraction 
+between the electrons. The result is that the electrons form together,
+if I may speak very qualitatively and crudely, bound pairs.
+
+Now you know that a single electron is a Fermi particle. But a bound
+pair would act as a Bose particle, because if I exchange both
+electrons in a pair I change the sign of the wave function twice, and
+that means that I don’t change anything. A pair is a Bose
+particle.
+
+The energy of pairing—that is, the net attraction—is very, very
+weak. Only a tiny temperature is needed to throw the electrons apart
+by thermal agitation, and convert them back to “normal”
+electrons. But when you make the temperature sufficiently low that
+they have to do their very best to get into the absolutely lowest
+state; then they do collect in pairs.
+
+I don’t wish you to imagine that the pairs are really held together very
+closely like a point particle. As a matter of fact, one of the great
+difficulties of understanding this phenomenon originally was that that is
+not the way things are. The two electrons which form the pair are really
+spread over a considerable distance; and the mean distance between pairs
+is relatively smaller than the size of a single pair. Several pairs are
+occupying the same space at the same time. Both the reason why electrons
+in a metal form pairs and an estimate of the energy given up in forming
+a pair have been a triumph of recent times. This fundamental point in
+the theory of superconductivity was first explained in the theory of
+Bardeen, Cooper, and Schrieffer, 10 but that is not the subject of
+this seminar. We will accept, however, the idea that the electrons do,
+in some manner or other, work in pairs, that we can think of these pairs
+as behaving more or less like particles, and that we can therefore talk
+about the wave function for a “pair.”
+
+Now the Schrödinger equation for the pair will be more or less like
+Eq. ( 21.3 ). There will be one difference in that the
+charge [eq] will be twice the charge of an electron. Also, we don’t
+know the inertia—or effective mass—for the pair in the crystal
+lattice, so we don’t know what number to put in for [eq]. Nor should we
+think that if we go to very high frequencies (or short wavelengths),
+this is exactly the right form, because the kinetic energy that
+corresponds to very rapidly varying wave functions may be so great as
+to break up the pairs. At finite temperatures there are always a few
+pairs which are broken up according to the usual Boltzmann theory. The
+probability that a pair is broken is proportional
+to [eq]. The electrons that are not bound in pairs
+are called “normal” electrons and will move around in the crystal in
+the ordinary way. I will, however, consider only the situation at
+essentially zero temperature—or, in any case, I will disregard the
+complications produced by those electrons which are not in pairs.
+
+Since electron pairs are bosons, when there are a lot of them in a
+given state there is an especially large amplitude for other pairs to
+go to the same state. So nearly all of the pairs will be locked down
+at the lowest energy in exactly the same state —it won’t be
+easy to get one of them into another state. There’s more amplitude to
+go into the same state than into an unoccupied state by the famous
+factor [eq], where [eq] is the occupancy of the lowest
+state. So we would expect all the pairs to be moving in the same
+state.
+
+What then will our theory look like? I’ll call [eq] the wave
+function of a pair in the lowest energy state. However, since
+[eq] is going to be proportional to the charge
+density [eq], I can just as well write [eq] as the square root of the
+charge density times some phase factor:
+\begin{equation}
+\label{Eq:III:21:17}
+\psi(\FLPr)=\rho^{1/2}(\FLPr)e^{i\theta(\FLPr)},
+\end{equation}
+
+where [eq] and [eq] are real functions of [eq]. (Any complex
+function can, of course, be written this way.) It’s clear what we mean
+when we talk about the charge density, but what is the physical
+meaning of the phase [eq] of the wave function? Well, let’s see
+what happens if we substitute [eq] into
+Eq. ( 21.12 ), and express the current density in terms of
+these new variables [eq] and [eq]. It’s just a change of variables
+and I won’t go through all the algebra, but it comes out
+\begin{equation}
+\label{Eq:III:21:18}
+\FLPJ=\frac{\hbar}{m}\biggl(
+\FLPgrad{\theta}-\frac{q}{\hbar}\,\FLPA\biggr)\rho.
+\end{equation}
+
+Since both the current density and the charge density have a direct
+physical meaning for the superconducting electron gas, both [eq]
+and [eq] are real things. The phase is just as observable as [eq];
+it is a piece of the current density [eq]. The absolute 
+phase is not observable, but if the gradient of the phase is known
+everywhere, the phase is known except for a constant. You can define
+the phase at one point, and then the phase everywhere is determined.
+
+Incidentally, the equation for the current can be analyzed a little
+nicer, when you think that the current density [eq] is in
+fact the charge density times the velocity of motion of the fluid of
+electrons, or [eq]. Equation ( 21.18 ) is then
+equivalent to
+\begin{equation}
+\label{Eq:III:21:19}
+m\FLPv=\hbar\,\FLPgrad{\theta}-q\FLPA.
+\end{equation}
+
+Notice that there are two pieces in the [eq]-momentum; one is a
+contribution from the vector potential, and the other, a contribution
+from the behavior of the wave function. In other words, the
+quantity [eq] is just what we have called the
+[eq]-momentum.
+
+Now we can describe some of the phenomena of superconductivity. First,
+there is no electrical resistance. There’s no resistance because all
+the electrons are collectively in the same state. In the ordinary flow
+of current you knock one electron or the other out of the regular
+flow, gradually deteriorating the general momentum. But here to get
+one electron away from what all the others are doing is very hard
+because of the tendency of all Bose particles to go in the same
+state. A current once started, just keeps on going forever.
+
+It’s also easy to understand that if you have a piece of metal in the
+superconducting state and turn on a magnetic field which isn’t too
+strong (we won’t go into the details of how strong), the magnetic
+field can’t penetrate the metal. If, as you build up the magnetic
+field, any of it were to build up inside the metal, there would be a
+rate of change of flux which would produce an electric field, and an
+electric field would immediately generate a current which, by Lenz’s
+law, would oppose the flux. Since all the electrons will move
+together, an infinitesimal electric field will generate enough current
+to oppose completely any applied magnetic field. So if you turn the
+field on after you’ve cooled a metal to the superconducting state, it
+will be excluded.
+
+Even more interesting is a related phenomenon discovered experimentally
+by Meissner. 11 If you have a piece
+of the metal at a high temperature (so that it is a normal conductor)
+and establish a magnetic field through it, and then you lower the
+temperature below the critical temperature (where the metal becomes a
+superconductor), the field is expelled . In other words, it starts
+up its own current—and in just the right amount to push the field out.
+
+We can see the reason for that in the equations, and I’d like to
+explain how. Suppose that we take a piece of superconducting material
+which is in one lump. Then in a steady situation of any kind the
+divergence of the current must be zero because there’s no place for it
+to go. It is convenient to choose to make the divergence of [eq]
+equal to zero. (I should explain why choosing this convention doesn’t
+mean any loss of generality, but I don’t want to take the time.)
+Taking the divergence of Eq. ( 21.18 ), then gives that
+the Laplacian of [eq] is equal to zero. One moment. What about the
+variation of [eq]? I forgot to mention an important point. There is
+a background of positive charge in this metal due to the atomic ions
+of the lattice. If the charge density [eq] is uniform there is no
+net charge and no electric field. If there would be any accumulation
+of electrons in one region the charge wouldn’t be neutralized and
+there would be a terrific repulsion pushing the electrons
+apart. 12 So in
+ordinary circumstances the charge density of the electrons in the
+superconductor is almost perfectly uniform—I can take [eq] as a
+constant. Now the only way that [eq] can be zero
+everywhere inside the lump of metal is for [eq] to be a
+constant. And that means that there is no contribution to [eq] from
+[eq]-momentum. Equation ( 21.18 ) then says that the current
+is proportional to [eq] times [eq]. So everywhere in a lump of
+superconducting material the current is necessarily proportional to
+the vector potential:
+\begin{equation}
+\label{Eq:III:21:20}
+\FLPJ=-\rho\,\frac{q}{m}\,\FLPA.
+\end{equation}
+
+Since [eq] and [eq] have the same (negative) sign, and since [eq]
+is a constant, I can set [eq];
+then
+\begin{equation}
+\label{Eq:III:21:21}
+\FLPJ=-(\text{some positive constant})\FLPA.
+\end{equation}
+
+This equation was originally proposed by London and
+London 13 to explain the
+experimental observations of superconductivity—long before the quantum
+mechanical origin of the effect was understood.
+
+Now we can use Eq. ( 21.20 ) in the equations of
+electromagnetism to solve for the fields. The vector potential is
+related to the current density by
+\begin{equation}
+\label{Eq:III:21:22}
+\nabla^2\FLPA=-\frac{1}{\epsO c^2}\,\FLPJ.
+\end{equation}
+
+If I use Eq. ( 21.21 ) for [eq], I have
+\begin{equation}
+\label{Eq:III:21:23}
+\nabla^2\FLPA=\lambda^2\FLPA,
+\end{equation}
+
+where [eq] is just a new constant;
+\begin{equation}
+\label{Eq:III:21:24}
+\lambda^2=\rho\,\frac{q}{\epsO mc^2}.
+\end{equation}
+
+We can now try to solve this equation for [eq] and see what happens
+in detail. For example, in one dimension Eq. ( 21.23 )
+has exponential solutions of the form [eq]
+and [eq]. These solutions mean that the vector potential must
+ decrease exponentially as you go from the surface into the
+material. (It can’t increase because there would be a blow up.) If the
+piece of metal is very large compared to [eq], the field only
+penetrates to a thin layer at the surface—a layer about [eq]
+in thickness. The entire remainder of the interior is free of field,
+as sketched in Fig.  21–3 . This is the explanation of the Meissner
+effect.
+
+How big is the distance [eq]? Well, remember that [eq], the
+“electromagnetic radius” of the electron ([eq] cm),
+is given by
+\begin{equation*}
+mc^2=\frac{q_e^2}{4\pi\epsO r_0}.
+\end{equation*}
+
+Also, remember that [eq] in Eq. ( 21.24 ) is twice the
+charge of an electron, so
+\begin{equation*}
+\frac{q}{\epsO mc^2}=\frac{8\pi r_0}{q_e}.
+\end{equation*}
+
+Writing [eq] as [eq], where [eq] is the number of electrons per
+cubic centimeter, we have
+\begin{equation}
+\label{Eq:III:21:25}
+\lambda^2=8\pi Nr_0.
+\end{equation}
+
+For a metal such as lead there are about [eq] atoms
+per cm[eq], so if each one contributed only one conduction electron,
+[eq] would be about [eq] cm. That gives you the
+order of magnitude.
+
+The London equation ( 21.21 ) was proposed to account for
+the observed facts of superconductivity including the
+Meissner effect.
+In recent times, however, there have been some even more
+dramatic predictions. One prediction made by London was so peculiar
+that nobody paid much attention to it until recently. I will now
+discuss it. This time instead of taking a single lump, suppose we take
+a ring whose thickness is large compared to [eq], and
+try to see what would happen if we started with a magnetic field
+through the ring, then cooled it to the superconducting state, and
+afterward removed the original source of [eq]. The sequence of
+events is sketched in Fig.  21–4 . In the normal state there will be a
+field in the body of the ring as sketched in part (a) of the
+figure. When the ring is made superconducting, the field is forced
+outside of the material (as we have just seen). There will then
+be some flux through the hole of the ring as sketched in part (b). If
+the external field is now removed, the lines of field going through
+the hole are “trapped” as shown in part (c). The flux [eq] through
+the center can’t decrease because [eq] must be equal to
+the line integral of [eq] around the ring, which is zero in a
+superconductor. As the external field is removed a super current
+starts flowing around the ring to keep the flux through the ring a
+constant. (It’s the old eddy-current idea, only with zero resistance.)
+These currents will, however, all flow near the surface (down to a
+depth [eq]), as can be shown by the same kind of analysis that
+I made for the solid block. These currents can keep the magnetic field
+out of the body of the ring, and produce the permanently trapped
+magnetic field as well.
+
+Now, however, there is an essential difference, and our equations
+predict a surprising effect. The argument I made above that [eq]
+must be a constant in a solid block does not apply for a ring ,
+as you can see from the following arguments.
+
+Well inside the body of the ring the current density [eq] is zero;
+so Eq. ( 21.18 ) gives
+\begin{equation}
+\label{Eq:III:21:26}
+\hbar\,\FLPgrad{\theta}=q\FLPA.
+\end{equation}
+
+Now consider what we get if we take the line integral of [eq]
+around a curve [eq], which goes around the ring near the center of
+its cross-section so that it never gets near the surface, as drawn in
+Fig.  21–5 . From Eq. ( 21.26 ),
+\begin{equation}
+\label{Eq:III:21:27}
+\hbar\oint\FLPgrad{\theta}\cdot d\FLPs=q\oint\FLPA\cdot d\FLPs.
+\end{equation}
+
+Now you know that the line integral of [eq] around any loop is
+equal to the flux of [eq] through the loop
+\begin{equation*}
+\oint\FLPA\cdot d\FLPs=\Phi.
+\end{equation*}
+
+Equation ( 21.27 ) then becomes
+\begin{equation}
+\label{Eq:III:21:28}
+\oint\FLPgrad{\theta}\cdot d\FLPs=\frac{q}{\hbar}\,\Phi.
+\end{equation}
+
+The line integral of a gradient from one point to another (say from
+point [eq] to point [eq]) is the difference of the values of the
+function at the two points. Namely,
+\begin{equation*}
+\int_1^2\FLPgrad{\theta}\cdot d\FLPs=\theta_2-\theta_1.
+\end{equation*}
+
+If we let the two end points [eq] and [eq] come together to make a
+closed loop you might at first think that [eq] would
+equal [eq], so that the integral in Eq. ( 21.28 ) would
+be zero. That would be true for a closed loop in a simply-connected
+piece of superconductor, but it is not necessarily true for a
+ring-shaped piece. The only physical requirement we can make is that
+ there can be only one value of the wave function for each
+point . Whatever [eq] does as you go around the ring, when you get
+back to the starting point the [eq] you get must give the same
+value for the wave function
+\begin{equation*}
+\psi=\sqrt{\rho}e^{i\theta}.
+\end{equation*}
+
+This will happen if [eq] changes by [eq], where [eq] is any
+integer. So if we make one complete turn around the ring the left-hand
+side of Eq. ( 21.27 ) must be [eq]. Using
+Eq. ( 21.28 ), I get that
+\begin{equation}
+\label{Eq:III:21:29}
+2\pi n\hbar=q\Phi.
+\end{equation}
+
+ The trapped flux must always be an integer times [eq]! 
+If you would think of the ring as a classical object with an ideally
+perfect (that is, infinite) conductivity, you would think that
+whatever flux was initially found through it would just stay
+there—any amount of flux at all could be trapped. But the
+quantum-mechanical theory of superconductivity says that the flux can
+be zero, or [eq], or [eq], or [eq], and so
+on, but no value in between. It must be a multiple of a basic quantum
+mechanical unit.
+
+London 14 predicted that the
+flux trapped by a superconducting ring would be quantized and said
+that the possible values of the flux would be given by
+Eq. ( 21.29 ) with [eq] equal to the electronic charge.
+According to London the basic unit of flux should be [eq],
+which is about [eq] [eq]. To
+visualize such a flux, think of a tiny cylinder a tenth of a millimeter
+in diameter; the magnetic field inside it when it contains this amount
+of flux is about one percent of the earth’s magnetic field. It should be
+possible to observe such a flux by a sensitive magnetic measurement.
+
+In 1961 such a quantized flux was looked for and found by Deaver and
+Fairbank 15 at
+Stanford University and at about the same time by Doll and
+Näbauer 16 in
+Germany.
+
+In the experiment of Deaver and Fairbank, a tiny cylinder of
+superconductor was made by electroplating a thin layer of tin on a
+one-centimeter length of No. 56 ([eq] cm diameter)
+copper wire. The tin becomes superconducting below [eq]K while
+the copper remains a normal metal. The wire was put in a small
+controlled magnetic field, and the temperature reduced until the tin
+became superconducting. Then the external source of field was
+removed. You would expect this to generate a current by Lenz’s law so
+that the flux inside would not change. The little cylinder should now
+have magnetic moment proportional to the flux inside. The magnetic
+moment was measured by jiggling the wire up and down (like the needle
+on a sewing machine, but at the rate of [eq] cycles per second)
+inside a pair of little coils at the ends of the tin cylinder. The
+induced voltage in the coils was then a measure of the magnetic
+moment.
+
+When the experiment was done by Deaver and Fairbank, they found that
+the flux was quantized, but that the basic unit was only
+one-half as large as London had predicted . Doll and Näbauer got the
+same result. At first this was quite mysterious, 17 but
+we now understand why it should be so. According to the Bardeen,
+Cooper, and Schrieffer theory of superconductivity, the [eq] which
+appears in Eq. ( 21.29 ) is the charge of a pair 
+of electrons and so is equal to [eq]. The basic flux unit is
+\begin{equation}
+\label{Eq:III:21:30}
+\Phi_0=\frac{\pi\hbar}{q_e}\approx2\times10^{-7}\text{ gauss}\cdot\text{cm}^2
+\end{equation}
+
+or one-half the amount predicted by London. Everything now fits
+together, and the measurements show the existence of the predicted
+purely quantum-mechanical effect on a large scale.
+
+The Meissner effect
+and the flux quantization are two confirmations of
+our general ideas. Just for the sake of completeness I would like to
+show you what the complete equations of a superconducting fluid would
+be from this point of view—it is rather interesting. Up to this
+point I have only put the expression for [eq] into equations for
+charge density and current. If I put it into the complete
+Schrödinger equation I get equations for [eq] and [eq]. It
+should be interesting to see what develops, because here we have a
+“fluid” of electron pairs with a charge density [eq] and a
+mysterious [eq]—we can try to see what kind of equations we get
+for such a “fluid”! So we substitute the wave function of
+Eq. ( 21.17 ) into the Schrödinger
+equation ( 21.3 ) and remember that [eq] and [eq] are
+real functions of [eq], [eq], [eq], and [eq]. If we separate real and
+imaginary parts we obtain then two equations. To write them in a shorter
+form I will—following Eq. ( 21.19 )—write
+\begin{equation}
+\label{Eq:III:21:31}
+\frac{\hbar}{m}\,\FLPgrad{\theta}-\frac{q}{m}\,\FLPA=\FLPv.
+\end{equation}
+
+One of the equations I get is then
+\begin{equation}
+\label{Eq:III:21:32}
+\ddp{\rho}{t}=-\FLPdiv{\rho\FLPv}.
+\end{equation}
+
+Since [eq] is first [eq], this is just the continuity
+equation once more. The other equation I obtain tells how [eq]
+varies; it is
+\begin{equation}
+\label{Eq:III:21:33}
+\hbar\,\ddp{\theta}{t}=-\frac{m}{2}\,v^2-q\phi+
+\frac{\hbar^2}{2m}\biggl\{
+\frac{1}{\sqrt{\rho}}\,\nabla^2(\sqrt{\rho})\biggr\}.
+\end{equation}
+
+Those who are thoroughly familiar with hydrodynamics (of which I’m
+sure few of you are) will recognize this as the equation of motion for
+an electrically charged fluid if we identify [eq] as the
+“velocity potential”—except that the last term, which should be
+the energy of compression of the fluid, has a rather strange
+dependence on the density [eq]. In any case, the equation says that
+the rate of change of the quantity [eq] is given by a kinetic
+energy term, [eq], plus a potential energy term,
+[eq], with an additional term, containing the factor [eq],
+which we could call a “quantum mechanical energy.” We have seen that
+inside a superconductor [eq] is kept very uniform by the
+electrostatic forces, so this term can almost certainly be neglected
+in every practical application provided we have only one
+superconducting region. If we have a boundary between two
+superconductors (or other circumstances in which the value of [eq]
+may change rapidly) this term can become important.
+
+For those who are not so familiar with the equations of hydrodynamics,
+I can rewrite Eq. ( 21.33 ) in a form that makes the
+physics more apparent by using Eq. ( 21.31 ) to express
+[eq] in terms of [eq]. Taking the gradient of the whole of
+Eq. ( 21.33 ) and expressing [eq] in terms
+of [eq] and [eq] by using ( 21.31 ), I get
+ 
+\begin{equation}
+\label{Eq:III:21:34}
+\ddp{\FLPv}{t}=\frac{q}{m}\biggl(-\FLPgrad{\phi}-\ddp{\FLPA}{t}\biggr)-
+\FLPv\times(\FLPcurl{\FLPv})-(\FLPv\cdot\FLPnabla)\FLPv+
+\FLPgrad{\frac{\hbar^2}{2m^2}
+\biggl(\frac{1}{\sqrt{\rho}}\,\nabla^2\sqrt{\rho}\biggr)}.
+\end{equation}
+ 
+ 
+\begin{align}
+\ddp{\FLPv}{t}&=\frac{q}{m}\biggl(-\FLPgrad{\phi}-\ddp{\FLPA}{t}\biggr)
+-\FLPv\times(\FLPcurl{\FLPv})\notag\\[1ex]
+\label{Eq:III:21:34}
+&-(\FLPv\cdot\FLPnabla)\FLPv +
+\FLPgrad{\frac{\hbar^2}{2m^2}
+\biggl(\frac{1}{\sqrt{\rho}}\,\nabla^2\sqrt{\rho}\biggr)}.
+\end{align}
+ 
+What does this equation mean? First, remember that
+\begin{equation}
+\label{Eq:III:21:35}
+-\FLPgrad{\phi}-\ddp{\FLPA}{t}=\FLPE.
+\end{equation}
+
+Next, notice that if I take the curl of Eq. ( 21.31 ), I
+get
+\begin{equation}
+\label{Eq:III:21:36}
+\FLPcurl{\FLPv}=-\frac{q}{m}\,\FLPcurl{\FLPA},
+\end{equation}
+
+since the curl of a gradient is always zero. But [eq] is
+the magnetic field [eq], so the first two terms can be written as
+\begin{equation*}
+\frac{q}{m}(\FLPE+\FLPv\times\FLPB).
+\end{equation*}
+
+Finally, you should understand that [eq] stands for the
+rate of change of the velocity of the fluid at a point. If you
+concentrate on a particular particle, its acceleration is the
+ total derivative of [eq] (or, as it is sometimes called in
+fluid dynamics, the “comoving acceleration”), which is related
+to [eq] by 18 
+\begin{equation}
+\label{Eq:III:21:37}
+\left.\ddt{\FLPv}{t}\right|_{\text{comoving}}\kern{-2ex}=
+\ddp{\FLPv}{t}+(\FLPv\cdot\FLPnabla)\FLPv.
+\end{equation}
+
+This extra term also appears as the third term on the right side of
+Eq. ( 21.34 ). Taking it to the left side, I can write
+Eq. ( 21.34 ) in the following way:
+\begin{equation}
+\label{Eq:III:21:38}
+\left.m\ddt{\FLPv}{t}\right|_{\text{comoving}}\kern{-3.5ex}=
+q(\FLPE\!+\!\FLPv\!\times\!\FLPB)\!+\!\FLPgrad{\frac{\hbar^2}{2m}
+\!\biggl(\!\frac{1}{\sqrt{\rho}}\nabla^2\!\!\sqrt{\rho}\!\biggr)}.
+\end{equation}
+
+We also have from Eq. ( 21.36 ) that
+\begin{equation}
+\label{Eq:III:21:39}
+\FLPcurl{\FLPv}=-\frac{q}{m}\,\FLPB.
+\end{equation}
+
+These two equations are the equations of motion of the superconducting
+electron fluid. The first equation is just Newton’s law for a charged
+fluid in an electromagnetic field. It says that the acceleration of
+each particle of the fluid whose charge is [eq] comes from the ordinary
+Lorentz force [eq] plus an additional force,
+which is the gradient of some mystical quantum mechanical
+potential—a force which is not very big except at the junction
+between two superconductors. The second equation says that the fluid
+is “ideal”—the curl of [eq] has zero divergence (the divergence
+of [eq] is always zero). That means that the velocity can be
+expressed in terms of velocity potential. Ordinarily one writes that
+[eq] for an ideal fluid, but for an ideal
+charged fluid in a magnetic field , this gets modified to
+Eq. ( 21.39 ).
+
+So, Schrödinger’s equation for the electron pairs in a superconductor
+gives us the equations of motion of an electrically charged ideal fluid.
+Superconductivity is the same as the problem of the hydrodynamics of a
+charged liquid. If you want to solve any problem about superconductors
+you take these equations for the fluid [or the equivalent pair,
+Eqs. ( 21.32 ) and ( 21.33 )], and combine
+them with Maxwell’s equations to get the fields. (The charges
+and currents you use to get the fields must, of course, include the ones
+from the superconductor as well as from the external sources.)
+
+Incidentally, I believe that Eq. ( 21.38 ) is not quite
+correct, but ought to have an additional term involving the
+density. This new term does not depend on quantum mechanics, but comes
+from the ordinary energy associated with variations of density. Just
+as in an ordinary fluid there should be a potential energy density
+proportional to the square of the deviation of [eq] from [eq],
+the undisturbed density (which is, here, also equal to the charge
+density of the crystal lattice). Since there will be forces
+proportional to the gradient of this energy, there should be another
+term in Eq. ( 21.38 ) of the form:
+[eq]. This term did not appear
+from the analysis because it comes from the interactions between
+particles, which I neglected in using an independent-particle
+approximation. It is, however, just the force I referred to when I
+made the qualitative statement that electrostatic forces would tend to
+keep [eq] nearly constant inside a superconductor.
+
+I would like to discuss next a very interesting situation that was
+noticed by
+Josephson 19 while analyzing what might happen at
+a junction between two superconductors. Suppose we have two
+superconductors which are connected by a thin layer of insulating
+material as in Fig.  21–6 . Such an arrangement is now called a
+“Josephson junction.” If the insulating layer is thick, the
+electrons can’t get through; but if the layer is thin enough, there
+can be an appreciable quantum mechanical amplitude for electrons to
+jump across. This is just another example of the quantum-mechanical
+penetration of a barrier.
+Josephson analyzed this
+situation and discovered that a number of strange phenomena should
+occur.
+
+In order to analyze such a junction I’ll call the amplitude to find an
+electron on one side, [eq], and the amplitude to find it on the
+other, [eq]. In the superconducting state the wave function
+[eq] is the common wave function of all the electrons on one side,
+and [eq] is the corresponding function on the other side. I could
+do this problem for different kinds of superconductors, but let us
+take a very simple situation in which the material is the same on both
+sides so that the junction is symmetrical and simple. Also, for a
+moment let there be no magnetic field. Then the two amplitudes should
+be related in the following way:
+\begin{align*}
+i\hbar\,\ddp{\psi_1}{t}&=U_1\psi_1+K\psi_2,\\[1ex]
+i\hbar\,\ddp{\psi_2}{t}&=U_2\psi_2+K\psi_1.
+\end{align*}
+
+The constant [eq] is a characteristic of the junction. If [eq] were
+zero, these two equations would just describe the lowest energy
+state—with energy [eq]—of each superconductor. But there is
+coupling between the two sides by the amplitude [eq] that there may be
+leakage from one side to the other. (It is just the “flip-flop”
+amplitude of a two-state system.) If the two sides are identical,
+[eq] would equal [eq] and I could just subtract them off. But now
+suppose that we connect the two superconducting regions to the two
+terminals of a battery so that there is a potential difference [eq]
+across the junction. Then [eq]. I can, for convenience, define
+the zero of energy to be halfway between, then the two equations are
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddp{\psi_1}{t}&=+\frac{qV}{2}\,\psi_1+K\psi_2,\\[1ex]
+i\hbar\,\ddp{\psi_2}{t}&=-\frac{qV}{2}\,\psi_2+K\psi_1.
+\end{aligned}
+\label{Eq:III:21:40}
+\end{equation}
+
+These are the standard equations for two quantum mechanical states
+coupled together. This time, let’s analyze these equations in another
+way. Let’s make the substitutions
+\begin{equation}
+\begin{aligned}
+\psi_1&=\sqrt{\rho_1}e^{i\theta_1},\\[1ex]
+\psi_2&=\sqrt{\rho_2}e^{i\theta_2},
+\end{aligned}
+\label{Eq:III:21:41}
+\end{equation}
+
+where [eq] and [eq] are the phases on the two sides of the
+junction and [eq] and [eq] are the density of electrons at
+those two points. Remember that in actual practice [eq]
+and [eq] are almost exactly the same and are equal to [eq], the
+normal density of electrons in the superconducting material. Now if
+you substitute these equations for [eq] and [eq]
+into ( 21.40 ), you get four equations by equating the real
+and imaginary parts in each case. Letting [eq],
+for short, the result is
+\begin{align}
+&\begin{aligned}
+\dot{\rho}_1&=+\frac{2}{\hbar}\,K\sqrt{\rho_2\rho_1}\sin\delta,\\[1.5ex]
+\dot{\rho}_2&=-\frac{2}{\hbar}\,K\sqrt{\rho_2\rho_1}\sin\delta,
+\end{aligned}\\[3ex]
+\label{Eq:III:21:42}
+&\begin{aligned}
+\dot{\theta}_1&=-\frac{K}{\hbar}\sqrt{\frac{\rho_2}{\rho_1}}\cos\delta-
+\frac{qV}{2\hbar},\\[1.5ex]
+\dot{\theta}_2&=-\frac{K}{\hbar}\sqrt{\frac{\rho_1}{\rho_2}}\cos\delta+
+\frac{qV}{2\hbar}.
+\end{aligned}
+\label{Eq:III:21:43}
+\end{align}
+
+The first two equations say that
+[eq]. “But,” you say, “they must both be
+zero if [eq] and [eq] are both constant and equal
+to [eq].” Not quite. These equations are not the whole story. They
+say what [eq] and [eq] would be if there
+were no extra electric forces due to an unbalance between the
+electron fluid and the background of positive ions. They tell how the
+densities would start to change, and therefore describe the
+kind of current that would begin to flow. This current from side [eq]
+to side [eq] would be just [eq] (or [eq]), or
+\begin{equation}
+\label{Eq:III:21:44}
+J=\frac{2K}{\hbar}\sqrt{\rho_1\rho_2}\sin\delta.
+\end{equation}
+
+Such a current would soon charge up side [eq], except that we
+have forgotten that the two sides are connected by wires to the
+battery. The current that flows will not charge up region [eq] (or
+discharge region [eq]) because currents will flow to keep the potential
+constant. These currents from the battery have not been included in
+our equations. When they are included, [eq] and [eq] do not in
+fact change, but the current across the junction is still given by
+Eq. ( 21.44 ).
+
+Since [eq] and [eq] do remain constant and equal to [eq],
+let’s set [eq], and write
+\begin{equation}
+\label{Eq:III:21:45}
+J=J_0\sin\delta.
+\end{equation}
+
+[eq], like [eq], is then a number which is a characteristic of the
+particular junction.
+
+The other pair of equations ( 21.43 ) tells us about
+[eq] and [eq]. We are interested in the
+difference [eq] to use Eq. ( 21.45 ); what we
+get is
+\begin{equation}
+\label{Eq:III:21:46}
+\dot{\delta}=\dot{\theta}_2-\dot{\theta}_1=\frac{qV}{\hbar}.
+\end{equation}
+
+That means that we can write
+\begin{equation}
+\label{Eq:III:21:47}
+\delta(t)=\delta_0+\frac{q}{\hbar}\int V(t)\,dt,
+\end{equation}
+
+where [eq] is the value of [eq] at [eq]. Remember also that
+[eq] is the charge of a pair, namely, [eq]. In Eqs.
+( 21.45 ) and ( 21.47 ) we have an important
+result, the general theory of the Josephson junction.
+
+Now what are the consequences? First, put on a dc voltage. If you put on
+a dc voltage, [eq], the argument of the sine
+becomes [eq]. Since [eq] is a small number
+(compared to ordinary voltage and times), the sine oscillates rather
+rapidly and the net current is nothing. (In practice, since the
+temperature is not zero, you would get a small current due to the
+conduction by “normal” electrons.) On the other hand if you have
+ zero voltage across the junction, you can get a current! With no
+voltage the current can be any amount between [eq] and [eq]
+(depending on the value of [eq]). But try to put a voltage across
+it and the current goes to zero. This strange behavior has recently been
+observed experimentally. 20
+
+There is another way of getting a current—by applying a voltage at a
+very high frequency in addition to a dc voltage. Let
+\begin{equation*}
+V=V_0+v\cos\omega t,
+\end{equation*}
+
+where [eq]. Then [eq] is
+\begin{equation*}
+\delta_0+\frac{q}{\hbar}\,V_0t+\frac{q}{\hbar}\,\frac{v}{\omega}\sin\omega t.
+\end{equation*}
+
+Now for [eq] small,
+\begin{equation*}
+\sin\,(x+\Delta x)\approx\sin x+\Delta x\cos x.
+\end{equation*}
+
+Using this approximation for [eq], I get
+\begin{equation*}
+J=\!J_0\Bigl[\sin\Bigl(\!\delta_0\!+\!\frac{q}{\hbar}V_0t\!\Bigr)\!+\!
+\frac{q}{\hbar}\frac{v}{\omega}\sin\omega t
+\cos\Bigl(\!\delta_0\!+\!\frac{q}{\hbar}V_0t\!\Bigr)\Bigr].
+\end{equation*}
+
+
+The first term is zero on the average, but the second term is not if
+\begin{equation*}
+\omega=\frac{q}{\hbar}\,V_0.
+\end{equation*}
+
+There should be a current if the ac voltage has just this frequency.
+Shapiro 21 claims to have observed such a
+resonance effect.
+
+If you look up papers on the subject you will find that they often
+write the formula for the current as
+\begin{equation}
+\label{Eq:III:21:48}
+J=J_0\sin\biggl(\delta_0+\frac{2q_e}{\hbar}\int\FLPA\cdot d\FLPs\biggr),
+\end{equation}
+
+where the integral is to be taken across the junction. The reason for
+this is that when there’s a vector potential across the junction the
+flip-flop amplitude is modified in phase in the way that we explained
+earlier. If you chase that extra phase through, it comes out as given
+above.
+
+Finally, I would like to describe a very dramatic and interesting
+experiment which has recently been made on the interference of the
+currents from each of two junctions. In quantum mechanics we’re used to
+the interference between amplitudes from two different slits. Now we’re
+going to do the interference between two junctions caused by the
+difference in the phase of the arrival of the currents through two
+different paths. In Fig.  21–7 , I show two different
+junctions, “a” and “b”, connected in parallel. The ends, [eq]
+and [eq], are connected to our electrical instruments which measure any
+current flow. The external current, [eq], will be the sum
+of the currents through the two junctions. Let [eq]
+and [eq] be the currents through the two junctions, and let
+their phases be [eq] and [eq]. Now the
+phase difference of the wave functions between [eq] and [eq] must be the
+same whether you go on one route or the other. Along the route through
+junction “a”, the phase difference between [eq] and [eq]
+is [eq] plus the line integral of the vector potential
+along the upper route:
+\begin{equation}
+\label{Eq:III:21:49}
+\Delta\text{Phase}_{P\to Q}=\delta_{\text{a}}+
+\frac{2q_e}{\hbar}\int_{\text{upper}}\kern{-3ex}\FLPA\cdot d\FLPs.
+\end{equation}
+
+Why? Because the phase [eq] is related to [eq] by
+Eq. ( 21.26 ). If you integrate that equation along some
+path, the left-hand side gives the phase change, which is then just
+proportional to the line integral of [eq], as we have written here.
+The phase change along the lower route can be written similarly
+\begin{equation}
+\label{Eq:III:21:50}
+\Delta\text{Phase}_{P\to Q}=\delta_{\text{b}}+
+\frac{2q_e}{\hbar}\int_{\text{lower}}\kern{-3ex}\FLPA\cdot d\FLPs.
+\end{equation}
+
+These two must be equal; and if I subtract them I get that the
+difference of the deltas must be the line integral of [eq] around
+the circuit:
+\begin{equation*}
+\delta_{\text{b}}-\delta_{\text{a}}=
+\frac{2q_e}{\hbar}\oint_\Gamma\FLPA\cdot d\FLPs.
+\end{equation*}
+
+Here the integral is around the closed loop [eq] of Fig.  21–7 
+which circles through both junctions. The integral over [eq] is the
+magnetic flux [eq] through the loop. So the two [eq]’s are going
+to differ by [eq] times the magnetic flux [eq] which passes
+between the two branches of the circuit:
+\begin{equation}
+\label{Eq:III:21:51}
+\delta_{\text{b}}-\delta_{\text{a}}=\frac{2q_e}{\hbar}\,\Phi.
+\end{equation}
+
+I can control this phase difference by changing the magnetic field on
+the circuit, so I can adjust the differences in phases and see whether
+or not the total current that flows through the two junctions shows
+any interference of the two parts. The total current will be the sum
+of [eq] and [eq]. For convenience, I will write
+\begin{equation*}
+\delta_{\text{a}}=\delta_0-\frac{q_e}{\hbar}\,\Phi,\quad
+\delta_{\text{b}}=\delta_0+\frac{q_e}{\hbar}\,\Phi.
+\end{equation*}
+Then,
+\begin{align}
+J_{\text{total}} &=J_0\biggl\{\!\sin\biggl(\!
+\delta_0\!-\!\frac{q_e}{\hbar}\Phi\!\biggr)\!+\sin\biggl(\!
+\delta_0\!+\!\frac{q_e}{\hbar}\,\Phi\!\biggr)\!\biggr\}\notag\\[1.5ex]
+\label{Eq:III:21:52}
+ &=2J_0\sin\delta_0\cos\frac{q_e\Phi}{\hbar}.
+\end{align}
+
+Now we don’t know anything about [eq], and nature can adjust
+that anyway she wants depending on the circumstances. In particular,
+it will depend on the external voltage we apply to the junction. No
+matter what we do, however, [eq] can never get bigger
+than [eq]. So the maximum current for any given [eq] is given by
+\begin{equation*}
+J_{\text{max}}=2J_0\left\lvert
+\cos\frac{q_e}{\hbar}\,\Phi\right\rvert.
+\end{equation*}
+
+This maximum current will vary with [eq] and will itself have maxima
+whenever
+\begin{equation*}
+\Phi=n\,\frac{\pi\hbar}{q_e},
+\end{equation*}
+
+with [eq] some integer. That is to say that the current takes on its
+maximum values where the flux linkage has just those quantized values
+we found in Eq. ( 21.30 )!
+
+The Josephson current through a double junction was recently
+measured 22 as a
+function of the magnetic field in the area between the junctions. The
+results are shown in Fig.  21–8 . There is a general
+background of current from various effects we have neglected, but the
+rapid oscillations of the current with changes in the magnetic field are
+due to the interference term [eq] of
+Eq. ( 21.52 ).
+
+One of the intriguing questions about quantum mechanics is the question
+of whether the vector potential exists in a place where there’s no
+field. 23 This
+experiment I have just described has also been done with a tiny solenoid
+between the two junctions so that the only significant magnetic
+[eq] field is inside the solenoid and a negligible amount is on the
+superconducting wires themselves. Yet it is reported that the amount of
+current depends oscillatorily on the flux of magnetic field inside that
+solenoid even though that field never touches the wires—another
+demonstration of the “physical reality” of the vector
+potential. 24
+
+I don’t know what will come next. But look what can be done. First,
+notice that the interference between two junctions can be used to make
+a sensitive magnetometer. If a pair of junctions is made with an
+enclosed area of, say, [eq] mm[eq], the maxima in the curve of
+Fig.  21–8 would be separated by [eq] gauss. It
+is certainly possible to tell when you are [eq] of the way between two
+peaks; so it should be possible to use such a junction to measure
+magnetic fields as small as [eq] gauss—or to measure
+larger fields to such a precision. One should be able to go even
+further. Suppose for example we put a set of [eq] or [eq] junctions
+close together and equally spaced. Then we can have the interference
+between [eq] or [eq] slits and as we change the magnetic field we will
+get very sharp maxima and minima. Instead of a [eq]-slit interference we
+can have a [eq]- or perhaps even a [eq]-slit interferometer for
+measuring the magnetic field. Perhaps we can predict that the
+measurement of magnetic fields will—by using the effects of
+quantum-mechanical interference—eventually become almost as precise as
+the measurement of wavelength of light.
+
+These then are some illustrations of things that are happening in
+modern times—the transistor, the laser, and now these junctions,
+whose ultimate practical applications are still not known. The quantum
+mechanics which was discovered in 1926 has had nearly 40 years of
+development, and rather suddenly it has begun to be exploited in many
+practical and real ways. We are really getting control of nature on a
+very delicate and beautiful level.
+
+I am sorry to say, gentlemen, that to participate in this adventure it
+is absolutely imperative that you learn quantum mechanics as soon as
+possible. It was our hope that in this course we would find a way to
+make comprehensible to you at the earliest possible moment the
+mysteries of this part of physics.

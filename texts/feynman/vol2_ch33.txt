@@ -1,0 +1,975 @@
+The Feynman Lectures on Physics Vol. II Ch. 33: Reflection from Surfaces
+========================================================================
+
+Sections: 33–1 Reflection and refraction of light | 33–2 Waves in dense materials | 33–3 The boundary conditions | 33–4 The reflected and transmitted waves | 33–5 Reflection from metals | 33–6 Total internal reflection
+
+
+
+The subject of this chapter is the reflection and refraction
+of light—or electromagnetic waves in general—at surfaces. We have
+already discussed the laws of reflection and refraction in Chapters
+ 26 and  33 of Volume I. Here’s what we
+found out there:
+
+Our earlier discussion is really about as far as anyone would normally
+need to go with the subject, but we are going to do it all over again
+a different way. Why? One reason is that we assumed before that the
+indexes were real (no absorption in the materials). But another reason
+is that you should know how to deal with what happens to waves at
+surfaces from the point of view of Maxwell’s
+equations. We’ll get the same answers
+as before, but now from a straightforward solution of the wave problem,
+rather than by some clever arguments.
+
+We want to emphasize that the amplitude of a surface reflection is not
+a property of the material , as is the index of refraction. It
+is a “surface property,” one that depends precisely on how the
+surface is made. A thin layer of extraneous junk on the surface
+between two materials of indices [eq] and [eq] will usually change
+the reflection. (There are all kinds of possibilities of interference
+here—like the colors of oil films. Suitable thickness can even
+reduce the reflected amplitude to zero for a given frequency; that’s
+how coated lenses are made.) The formulas we will derive are correct
+only if the change of index is sudden—within a distance very small
+compared with one wavelength. For light, the wavelength is about
+[eq] Å, so by a “smooth” surface we mean one in which the
+conditions change in going a distance of only a few atoms (or a few
+angstroms). Our equations will work for light for highly polished
+surfaces. In general, if the index changes gradually over a distance
+of several wavelengths, there is very little reflection at all.
+
+First, we remind you about the convenient way of describing a sinusoidal
+plane wave we used in Chapter  34 of Volume I. Any field
+ component in the wave (we use [eq] as an example) can be written
+in the form
+\begin{equation}
+\label{Eq:II:33:6}
+E=E_0e^{i(\omega t-\FLPk\cdot\FLPr)},
+\end{equation}
+
+where [eq] represents the amplitude at the point [eq] (from the
+origin) at the time [eq]. The vector [eq] points in the direction
+the wave is travelling, and its magnitude [eq] [eq] [eq]
+is the wave number. The phase velocity of the wave
+is [eq]; for a light wave in a material of index [eq],
+[eq], so
+\begin{equation}
+\label{Eq:II:33:7}
+k=\frac{\omega n}{c}.
+\end{equation}
+
+Suppose [eq] is in the [eq]-direction; then [eq] is
+just [eq], as we have often used it. For [eq] in any other direction, we
+should replace [eq] by [eq], the distance from the origin in the
+[eq]-direction; that is, we should replace [eq] by [eq], which is
+just [eq]. (See Fig.  33–2 .) So
+Eq. ( 33.6 ) is a convenient representation of a wave in any
+direction.
+
+We must remember, of course, that
+\begin{equation*}
+\FLPk\cdot\FLPr=k_xx+k_yy+k_zz,
+\end{equation*}
+
+where [eq], [eq], and [eq] are the components of [eq] along the
+three axes. In fact, we pointed out once that [eq] is
+a four-vector, and that its scalar product with [eq] is an
+invariant. So the phase of a wave is an invariant, and
+Eq. ( 33.6 ) could be written
+\begin{equation*}
+E=E_0e^{ik_\mu x_\mu}.
+\end{equation*}
+
+But we don’t need to be that fancy now.
+
+For a sinusoidal [eq], as in Eq. ( 33.6 ), [eq] is
+the same as [eq], and [eq] is [eq], and so on for
+the other components. You can see why it is very convenient to use the
+form in Eq. ( 33.6 ) when working with differential
+equations—differentiations are replaced by multiplications. One
+further useful point: The
+operation [eq] gets replaced by the
+three multiplications [eq]. But these three factors
+transform as the components of the vector [eq], so the
+operator [eq] gets replaced by multiplication with [eq]:
+\begin{align}
+&\ddp{}{t}\to i\omega,\notag\\[1ex]
+\label{Eq:II:33:8}
+&\FLPnabla\to-i\FLPk.
+\end{align}
+
+This remains true for any [eq] operation—whether it is the
+gradient, or the divergence, or the curl. For instance, the
+[eq]-component of [eq] is
+\begin{equation*}
+\ddp{E_y}{x}-\ddp{E_x}{y}.
+\end{equation*}
+
+If both [eq] and [eq] vary as [eq], then we get
+\begin{equation*}
+-ik_xE_y+ik_yE_x,
+\end{equation*}
+
+which is, you see, the [eq]-component of [eq].
+
+So we have the very useful general fact that whenever you have to take
+the gradient of a vector that varies as a wave in three dimensions
+(they are an important part of physics), you can always take the
+derivations quickly and almost without thinking by remembering that
+the operation [eq] is equivalent to multiplication by [eq].
+
+For instance, the Faraday equation
+\begin{equation}
+\FLPcurl{\FLPE}=-\ddp{\FLPB}{t}\notag
+\end{equation}
+
+becomes for a wave
+\begin{equation}
+-i\FLPk\times\FLPE=-i\omega\FLPB.\notag
+\end{equation}
+
+This tells us that
+\begin{equation}
+\label{Eq:II:33:9}
+\FLPB=\frac{\FLPk\times\FLPE}{\omega},
+\end{equation}
+
+which corresponds to the result we found earlier for waves in free
+space—that [eq], in a wave, is at right angles to [eq] and to
+the wave direction. (In free space, [eq].) You can remember
+the sign in Eq. ( 33.9 ) from the fact that [eq] is in
+the direction of Poynting’s vector [eq].
+
+If you use the same rule with the other Maxwell
+equations,
+you get again the results of the last chapter and, in particular, that
+\begin{equation}
+\label{Eq:II:33:10}
+\FLPk\cdot\FLPk=k^2=\frac{\omega^2n^2}{c^2}.
+\end{equation}
+
+But since we know that, we won’t do it again.
+
+If you want to entertain yourself, you can try the following terrifying
+problem that was the ultimate test for graduate students back in 1890:
+solve Maxwell’s equations for
+plane waves in an anisotropic crystal, that is, when the
+polarization [eq] is related to the electric field [eq] by a
+tensor of polarizability. You should, of course, choose your axes along
+the principal axes of the tensor, so that the relations are simplest
+(then [eq], [eq], and [eq]), but
+let the waves have an arbitrary direction and polarization. You should
+be able to find the relations between [eq] and [eq], and
+how [eq] varies with direction and wave polarization. Then you will
+understand the optics of an anisotropic crystal. It would be best to
+start with the simpler case of a birefringent crystal—like calcite—for which two of the polarizabilities are
+equal (say, [eq]), and see if you can understand why you
+see double when you look through such a crystal. If you can do that,
+then try the hardest case, in which all three [eq]’s are different.
+Then you will know whether you are up to the level of a graduate student
+of 1890. In this chapter, however, we will consider only isotropic
+substances.
+
+We know from experience that when a plane wave arrives at the boundary
+between two different materials—say, air and glass, or water and
+oil—there is a wave reflected and a wave transmitted. Suppose we
+assume no more than that and see what we can work out. We choose our
+axes with the [eq]-plane in the surface and the [eq]-plane perpendicular
+to the incident wave surfaces, as shown in Fig.  33–3 .
+
+The electric vector of the incident wave can then be written as
+\begin{equation}
+\label{Eq:II:33:11}
+\FLPE_i=\FLPE_0e^{i(\omega t-\FLPk\cdot\FLPr)}.
+\end{equation}
+
+Since [eq] is perpendicular to the [eq]-axis,
+\begin{equation}
+\label{Eq:II:33:12}
+\FLPk\cdot\FLPr=k_xx+k_yy.
+\end{equation}
+
+We write the reflected wave as
+\begin{equation}
+\label{Eq:II:33:13}
+\FLPE_r=\FLPE_0'e^{i(\omega't-\FLPk'\cdot\FLPr)},
+\end{equation}
+
+so that its frequency is [eq], its wave number is [eq], and
+its amplitude is [eq]. (We know, of course, that the frequency
+is the same and the magnitude of [eq] is the same as for the
+incident wave, but we are not going to assume even that. We will let
+it come out of the mathematical machinery.) Finally, we write for the
+transmitted wave,
+\begin{equation}
+\label{Eq:II:33:14}
+\FLPE_t=\FLPE_0''e^{i(\omega''t-\FLPk''\cdot\FLPr)}.
+\end{equation}
+
+We know that one of Maxwell’s equations gives Eq. ( 33.9 ), so for each of the waves we have
+\begin{equation}
+\label{Eq:II:33:15}
+\FLPB_i=\frac{\FLPk\times\FLPE_i}{\omega},\quad
+\FLPB_r=\frac{\FLPk'\times\FLPE_r}{\omega'},\quad
+\FLPB_t=\frac{\FLPk''\times\FLPE_t}{\omega''}.
+\end{equation}
+
+Also, if we call the indexes of the two media [eq] and [eq], we have
+from Eq. ( 33.10 )
+\begin{equation}
+\label{Eq:II:33:16}
+k^2=k_x^2+k_y^2=\frac{\omega^2n_1^2}{c^2}.
+\end{equation}
+
+Since the reflected wave is in the same material, then
+\begin{equation}
+\label{Eq:II:33:17}
+k'^2=\frac{\omega'^2n_1^2}{c^2}
+\end{equation}
+
+whereas for the transmitted wave,
+\begin{equation}
+\label{Eq:II:33:18}
+k''^2=\frac{\omega''^2n_2^2}{c^2}.
+\end{equation}
+
+All we have done so far is to describe the three waves; our problem now
+is to work out the parameters of the reflected and transmitted waves in
+terms of those of the incident wave. How can we do that? The three waves
+we have described satisfy Maxwell’s
+equations in the uniform material,
+but Maxwell’s equations must
+also be satisfied at the boundary between the two different
+materials. So we must now look at what happens right at the boundary. We
+will find that Maxwell’s equations demand that the three waves fit together in a certain way.
+
+As an example of what we mean, the [eq]-component of the electric
+field [eq] must be the same on both sides of the boundary. This is
+required by Faraday’s law,
+\begin{equation}
+\label{Eq:II:33:19}
+\FLPcurl{\FLPE}=-\ddp{\FLPB}{t},
+\end{equation}
+
+as we can see in the following way. Consider a little rectangular
+loop [eq] which straddles the boundary, as shown in
+Fig.  33–4 . Equation ( 33.19 ) says that the line
+integral of [eq] around [eq] is equal to the rate of change of
+the flux of [eq] through the loop:
+\begin{equation*}
+\oint_\Gamma\FLPE\cdot d\FLPs=-\ddp{}{t}\int\FLPB\cdot\FLPn\,da.
+\end{equation*}
+
+Now imagine that the rectangle is very narrow, so that the loop
+encloses an infinitesimal area. If [eq] remains finite (and there’s
+no reason it should be infinite at the boundary!) the flux through the
+area is zero. So the line integral of [eq] must be zero. If
+[eq] and [eq] are the components of the field on the two sides
+of the boundary and if the length of the rectangle is [eq], we have
+\begin{equation}
+E_{y1}l-E_{y2}l=0\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:33:20}
+E_{y1}=E_{y2},
+\end{equation}
+
+as we have said. This gives us one relation among the fields of the
+three waves.
+
+The procedure of working out the consequences of Maxwell’s
+equations at the boundary is called
+“determining the boundary conditions.” Ordinarily, it is done by
+finding as many equations like Eq. ( 33.20 ) as one can, by
+making arguments about little rectangles like [eq] in
+Fig.  33–4 , or by using little Gaussian surfaces that
+straddle the boundary. Although that is a perfectly good way of
+proceeding, it gives the impression that the problem of dealing with a
+boundary is different for every different physical problem.
+
+For example, in a problem of heat flow across a boundary, how are the
+temperatures on the two sides related? Well, you could argue, for one
+thing, that the heat flow to the boundary from one side would
+have to equal the flow away from the other side. It is usually
+possible, and generally quite useful, to work out the boundary
+conditions by making such physical arguments. There may be times,
+however, when in working on some problem you have only some equations,
+and you may not see right away what physical arguments to use. So
+although we are at the moment interested only in an electromagnetic
+problem, where we can make the physical arguments, we want to
+show you a method that can be used for any problem—a general 
+way of finding what happens at a boundary directly from the
+differential equations.
+
+We begin by writing all the Maxwell equations for a dielectric—and this
+time we are very specific and write out explicitly all the components:
+\begin{align}
+\label{Eq:II:33:21}
+&\FLPdiv{\FLPE}=-\frac{\FLPdiv{\FLPP}}{\epsO}\\[1ex]
+&\quad
+\epsO\biggl(\ddp{E_x}{x}\!+\!\ddp{E_y}{y}\!+\!\ddp{E_z}{z}\biggr)=
+-\biggl(\ddp{P_x}{x}\!+\!\ddp{P_y}{y}\!+\!\ddp{P_z}{z}\biggr)\notag\\[2ex]
+% ebook break
+% ebook insert: \label{Eq:II:0:0}
+&\FLPcurl{\FLPE}=-\ddp{\FLPB}{t}\notag\\[1ex]
+% ebook break
+% ebook indent
+\label{Eq:II:33:22a}
+&\quad
+\ddp{E_z}{y}-\ddp{E_y}{z}=-\ddp{B_x}{t}\tag{33.22a}\\[.75ex]
+\label{Eq:II:33:22b}
+&\quad
+\ddp{E_x}{z}-\ddp{E_z}{x}=-\ddp{B_y}{t}\tag{33.22b}\\[.75ex]
+\label{Eq:II:33:22c}
+&\quad
+\ddp{E_y}{x}-\ddp{E_x}{y}=-\ddp{B_z}{t}\tag{33.22c}\\[2ex]
+% ebook break
+\label{Eq:II:33:23}
+&\FLPdiv{\FLPB}=0\tag{33.23}\\[1.75ex]
+&\quad
+\ddp{B_x}{x}+\ddp{B_y}{y}+\ddp{B_z}{z}=0\notag\\[2ex]
+% ebook break
+% ebook insert: \label{Eq:II:0:0}
+&c^2\FLPcurl{\FLPB}=\frac{1}{\epsO}\,\ddp{\FLPP}{t}+\ddp{\FLPE}{t}\notag\\[1ex]
+% ebook break
+% ebook indent
+\label{Eq:II:33:24a}
+&\quad
+c^2\biggl(\ddp{B_z}{y}-\ddp{B_y}{z}\biggr)=
+\frac{1}{\epsO}\,\ddp{P_x}{t}+\ddp{E_x}{t}\tag{33.24a}\\[.75ex]
+\label{Eq:II:33:24b}
+&\quad
+c^2\biggl(\ddp{B_x}{z}-\ddp{B_z}{x}\biggr)=
+\frac{1}{\epsO}\,\ddp{P_y}{t}+\ddp{E_y}{t}\tag{33.24b}\\[.75ex]
+\label{Eq:II:33:24c}
+&\quad
+c^2\biggl(\ddp{B_y}{x}-\ddp{B_x}{y}\biggr)=
+\frac{1}{\epsO}\,\ddp{P_z}{t}+\ddp{E_z}{t}\tag{33.24c}
+\end{align}
+
+Now these equations must all hold in region [eq] (to the left of the
+boundary) and in region [eq] (to the right of the boundary). We have
+already written the solutions in regions [eq] and [eq]. Finally, they
+must also be satisfied in the boundary, which we can call
+region [eq]. Although we usually think of the boundary as being sharply
+discontinuous, in reality it is not. The physical properties change
+very rapidly but not infinitely fast. In any case, we can imagine that
+there is a very rapid, but continuous , transition of the index
+between region [eq] and [eq], in a short distance we can call
+region [eq]. Also, any field quantity like [eq], or [eq], etc., will make a
+similar kind of transition in region [eq]. In this region, the
+differential equations must still be satisfied, and it is by following
+the differential equations in this region that we can arrive at the
+needed “boundary conditions.”
+
+For instance, suppose that we have a boundary between vacuum (region [eq])
+and glass (region [eq]). There is nothing to polarize in the vacuum,
+so [eq]. Let’s say there is some polarization [eq] in the
+glass. Between the vacuum and the glass there is a smooth, but rapid,
+transition. If we look at any component of [eq], say [eq], it might
+vary as drawn in Fig.  33–5 (a). Suppose now we take the
+first of our equations, Eq. ( 33.21 ). It involves derivatives
+of the components of [eq] with respect to [eq], [eq], and [eq]. The [eq]-
+and [eq]-derivatives are not interesting; nothing spectacular is
+happening in those directions. But the [eq]-derivative of [eq] will have
+some very large values in region [eq], because of the tremendous slope
+of [eq]. The derivative [eq] will have a sharp spike at the
+boundary, as shown in Fig.  33–5 (b). If we imagine squashing
+the boundary to an even thinner layer, the spike would get much higher.
+If the boundary is really sharp for the waves we are interested in, the
+magnitude of [eq] in region [eq] will be much, much greater
+than any contributions we might have from the variation of [eq] in
+the wave away from the boundary—so we ignore any variations other than
+those due to the boundary.
+
+Now how can Eq. ( 33.21 ) be satisfied if there is a
+whopping big spike on the right-hand side? Only if there is an equally
+whopping big spike on the other side. Something on the left-hand side
+must also be big. The only candidate is [eq], because the
+variations with [eq] and [eq] are only those small effects in the wave
+we just mentioned. So [eq] must be as drawn in
+Fig.  33–5 (c)—just a copy of [eq]. We have that
+\begin{equation*}
+\epsO\,\ddp{E_x}{x}=-\ddp{P_x}{x}.
+\end{equation*}
+
+If we integrate this equation with respect to [eq] across region [eq],
+we conclude that
+\begin{equation}
+\label{Eq:II:33:25}
+\epsO(E_{x2}-E_{x1})=-(P_{x2}-P_{x1}).
+\end{equation}
+
+In other words, the jump in [eq] in going from region [eq] to
+region [eq] must be equal to the jump in [eq].
+
+We can rewrite Eq. ( 33.25 ) as
+\begin{equation}
+\label{Eq:II:33:26}
+\epsO E_{x2}+P_{x2}=\epsO E_{x1}+P_{x1},
+\end{equation}
+
+which says that the quantity [eq] has equal values in
+region [eq] and region [eq]. People say: the quantity [eq]
+is continuous across the boundary. We have, in this way, one of
+our boundary conditions.
+
+Although we took as an illustration the case in which [eq] was
+zero because region [eq] was a vacuum, it is clear that the same
+argument applies for any two materials in the two regions, so
+Eq. ( 33.26 ) is true in general.
+
+Let’s now go through the rest of Maxwell’s
+equations and see what each of them
+tells us. We take next Eq. ( 33.22a ). There are no
+[eq]-derivatives, so it doesn’t tell us anything. (Remember that the
+fields themselves do not get especially large at the boundary;
+only the derivatives with respect to [eq] can become so huge that they
+dominate the equation.) Next, we look at Eq. ( 33.22b ). Ah!
+There is an [eq]-derivative! We have [eq] on the left-hand
+side. Suppose it has a huge derivative. But wait a moment! There is
+nothing on the right-hand side to match it with; therefore [eq]
+ cannot have any jump in going from region [eq] to region [eq]. [If
+it did, there would be a spike on the left of Eq. ( 33.22b )
+but none on the right, and the equation would be false.] So we have a
+new condition:
+\begin{equation}
+\label{Eq:II:33:27}
+E_{z2}=E_{z1}.
+\end{equation}
+
+By the same argument, Eq. ( 33.22c ) gives
+\begin{equation}
+\label{Eq:II:33:28}
+E_{y2}=E_{y1}.
+\end{equation}
+
+This last result is just what we got in Eq. ( 33.20 ) by a
+line integral argument.
+
+We go on to Eq. ( 33.23 ). The only term that could have a
+spike is [eq]. But there’s nothing on the right to match
+it, so we conclude that
+\begin{equation}
+\label{Eq:II:33:29}
+B_{x2}=B_{x1}.
+\end{equation}
+
+On to the last of Maxwell’s equations! Equation ( 33.24a ) gives nothing, because there are
+no [eq]-derivatives. Equation ( 33.24b ) has one,
+[eq], but again, there is nothing to match it with. We
+get
+\begin{equation}
+\label{Eq:II:33:30}
+B_{z2}=B_{z1}.
+\end{equation}
+
+The last equation is quite similar, and gives
+\begin{equation}
+\label{Eq:II:33:31}
+B_{y2}=B_{y1}.
+\end{equation}
+
+The last three equations gives us that [eq]. We want to
+emphasize, however, that we get this result only when the materials on
+both sides of the boundary are nonmagnetic—or rather, when we can
+neglect any magnetic effects of the materials. This can usually be
+done for most materials, except ferromagnetic ones. (We will treat the
+magnetic properties of materials in some later chapters.)
+
+Our program has netted us the six relations between the fields in
+region [eq] and those in region [eq]. We have put them all together in
+Table  33–1 . We can now use them to match the waves in the
+two regions. We want to emphasize, however, that the idea we have just
+used will work in any physical situation in which you have
+differential equations and you want a solution that crosses a sharp
+boundary between two regions where some property changes. For our
+present purposes, we could have easily derived the same equations by
+using arguments about the fluxes and circulations at the
+boundary. (You might see whether you can get the same result that
+way.) But now you have seen a method that will work in case you ever
+get stuck and don’t see any easy argument about the physics of what is
+happening at the boundary—you can just work with the equations.
+
+Now we are ready to apply our boundary conditions to the waves we
+wrote down in Section  33–2 . We had:
+\begin{align}
+\label{Eq:II:33:32}
+\FLPE_i&=\FLPE_0e^{i(\omega t-k_xx-k_yy)},\\[1.3ex]
+\label{Eq:II:33:33}
+\FLPE_r&=\FLPE_0'e^{i(\omega't-k_x'x-k_y'y)},\\[1.3ex]
+\label{Eq:II:33:34}
+\FLPE_t&=\FLPE_0''e^{i(\omega''t-k_x''x-k_y''y)},\\[1.5ex]
+% ebook break
+\label{Eq:II:33:35}
+\FLPB_i&=\frac{\FLPk\times\FLPE_i}{\omega},\\[1ex]
+\label{Eq:II:33:36}
+\FLPB_r&=\frac{\FLPk'\times\FLPE_r}{\omega'},\\[1ex]
+\label{Eq:II:33:37}
+\FLPB_t&=\frac{\FLPk''\times\FLPE_t}{\omega''}.
+\end{align}
+We have one further bit of knowledge: [eq] is perpendicular to its
+propagation vector [eq] for each wave.
+
+The results will depend on the direction of the [eq]-vector (the
+“polarization”) of the incoming wave. The analysis is much
+simplified if we treat separately the case of an incident wave with
+its [eq]-vector parallel to the “plane of incidence” (that
+is, the [eq]-plane) and the case of an incident wave with the
+[eq]-vector perpendicular to the plane of incidence. A wave
+of any other polarization is just a linear combination of two such
+waves. In other words, the reflected and transmitted intensities are
+different for different polarizations, and it is easiest to pick the
+two simplest cases and treat them separately.
+
+We will carry through the analysis for an incoming wave polarized
+perpendicular to the plane of incidence and then just give you the
+result for the other. We are cheating a little by taking the simplest
+case, but the principle is the same for both. So we take that
+[eq] has only a [eq]-component, and since all the [eq]-vectors
+are in the same direction we can leave off the vector signs.
+
+So long as both materials are isotropic, the induced oscillations of
+charges in the material will also be in the [eq]-direction, and the
+[eq]-field of the transmitted and radiated waves will have only
+[eq]-components. So for all the waves, [eq] and [eq] and [eq]
+and [eq] are zero. The waves will have their [eq]- and [eq]-vectors
+as drawn in Fig.  33–6 . (We are cutting a corner here on our
+original
+plan of getting everything from the equations. This result would also
+come out of the boundary conditions, but we can save a lot of algebra
+by using the physical argument. When you have some spare time, see if
+you can get the same result from the equations. It is clear that what
+we have said agrees with the equations; it is just that we have not
+shown that there are no other possibilities.)
+
+Now our boundary conditions, Eqs. ( 33.26 )
+through ( 33.31 ), give relations between the components of [eq]
+and [eq] in regions [eq] and [eq]. For region [eq] we have only the transmitted
+wave, but in region [eq] we have two waves. Which one do we use? The
+fields in region [eq] are, of course, the superposition of the fields of the
+incident and reflected waves. (Since each satisfies Maxwell’s
+equations, so does the sum.) So when we use
+the boundary conditions, we must use that
+\begin{equation*}
+\FLPE_1=\FLPE_i+\FLPE_r,\quad
+\FLPE_2=\FLPE_t,
+\end{equation*}
+
+and similarly for the [eq]’s.
+
+For the polarization we are considering, Eqs. ( 33.26 )
+and ( 33.28 ) give us no new information; only Eq. ( 33.27 )
+is useful. It says that
+\begin{equation*}
+E_i+E_r=E_t,
+\end{equation*}
+
+ at the boundary , that is, for [eq]. So we have that
+\begin{equation}
+\label{Eq:II:33:38}
+E_0e^{i(\omega t-k_yy)}+E_0'e^{i(\omega't-k_y'y)}=
+E_0''e^{i(\omega''t-k_y''y)},
+\end{equation}
+
+which must be true for all  [eq] and for all  [eq]. Suppose
+we look first at [eq]. Then we have
+\begin{equation*}
+E_0e^{i\omega t}+E_0'e^{i\omega't}=
+E_0''e^{i\omega''t}.
+\end{equation*}
+
+This equation says that two oscillating terms are equal to a third
+oscillation. That can happen only if all the oscillations have the
+same frequency. (It is impossible for three—or any number—of such
+terms with different frequencies to add to zero for all times.) So
+\begin{equation}
+\label{Eq:II:33:39}
+\omega''=\omega'=\omega.
+\end{equation}
+
+As we knew all along, the frequencies of the reflected and transmitted
+waves are the same as that of the incident wave.
+
+We should really have saved ourselves some trouble by putting that in
+at the beginning, but we wanted to show you that it can also be got
+out of the equations. When you are doing a real problem, it is usually
+the best thing to put everything you know into the works right at the
+start and save yourself a lot of trouble.
+
+By definition, the magnitude of [eq] is given
+by [eq], so we have also that
+\begin{equation}
+\label{Eq:II:33:40}
+\frac{k''^2}{n_2^2}=\frac{k'^2}{n_1^2}=\frac{k^2}{n_1^2}.
+\end{equation}
+
+Now look at Eq. ( 33.38 ) for [eq]. Using again the same
+kind of argument we have just made, but this time based on the fact
+that the equation must hold for all values of [eq], we get that
+\begin{equation}
+\label{Eq:II:33:41}
+k_y''=k_y'=k_y.
+\end{equation}
+
+From Eq. ( 33.40 ), [eq], so
+\begin{equation*}
+k_x'^2+k_y'^2=k_x^2+k_y^2.
+\end{equation*}
+
+Combining this with Eq. ( 33.41 ), we have that
+\begin{equation*}
+k_x'^2=k_x^2,
+\end{equation*}
+
+or that [eq]. The positive sign makes no sense; that would
+not give a reflected wave, but another incident wave,
+and we said at the start that we were solving the problem of only one
+incident wave. So we have
+\begin{equation}
+\label{Eq:II:33:42}
+k_x'=-k_x.
+\end{equation}
+
+The two equations ( 33.41 ) and ( 33.42 ) give us
+that the angle of reflection is equal to the angle of incidence, as we
+expected. (See Fig.  33–3 .) The reflected wave is
+\begin{equation}
+\label{Eq:II:33:43}
+E_r=E_0'e^{i(\omega t+k_xx-k_yy)}.
+\end{equation}
+
+For the transmitted wave we already have that
+\begin{equation}
+k_y''=k_y,\notag
+\end{equation}
+
+and
+\begin{equation}
+\label{Eq:II:33:44}
+\frac{k''^2}{n_2^2}=\frac{k^2}{n_1^2};
+\end{equation}
+
+so we can solve these to find [eq]. We get
+\begin{equation}
+\label{Eq:II:33:45}
+k_x''^2=k''^2-k_y''^2=\frac{n_2^2}{n_1^2}\,k^2-k_y^2.
+\end{equation}
+
+Suppose for a moment that [eq] and [eq] are real numbers (that the
+imaginary parts of the indexes are very small). Then all the [eq]’s are
+also real numbers, and from Fig.  33–3 we find that
+\begin{equation}
+\label{Eq:II:33:46}
+\frac{k_y}{k}=\sin\theta_i,\quad
+\frac{k_y''}{k''}=\sin\theta_t.
+\end{equation}
+
+From ( 33.44 ) we get that
+\begin{equation}
+\label{Eq:II:33:47}
+n_2\sin\theta_t=n_1\sin\theta_i,
+\end{equation}
+
+which is Snell’s law of refraction—again, something we already knew.
+If the indexes are not real, the wave numbers are complex, and we have
+to use Eq. ( 33.45 ). [We could still define the angles
+[eq] and [eq] by Eq. ( 33.46 ), and Snell’s law,
+Eq. ( 33.47 ), would be true in general. But then the
+“angles” also are complex numbers, thereby losing their simple
+geometrical interpretation as angles. It is best then to describe the
+behavior of the waves by their complex [eq] or [eq] values.]
+
+So far, we haven’t found anything new. We have just had the
+simple-minded delight of getting some obvious answers from a complicated
+mathematical machinery. Now we are ready to find the amplitudes of the
+waves which we have not yet known. Using our results for the [eq]’s
+and [eq]’s, the exponential factors in Eq. ( 33.38 ) can be
+cancelled, and we get
+\begin{equation}
+\label{Eq:II:33:48}
+E_0+E_0'=E_0''.
+\end{equation}
+
+Since both [eq] and [eq] are unknown, we need one more
+relationship. We must use another of the boundary conditions. The
+equations for [eq] and [eq] are no help, because all the [eq]’s
+have only a [eq]-component. So we must use the conditions on [eq].
+Let’s try Eq. ( 33.29 ):
+\begin{equation*}
+B_{x2}=B_{x1}.
+\end{equation*}
+
+From Eqs. ( 33.35 ) through ( 33.37 ),
+ 
+\begin{equation*}
+B_{xi}=\frac{k_yE_i}{\omega},\quad
+B_{xr}=\frac{k_y'E_r}{\omega'},\quad
+B_{xt}=\frac{k_y''E_t}{\omega''}.
+\end{equation*}
+ 
+ 
+\begin{align*}
+B_{xi}&=\frac{k_yE_i}{\omega},\\[1ex]
+B_{xr}&=\frac{k_y'E_r}{\omega'},\\[1ex]
+B_{xt}&=\frac{k_y''E_t}{\omega''}.
+\end{align*}
+ 
+
+
+Recalling that [eq] and [eq], we get
+that
+\begin{equation*}
+E_0+E_0'=E_0''.
+\end{equation*}
+
+But this is just Eq. ( 33.48 ) all over again! We’ve just
+wasted time getting something we already knew.
+
+We could try Eq. ( 33.30 ), [eq], but there are no
+[eq]-components of [eq]! So there’s only one equation left:
+Eq. ( 33.31 ), [eq]. For the three waves:
+ 
+\begin{equation}
+\label{Eq:II:33:49}
+B_{yi}=-\frac{k_xE_i}{\omega},\quad
+B_{yr}=-\frac{k_x'E_r}{\omega'},\quad
+B_{yt}=-\frac{k_x''E_t}{\omega''}.
+\end{equation}
+ 
+ 
+\begin{align}
+B_{yi}=-\frac{k_xE_i}{\omega},\notag\\[1ex]
+\label{Eq:II:33:49}
+B_{yr}=-\frac{k_x'E_r}{\omega'},\\[1ex]
+B_{yt}=-\frac{k_x''E_t}{\omega''}.\notag
+\end{align}
+ 
+Putting for [eq], [eq], and [eq] the wave expression for [eq] (to
+be at the boundary), the boundary condition is
+\begin{equation*}
+\frac{k_x}{\omega}\,E_0e^{i(\omega t-k_yy)}+
+\frac{k_x'}{\omega'}\,E_0'e^{i(\omega't-k_y'y)}=
+\frac{k_x''}{\omega''}\,E_0''e^{i(\omega''t-k_y''y)}.
+\end{equation*}
+
+Again all [eq]’s and [eq]’s are equal, so this reduces to
+\begin{equation}
+\label{Eq:II:33:50}
+k_xE_0+k_x'E_0'=k_x''E_0''.
+\end{equation}
+
+This gives us an equation for the [eq]’s that is different from
+Eq. ( 33.48 ). With the two, we can solve for [eq]
+and [eq]. Remembering that [eq], we get
+\begin{align}
+\label{Eq:II:33:51}
+E_0'&=\frac{k_x-k_x''}{k_x+k_x''}\,E_0,\\[1ex]
+\label{Eq:II:33:52}
+E_0''&=\frac{2k_x}{k_x+k_x''}\,E_0.
+\end{align}
+
+These, together with Eq. ( 33.45 ) or Eq. ( 33.46 )
+for [eq], give us what we wanted to know. We will discuss the
+consequences of this result in the next section.
+
+If we begin with a wave polarized with its [eq]-vector
+ parallel to the plane of incidence, [eq] will have both [eq]-
+and [eq]-components, as shown in Fig.  33–7 . The algebra is
+straightforward but more complicated. (The work can be somewhat reduced
+by expressing things in this case in terms of the magnetic 
+fields, which are all in the [eq]-direction.) One finds that
+\begin{equation}
+\label{Eq:II:33:53}
+\abs{E_0'}=\frac{n_2^2k_x-n_1^2k_x''}{n_2^2k_x+n_1^2k_x''}\,
+\abs{E_0}
+\end{equation}
+
+and
+\begin{equation}
+\label{Eq:II:33:54}
+\abs{E_0''}=\frac{2n_1n_2k_x}{n_2^2k_x+n_1^2k_x''}\,
+\abs{E_0}.
+\end{equation}
+
+Let’s see whether our results agree with those we got
+earlier. Equation ( 33.3 ) is the result we worked out in
+Chapter  33 of Volume I for the ratio of the intensity of
+the reflected wave to the intensity of the incident wave. Then,
+however, we were considering only real indexes. For real
+indexes (and [eq]’s), we can write
+\begin{gather*}
+k_x=k\cos\theta_i=\frac{\omega n_1}{c}\cos\theta_i,\\[1ex]
+k_x''=k''\cos\theta_t=\frac{\omega n_2}{c}\cos\theta_t.
+\end{gather*}
+
+Substituting in Eq. ( 33.51 ), we have
+\begin{equation}
+\label{Eq:II:33:55}
+\frac{E_0'}{E_0}=\frac{n_1\cos\theta_i-n_2\cos\theta_t}
+{n_1\cos\theta_i+n_2\cos\theta_t},
+\end{equation}
+
+which does not look the same as Eq. ( 33.3 ). It will,
+however, if we use Snell’s law to get rid of the [eq]’s. Setting
+[eq], and multiplying the numerator and
+denominator by [eq], we get
+\begin{equation*}
+\frac{E_0'}{E_0}=\frac{\cos\theta_i\sin\theta_t-\sin\theta_i\cos\theta_t}
+{\cos\theta_i\sin\theta_t+\sin\theta_i\cos\theta_t}.
+\end{equation*}
+
+The numerator and denominator are just the sines of
+[eq] and [eq]; we get
+\begin{equation}
+\label{Eq:II:33:56}
+\frac{E_0'}{E_0}=-\frac{\sin(\theta_i-\theta_t)}
+{\sin(\theta_i+\theta_t)}.
+\end{equation}
+
+Since [eq] and [eq] are in the same material, the intensities are
+proportional to the squares of the electric fields, and we get the
+same result as before. Similarly, Eq. ( 33.53 ) is the
+same as Eq. ( 33.4 ).
+
+For waves which arrive at normal incidence, [eq]
+and [eq]. Equation ( 33.56 ) gives [eq], which is not
+very useful. We can, however, go back to Eq. ( 33.55 ),
+which gives
+\begin{equation}
+\label{Eq:II:33:57}
+\frac{I_r}{I_i}=\biggl(\frac{E_0'}{E_0}\biggr)^2=\biggl(
+\frac{n_1-n_2}{n_1+n_2}\biggr)^2.
+\end{equation}
+
+This result, naturally, applies for “either” polarization, since for
+normal incidence there is no special “plane of incidence.”
+
+We can now use our results to understand the interesting phenomenon of
+reflection from metals. Why is it that metals are shiny? We saw in the
+last chapter that metals have an index of refraction which, for some
+frequencies, has a large imaginary part. Let’s see what we would get
+for the reflected intensity when light shines from air (with [eq])
+onto a material with [eq]. Then Eq. ( 33.55 ) gives
+(for normal incidence)
+\begin{equation*}
+\frac{E_0'}{E_0}=\frac{1+in_I}{1-in_I}.
+\end{equation*}
+
+For the intensity of the reflected wave, we want the square of
+the absolute values of [eq] and [eq]:
+\begin{equation}
+\frac{I_r}{I_i}=\frac{\abs{E_0'}^2}{\abs{E_0}^2}=
+\frac{\abs{1+in_I}^2}{\abs{1-in_I}^2},
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:33:58}
+\frac{I_r}{I_i}=\frac{1+n_I^2}{1+n_I^2}=1.
+\end{equation}
+
+For a material with an index which is a pure imaginary number, there
+is [eq] percent reflection!
+
+Metals do not reflect [eq] percent, but many do reflect visible light
+very well. In other words, the imaginary part of their indexes is very
+large. But we have seen that a large imaginary part of the index means
+a strong absorption. So there is a general rule that if any 
+material gets to be a very good absorber at any frequency, the
+waves are strongly reflected at the surface and very little gets
+inside to be absorbed. You can see this effect with strong dyes. Pure
+crystals of the strongest dyes have a “metallic” shine. Probably you
+have noticed that at the edge of a bottle of purple ink the dried dye
+will give a golden metallic reflection, or that dried red ink will
+sometimes give a greenish metallic reflection. Red ink absorbs out the
+greens of transmitted light, so if the ink is very
+concentrated, it will exhibit a strong surface reflection for
+the frequencies of green light.
+
+You can easily show this effect by coating a glass plate with red ink
+and letting it dry. If you direct a beam of white light at the back of
+the plate, as shown in Fig.  33–8 , there will be a transmitted beam
+of red light and a reflected beam of green light.
+
+If light goes from a material like glass, with a real index [eq]
+greater than [eq], toward, say, air, with an index [eq] equal to [eq],
+Snell’s law says that
+\begin{equation*}
+\sin\theta_t=n\sin\theta_i.
+\end{equation*}
+
+The angle [eq] of the transmitted wave becomes [eq] when the
+incident angle [eq] is equal to the “critical angle” [eq]
+given by
+\begin{equation}
+\label{Eq:II:33:59}
+n\sin\theta_c=1.
+\end{equation}
+
+What happens for [eq] greater than the critical angle? You know
+that there is total internal reflection. But how does that come about?
+
+Let’s go back to Eq. ( 33.45 ) which gives the wave
+number [eq] for the transmitted wave. We would have
+\begin{equation*}
+k_x''^2=\frac{k^2}{n^2}-k_y^2.
+\end{equation*}
+
+Now [eq] and [eq], so
+\begin{equation*}
+k_x''^2=\frac{\omega^2}{c^2}\,(1-n^2\sin^2\theta_i).
+\end{equation*}
+
+If [eq] is greater than one, [eq] is negative 
+and [eq] is a pure imaginary, say [eq]. You know by now what
+that means! The “transmitted” wave (Eq.  33.34 ) will
+have the form
+\begin{equation*}
+\FLPE_t=\FLPE_0''e^{\pm k_Ix}e^{i(\omega t-k_yy)}.
+\end{equation*}
+
+The wave amplitude either grows or drops off exponentially with
+increasing [eq]. Clearly, what we want here is the negative sign. Then
+the amplitude of the wave to the right of the boundary will go as
+shown in Fig.  33–9 . Notice that [eq] is around [eq]—which
+is of the order [eq], the reciprocal of the free-space
+wavelength of the light. When light is totally reflected from the inside
+of a glass-air surface, there are fields in the air, but they extend
+beyond the surface only a distance of the order of the wavelength of the
+light.
+
+We can now see how to answer the following question: If a light wave
+in glass arrives at the surface at a large enough angle, it is
+reflected; if another piece of glass is brought up to the surface (so
+that the “surface” in effect disappears) the light is
+transmitted. Exactly when does this happen? Surely there must be
+continuous change from total reflection to no reflection! The answer,
+of course, is that if the air gap is so small that the exponential
+tail of the wave in the air has an appreciable strength at the second
+piece of glass, it will shake the electrons there and generate a new
+wave, as shown in Fig.  33–10 . Some light will be
+transmitted. (Clearly, our solution is incomplete; we should solve all
+the equations again for a thin layer of air between two regions of
+glass.)
+
+This transmission effect can be observed with ordinary light only if the
+air gap is very small (of the order of the wavelength of light, like
+[eq] cm), but it is easily demonstrated with three-centimeter
+waves. Then the exponentially decreasing field extends several
+centimeters. A microwave apparatus that shows the effect is drawn in
+Fig.  33–11 . Waves from a small three-centimeter
+transmitter are directed at a [eq] prism of paraffin. The index of
+refraction of paraffin for these frequencies is [eq], and therefore
+the critical angle is [eq]. So the wave is totally reflected
+from the [eq] face and is picked up by detector [eq], as indicated
+in Fig.  33–11 (a). If a second paraffin prism is placed in
+contact with the first, as shown in part (b) of the figure, the wave
+passes straight through and is picked up at detector [eq]. If a gap of a
+few centimeters is left between the two prisms, as in part (c), there
+are both transmitted and reflected waves. The electric field outside the
+[eq] face of the prism in Fig.  33–11 (a) can also be
+shown by bringing detector [eq] to within a few centimeters of the
+surface.

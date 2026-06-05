@@ -1,0 +1,799 @@
+The Feynman Lectures on Physics Vol. II Ch. 1:  Electromagnetism
+================================================================
+
+Sections: 1–1 Electrical forces | 1–2 Electric and magnetic fields | 1–3 Characteristics of vector fields | 1–4 The laws of electromagnetism | 1–5 What are the fields? | 1–6 Electromagnetism in science and technology
+
+
+
+Consider a force like gravitation which varies predominantly
+inversely as the square of the distance, but which is about a
+ billion-billion-billion-billion times stronger. And with another
+difference. There are two kinds of “matter,” which we can call
+positive and negative. Like kinds repel and unlike kinds
+attract—unlike gravity where there is only attraction. What would
+happen?
+
+A bunch of positives would repel with an enormous force and spread out
+in all directions. A bunch of negatives would do the same. But an
+evenly mixed bunch of positives and negatives would do something
+completely different. The opposite pieces would be pulled together by
+the enormous attractions. The net result would be that the terrific
+forces would balance themselves out almost perfectly, by forming
+tight, fine mixtures of the positive and the negative, and between two
+separate bunches of such mixtures there would be practically no
+attraction or repulsion at all.
+
+There is such a force: the electrical force. And all matter is a mixture
+of positive protons and negative electrons which are attracting and
+repelling with this great force. So perfect is the balance, however,
+that when you stand near someone else you don’t feel any force at all.
+If there were even a little bit of unbalance you would know it. If you
+were standing at arm’s length from someone and each of you had one
+percent more electrons than protons, the repelling force would be
+incredible. How great? Enough to lift the Empire State Building? No! To
+lift Mount Everest? No! The repulsion would be enough to lift a
+“weight” equal to that of the entire earth!
+
+With such enormous forces so perfectly balanced in this intimate
+mixture, it is not hard to understand that matter, trying to keep its
+positive and negative charges in the finest balance, can have a great
+stiffness and strength. The Empire State Building, for example, swings
+less than one inch in the wind because the electrical forces hold every
+electron and proton more or less in its proper place. On the other
+hand, if we look at matter on a scale small enough that we see only a
+few atoms, any small piece will not, usually, have an equal number of
+positive and negative charges, and so there will be strong residual
+electrical forces. Even when there are equal numbers of both charges
+in two neighboring small pieces, there may still be large net
+electrical forces because the forces between individual charges vary
+inversely as the square of the distance. A net force can arise if a
+negative charge of one piece is closer to the positive than to the
+negative charges of the other piece. The attractive forces can then be
+larger than the repulsive ones and there can be a net attraction
+between two small pieces with no excess charges. The force that holds
+the atoms together, and the chemical forces that hold molecules
+together, are really electrical forces acting in regions where the
+balance of charge is not perfect, or where the distances are very
+small.
+
+You know, of course, that atoms are made with positive protons in the
+nucleus and with electrons outside. You may ask: “If this electrical
+force is so terrific, why don’t the protons and electrons just get on
+top of each other? If they want to be in an intimate mixture, why
+isn’t it still more intimate?” The answer has to do with the quantum
+effects. If we try to confine our electrons in a region that is very
+close to the protons, then according to the uncertainty
+principle they
+must have some mean square momentum which is larger the more we try to
+confine them. It is this motion, required by the laws of quantum
+mechanics, that keeps the electrical attraction from bringing the
+charges any closer together.
+
+There is another question: “What holds the nucleus together”? In a
+nucleus there are several protons, all of which are positive. Why don’t
+they push themselves apart? It turns out that in nuclei there are, in
+addition to electrical forces, nonelectrical forces, called nuclear
+forces, which are greater than the electrical forces and which are able
+to hold the protons together in spite of the electrical repulsion. The
+nuclear forces, however, have a short range—their force falls off much
+more rapidly than [eq]. And this has an important consequence. If a
+nucleus has too many protons in it, it gets too big, and it will not
+stay together. An example is uranium, with 92 protons. The nuclear
+forces act mainly between each proton (or neutron) and its nearest
+neighbor, while the electrical forces act over larger distances, giving
+a repulsion between each proton and all of the others in the nucleus.
+The more protons in a nucleus, the stronger is the electrical repulsion,
+until, as in the case of uranium, the balance is so delicate that the
+nucleus is almost ready to fly apart from the repulsive electrical
+force. If such a nucleus is just “tapped” lightly (as can be done by
+sending in a slow neutron), it breaks into two pieces, each with
+positive charge, and these pieces fly apart by electrical repulsion. The
+energy which is liberated is the energy of the atomic bomb. This energy
+is usually called “nuclear” energy, but it is really “electrical”
+energy released when electrical forces have overcome the attractive
+nuclear forces.
+
+We may ask, finally, what holds a negatively charged electron together
+(since it has no nuclear forces). If an electron is all made of one
+kind of substance, each part should repel the other parts. Why, then,
+doesn’t it fly apart? But does the electron have “parts”? Perhaps we
+should say that the electron is just a point and that electrical
+forces only act between different point charges, so that the electron does not act
+upon itself. Perhaps. All we can say is that the question of what holds
+the electron together has produced many difficulties in the attempts to
+form a complete theory of electromagnetism. The question has never been
+answered. We will entertain ourselves by discussing this subject some
+more in later chapters.
+
+As we have seen, we should expect that it is a combination of electrical
+forces and quantum-mechanical effects that will determine the detailed
+structure of materials in bulk, and, therefore, their properties. Some
+materials are hard, some are soft. Some are electrical
+“conductors”—because their electrons are free to
+move about; others are “insulators”—because their
+electrons are held tightly to individual atoms. We shall consider later
+how some of these properties come about, but that is a very complicated
+subject, so we will begin by looking at the electrical forces only in
+simple situations. We begin by treating only the laws of
+electricity—including magnetism, which is really a part of the same
+subject.
+
+We have said that the electrical force, like a gravitational force,
+decreases inversely as the square of the distance between charges. This
+relationship is called Coulomb’s law. But it is not precisely true when charges are moving—the
+electrical forces depend also on the motions of the charges in a
+complicated way. One part of the force between moving charges we call
+the magnetic force. It is really one aspect of an electrical effect. That is why we
+call the subject “electromagnetism.”
+
+There is an important general principle that makes it possible to
+treat electromagnetic forces in a relatively simple way. We find, from
+experiment, that the force that acts on a particular charge—no
+matter how many other charges there are or how they are
+moving—depends only on the position of that particular charge, on
+the velocity of the charge, and on the amount of charge. We can write
+the force [eq] on a charge [eq] moving with a velocity [eq] as
+\begin{equation}
+\label{Eq:II:1:1}
+\FLPF=q(\FLPE+\FLPv\times\FLPB).
+\end{equation}
+
+We call [eq] the electric field and [eq] the magnetic
+field at the
+location of the charge. The important thing is that the electrical
+forces from all the other charges in the universe can be summarized by
+giving just these two vectors. Their values will depend on where 
+the charge is, and may change with time . Furthermore, if we
+replace that charge with another charge, the force on the new charge
+will be just in proportion to the amount of charge so long as all the
+rest of the charges in the world do not change their positions or
+motions. (In real situations, of course, each charge produces forces on
+all other charges in the neighborhood and may cause these other charges
+to move, and so in some cases the fields can change if we replace
+our particular charge by another.)
+
+We know from Vol. I how to find the motion of a particle if we know
+the force on it. Equation ( 1.1 ) can be combined with the
+equation of motion to give
+\begin{equation}
+\label{Eq:II:1:2}
+\ddt{}{t}\biggl[\frac{m\FLPv}{(1-v^2/c^2)^{1/2}}\biggr]=
+\FLPF=q(\FLPE+\FLPv\times\FLPB).
+\end{equation}
+
+So if [eq] and [eq] are given, we can find the motions. Now we
+need to know how the [eq]’s and [eq]’s are produced.
+
+One of the most important simplifying principles about the way the
+fields are produced is this: Suppose a number of charges moving in
+some manner would produce a field [eq], and another set of
+charges would produce [eq]. If both sets of charges are in place
+at the same time (keeping the same locations and motions they had when
+considered separately), then the field produced is just the sum
+\begin{equation}
+\label{Eq:II:1:3}
+\FLPE=\FLPE_1+\FLPE_2.
+\end{equation}
+
+This fact is called the principle of
+superposition of fields. It
+holds also for magnetic fields.
+
+This principle means that if we know the law for the electric and
+magnetic fields produced by a single charge moving in an
+arbitrary way, then all the laws of
+electrodynamics are complete. If we want to know
+the force on charge [eq] we need only calculate the [eq] and [eq]
+produced by each of the charges [eq], [eq], [eq], etc., and then add the
+[eq]’s and [eq]’s from all the charges to find the fields, and
+from them the forces acting on charge [eq]. If it had only turned out
+that the field produced by a single charge was simple, this would be the
+neatest way to describe the laws of electrodynamics. We have already
+given a description of this law (Chapter  28 , Vol. I) and
+it is, unfortunately, rather complicated.
+
+It turns out that the forms in which the laws of electrodynamics are
+simplest are not what you might expect. It is not simplest to
+give a formula for the force that one charge produces on another. It
+is true that when charges are standing still the Coulomb force
+law is simple, but when charges are moving about the relations are
+complicated by delays in time and by the effects of acceleration,
+among others. As a result, we do not wish to present electrodynamics
+only through the force laws between charges; we find it more
+convenient to consider another point of view—a point of view in
+which the laws of electrodynamics appear to be the most easily
+manageable.
+
+First, we must extend, somewhat, our ideas of the electric and
+magnetic vectors, [eq] and [eq]. We have defined them in terms
+of the forces that are felt by a charge. We wish now to speak of
+electric and magnetic fields at a point even when there is no
+charge present. We are saying, in effect, that since there are forces
+“acting on” the charge, there is still “something” there when the
+charge is removed. If a charge located at the point [eq] at the
+time [eq] feels the force [eq] given by Eq. ( 1.1 ) we
+associate the vectors [eq] and [eq] with the point in
+space [eq]. We may think of [eq] and [eq]
+as giving the forces that would be experienced at the time [eq]
+by a charge located at [eq], with the condition that
+placing the charge there did not disturb the positions or
+motions of all the other charges responsible for the fields.
+
+Following this idea, we associate with every point [eq] in
+space two vectors [eq] and [eq], which may be changing with
+time. The electric and magnetic fields are, then, viewed as
+ vector functions of [eq], [eq], [eq], and [eq]. Since a vector is
+specified by its components, each of the fields [eq]
+and [eq] represents three mathematical functions of
+[eq], [eq], [eq], and [eq].
+
+It is precisely because [eq] (or [eq]) can be specified at every
+point in space that it is called a “field.” A “field” is any
+physical quantity which takes on different values at different points
+in space. Temperature, for example, is a field—in this case a scalar
+field, which we write as [eq]. The temperature could also vary
+in time, and we would say the temperature field is time-dependent, and
+write [eq]. Another example is the “velocity field” of a
+flowing liquid. We write [eq] for the velocity of the
+liquid at each point in space at the time [eq]. It is a vector field.
+
+Returning to the electromagnetic fields—although they are produced
+by charges according to complicated formulas, they have the following
+important characteristic: the relationships between the values of the
+fields at one point and the values at a nearby point are
+very simple. With only a few such relationships in the form of
+differential equations we can describe the fields completely. It is in
+terms of such equations that the laws of electrodynamics are most
+simply written.
+
+There have been various inventions to help the mind visualize the
+behavior of fields. The most correct is also the most abstract: we
+simply consider the fields as mathematical functions of position and
+time. We can also attempt to get a mental picture of the field by
+drawing vectors at many points in space, each of which gives the field
+strength and direction at that point. Such a representation is shown
+in Fig.  1–1 . We can go further, however, and draw lines
+which are everywhere tangent to the vectors—which, so to speak,
+follow the arrows and keep track of the direction of the field. When
+we do this we lose track of the lengths of the vectors, but we
+can keep track of the strength of the field by drawing the lines far
+apart when the field is weak and close together when it is strong. We
+adopt the convention that the number of lines per unit area at
+right angles to the lines is proportional to the field
+strength . This is, of course, only an
+approximation, and it will require, in general, that new lines sometimes
+start up in order to keep the number up to the strength of the field.
+The field of Fig.  1–1 is represented by field lines in
+Fig.  1–2 .
+
+There are two mathematically important properties of a vector field
+which we will use in our description of the laws of electricity from
+the field point of view. Suppose we imagine a closed surface of some
+kind and ask whether we are losing “something” from the inside; that
+is, does the field have a quality of “outflow”? For instance, for a
+velocity field we might ask whether the velocity is always outward on
+the surface or, more generally, whether more fluid flows out (per unit
+time) than comes in. We call the net amount of fluid going out through
+the surface per unit time the “flux of velocity” through the
+surface. The flow through an element of a surface is just equal to the
+component of the velocity perpendicular to the surface times the area
+of the surface. For an arbitrary closed surface, the net outward
+flow —or flux —is the average outward normal component of
+the velocity, times the area of the surface:
+
+ 
+\begin{equation}
+\label{Eq:II:1:4}
+\text{Flux}=(\text{average normal component})\cdot(\text{surface
+area}).
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:1:4}
+\text{Flux}=
+\begin{pmatrix}
+\text{average}\\[-.75ex]
+\text{normal}\\[-.75ex]
+\text{component}
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+\text{surface}\\[-.75ex]
+\text{area}
+\end{pmatrix}.
+\end{equation}
+
+In the case of an electric field, we can mathematically define
+something analogous to an outflow, and we again call it the flux, but
+of course it is not the flow of any substance, because the electric
+field is not the velocity of anything. It turns out, however, that the
+mathematical quantity which is the average normal component of the
+field still has a useful significance. We speak, then, of the
+ electric flux —also defined by Eq. ( 1.4 ). Finally, it is also
+useful to speak of the flux not only through a completely closed
+surface, but through any bounded surface. As before, the flux through
+such a surface is defined as the average normal component of a vector
+times the area of the surface. These ideas are illustrated in
+Fig.  1–3 .
+
+There is a second property of a vector field that has to do with a
+line, rather than a surface. Suppose again that we think of a velocity
+field that describes the flow of a liquid. We might ask this
+interesting question: Is the liquid circulating? By that we mean: Is
+there a net rotational motion around some loop? Suppose that we
+instantaneously freeze the liquid everywhere except inside of a tube
+which is of uniform bore, and which goes in a loop that closes back on
+itself as in Fig.  1–4 . Outside of the tube the liquid
+stops moving, but inside the tube it may keep on moving because of the
+momentum in the trapped liquid—that is, if there is more momentum
+heading one way around the tube than the other. We define a quantity
+called the circulation as the resulting speed of the
+liquid in
+the tube times its circumference. We can again extend our ideas and
+define the “circulation” for any vector field (even when there isn’t
+anything moving). For any vector field the circulation around
+any imagined closed curve is defined as the average tangential
+component of the vector (in a consistent sense) multiplied by the
+circumference of the loop (Fig.  1–5 ):
+ 
+\begin{equation}
+\label{Eq:II:1:5}
+\text{Circulation}=(\text{average tangential
+component})\cdot(\text{distance around}).
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:1:5}
+\text{Circulation}=
+\begin{pmatrix}
+\text{average}\\[-.75ex]
+\text{tangential}\\[-.75ex]
+\text{component}
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+\text{distance}\\[-.75ex]
+\text{around}
+\end{pmatrix}
+\end{equation}
+ 
+You will see that this definition does indeed give a number which is
+proportional to the circulation velocity in the quickly frozen tube
+described above.
+
+With just these two ideas—flux and circulation—we can describe all
+the laws of electricity and magnetism at once. You may not understand
+the significance of the laws right away, but they will give you some
+idea of the way the physics of electromagnetism will be ultimately
+described.
+
+The first law of electromagnetism describes the flux of the electric
+field:
+ 
+\begin{equation}
+\label{Eq:II:1:6}
+\text{The flux of [eq] through any closed surface}=
+\frac{\text{the net charge inside}}{\epsO},
+\end{equation} 
+ 
+\begin{equation}
+\label{Eq:II:1:6}
+\begin{pmatrix}
+\text{Flux of [eq]}\\[-.5ex]
+\text{through any}\\[-.5ex]
+\text{closed surface}
+\end{pmatrix}
+=
+\frac{\begin{pmatrix}
+\text{net charge}\\[-.5ex]
+\text{inside}
+\end{pmatrix}
+}{\epsO},
+\end{equation}
+ 
+where [eq] is a convenient constant. (The constant [eq] is
+usually read as “epsilon-zero” or “epsilon-naught”.) If there are
+no charges inside the surface, even though there are charges nearby
+outside the surface, the average normal component of [eq] is
+zero, so there is no net flux through the surface. To show the power
+of this type of statement, we can show that Eq. ( 1.6 ) is
+the same as Coulomb’s law,
+provided only that we also add the idea
+that the field from a single charge is spherically symmetric. For a
+point charge, we draw a sphere around the charge. Then the average
+normal component is just the value of the magnitude of [eq] at any
+point, since the field must be directed radially and have the same
+strength for all points on the sphere. Our rule now says that the
+field at the surface of the sphere, times the area of the
+sphere—that is, the outgoing flux—is proportional to the charge
+inside. If we were to make the radius of the sphere bigger, the area
+would increase as the square of the radius. The average normal
+component of the electric field times that area must still be equal to
+the same charge inside, and so the field must decrease as the square
+of the distance—we get an “inverse square” field.
+
+If we have an arbitrary stationary curve in space and measure the
+circulation of the electric field around the curve, we will find that
+it is not, in general, zero (although it is for the Coulomb
+field). Rather, for electricity there is a second law that states: for
+any surface [eq] (not closed) whose edge is the curve [eq],
+ 
+\begin{equation}
+\label{Eq:II:1:7}
+\text{Circulation of [eq] around [eq]}=-\ddt{}{t}(\text{flux of
+[eq] through [eq]}).
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:1:7}
+\begin{pmatrix}
+\text{Circulation of [eq]}\\[-.5ex]
+\text{around [eq]}
+\end{pmatrix}
+=-\ddt{}{t}\begin{pmatrix}
+\text{flux of [eq]}\\[-.5ex]
+\text{through [eq]}
+\end{pmatrix}.
+\end{equation}
+
+We can complete the laws of the electromagnetic field by writing two
+corresponding equations for the magnetic field [eq]:
+ 
+\begin{equation}
+\label{Eq:II:1:8}
+\text{Flux of [eq] through any closed surface}=0.
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:1:8}
+\begin{pmatrix}
+\text{Flux of [eq]}\\[-.5ex]
+\text{through any}\\[-.5ex]
+\text{closed surface}
+\end{pmatrix}
+=0.
+\end{equation}
+ 
+For a surface [eq] bounded by the curve [eq],
+ 
+\begin{align}
+c^2(\text{circulation of [eq] around [eq]})=&\ddt{}{t}(\text{flux of
+[eq] through [eq]})\notag\\
+\label{Eq:II:1:9}
+&+\frac{\text{flux of electric current through
+[eq]}}{\epsO}.
+\end{align}
+ 
+ 
+\begin{gather}
+\label{Eq:II:1:9}
+c^2
+\begin{pmatrix}
+\text{circulation of [eq]}\\[-.5ex]
+\text{around [eq]}
+\end{pmatrix}
+=\\[1.5ex]
+\ddt{}{t}
+\begin{pmatrix}
+\text{flux of [eq]}\\[-.5ex]
+\text{through [eq]}
+\end{pmatrix}
++\frac{
+\begin{pmatrix}
+\text{flux of}\\[-.75ex]
+\text{electric current}\\[-.5ex]
+\text{through [eq]}
+\end{pmatrix}
+}{\epsO}.\notag
+\end{gather}
+
+The constant [eq] that appears in Eq. ( 1.9 ) is the
+square of the velocity of light. It appears because magnetism is in
+reality a relativistic effect of electricity. The constant [eq] has
+been stuck in to make the units of electric current come out in a
+convenient way.
+
+Equations ( 1.6 ) through ( 1.9 ), together with
+Eq. ( 1.1 ), are all the laws of
+electrodynamics 1 . As you remember,
+the laws of Newton were very simple to write down, but they had a lot
+of complicated consequences and it took us a long time to learn about
+them all. These laws are not nearly as simple to write down, which
+means that the consequences are going to be more elaborate and it will
+take us quite a lot of time to figure them all out.
+
+We can illustrate some of the laws of electrodynamics by a series of
+small experiments which show qualitatively the interrelationships of
+electric and magnetic fields. You have experienced the first term of
+Eq. ( 1.1 ) when combing your hair, so we won’t show that
+one. The second part of Eq. ( 1.1 ) can be demonstrated by
+passing a current through a wire which hangs above a bar magnet, as
+shown in Fig.  1–6 . The wire will move when a current is
+turned on because of the force [eq]. When a
+current exists, the charges inside the wire are moving, so they have a
+velocity [eq], and the magnetic field from the magnet exerts a
+force on them, which results in pushing the wire sideways.
+
+When the wire is pushed to the left, we would expect that the magnet
+must feel a push to the right. (Otherwise we could put the whole thing
+on a wagon and have a propulsion system that didn’t conserve
+momentum!) Although the force is too small to make movement of the bar
+magnet visible, a more sensitively supported magnet, like a compass
+needle, will show the movement.
+
+How does the wire push on the magnet? The current in the wire produces
+a magnetic field of its own that exerts forces on the
+magnet. According to the last term in Eq. ( 1.9 ), a
+current must have a circulation of [eq]—in this case, the
+lines of [eq] are loops around the wire, as shown in
+Fig.  1–7 . This [eq]-field is responsible for the force
+on the magnet.
+
+Equation ( 1.9 ) tells us that for a fixed current through
+the wire the circulation of [eq] is the same for any curve
+that surrounds the wire. For curves—say circles—that are farther
+away from the wire, the circumference is larger, so the tangential
+component of [eq] must decrease. You can see that we would, in
+fact, expect [eq] to decrease linearly with the distance from a
+long straight wire.
+
+Now, we have said that a current through a wire produces a magnetic
+field, and that when there is a magnetic field present there is a
+force on a wire carrying a current. Then we should also expect that if
+we make a magnetic field with a current in one wire, it should exert a
+force on another wire which also carries a current. This can be shown
+by using two hanging wires as shown in Fig.  1–8 . When
+the currents are in the same direction, the two wires attract, but
+when the currents are opposite, they repel.
+
+In short, electrical currents, as well as magnets, make magnetic
+fields. But wait, what is a magnet, anyway? If magnetic fields are
+produced by moving charges, is it not possible that the magnetic field
+from a piece of iron is really the result of currents? It appears to
+be so. We can replace the bar magnet of our experiment with a coil of
+wire, as shown in Fig.  1–9 . When a current is passed
+through the coil—as well as through the straight wire above it—we
+observe a motion of the wire exactly as before, when we had a magnet
+instead of a coil. In other words, the current in the coil imitates a
+magnet. It appears, then, that a piece of iron acts as though it
+contains a perpetual circulating current. We can, in fact, understand
+magnets in terms of permanent currents in the atoms of the iron. The
+force on the magnet in Fig.  1–7 is due to the second
+term in Eq. ( 1.1 ).
+
+Where do the currents come from? One possibility would be from the
+motion of the electrons in atomic orbits.
+Actually, that is not the case for iron, although it is for
+some materials. In addition to moving around in an atom, an electron
+also spins about on its own axis—something like the spin of the
+earth—and it is the current from this spin that gives the magnetic
+field in iron. (We say “something like the spin of the earth”
+because the question is so deep in quantum mechanics that the
+classical ideas do not really describe things too well.) In most
+substances, some electrons spin one way and some spin the other, so
+the magnetism cancels out, but in iron—for a mysterious reason which
+we will discuss later—many of the electrons are spinning with their
+axes lined up, and that is the source of the magnetism.
+
+Since the fields of magnets are from currents, we do not have to add any extra
+term to Eqs. ( 1.8 ) or ( 1.9 ) to take care of
+magnets. We just take all currents, including the circulating currents of
+the spinning electrons, and then the law is right. You should also notice that
+Eq. ( 1.8 ) says that there are no magnetic “charges” analogous to
+the electrical charges appearing on the right side of Eq. ( 1.6 ).
+None has been found.
+
+The first term on the right-hand side of Eq. ( 1.9 ) was
+discovered theoretically by
+Maxwell and is of great importance.
+It
+says that changing electric fields produce magnetic effects. In
+fact, without this term the equation would not make sense, because
+without it there could be no currents in circuits that are not
+complete loops. But such currents do exist, as we can see in the
+following example. Imagine a capacitor made of two flat plates. It is
+being charged by a current that flows toward one plate and away from
+the other, as shown in Fig.  1–10 . We draw a curve [eq]
+around one of the wires and fill it in with a surface which crosses
+the wire, as shown by the surface [eq] in the figure. According to
+Eq. ( 1.9 ), the circulation of [eq] around [eq]
+(times [eq]) is given by the current in the wire (divided by [eq]). But
+what if we fill in the curve with a different surface [eq],
+which is shaped like a bowl and passes between the plates of the
+capacitor, staying always away from the wire? There is certainly no
+current through this surface. But, surely, just changing the location
+of an imaginary surface is not going to change a real magnetic field!
+The circulation of [eq] must be what it was before. The first term
+on the right-hand side of Eq. ( 1.9 ) does, indeed,
+combine with the second term to give the same result for the two
+surfaces [eq] and [eq]. For [eq] the circulation of [eq] is
+given in terms of the rate of change of the flux of [eq] between
+the plates of the capacitor. And it works out that the changing [eq]
+is related to the current in just the way required for
+Eq. ( 1.9 ) to be correct.
+Maxwell saw that it was needed, and
+he was the first to write the complete equation.
+
+With the setup shown in Fig.  1–6 we can demonstrate
+another of the laws of electromagnetism. We disconnect the ends of the
+hanging wire from the battery and connect them to a
+galvanometer which
+tells us when there is a current through the wire. When we push 
+the wire sideways through the magnetic field of the magnet, we observe
+a current. Such an effect is again just another consequence of
+Eq. ( 1.1 )—the electrons in the wire feel the
+force [eq]. The electrons have a sidewise velocity
+because they move with the wire. This [eq] with a vertical [eq]
+from the magnet results in a force on the electrons directed
+ along the wire, which starts the electrons moving toward the
+galvanometer.
+
+Suppose, however, that we leave the wire alone and move the magnet. We
+guess from relativity that it should make no difference, and indeed,
+we observe a similar current in the galvanometer. How does the
+magnetic field produce forces on charges at rest? According to
+Eq. ( 1.1 ) there must be an electric field. A moving magnet
+must make an electric field. How that happens is said quantitatively by
+Eq. ( 1.7 ). This equation describes many phenomena of great
+practical interest, such as those that occur in electric generators and
+transformers.
+
+The most remarkable consequence of our equations is that the
+combination of Eq. ( 1.7 ) and Eq. ( 1.9 )
+contains the explanation of the radiation of electromagnetic effects
+over large distances. The reason is roughly something like this:
+suppose that somewhere we have a magnetic field which is increasing
+because, say, a current is turned on suddenly in a wire. Then by
+Eq. ( 1.7 ) there must be a circulation of an electric field.
+As the electric field builds up to produce its circulation, then
+according to Eq. ( 1.9 ) a magnetic circulation will be
+generated. But the building up of this magnetic field will
+produce a new circulation of the electric field, and so on. In this way
+fields work their way through space without the need of charges or
+currents except at their source. That is the way we see each
+other! It is all in the equations of the electromagnetic fields.
+
+We now make a few remarks on our way of looking at this subject. You
+may be saying: “All this business of fluxes and circulations is
+pretty abstract. There are electric fields at every point in space;
+then there are these ‘laws.’ But what is actually happening?
+Why can’t you explain it, for instance, by whatever it is that
+goes between the charges.” Well, it depends on your prejudices. Many
+physicists used to say that direct action with nothing in between was
+inconceivable. (How could they find an idea inconceivable when it had
+already been conceived?) They would say: “Look, the only forces we
+know are the direct action of one piece of matter on another. It is
+impossible that there can be a force with nothing to transmit it.”
+But what really happens when we study the “direct action” of one
+piece of matter right against another? We discover that it is not one
+piece right against the other; they are slightly separated, and there
+are electrical forces acting on a tiny scale. Thus we find that we are
+going to explain so-called direct-contact action in terms of the
+picture for electrical forces. It is certainly not sensible to try to
+insist that an electrical force has to look like the old, familiar,
+muscular push or pull, when it will turn out that the muscular pushes
+and pulls are going to be interpreted as electrical forces! The only
+sensible question is what is the most convenient way to look at
+electrical effects. Some people prefer to represent them as the
+interaction at a distance of charges, and to use a complicated
+law. Others love the field lines. They draw field lines all the time,
+and feel that writing [eq]’s and [eq]’s is too abstract. The
+field lines, however, are only a crude way of describing a field, and
+it is very difficult to give the correct, quantitative laws directly
+in terms of field lines. Also, the ideas of the field lines do not
+contain the deepest principle of electrodynamics, which is the
+superposition principle. Even though we know how the field lines look
+for one set of charges and what the field lines look like for another
+set of charges, we don’t get any idea about what the field line
+patterns will look like when both sets are present together. From the
+mathematical standpoint, on the other hand, superposition is easy—we
+simply add the two vectors. The field lines have some advantage in
+giving a vivid picture, but they also have some disadvantages. The
+direct interaction way of thinking has great advantages when thinking
+of electrical charges at rest, but has great disadvantages when
+dealing with charges in rapid motion.
+
+The best way is to use the abstract field idea. That it is abstract is
+unfortunate, but necessary. The attempts to try to represent the
+electric field as the motion of some kind of gear wheels, or in terms
+of lines, or of stresses in some kind of material have used up more
+effort of physicists than it would have taken simply to get the right
+answers about electrodynamics. It is interesting that the correct
+equations for the behavior of light were worked out by
+MacCullagh in 1839.
+But people said to him: “Yes, but there is no real material
+whose mechanical properties could possibly satisfy those equations,
+and since light is an oscillation that must vibrate in
+ something , we cannot believe this abstract equation business.”
+If people had been more open-minded, they might have believed in the
+right equations for the behavior of light a lot earlier than they did.
+
+In the case of the magnetic field we can make the following point:
+Suppose that you finally succeeded in making up a picture of the
+magnetic field in terms of some kind of lines or of gear wheels
+running through space. Then you try to explain what happens to two
+charges moving in space, both at the same speed and parallel to each
+other. Because they are moving, they will behave like two currents and
+will have a magnetic field associated with them (like the currents in
+the wires of Fig.  1–8 ). An observer who was riding
+along with the two charges, however, would see both charges as
+stationary, and would say that there is no magnetic field. The
+“gear wheels” or “lines” disappear when you ride along with the
+object! All we have done is to invent a new problem. How can
+the gear wheels disappear?! The people who draw field lines are in a
+similar difficulty. Not only is it not possible to say whether the
+field lines move or do not move with charges—they may disappear
+completely in certain coordinate frames.
+
+What we are saying, then, is that magnetism is really a relativistic
+effect. In the case of the two charges we just considered, travelling
+parallel to each other, we would expect to have to make relativistic
+corrections to their motion, with terms of order [eq]. These
+corrections must correspond to the magnetic force. But what about the
+force between the two wires in our experiment (Fig.  1–8 ).
+There the magnetic force is the whole force. It didn’t look like
+a “relativistic correction.” Also, if we estimate the velocities of
+the electrons in the wire (you can do this yourself), we find that their
+average speed along the wire is about [eq] centimeter per second.
+So [eq] is about [eq]. Surely a negligible “correction.” But
+no! Although the magnetic force is, in this case, [eq] of the
+“normal” electrical force between the moving electrons, remember that
+the “normal” electrical forces have disappeared because of the almost
+perfect balancing out—because the wires have the same number of
+protons as electrons. The balance is much more precise than one part
+in [eq], and the small relativistic term which we call the magnetic
+force is the only term left. It becomes the dominant term.
+
+It is the near-perfect cancellation of electrical effects which
+allowed relativity effects (that is, magnetism) to be studied and the
+correct equations—to order [eq]—to be discovered, even though
+physicists didn’t know that’s what was happening. And that is
+why, when relativity was discovered, the electromagnetic laws didn’t
+need to be changed. They—unlike mechanics—were already correct to
+a precision of [eq].
+
+Let us end this chapter by pointing out that among the many phenomena
+studied by the Greeks there were two very strange ones: that if you
+rubbed a piece of amber you could lift up little pieces
+of papyrus, and that there was a strange rock from the land of Magnesia
+which attracted iron. It is amazing to think that these were
+the only phenomena known to the Greeks in which the effects of
+electricity or magnetism were apparent. The reason that these were the
+only phenomena that appeared is due primarily to the fantastic
+precision of the balancing of charges that we mentioned earlier. Study
+by scientists who came after the Greeks uncovered one new phenomenon
+after another that were really some aspect of these amber
+and/or lodestone effects. Now we realize that the phenomena of
+chemical interaction and, ultimately, of life itself are to be
+understood in terms of electromagnetism.
+
+At the same time that an understanding of the subject of
+electromagnetism was being developed, technical possibilities that
+defied the imagination of the people that came before were appearing:
+it became possible to signal by telegraph over long distances, and to
+talk to another person miles away without any connections between, and
+to run huge power systems—a great water wheel, connected by
+filaments over hundreds of miles to another engine that turns in
+response to the master wheel—many thousands of branching
+filaments—ten thousand engines in ten thousand places running the
+machines of industries and homes—all turning because of the
+knowledge of the laws of electromagnetism.
+
+Today we are applying even more subtle effects. The electrical forces,
+enormous as they are, can also be very tiny, and we can control them
+and use them in very many ways. So delicate are our instruments that
+we can tell what a man is doing by the way he affects the electrons in
+a thin metal rod hundreds of miles away. All we need to do is to use
+the rod as an antenna for a television receiver!
+
+From a long view of the history of mankind—seen from, say, ten
+thousand years from now—there can be little doubt that the most
+significant event of the 19th century will be judged as
+Maxwell’s
+discovery of the laws of electrodynamics. The American Civil War will
+pale into provincial insignificance in comparison with this important
+scientific event of the same decade.

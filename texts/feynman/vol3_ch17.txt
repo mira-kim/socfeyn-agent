@@ -1,0 +1,1171 @@
+The Feynman Lectures on Physics Vol. III Ch. 17: Symmetry and Conservation Laws
+===============================================================================
+
+Sections: 17–1 Symmetry | 17–2 Symmetry and conservation | 17–3 The conservation laws | 17–4 Polarized light | 17–5 The disintegration of the [eq] | 17–6 Summary of the rotation matrices
+
+
+
+In classical physics there are a number of quantities which are
+ conserved —such as momentum, energy, and angular
+momentum. Conservation theorems about corresponding quantities also
+exist in quantum mechanics. The most beautiful thing of quantum
+mechanics is that the conservation theorems can, in a sense, be
+derived from something else, whereas in classical mechanics they are
+practically the starting points of the laws. (There are ways in
+classical mechanics to do an analogous thing to what we will do in
+quantum mechanics, but it can be done only at a very advanced level.)
+In quantum mechanics, however, the conservation laws are very deeply
+related to the principle of superposition of amplitudes, and to the
+symmetry of physical systems under various changes. This is the
+subject of the present chapter. Although we will apply these ideas
+mostly to the conservation of angular momentum, the essential point is
+that the theorems about the conservation of all kinds of quantities
+are—in the quantum mechanics—related to the symmetries of the
+system.
+
+We begin, therefore, by studying the question of symmetries of
+systems. A very simple example is the hydrogen molecular ion—we
+could equally well take the ammonia molecule—in which there are two
+states. For the hydrogen molecular ion we took as our base states one
+in which the electron was located near proton number [eq], and another
+in which the electron was located near proton number [eq]. The two
+states—which we called [eq] and [eq]—are shown
+again in Fig.  17–1 (a). Now, so long as the two nuclei
+are both exactly the same, then there is a certain symmetry in
+this physical system. That is to say, if we were to reflect the
+system in the plane halfway between the two protons—by which we mean
+that everything on one side of the plane gets moved to the symmetric
+position on the other side—we would get the situations in
+Fig.  17–1 (b). Since the protons are identical, the
+ operation of reflection changes [eq]
+into [eq] and [eq] into [eq]. We’ll call this
+reflection operation [eq] and write
+\begin{equation}
+\label{Eq:III:17:1}
+\Pop\,\ketsl{\slOne}=\ketsl{\slTwo},\quad
+\Pop\,\ketsl{\slTwo}=\ketsl{\slOne}.
+\end{equation}
+So our [eq] is an operator in the sense that it “ does
+something ” to a state to make a new state. The interesting thing is
+that [eq] operating on any state produces some other 
+state of the system.
+
+Now [eq], like any of the other operators we have described, has
+matrix elements which can be defined by the usual obvious
+notation. Namely,
+\begin{equation*}
+P_{11}=\bracketsl{\slOne}{\Pop}{\slOne}\quad
+\text{and}\quad
+P_{12}=\bracketsl{\slOne}{\Pop}{\slTwo}
+\end{equation*}
+are the matrix elements we get if we multiply [eq]
+and [eq] on the left by [eq]. From
+Eq. ( 17.1 ) they are
+\begin{align}
+\bracketsl{\slOne}{\Pop}{\slOne}&=P_{11}=
+\braketsl{\slOne}{\slTwo}=0,\notag\\[.5ex]
+\label{Eq:III:17:2}
+\bracketsl{\slOne}{\Pop}{\slTwo}&=P_{12}=
+\braketsl{\slOne}{\slOne}=1.
+\end{align}
+In the same way we can get [eq] and [eq]. The matrix
+of [eq]— with respect to the base system [eq]
+and [eq]—is
+\begin{equation}
+\label{Eq:III:17:3}
+P=
+\begin{pmatrix}
+0 & 1\\
+1 & 0
+\end{pmatrix}.
+\end{equation}
+We see once again that the words operator and matrix in
+quantum mechanics are practically interchangeable. There are slight
+technical differences—like the difference between a “numeral” and
+a “number”—but the distinction is something pedantic that we don’t
+have to worry about. So whether [eq] defines an operation, or is
+actually used to define a matrix of numbers, we will call it
+interchangeably an operator or a matrix.
+
+Now we would like to point out something. We will suppose that
+the physics of the whole hydrogen molecular ion system is
+ symmetrical . It doesn’t have to be—it depends, for instance,
+on what else is near it. But if the system is symmetrical, the
+following idea should certainly be true. Suppose we start at [eq]
+with the system in the state [eq] and find after an interval
+of time [eq] that the system turns out to be in a more complicated
+situation—in some linear combination of the two base
+states. Remember that in Chapter  8 we used to represent
+“going for a period of time” by multiplying by the
+operator [eq]. That means that the system would after a while—say
+[eq] seconds to be definite—be in some other state. For example, it might
+be [eq] parts of the state [eq] and
+[eq] parts of the state [eq], and we would write
+ 
+\begin{equation}
+\label{Eq:III:17:4}
+\ket{\text{[eq] at [eq] sec}}=
+\Uop(15,0)\,\ketsl{\slOne}=\sqrt{2/3}\,\ketsl{\slOne}
++i\sqrt{1/3}\,\ketsl{\slTwo}.
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:III:17:4}
+\ket{\text{[eq] at [eq] sec}}&=\Uop(15,0)\,\ketsl{\slOne}\\[.7ex]
+&=\sqrt{2/3}\,\ketsl{\slOne}+i\sqrt{1/3}\,\ketsl{\slTwo}.\notag
+\end{align}
+ 
+Now we ask what happens if we start the system in the symmetric 
+state [eq] and wait for [eq] seconds under the same
+conditions ? It is clear that if the world is symmetric—as we are
+supposing—we should get the state symmetric to ( 17.4 ):
+ 
+\begin{equation}
+\label{Eq:III:17:5}
+\ket{\text{[eq] at [eq] sec}}=
+\Uop(15,0)\,\ketsl{\slTwo}=\sqrt{2/3}\,\ketsl{\slTwo}
++i\sqrt{1/3}\,\ketsl{\slOne}.
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:III:17:5}
+\ket{\text{[eq] at [eq] sec}}&=\Uop(15,0)\,\ketsl{\slTwo}\\[.7ex]
+&=\sqrt{2/3}\,\ketsl{\slTwo}+i\sqrt{1/3}\,\ketsl{\slOne}.\notag
+\end{align}
+ 
+The same ideas are sketched diagrammatically in Fig.  17–2 .
+So if the physics of a system is symmetrical with respect to some
+plane, and we work out the behavior of a particular state, we also know
+the behavior of the state we would get by reflecting the original state
+in the symmetry plane.
+
+We would like to say the same things a little bit more
+generally—which means a little more abstractly. Let [eq] be any
+one of a number of operations that you could perform on a system
+ without changing the physics . For instance, for [eq] we might
+be thinking of [eq], the operation of a reflection in the
+plane between the two atoms in the hydrogen molecule. Or, in a system
+with two electrons, we might be thinking of the operation of
+ interchanging the two electrons. Another possibility would be,
+in a spherically symmetric system, the operation of a rotation 
+of the whole system through a finite angle around some axis—which
+wouldn’t change the physics. Of course, we would normally want to give
+each special case some special notation for [eq]. Specifically, we
+will normally define the [eq] to be the operation “rotate
+the system about the [eq]-axis by the angle [eq]”. By [eq] we
+mean just any one of the operators we have described or any other
+one—which leaves the basic physical situation unchanged.
+
+Let’s think of some more examples. If we have an atom with no
+external magnetic field and no external electric field, and if
+we were to turn the coordinates around any axis, it would be the same
+physical system. Again, the ammonia molecule is symmetrical with
+respect to a reflection in a plane parallel to that of the three
+hydrogens—so long as there is no electric field. When there is an
+electric field, when we make a reflection we would have to change the
+electric field also, and that changes the physical problem. But if we
+have no external field, the molecule is symmetrical.
+
+Now we consider a general situation. Suppose we start with the
+state [eq] and after some time or other under given physical
+conditions it has become the state [eq]. We can write
+\begin{equation}
+\label{Eq:III:17:6}
+\ket{\psi_2}=\Uop\,\ket{\psi_1}.
+\end{equation}
+[You can be thinking of Eq. ( 17.4 ).] Now imagine we
+perform the operation [eq] on the whole system. The
+state [eq] will be transformed to a state [eq], which
+we can also write as [eq]. Also the
+state [eq] is changed into [eq]. Now
+ if the physics is symmetrical under [eq] (don’t forget the
+ if ; it is not a general property of systems), then, waiting for
+the same time under the same conditions, we should have
+\begin{equation}
+\label{Eq:III:17:7}
+\ket{\psi_2'}=\Uop\,\ket{\psi_1'}.
+\end{equation}
+[Like Eq. ( 17.5 ).] But we can write
+[eq] for [eq] and [eq]
+for [eq] so ( 17.7 ) can also be written
+\begin{equation}
+\label{Eq:III:17:8}
+\Qop\,\ket{\psi_2}=\Uop\Qop\,\ket{\psi_1}.
+\end{equation}
+If we now replace [eq]
+by [eq]—Eq. ( 17.6 )—we get
+\begin{equation}
+\label{Eq:III:17:9}
+\Qop\Uop\,\ket{\psi_1}=\Uop\Qop\,\ket{\psi_1}.
+\end{equation}
+It’s not hard to understand what this means. Thinking of the hydrogen
+ion it says that: “making a reflection and waiting a while”—the
+expression on the right of Eq. ( 17.9 )—is the same as
+“waiting a while and then making a reflection”—the expression on
+the left of ( 17.9 ). These should be the same so long
+as [eq] doesn’t change under the reflection.
+
+Since ( 17.9 ) is true for any starting
+state [eq], it is really an equation about the operators:
+\begin{equation}
+\label{Eq:III:17:10}
+\Qop\Uop=\Uop\Qop.
+\end{equation}
+This is what we wanted to get— it is a mathematical statement
+of symmetry . When Eq. ( 17.10 ) is true, we say that the
+operators [eq] and [eq] commute . We can then define 
+“symmetry” in the following way: A physical system is
+ symmetric with respect to the operation [eq] when [eq]
+commutes with [eq], the operation of the passage of time. [In terms
+of matrices, the product of two operators is equivalent to the matrix
+product, so Eq. ( 17.10 ) also holds for the matrices [eq]
+and [eq] for a system which is symmetric under the transformation [eq].]
+
+Incidentally, since for infinitesimal times [eq] we have
+[eq]—where [eq] is the usual Hamiltonian
+(see Chapter  8 )—you can see that
+if ( 17.10 ) is true, it is also true that
+\begin{equation}
+\label{Eq:III:17:11}
+\Qop\Hop=\Hop\Qop.
+\end{equation}
+So ( 17.11 ) is the mathematical statement of the condition
+for the symmetry of a physical situation under the operator [eq]. It
+ defines a symmetry.
+
+Before applying the result we have just found, we would like to
+discuss the idea of symmetry a little more. Suppose that we have a
+very special situation: after we operate on a state with [eq], we
+get the same state. This is a very special case, but let’s suppose it
+happens to be true for a state [eq] that
+[eq] is physically the same state
+as [eq]. That means that [eq] is equal
+to [eq] except for some phase factor. 1 How can that
+happen? For instance, suppose that we have an [eq] ion in the state
+which we once called [eq]. 2 For
+this state there is equal amplitude to be in the base states
+[eq] and [eq]. The probabilities are shown as a bar
+graph in Fig.  17–3 (a). If we operate on [eq] with
+the reflection operator [eq], it flips the state over changing
+[eq] to [eq] and [eq]
+to [eq]—we get the probabilities shown in
+Fig.  17–3 (b). But that’s just the state [eq] all
+over again. If we start with state [eq] the probabilities
+before and after reflection look just the same. However, there is a
+difference if we look at the amplitudes . For the
+state [eq] the amplitudes are the same after the reflection,
+but for the state [eq] the amplitudes have the opposite sign.
+In other words,
+ 
+\begin{equation}
+\begin{aligned}
+\Pop\,\ketsl{\slI}&=\Pop\biggl\{
+\frac{\ketsl{\slOne}+\ketsl{\slTwo}}{\sqrt{2}}\biggr\}=
+\frac{\ketsl{\slTwo}+\ketsl{\slOne}}{\sqrt{2}}=\ketsl{\slI},\\[2ex]
+\Pop\,\ketsl{\slII}&=\Pop\biggl\{
+\frac{\ketsl{\slOne}-\ketsl{\slTwo}}{\sqrt{2}}\biggr\}=
+\frac{\ketsl{\slTwo}-\ketsl{\slOne}}{\sqrt{2}}=-\,\ketsl{\slII}.
+\end{aligned}
+\label{Eq:III:17:12}
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{alignedat}{2}
+\Pop\,\ketsl{\slI}\,&=\Pop\biggl\{&\frac{\ketsl{\slOne}+\ketsl{\slTwo}}{\sqrt{2}}&\biggr\}\\[1ex]
+&=&\frac{\ketsl{\slTwo}+\ketsl{\slOne}}{\sqrt{2}}&=\ketsl{\slI},\\[2ex]
+\Pop\,\ketsl{\slII}\,&=\Pop\biggl\{&\frac{\ketsl{\slOne}-\ketsl{\slTwo}}{\sqrt{2}}&\biggr\}\\[1ex]
+&=&\frac{\ketsl{\slTwo}-\ketsl{\slOne}}{\sqrt{2}}&=-\,\ketsl{\slII}.
+\end{alignedat}
+\label{Eq:III:17:12}
+\end{equation}
+ 
+If we write [eq], we have
+that [eq] for the state [eq] and [eq]
+for the state [eq].
+
+Let’s look at another example. Suppose we have a RHC polarized photon
+propagating in the [eq]-direction. If we do the operation of a rotation
+around the [eq]-axis, we know that this just multiplies the amplitude
+by [eq] when [eq] is the angle of the rotation. So for the
+rotation operation in this case, [eq] is just equal to the angle
+of rotation.
+
+Now it is clear that if it happens to be true that an
+operator [eq] just changes the phase of a state at some time, say [eq],
+ it is true forever . In other words, if the state [eq]
+goes over into the state [eq] after a time [eq], or
+\begin{equation}
+\label{Eq:III:17:13}
+\Uop(t,0)\,\ket{\psi_1}=\ket{\psi_2}
+\end{equation}
+and if the symmetry of the situation makes it so that
+\begin{equation}
+\label{Eq:III:17:14}
+\Qop\,\ket{\psi_1}=e^{i\delta}\,\ket{\psi_1},
+\end{equation}
+then it is also true that
+\begin{equation}
+\label{Eq:III:17:15}
+\Qop\,\ket{\psi_2}=e^{i\delta}\,\ket{\psi_2}.
+\end{equation}
+This is clear, since
+\begin{equation*}
+\Qop\,\ket{\psi_2}=\Qop\Uop\,\ket{\psi_1}=\Uop\Qop\,\ket{\psi_1},\notag
+\end{equation*}
+and if [eq], then
+\begin{equation*}
+\Qop\,\ket{\psi_2}=\Uop e^{i\delta}\,\ket{\psi_1}=
+e^{i\delta}\Uop\,\ket{\psi_1}=e^{i\delta}\,\ket{\psi_2}.
+\end{equation*}
+[The sequence of equalities follows from ( 17.13 )
+and ( 17.10 ) for a symmetrical system,
+from ( 17.14 ), and from the fact that a number
+like [eq] commutes with an operator.]
+
+So with certain symmetries something which is true initially is true
+for all times. But isn’t that just a conservation law ? Yes! It
+says that if you look at the original state and by making a little
+computation on the side discover that an operation which is a
+symmetry operation of the system produces only a multiplication by a
+certain phase, then you know that the same property will be true of
+the final state—the same operation multiplies the final state by the
+same phase factor. This is always true even though we may not know
+anything else about the inner mechanism of the universe which changes
+a system from the initial to the final state. Even if we do not care
+to look at the details of the machinery by which the system gets from
+one state to another, we can still say that if a thing is in a state
+with a certain symmetry character originally, and if the Hamiltonian
+for this thing is symmetrical under that symmetry operation, then the
+state will have the same symmetry character for all times. That’s the
+basis of all the conservation laws of quantum mechanics.
+
+Let’s look at a special example. Let’s go back to the
+[eq] operator. We would like first to modify a little our definition
+of [eq]. We want to take for [eq] not just a mirror reflection,
+because that requires defining the plane in which we put the
+mirror. There is a special kind of a reflection that doesn’t require
+the specification of a plane. Suppose we redefine the operation [eq]
+this way: First you reflect in a mirror in the [eq]-plane so that [eq]
+goes to [eq], [eq] stays [eq], and [eq] stays [eq]; then you turn the
+system [eq] about the [eq]-axis so that [eq] is made to go
+to [eq] and [eq] to [eq]. The whole thing is called an
+ inversion . Every point is projected through the origin 
+to the diametrically opposite position. All the coordinates of
+everything are reversed. We will still use the symbol [eq] for this
+operation. It is shown in Fig.  17–4 . It is a little more
+convenient than a simple reflection because it doesn’t require that you
+specify which coordinate plane you used for the reflection—you need
+specify only the point which is at the center of symmetry.
+
+Now let’s suppose that we have a state [eq] which under the
+inversion operation goes into [eq]—that is,
+\begin{equation}
+\label{Eq:III:17:16}
+\ket{\psi_0'}=\Pop\,\ket{\psi_0}=e^{i\delta}\,\ket{\psi_0}.
+\end{equation}
+Then suppose that we invert again. After two inversions we are
+right back where we started from—nothing is changed at all. We must
+have that
+\begin{equation*}
+\Pop\,\ket{\psi_0'}=\Pop\!\cdot\!\Pop\,\ket{\psi_0}=\ket{\psi_0}.
+\end{equation*}
+But
+\begin{equation*}
+\Pop\!\cdot\!\Pop\,\ket{\psi_0}=\Pop e^{i\delta}\,\ket{\psi_0}
+=e^{i\delta}\Pop\,\ket{\psi_0}=(e^{i\delta})^2\,\ket{\psi_0}.
+\end{equation*}
+It follows that
+\begin{equation*}
+(e^{i\delta})^2=1.
+\end{equation*}
+So if the inversion operator is a symmetry operation of a
+state, there are only two possibilities for [eq]:
+\begin{equation*}
+e^{i\delta}=\pm1,
+\end{equation*}
+which means that
+\begin{equation}
+\label{Eq:III:17:17}
+\Pop\,\ket{\psi_0}=\ket{\psi_0}\quad
+\text{or}\quad
+\Pop\,\ket{\psi_0}=-\,\ket{\psi_0}.
+\end{equation}
+
+Classically, if a state is symmetric under an inversion, the operation
+gives back the same state. In quantum mechanics, however, there are
+the two possibilities: we get the same state or minus 
+the same state. When we get the same state,
+[eq], we say that the state [eq]
+has even parity . When the sign is reversed so
+that [eq], we say that the state has
+ odd parity . (The inversion operator [eq] is also known as the
+parity operator.) The state [eq] of the [eq] ion has even
+parity; and the state [eq] has odd parity—see
+Eq. ( 17.12 ). There are, of course, states which are not
+symmetric under the operation [eq]; these are states with no definite
+parity. For instance, in the [eq] system the state [eq] has
+even parity, the state [eq] has odd parity, and the
+state [eq] has no definite parity.
+
+When we speak of an operation like inversion being performed
+“ on a physical system ” we can think about it in two ways. We
+can think of physically moving whatever is at [eq] to the
+inverse point at [eq], or we can think of looking at the
+same system from a new frame of reference [eq] related to the
+old by [eq], [eq], and [eq]. Similarly, when we think of
+rotations, we can think of rotating bodily a physical system, or of
+rotating the coordinate frame with respect to which we measure the
+system, keeping the “system” fixed in space. Generally, the two
+points of view are essentially equivalent. For rotation they are
+equivalent except that rotating a system by the
+angle [eq] is like rotating the reference frame by the negative 
+of [eq]. In these lectures we have usually considered what happens
+when a projection is made into a new set of axes. What you get that
+way is the same as what you get if you leave the axes fixed and rotate
+the system backwards by the same amount. When you do that, the
+signs of the angles are reversed. 3
+
+Many of the laws of physics—but not all—are unchanged by a
+reflection or an inversion of the coordinates. They are
+ symmetric with respect to an inversion. The laws of
+electrodynamics, for instance, are unchanged if we change [eq] to [eq],
+[eq] to [eq], and [eq] to [eq] in all the equations. The same is
+true for the laws of gravity, and for the strong interactions of
+nuclear physics. Only the weak interactions—responsible for
+[eq]-decay—do not have this symmetry. (We discussed this in some
+detail in Chapter  52 , Vol. I.) We will for now leave out
+any consideration of the [eq]-decays. Then in any physical system
+where [eq]-decays are not expected to produce any appreciable
+effect—an example would be the emission of light by an atom—the
+Hamiltonian [eq] and the operator [eq] will commute. Under these
+circumstances we have the following proposition. If a state originally
+has even parity, and if you look at the physical situation at some later
+time, it will again have even parity. For instance, suppose an atom
+about to emit a photon is in a state known to have even parity. You look
+at the whole thing—including the photon—after the emission; it will
+again have even parity (likewise if you start with odd parity). This
+principle is called the conservation of parity . You can see why
+the words “conservation of parity” and “reflection symmetry” are
+closely intertwined in the quantum mechanics. Although until a few years
+ago it was thought that nature always conserved parity, it is now known
+that this is not true. It has been discovered to be false because
+the [eq]-decay reaction does not have the inversion symmetry which is
+found in the other laws of physics.
+
+Now we can prove an interesting theorem (which is true so long as we
+can disregard weak interactions): Any state of definite energy which
+is not degenerate must have a definite parity. It must have either
+even parity or odd parity. (Remember that we have sometimes seen
+systems in which several states have the same energy—we say that
+such states are degenerate . Our theorem will not apply to
+them.)
+
+For a state [eq] of definite energy, we know that
+\begin{equation}
+\label{Eq:III:17:18}
+\Hop\,\ket{\psi_0}=E\,\ket{\psi_0},
+\end{equation}
+where [eq] is just a number—the energy of the state. If we have
+ any operator [eq] which is a symmetry operator of the system
+we can prove that
+\begin{equation}
+\label{Eq:III:17:19}
+\Qop\,\ket{\psi_0}=e^{i\delta}\,\ket{\psi_0}
+\end{equation}
+so long as [eq] is a unique state of definite
+energy. Consider the new state [eq] that you get from
+operating with [eq]. If the physics is symmetric, then
+[eq] must have the same energy as [eq]. But we
+have taken a situation in which there is only one state of that
+energy, namely [eq], so [eq] must be the same
+state—it can only differ by a phase. That’s the physical argument.
+
+The same thing comes out of our mathematics. Our definition of
+symmetry is Eq. ( 17.10 ) or Eq. ( 17.11 )
+(good for any state [eq]),
+\begin{equation}
+\label{Eq:III:17:20}
+\Hop\Qop\,\ket{\psi}=\Qop\Hop\,\ket{\psi}.
+\end{equation}
+But we are considering only a state [eq] which is a definite
+energy state, so that [eq]. Since [eq]
+is just a number that floats through [eq] if we want, we have
+\begin{equation*}
+\Qop\Hop\,\ket{\psi_0}=\Qop E\,\ket{\psi_0}=E\Qop\,\ket{\psi_0}.
+\end{equation*}
+So
+\begin{equation}
+\label{Eq:III:17:21}
+\Hop\{\Qop\,\ket{\psi_0}\}=E\{\Qop\,\ket{\psi_0}\}.
+\end{equation}
+So [eq] is also a definite energy state
+of [eq]—and with the same [eq]. But by our hypothesis, there is
+only one such state; it must be that [eq].
+
+What we have just proved is true for any operator [eq] that is a
+symmetry operator of the physical system. Therefore, in a situation in
+which we consider only electrical forces and strong interactions—and
+no [eq]-decay—so that inversion symmetry is an allowed
+approximation, we have that
+[eq]. But we have also seen that
+[eq] must be either [eq] or [eq]. So any state of a definite
+energy (which is not degenerate) has got either an even parity or an
+odd parity.
+
+We turn now to another interesting example of an operation: a
+rotation. We consider the special case of an operator that rotates an
+atomic system by angle [eq] around the [eq]-axis. We will call this
+operator 4  [eq].
+We are going to suppose that we have a physical
+situation where we have no influences lined up along the [eq]-
+and [eq]-axes. Any electric field or magnetic field is taken to be parallel
+to the [eq]-axis 5 so that there will be no change in the
+ external conditions if we rotate the whole physical system
+about the [eq]-axis. For example, if we have an atom in empty space and
+we turn the atom around the [eq]-axis by an angle [eq], we have the
+same physical system.
+
+Now then, there are special states which have the property that
+such an operation produces a new state which is the original state
+multiplied by some phase factor. Let us make a quick side remark to
+show you that when this is true the phase change must always be
+proportional to the angle [eq]. Suppose that you would rotate twice
+by the angle [eq]. That’s the same thing as rotating by the
+angle [eq]. If a rotation by [eq] has the effect of multiplying the
+state [eq] by a phase [eq] so that
+\begin{equation*}
+\Rop_z(\phi)\,\ket{\psi_0}=e^{i\delta}\,\ket{\psi_0},
+\end{equation*}
+two such rotations in succession would multiply the state by the
+factor [eq], since
+ 
+\begin{equation*}
+\Rop_z(\phi)\Rop_z(\phi)\,\ket{\psi_0}=
+\Rop_z(\phi)e^{i\delta}\,\ket{\psi_0}=
+e^{i\delta}\Rop_z(\phi)\,\ket{\psi_0}=
+e^{i\delta}e^{i\delta}\,\ket{\psi_0}.
+\end{equation*}
+ 
+ 
+\begin{alignat*}{2}
+\Rop_z(\phi)\Rop_z(\phi)\,\ket{\psi_0}&=\;&\Rop_z(\phi)e^{i\delta}\,\ket{\psi_0}&\\[1ex]
+&=\;&e^{i\delta}\Rop_z(\phi)\,\ket{\psi_0}&\\[1ex]
+&=&e^{i\delta}e^{i\delta}\,\ket{\psi_0}&.
+\end{alignat*}
+ 
+The phase change [eq] must be proportional to [eq]. 6 We are
+considering then those special states [eq] for which
+\begin{equation}
+\label{Eq:III:17:22}
+\Rop_z(\phi)\,\ket{\psi_0}=e^{im\phi}\,\ket{\psi_0},
+\end{equation}
+where [eq] is some real number.
+
+We also know the remarkable fact that if the system is
+symmetrical for a rotation around [eq] and if the original state
+happens to have the property that ( 17.22 ) is true, then
+it will also have the same property later on. So this number [eq] is a
+very important one. If we know its value initially, we know its value
+at the end of the game. It is a number which is conserved —[eq]
+is a constant of the motion . The reason that we pull out [eq] is
+because it hasn’t anything to do with any special angle [eq], and
+also because it corresponds to something in classical mechanics. In
+ quantum mechanics we choose to call [eq]—for such
+states as [eq]—the angular momentum about the
+[eq]-axis . If we do that we find that in the limit of large systems
+the same quantity is equal to the [eq]-component of the angular
+momentum of classical mechanics. So if we have a state for which a
+rotation about the [eq]-axis just produces a phase factor [eq],
+then we have a state of definite angular momentum about that
+axis—and the angular momentum is conserved. It is [eq] now and
+forever. Of course, you can rotate about any axis, and you get the
+conservation of angular momentum for the various axes. You see that
+the conservation of angular momentum is related to the fact that when
+you turn a system you get the same state with only a new phase factor.
+
+We would like to show you how general this idea is. We will apply it
+to two other conservation laws which have exact correspondence in the
+physical ideas to the conservation of angular momentum. In classical
+physics we also have conservation of momentum and conservation of
+energy, and it is interesting to see that both of these are related in
+the same way to some physical symmetry.
+
+Suppose that we have a physical system—an atom, some complicated
+nucleus, or a molecule, or something—and it doesn’t make any
+difference if we take the whole system and move it over to a different
+place. So we have a Hamiltonian which has the property that it depends
+only on the internal coordinates in some sense, and does not
+depend on the absolute position in space. Under those
+circumstances there is a special symmetry operation we can perform
+which is a translation in space. Let’s define [eq] as the
+operation of a displacement by the distance [eq] along the
+[eq]-axis. Then for any state we can make this operation and get a new
+state. But again there can be very special states which have the
+property that when you displace them by [eq] along the [eq]-axis you get
+the same state except for a phase factor. It’s also possible to prove,
+just as we did above, that when this happens, the phase must be
+proportional to [eq]. So we can write for these special
+states [eq]
+\begin{equation}
+\label{Eq:III:17:23}
+\Dop_x(a)\,\ket{\psi_0}=e^{ika}\,\ket{\psi_0}.
+\end{equation}
+The coefficient [eq], when multiplied by [eq], is called the
+[eq]-component of the momentum . And the reason it is called that is
+that this number is numerically equal to the classical momentum [eq]
+when we have a large system. The general statement is this: If the
+Hamiltonian is unchanged when the system is displaced, and if the
+state starts with a definite momentum in the [eq]-direction, then the
+momentum in the [eq]-direction will remain the same as time goes
+on. The total momentum of a system before and after collisions—or
+after explosions or what not—will be the same.
+
+There is another operation that is quite analogous to the displacement
+in space: a delay in time. Suppose that we have a physical situation
+where there is nothing external that depends on time, and we
+start something off at a certain moment in a given state and let it
+roll. Now if we were to start the same thing off again (in another
+experiment) two seconds later—or/say, delayed by a time [eq]—and
+if nothing in the external conditions depends on the absolute time,
+the development would be the same and the final state would be the
+same as the other final state, except that it will get there later by
+the time [eq]. Under those circumstances we can also find special
+states which have the property that the development in time has the
+special characteristic that the delayed state is just the old,
+multiplied by a phase factor. Once more it is clear that for these
+special states the phase change must be proportional to [eq]. We can
+write
+\begin{equation}
+\label{Eq:III:17:24}
+\Dop_t(\tau)\,\ket{\psi_0}=e^{-i\omega\tau}\,\ket{\psi_0}.
+\end{equation}
+It is conventional to use the negative sign in defining [eq]; with
+this convention [eq] is the energy of the system,
+ and it is conserved . So a system of definite energy is one
+which when displaced [eq] in time reproduces itself multiplied
+by [eq]. (That’s what we have said before when we defined a
+quantum state of definite energy, so we’re consistent with ourselves.)
+It means that if a system is in a state of definite energy, and if the
+Hamiltonian doesn’t depend on [eq], then no matter what goes on, the
+system will have the same energy at all later times.
+
+You see, therefore, the relation between the conservation laws and the
+symmetry of the world. Symmetry with respect to displacements in time
+implies the conservation of energy; symmetry with respect to position
+in [eq], [eq], or [eq] implies the conservation of that component of
+momentum. Symmetry with respect to rotations around the [eq]-, [eq]-,
+and [eq]-axes implies the conservation of the [eq]-, [eq]-,
+and [eq]-components of angular momentum. Symmetry with respect to
+reflection implies the conservation of parity. Symmetry with respect
+to the interchange of two electrons implies the conservation of
+something we don’t have a name for, and so on. Some of these
+principles have classical analogs and others do not. There are more
+conservation laws in quantum mechanics than are useful in classical
+mechanics—or, at least, than are usually made use of.
+
+In order that you will be able to read other books on quantum
+mechanics, we must make a small technical aside—to describe the
+notation that people use. The operation of a displacement with respect
+to time is, of course, just the operation [eq] that we talked about
+before:
+\begin{equation}
+\label{Eq:III:17:25}
+\Dop_t(\tau)=\Uop(t+\tau,t).
+\end{equation}
+Most people like to discuss everything in terms of
+ infinitesimal displacements in time, or in terms of
+infinitesimal displacements in space, or in terms of rotations through
+infinitesimal angles. Since any finite displacement or angle can be
+accumulated by a succession of infinitesimal displacements or angles,
+it is often easier to analyze first the infinitesimal case. The
+operator of an infinitesimal displacement [eq] in time is—as
+we have defined it in Chapter  8 —
+\begin{equation}
+\label{Eq:III:17:26}
+\Dop_t(\Delta t)=1-\frac{i}{\hbar}\Hop\Delta t.
+\end{equation}
+Then [eq] is analogous to the classical quantity we call energy,
+because if [eq] happens to be a constant
+times [eq] namely, [eq] then that
+constant is the energy of the system.
+
+The same thing is done for the other operations. If we make a small
+displacement in [eq], say by the amount [eq], a
+state [eq] will, in general , go over into some other
+state [eq]. We can write
+\begin{equation}
+\label{Eq:III:17:27}
+\ket{\psi'}=\Dop_x(\Delta x)\,\ket{\psi}=
+\Bigl(1+\frac{i}{\hbar}\,\pop_x\Delta x\Bigr)\ket{\psi},
+\end{equation}
+since as [eq] goes to zero, the [eq] should become
+just [eq] or [eq], and for small [eq] the change
+of [eq] from [eq] should be proportional to $\Delta
+x[eq]\pop_x$ is called the momentum
+operator—for the [eq]-component, of course.
+
+For identical reasons, people usually write for small rotations
+\begin{equation}
+\label{Eq:III:17:28}
+\Rop_z(\Delta\phi)\,\ket{\psi}=
+\Bigl(1+\frac{i}{\hbar}\,\Jop_z\Delta\phi\Bigr)\ket{\psi}
+\end{equation}
+and call [eq] the operator of the [eq]-component of angular
+momentum. For those special states for which
+[eq], we can for any
+small angle—say [eq]—expand the right-hand side to first
+order in [eq] and get
+\begin{equation*}
+\Rop_z(\Delta\phi)\,\ket{\psi_0}=
+e^{im\Delta\phi}\,\ket{\psi_0}=
+(1+im\Delta\phi)\,\ket{\psi_0}.
+\end{equation*}
+Comparing this with the definition of [eq] in
+Eq. ( 17.28 ), we get that
+\begin{equation}
+\label{Eq:III:17:29}
+\Jop_z\,\ket{\psi_0}=m\hbar\,\ket{\psi_0}.
+\end{equation}
+In other words, if you operate with [eq] on a state with a
+definite angular momentum about the [eq]-axis, you get [eq] times
+the same state, where [eq] is the amount of [eq]-component of
+angular momentum. It is quite analogous to operating on a definite
+energy state with [eq] to get [eq].
+
+We would now like to make some applications of the ideas of the
+conservation of angular momentum—to show you how they work. The
+point is that they are really very simple. You knew before that
+angular momentum is conserved. The only thing you really have to
+remember from this chapter is that if a state [eq] has the
+property that upon a rotation through an angle [eq] about the
+[eq]-axis, it becomes [eq]; it has a
+[eq]-component of angular momentum equal to [eq]. That’s all we
+will need to do a number of interesting things.
+
+First of all we would like to check on one idea. In
+Section  11-4 we showed that when RHC polarized light is
+viewed in a frame rotated by the angle [eq] about the
+[eq]-axis 7 it gets multiplied by [eq]. Does
+that mean then that the photons of light that are right circularly
+polarized carry an angular momentum of one unit 8 along the [eq]-axis? Indeed it does .
+It also means that if we have a beam of light containing a large number
+of photons all circularly polarized the same way—as we would have in a
+classical beam—it will carry angular momentum. If the total energy
+carried by the beam in a certain time is [eq], then there are
+[eq] photons. Each one carries the angular
+momentum [eq], so there is a total angular momentum of
+\begin{equation}
+\label{Eq:III:17:30}
+J_z=N\hbar=\frac{W}{\omega}.
+\end{equation}
+
+Can we prove classically that light which is right circularly
+polarized carries an energy and angular momentum in proportion
+to [eq]? That should be a classical proposition if everything is
+right. Here we have a case where we can go from the quantum thing to
+the classical thing. We should see if the classical physics checks. It
+will give us an idea whether we have a right to call [eq] the angular
+momentum. Remember what right circularly polarized light is,
+classically. It’s described by an electric field with an oscillating
+[eq]-component and an oscillating [eq]-component [eq] out of phase
+so that the resultant electric vector [eq] goes in a
+circle—as drawn in Fig.  17–5 (a). Now suppose that such
+light shines on a wall which is going to absorb it—or at least some of
+it—and consider an atom in the wall according to the classical
+physics. We have often described the motion of the electron in the atom
+as a harmonic oscillator which can be driven into oscillation by an
+external electric field. We’ll suppose that the atom is isotropic, so
+that it can oscillate equally well in the [eq]- or [eq]-directions. Then
+in the circularly polarized light, the [eq]-displacement and the
+[eq]-displacement are the same, but one is [eq] behind the other.
+The net result is that the electron moves in a circle, as shown in
+Fig.  17–5 (b). The electron is displaced at some
+displacement [eq] from its equilibrium position at the origin and
+goes around with some phase lag with respect to the vector [eq].
+The relation between [eq] and [eq] might be as shown in
+Fig.  17–5 (b). As time goes on, the electric field
+rotates and the displacement rotates with the same frequency, so their
+relative orientation stays the same. Now let’s look at the work being
+done on this electron. The rate that energy is being put into this
+electron is [eq], its velocity, times the component of [eq]
+parallel to the velocity:
+\begin{equation}
+\label{Eq:III:17:31}
+\ddt{W}{t}=q\Efield_tv.
+\end{equation}
+But look, there is angular momentum being poured into this electron,
+because there is always a torque about the origin. The torque
+is [eq], which must be equal to the rate of change of angular
+momentum [eq]:
+\begin{equation}
+\label{Eq:III:17:32}
+\ddt{J_z}{t}=q\Efield_tr.
+\end{equation}
+Remembering that [eq], we have that
+\begin{equation*}
+\ddt{J_z}{W}=\frac{1}{\omega}.
+\end{equation*}
+Therefore, if we integrate the total angular momentum which is
+absorbed, it is proportional to the total energy—the constant of
+proportionality being [eq], which agrees with
+Eq. ( 17.30 ). Light does carry angular momentum—[eq] unit
+(times [eq]) if it is right circularly polarized along the [eq]-axis,
+and [eq] unit along the [eq]-axis if it is left circularly polarized.
+
+Now let’s ask the following question: If light is linearly polarized
+in the [eq]-direction, what is its angular momentum? Light polarized in
+the [eq]-direction can be represented as the superposition of RHC and
+LHC polarized light. Therefore, there is a certain amplitude that the
+angular momentum is [eq] and another amplitude that the angular
+momentum is [eq], so it doesn’t have a definite angular
+momentum. It has an amplitude to appear with [eq] and an equal
+amplitude to appear with [eq]. The interference of these two
+amplitudes produces the linear polarization, but it has equal 
+probabilities to appear with plus or minus one unit of angular
+momentum. Macroscopic measurements made on a beam of linearly
+polarized light will show that it carries zero angular momentum,
+because in a large number of photons there are nearly equal numbers of
+RHC and LHC photons contributing opposite amounts of angular
+momentum—the average angular momentum is zero. And in the classical
+theory you don’t find the angular momentum unless there is some
+circular polarization.
+
+We have said that any spin-one particle can have three values of [eq],
+namely [eq] (the three states we saw in the Stern-Gerlach
+experiment). But light is screwy; it has only two states. It does not
+have the zero case. This strange lack is related to the fact that light
+cannot stand still. For a particle of spin [eq] which is standing still,
+there must be the [eq] possible states with values of [eq] going in
+steps of [eq] from [eq] to [eq]. But it turns out that for something of
+spin [eq] with zero mass only the states with the components [eq]
+and [eq] along the direction of motion exist. For example, light does
+not have three states, but only two—although a photon is still an
+object of spin one. How is this consistent with our earlier
+proofs—based on what happens under rotations in space—that for
+spin-one particles three states are necessary? For a particle at rest,
+rotations can be made about any axis without changing the momentum
+state. Particles with zero rest mass (like photons and neutrinos) cannot
+be at rest; only rotations about the axis along the direction of motion
+do not change the momentum state. Arguments about rotations around one
+axis only are insufficient to prove that three states are required,
+given that one of them varies as [eq] under rotations by the
+angle [eq]. 9
+
+One further side remark. For a zero rest mass particle, in general,
+ only one of the two spin states with respect to the line of
+motion ([eq], [eq]) is really necessary. For neutrinos—which are
+spin one-half particles—only the states with the component of
+angular momentum opposite to the direction of
+motion [eq] exist in nature [and only along the
+motion [eq] for antineutrinos]. When a system has inversion symmetry
+(so that parity is conserved, as it is for light) both components
+([eq] and [eq]) are required.
+
+Now we want to give an example of how we use the theorem of
+conservation of angular momentum in a specifically quantum physical
+problem. We look at break-up of the lambda particle ([eq]),
+which disintegrates into a proton and a [eq] meson by a “weak”
+interaction:
+\begin{equation*}
+\Lambda^0\to\text{p}+\pi^-.
+\end{equation*}
+Assume we know that the pion has spin zero, that the proton has spin
+one-half, and that the [eq] has spin one-half. We would like to
+solve the following problem: Suppose that a [eq] were to be
+produced in a way that caused it to be completely polarized—by which
+we mean that its spin is, say “up,” with respect to some suitably
+chosen [eq]-axis—see Fig.  17–6 (a). The question is,
+with what probability will it disintegrate so that the proton goes off
+at an angle [eq] with respect to the [eq]-axis—as in
+Fig.  17–6 (b)? In other words, what is the angular
+distribution of the disintegrations? We will look at the disintegration
+in the coordinate system in which the [eq] is at rest—we will
+measure the angles in this rest frame; then they can always be
+transformed to another frame if we want.
+
+We begin by looking at the special circumstance in which the proton is
+emitted into a small solid angle [eq] along the [eq]-axis
+(Fig.  17–7 ). Before the disintegration we have a
+[eq] with its spin “up,” as in part (a) of the figure. After a
+short time—for reasons unknown to this day, except that they are
+connected with the weak decays—the [eq] explodes into a proton
+and a pion. Suppose the proton goes up along the [eq]-axis. Then, from
+the conservation of momentum, the pion must go down. Since the proton is
+a spin one-half particle, its spin must be either “up” or
+“down”—there are, in principle, the two possibilities shown in parts
+(b) and (c) of the figure. The conservation of angular momentum,
+however, requires that the proton have spin “up.” This is most easily
+seen from the following argument. A particle moving along the [eq]-axis
+cannot contribute any angular momentum about this axis by virtue of its
+motion; therefore, only the spins can contribute to [eq]. The spin
+angular momentum about the [eq]-axis is [eq] before the
+disintegration, so it must also be [eq] afterward. We can say that
+since the pion has no spin, the proton spin must be “up.”
+
+If you are worried that arguments of this kind may not be valid in
+quantum mechanics, we can take a moment to show you that they are. The
+initial state (before the disintegration), which we can
+call [eq] has the property that if it is
+rotated about the [eq]-axis by the angle [eq], the state vector gets
+multiplied by the phase factor [eq]. (In the rotated system
+the state vector is [eq].)
+That’s what we mean by spin “up” for a spin one-half particle. Since
+nature’s behavior doesn’t depend on our choice of axes, the final
+state (the proton plus pion) must have the same property. We could
+write the final state as, say,
+\begin{equation*}
+\ket{\text{proton going [eq], spin [eq]; pion going [eq]}}.
+\end{equation*}
+But we really do not need to specify the pion motion, since in the
+frame we have chosen the pion always moves opposite the proton; we can
+simplify our description of the final state to
+\begin{equation*}
+\ket{\text{proton going [eq], spin [eq]}}.
+\end{equation*}
+Now what happens to this state vector if we rotate the coordinates
+about the [eq]-axis by the angle [eq]?
+
+Since the proton and pion are moving along the [eq]-axis, their motion
+isn’t changed by the rotation. (That’s why we picked this special
+case; we couldn’t make the argument otherwise.) Also, nothing happens
+to the pion, because it is spin zero. The proton, however, has spin
+one-half. If its spin is “up” it will contribute a phase change
+of [eq] in response to the rotation. (If its spin were “down”
+the phase change due to the proton would be [eq].) But the
+phase change with rotation before and after the excitement must be the
+same if angular momentum is to be conserved. (And it will be, since
+there are no outside influences in the Hamiltonian.) So the only
+possibility is that the proton spin will be “up.” If the proton goes
+up, its spin must also be “up.”
+
+We conclude, then, that the conservation of angular momentum permits the
+process shown in part (b) of Fig.  17–7 , but does not
+permit the process shown in part (c). Since we know that the
+disintegration occurs, there is some amplitude for process (b)—proton
+going up with spin “up.” We’ll let [eq] stand for the amplitude that
+the disintegration occurs in this way in any infinitesimal interval of
+time. 10
+
+Now let’s see what would happen if the [eq] spin were initially
+“down.” Again we ask about the decays in which the proton goes up
+along the [eq]-axis, as shown in Fig.  17–8 . You will
+appreciate that in this case the proton must have spin “down” if
+angular momentum is conserved. Let’s say that the amplitude for such a
+disintegration is [eq].
+
+We can’t say anything more about the two amplitudes [eq] and [eq]. They
+depend on the inner machinery of [eq], and the weak decays, and
+nobody yet knows how to calculate them. We’ll have to get them from
+experiment. But with just these two amplitudes we can find out
+all we want to know about the angular distribution of the
+disintegration. We only have to be careful always to define completely
+the states we are talking about.
+
+We want to know the probability that the proton will go off at the
+angle [eq] with respect to the [eq]-axis (into a small solid
+angle [eq]) as drawn in Fig.  17–6 . Let’s put a new
+[eq]-axis in this direction and call it the [eq]-axis. We know how to
+analyze what happens along this axis. With respect to this new axis, the
+[eq] no longer has its spin “up,” but has a certain amplitude
+to have its spin “up” and another amplitude to have its spin “down.”
+ We have already worked these out in Chapter  6 , and again
+in Chapter  10 , Eq. ( 10.30 ). The amplitude
+to be spin “up” is [eq], and the amplitude to be spin
+“down” is 11  [eq]. When the [eq] spin is
+“up” along the [eq]-axis it will emit a proton in the [eq]-direction
+with the amplitude [eq]. So the amplitude to find an “up”-spinning
+proton coming out along the [eq]-direction is
+\begin{equation}
+\label{Eq:III:17:33}
+a\cos\frac{\theta}{2}.
+\end{equation}
+Similarly, the amplitude to find a “down”-spinning proton coming
+along the positive [eq]-axis is
+\begin{equation}
+\label{Eq:III:17:34}
+-b\sin\frac{\theta}{2}.
+\end{equation}
+The two processes that these amplitudes refer to are shown in
+Fig.  17–9 .
+
+Let’s now ask the following easy question. If the [eq] has spin
+up along the [eq]-axis, what is the probability that the decay proton
+will go off at the angle [eq]? The two spin states (“up” or
+“down” along [eq]) are distinguishable even though we are not going
+to look at them. So to get the probability we square the amplitudes
+and add. The probability [eq] of finding a proton in a small
+solid angle [eq] at [eq] is
+\begin{equation}
+\label{Eq:III:17:35}
+f(\theta)=\abs{a}^2\cos^2\frac{\theta}{2}+
+\abs{b}^2\sin^2\frac{\theta}{2}.
+\end{equation}
+Remembering that [eq] and that
+[eq], we can write [eq]
+as
+\begin{equation}
+\label{Eq:III:17:36}
+f(\theta)=\!\biggl(\frac{\abs{a}^2\!+\abs{b}^2}{2}\biggr)\!+\!
+\biggl(\frac{\abs{a}^2\!-\abs{b}^2}{2}\biggr)\!\cos\theta.
+\end{equation}
+The angular distribution has the form
+\begin{equation}
+\label{Eq:III:17:37}
+f(\theta)=\beta(1+\alpha\cos\theta).
+\end{equation}
+The probability has one part that is independent of [eq] and one
+part that varies linearly with [eq]. From measuring the
+angular distribution we can get [eq] and [eq], and therefore,
+[eq] and [eq].
+
+Now there are many other questions we can answer. Are we interested
+only in protons with spin “up” along the old [eq]-axis? Each
+of the terms in ( 17.33 ) and ( 17.34 ) will
+give an amplitude to find a proton with spin “up” and with spin
+“down” with respect to the [eq]-axis ([eq] and [eq]). Spin “up”
+with respect to the old axis [eq] can be expressed in terms of
+the base states [eq] and [eq]. We can then combine the
+two amplitudes ( 17.33 ) and ( 17.34 ) with the
+proper coefficients ([eq] and [eq]) to get the
+total amplitude
+\begin{equation*}
+\biggl(a\cos^2\frac{\theta}{2}+b\sin^2\frac{\theta}{2}\biggr).
+\end{equation*}
+Its square is the probability that the proton comes out at the
+angle [eq] with its spin the same as the [eq] (“up” along the
+[eq]-axis).
+
+If parity were conserved, we could say one more thing. The
+disintegration of Fig.  17–8 is just the reflection—in
+the [eq]-plane of the disintegration—of
+Fig.  17–7 . 12 If parity were
+conserved, [eq] would have to be equal to [eq] or to [eq]. Then the
+coefficient [eq] of ( 17.37 ) would be zero, and the
+disintegration would be equally likely to occur in all directions.
+
+The experimental results show, however, that there is an
+asymmetry in the disintegration. The measured angular distribution
+does go as [eq] as we predict—and not as [eq] or
+any other power. In fact, since the angular distribution has this
+form, we can deduce from these measurements that the spin of the
+[eq] is [eq]. Also, we see that parity is not conserved. In
+fact, the coefficient [eq] is found experimentally to
+be [eq], so [eq] is about twice as large as [eq]. The lack of
+symmetry under a reflection is quite clear.
+
+You see how much we can get from the conservation of angular
+momentum. We will give some more examples in the next chapter.
+
+Parenthetical note . By the amplitude [eq] in this section we
+mean the amplitude per second that the state $\ket{\text{proton going \(+z\), spin
+\(+z\)}}$ is generated from the
+state [eq], or, in other words, that
+\begin{equation}
+\label{Eq:III:17:38}
+\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}
+{\text{[eq], spin [eq]}}
+=i\hbar a,
+\end{equation}
+where [eq] is the Hamiltonian of the world—or, at least, of whatever
+is responsible for the [eq]-decay. The conservation of angular
+momentum means that the Hamiltonian must have the property that
+\begin{equation}
+\label{Eq:III:17:39}
+\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}
+{\text{[eq], spin [eq]}}
+=0.
+\end{equation}
+By the amplitude [eq] we mean that
+\begin{equation}
+\label{Eq:III:17:40}
+\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}
+{\text{[eq], spin [eq]}}
+=i\hbar b.
+\end{equation}
+Conservation of angular momentum implies that
+\begin{equation}
+\label{Eq:III:17:41}
+\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}
+{\text{[eq], spin [eq]}}
+=0.
+\end{equation}
+If the amplitudes written in ( 17.33 )
+and ( 17.34 ) are not clear, we can express them more
+mathematically as follows. By ( 17.33 ) we intend the
+amplitude that the [eq] with spin along [eq] will disintegrate into
+a proton moving along the [eq]-direction with its spin also in the
+[eq]-direction, namely the amplitude
+\begin{equation}
+\label{Eq:III:17:42}
+\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}
+{\text{[eq], spin [eq]}}.
+\end{equation}
+By the general theorems of quantum mechanics, this amplitude can be
+written as
+\begin{equation}
+\label{Eq:III:17:43}
+\sum_i
+\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}{\Lambda,i}
+\braket{\Lambda,i}
+{\text{[eq], spin [eq]}},
+\end{equation}
+where the sum is to be taken over the base states [eq] of
+the [eq]-particle at rest. Since the [eq]-particle is spin
+one-half, there are two such base states which can be in any reference
+base we wish. If we use for base states spin “up” and spin “down”
+ with respect to [eq] ([eq], [eq]), the amplitude
+of ( 17.43 ) is equal to the sum
+\begin{align}
+&\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}{\Lambda,+z'}
+\braket{\Lambda,+z'}{\Lambda,+z}\notag\\[.5ex]
+\label{Eq:III:17:44}
++\,&\bracket{\text{proton going [eq], spin [eq]}}
+{\Hop}{\Lambda,-z'}
+\braket{\Lambda,-z'}{\Lambda,+z}.
+\end{align}
+The first factor of the first term is [eq], and the first factor of the
+second term is zero—from the definition of ( 17.38 ), and
+from ( 17.41 ), which in turn follows from angular momentum
+conservation. The remaining factor [eq]
+of the first term is just the amplitude that a spin one-half particle
+which has spin “up” along one axis will also have spin “up” along
+an axis tilted at the angle [eq], which is [eq]—see
+Table  6–2 . So ( 17.44 ) is
+just [eq], similar to what we wrote in ( 17.33 ). The amplitude
+of ( 17.34 ) follows from the same kind of arguments for a
+spin “down” [eq]-particle.
+
+We would like now to bring together in one place the various things we
+have learned about the rotations for particles of spin one-half and
+spin one—so they will be convenient for future reference. On the
+next page you will find tables of the two rotation matrices
+[eq] and [eq] for spin one-half particles, for
+spin-one particles, and for photons (spin-one particles with zero rest
+mass). For each spin we will give the terms of the
+matrix [eq] for rotations about the [eq]-axis or the
+[eq]-axis. They are, of course, exactly equivalent to the amplitudes
+like [eq] we have used in earlier chapters. We mean
+by [eq] that the state is projected into a new coordinate system
+which is rotated through the angle [eq] about the [eq]-axis—using
+always the right-hand rule to define the positive sense of the
+rotation. By [eq] we mean that the reference axes are rotated
+by the angle [eq] about the [eq]-axis. Knowing these two rotations,
+you can, of course, work out any arbitrary rotation. As usual, we
+write the matrix elements so that the state on the left is a
+base state of the new (rotated) frame and the state on the
+right is a base state of the old (unrotated) frame. You can interpret
+the entries in the tables in many ways. For instance, the
+entry [eq] in Table  17–1 means that the matrix
+element [eq]. It also means that
+[eq], or that
+[eq]. It’s all the same thing.

@@ -1,0 +1,1401 @@
+The Feynman Lectures on Physics Vol. III Ch. 12: The Hyperfine Splitting in Hydrogen
+====================================================================================
+
+Sections: 12–1 Base states for a system with two spin one-half particles | 12–2 The Hamiltonian for the ground state of hydrogen | 12–3 The energy levels | 12–4 The Zeeman splitting | 12–5 The states in a magnetic field | 12–6 The projection matrix for spin one 6
+
+
+
+In this chapter we take up the “hyperfine splitting” of hydrogen,
+because it is a physically interesting example of what we can already
+do with quantum mechanics. It’s an example with more than two states,
+and it will be illustrative of the methods of quantum mechanics as
+applied to slightly more complicated problems. It is enough more
+complicated that once you see how this one is handled you can get
+immediately the generalization to all kinds of problems.
+
+As you know, the hydrogen atom consists of an electron sitting in the
+neighborhood of the proton, where it can exist in any one of a number
+of discrete energy states in each one of which the pattern of motion
+of the electron is different. The first excited state, for example,
+lies [eq] of a Rydberg, or about [eq] electron volts, above the
+ground state. But even the so-called ground state of hydrogen is not
+really a single, definite-energy state, because of the spins of the
+electron and the proton. These spins are responsible for the
+“hyperfine structure” in the energy levels, which splits all the
+energy levels into several nearly equal levels.
+
+The electron can have its spin either “up” or “down,” and the
+proton can also have its spin either “up” or “down.” There
+are, therefore, four possible spin states for every dynamical
+condition of the atom. That is, when people say “the ground state”
+of hydrogen, they really mean the “four ground states,” and not just
+the very lowest state. The four spin states do not all have exactly
+the same energy; there are slight shifts from the energies we would
+expect with no spins. The shifts are, however, much, much smaller than
+the [eq] electron volts or so from the ground state to the next state above. As
+a consequence, each dynamical state has its energy split into a set of
+very close energy levels—the so-called hyperfine splitting .
+
+The energy differences among the four spin states is what we want to
+calculate in this chapter. The hyperfine splitting is due to the
+interaction of the magnetic moments of the electron and proton, which
+gives a slightly different magnetic energy for each spin state. These
+energy shifts are only about ten-millionths of an electron
+volt—really very small compared with [eq] electron volts! It is because of
+this large gap that we can think about the ground state of hydrogen as
+a “four-state” system, without worrying about the fact that there
+are really many more states at higher energies. We are going to limit
+ourselves here to a study of the hyperfine structure of the ground
+state of the hydrogen atom.
+
+For our purposes we are not interested in any of the details about the
+ positions of the electron and proton because that has all been
+worked out by the atom so to speak—it has worked itself out by
+getting into the ground state. We need know only that we have an
+electron and proton in the neighborhood of each other with some
+definite spatial relationship. In addition, they can have various
+different relative orientations of their spins. It is only the effect
+of the spins that we want to look into.
+
+The first question we have to answer is: What are the base
+states for the system? Now the question has been put
+incorrectly. There is no such thing as “ the ” base states,
+because, of course, the set of base states you may choose is not
+unique. New sets can always be made out of linear combinations of the
+old. There are always many choices for the base states, and among
+them, any choice is equally legitimate. So the question is not what is
+ the base set, but what could a base set be? We can
+choose any one we wish for our own convenience. It is usually best to
+start with a base set which is physically the clearest. It may
+not be the solution to any problem, or may not have any direct 
+importance, but it will generally make it easier to understand what is
+going on.
+
+We choose the following four base states:
+\begin{align*}
+&\textit{State 1:}\;\small
+\text{The electron and proton are both spin “up.”}\\[3pt]
+&\textit{State 2:}\;\small
+\text{The electron is “up” and the proton is “down.”}\\[3pt]
+&\textit{State 3:}\;\small
+\text{The electron is “down” and the proton is “up.”}\\[3pt]
+&\textit{State 4:}\;\small
+\text{The electron and proton are both “down.”}
+\end{align*}
+We need a handy notation for these four states, so we’ll represent them this way:
+\begin{equation}
+\begin{aligned}
+&\textit{State 1:}\;\small
+\ket{++};\;\text{electron}\;\textit{up},\;\text{proton}\;\textit{up}\\
+&\textit{State 2:}\;\small
+\ket{+-};\;\text{electron}\;\textit{up},\;\text{proton}\;\textit{down}\\
+&\textit{State 3:}\;\small
+\ket{-+};\;\text{electron}\;\textit{down},\;\text{proton}\;\textit{up}\\
+&\textit{State 4:}\;\small
+\ket{--};\;\text{electron}\;\textit{down},\;\text{proton}\;\textit{down}
+\end{aligned}
+\label{Eq:III:12:1}
+\end{equation}
+You will have to remember that the first plus or minus sign
+refers to the electron and the second , to the proton. For handy
+reference, we’ve also summarized the notation in
+Fig. 12-1 . Sometimes it will also be convenient to call
+these states [eq], [eq], [eq],
+and [eq].
+
+You may say, “But the particles interact, and maybe these aren’t the
+right base states. It sounds as though you are considering the two
+particles independently.” Yes, indeed! The interaction raises the
+problem: what is the Hamiltonian for the system, but the
+interaction is not involved in the question of how to describe 
+the system. What we choose for the base states has nothing to do with
+what happens next. It may be that the atom cannot ever stay in
+one of these base states, even if it is started that way. That’s
+another question. That’s the question: How do the amplitudes change
+with time in a particular (fixed) base? In choosing the base states,
+we are just choosing the “unit vectors” for our description.
+
+While we’re on the subject, let’s look at the general problem of
+finding a set of base states when there is more than one particle. You
+know the base states for a single particle. An electron, for example,
+is completely described in real life—not in our simplified cases,
+but in real life—by giving the amplitudes to be in each of the
+following states:
+\begin{equation*}
+\ket{\text{electron “up” with momentum [eq]}}
+\end{equation*}
+or
+\begin{equation*}
+\ket{\text{electron “down” with momentum [eq]}}.
+\end{equation*}
+There are really two infinite sets of states, one state for each value
+of [eq]. That is to say that an electron state [eq] is
+completely described if you know all the amplitudes
+\begin{equation*}
+\braket{+,\FLPp}{\psi}\quad
+\text{and}\quad
+\braket{-,\FLPp}{\psi},
+\end{equation*}
+where the [eq] and [eq] represent the components of angular momentum
+along some axis—usually the [eq]-axis—and [eq] is the vector
+momentum. There must, therefore, be two amplitudes for every possible
+momentum (a multi-infinite set of base states). That is all there is
+to describing a single particle.
+
+When there is more than one particle, the base states can be written
+in a similar way. For instance, if there were an electron and a proton
+in a more complicated situation than we are considering, the base
+states could be of the following kind:
+\begin{align*}
+|\,&\text{electron spin “up” with momentum [eq]},\\[.5ex]
+&\text{proton spin “down” with momentum [eq]}\rangle.
+\end{align*}
+And so on for other spin combinations. If there are more than two
+particles—same idea. So you see that to write down the
+ possible base states is really very easy. The only problem is,
+what is the Hamiltonian?
+
+For our study of the ground state of hydrogen we don’t need to use the
+full sets of base states for the various momenta. We are specifying
+particular momentum states for the proton and electron when we say
+“the ground state.” The details of the configuration—the
+amplitudes for all the momentum base states—can be calculated, but
+that is another problem. Now we are concerned only with the effects of
+the spin, so we can take only the four base states
+of ( 12.1 ). Our next problem is: What is the Hamiltonian for
+this set of states?
+
+We’ll tell you in a moment what it is. But first, we should remind you
+of one thing: any state can always be written as a linear
+combination of the base states. For any state [eq] we can
+write
+\begin{align}
+\ket{\psi}=\phantom{+}&\ket{+\,+}\braket{+\,+}{\psi}\,+\,\ket{+\,-}\braket{+\,-}{\psi}\notag\\[.5ex]
+\label{Eq:III:12:2}
++\,&\ket{-\,+}\braket{-\,+}{\psi}\,+\,\ket{-\,-}\braket{-\,-}{\psi}.
+\end{align}
+
+Remember that the complete brackets are just complex numbers, so we
+can also write them in the usual fashion as [eq], where [eq], [eq],
+[eq], or [eq], and write Eq. ( 12.2 ) as
+ 
+\begin{equation}
+\label{Eq:III:12:3}
+\ket{\psi}=\ket{+\,+}C_1+\ket{+\,-}C_2+\ket{-\,+}C_3+\ket{-\,-}C_4.
+\end{equation}
+ 
+ 
+
+\begin{align}
+\ket{\psi}=\phantom{+}&\ket{+\,+}C_1+\ket{+\,-}C_2\notag\\[.5ex]
+\label{Eq:III:12:3}
++\,&\ket{-\,+}C_3+\ket{-\,-}C_4.
+\end{align}
+
+ 
+By giving the four amplitudes [eq] we completely describe the spin
+state [eq]. If these four amplitudes change with time, as they
+will, the rate of change in time is given by the operator [eq]. The
+problem is to find the [eq].
+
+There is no general rule for writing down the Hamiltonian of an atomic
+system, and finding the right formula is much more of an art than
+finding a set of base states. We were able to tell you a general rule
+for writing a set of base states for any problem of a proton and an
+electron, but to describe the general Hamiltonian of such a
+combination is too hard at this level. Instead, we will lead you to a
+Hamiltonian by some heuristic argument—and you will have to accept
+it as the correct one because the results will agree with the test of
+experimental observation.
+
+You will remember that in the last chapter we were able to describe
+the Hamiltonian of a single, spin one-half particle by using the sigma
+matrices—or the exactly equivalent sigma operators. The properties
+of the operators are summarized in Table 12-1 . These
+operators—which are just a convenient, shorthand way of keeping
+track of the matrix elements of the
+type [eq]—were useful for describing the behavior
+of a single particle of spin one-half. The question is: Can we
+find an analogous device to describe a system with two spins? The
+answer is yes, very simply, as follows. We invent a thing which we
+will call “sigma electron,” which we represent
+by the vector operator [eq], and which has the [eq]-, [eq]-,
+and [eq]-components, [eq], [eq], [eq]. We now make
+the convention that when one of these things operates on any one
+of our four base states of the hydrogen atom, it acts only on the
+ electron spin, and in exactly the same way as if the electron
+were all by itself. Example: What is [eq]? Since
+[eq] on an electron “down” is [eq] times the corresponding state
+with the electron “up”,
+\begin{equation*}
+\sigmae_y\,\ket{-\,+}=-i\,\ket{+\,+}.
+\end{equation*}
+(When [eq] acts on the combined state it flips over the
+electron, but does nothing to the proton and multiplies the result
+by [eq].) Operating on the other states, [eq] would give
+\begin{align*}
+\sigmae_y\,\ket{+\,+}&=i\,\ket{-\,+},\\[1ex]
+\sigmae_y\,\ket{+\,-}&=i\,\ket{-\,-},\\[1ex]
+\sigmae_y\,\ket{-\,-}&=-i\,\ket{+\,-}.
+\end{align*}
+Just remember that the operators [eq] work only on the
+ first spin symbol—that is, on the electron spin.
+
+Next we define the corresponding operator “sigma proton” for the proton spin. Its three components [eq],
+[eq], [eq] act in the same way as [eq], only on
+the proton spin. For example, if we have [eq] acting on
+each of the four base states, we get—always using
+Table 12-1 —
+\begin{align*}
+\sigmap_x\,\ket{+\,+}&=\ket{+\,-},\\[1ex]
+\sigmap_x\,\ket{+\,-}&=\ket{+\,+},\\[1ex]
+\sigmap_x\,\ket{-\,+}&=\ket{-\,-},\\[1ex]
+\sigmap_x\,\ket{-\,-}&=\ket{-\,+}.
+\end{align*}
+As you can see, it’s not very hard.
+
+Now in the most general case we could have more complex things. For
+instance, we could have products of the two operators
+like [eq]. When we have such a product we do first what the
+operator on the right says, and then do what the other one
+says. 1 For
+example, we would have that
+ 
+\begin{equation*}
+\sigmae_x\sigmap_z\,\ket{+\,-}=
+\sigmae_x(\sigmap_z\,\ket{+\,-})=
+\sigmae_x(-\,\ket{+\,-})=
+-\sigmae_x\,\ket{+\,-}=
+-\ket{-\,-}.
+\end{equation*}
+ 
+ 
+\begin{gather*}
+\sigmae_x\sigmap_z\,\ket{+\,-}=
+\sigmae_x(\sigmap_z\,\ket{+\,-})=\\[1ex]
+\sigmae_x(-\,\ket{+\,-})=
+-\sigmae_x\,\ket{+\,-}=
+-\ket{-\,-}.
+\end{gather*}
+ 
+Note that these operators don’t do anything on pure numbers—we have
+used this fact when we wrote [eq]. We say
+that the operators “commute” with pure numbers, or that a number
+“can be moved through” the operator. You can practice by showing
+that the product [eq] gives the following results for
+the four states:
+\begin{align*}
+\sigmae_x\sigmap_z\,\ket{+\,+}&=+\,\ket{-\,+},\\[1ex]
+\sigmae_x\sigmap_z\,\ket{+\,-}&=-\,\ket{-\,-},\\[1ex]
+\sigmae_x\sigmap_z\,\ket{-\,+}&=+\,\ket{+\,+},\\[1ex]
+\sigmae_x\sigmap_z\,\ket{-\,-}&=-\,\ket{+\,-}.
+\end{align*}
+
+If we take all the possible operators, using each kind of operator
+only once, there are sixteen possibilities. Yes,
+ sixteen —provided we include also the “unit
+operator” [eq]. First, there are the three: [eq], [eq],
+[eq]. Then the three [eq], [eq],
+[eq]—that makes six. In addition, there are the nine possible
+products of the form [eq] which makes a total
+of 15. And there’s the unit operator which just leaves any state
+unchanged. Sixteen in all.
+
+Now note that for a four-state system, the Hamiltonian matrix has to
+be a four-by-four matrix of coefficients—it will have sixteen
+entries. It is easily demonstrated that any four-by-four matrix—and,
+therefore, the Hamiltonian matrix in particular—can be written as a
+linear combination of the sixteen double-spin matrices corresponding to
+the set of operators we have just made up. Therefore, for the
+interaction between a proton and an electron that involves only their
+spins, we can expect that the Hamiltonian operator can be written as a
+linear combination of the same [eq] operators. The only question is,
+how?
+
+Well, first, we know that the interaction doesn’t depend on our choice
+of axes for a coordinate system. If there is no external
+disturbance—like a magnetic field—to determine a unique direction
+in space, the Hamiltonian can’t depend on our choice of the direction
+of the [eq]-, [eq]-, and [eq]-axes. That means that the Hamiltonian can’t
+have a term like [eq] all by itself. It would be ridiculous,
+because then somebody with a different coordinate system would get
+different results.
+
+The only possibilities are a term with the unit matrix, say a
+constant [eq] (times [eq]), and some combination of the sigmas that doesn’t
+depend on the coordinates—some “invariant” combination. The only
+ scalar invariant combination of two vectors is the dot product,
+which for our [eq]’s is
+\begin{equation}
+\label{Eq:III:12:4}
+\FLPsigmae\cdot\FLPsigmap=
+\sigmae_x\sigmap_x+
+\sigmae_y\sigmap_y+
+\sigmae_z\sigmap_z.
+\end{equation}
+This operator is invariant with respect to any rotation of the
+coordinate system. So the only possibility for a Hamiltonian with the
+proper symmetry in space is a constant times the unit matrix plus a
+constant times this dot product, say,
+\begin{equation}
+\label{Eq:III:12:5}
+\Hop=E_0+A\,\FLPsigmae\cdot\FLPsigmap.
+\end{equation}
+That’s our Hamiltonian. It’s the only thing that it can be, by the
+symmetry of space, so long as there is no external field . The
+constant term doesn’t tell us much; it just depends on the level we
+choose to measure energies from. We may just as well take [eq]. The
+second term tells us all we need to know to find the level splitting
+of the hydrogen.
+
+If you want to, you can think of the Hamiltonian in a different
+way. If there are two magnets near each other with magnetic moments
+[eq] and [eq], the mutual energy will
+depend on [eq]—among other
+things. And, you remember, we found that the classical thing we
+call [eq] appears in quantum mechanics
+as [eq]. Similarly, what appears classically
+as [eq] will usually turn out in quantum mechanics to
+be [eq] (where [eq] is the magnetic
+moment of the proton, which is about [eq] times smaller
+than [eq], and has the opposite sign). So Eq. ( 12.5 )
+says that the interaction energy is like the interaction between two
+magnets—only not quite, because the interaction of the two magnets
+depends on the radial distance between them. But Eq. ( 12.5 )
+could be—and, in fact, is —some kind of an average
+interaction. The electron is moving all around inside the atom, and our
+Hamiltonian gives only the average interaction energy. All it says is
+that for a prescribed arrangement in space for the electron and proton
+there is an energy proportional to the cosine of the angle between the
+two magnetic moments, speaking classically. Such a classical qualitative
+picture may help you to understand where it comes from, but the
+important thing is that Eq. ( 12.5 ) is the correct quantum
+mechanical formula.
+
+The order of magnitude of the classical interaction between two
+magnets would be the product of the two magnetic moments divided by
+the cube of the distance between them. The distance between the
+electron and the proton in the hydrogen atom is, speaking roughly, one
+half an atomic radius, or [eq] angstrom. It is, therefore, possible
+to make a crude estimate that the constant [eq] should be about equal
+to the product of the two magnetic moments [eq]
+and [eq] divided by the cube of [eq] angstrom. Such an
+estimate gives a number in the right ballpark. It turns out that [eq]
+can be calculated accurately once you understand the complete quantum
+theory of the hydrogen atom—which we so far do not. It has, in fact,
+been calculated to an accuracy of about [eq] parts in one million. So,
+unlike the flip-flop constant [eq] of the ammonia molecule, which
+couldn’t be calculated at all well by a theory, our constant [eq] for
+the hydrogen can be calculated from a more detailed theory. But
+never mind, we will for our present purposes think of the [eq] as a
+number which could be determined by experiment, and analyze the
+physics of the situation.
+
+Taking the Hamiltonian of Eq. ( 12.5 ), we can use it
+with the equation
+\begin{equation}
+\label{Eq:III:12:6}
+i\hbar\dot{C}_i=\sum_jH_{ij}C_j
+\end{equation}
+to find out what the spin interactions do to the energy levels. To do
+that, we need to work out the sixteen matrix
+elements [eq] corresponding to each pair of the four base
+states in ( 12.1 ).
+
+We begin by working out what [eq] is for each of the four
+base states. For example,
+ 
+\begin{equation}
+\label{Eq:III:12:7}
+\Hop\,\ket{+\,+}=A\FLPsigmae\cdot\FLPsigmap\,\ket{+\,+}=
+A\{\sigmae_x\sigmap_x+
+\sigmae_y\sigmap_y+
+\sigmae_z\sigmap_z\}\,\ket{+\,+}.
+\end{equation}
+ 
+ 
+
+\begin{align}
+\Hop\,\ket{+\,+}&=A\FLPsigmae\cdot\FLPsigmap\,\ket{+\,+}\notag\\[1ex]
+\label{Eq:III:12:7}
+&=A\{\sigmae_x\sigmap_x+\sigmae_y\sigmap_y+\sigmae_z\sigmap_z\}\,\ket{+\,+}.
+\end{align}
+
+ 
+Using the method we described a little earlier—it’s easy if you have
+memorized Table 12-1 —we find what each pair
+of [eq]’s does on [eq]. The answer is
+\begin{equation}
+\begin{aligned}
+\sigmae_x\sigmap_x\,\ket{+\,+}&=+\,\ket{-\,-},\\[1ex]
+\sigmae_y\sigmap_y\,\ket{+\,+}&=-\,\ket{-\,-},\\[1ex]
+\sigmae_z\sigmap_z\,\ket{+\,+}&=+\,\ket{+\,+}.
+\end{aligned}
+\label{Eq:III:12:8}
+\end{equation}
+So ( 12.7 ) becomes
+ 
+\begin{equation}
+\label{Eq:III:12:9}
+\Hop\,\ket{+\,+}=A\{\ket{-\,-}-\ket{-\,-}+\ket{+\,+}\}=A\,\ket{+\,+}.
+\end{equation}
+ 
+ 
+\begin{align}
+\Hop\,\ket{+\,+}&=A\{\ket{-\,-}-\ket{-\,-}+\ket{+\,+}\}\notag\\[1ex]
+\label{Eq:III:12:9}
+&=A\,\ket{+\,+}.
+\end{align}
+ 
+Since our four base states are all orthogonal, that gives us
+immediately that
+\begin{equation}
+\begin{aligned}
+\bracket{+\,+}{H}{+\,+}&=A\braket{+\,+}{+\,+}=A,\\[1ex]
+\bracket{+\,-}{H}{+\,+}&=A\braket{+\,-}{+\,+}=0,\\[1ex]
+\bracket{-\,+}{H}{+\,+}&=A\braket{-\,+}{+\,+}=0,\\[1ex]
+\bracket{-\,-}{H}{+\,+}&=A\braket{-\,-}{+\,+}=0.
+\end{aligned}
+\label{Eq:III:12:10}
+\end{equation}
+Remembering that [eq], we can
+already write down the differential equation for the amplitudes [eq]:
+\begin{equation*}
+i\hbar\dot{C}_1=H_{11}C_1+H_{12}C_2+H_{13}C_3+H_{14}C_4
+\end{equation*}
+or
+\begin{equation}
+\label{Eq:III:12:11}
+i\hbar\dot{C}_1=AC_1.
+\end{equation}
+That’s all! We get only the one term.
+
+Now to get the rest of the Hamiltonian equations we have to crank
+through the same procedure for [eq] operating on the other
+states. First, we will let you practice by checking out all of the
+sigma products we have written down in Table 12-2 . Then
+we can use them to get:
+\begin{equation}
+\begin{aligned}
+\Hop\,\ket{+\,-}&=A\{2\,\ket{-\,+}-\ket{+\,-}\},\\[1ex]
+\Hop\,\ket{-\,+}&=A\{2\,\ket{+\,-}-\ket{-\,+}\},\\[1ex]
+\Hop\,\ket{-\,-}&=A\,\ket{-\,-}.
+\end{aligned}
+\label{Eq:III:12:12}
+\end{equation}
+Then, multiplying each one in turn on the left by all the other state
+vectors, we get the following Hamiltonian matrix, [eq]:
+\begin{equation}
+\label{Eq:III:12:13}
+H_{ij}=
+\kern -1.5ex \raise 30 pt {\scriptstyle i\downarrow \,\raise 7 pt \scriptstyle j\rightarrow}\kern -13pt % ebook remove
+% ebook insert: \raise{40pt}{\scriptstyle i\downarrow \,\raise{12pt}{\scriptstyle j\rightarrow}\kern -15pt}
+\begin{pmatrix}
+A & 0 & 0 & 0\\[1ex]
+0 & -A & 2A & 0\\[1ex]
+0 & 2A & -A & 0\\[1ex]
+0 & 0 & 0 & A
+\end{pmatrix}.
+\end{equation}
+It means, of course, nothing more than that our differential equations
+for the four amplitudes [eq] are
+\begin{equation}
+\begin{aligned}
+i\hbar\dot{C}_1&=AC_1,\\[1ex]
+i\hbar\dot{C}_2&=-AC_2+2AC_3,\\[1ex]
+i\hbar\dot{C}_3&=2AC_2-AC_3,\\[1ex]
+i\hbar\dot{C}_4&=AC_4.
+\end{aligned}
+\label{Eq:III:12:14}
+\end{equation}
+
+Before solving these equations we can’t resist telling you about a
+clever rule due to Dirac—it will make you feel that you are really
+advanced—although we don’t need it for our work. We have—from the
+equations ( 12.9 ) and ( 12.12 )—that
+\begin{equation}
+\begin{aligned}
+\FLPsigmae\cdot\FLPsigmap\,\ket{+\,+}&=\ket{+\,+},\\[1ex]
+\FLPsigmae\cdot\FLPsigmap\,\ket{+\,-}&=2\,\ket{-\,+}-\ket{+\,-},\\[1ex]
+\FLPsigmae\cdot\FLPsigmap\,\ket{-\,+}&=2\,\ket{+\,-}-\ket{-\,+},\\[1ex]
+\FLPsigmae\cdot\FLPsigmap\,\ket{-\,-}&=\ket{-\,-}.
+\end{aligned}
+\label{Eq:III:12:15}
+\end{equation}
+
+Look, said Dirac, I can also write the first and last equations as
+\begin{align*}
+\FLPsigmae\cdot\FLPsigmap\,\ket{+\,+}&=2\,\ket{+\,+}-\ket{+\,+},\\[1ex]
+\FLPsigmae\cdot\FLPsigmap\,\ket{-\,-}&=2\,\ket{-\,-}-\ket{-\,-};
+\end{align*}
+then they are all quite similar. Now I invent a new operator, which I
+will call [eq] and which I define to have the
+following properties: 2 
+\begin{align*}
+P_{\text{spin exch}}\,\ket{+\,+}&=\ket{+\,+},\\[1ex]
+P_{\text{spin exch}}\,\ket{+\,-}&=\ket{-\,+},\\[1ex]
+P_{\text{spin exch}}\,\ket{-\,+}&=\ket{+\,-},\\[1ex]
+P_{\text{spin exch}}\,\ket{-\,-}&=\ket{-\,-}.
+\end{align*}
+All the operator does is interchange the spin directions of the two
+particles. Then I can write the whole set of equations
+in ( 12.15 ) as a simple operator equation:
+\begin{equation}
+\label{Eq:III:12:16}
+\FLPsigmae\cdot\FLPsigmap=2P_{\text{spin exch}}-1.
+\end{equation}
+
+That’s the formula of Dirac. His “spin exchange operator” gives a
+handy rule for figuring out [eq]. (You see, you
+can do everything now. The gates are open.)
+
+Now we are ready to work out the energy levels of the ground state of
+hydrogen by solving the Hamiltonian equations ( 12.14 ). We
+want to find the energies of the stationary states. This means that we
+want to find those special states [eq] for which each
+amplitude [eq] in the set belonging to [eq]
+has the same time dependence—namely, [eq]. Then the
+state will have the energy [eq]. So we want a set for which
+\begin{equation}
+\label{Eq:III:12:17}
+C_i=a_ie^{-(i/\hbar)Et},
+\end{equation}
+where the four coefficients [eq] are independent of time. To see
+whether we can get such amplitudes, we substitute ( 12.17 )
+into Eq. ( 12.14 ) and see what happens. Each
+[eq] in Eq. ( 12.14 ) turns into [eq],
+and—after cancelling out the common exponential factor—each [eq]
+becomes an [eq]; we get
+\begin{equation}
+\begin{aligned}
+Ea_1&=Aa_1,\\[1ex]
+Ea_2&=-Aa_2+2Aa_3,\\[1ex]
+Ea_3&=2Aa_2-Aa_3,\\[1ex]
+Ea_4&=Aa_4,
+\end{aligned}
+\label{Eq:III:12:18}
+\end{equation}
+which we have to solve for [eq], [eq], [eq], and [eq]. Isn’t it nice that
+the first equation is independent of the rest—that means we can see one
+solution right away. If we choose [eq],
+\begin{equation*}
+a_1=1,\quad a_2=a_3=a_4=0,
+\end{equation*}
+gives a solution. (Of course, taking all the [eq]’s equal to zero also gives a
+solution, but that’s no state at all!) Let’s call our first solution the
+state [eq]: 3 
+\begin{equation}
+\label{Eq:III:12:19}
+\ketsl{\slI}=\ketsl{\slOne}=\ket{+\,+}.
+\end{equation}
+Its energy is
+\begin{equation*}
+E_{\slI}=A.
+\end{equation*}
+
+With that clue you can immediately see another solution from the last
+equation in ( 12.18 ):
+\begin{align*}
+a_1&=a_2=a_3=0,\quad a_4=1,\\[5pt]
+E&=A.
+\end{align*}
+We’ll call that solution state [eq]:
+\begin{align}
+\label{Eq:III:12:20}
+\ketsl{\slII}&=\ketsl{\slFour}=\ket{-\,-},\\[5pt]
+E_{\slII}&=A.\notag
+\end{align}
+
+Now it gets a little harder; the two equations left
+in ( 12.18 ) are mixed up. But we’ve done it all before.
+Adding the two, we get
+\begin{equation}
+\label{Eq:III:12:21}
+E(a_2+a_3)=A(a_2+a_3).
+\end{equation}
+Subtracting, we have
+\begin{equation}
+\label{Eq:III:12:22}
+E(a_2-a_3)=-3A(a_2-a_3).
+\end{equation}
+By inspection—and remembering ammonia—we see that there are two
+solutions:
+\begin{alignat}{2}
+\notag a_2&=a_3,&\quad E&
+=A\\[-1ex] % ebook remove
+% ebook insert: =A\\
+\label{Eq:III:12:23}
+\kern{-6em}\text{and}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-10em}\text{and}}\\
+\notag a_2&=-a_3,&\quad E&=-3A.
+\end{alignat} 
+They are mixtures of [eq] and [eq]. Calling
+these states [eq] and [eq], and putting in a
+factor [eq] to make the states properly normalized, we have
+ 
+\begin{equation}
+\begin{aligned}
+\ketsl{\slIII}&=\frac{1}{\sqrt{2}}\,(\ketsl{\slTwo}+\ketsl{\slThree})=
+\frac{1}{\sqrt{2}}\,(\ket{+\,-}+\ket{-\,+}),\\[1ex]
+E_{\slIII}&=A
+\end{aligned}
+\label{Eq:III:12:24}
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+\ketsl{\slIII}&=\frac{1}{\sqrt{2}}\,(\ketsl{\slTwo}+\ketsl{\slThree})\\[1ex]
+&=\frac{1}{\sqrt{2}}\,(\ket{+\,-}+\ket{-\,+}),\\[1.5ex]
+E_{\slIII}&=A
+\end{aligned}
+\label{Eq:III:12:24}
+\end{equation}
+ 
+and
+ 
+\begin{equation}
+\begin{aligned}
+\ketsl{\slIV}&=\frac{1}{\sqrt{2}}\,(\ketsl{\slTwo}-\ketsl{\slThree})=
+\frac{1}{\sqrt{2}}\,(\ket{+\,-}-\ket{-\,+}),\\[1ex]
+E_{\slIV}&=-3A.
+\end{aligned}
+\label{Eq:III:12:25}
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+\ketsl{\slIV}&=\frac{1}{\sqrt{2}}\,(\ketsl{\slTwo}-\ketsl{\slThree})\notag\\[1ex]
+&=\frac{1}{\sqrt{2}}\,(\ket{+\,-}-\ket{-\,+}),\\[1.5ex]
+E_{\slIV}&=-3A.
+\end{aligned}
+\label{Eq:III:12:25}
+\end{equation}
+ 
+We have found four stationary states and their energies. Notice,
+incidentally, that our four states are orthogonal, so they also can be
+used for base states if desired. Our problem is completely solved.
+
+Three of the states have the energy [eq], and the last has the
+energy [eq]. The average is zero—which means that when we took [eq] in
+Eq. ( 12.5 ), we were choosing to measure all the energies
+from the average energy. We can draw the energy-level diagram for the
+ground state of hydrogen as shown in Fig. 12-2 .
+
+Now the difference in energy between state [eq] and any one
+of the others is [eq]. An atom which happens to have gotten into
+state [eq] could fall from there to state [eq] and emit
+light. Not optical light, because the energy is so tiny—it would
+emit a microwave quantum. Or, if we shine microwaves on hydrogen gas,
+we will find an absorption of energy as the atoms in
+state [eq] pick up energy and go into one of the upper states—but
+only at the frequency [eq]. This frequency has been
+measured experimentally; the best result, obtained very
+recently, 4 is
+ 
+\begin{equation}
+\label{Eq:III:12:26}
+f=\omega/2\pi=(1{,}420{,}405{,}751.800\pm0.028)\text{ cycles per second}.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+f=\omega/2\pi=\\[.5ex]
+(1{,}420{,}405{,}751.800\pm0.028)\text{ cycles per second}.
+\end{gathered}
+\label{Eq:III:12:26}
+\end{equation}
+ 
+The error is only two parts in [eq] billion! Probably no basic
+physical quantity is measured better than that—it’s one of the most
+remarkably accurate measurements in physics. The theorists were very
+happy that they could compute the energy to an accuracy of [eq] parts
+in [eq], but in the meantime it has been measured to [eq] parts
+in [eq]—a million times more accurate than the theory. So the
+experimenters are way ahead of the theorists. In the theory of the
+ground state of the hydrogen atom you are as good as
+anybody. You, too, can just take your value of [eq] from
+experiment—that’s what everybody has to do in the end.
+
+You have probably heard before about the “[eq]-centimeter
+line” of hydrogen. That’s the
+wavelength of the [eq] megacycle spectral line between the hyperfine
+states. Radiation of this wavelength is emitted or absorbed by the
+atomic hydrogen gas in the galaxies. So with radio telescopes tuned in
+to [eq]-cm waves (or [eq] megacycles approximately) we can observe the
+velocities and the location of concentrations of atomic hydrogen gas. By
+measuring the intensity, we can estimate the amount of hydrogen. By
+measuring the frequency shift due to the Doppler
+effect, we can find out about the motion
+of the gas in the galaxy. That is one of the big programs of radio
+astronomy. So now we are talking about something that’s very real—it
+is not an artificial problem.
+
+Although we have finished the problem of finding the energy levels of
+the hydrogen ground state, we would like to study this interesting
+system some more. In order to say anything more about it—for
+instance, in order to calculate the rate at which the hydrogen atom
+absorbs or emits radio waves at [eq] centimeters—we have to know
+what happens when the atom is disturbed. We have to do as we did for
+the ammonia molecule—after we found the energy levels we went on and
+studied what happened when the molecule was in an electric field. We
+were then able to figure out the effects from the electric field in a
+radio wave. For the hydrogen atom, the electric field does nothing to
+the levels, except to move them all by some constant amount
+proportional to the square of the field—which is not of any interest
+because that won’t change the energy differences . It is now the
+ magnetic field which is important. So the next step is to write
+the Hamiltonian for a more complicated situation in which the atom
+sits in an external magnetic field.
+
+What, then, is the Hamiltonian? We’ll just tell you the answer,
+because we can’t give you any “proof” except to say that this is the
+way the atom works.
+
+The Hamiltonian is
+\begin{equation}
+\label{Eq:III:12:27}
+\Hop=A(\FLPsigmae\cdot\FLPsigmap)-
+\mu_{\text{e}}\FLPsigmae\cdot\FLPB-
+\mu_{\text{p}}\FLPsigmap\cdot\FLPB.
+\end{equation}
+It now consists of three parts. The first
+term [eq] represents the magnetic interaction
+between the electron and the proton—it is the same one that would be
+there if there were no magnetic field. This is the term we have
+already had; and the influence of the magnetic field on the
+constant [eq] is negligible. The effect of the external magnetic field shows up
+in the last two terms. The second term,
+[eq], is the energy the electron
+would have in the magnetic field if it were there
+alone. 5 
+In the same way, the last
+term [eq], would have been the energy of a
+proton alone. Classically, the energy of the two of them together
+would be the sum of the two, and that works also quantum
+mechanically. In a magnetic field, the energy of interaction due to
+the magnetic field is just the sum of the energy of interaction of the
+electron with the external field, and of the proton with the
+field—both expressed in terms of the sigma operators. In quantum
+mechanics these terms are not really the energies, but thinking of the
+classical formulas for the energy is a way of remembering the rules
+for writing down the Hamiltonian. Anyway, the correct Hamiltonian is
+Eq. ( 12.27 ).
+
+Now we have to go back to the beginning and do the problem all over
+again. Much of the work is, however, done—we need only to add the
+effects of the new terms. Let’s take a constant magnetic field [eq]
+in the [eq]-direction. Then we have to add to our Hamiltonian
+operator [eq] the two new pieces—which we can call [eq]:
+\begin{equation*}
+\Hop'=-(\mu_{\text{e}}\sigmae_z+\mu_{\text{p}}\sigmap_z)B.
+\end{equation*}
+Using Table 12-1 , we get right away that
+\begin{equation}
+\begin{aligned}
+\Hop'\,\ket{+\,+}&=-(\mu_{\text{e}}+\mu_{\text{p}})B\,\ket{+\,+},\\[.5ex]
+\Hop'\,\ket{+\,-}&=-(\mu_{\text{e}}-\mu_{\text{p}})B\,\ket{+\,-},\\[.5ex]
+\Hop'\,\ket{-\,+}&=-(-\mu_{\text{e}}+\mu_{\text{p}})B\,\ket{-\,+},\\[.5ex]
+\Hop'\,\ket{-\,-}&=(\mu_{\text{e}}+\mu_{\text{p}})B\,\ket{-\,-}.
+\end{aligned}
+\label{Eq:III:12:28}
+\end{equation}
+How very convenient! The [eq] operating on each state just gives a
+number times that state. The matrix [eq] has,
+therefore, only diagonal elements—we can just add the
+coefficients in ( 12.28 ) to the corresponding diagonal
+terms of ( 12.13 ), and the Hamiltonian equations
+of ( 12.14 ) become
+\begin{equation}
+\begin{aligned}
+i\hbar\,dC_1/dt&=
+\{A-(\mu_{\text{e}}+\mu_{\text{p}})B\}C_1,\\[1ex]
+i\hbar\,dC_2/dt&=
+-\{A+(\mu_{\text{e}}-\mu_{\text{p}})B\}C_2+2AC_3,\\[1ex]
+i\hbar\,dC_3/dt&=
+2AC_2-\{A-(\mu_{\text{e}}-\mu_{\text{p}})B\}C_3,\\[1ex]
+i\hbar\,dC_4/dt&=
+\{A+(\mu_{\text{e}}+\mu_{\text{p}})B\}C_4.
+\end{aligned}
+\label{Eq:III:12:29}
+\end{equation}
+
+The form of the equations is not different—only the coefficients. So
+long as [eq] doesn’t vary with time, we can continue as we did
+before. Substituting [eq], we get—as a
+modification of ( 12.18 )—
+\begin{equation}
+\begin{aligned}
+Ea_1&=\{A-(\mu_{\text{e}}+\mu_{\text{p}})B\}a_1,\\[1ex]
+Ea_2&=-\{A+(\mu_{\text{e}}-\mu_{\text{p}})B\}a_2+2Aa_3,\\[1ex]
+Ea_3&=2Aa_2-\{A-(\mu_{\text{e}}-\mu_{\text{p}})B\}a_3,\\[1ex]
+Ea_4&=\{A+(\mu_{\text{e}}+\mu_{\text{p}})B\}a_4.
+\end{aligned}
+\label{Eq:III:12:30}
+\end{equation}
+Fortunately, the first and fourth equations are still independent of
+the rest, so the same technique works again.
+
+One solution is the state [eq] for which [eq], [eq] [eq] [eq] [eq], or
+\begin{align}
+\notag \ketsl{\slI}&=\ketsl{\slOne}=\ket{+\,+},\\
+\label{Eq:III:12:31}
+\kern{-6em}\text{with}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-10em}\text{with}}\\
+\notag E_{\slI}&=A-(\mu_{\text{e}}+\mu_{\text{p}})B.
+\end{align} 
+Another is
+\begin{align}
+\notag \ketsl{\slII}&=\ketsl{\slFour}=\ket{-\,-},\\
+\label{Eq:III:12:32}
+\kern{-6em}\text{with}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-10em}\text{with}}\\
+\notag E_{\slII}&=A+(\mu_{\text{e}}+\mu_{\text{p}})B.
+\end{align}
+
+A little more work is involved for the remaining two equations,
+because the coefficients of [eq] and [eq] are no longer equal. But
+they are just like the pair we had for the ammonia molecule. Looking
+back at Eq. ( 9.20 ), we can make the following analogy
+(remembering that the labels [eq] and [eq] there correspond to [eq]
+and [eq] here):
+\begin{equation}
+\begin{aligned}
+H_{11}&\to-A-(\mu_{\text{e}}-\mu_{\text{p}})B,\\[1ex]
+H_{12}&\to2A,\\[1ex]
+H_{21}&\to2A,\\[1ex]
+H_{22}&\to-A+(\mu_{\text{e}}-\mu_{\text{p}})B.
+\end{aligned}
+\label{Eq:III:12:33}
+\end{equation}
+The energies are then given by ( 9.25 ), which was
+\begin{equation}
+\label{Eq:III:12:34}
+E=\!\frac{H_{11}\!+H_{22}}{2}\!\pm\!
+\sqrt{\frac{(H_{11}\!-H_{22})^2}{4}\!+\!H_{12}H_{21}}.
+\end{equation}
+Making the substitutions from ( 12.33 ), the energy formula
+becomes
+\begin{equation*}
+E=-A\pm\sqrt{(\mu_{\text{e}}-\mu_{\text{p}})^2B^2+4A^2}.
+\end{equation*}
+
+Although in Chapter 9 we used to call these energies
+[eq] and [eq], and we are in this problem calling them
+[eq] and [eq],
+\begin{equation}
+\begin{aligned}
+E_{\slIII}&=
+A\{-1+2\sqrt{1+(\mu_{\text{e}}-\mu_{\text{p}})^2B^2/4A^2}\},\\[1ex]
+E_{\slIV}&=
+-A\{1+2\sqrt{1+(\mu_{\text{e}}-\mu_{\text{p}})^2B^2/4A^2}\}.
+\end{aligned}
+\label{Eq:III:12:35}
+\end{equation}
+
+So we have found the energies of the four stationary states of a
+hydrogen atom in a constant magnetic field. Let’s check our results by
+letting [eq] go to zero and seeing whether we get the same energies we
+had in the preceding section. You see that we do. For [eq], the
+energies [eq], [eq], and [eq] go to [eq], and
+[eq] goes to [eq]. Even our labeling of the states agrees with
+what we called them before. When we turn on the magnetic field though,
+all of the energies change in a different way. Let’s see how they go.
+
+First, we have to remember that for the electron, [eq] is
+negative, and about [eq] times larger than [eq]—which
+is positive. So [eq]
+and [eq] are both negative numbers, and nearly
+equal. Let’s call them [eq] and [eq]:
+\begin{equation}
+\label{Eq:III:12:36}
+\mu=-(\mu_{\text{e}}+\mu_{\text{p}}),\quad
+\mu'=-(\mu_{\text{e}}-\mu_{\text{p}}).
+\end{equation}
+(Both [eq] and [eq] are positive numbers, nearly equal to magnitude
+of [eq]—which is about one Bohr magneton.) Then
+our four energies are
+\begin{equation}
+\begin{aligned}
+E_{\slI}&=A+\mu B,\\[1.3ex]
+E_{\slII}&=A-\mu B,\\[1ex]
+E_{\slIII}&=A\{-1+2\sqrt{1+\mu'^2B^2/4A^2}\},\\[1ex]
+E_{\slIV}&=-A\{1+2\sqrt{1+\mu'^2B^2/4A^2}\}.
+\end{aligned}
+\label{Eq:III:12:37}
+\end{equation}
+The energy [eq] starts at [eq] and increases linearly
+with [eq]—with the slope [eq]. The energy [eq] also starts at [eq]
+but decreases linearly with increasing [eq]—its slope
+is [eq]. These two levels vary with [eq] as shown in
+Fig. 12-3 . We show also in the figure the energies
+[eq] and [eq]. They have a different [eq]-dependence. For
+small [eq], they depend quadratically on [eq], so they start out with
+horizontal slopes. Then they begin to curve, and for large [eq]
+they approach straight lines with slopes [eq], which are nearly the
+same as the slopes of [eq] and [eq].
+
+The shift of the energy levels of an atom due to a magnetic field is
+called the Zeeman effect . We say that the curves in
+Fig. 12-3 show the Zeeman splitting of the ground
+state of hydrogen. When there is no magnetic field, we get just one
+spectral line from the hyperfine structure of hydrogen. The transitions
+between state [eq] and any one of the others occurs with the
+absorption or emission of a photon whose frequency [eq] megacycles is
+[eq] times the energy difference [eq]. When the atom is in a magnetic
+field [eq], however, there are many more lines. There can be
+transitions between any two of the four states. So if we have atoms in
+all four states, energy can be absorbed—or emitted—in any one of the
+six transitions shown by the vertical arrows in Fig. 12-4 .
+Many of these transitions can be observed by the Rabi molecular beam
+technique we described in Volume II, Section 35-3 .
+
+What makes the transitions go? The transitions will occur if you apply
+a small disturbing magnetic field that varies with time (in addition
+to the steady strong field [eq]). It’s just as we saw for a varying
+electric field on the ammonia molecule. Only here, it is the magnetic
+field which couples with the magnetic moments and does the trick. But
+the theory follows through in the same way that we worked it out for
+the ammonia. The theory is the simplest if you take a perturbing
+magnetic field that rotates in the [eq]-plane—although any
+horizontal oscillating field will do. When you put in this perturbing
+field as an additional term in the Hamiltonian, you get solutions in
+which the amplitudes vary with time—as we found for the ammonia
+molecule. So you can calculate easily and accurately the probability
+of a transition from one state to another. And you find that it all
+agrees with experiment.
+
+We would like now to discuss the shapes of the curves in
+Fig. 12-3 . In the first place, the energies for large
+fields are easy to understand, and rather interesting. For [eq] large
+enough (namely for [eq]) we can neglect the [eq] in the formulas
+of ( 12.37 ). The four energies become
+\begin{equation}
+\begin{alignedat}{2}
+E_{\slI}\;&=A+\mu B,&\quad
+E_{\slII}\;&=A-\mu B,\\[1ex]
+E_{\slIII}\;&=-A+\mu'B,&\quad
+E_{\slIV}\;&=-A-\mu'B.
+\end{alignedat}
+\label{Eq:III:12:38}
+\end{equation}
+These are the equations of the four straight lines in
+Fig. 12-3 . We can understand these energies physically in
+the following way. The nature of the stationary states in a zero 
+field is determined completely by the interaction of the two magnetic
+moments. The mixtures of the base states [eq] and [eq]
+in the stationary states [eq] and [eq] are due to
+this interaction. In large external fields, however, the proton
+and electron will be influenced hardly at all by the field of the other;
+each will act as if it were alone in the external field. Then—as we
+have seen many times—the electron spin will be either parallel to or
+opposite to the external magnetic field.
+
+Suppose the electron spin is “up”—that is, along the field; its
+energy will be [eq]. The proton can still be either
+way. If the proton spin is also “up,” its energy
+is [eq]. The sum of the two
+is [eq]. That is just what we find
+for [eq]—which is fine, because we are describing the
+state [eq]. There is still the small additional term [eq]
+(now [eq]) which represents the interaction energy of the
+proton and electron when their spins are parallel. (We originally
+took [eq] as positive because the theory we spoke of says it should be, and
+experimentally it is indeed so.) On the other hand, the proton can
+have its spin down. Then its energy in the external field goes
+to [eq], so it and the electron have the
+energy [eq]. And the interaction energy
+becomes [eq]. The sum is just the energy [eq],
+in ( 12.38 ). So the state [eq] must for large
+fields become the state [eq].
+
+Suppose now the electron spin is “down.” Its energy in the external
+field is [eq]. If the proton is also “down,” the two
+together have the energy [eq],
+ plus the interaction energy [eq]—since their spins are
+parallel. That makes just the energy [eq] in ( 12.38 )
+and corresponds to the state [eq]—which is nice.
+Finally if the electron is “down” and the proton is “up,” we get the
+energy [eq] ( minus [eq] for the
+interaction because the spins are opposite) which is just [eq].
+And the state corresponds to [eq].
+
+“But, wait a moment!”, you are probably saying, “The states
+[eq] and [eq] are not the states
+[eq] and [eq]; they are mixtures of the two.”
+Well, only slightly. They are indeed mixtures for [eq], but we have
+not yet figured out what they are for large [eq]. When we used the
+analogies of ( 12.33 ) in our formulas of
+Chapter 9 to get the energies of the stationary states,
+we could also have taken the amplitudes that go with them. They come
+from Eq. ( 9.24 ), which is
+\begin{equation*}
+\frac{a_2}{a_3}=\frac{E-H_{22}}{H_{21}}.
+\end{equation*}
+The ratio [eq] is, of course, just [eq]. Plugging in the
+analogous quantities from ( 12.33 ), we get
+\begin{align}
+\frac{C_2}{C_3}&=
+\frac{E+A-(\mu_{\text{e}}-\mu_{\text{p}})B}{2A}\notag\\
+\kern{-6em}\text{or}\notag\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-10em}\text{or}}\notag\\
+\label{Eq:III:12:39}
+\frac{C_2}{C_3}&=\frac{E+A+\mu'B}{2A},
+\end{align}
+where for [eq] we are to use the appropriate energy—either
+[eq] or [eq]. For instance, for state [eq]
+we have
+\begin{equation}
+\label{Eq:III:12:40}
+\biggl(\frac{C_2}{C_3}\biggr)_{\slIII}\approx\frac{\mu'B}{A}.
+\end{equation}
+So for large [eq] the state [eq] has [eq]; the state
+becomes almost completely the state [eq]. Similarly,
+if we put [eq] into ( 12.39 ) we get [eq];
+for high fields state [eq] becomes just the
+state [eq]. You see that the coefficients in the linear
+combinations of our base states which make up the stationary states
+depend on [eq]. The state we call [eq] is a [eq]-[eq] mixture
+of [eq] and [eq] at very low fields, but shifts
+completely over to [eq] at high fields. Similarly, the
+state [eq], which at low fields is also a [eq]-[eq] mixture (with
+opposite signs) of [eq] and [eq], goes over into the
+state [eq] when the spins are uncoupled by a strong external
+field.
+
+We would also like to call your attention particularly to what happens
+at very low magnetic fields. There is one energy—at [eq]—which
+ does not change when you turn on a small magnetic
+field. And there is another energy—at [eq]—which splits into three different energy levels 
+when you turn on a small magnetic field. For weak fields the energies vary with [eq] as shown 
+in Fig. 12–5 . Suppose that we have somehow selected a bunch 
+of hydrogen atoms which all have the energy [eq]. If we put them through a Stern-Gerlach 
+experiment—with fields that are not too strong—we would find that they just go straight through. 
+(Since their energy doesn’t depend on [eq], there is—according to the principle of virtual 
+work—no force on them in a magnetic field gradient.) Suppose, on the other hand, we were to 
+select a bunch of atoms with the energy [eq], and put them through a Stern-Gerlach apparatus, 
+say an [eq] apparatus. (Again the fields in the apparatus should not be so great that they disrupt 
+the insides of the atom, by which we mean a field small enough that the energies vary linearly 
+with [eq].) We would find three beams . The states [eq] and 
+[eq] get opposite forces—their energies vary linearly with [eq] with the slopes [eq] 
+so the forces are like those on a dipole with [eq]; but the state 
+[eq] goes straight through. So we are right back in Chapter 5 . 
+ A hydrogen atom with the energy [eq] is a spin-one particle . 
+This energy state is a “particle” for which [eq], and it can be described—with respect to
+some set of axes in space—in terms of the base states [eq], [eq],
+and [eq] we used in Chapter 5 . On the
+other hand, when a hydrogen atom has the energy [eq], it is a spin-zero
+particle. (Remember, what we are saying is only strictly true for
+infinitesimal magnetic fields.) So we can group the states of hydrogen
+in zero magnetic field this way:
+\begin{alignat}{2}
+&
+\left.
+\begin{aligned}
+\ketsl{\slI}&=\ket{+\,+}\\[2pt]
+\ketsl{\slIII}&=\dfrac{\ket{+\,-}+\ket{-\,+}}{\sqrt{2}}\\[3pt]
+\ketsl{\slII}&=\ket{-\,-}\\
+\end{aligned}
+\right\}
+&&
+\;\text{spin [eq]}\;
+\left\{
+\begin{array}{@{}l@{}}
+\ket{+S}\\[2pt]
+\vphantom{\dfrac{\ket{+\,-}+\ket{-\,+}}{\sqrt{2}}}\ket{\OS}\\[3pt]
+\ket{-S}\\
+\label{Eq:III:12:41}
+\end{array}
+\right.\\[1ex]
+&
+\left.
+% ebook insert: \phantom{0}
+\ketsl{\slIV}=\dfrac{\ket{+\,-}-\ket{-\,+}}{\sqrt{2}}
+\right.
+&&
+\;\text{spin [eq].}
+\label{Eq:III:12:42}
+\end{alignat}
+
+We have said in Chapter 35 of Volume II that
+for any particle its component of angular momentum along any axis can
+have only certain values always [eq] apart. The [eq]-component of
+angular momentum [eq] can be [eq], [eq], [eq], [eq], [eq],
+where [eq] is the spin of the particle (which can be
+an integer or half-integer). Although we neglected to say so at the
+time, people usually write
+\begin{equation}
+\label{Eq:III:12:43}
+J_z=m\hbar,
+\end{equation}
+where [eq] stands for one of the numbers [eq], [eq], [eq], [eq], [eq].
+You will, therefore, see people in books label the four ground states of
+hydrogen by the so-called quantum numbers 
+[eq] and [eq] [often called the “total angular momentum quantum
+number” ([eq]) and “magnetic quantum number” ([eq])]. Then, instead of
+our state symbols [eq], [eq], and so on, they will
+write a state as [eq]. So they would write our little table of
+states for zero field in ( 12.41 ) and ( 12.42 )
+as shown in Table 12-3 . It’s not new physics, it’s all
+just a matter of notation.
+
+We would like now to use our knowledge of the hydrogen atom to do
+something special. We discussed in Chapter 5 that a
+particle of spin one which was in one of the base states ([eq], [eq],
+or [eq]) with respect to a Stern-Gerlach apparatus of a particular
+orientation—say an [eq] apparatus—would have a certain amplitude to
+be in each of the three states with respect to a [eq] apparatus with a
+different orientation in space. There are nine such
+amplitudes [eq] which make up the projection matrix. In
+Section 5–7 we gave without proof the terms of this
+matrix for various orientations of [eq] with respect to [eq]. Now we will
+show you one way they can be derived.
+
+In the hydrogen atom we have found a spin-one system which is made up
+of two spin one-half particles. We have already worked out in
+Chapter 6 how to transform the spin one-half amplitudes.
+We can use this information to calculate the transformation for spin
+one. This is the way it works: We have a system—a hydrogen atom with
+the energy [eq]—which has spin one. Suppose we run it through a
+Stern-Gerlach filter [eq], so that we know it is in one of the base
+states with respect to [eq], say [eq]. What is the amplitude that
+it will be in one of the base states, say [eq], with respect to
+the [eq] apparatus? If we call the coordinate system of the [eq] apparatus
+the [eq] system, the [eq] state is what we have been calling
+the state [eq]. But suppose another guy took his [eq]-axis along
+the axis of [eq]. He will be referring his states to what we will call
+the [eq] frame. His “up” and “down” states for the electron
+and proton would be different from ours. His “plus-plus”
+state—which we can write [eq], referring to the “prime”
+frame—is the [eq] state of the spin-one particle. What we want
+is [eq] which is just another way of writing the
+amplitude [eq].
+
+We can find the amplitude [eq] in the following
+way. In our frame the electron in the [eq] state
+has its spin “up”. That means that it has some
+amplitude [eq] of being “up” in his frame, and
+some amplitude [eq] of being “down” in that
+frame. Similarly, the proton in the [eq] state has spin
+“up” in our frame and the amplitudes [eq]
+and [eq] of having spin “up” or spin “down” in
+the “prime” frame. Since we are talking about two distinct
+particles, the amplitude that both particles will be “up”
+ together in his frame is the product of the two
+amplitudes,
+\begin{equation}
+\label{Eq:III:12:44}
+\braket{+'\,+'}{+\,+}=
+\braket{+'}{+}_{\text{e}}\braket{+'}{+}_{\text{p}}.
+\end{equation}
+We have put the subscripts e and p on the amplitudes [eq]
+to make it clear what we were doing. But they are both just the
+transformation amplitudes for a spin one-half particle, so they are
+really identical numbers. They are, in fact, just the amplitude we
+have called [eq] in Chapter 6 , and which
+we listed in the tables at the end of that chapter.
+
+Now, however, we are about to get into trouble with notation. We have
+to be able to distinguish the amplitude [eq] for a
+ spin one-half particle from what we have also 
+called [eq] for a spin-one particle—yet they are
+completely different! We hope it won’t be too confusing, but
+ for the moment at least, we will have to use some different
+symbols for the spin one-half amplitudes. To help you keep things
+straight, we summarize the new notation in Table 12-4 . We
+will continue to use the notation [eq], [eq],
+and [eq] for the states of a spin-one particle.
+
+With our new notation, Eq. ( 12.44 ) becomes simply
+\begin{equation*}
+\braket{+'\,+'}{+\,+}=a^2,
+\end{equation*}
+and this is just the spin- one amplitude [eq]. Now,
+let’s suppose, for instance, that the other guy’s coordinate
+frame—that is, the [eq], or “primed,” apparatus—is just rotated
+with respect to our [eq]-axis by the angle [eq]; then from
+Table 6-2 ,
+\begin{equation*}
+a=\braket{+'}{+}=e^{i\phi/2}.
+\end{equation*}
+So from ( 12.44 ) we have that the spin-one amplitude is
+\begin{equation}
+\label{Eq:III:12:45}
+\braket{+T}{+S}=\braket{+'\,+'}{+\,+}=
+(e^{i\phi/2})^2=e^{i\phi}.
+\end{equation}
+You can see how it goes.
+
+Now we will work through the general case for all the states. If the
+proton and electron are both “up” in our frame—the
+[eq]-frame—the amplitudes that it will be in any one of the
+four possible states in the other guy’s frame—the [eq]-frame—are
+\begin{equation}
+\begin{aligned}
+\braket{+'\,+'}{+\,+}&=
+\braket{+'}{+}_{\text{e}}\braket{+'}{+}_{\text{p}}=
+a^2,\\[1ex]
+\braket{+'\,-'}{+\,+}&=
+\braket{+'}{+}_{\text{e}}\braket{-'}{+}_{\text{p}}=
+ab,\\[1ex]
+\braket{-'\,+'}{+\,+}&=
+\braket{-'}{+}_{\text{e}}\braket{+'}{+}_{\text{p}}=
+ba,\\[1ex]
+\braket{-'\,-'}{+\,+}&=
+\braket{-'}{+}_{\text{e}}\braket{-'}{+}_{\text{p}}=
+b^2.
+\end{aligned}
+\label{Eq:III:12:46}
+\end{equation}
+We can, then, write the state [eq] as the following linear
+combination:
+ 
+\begin{equation}
+\label{Eq:III:12:47}
+\ket{+\,+}=a^2\,\ket{+'\,+'}+ab\,\{\ket{+'\,-'}+\ket{-'\,+'}\}+
+b^2\,\ket{-'\,-'}.
+\end{equation}
+ 
+ 
+\begin{alignat}{3}
+\ket{+\,+}&=&\phantom{ab}&a^2&\,&\ket{+'\,+'}\notag\\[.5ex]
+&+&\,ab&\,\{&&\ket{+'\,-'}+\ket{-'\,+'}\;\}\notag\\[.5ex]
+\label{Eq:III:12:47}
+&+&&b^2&\,&\ket{-'\,-'}.
+\end{alignat}
+ 
+Now we notice that [eq] is the state [eq], that
+[eq] is just [eq] times the
+state [eq]—see ( 12.41 )—and that
+[eq]. In other words, Eq. ( 12.47 )
+can be rewritten as
+\begin{equation}
+\label{Eq:III:12:48}
+\ket{+S}=a^2\,\ket{+T}+\sqrt{2}\,ab\,\ket{\OT}+b^2\,\ket{-T}.
+\end{equation}
+In a similar way you can easily show that
+\begin{equation}
+\label{Eq:III:12:49}
+\ket{-S}=c^2\,\ket{+T}+\sqrt{2}\,cd\,\ket{\OT}+d^2\,\ket{-T}.
+\end{equation}
+For [eq] it’s a little more complicated, because
+\begin{equation*}
+\ket{\OS}=\frac{1}{\sqrt{2}}\,\{\ket{+\,-}+\ket{-\,+}\}.
+\end{equation*}
+But we can express each of the states [eq] and [eq] in
+terms of the “prime” states and take the sum. That is,
+ 
+\begin{equation}
+\label{Eq:III:12:50}
+\ket{+\,-}=
+ac\,\ket{+'\,+'}+ad\,\ket{+'\,-'}+
+bc\,\ket{-'\,+'}+bd\,\ket{-'\,-'}
+\end{equation}
+ 
+ 
+\begin{alignat}{2}
+\ket{+\,-}&&=ac\,&\ket{+'\,+'}+ad\,\ket{+'\,-'}\notag\\[.5ex]
+\label{Eq:III:12:50}
+&&+\,bc\,&\ket{-'\,+'}+bd\,\ket{-'\,-'}
+\end{alignat}
+ 
+and
+ 
+\begin{equation}
+\label{Eq:III:12:51}
+\ket{-\,+}=
+ac\,\ket{+'\,+'}+bc\,\ket{+'\,-'}+
+ad\,\ket{-'\,+'}+bd\,\ket{-'\,-'}.
+\end{equation}
+ 
+ 
+\begin{alignat}{2}
+\ket{-\,+}&&=ac\,&\ket{+'\,+'}+bc\,\ket{+'\,-'}\notag\\[.5ex]
+\label{Eq:III:12:51}
+&&+\,ad\,&\ket{-'\,+'}+bd\,\ket{-'\,-'}.
+\end{alignat}
+ 
+Taking [eq] times the sum, we get
+ 
+\begin{equation*}
+\ket{\OS}=\frac{2}{\sqrt{2}}\,ac\,\ket{+'\,+'}+
+\frac{ad+bc}{\sqrt{2}}\,\{\ket{+'\,-'}+\ket{-'\,+'}\}+
+\frac{2}{\sqrt{2}}\,bd\,\ket{-'\,-'}.
+\end{equation*}
+ 
+ 
+\begin{alignat*}{3}
+\ket{\OS}&=&&\phantom{a}\frac{2}{\sqrt{2}}\,ac&\,&\ket{+'\,+'}\\[.75ex]
+&+&&\frac{ad+bc}{\sqrt{2}}&\{\,&\ket{+'\,-'}+\ket{-'\,+'}\,\}\\[.75ex]
+&+&&\phantom{a}\frac{2}{\sqrt{2}}\,bd&\,&\ket{-'\,-'}.
+\end{alignat*}
+ 
+It follows that
+ 
+\begin{equation}
+\label{Eq:III:12:52}
+\ket{\OS}=\sqrt{2}\,ac\,\ket{+T}+(ad+bc)\,\ket{\OT}+
+\sqrt{2}\,bd\,\ket{-T}.
+\end{equation}
+ 
+ 
+\begin{align}
+\ket{\OS}&=\sqrt{2}ac\,\ket{+T}\notag\\[.5ex]
+&+(ad+bc)\,\ket{\OT}\notag\\[.5ex]
+\label{Eq:III:12:52}
+&+\sqrt{2}\,bd\,\ket{-T}.
+\end{align}
+
+We have now all of the amplitudes we wanted. The coefficients of Eqs.
+( 12.48 ), ( 12.49 ), and ( 12.52 ) are the
+matrix elements [eq]. Let’s pull them all together:
+
+\begin{equation}
+\label{Eq:III:12:53}
+\braket{jT}{iS}=
+\kern -2.5ex \raise 23 pt {\scriptstyle jT\downarrow \,\raise 7 pt \scriptstyle iS\rightarrow}\kern -19pt % ebook remove
+% ebook insert: \kern -1.5ex \raise{40pt}{\scriptstyle jT\downarrow \,\raise{7pt}{\scriptstyle iS\rightarrow}}\kern -23pt
+\begin{pmatrix}
+a^2 & \sqrt{2}ac & c^2\\[1ex]
+\sqrt{2}ab & ad\!+\!bc & \sqrt{2}cd\\[1ex]
+b^2 & \sqrt{2}bd & d^2
+\end{pmatrix}
+\!\! % ebook remove
+.
+\end{equation}
+
+We have expressed the spin-one transformation in terms of the spin
+one-half amplitudes [eq], [eq], [eq], and [eq].
+
+For instance, if the [eq]-frame is rotated with respect to [eq] by the
+angle [eq] about the [eq]-axis—as in Fig. 5-6 —the
+amplitudes in Table 12-4 are just the matrix elements
+of [eq] in Table 6-2 .
+\begin{equation}
+\begin{alignedat}{2}
+a\;&=\cos\frac{\alpha}{2},&\quad
+b\;&=-\sin\frac{\alpha}{2},\\[1ex]
+c\;&=\sin\frac{\alpha}{2},&\quad
+d\;&=\cos\frac{\alpha}{2}.
+\end{alignedat}
+\label{Eq:III:12:54}
+\end{equation}
+Using these in ( 12.53 ), we get the formulas
+of ( 5.38 ), which we gave there without proof.
+
+What ever happened to the state [eq]?! Well, it is a
+spin-zero system, so it has only one state—it is the same in
+all coordinate systems . We can check that everything works out by
+taking the difference of Eq. ( 12.50 )
+and ( 12.51 ); we get that
+\begin{equation*}
+\ket{+\,-}-\ket{-\,+}=(ad-bc)\{\ket{+'\,-'}-\ket{-'\,+'}\}.
+\end{equation*}
+But [eq] is the determinant of the spin one-half matrix, and so
+is equal to [eq]. We get that
+\begin{equation*}
+\ketsl{\slIV'}=\ketsl{\slIV}
+\end{equation*}
+for any relative orientation of the two coordinate frames.

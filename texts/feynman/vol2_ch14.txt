@@ -1,0 +1,788 @@
+The Feynman Lectures on Physics Vol. II Ch. 14: The Magnetic Field in Various Situations
+========================================================================================
+
+Sections: 14–1 The vector potential | 14–2 The vector potential of known currents | 14–3 A straight wire | 14–4 A long solenoid | 14–5 The field of a small loop; the magnetic dipole | 14–6 The vector potential of a circuit | 14–7 The law of Biot and Savart
+
+
+
+In this chapter we continue our discussion of magnetic fields
+associated with steady currents—the subject of magnetostatics. The
+magnetic field is related to electric currents by our basic equations
+\begin{gather}
+\label{Eq:II:14:1}
+\FLPdiv{\FLPB}=0,\\[1ex]
+\label{Eq:II:14:2}
+c^2\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO}.
+\end{gather}
+
+We want now to solve these equations mathematically in a
+ general way, that is, without requiring any special symmetry or
+intuitive guessing. In electrostatics, we found that there was a
+straightforward procedure for finding the field when the positions of
+all electric charges are known: One simply works out the scalar
+potential [eq] by taking an integral over the charges—as in
+Eq. ( 4.25 ). Then if one wants the electric field, it is
+obtained from the derivatives of [eq]. We will now show that there is
+a corresponding procedure for finding the magnetic field [eq] if we
+know the current density [eq] of all moving charges.
+
+In electrostatics we saw that (because the curl of [eq] was always
+zero) it was possible to represent [eq] as the gradient of a scalar
+field [eq]. Now the curl of [eq] is not always zero, so it
+is not possible, in general, to represent it as a gradient. However,
+the divergence of [eq] is always zero, and this means that
+we can always represent [eq] as the curl of another vector
+field. For, as we saw in Section  2–7 , the divergence of
+a curl is always zero. Thus we can always relate [eq] to a field we
+will call [eq] by
+\begin{equation}
+\label{Eq:II:14:3}
+\FLPB=\FLPcurl{\FLPA}.
+\end{equation}
+
+Or, by writing out the components,
+\begin{equation}
+\begin{alignedat}{4}
+&B_x&&=(\FLPcurl{\FLPA})_x&&=\ddp{A_z}{y}&&-\ddp{A_y}{z},\\[.75ex]
+&B_y&&=(\FLPcurl{\FLPA})_y&&=\ddp{A_x}{z}&&-\ddp{A_z}{x},\\[.75ex]
+&B_z&&=(\FLPcurl{\FLPA})_z&&=\ddp{A_y}{x}&&-\ddp{A_x}{y}.\\
+\end{alignedat}
+\label{Eq:II:14:4}
+\end{equation}
+
+Writing [eq] guarantees that Eq. ( 14.1 )
+is satisfied, since, necessarily,
+\begin{equation*}
+\FLPdiv{\FLPB}=\FLPdiv{(\FLPcurl{\FLPA})}=0.
+\end{equation*}
+
+The field [eq] is called the vector potential .
+
+You will remember that the scalar potential [eq] was not completely
+specified by its definition. If we have found [eq] for some problem,
+we can always find another potential [eq] that is equally good by
+adding a constant:
+\begin{equation*}
+\phi'=\phi+C.
+\end{equation*}
+
+The new potential [eq] gives the same electric fields, since the
+gradient [eq] is zero; [eq] and [eq] represent the same
+physics.
+
+Similarly, we can have different vector potentials [eq] which give
+the same magnetic fields. Again, because [eq] is obtained
+from [eq] by differentiation, adding a constant to [eq] doesn’t
+change anything physical. But there is even more latitude
+for [eq]. We can add to [eq] any field which is the gradient of some
+scalar field, without changing the physics. We can show this as
+follows. Suppose we have an [eq] that gives correctly the magnetic
+field [eq] for some real situation, and ask in what circumstances
+some other new vector potential [eq] will give the same 
+field [eq] if substituted into ( 14.3 ). Then [eq]
+and [eq] must have the same curl:
+\begin{equation*}
+\FLPB=\FLPcurl{\FLPA'}=\FLPcurl{\FLPA}.
+\end{equation*}
+
+Therefore
+\begin{equation*}
+\FLPcurl{\FLPA'}-\FLPcurl{\FLPA}=\FLPcurl{(\FLPA'-\FLPA)}=\FLPzero.
+\end{equation*}
+
+But if the curl of a vector is zero it must be the gradient of some
+scalar field, say [eq], so [eq]. That means
+that if [eq] is a satisfactory vector potential for a problem then,
+for any [eq], at all,
+\begin{equation}
+\label{Eq:II:14:5}
+\FLPA'=\FLPA+\FLPgrad{\psi}
+\end{equation}
+
+will be an equally satisfactory vector potential, leading to the same
+field [eq].
+
+It is usually convenient to take some of the “latitude” out
+of [eq] by arbitrarily placing some other condition on it (in much the
+same way that we found it convenient—often—to choose to make the
+potential [eq] zero at large distances). We can, for instance,
+restrict [eq] by choosing arbitrarily what the divergence
+of [eq] must be. We can always do that without affecting [eq]. This
+is because although [eq] and [eq] have the same curl, and give
+the same [eq], they do not need to have the same divergence. In
+fact, [eq], and by a suitable
+choice of [eq] we can make [eq] anything we wish.
+
+What should we choose for [eq]? The choice should be made
+to get the greatest mathematical convenience and will depend on the
+problem we are doing. For magnetostatics , we will make the
+simple choice
+\begin{equation}
+\label{Eq:II:14:6}
+\FLPdiv{\FLPA}=0.
+\end{equation}
+
+(Later, when we take up electrodynamics, we will change our choice.)
+Our complete definition 1 
+of [eq] is then, for the moment, [eq]
+and [eq].
+
+To get some experience with the vector potential, let’s look first at
+what it is for a uniform magnetic field [eq]. Taking our [eq]-axis
+in the direction of [eq], we must have
+\begin{equation}
+\begin{alignedat}{4}
+&B_x&&=\ddp{A_z}{y}&&-\ddp{A_y}{z}&&=0,\\[1ex]
+&B_y&&=\ddp{A_x}{z}&&-\ddp{A_z}{x}&&=0,\\[1ex]
+&B_z&&=\ddp{A_y}{x}&&-\ddp{A_x}{y}&&=B_0.\\
+\end{alignedat}
+\label{Eq:II:14:7}
+\end{equation}
+
+By inspection, we see that one possible solution of these
+equations is
+\begin{equation*}
+A_y=xB_0,\quad A_x=0,\quad A_z=0.
+\end{equation*}
+
+Or we could equally well take
+\begin{equation*}
+A_x=-yB_0,\quad A_y=0,\quad A_z=0.
+\end{equation*}
+
+Still another solution is a linear combination of the two:
+\begin{equation}
+\label{Eq:II:14:8}
+A_x=-\tfrac{1}{2}yB_0,\quad A_y=\tfrac{1}{2}xB_0,\quad A_z=0.
+\end{equation}
+
+It is clear that for any particular field [eq], the vector
+potential [eq] is not unique; there are many possibilities.
+
+The third solution, Eq. ( 14.8 ), has some interesting
+properties. Since the [eq]-component is proportional to [eq] and the
+[eq]-component is proportional to [eq], [eq] must be at right angles
+to the vector from the [eq]-axis, which we will call [eq] (the
+“prime” is to remind us that it is not the vector
+displacement from the origin). Also, the magnitude of [eq] is
+proportional to [eq] and, hence, to [eq]. So [eq] can
+be simply written (for our uniform field) as
+\begin{equation}
+\label{Eq:II:14:9}
+\FLPA=\tfrac{1}{2}\FLPB_0\times\FLPr'.
+\end{equation}
+
+The vector potential [eq] has the magnitude [eq] and rotates
+about the [eq]-axis as shown in Fig.  14–1 . If, for
+example, the [eq] field is the axial field inside a solenoid, then
+the vector potential circulates in the same sense as do the currents
+of the solenoid.
+
+The vector potential for a uniform field can be obtained in another
+way. The circulation of [eq] on any closed loop [eq] can be
+related to the surface integral of [eq] by Stokes’
+theorem, Eq. ( 3.38 ):
+\begin{equation}
+\label{Eq:II:14:10}
+\oint_\Gamma\FLPA\cdot d\FLPs=
+\underset{\text{inside [eq]}}{\int}
+(\FLPcurl{\FLPA})\cdot\FLPn\,da.
+\end{equation}
+
+But the integral on the right is equal to the flux of [eq] through
+the loop, so
+\begin{equation}
+\label{Eq:II:14:11}
+\oint_\Gamma\FLPA\cdot d\FLPs=
+\underset{\text{inside [eq]}}{\int}
+\FLPB\cdot\FLPn\,da.
+\end{equation}
+
+So the circulation of [eq] around any loop is equal to the
+flux of [eq] through the loop. If we take a circular loop, of
+radius [eq] in a plane perpendicular to a uniform field [eq], the
+flux is just
+\begin{equation*}
+\pi r'^2B.
+\end{equation*}
+
+If we choose our origin on an axis of symmetry, so that we can
+take [eq] as circumferential and a function only of [eq], the
+circulation will be
+\begin{equation*}
+\oint\FLPA\cdot d\FLPs=2\pi r'A=\pi r'^2B.
+\end{equation*}
+
+We get, as before,
+\begin{equation*}
+A=\frac{Br'}{2}.
+\end{equation*}
+
+In the example we have just given, we have calculated the vector
+potential from the magnetic field, which is opposite to what one
+normally does. In complicated problems it is usually easier to solve
+for the vector potential, and then determine the magnetic field from
+it. We will now show how this can be done.
+
+Since [eq] is determined by currents, so also is [eq]. We want
+now to find [eq] in terms of the currents. We start with our basic
+equation ( 14.2 ):
+\begin{equation*}
+c^2\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO},
+\end{equation*}
+
+which means, of course, that
+\begin{equation}
+\label{Eq:II:14:12}
+c^2\FLPcurl{(\FLPcurl{\FLPA})}=\frac{\FLPj}{\epsO}.
+\end{equation}
+
+This equation is for magnetostatics what the equation
+\begin{equation}
+\label{Eq:II:14:13}
+\FLPdiv{\FLPgrad{\phi}}=-\frac{\rho}{\epsO}
+\end{equation}
+
+was for electrostatics.
+
+Our equation ( 14.12 ) for the vector potential looks even
+more like that for [eq] if we rewrite [eq]
+using the vector identity Eq. ( 2.58 ):
+\begin{equation}
+\label{Eq:II:14:14}
+\FLPcurl{(\FLPcurl{\FLPA})}=\FLPgrad{(\FLPdiv{\FLPA})}-\nabla^2\FLPA.
+\end{equation}
+
+Since we have chosen to make [eq] (and now you see why),
+Eq. ( 14.12 ) becomes
+\begin{equation}
+\label{Eq:II:14:15}
+\nabla^2\FLPA=-\frac{\FLPj}{\epsO c^2}.
+\end{equation}
+
+This vector equation means, of course, three equations:
+ 
+\begin{equation}
+\label{Eq:II:14:16}
+\nabla^2A_x=-\frac{j_x}{\epsO c^2},\quad
+\nabla^2A_y=-\frac{j_y}{\epsO c^2},\quad
+\nabla^2A_z=-\frac{j_z}{\epsO c^2}.
+\end{equation}
+ 
+ 
+
+\begin{equation}
+\begin{aligned}
+\nabla^2A_x&=-\frac{j_x}{\epsO c^2},\\[1ex]
+\nabla^2A_y&=-\frac{j_y}{\epsO c^2},\\[1ex]
+\nabla^2A_z&=-\frac{j_z}{\epsO c^2}.
+\end{aligned}
+\label{Eq:II:14:16}
+\end{equation}
+
+ 
+
+
+And each of these equations is mathematically identical to
+\begin{equation}
+\label{Eq:II:14:17}
+\nabla^2\phi=-\frac{\rho}{\epsO}.
+\end{equation}
+
+All we have learned about solving for potentials when [eq] is known
+can be used for solving for each component of [eq] when [eq] is
+known!
+
+We have seen in Chapter  4 that a general solution for the
+electrostatic equation ( 14.17 ) is
+\begin{equation*}
+\phi(1)=\frac{1}{4\pi\epsO}\int\frac{\rho(2)\,dV_2}{r_{12}}.
+\end{equation*}
+
+So we know immediately that a general solution for [eq] is
+\begin{equation}
+\label{Eq:II:14:18}
+A_x(1)=\frac{1}{4\pi\epsO c^2}\int\frac{j_x(2)\,dV_2}{r_{12}},
+\end{equation}
+
+and similarly for [eq] and [eq]. (Figure  14–2 will
+remind you of our conventions for [eq] and [eq].) We can combine
+the three solutions in the vector form
+\begin{equation}
+\label{Eq:II:14:19}
+\FLPA(1)=\frac{1}{4\pi\epsO c^2}\int\frac{\FLPj(2)\,dV_2}{r_{12}},
+\end{equation}
+
+(You can verify if you wish, by direct differentiation of components,
+that this integral for [eq] satisfies [eq] so long
+as [eq], which, as we saw, must happen for steady
+currents.)
+
+We have, then, a general method for finding the magnetic field of
+steady currents. The principle is: the [eq]-component of vector
+potential arising from a current density [eq] is the same as the
+electric potential [eq] that would be produced by a charge
+density [eq] equal to [eq]—and similarly for the [eq]- and
+[eq]-components. (This principle works only with components in fixed
+directions. The “radial” component of [eq] does not come in the
+same way from the “radial” component of [eq], for example.) So
+from the vector current density [eq], we can find [eq] using
+Eq. ( 14.19 )—that is, we find each component of [eq]
+by solving three imaginary electrostatic problems for the charge
+distributions [eq], [eq],
+and [eq]. Then we get [eq] by taking various derivatives
+of [eq] to obtain [eq]. It’s a little more complicated
+than electrostatics, but the same idea. We will now illustrate the
+theory by solving for the vector potential in a few special cases.
+
+For our first example, we will again find the field of a straight
+wire—which we solved in the last chapter by using
+Eq. ( 14.2 ) and some arguments of symmetry. We take a long
+straight wire of radius [eq], carrying the steady current [eq]. Unlike the
+charge on a conductor in the electrostatic case, a steady current in a
+wire is uniformly distributed throughout the cross section of the wire.
+If we choose our coordinates as shown in Fig.  14–3 , the
+current density vector [eq] has only a [eq]-component. Its magnitude
+is
+\begin{equation}
+\label{Eq:II:14:20}
+j_z=\frac{I}{\pi a^2}
+\end{equation}
+
+inside the wire, and zero outside.
+
+Since [eq] and [eq] are both zero, we have immediately
+\begin{equation*}
+A_x=0,\qquad A_y=0.
+\end{equation*}
+
+To get [eq] we can use our solution for the electrostatic
+potential [eq] of a wire with a uniform charge density [eq]. For
+points outside an infinite charged cylinder, the electrostatic
+potential is
+\begin{equation*}
+\phi=-\frac{\lambda}{2\pi\epsO}\ln r',
+\end{equation*}
+
+where [eq] and [eq] is the charge per unit length,
+[eq]. So [eq] must be
+\begin{equation*}
+A_z=-\frac{\pi a^2j_z}{2\pi\epsO c^2}\ln r'
+\end{equation*}
+
+for points outside a long wire carrying a uniform current. Since $\pi
+a^2j_z=I$, we can also write
+\begin{equation}
+\label{Eq:II:14:21}
+A_z=-\frac{I}{2\pi\epsO c^2}\ln r'
+\end{equation}
+
+Now we can find [eq] from ( 14.4 ). There are only two of
+the six derivatives that are not zero. We get
+
+\begin{alignat}{6}
+\label{Eq:II:14:22}
+&B_x&&=-&&\frac{I}{2\pi\epsO c^2}\ddp{}{y}&&\ln r'=
+-&&\frac{I}{2\pi\epsO c^2}\,\frac{y}{r'^2}&&,\\[1ex]
+\label{Eq:II:14:23}
+&B_y&&=&&\frac{I}{2\pi\epsO c^2}\vphantom{\ddp{}{y}}\ddp{}{x}&&\ln r'=
+&&\frac{I}{2\pi\epsO c^2}\,\frac{x}{r'^2}&&,\\[2pt]
+% ebook insert: \label{Eq:II:0:0}
+&B_z&&=&&0\vphantom{\ddp{}{y}}.\notag
+\end{alignat}
+
+
+We get the same result as before: [eq] circles around the wire, and
+has the magnitude
+\begin{equation}
+\label{Eq:II:14:24}
+B=\frac{1}{4\pi\epsO c^2}\,\frac{2I}{r'}.
+\end{equation}
+
+Next, we consider again the infinitely long solenoid with a
+circumferential current on the surface of [eq] per unit length. (We
+imagine there are [eq] turns of wire per unit length, carrying the
+current [eq], and we neglect the slight pitch of the winding.)
+
+Just as we have defined a “surface charge density” [eq], we
+define here a “surface current density” [eq] equal to the current
+per unit length on the surface of the solenoid (which is, of course,
+just the average [eq] times the thickness of the thin winding). The
+magnitude of [eq] is, here, [eq]. This surface current (see
+Fig.  14–4 ) has the components:
+\begin{equation*}
+J_x=-J\sin\phi,\quad J_y=J\cos\phi,\quad J_z=0.
+\end{equation*}
+
+Now we must find [eq] for such a current distribution.
+
+First, we wish to find [eq] for points outside the solenoid. The
+result is the same as the electrostatic potential outside a cylinder
+with a surface charge density
+\begin{equation*}
+\sigma=\sigma_0\sin\phi,
+\end{equation*}
+
+with [eq]. We have not solved such a charge distribution,
+but we have done something similar. This charge distribution is
+equivalent to two solid cylinders of charge, one positive and
+one negative, with a slight relative displacement of their axes in the
+[eq]-direction. The potential of such a pair of cylinders is
+proportional to the derivative with respect to [eq] of the potential of
+a single uniformly charged cylinder. We could work out the constant of
+proportionality, but let’s not worry about it for the moment.
+
+The potential of a cylinder of charge is proportional to [eq]; the
+potential of the pair is then
+\begin{equation}
+\phi\propto\ddp{\ln r'}{y}=\frac{y}{r'^2}.\notag
+\end{equation}
+
+So we know that
+\begin{equation}
+\label{Eq:II:14:25}
+A_x=-K\,\frac{y}{r'^2},
+\end{equation}
+
+where [eq] is some constant. Following the same argument, we would find
+\begin{equation}
+\label{Eq:II:14:26}
+A_y=K\,\frac{x}{r'^2}.
+\end{equation}
+
+Although we said before that there was no magnetic field
+outside a solenoid, we find now that there is an [eq]-field
+which circulates around the [eq]-axis, as in Fig.  14–4 . The
+question is: Is its curl zero?
+
+Clearly, [eq] and [eq] are zero, and
+\begin{align*}
+B_z&=\ddp{}{x}\biggl(K\,\frac{x}{r'^2}\biggr)-
+\ddp{}{y}\biggl(-K\,\frac{y}{r'^2}\biggr)\\[1.5ex]
+&=K\biggl(
+\frac{1}{r'^2}-\frac{2x^2}{r'^4}+\frac{1}{r'^2}-\frac{2y^2}{r'^4}
+\biggr)=0.
+\end{align*}
+
+So the magnetic field outside a very long solenoid is indeed zero,
+even though the vector potential is not.
+
+We can check our result against something else we know: The
+circulation of the vector potential around the solenoid should be
+equal to the flux of [eq] inside the coil (Eq.  14.11 ).
+The circulation is [eq] or, since [eq], the circulation
+is [eq]. Notice that it is independent of [eq]. That is just as it
+should be if there is no [eq] outside, because the flux is just the
+magnitude of [eq] inside the solenoid times [eq]. It is
+the same for all circles of radius [eq]. We have found in the last
+chapter that the field inside is [eq], so we can determine the
+constant [eq]:
+\begin{equation*}
+2\pi K=\pi a^2\,\frac{nI}{\epsO c^2},
+\end{equation*}
+
+or
+\begin{equation*}
+K=\frac{nIa^2}{2\epsO c^2}.
+\end{equation*}
+
+So the vector potential outside has the magnitude
+\begin{equation}
+\label{Eq:II:14:27}
+A=\frac{nIa^2}{2\epsO c^2}\,\frac{1}{r'},
+\end{equation}
+
+and is always perpendicular to the vector [eq].
+
+We have been thinking of a solenoidal coil of wire, but we would
+produce the same fields if we rotated a long cylinder with an
+electrostatic charge on the surface. If we have a thin cylindrical
+shell of radius [eq] with a surface charge [eq], rotating the
+cylinder makes a surface current [eq], where [eq] is
+the velocity of the surface charge. There will then be a magnetic
+field [eq] inside the cylinder.
+
+Now we can raise an interesting question. Suppose we put a short piece
+of wire [eq] perpendicular to the axis of the cylinder, extending from
+the axis out to the surface, and fastened to the cylinder so that it
+rotates with it, as in Fig.  14–5 . This wire is moving
+in a magnetic field, so the [eq] forces will cause the
+ends of the wire to be charged (they will charge up until the
+[eq]-field from the charges just balances the [eq] force).
+If the cylinder has a positive charge, the end of the wire at
+the axis will have a negative charge. By measuring the charge on the
+end of the wire, we could measure the speed of rotation of the
+system. We would have an “angular-velocity meter”!
+
+But are you wondering: “What if I put myself in the frame of
+reference of the rotating cylinder? Then there is just a charged
+cylinder at rest, and I know that the electrostatic equations say
+there will be no electric fields inside, so there will be no
+force pushing charges to the center. So something must be wrong.” But
+there is nothing wrong. There is no “relativity of rotation.” A
+rotating system is not an inertial frame, and the laws of
+physics are different. We must be sure to use equations of
+electromagnetism only with respect to inertial coordinate systems.
+
+It would be nice if we could measure the absolute rotation of the
+earth with such a charged cylinder, but unfortunately the effect is
+much too small to observe even with the most delicate instruments now
+available.
+
+Let’s use the vector-potential method to find the magnetic field of a
+small loop of current. As usual, by “small” we mean simply that we
+are interested in the fields only at distances large compared with the
+size of the loop. It will turn out that any small loop is a “magnetic
+dipole.” That is, it produces a magnetic field like the
+electric field from an electric dipole.
+
+We take first a rectangular loop, and choose our coordinates as shown in
+Fig.  14–6 . There are no currents in the [eq]-direction,
+so [eq] is zero. There are currents in the [eq]-direction on the two sides
+of length [eq]. In each leg, the current density (and current) is
+uniform. So the solution for [eq] is just like the electrostatic
+potential from two charged rods (see Fig.  14–7 ). Since the
+rods have opposite charges, their electric potential at large distances
+would be just the dipole potential (Section  6–5 ). At the
+point [eq] in Fig.  14–6 , the potential would be
+\begin{equation}
+\label{Eq:II:14:28}
+\phi=\frac{1}{4\pi\epsO}\,\frac{\FLPp\cdot\FLPe_R}{R^2},
+\end{equation}
+
+where [eq] is the dipole moment of the charge distribution. The
+dipole moment, in this case, is the total charge on one rod times the
+separation between them:
+\begin{equation}
+\label{Eq:II:14:29}
+p=\lambda ab.
+\end{equation}
+
+The dipole moment points in the negative [eq]-direction, so the cosine
+of the angle between [eq] and [eq] is [eq] (where [eq] is the
+coordinate of [eq]). So we have
+\begin{equation*}
+\phi=-\frac{1}{4\pi\epsO}\,\frac{\lambda ab}{R^2}\,\frac{y}{R}.
+\end{equation*}
+
+We get [eq] simply by replacing [eq] by [eq]:
+\begin{equation}
+\label{Eq:II:14:30}
+A_x=-\frac{Iab}{4\pi\epsO c^2}\,\frac{y}{R^3}.
+\end{equation}
+
+By the same reasoning,
+\begin{equation}
+\label{Eq:II:14:31}
+A_y=\frac{Iab}{4\pi\epsO c^2}\,\frac{x}{R^3}.
+\end{equation}
+
+Again, [eq] is proportional to [eq] and [eq] is proportional to [eq],
+so the vector potential (at large distances) goes in circles around
+the [eq]-axis, circulating in the same sense as [eq] in the loop, as
+shown in Fig.  14–8 .
+
+The strength of [eq] is proportional to [eq], which is the current
+times the area of the loop. This product is called the magnetic
+dipole moment (or, often, just “magnetic moment”) of the
+loop. We represent it by [eq]:
+\begin{equation}
+\label{Eq:II:14:32}
+\mu=Iab.
+\end{equation}
+
+The vector potential of a small plane loop of any shape (circle,
+triangle, etc.) is also given by Eqs. ( 14.30 )
+and ( 14.31 ) provided we replace [eq] by
+\begin{equation}
+\label{Eq:II:14:33}
+\mu=I\cdot(\text{area of the loop}).
+\end{equation}
+
+We leave the proof of this to you.
+
+We can put our equation in vector form if we define the direction of
+the vector [eq] to be the normal to the plane of the loop, with a
+positive sense given by the right-hand rule (Fig.  14–8 ).
+Then we can write
+\begin{equation}
+\label{Eq:II:14:34}
+\FLPA=\frac{1}{4\pi\epsO c^2}\,\frac{\FLPmu\times\FLPR}{R^3}=
+\frac{1}{4\pi\epsO c^2}\,\frac{\FLPmu\times\FLPe_R}{R^2}.
+\end{equation}
+
+We have still to find [eq]. Using ( 14.33 )
+and ( 14.34 ), together with ( 14.4 ), we get
+\begin{equation}
+\label{Eq:II:14:35}
+B_x=-\ddp{}{z}\,\frac{\mu}{4\pi\epsO c^2}\,\frac{x}{R^3}=
+\dotsm\frac{3xz}{R^5}
+\end{equation}
+
+(where by [eq] we mean [eq]),
+\begin{equation}
+\begin{aligned}
+B_y&=\ddp{}{z}\biggl(-\dotsm\frac{y}{R^3}\biggr)=\dotsm\frac{3yz}{R^5},\\[1ex]
+B_z&=\ddp{}{x}\biggl(\dotsm\frac{x}{R^3}\biggr)-
+\ddp{}{y}\biggl(-\dotsm\frac{y}{R^3}\biggr)\\[1ex]
+&=-\dotsm\biggl(\frac{1}{R^3}-\frac{3z^2}{R^5}\biggr).
+\end{aligned}
+\label{Eq:II:14:36}
+\end{equation}
+
+The components of the [eq]-field behave exactly like those of the
+[eq]-field for a dipole oriented along the [eq]-axis. (See Eqs.
+( 6.14 ) and ( 6.15 ); also Fig.  6–4 .) That’s
+why we call the loop a magnetic dipole. The word “dipole” is slightly
+misleading when applied to a magnetic field because there are no magnetic
+“poles” that correspond to electric charges. The magnetic “dipole field” is
+not produced by two “charges,” but by an elementary current loop.
+
+It is curious, though, that starting with completely different laws,
+[eq] and [eq], we
+can end up with the same kind of a field. Why should that be? It is
+because the dipole fields appear only when we are far away from all
+charges or currents. So through most of the relevant space the
+equations for [eq] and [eq] are identical: both have zero
+divergence and zero curl. So they give the same solutions. However,
+the sources whose configuration we summarize by the dipole
+moments are physically quite different—in one case, it’s a
+circulating current; in the other, a pair of charges, one above and
+one below the plane of the loop for the corresponding field.
+
+We are often interested in the magnetic fields produced by circuits of
+wire in which the diameter of the wire is very small compared with the
+dimensions of the whole system. In such cases, we can simplify the
+equations for the magnetic field. For a thin wire we can write our
+volume element as
+\begin{equation*}
+dV=S\,ds
+\end{equation*}
+
+where [eq] is the cross-sectional area of the wire and [eq] is the
+element of distance along the wire. In fact, since the vector [eq]
+is in the same direction as [eq], as shown in Fig.  14–9 
+(and we can assume that [eq] is constant across any given cross
+section), we can write a vector equation:
+\begin{equation}
+\label{Eq:II:14:37}
+\FLPj\,dV=jS\,d\FLPs.
+\end{equation}
+
+But [eq] is just what we call the current [eq] in a wire, so our
+integral for the vector potential ( 14.19 ) becomes
+\begin{equation}
+\label{Eq:II:14:38}
+\FLPA(1)=\frac{1}{4\pi\epsO c^2}\int\frac{I\,d\FLPs_2}{r_{12}}
+\end{equation}
+
+(see Fig.  14–10 ). (We assume that [eq] is the same
+throughout the circuit. If there are several branches with different
+currents, we should, of course, use the appropriate [eq] for each
+branch.)
+
+Again, we can find the fields from ( 14.38 ) either by
+integrating directly or by solving the corresponding electrostatic
+problems.
+
+In studying electrostatics we found that the electric field of a known
+charge distribution could be obtained directly with an integral,
+Eq. ( 4.16 ):
+\begin{equation*}
+\FLPE(1)=\frac{1}{4\pi\epsO}\int
+\frac{\rho(2)\FLPe_{12}\,dV_2}{r_{12}^2}.
+\end{equation*}
+
+As we have seen, it is usually more work to evaluate this
+integral—there are really three integrals, one for each
+component—than to do the integral for the potential and take its
+gradient.
+
+There is a similar integral which relates the magnetic field to the
+currents. We already have an integral for [eq],
+Eq. ( 14.19 ); we can get an integral for [eq] by taking
+the curl of both sides:
+ 
+\begin{equation}
+\label{Eq:II:14:39}
+\FLPB(1)=\FLPcurl{\FLPA(1)}=
+\FLPcurl{\biggl[\frac{1}{4\pi\epsO c^2}\!\int\!
+\frac{\FLPj(2)\,dV_2}{r_{12}}\biggr]}\!.
+\end{equation}
+ 
+ 
+
+\begin{align}
+\FLPB(1)&=\FLPcurl{\FLPA(1)}\notag\\
+\label{Eq:II:14:39}
+&=\FLPcurl{\biggl[\frac{1}{4\pi\epsO c^2}\!\int\!
+\frac{\FLPj(2)\,dV_2}{r_{12}}\biggr]}\!.
+\end{align}
+
+ 
+Now we must be careful: The curl operator means taking the derivatives
+of [eq], that is, it operates only on the
+coordinates [eq]. We can move the [eq] operator inside the
+integral sign if we remember that it operates only on variables with
+the subscript [eq], which of course, appear only in
+\begin{equation}
+\label{Eq:II:14:40}
+r_{12}=[(x_1\!-\!x_2)^2\!+\!(y_1\!-\!y_2)^2\!+\!(z_1\!-\!z_2)^2]^{1/2}.
+\end{equation}
+
+We have, for the [eq]-component of [eq],
+\begin{align}
+B_x&=\ddp{A_z}{y_1}-\ddp{A_y}{z_1}\notag\\[1.5ex]
+&=\frac{1}{4\pi\epsO c^2}\!\int\biggl[
+j_z\ddp{}{y_1}\biggl(\!\frac{1}{r_{12}}\!\biggr)\!-\!
+j_y\ddp{}{z_1}\biggl(\!\frac{1}{r_{12}}\!\biggr)
+\!\biggr]dV_2\notag\\[2ex]
+\label{Eq:II:14:41}
+&=-\frac{1}{4\pi\epsO c^2}\!\int\biggl[
+j_z\frac{y_1-y_2}{r_{12}^3}\!-\!j_y\frac{z_1-z_2}{r_{12}^3}
+\biggr]dV_2.
+\end{align}
+
+The quantity in brackets is just the negative of the [eq]-component of
+\begin{equation*}
+\frac{\FLPj\times\FLPr_{12}}{r_{12}^3}=
+\frac{\FLPj\times\FLPe_{12}}{r_{12}^2}
+\end{equation*}
+
+Corresponding results will be found for the other components, so we have
+\begin{equation}
+\label{Eq:II:14:42}
+\FLPB(1)=\frac{1}{4\pi\epsO c^2}\int
+\frac{\FLPj(2)\times\FLPe_{12}}{r_{12}^2}\,dV_2.
+\end{equation}
+
+The integral gives [eq] directly in terms of the known
+currents. The geometry involved is the same as that shown in
+Fig.  14–2 .
+
+If the currents exist only in circuits of small wires we can, as in
+the last section, immediately do the integral across the wire,
+replacing [eq] by [eq], where [eq] is an element of
+length of the wire. Then, using the symbols in Fig.  14–10 ,
+\begin{equation}
+\label{Eq:II:14:43}
+\FLPB(1)=-\frac{1}{4\pi\epsO c^2}\int
+\frac{I\FLPe_{12}\times d\FLPs_2}{r_{12}^2}.
+\end{equation}
+
+(The minus sign appears because we have reversed the order of the
+cross product.) This equation for [eq] is called the
+ Biot-Savart law , after its
+discoverers. It gives a formula for obtaining directly the magnetic
+field produced by wires carrying currents.
+
+You may wonder: “What is the advantage of the vector potential if we
+can find [eq] directly with a vector integral? After all, [eq]
+also involves three integrals!” Because of the cross product, the
+integrals for [eq] are usually more complicated, as is evident from
+Eq. ( 14.41 ). Also, since the integrals for [eq] are
+like those of electrostatics, we may already know them. Finally, we
+will see that in more advanced theoretical matters (in relativity, in
+advanced formulations of the laws of mechanics, like the principle of
+least action to be discussed later, and in quantum mechanics) the
+vector potential plays an important role.

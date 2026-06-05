@@ -1,0 +1,26 @@
+# philosopher-agent/requirements.txt
+# Install with: pip install -r requirements.txt
+
+# Anthropic API
+anthropic>=0.40.0
+
+# Local embeddings — no API cost
+sentence-transformers>=3.0.0
+
+# Vector search in SQLite
+sqlite-vec>=0.1.0
+
+# Text chunking
+nltk>=3.9.0
+
+# UI
+gradio>=5.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-mock>=3.14.0
+
+# Utilities
+python-dotenv>=1.0.0
+numpy>=1.26.0
+PyYAML>=6.0.0

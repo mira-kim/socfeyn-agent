@@ -1,0 +1,935 @@
+The Feynman Lectures on Physics Vol. II Ch. 3: Vector Integral Calculus
+=======================================================================
+
+Sections: 3–1 Vector integrals; the line integral of [eq] | 3–2 The flux of a vector field | 3–3 The flux from a cube; Gauss’ theorem | 3–4 Heat conduction; the diffusion equation | 3–5 The circulation of a vector field | 3–6 The circulation around a square; Stokes’ theorem | 3–7 Curl-free and divergence-free fields | 3–8 Summary
+
+
+
+We found in Chapter  2 that there were various ways of
+taking derivatives of fields. Some gave vector fields; some gave
+scalar fields. Although we developed many different formulas,
+everything in Chapter  2 could be summarized in one rule:
+the operators [eq], [eq], and [eq] are the
+three components of a vector operator [eq]. We would now like
+to get some understanding of the significance of the derivatives of
+fields. We will then have a better feeling for what a vector field
+equation means.
+
+We have already discussed the meaning of the gradient
+operation
+([eq] on a scalar). Now we turn to the meanings of the
+divergence
+and curl operations.
+The interpretation of these quantities is best done in terms of certain
+vector integrals and equations relating such integrals. These equations
+cannot, unfortunately, be obtained from vector
+algebra by
+some easy substitution, so you will just have to learn them as something
+new. Of these integral formulas, one is practically trivial, but the
+other two are not. We will derive them and explain their implications.
+The equations we shall study are really mathematical theorems. They will
+be useful not only for interpreting the meaning and the content of the
+divergence and the curl, but also in working out general physical
+theories. These mathematical theorems are, for the theory of fields,
+what the theorem of the conservation of energy is to the mechanics of
+particles. General theorems like these are important for a deeper
+understanding of physics. You will find, though, that they are not very
+useful for solving problems—except in the simplest cases. It is
+delightful, however, that in the beginning of our subject there will be
+many simple problems which can be solved with the three integral
+formulas we are going to treat. We will see, however, as the problems
+get harder, that we can no longer use these simple methods.
+
+We take up first an integral formula involving the gradient. The
+relation contains a very simple idea: Since the gradient represents the
+rate of change of a field quantity, if we integrate that rate of change,
+we should get the total change. Suppose we have the scalar
+field [eq]. At any two points [eq] and [eq], the
+function [eq] will have the values [eq] and [eq],
+respectively. [We use a convenient notation, in which [eq] represents
+the point [eq] and [eq] means the same thing
+as [eq].] If [eq] (gamma) is any curve joining [eq]
+and [eq], as in Fig.  3–1 , the following relation is true:
+ 
+   Theorem 1. 
+\begin{equation}
+\label{Eq:II:3:1}
+\psi(2)-\psi(1)=
+\underset{\text{along [eq]}}{\int_{(1)}^{(2)}}
+(\FLPgrad{\psi})\cdot d\FLPs\,.
+\end{equation}
+
+The integral is a line integral , from [eq] to [eq] along the
+curve [eq], of the dot product of [eq]—a
+vector—with [eq]—another vector which is an infinitesimal line
+element of the curve [eq] (directed away from [eq] and
+toward [eq]).
+
+First, we should review what we mean by a line integral. Consider a
+scalar function [eq], and the curve [eq] joining two points
+[eq] and [eq]. We mark off the curve at a number of points and join
+these points by straight-line segments, as shown in
+Fig.  3–2 . Each segment has the length [eq], where [eq]
+is an index that runs [eq], [eq], [eq], … By the line integral
+\begin{equation*}
+\underset{\text{along [eq]}}{\int_{(1)}^{(2)}} f\,ds
+\end{equation*}
+
+we mean the limit of the sum
+\begin{equation*}
+\sum\nolimits_if_i\Delta s_i,
+\end{equation*}
+
+where [eq] is the value of the function at the [eq]th segment. The
+limiting value is what the sum approaches as we add more and more
+segments (in a sensible way, so that the largest [eq]).
+
+The integral in our theorem, Eq. ( 3.1 ), means the same
+thing, although it looks a little different. Instead of [eq], we have
+another scalar—the component of [eq] in the direction
+of [eq]. If we write [eq] for this tangential
+component, it is clear that
+\begin{equation}
+\label{Eq:II:3:2}
+(\FLPgrad{\psi})_t\,\Delta s=(\FLPgrad{\psi})\cdot\Delta\FLPs.
+\end{equation}
+
+The integral in Eq. ( 3.1 ) means the sum of such terms.
+
+Now let’s see why Eq. ( 3.1 ) is true. In
+Chapter  2 , we showed that the component of [eq]
+along a small displacement [eq] was the rate
+of change of [eq] in the direction of [eq]. Consider the line
+segment [eq] from [eq] to point [eq] in Fig.  3–2 .
+According to our definition,
+\begin{equation}
+\label{Eq:II:3:3}
+\Delta\psi_1=\psi(a)-\psi(1)=(\FLPgrad{\psi})_1\cdot\Delta\FLPs_1.
+\end{equation}
+
+Also, we have
+\begin{equation}
+\label{Eq:II:3:4}
+\psi(b)-\psi(a)=(\FLPgrad{\psi})_2\cdot\Delta\FLPs_2,
+\end{equation}
+
+where, of course, [eq] means the gradient evaluated at the segment [eq], and [eq], the gradient evaluated at [eq]. If we add Eqs. ( 3.3 ) and ( 3.4 ), we get
+\begin{equation}
+\label{Eq:II:3:5}
+\psi(b)-\psi(1)=(\FLPgrad{\psi})_1\cdot\Delta\FLPs_1+
+(\FLPgrad{\psi})_2\cdot\Delta\FLPs_2.
+\end{equation}
+
+You can see that if we keep adding such terms, we get the result
+\begin{equation}
+\label{Eq:II:3:6}
+\psi(2)-\psi(1)=\sum\nolimits_i(\FLPgrad{\psi})_i\cdot\Delta\FLPs_i.
+\end{equation}
+
+The left-hand side doesn’t depend on how we choose our intervals—if
+[eq] and [eq] are kept always the same—so we can take the limit of
+the right-hand side. We have therefore proved Eq. ( 3.1 ).
+
+You can see from our proof that just as the equality doesn’t depend on
+how the points [eq] [eq], [eq], …, are chosen, similarly it doesn’t
+depend on what we choose for the curve [eq] to join [eq] and [eq].
+Our theorem is correct for any curve from [eq] to [eq].
+
+One remark on notation: You will see that there is no confusion if we
+write, for convenience,
+\begin{equation}
+\label{Eq:II:3:7}
+(\FLPgrad{\psi})\cdot d\FLPs=\FLPgrad{\psi}\cdot d\FLPs.
+\end{equation}
+
+With this notation, our theorem is
+ 
+   Theorem 1. 
+\begin{equation}
+\label{Eq:II:3:8}
+\psi(2)-\psi(1)=
+\underset{\substack{\text{any curve from}\\\text{[eq] to
+[eq]}}}{\int_{(1)}^{(2)}} \FLPgrad{\psi}\cdot d\FLPs\,.
+\end{equation}
+
+Before we consider our next integral theorem—a theorem about the
+divergence—we would like to study a certain idea which has
+an easily understood physical significance in the case of heat
+flow. We have defined the vector [eq], which represents the heat
+that flows through a unit area in a unit time. Suppose that inside a
+block of material we have some closed surface [eq] which encloses the
+volume [eq] (Fig.  3–3 ). We would like to find out how
+much heat is flowing out of this volume . We can, of course,
+find it by calculating the total heat flow out of the
+ surface  [eq].
+
+We write [eq] for the area of an element of the surface. The symbol
+stands for a two-dimensional differential. If, for instance, the area
+happened to be in the [eq]-plane we would have
+\begin{equation*}
+da=dx\,dy.
+\end{equation*}
+
+Later we shall have integrals over volume and for these it is
+convenient to consider a differential volume that is a little cube. So
+when we write [eq] we mean
+\begin{equation*}
+dV=dx\,dy\,dz.
+\end{equation*}
+
+Some people like to write [eq] instead of [eq] to remind themselves
+that it is kind of a second-order quantity. They would also write [eq]
+instead of [eq]. We will use the simpler notation, and assume that you
+can remember that an area has two dimensions and a volume has three.
+
+The heat flow out through the surface element [eq] is the area times
+the component of [eq] perpendicular to [eq]. We have already
+defined [eq] as a unit vector pointing outward at right angles to
+the surface (Fig.  3–3 ). The component of [eq] that
+we want is
+\begin{equation}
+\label{Eq:II:3:9}
+h_n=\FLPh\cdot\FLPn.
+\end{equation}
+
+The heat flow out through [eq] is then
+\begin{equation}
+\label{Eq:II:3:10}
+\FLPh\cdot\FLPn\,da.
+\end{equation}
+
+To get the total heat flow through any surface we sum the
+contributions from all the elements of the surface. In other words, we
+integrate ( 3.10 ) over the whole surface:
+ 
+\begin{equation}
+\label{Eq:II:3:11}
+\text{Total heat flow outward through [eq]}=\int_S\FLPh\cdot\FLPn\,da.
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:3:11}
+\begin{pmatrix}
+\text{Total heat flow}\\[-.5ex]
+\text{outward through [eq]}
+\end{pmatrix}
+=\int_S\FLPh\cdot\FLPn\,da.
+\end{equation}
+
+We are also going to call this surface integral “the flux of [eq]
+through the surface.” Originally the word flux meant flow, so that
+the surface integral just means the flow of [eq] through the
+surface. We may think: [eq] is the “current density” of heat flow
+and the surface integral of it is the total heat current directed out
+of the surface; that is, the thermal energy per unit time (joules per
+second).
+
+We would like to generalize this idea to the case where the vector
+does not represent the flow of anything; for instance, it might be the
+electric field. We can certainly still integrate the normal component
+of the electric field over an area if we wish. Although it is not the
+flow of anything, we still call it the “flux.” We say
+ 
+\begin{equation}
+\label{Eq:II:3:12}
+\text{Flux of [eq] through the surface [eq]}=\int_S\FLPE\cdot\FLPn\,da.
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:3:12}
+\begin{pmatrix}
+\text{Flux of [eq]}\\[-.5ex]
+\text{through the}\\[-.5ex]
+\text{surface [eq]}
+\end{pmatrix}
+=\int_S\FLPE\cdot\FLPn\,da.
+\end{equation}
+ 
+We generalize the word “flux” to mean the “surface integral of the
+normal component” of a vector. We will also use the same definition
+even when the surface considered is not a closed one, as it is here.
+
+Returning to the special case of heat flow, let us take a situation in
+which heat is conserved . For example, imagine some material in
+which after an initial heating no further heat energy is generated or
+absorbed. Then, if there is a net heat flow out of a closed surface,
+the heat content of the volume inside must decrease. So, in
+circumstances in which heat would be conserved, we say that
+\begin{equation}
+\label{Eq:II:3:13}
+\int_S\FLPh\cdot\FLPn\,da=-\ddt{Q}{t},
+\end{equation}
+
+where [eq] is the heat inside the surface. The heat flux out of [eq] is
+equal to minus the rate of change with respect to time of the total
+heat [eq] inside of [eq]. This interpretation is possible because we are
+speaking of heat flow and also because we supposed that the heat was
+conserved. We could not, of course, speak of the total heat inside the
+volume if heat were being generated there.
+
+Now we shall point out an interesting fact about the flux of any
+vector. You may think of the heat flow vector if you wish, but what we
+say will be true for any vector field [eq]. Imagine that we have a
+closed surface [eq] that encloses the volume [eq]. We now separate the
+volume into two parts by some kind of a “cut,” as in
+Fig.  3–4 . Now we have two closed surfaces and volumes. The
+volume [eq] is enclosed in the surface [eq], which is made up of part
+of the original surface [eq] and of the surface of the cut, [eq].
+The volume [eq] is enclosed by [eq], which is made up of the rest of
+the original surface [eq] and closed off by the cut [eq]. Now
+consider the following question: Suppose we calculate the flux out
+through surface [eq] and add to it the flux through surface [eq]. Does
+the sum equal the flux through the whole surface that we started with?
+The answer is yes. The flux through the part of the surfaces [eq]
+common to both [eq] and [eq] just exactly cancels out. For the flux of
+the vector [eq] out of [eq] we can write
+ 
+\begin{equation}
+\label{Eq:II:3:14}
+\text{Flux through [eq]}=\int_{S_a}\FLPC\cdot\FLPn\,da+
+\int_{S_{ab}}\FLPC\cdot\FLPn_1\,da,
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+\text{Flux through [eq]}=\\[.75ex]
+\int_{S_a}\FLPC\cdot\FLPn\,da+
+\int_{S_{ab}}\FLPC\cdot\FLPn_1\,da,
+\end{gathered}
+\label{Eq:II:3:14}
+\end{equation}
+ 
+and for the flux out of [eq],
+ 
+\begin{equation}
+\label{Eq:II:3:15}
+\text{Flux through [eq]}=\int_{S_b}\FLPC\cdot\FLPn\,da+
+\int_{S_{ab}}\FLPC\cdot\FLPn_2\,da.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+\text{Flux through [eq]}=\\[.75ex]
+\int_{S_b}\FLPC\cdot\FLPn\,da+
+\int_{S_{ab}}\FLPC\cdot\FLPn_2\,da.
+\end{gathered}
+\label{Eq:II:3:15}
+\end{equation}
+ 
+Note that in the second integral we have written [eq] for the
+outward normal for [eq] when it belongs to [eq], and [eq]
+when it belongs to [eq], as shown in Fig.  3–4 . Clearly,
+[eq], so that
+\begin{equation}
+\label{Eq:II:3:16}
+\int_{S_{ab}}\FLPC\cdot\FLPn_1\,da=-\int_{S_{ab}}\FLPC\cdot\FLPn_2\,da.
+\end{equation}
+
+If we now add Eqs. ( 3.14 ) and ( 3.15 ), we see that the sum of the fluxes through [eq] and [eq] is just the sum of two integrals which, taken together, give the flux through the original surface [eq].
+
+We see that the flux through the complete outer surface [eq] can be
+considered as the sum of the fluxes from the two pieces into which the
+volume was broken. We can similarly subdivide again—say by
+cutting [eq] into two pieces. You see that the same arguments apply. So
+for any way of dividing the original volume, it must be generally
+true that the flux through the outer surface, which is the original
+integral, is equal to a sum of the fluxes out of all the little interior
+pieces.
+
+We now take the special case of a small cube 1 
+and find an interesting formula for the flux out of it. Consider a
+cube whose edges are lined up with the axes as in Fig.  3–5 .
+Let us suppose that the coordinates of the corner nearest the origin are
+[eq], [eq], [eq]. Let [eq] be the length of the cube in the [eq]-direction,
+[eq] be the length in the [eq]-direction, and [eq] be the
+length in the [eq]-direction. We wish to find the flux of a vector
+field [eq] through the surface of the cube. We shall do this by
+making a sum of the fluxes through each of the six faces. First,
+consider the face marked [eq] in the figure. The flux outward on
+this face is the negative of the [eq]-component of [eq], integrated
+over the area of the face. This flux is
+\begin{equation*}
+-\int C_x\,dy\,dz.
+\end{equation*}
+
+Since we are considering a small cube, we can approximate this
+integral by the value of [eq] at the center of the face—which we
+call the point [eq]—multiplied by the area of the face, $\Delta
+y\,\Delta z$:
+\begin{equation*}
+\text{Flux out of [eq]}=-C_x(1)\,\Delta y\,\Delta z.
+\end{equation*}
+
+Similarly, for the flux out of face [eq], we write
+\begin{equation*}
+\text{Flux out of [eq]}=C_x(2)\,\Delta y\,\Delta z.
+\end{equation*}
+
+Now [eq] and [eq] are, in general, slightly different.
+If [eq] is small enough, we can write
+\begin{equation*}
+C_x(2)=C_x(1)+\ddp{C_x}{x}\,\Delta x.
+\end{equation*}
+
+There are, of course, more terms, but they will involve [eq]
+and higher powers, and so will be negligible if we consider only the
+limit of small [eq]. So the flux through face [eq] is
+\begin{equation*}
+\text{Flux out of [eq]}=\biggl[C_x(1)+\ddp{C_x}{x}\,\Delta
+x\biggr]\,\Delta y\,\Delta z.
+\end{equation*}
+
+Summing the fluxes for faces [eq] and [eq], we get
+\begin{equation*}
+\text{Flux out of [eq] and [eq]}=\ddp{C_x}{x}\,\Delta x\,\Delta
+y\,\Delta z.
+\end{equation*}
+
+The derivative should really be evaluated at the center of face [eq];
+that is, at [eq]. But in the limit of
+an infinitesimal cube, we make a negligible error if we evaluate it at
+the corner [eq].
+
+Applying the same reasoning to each of the other pairs of faces, we
+have
+\begin{equation*}
+\text{Flux out of [eq] and [eq]}=\ddp{C_y}{y}\,\Delta x\,\Delta y\,\Delta z
+\end{equation*}
+and
+\begin{equation*}
+\text{Flux out of [eq] and [eq]}=\ddp{C_z}{z}\,\Delta x\,\Delta y\,\Delta z.
+\end{equation*}
+
+The total flux through all the faces is the sum of these terms. We
+find that
+\begin{equation*}
+\underset{\text{cube}}{\int}\FLPC\cdot\FLPn\,da=
+\biggl(\ddp{C_x}{x}+\ddp{C_y}{y}+\ddp{C_z}{z}\biggr)\Delta x\,\Delta
+y\,\Delta z,
+\end{equation*}
+
+and the sum of the derivatives is just [eq]. Also, $\Delta
+x\,\Delta y\,\Delta z=\Delta V$, the volume of the cube. So we can say
+that for an infinitesimal cube 
+\begin{equation}
+\label{Eq:II:3:17}
+\underset{\text{surface}}{\int}\FLPC\cdot\FLPn\,da=
+(\FLPdiv{\FLPC})\,\Delta V.
+\end{equation}
+
+We have shown that the outward flux from the surface of an
+infinitesimal cube is equal to the divergence of the vector multiplied
+by the volume of the cube. We now see the “meaning” of the
+divergence of a vector. The divergence of a vector at the point [eq] is
+the flux—the outgoing “flow” of [eq]— per unit volume ,
+in the neighborhood of [eq].
+
+We have connected the divergence of [eq] to the flux of [eq] out
+of each infinitesimal volume. For any finite volume we can use the
+fact we proved above—that the total flux from a volume is the sum of
+the fluxes out of each part. We can, that is, integrate the divergence
+over the entire volume. This gives us the theorem that the integral of
+the normal component of any vector over any closed surface can also be
+written as the integral of the divergence of the vector over the
+volume enclosed by the surface. This theorem is named after
+Gauss.
+ 
+   Gauss’ Theorem 
+\begin{equation}
+\label{Eq:II:3:18}
+\int_S\FLPC\cdot\FLPn\,da=\int_V\FLPdiv{\FLPC}\,dV,
+\end{equation}
+
+where [eq] is any closed surface and [eq] is the volume inside it.
+
+Let’s consider an example of the use of this theorem, just to get
+familiar with it. Suppose we take again the case of heat flow in, say,
+a metal. Suppose we have a simple situation in which all the heat has
+been previously put in and the body is just cooling off. There are no
+sources of heat, so that heat is conserved. Then how much heat is
+there inside some chosen volume at any time? It must be
+ decreasing by just the amount that flows out of the surface of
+the volume. If our volume is a little cube, we would write, following
+Eq. ( 3.17 ),
+\begin{equation}
+\label{Eq:II:3:19}
+\text{Heat out}=\underset{\text{cube}}{\int}\FLPh\cdot\FLPn\,da=
+\FLPdiv{\FLPh}\,\Delta V.
+\end{equation}
+
+But this must equal the rate of loss of the heat inside the cube. If [eq]
+is the heat per unit volume, the heat in the cube is [eq], and
+the rate of loss is
+\begin{equation}
+\label{Eq:II:3:20}
+-\ddp{}{t}(q\,\Delta V)=-\ddp{q}{t}\,\Delta V.
+\end{equation}
+
+Comparing ( 3.19 ) and ( 3.20 ), we see that
+\begin{equation}
+\label{Eq:II:3:21}
+-\ddp{q}{t}=\FLPdiv{\FLPh}.
+\end{equation}
+
+Take careful note of the form of this equation; the form appears often
+in physics. It expresses a conservation law—here the conservation of
+heat. We have expressed the same physical fact in another way in
+Eq. ( 3.13 ). Here we have the differential form of a
+conservation equation, while Eq. ( 3.13 ) is the
+ integral form.
+
+We have obtained Eq. ( 3.21 ) by applying
+Eq. ( 3.13 ) to an infinitesimal cube. We can also go the
+other way. For a big volume [eq] bounded by [eq], Gauss’ law says that
+\begin{equation}
+\label{Eq:II:3:22}
+\int_S\FLPh\cdot\FLPn\,da=\int_V\FLPdiv{\FLPh}\,dV.
+\end{equation}
+
+Using ( 3.21 ), the integral on the right-hand side is found
+to be just [eq], and again we have Eq. ( 3.13 ).
+
+Now let’s consider a different case. Imagine that we have a block of
+material and that inside it there is a very tiny hole in which some
+chemical reaction is taking place and generating heat. Or we could
+imagine that there are some wires running into a tiny resistor that is
+being heated by an electric current. We shall suppose that the heat is
+generated practically at a point, and let [eq] represent the energy
+liberated per second at that point. We shall suppose that in the rest
+of the volume heat is conserved, and that the heat generation has been
+going on for a long time—so that now the temperature is no longer
+changing anywhere. The problem is: What does the heat vector [eq]
+look like at various places in the metal? How much heat flow is there
+at each point?
+
+We know that if we integrate the normal component of [eq] over a
+closed surface that encloses the source, we will always get [eq]. All
+the heat that is being generated at the point source must flow out
+through the surface, since we have supposed that the flow is
+steady. We have the difficult problem of finding a vector field which,
+when integrated over any surface, always gives [eq]. We can, however,
+find the field rather easily by taking a somewhat special surface. We
+take a sphere of radius [eq], centered at the source, and assume that
+the heat flow is radial (Fig.  3–6 ). Our intuition tells
+us that [eq] should be radial if the block of material is large and
+we don’t get too close to the edges, and it should also have the same
+magnitude at all points on the sphere. You see that we are adding a
+certain amount of guesswork—usually called “physical
+intuition”—to our mathematics in order to find the answer.
+
+When [eq] is radial and spherically symmetric, the integral of the
+normal component of [eq] over the area is very simple, because the
+normal component is just the magnitude of [eq] and is constant. The
+area over which we integrate is [eq]. We have then that
+\begin{equation}
+\label{Eq:II:3:23}
+\int_S\FLPh\cdot\FLPn\,da=h\cdot4\pi R^2
+\end{equation}
+
+(where [eq] is the magnitude of [eq]). This integral should equal [eq],
+the rate at which heat is produced at the source. We get
+\begin{equation}
+h=\frac{W}{4\pi R^2},\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:3:24}
+\FLPh=\frac{W}{4\pi R^2}\,\FLPe_{r},
+\end{equation}
+where, as usual, [eq] represents a unit vector in the radial
+direction. Our result says that [eq] is proportional to [eq] and
+varies inversely as the square of the distance from the source.
+
+The result we have just obtained applies to the heat flow in the
+vicinity of a point source of heat. Let’s now try to find the
+equations that hold in the most general kind of heat flow, keeping
+only the condition that heat is conserved. We will be dealing only
+with what happens at places outside of any sources or absorbers of
+heat.
+
+The differential equation for the conduction of heat was derived in
+Chapter  2 . According to Eq. ( 2.44 ),
+\begin{equation}
+\label{Eq:II:3:25}
+\FLPh=-\kappa\,\FLPgrad{T}.
+\end{equation}
+
+(Remember that this relationship is an approximate one, but fairly
+good for some materials like metals.) It is applicable, of course,
+only in regions of the material where there is no generation or
+absorption of heat. We derived above another relation,
+Eq. ( 3.21 ), that holds when heat is conserved. If we combine
+that equation with ( 3.25 ), we get
+\begin{equation}
+-\ddp{q}{t} =\FLPdiv{\FLPh}=-\FLPdiv{(\kappa\,\FLPgrad{T})},\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:3:26}
+\ddp{q}{t} =\kappa\,\FLPdiv{\FLPgrad{T}}=\kappa\,\nabla^2T,
+\end{equation}
+
+if [eq] is a constant. You remember that [eq] is the amount of heat
+in a unit volume and [eq] is the Laplacian
+operator
+\begin{equation*}
+\nabla^2=\frac{\partial^2}{\partial
+x^2}+\frac{\partial^2}{\partial y^2}+ \frac{\partial^2}{\partial z^2}.
+\end{equation*}
+
+If we now make one more assumption we can obtain a very interesting
+equation. We assume that the temperature of the material is
+proportional to the heat content per unit volume—that is, that the
+material has a definite specific heat. When this assumption is valid
+(as it often is), we can write
+\begin{equation}
+\Delta q=c_v\,\Delta T\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:3:27}
+\ddp{q}{t}=c_v\,\ddp{T}{t}.
+\end{equation}
+
+The rate of change of heat is proportional to the rate of change of temperature. The constant of proportionality [eq] is, here, the specific heat per unit volume of the material. Using Eq. ( 3.27 ) with ( 3.26 ), we get \begin{equation}
+\label{Eq:II:3:28}
+\ddp{T}{t}=\frac{\kappa}{c_v}\,\nabla^2T.
+\end{equation}
+
+We find that the time rate of change of [eq]—at every
+point—is proportional to the Laplacian of [eq], which is the second
+derivative of its spatial dependence. We have a differential
+equation—in [eq], [eq], [eq], and [eq]—for the temperature [eq].
+
+The differential equation ( 3.28 ) is called the heat
+diffusion equation . It is often written as
+\begin{equation}
+\label{Eq:II:3:29}
+\ddp{T}{t}=D\,\nabla^2T,
+\end{equation}
+
+where [eq] is called the diffusion constant, and is here equal
+to [eq].
+
+The diffusion equation appears in many physical problems—in the
+diffusion of gases, in the diffusion of neutrons, and in others. We
+have already discussed the physics of some of these phenomena in
+Chapter  43 of Vol. I. Now you have the complete
+equation that describes diffusion in the most general possible
+situation. At some later time we will take up ways of solving the
+diffusion equation to find how the temperature varies in particular
+cases. We turn back now to consider other theorems about vector
+fields.
+
+We wish now to look at the curl in somewhat the same way we looked at
+the divergence. We obtained Gauss’ theorem by considering the integral
+over a surface, although it was not obvious at the beginning that we
+were going to be dealing with the divergence. How did we know that we
+were supposed to integrate over a surface in order to get the
+divergence? It was not at all clear that this would be the result. And
+so with an apparent equal lack of justification, we shall calculate
+something else about a vector and show that it is related to the
+curl. This time we calculate what is called the circulation of a
+vector field. If [eq] is any vector field, we take its component
+along a curved line and take the integral of this component all the
+way around a complete loop. The integral is called the
+ circulation of the vector field around the loop. We have
+already considered a line integral of [eq] earlier in this
+chapter. Now we do the same kind of thing for any vector field [eq].
+
+Let [eq] be any closed loop in space—imaginary, of course. An
+example is given in Fig.  3–7 . The line integral of the
+tangential component of [eq] around the loop is written as
+\begin{equation}
+\label{Eq:II:3:30}
+\oint_\Gamma C_t\,ds=\oint_\Gamma \FLPC\cdot d\FLPs.
+\end{equation}
+
+You should note that the integral is taken all the way around, not
+from one point to another as we did before. The little circle on the
+integral sign is to remind us that the integral is to be taken all the
+way around. This integral is called the circulation of the vector
+field around the curve [eq]. The name came originally from
+considering the circulation of a liquid. But the name—like
+flux—has been extended to apply to any field even when there is no
+material “circulating.”
+
+Playing the same kind of game we did with the flux, we can show that
+the circulation around a loop is the sum of the circulations around
+two partial loops. Suppose we break up our curve of
+Fig.  3–7 into two loops, by joining two points [eq]
+and [eq] on the original curve by some line that cuts across as shown
+in Fig.  3–8 . There are now two loops, [eq]
+and [eq]. [eq] is made up of [eq], which is that part
+of the original curve to the left of [eq] and [eq],
+plus [eq], the “short cut.” [eq] is made up of the
+rest of the original curve plus the short cut.
+
+The circulation around [eq] is the sum of an integral
+along [eq] and along [eq]. Similarly, the circulation
+around [eq] is the sum of two parts, one along [eq] and the
+other along [eq]. The integral along [eq] will have,
+for the curve [eq], the opposite sign from what it has
+for [eq], because the direction of travel is opposite—we must
+take both our line integrals with the same “sense” of rotation.
+
+Following the same kind of argument we used before, you can see that
+the sum of the two circulations will give just the line integral
+around the original curve [eq]. The parts due to [eq]
+cancel. The circulation around the one part plus the circulation
+around the second part equals the circulation about the outer line. We
+can continue the process of cutting the original loop into any number
+of smaller loops. When we add the circulations of the smaller loops,
+there is always a cancellation of the parts on their adjacent
+portions, so that the sum is equivalent to the circulation around the
+original single loop.
+
+Now let us suppose that the original loop is the boundary of some
+surface. There are, of course, an infinite number of surfaces which
+all have the original loop as the boundary. Our results will not,
+however, depend on which surface we choose. First, we break our
+original loop into a number of small loops that all lie on the surface
+we have chosen, as in Fig.  3–9 . No matter what the
+shape of the surface, if we choose our small loops small enough, we
+can assume that each of the small loops will enclose an area which is
+essentially flat. Also, we can choose our small loops so that each is
+very nearly a square. Now we can calculate the circulation around the
+big loop [eq] by finding the circulations around all of the little
+squares and then taking their sum.
+
+How shall we find the circulation for each little square? One question
+is, how is the square oriented in space? We could easily make the
+calculation if it had a special orientation. For example, if it were
+in one of the coordinate planes. Since we have not assumed anything as
+yet about the orientation of the coordinate axes, we can just as well
+choose the axes so that the one little square we are concentrating on
+at the moment lies in the [eq]-plane, as in Fig.  3–10 . If
+our result is expressed in vector notation, we can say that it will be
+the same no matter what the particular orientation of the plane.
+
+We want now to find the circulation of the field [eq] around our
+little square. It will be easy to do the line integral if we make the
+square small enough that the vector [eq] doesn’t change much along
+any one side of the square. (The assumption is better the smaller the
+square, so we are really talking about infinitesimal squares.)
+Starting at the point [eq]—the lower left corner of the
+figure—we go around in the direction indicated by the arrows. Along
+the first side—marked [eq]—the tangential component is [eq]
+and the distance is [eq]. The first part of the integral
+is [eq]. Along the second leg, we get [eq].
+Along the third, we get [eq], and along the
+fourth, [eq]. The minus signs are required because we
+want the tangential component in the direction of travel. The whole line
+integral is then
+ 
+\begin{equation}
+\label{Eq:II:3:31}
+\oint\FLPC\cdot d\FLPs=C_x(1)\,\Delta x+C_y(2)\,\Delta
+y-C_x(3)\,\Delta x-C_y(4)\,\Delta y.
+\end{equation}
+ 
+ 
+
+\begin{alignat}{3}
+\oint\FLPC\cdot d\FLPs=\;&C_x(1)\,\Delta x&+&\,C_y(2)\,\Delta y\notag\\
+\label{Eq:II:3:31}
+-&C_x(3)\,\Delta x&-&\,C_y(4)\,\Delta y.
+\end{alignat}
+
+Now let’s look at the first and third pieces. Together they are
+\begin{equation}
+\label{Eq:II:3:32}
+[C_x(1)-C_x(3)]\,\Delta x.
+\end{equation}
+You might think that to our approximation the difference is zero. That
+is true to the first approximation. We can be more accurate, however,
+and take into account the rate of change of [eq]. If we do, we may
+write
+\begin{equation}
+\label{Eq:II:3:33}
+C_x(3)=C_x(1)+\ddp{C_x}{y}\,\Delta y.
+\end{equation}
+
+If we included the next approximation, it would involve terms
+in [eq], but since we will ultimately think of the limit as
+[eq], such terms can be neglected. Putting ( 3.33 )
+together with ( 3.32 ), we find that
+\begin{equation}
+\label{Eq:II:3:34}
+[C_x(1)-C_x(3)]\,\Delta x=-\ddp{C_x}{y}\,\Delta x\,\Delta y.
+\end{equation}
+
+The derivative can, to our approximation, be evaluated at [eq].
+
+Similarly, for the other two terms in the circulation, we may write
+\begin{equation}
+\label{Eq:II:3:35}
+C_y(2)\,\Delta y-C_y(4)\,\Delta y=\ddp{C_y}{x}\,\Delta x\,\Delta y.
+\end{equation}
+
+The circulation around our square is then
+\begin{equation}
+\label{Eq:II:3:36}
+\biggl(\ddp{C_y}{x}-\ddp{C_x}{y}\biggr)\Delta x\,\Delta y,
+\end{equation}
+
+which is interesting, because the two terms in the parentheses are
+just the [eq]-component of the curl. Also, we note that $\Delta
+x\,\Delta y$ is the area of our square. So we can write our
+circulation ( 3.36 ) as
+\begin{equation*}
+(\FLPcurl{\FLPC})_z\,\Delta a.
+\end{equation*}
+
+But the [eq]-component really means the component normal to the
+surface element. We can, therefore, write the circulation around a
+differential square in an invariant vector form:
+\begin{equation}
+\label{Eq:II:3:37}
+\oint\FLPC\cdot d\FLPs=(\FLPcurl{\FLPC})_n\,\Delta
+a=(\FLPcurl{\FLPC})\cdot\FLPn\,\Delta a.
+\end{equation}
+
+Our result is: the circulation of any vector [eq] around an
+infinitesimal square is the component of the curl of [eq] normal to
+the surface, times the area of the square.
+
+The circulation around any loop [eq] can now be easily related to
+the curl of the vector field. We fill in the loop with any convenient
+surface [eq], as in Fig.  3–11 , and add the circulations
+around a set of infinitesimal squares in this surface. The sum can be
+written as an integral. Our result is a very useful theorem called
+Stokes’ theorem (after Mr. Stokes).
+ 
+   Stokes’ Theorem 
+\begin{equation}
+\label{Eq:II:3:38}
+\oint_\Gamma\FLPC\cdot d\FLPs=\int_S(\FLPcurl{\FLPC})_n\,da,
+\end{equation}
+
+where [eq] is any surface bounded by [eq].
+
+We must now speak about a convention of signs. In Fig.  3–10 
+the [eq]-axis would point toward you in a “usual”—that is,
+“right-handed”—system of axes. When we took our line integral with a
+“positive” sense of rotation, we found that the circulation was equal
+to the [eq]-component of [eq]. If we had gone around the
+other way, we would have gotten the opposite sign. Now how shall we
+know, in general, what direction to choose for the positive direction of
+the “normal” component of [eq]? The “positive” normal
+must always be related to the sense of rotation, as in
+Fig.  3–10 . It is indicated for the general case in
+Fig.  3–11 .
+
+One way of remembering the relationship is by the “right-hand rule.”
+If you make the fingers of your right hand go around the
+curve [eq], with the fingertips pointed in the direction of the
+positive sense of [eq], then your thumb points in the direction of
+the positive normal to the surface [eq].
+
+We would like, now, to consider some consequences of our new
+theorems. Take first the case of a vector whose curl is
+ everywhere zero. Then Stokes’ theorem says that the circulation
+around any loop is zero. Now if we choose two points [eq] and [eq]
+on a closed curve (Fig.  3–12 ), it follows that the line
+integral of the tangential component from [eq] to [eq] is
+independent of which of the two possible paths is taken. We can
+conclude that the integral from [eq] to [eq] can depend only on the
+location of these points—that is to say, it is some function of
+position only. The same logic was used in Chapter  14 of
+Vol. I, where we proved that if the integral around a closed loop of
+some quantity is always zero, then that integral can be represented as
+the difference of a function of the position of the two ends. This
+fact allowed us to invent the idea of a potential. We proved,
+furthermore, that the vector field was the gradient of this potential
+function (see Eq. ( 14.13 ) of Vol. I).
+
+It follows that any vector field whose curl is zero is equal to the
+gradient of some scalar function. That is, if
+[eq], everywhere, there is some [eq] (psi) for
+which [eq]—a useful idea. We can, if we wish,
+describe this special kind of vector field by means of a scalar field.
+
+Let’s show something else. Suppose we have any scalar
+field [eq] (phi). If we take its gradient, [eq], the
+integral of this vector around any closed loop must be zero. Its line
+integral from point [eq] to point [eq] is [eq]. If
+[eq] and [eq] are the same points, our Theorem 1,
+Eq. ( 3.8 ), tells us that the line integral is zero:
+\begin{equation*}
+\underset{\text{loop}}{\oint}\FLPgrad{\phi}\cdot d\FLPs=0.
+\end{equation*}
+
+Using Stokes’ theorem, we can conclude that
+\begin{equation*}
+\int(\FLPcurl{(\FLPgrad{\phi})})_n\,da=0
+\end{equation*}
+
+over any surface. But if the integral is zero over any 
+surface, the integrand must be zero. So
+\begin{equation*}
+\FLPcurl{(\FLPgrad{\phi})}=\FLPzero,\quad\text{always}.
+\end{equation*}
+
+We proved the same result in Section  2–7 by vector
+algebra.
+
+Let’s look now at a special case in which we fill in a small 
+loop [eq] with a large surface [eq], as indicated in
+Fig.  3–13 . We would like, in fact, to see what happens when
+the loop shrinks down to a point, so that the surface boundary
+disappears—the surface becomes closed. Now if the vector [eq] is
+everywhere finite, the line integral around [eq] must go to zero as
+we shrink the loop—the integral is roughly proportional to the
+circumference of [eq], which goes to zero. According to Stokes’
+theorem, the surface integral of [eq] must also vanish.
+Somehow, as we close the surface we add in contributions that cancel out
+what was there before. So we have a new theorem:
+\begin{equation}
+\label{Eq:II:3:39}
+\underset{\substack{\text{any closed}\\\text{surface}}}{\int}
+(\FLPcurl{\FLPC})_n\,da=0.
+\end{equation}
+
+Now this is interesting, because we already have a theorem about the
+surface integral of a vector field. Such a surface integral is equal
+to the volume integral of the divergence of the vector, according to
+Gauss’ theorem (Eq.  3.18 ). Gauss’ theorem, applied
+to [eq], says
+\begin{equation}
+\label{Eq:II:3:40}
+\underset{\substack{\text{closed}\\\text{surface}}}{\int}
+(\FLPcurl{\FLPC})_n\,da=
+\underset{\substack{\text{volume}\\\text{inside}}}{\int}
+\FLPdiv{(\FLPcurl{\FLPC})}\,dV.
+\end{equation}
+
+So we conclude that the second integral must also be zero:
+\begin{equation}
+\label{Eq:II:3:41}
+\underset{\substack{\text{any}\\\text{volume}}}{\int}
+\FLPdiv{(\FLPcurl{\FLPC})}\,dV=0,
+\end{equation}
+
+and this is true for any vector field [eq] whatever. Since
+Eq. ( 3.41 ) is true for any volume , it must be true
+that at every point in space the integrand is zero. We have
+\begin{equation*}
+\FLPdiv{(\FLPcurl{\FLPC})}=0,\quad\text{always}.
+\end{equation*}
+
+But this is the same result we got from vector
+algebra in
+Section  2–7 . Now we begin to see how everything fits
+together.
+
+Let us summarize what we have found about the vector calculus. These
+are really the salient points of Chapters 2 
+and  3 :

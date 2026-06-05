@@ -1,0 +1,799 @@
+The Feynman Lectures on Physics Vol. II Ch. 18: The Maxwell Equations
+=====================================================================
+
+Sections: 18–1 Maxwell’s equations | 18–2 How the new term works | 18–3 All of classical physics | 18–4 A travelling field | 18–5 The speed of light | 18–6 Solving Maxwell’s equations; the potentials and the wave equation
+
+
+
+In this chapter we come back to the complete set of the four
+Maxwell equations that we took as our starting point in
+Chapter  1 . Until now, we have been studying Maxwell’s
+equations in bits and pieces; it is time to add one final piece, and to
+put them all together. We will then have the complete and correct story
+for electromagnetic fields that may be changing with time in any way.
+Anything said in this chapter that contradicts something said earlier is
+true and what was said earlier is false—because what was said earlier
+applied to such special situations as, for instance, steady currents or
+fixed charges. Although we have been very careful to point out the
+restrictions whenever we wrote an equation, it is easy to forget all of
+the qualifications and to learn too well the wrong equations. Now we are
+ready to give the whole truth, with no qualifications (or almost none).
+
+The complete Maxwell equations are written in Table  18–1 ,
+in words as well as in mathematical symbols. The fact that the words
+are equivalent to the equations should by this time be familiar—you
+should be able to translate back and forth from one form to the other.
+
+The first equation—that the divergence of [eq] is the charge
+density over [eq]—is true in general. In dynamic as well as in
+static fields, Gauss’ law is always valid. The flux of [eq] through
+any closed surface is proportional to the charge inside. The third
+equation is the corresponding general law for magnetic fields. Since
+there are no magnetic charges, the flux of [eq] through any closed
+surface is always zero. The second equation, that the curl of [eq]
+is [eq], is Faraday’s law and was discussed in
+the last two chapters. It also is generally true. The last equation has
+something new. We have seen before only the part of it which holds for
+steady currents. In that case we said that the curl of [eq] is
+[eq], but the correct general equation has a new part that
+was discovered by Maxwell.
+
+Until Maxwell’s work,
+the known laws of electricity and magnetism were
+those we have studied in Chapters 3 
+through  17 . In particular, the equation for the magnetic
+field of steady currents was known only as
+\begin{equation}
+\label{Eq:II:18:1}
+\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO c^2}.
+\end{equation}
+
+Maxwell began by
+considering these known laws and expressing them as
+differential equations, as we have done here. (Although the
+[eq] notation was not yet invented, it is mainly due to
+Maxwell
+that the importance of the combinations of derivatives, which we today
+call the curl and the divergence, first became apparent.) He then
+noticed that there was something strange about Eq. ( 18.1 ).
+If one takes the divergence of this equation, the left-hand side will be
+zero, because the divergence of a curl is always zero. So this equation
+requires that the divergence of [eq] also be zero. But if the
+divergence of [eq] is zero, then the total flux of current out of any
+closed surface is also zero.
+
+The flux of current from a closed surface is the decrease of the
+charge inside the surface. This certainly cannot in general be zero
+because we know that the charges can be moved from one place to
+another. The equation
+\begin{equation}
+\label{Eq:II:18:2}
+\FLPdiv{\FLPj}=-\ddp{\rho}{t}
+\end{equation}
+
+has, in fact, been almost our definition of [eq]. This equation
+expresses the very fundamental law that electric charge is
+conserved—any flow of charge must come from some supply.
+Maxwell
+appreciated this difficulty and proposed that it could be avoided by
+adding the term [eq] to the right-hand side of
+Eq. ( 18.1 ); he then got the fourth equation in
+Table  18–1 :
+\begin{equation*}
+\text{IV.}\quad c^2\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO}+\ddp{\FLPE}{t}.
+\end{equation*}
+
+It was not yet customary in
+Maxwell’s time to think in terms of
+abstract fields. Maxwell
+discussed his ideas in terms of a model in
+which the vacuum was like an elastic solid. He also tried to explain
+the meaning of his new equation in terms of the mechanical
+model. There was much reluctance to accept his theory, first because
+of the model, and second because there was at first no experimental
+justification. Today, we understand better that what counts are the
+equations themselves and not the model used to get them. We may only
+question whether the equations are true or false. This is answered by
+doing experiments, and untold numbers of experiments have confirmed
+Maxwell’s equations. If we take away the scaffolding he used to build
+it, we find that Maxwell’s
+beautiful edifice stands on its own. He
+brought together all of the laws of electricity and magnetism and made
+one complete and beautiful theory.
+
+Let us show that the extra term is just what is required to straighten
+out the difficulty Maxwell
+discovered. Taking the divergence of his
+equation (IV in Table  18–1 ), we must have that the
+divergence of the right-hand side is zero:
+\begin{equation}
+\label{Eq:II:18:3}
+\FLPdiv{\frac{\FLPj}{\epsO}}+\FLPdiv{\ddp{\FLPE}{t}}=0.
+\end{equation}
+
+In the second term, the order of the derivatives with respect to
+coordinates and time can be reversed, so the equation can be rewritten
+as
+\begin{equation}
+\label{Eq:II:18:4}
+\FLPdiv{\FLPj}+\epsO\,\ddp{}{t}\,\FLPdiv{\FLPE}=0.
+\end{equation}
+
+But the first of Maxwell’s equations says that the divergence of [eq]
+is [eq]. Inserting this equality in
+Eq. ( 18.4 ), we get back Eq. ( 18.2 ), which we
+know is true. Conversely, if we accept Maxwell’s equations—and we do
+because no one has ever found an experiment that disagrees with
+them—we must conclude that charge is always conserved.
+
+The laws of physics have no answer to the question: “What happens if
+a charge is suddenly created at this point—what electromagnetic
+effects are produced?” No answer can be given because our equations
+say it doesn’t happen. If it were to happen, we would need new
+laws, but we cannot say what they would be. We have not had the chance
+to observe how a world without charge conservation behaves. According
+to our equations, if you suddenly place a charge at some point, you
+had to carry it there from somewhere else. In that case, we can say
+what would happen.
+
+When we added a new term to the equation for the curl of [eq], we
+found that a whole new class of phenomena was described. We shall see
+that Maxwell’s
+little addition to the equation for [eq]
+also has far-reaching consequences. We can touch on only a few of them
+in this chapter.
+
+As our first example we consider what happens with a spherically
+symmetric radial distribution of current. Suppose we imagine a little
+sphere with radioactive material on it. This radioactive material is
+squirting out some charged particles. (Or we could imagine a large
+block of jello with a small hole in the center into which some charge
+had been injected with a hypodermic needle and from which the charge
+is slowly leaking out.) In either case we would have a current that is
+everywhere radially outward. We will assume that it has the same
+magnitude in all directions.
+
+Let the total charge inside any radius [eq] be [eq]. If the radial
+current density at the same radius is [eq], then
+Eq. ( 18.2 ) requires that [eq] decreases at the rate
+\begin{equation}
+\label{Eq:II:18:5}
+\ddp{Q(r)}{t}=-4\pi r^2j(r).
+\end{equation}
+
+We now ask about the magnetic field produced by the currents in this
+situation. Suppose we draw some loop [eq] on a sphere of radius [eq],
+as shown in Fig.  18–1 . There is some current
+through this loop, so we might expect to find a magnetic field
+circulating in the direction shown.
+
+But we are already in difficulty. How can the [eq] have any
+particular direction on the sphere? A different choice of [eq]
+would allow us to conclude that its direction is exactly opposite to
+that shown. So how can there be any circulation of [eq]
+around the currents?
+
+We are saved by Maxwell’s equation. The circulation of [eq] depends
+not only on the total current through [eq] but also on the
+rate of change with time of the electric flux through it. It
+must be that these two parts just cancel. Let’s see if that works out.
+
+The electric field at the radius [eq] must be [eq]—so
+long as the charge is symmetrically distributed, as we assume. It is
+radial, and its rate of change is then
+\begin{equation}
+\label{Eq:II:18:6}
+\ddp{E}{t}=\frac{1}{4\pi\epsO r^2}\,\ddp{Q}{t}.
+\end{equation}
+
+Comparing this with Eq. ( 18.5 ), we see
+\begin{equation}
+\label{Eq:II:18:7}
+\ddp{E}{t}=-\frac{j}{\epsO}.
+\end{equation}
+
+In Eq. IV the two source terms cancel and the curl of [eq] is
+always zero. There is no magnetic field in our example.
+
+As our second example, we consider the magnetic field of a wire used to
+charge a parallel-plate condenser (see Fig.  18–2 ). If the
+charge [eq] on the plates is changing with time (but not too fast), the
+current in the wires is equal to [eq]. We would expect that this
+current will produce a magnetic field that encircles the wire. Surely,
+the current close to the plate must produce the normal magnetic
+field—it cannot depend on where the current is going.
+
+Suppose we take a loop [eq] which is a circle with radius [eq],
+as shown in part (a) of the figure. The line integral of the magnetic
+field should be equal to the current [eq] divided by [eq]. We
+have
+\begin{equation}
+\label{Eq:II:18:8}
+2\pi rB=\frac{I}{\epsO c^2}.
+\end{equation}
+
+This is what we would get for a steady current, but it is also correct
+with Maxwell’s
+addition, because if we consider the plane surface [eq]
+inside the circle, there are no electric fields on it (assuming the
+wire to be a very good conductor). The surface integral
+of [eq] is zero.
+
+Suppose, however, that we now slowly move the curve [eq] downward.
+We get always the same result until we draw even with the plates of the
+condenser. Then the current [eq] goes to zero. Does the magnetic field
+disappear? That would be quite strange. Let’s see what Maxwell’s
+equation says for the curve [eq], which is a circle of radius [eq]
+whose plane passes between the condenser plates
+[Fig.  18–2 (b)]. The line integral of [eq]
+around [eq] is [eq]. This must equal the time derivative of the flux
+of [eq] through the plane circular surface [eq]. This flux
+of [eq], we know from Gauss’ law, must be equal to [eq] times the
+charge [eq] on one of the condenser plates. We have
+\begin{equation}
+\label{Eq:II:18:9}
+c^2\,2\pi rB=\ddt{}{t}\biggl(\frac{Q}{\epsO}\biggr).
+\end{equation}
+
+That is very convenient. It is the same result we found in
+Eq. ( 18.8 ). Integrating over the changing electric field
+gives the same magnetic field as does integrating over the current in
+the wire. Of course, that is just what Maxwell’s equation says. It is
+easy to see that this must always be so by applying our same arguments
+to the two surfaces [eq] and [eq] that are bounded by the same
+circle [eq] in Fig.  18–2 (b). Through [eq] there is the
+current [eq], but no electric flux. Through [eq] there is no current,
+but an electric flux changing at the rate [eq]. The same [eq] is
+obtained if we use Eq. IV with either surface.
+
+From our discussion so far of
+Maxwell’s new term, you may have the
+impression that it doesn’t add much—that it just fixes up the
+equations to agree with what we already expect. It is true that if we
+just consider Eq. IV by itself , nothing particularly new
+comes out. The words “ by itself ” are, however,
+all-important. Maxwell’s
+small change in Eq. IV, when combined
+with the other equations, does indeed produce much that is new and
+important. Before we take up these matters, however, we want to speak
+more about Table  18–1 .
+
+In Table  18–1 we have all that was known of fundamental
+ classical physics, that is, the physics that was known by
+1905. Here it all is, in one table. With these equations we can
+understand the complete realm of classical physics.
+
+First we have the Maxwell equations—written in both the expanded
+form and the short mathematical form. Then there is the conservation
+of charge, which is even written in parentheses, because the moment we
+have the complete Maxwell equations, we can deduce from them the
+conservation of charge. So the table is even a little redundant. Next,
+we have written the force law, because having all the electric and
+magnetic fields doesn’t tell us anything until we know what they do to
+charges. Knowing [eq] and [eq], however, we can find the force
+on an object with the charge [eq] moving with velocity [eq].
+Finally, having the force doesn’t tell us anything until we
+know what happens when a force pushes on something; we need the law of
+motion, which is that the force is equal to the rate of change of the
+momentum. (Remember? We had that in Volume I.) We even include
+relativity effects by writing the momentum as [eq].
+
+If we really want to be complete, we should add one more
+law—Newton’s law of gravitation—so we put that at the end.
+
+Therefore in one small table we have all the fundamental laws of
+classical physics—even with room to write them out in words and with
+some redundancy. This is a great moment. We have climbed a great
+peak. We are on the top of K2—we are nearly ready for Mount
+Everest, which is quantum mechanics. We have climbed the peak of a
+“Great Divide,” and now we can go down the other side.
+
+We have mainly been trying to learn how to understand the
+equations. Now that we have the whole thing put together, we are going
+to study what the equations mean—what new things they say that we
+haven’t already seen. We’ve been working hard to get up to this
+point. It has been a great effort, but now we are going to have nice
+coasting downhill as we see all the consequences of our
+accomplishment.
+
+Now for the new consequences. They come from putting together all of
+Maxwell’s equations. First, let’s see what would happen in a
+circumstance which we pick to be particularly simple. By assuming that
+all the quantities vary only in one coordinate, we will have a
+one-dimensional problem. The situation is shown in
+Fig.  18–3 . We have a sheet of charge located on the
+[eq]-plane. The sheet is first at rest, then instantaneously given a
+velocity [eq] in the [eq]-direction, and kept moving with this constant
+velocity. You might worry about having such an “infinite”
+acceleration, but it doesn’t really matter; just imagine that the
+velocity is brought to [eq] very quickly. So we have suddenly a surface
+current [eq] ([eq] is the current per unit width in the [eq]-direction). To
+keep the problem simple, we suppose that there is also a stationary
+sheet of charge of opposite sign superposed on the [eq]-plane, so that
+there are no electrostatic effects. Also, although in the figure we show
+only what is happening in a finite region, we imagine that the sheet
+extends to infinity in [eq] and [eq]. In other words, we have a
+situation where there is no current, and then suddenly there is a
+uniform sheet of current. What will happen?
+
+Well, when there is a sheet of current in the plus [eq]-direction,
+there is, as we know, a magnetic field generated which will be in the
+minus [eq]-direction for [eq] and in the opposite direction for
+[eq]. We could find the magnitude of [eq] by using the fact that
+the line integral of the magnetic field will be equal to the current
+over [eq]. We would get that [eq] (since the
+current [eq] in a strip of width [eq] is [eq] and the line integral
+of [eq] is [eq]).
+
+This gives us the field next to the sheet—for small [eq]—but since
+we are imagining an infinite sheet, we would expect the same argument
+to give the magnetic field farther out for larger values of [eq].
+However, that would mean that the moment we turn on the current,
+the magnetic field is suddenly changed from zero to a finite value
+everywhere. But wait! If the magnetic field is suddenly changed, it
+will produce tremendous electrical effects. (If it changes in
+ any way, there are electrical effects.) So because we moved the
+sheet of charge, we make a changing magnetic field, and therefore
+electric fields must be generated. If there are electric fields
+generated, they had to start from zero and change to something
+else. There will be some [eq] that will make a
+contribution, together with the current [eq], to the production of the
+magnetic field. So through the various equations there is a big
+intermixing, and we have to try to solve for all the fields at once.
+
+By looking at the Maxwell equations alone, it is not easy to see
+directly how to get the solution. So we will first show you what the
+answer is and then verify that it does indeed satisfy the
+equations. The answer is the following: The field [eq] that we
+computed is, in fact, generated right next to the current sheet (for
+small [eq]). It must be so, because if we make a tiny loop around the
+sheet, there is no room for any electric flux to go through it. But
+the field [eq] out farther—for larger [eq]—is, at first,
+zero. It stays zero for awhile, and then suddenly turns on. In short,
+we turn on the current and the magnetic field immediately next to it
+turns on to a constant value [eq]; then the turning on of [eq]
+spreads out from the source region. After a certain time, there is a
+uniform magnetic field everywhere out to some value [eq], and then zero
+beyond. Because of the symmetry, it spreads in both the plus and minus
+[eq]-directions.
+
+The [eq]-field does the same thing. Before [eq] (when we turn on
+the current), the field is zero everywhere. Then after the time [eq],
+both [eq] and [eq] are uniform out to the distance [eq], and
+zero beyond. The fields make their way forward like a tidal wave, with
+a front moving at a uniform velocity which turns out to be [eq], but
+for a while we will just call it [eq]. A graph of the magnitude of
+[eq] or [eq] versus [eq], as they appear at the time [eq], is
+shown in Fig.  18–4 (a). Looking again at
+Fig.  18–3 , at the time [eq], the region between [eq]
+is “filled” with the fields, but they have not yet reached beyond. We
+emphasize again that we are assuming that the current sheet and,
+therefore the fields [eq] and [eq], extend infinitely far in both
+the [eq]- and [eq]-directions. (We cannot draw an infinite sheet, so we
+have shown only what happens in a finite area.)
+
+We want now to analyze quantitatively what is happening. To do that,
+we want to look at two cross-sectional views, a top view looking down
+along the [eq]-axis, as shown in Fig.  18–5 , and a side
+view looking back along the [eq]-axis, as shown in
+Fig.  18–6 . Suppose we start with the side view. We see the
+charged sheet moving up; the magnetic field points into the page
+for [eq], and out of the page for [eq], and the electric field is downward
+everywhere—out to [eq].
+
+Let’s see if these fields are consistent with Maxwell’s
+equations. Let’s first draw one of those loops that we use to
+calculate a line integral, say the rectangle [eq] shown in
+Fig.  18–6 . You notice that one side of the rectangle is
+in the region where there are fields, but one side is in the region
+the fields have still not reached. There is some magnetic flux through
+this loop. If it is changing, there should be an emf around it. If the
+wavefront is moving, we will have a changing magnetic flux, because
+the area in which [eq] exists is progressively increasing at the
+velocity [eq]. The flux inside [eq] is [eq] times the part of the
+area inside [eq] which has a magnetic field. The rate of change
+of the flux, since the magnitude of [eq] is constant, is the
+magnitude times the rate of change of the area. The rate of change of
+the area is easy. If the width of the rectangle [eq] is [eq], the
+area in which [eq] exists changes by [eq] in the
+time [eq]. (See Fig.  18–6 .) The rate of change of flux
+is then [eq]. According to Faraday’s law, this should equal minus the
+line integral of [eq] around [eq], which is just [eq]. We
+have the equation
+\begin{equation}
+\label{Eq:II:18:10}
+E=vB.
+\end{equation}
+
+So if the ratio of [eq] to [eq] is [eq], the fields we have assumed will
+satisfy Faraday’s equation.
+
+But that is not the only equation; we have the other equation relating
+[eq] and [eq]:
+\begin{equation}
+\label{Eq:II:18:11}
+c^2\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO}+\ddp{\FLPE}{t}.
+\end{equation}
+
+To apply this equation, we look at the top view in
+Fig.  18–5 . We have seen that this equation will give us the
+value of [eq] next to the current sheet. Also, for any loop drawn outside
+the sheet but behind the wavefront, there is no curl of [eq] nor
+any [eq] or changing [eq], so the equation is correct there. Now let’s
+look at what happens for the curve [eq] that intersects the
+wavefront, as shown in Fig.  18–5 . Here there are no
+currents, so Eq. ( 18.11 ) can be written—in integral
+form—as
+\begin{equation}
+\label{Eq:II:18:12}
+c^2\oint_{\Gamma_1}\FLPB\cdot d\FLPs=\ddt{}{t}\!\!
+\underset{\text{inside [eq]}}{\int}
+\!\FLPE\cdot\FLPn\,da.
+\end{equation}
+
+The line integral of [eq] is just [eq] times [eq]. The rate of change
+of the flux of [eq] is due only to the advancing wavefront. The
+area inside [eq], where [eq] is not zero, is increasing at
+the rate [eq]. The right-hand side of Eq. ( 18.12 ) is
+then [eq]. That equation becomes
+\begin{equation}
+\label{Eq:II:18:13}
+c^2B=Ev.
+\end{equation}
+
+We have a solution in which we have a constant [eq] and a constant [eq]
+behind the front, both at right angles to the direction in which the front is
+moving and at right angles to each other. Maxwell’s equations specify the ratio
+of [eq] to [eq]. From Eqs. ( 18.10 ) and ( 18.13 ),
+\begin{equation*}
+E=vB,\quad\text{and}\quad E=\frac{c^2}{v}\,B.
+\end{equation*}
+
+But one moment! We have found two different conditions on the
+ratio [eq]. Can such a field as we describe really exist? There is,
+of course, only one velocity [eq] for which both of these equations can
+hold, namely [eq]. The wavefront must travel with the
+velocity [eq]. We have an example in which the electrical influence from a
+current propagates at a certain finite velocity [eq].
+
+Now let’s ask what happens if we suddenly stop the motion of the
+charged sheet after it has been on for a short time [eq]. We can see
+what will happen by the principle of superposition. We had a current
+that was zero and then was suddenly turned on. We know the solution
+for that case. Now we are going to add another set of fields. We take
+another charged sheet and suddenly start it moving, in the opposite
+direction with the same speed, only at the time [eq] after we started
+the first current. The total current of the two added together is
+first zero, then on for a time [eq], then off again—because the two
+currents cancel. We have a square “pulse” of current.
+
+The new negative current produces the same fields as the positive one,
+only with all the signs reversed and, of course, delayed in time
+by [eq]. A wavefront again travels out at the velocity [eq]. At the
+time [eq] it has reached the distance [eq], as shown in
+Fig.  18–4 (b). So we have two “blocks” of field marching
+out at the speed [eq], as in parts (a) and (b) of Fig.  18–4 .
+The combined fields are as shown in part (c) of the figure. The fields
+are zero for [eq], they are constant (with the values we found above)
+between [eq] and [eq], and again zero for [eq].
+
+In short, we have a little piece of field—a block of
+thickness [eq]—which has left the current sheet and is travelling through
+space all by itself. The fields have “taken off”; they are
+propagating freely through space, no longer connected in any way with
+the source. The caterpillar has turned into a butterfly!
+
+How can this bundle of electric and magnetic fields maintain itself? The
+answer is: by the combined effects of the Faraday law,
+[eq], and the new term of
+Maxwell,
+[eq]. They cannot help maintaining
+themselves. Suppose the magnetic field were to disappear. There would be
+a changing magnetic field which would produce an electric field. If this
+electric field tries to go away, the changing electric field would
+create a magnetic field back again. So by a perpetual interplay—by the
+swishing back and forth from one field to the other—they must go on
+forever. It is impossible for them to disappear. 1 They maintain
+themselves in a kind of a dance—one making the other, the second
+making the first—propagating onward through space.
+
+We have a wave which leaves the material source and goes outward at
+the velocity [eq], which is the speed of light. But let’s go back a
+moment. From a historical point of view, it wasn’t known that the
+coefficient [eq] in Maxwell’s equations was also the speed of light
+propagation. There was just a constant in the equations. We have
+called it [eq] from the beginning, because we knew what it would turn
+out to be. We didn’t think it would be sensible to make you learn the
+formulas with a different constant and then go back to substitute [eq]
+wherever it belonged. From the point of view of electricity and
+magnetism, however, we just start out with two constants, [eq]
+and [eq], that appear in the equations of electrostatics and
+magnetostatics:
+\begin{equation}
+\label{Eq:II:18:14}
+\FLPdiv{\FLPE} =\frac{\rho}{\epsO}
+\end{equation}
+
+and
+\begin{equation}
+\label{Eq:II:18:15}
+\FLPcurl{\FLPB} =\frac{\FLPj}{\epsO c^2}.
+\end{equation}
+
+If we take any arbitrary definition of a unit of charge, we can
+determine experimentally the constant [eq] required in
+Eq. ( 18.14 )—say by measuring the force between two unit
+charges at rest, using Coulomb’s law. We must also determine
+experimentally the constant [eq] that appears in
+Eq. ( 18.15 ), which we can do, say, by measuring the force
+between two unit currents. (A unit current means one unit of charge per
+second.) The ratio of these two experimental constants is [eq]—just
+another “electromagnetic constant.”
+
+Notice now that this constant [eq] is the same no matter what we
+choose for our unit of charge. If we put twice as much
+“charge”—say twice as many proton charges—in our “unit” of
+charge, [eq] would need to be one-fourth as large. When we pass two
+of these “unit” currents through two wires, there will be twice as
+much “charge” per second in each wire, so the force between two
+wires is four times larger. The constant [eq] must be reduced
+by one-fourth. But the ratio [eq] is unchanged.
+
+So just by experiments with charges and currents we find a
+number [eq] which turns out to be the square of the velocity of propagation
+of electromagnetic influences. From static measurements—by measuring
+the forces between two unit charges and between two unit currents—we
+find that [eq] meters/sec. When
+Maxwell first made this
+calculation with his equations, he said that bundles of electric and
+magnetic fields should be propagated at this speed. He also remarked
+on the mysterious coincidence that this was the same as the speed of
+light. “We can scarcely avoid the inference,” said
+Maxwell, “that
+light consists in the transverse undulations of the same medium which
+is the cause of electric and magnetic phenomena.”
+
+Maxwell had made one of the
+great unifications of physics. Before his
+time, there was light, and there was electricity and magnetism. The
+latter two had been unified by the experimental work of
+Faraday, Oersted, and Ampère. Then, all of a
+sudden, light was no longer “something else,” but was only electricity
+and magnetism in this new form—little pieces of electric and magnetic
+fields which propagate through space on their own.
+
+We have called your attention to some characteristics of this special
+solution, which turn out to be true, however, for any 
+electromagnetic wave: that the magnetic field is perpendicular to the
+direction of motion of the wavefront; that the electric field is
+likewise perpendicular to the direction of motion of the wavefront;
+and that the two vectors [eq] and [eq] are perpendicular to each
+other. Furthermore, the magnitude of the electric field [eq] is equal
+to [eq] times the magnitude of the magnetic field [eq]. These three
+facts—that the two fields are transverse to the direction of
+propagation, that [eq] is perpendicular to [eq], and that
+[eq]—are generally true for any electromagnetic wave. Our special
+case is a good one—it shows all the main features of electromagnetic
+waves.
+
+Now we would like to do something mathematical; we want to write
+Maxwell’s equations in a simpler form. You may consider that we are
+complicating them, but if you will be patient a little bit, they will
+suddenly come out simpler. Although by this time you are thoroughly
+used to each of the Maxwell equations, there are many pieces that must
+all be put together. That’s what we want to do.
+
+We begin with [eq]—the simplest of the equations. We
+know that it implies that [eq] is the curl of something. So, if we
+write
+\begin{equation}
+\label{Eq:II:18:16}
+\FLPB=\FLPcurl{\FLPA},
+\end{equation}
+
+we have already solved one of Maxwell’s equations. (Incidentally, you
+appreciate that it remains true that another vector [eq] would be
+just as good if [eq]—where [eq] is any
+scalar field—because the curl of [eq] is zero,
+and [eq] is still the same. We have talked about that before.)
+
+We take next the Faraday law, [eq],
+because it doesn’t involve any currents or charges. If we write
+[eq] as [eq] and differentiate with respect to [eq], we
+can write Faraday’s law in the form
+\begin{equation*}
+\FLPcurl{\FLPE}=-\ddp{}{t}\,\FLPcurl{\FLPA}.
+\end{equation*}
+
+Since we can differentiate either with respect to time or to space
+first, we can also write this equation as
+\begin{equation}
+\label{Eq:II:18:17}
+\FLPcurl{\biggl(\FLPE+\ddp{\FLPA}{t}\biggr)}=\FLPzero.
+\end{equation}
+
+We see that [eq] is a vector whose curl is equal to
+zero. Therefore that vector is the gradient of something. When we
+worked on electrostatics, we had [eq], and then
+we decided that [eq] itself was the gradient of something. We took
+it to be the gradient of [eq] (the minus for technical
+convenience). We do the same thing for [eq]; we set
+\begin{equation}
+\label{Eq:II:18:18}
+\FLPE+\ddp{\FLPA}{t}=-\FLPgrad{\phi}.
+\end{equation}
+
+We use the same symbol [eq] so that, in the electrostatic case where
+nothing changes with time and the [eq] term disappears,
+[eq] will be our old [eq]. So Faraday’s equation can
+be put in the form
+\begin{equation}
+\label{Eq:II:18:19}
+\FLPE=-\FLPgrad{\phi}-\ddp{\FLPA}{t}.
+\end{equation}
+
+We have solved two of Maxwell’s equations already, and we have found
+that to describe the electromagnetic fields [eq] and [eq], we
+need four potential functions: a scalar potential [eq] and a vector
+potential [eq], which is, of course, three functions.
+
+Now that [eq] determines part of [eq], as well as [eq], what
+happens when we change [eq] to [eq]? In
+general, [eq] would change if we didn’t take some special
+precaution. We can, however, still allow [eq] to be changed in this
+way without affecting the fields [eq] and [eq]—that is,
+without changing the physics—if we always change [eq] and [eq]
+ together by the rules
+\begin{equation}
+\label{Eq:II:18:20}
+\FLPA'=\FLPA+\FLPgrad{\psi},\quad
+\phi'=\phi-\ddp{\psi}{t}.
+\end{equation}
+
+Then neither [eq] nor [eq], obtained from Eq. ( 18.19 ),
+is changed.
+
+Previously, we chose to make [eq], to make the equations
+of statics somewhat simpler. We are not going to do that now; we are
+going to make a different choice. But we’ll wait a bit before saying
+what the choice is, because later it will be clear why the
+choice is made.
+
+Now we return to the two remaining Maxwell equations which will give us
+relations between the potentials and the sources [eq] and [eq]. Once we can
+determine [eq] and [eq] from the currents and charges, we can always get
+[eq] and [eq] from Eqs. ( 18.16 )
+and ( 18.19 ), so we will have another form of Maxwell’s equations.
+
+We begin by substituting Eq. ( 18.19 ) into
+[eq]; we get
+\begin{equation*}
+\FLPdiv{\biggl(-\FLPgrad{\phi}-\ddp{\FLPA}{t}\biggr)}=\frac{\rho}{\epsO},
+\end{equation*}
+
+which we can write also as
+\begin{equation}
+\label{Eq:II:18:21}
+-\nabla^2\phi-\ddp{}{t}\,\FLPdiv{\FLPA}=\frac{\rho}{\epsO}.
+\end{equation}
+
+This is one equation relating [eq] and [eq] to the sources.
+
+Our final equation will be the most complicated. We start by rewriting
+the fourth Maxwell equation as
+\begin{equation*}
+c^2\FLPcurl{\FLPB}-\ddp{\FLPE}{t}=\frac{\FLPj}{\epsO},
+\end{equation*}
+
+and then substitute for [eq] and [eq] in terms of the potentials, using
+Eqs. ( 18.16 ) and ( 18.19 ):
+\begin{equation*}
+c^2\FLPcurl{(\FLPcurl{\FLPA})}-\ddp{}{t}\,
+\biggl(-\FLPgrad{\phi}-\ddp{\FLPA}{t}\biggr)=
+\frac{\FLPj}{\epsO}.
+\end{equation*}
+
+The first term can be rewritten using the algebraic identity:
+[eq] [eq];
+we get
+ 
+\begin{equation}
+\label{Eq:II:18:22}
+-c^2\nabla^2\FLPA+c^2\FLPgrad{(\FLPdiv{\FLPA})}+
+\ddp{}{t}\,\FLPgrad{\phi}+\frac{\partial^2\FLPA}{\partial t^2}=
+\frac{\FLPj}{\epsO}.
+\end{equation}
+ 
+ 
+\begin{align}
+-c^2\nabla^2\FLPA&+c^2\FLPgrad{(\FLPdiv{\FLPA})}\notag\\[.5ex]
+\label{Eq:II:18:22}
+&+\ddp{}{t}\,\FLPgrad{\phi}+\frac{\partial^2\FLPA}{\partial t^2}=
+\frac{\FLPj}{\epsO}.
+\end{align}
+ 
+
+
+It’s not very simple!
+
+Fortunately, we can now make use of our freedom to choose arbitrarily
+the divergence of [eq]. What we are going to do is to use our
+choice to fix things so that the equations for [eq] and for [eq]
+are separated but have the same form. We can do this by
+taking 2 
+\begin{equation}
+\label{Eq:II:18:23}
+\FLPdiv{\FLPA}=-\frac{1}{c^2}\,\ddp{\phi}{t}.
+\end{equation}
+
+When we do that, the two middle terms in [eq] and [eq] in
+Eq. ( 18.22 ) cancel, and that equation becomes much simpler:
+\begin{equation}
+\label{Eq:II:18:24}
+\nabla^2\FLPA-\frac{1}{c^2}\,\frac{\partial^2\FLPA}{\partial t^2}=
+-\frac{\FLPj}{\epsO c^2}.
+\end{equation}
+
+And our equation for [eq]—Eq. ( 18.21 )—takes on the
+same form:
+\begin{equation}
+\label{Eq:II:18:25}
+\nabla^2\phi-\frac{1}{c^2}\,\frac{\partial^2\phi}{\partial t^2}=
+-\frac{\rho}{\epsO}.
+\end{equation}
+
+What a beautiful set of equations! They are beautiful, first, because
+they are nicely separated—with the charge density, goes [eq]; with
+the current, goes [eq]. Furthermore, although the left side looks a
+little funny—a Laplacian together with a [eq]—when we
+unfold it we see
+\begin{equation}
+\label{Eq:II:18:26}
+\frac{\partial^2\phi}{\partial x^2}+
+\frac{\partial^2\phi}{\partial y^2}+
+\frac{\partial^2\phi}{\partial z^2}-
+\frac{1}{c^2}\,\frac{\partial^2\phi}{\partial t^2}=
+-\frac{\rho}{\epsO}.
+\end{equation}
+
+It has a nice symmetry in [eq], [eq], [eq], [eq]—the [eq] is
+necessary because, of course, time and space are different;
+they have different units.
+
+Maxwell’s equations have led us to a new kind of equation for the
+potentials [eq] and [eq] but to the same mathematical form for
+all four functions [eq], [eq], [eq], and [eq]. Once we learn how
+to solve these equations, we can get [eq] and [eq] from
+[eq] and [eq]. We have
+another form of the electromagnetic laws exactly equivalent to
+Maxwell’s equations, and in many situations they are much simpler to
+handle.
+
+We have, in fact, already solved an equation much like
+Eq. ( 18.26 ). When we studied sound in
+Chapter  47 of Vol. I, we had an equation of the form
+\begin{equation*}
+\frac{\partial^2\phi}{\partial x^2}=
+\frac{1}{c^2}\,\frac{\partial^2\phi}{\partial t^2},
+\end{equation*}
+
+and we saw that it described the propagation of waves in the
+[eq]-direction at the speed [eq]. Equation ( 18.26 ) is the
+corresponding wave equation for three dimensions. So in regions where
+there are no longer any charges and currents, the solution of these
+equations is not that [eq] and [eq] are zero. (Although
+that is indeed one possible solution.) There are solutions in which
+there is some set of [eq] and [eq] which are changing in time but
+always moving out at the speed [eq]. The fields travel onward through
+free space, as in our example at the beginning of the chapter.
+
+With Maxwell’s
+new term in Eq. IV, we have been able to write the
+field equations in terms of [eq] and [eq] in a form that is
+simple and that makes immediately apparent that there are
+electromagnetic waves. For many practical purposes, it will still be
+convenient to use the original equations in terms of [eq]
+and [eq]. But they are on the other side of the mountain we have
+already climbed. Now we are ready to cross over to the other side of
+the peak. Things will look different—we are ready for some new and
+beautiful views.

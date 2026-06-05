@@ -1,0 +1,1153 @@
+The Feynman Lectures on Physics Vol. II Ch. 17: The Laws of Induction
+=====================================================================
+
+Sections: 17–1 The physics of induction | 17–2 Exceptions to the “flux rule” | 17–3 Particle acceleration by an induced electric field; the betatron | 17–4 A paradox | 17–5 Alternating-current generator | 17–6 Mutual inductance | 17–7 Self-inductance | 17–8 Inductance and magnetic energy
+
+
+
+In the last chapter we described many phenomena which show that the
+effects of induction are quite complicated and interesting. Now we
+want to discuss the fundamental principles which govern these
+effects. We have already defined the emf in a conducting circuit as
+the total accumulated force on the charges throughout the length of
+the loop. More specifically, it is the tangential component of the
+force per unit charge, integrated along the wire once around the
+circuit. This quantity is equal, therefore, to the total work done on
+a single charge that travels once around the circuit.
+
+We have also given the “flux rule,” which says that
+the emf is equal to the rate at which the magnetic flux through such a
+conducting circuit is changing. Let’s see if we can understand why that
+might be. First, we’ll consider a case in which the flux changes because
+a circuit is moved in a steady field.
+
+In Fig.  17–1 we show a simple loop of wire whose
+dimensions can be changed. The loop has two parts, a fixed U-shaped
+part (a) and a movable crossbar (b) that can slide along the two legs
+of the U. There is always a complete circuit, but its area is
+variable. Suppose we now place the loop in a uniform magnetic field
+with the plane of the U perpendicular to the field. According to the
+rule, when the crossbar is moved there should be in the loop an emf
+that is proportional to the rate of change of the flux through the
+loop. This emf will cause a current in the loop. We will assume that
+there is enough resistance in the wire that the currents are
+small. Then we can neglect any magnetic field from this current.
+
+The flux through the loop is [eq], so the “flux rule” would give
+for the emf—which we write as [eq]—
+\begin{equation*}
+\emf=wB\,\ddt{L}{t}=wBv,
+\end{equation*}
+
+where [eq] is the speed of translation of the crossbar.
+
+Now we should be able to understand this result from the magnetic
+[eq] forces on the charges in the moving crossbar. These
+charges will feel a force, tangential to the wire, equal to [eq] per
+unit charge. It is constant along the length [eq] of the crossbar and
+zero elsewhere, so the integral is
+\begin{equation*}
+\emf=wvB,
+\end{equation*}
+
+which is the same result we got from the rate of change of the flux.
+
+The argument just given can be extended to any case where there is a
+fixed magnetic field and the wires are moved. One can prove, in
+general, that for any circuit whose parts move in a fixed magnetic
+field the emf is the time derivative of the flux, regardless of the
+shape of the circuit.
+
+On the other hand, what happens if the loop is stationary and the
+magnetic field is changed? We cannot deduce the answer to this
+question from the same argument. It was
+Faraday’s discovery—from
+experiment—that the “flux rule” is still correct no matter why the
+flux changes. The force on electric charges is given in complete
+generality by [eq]; there are no new
+special “forces due to changing magnetic fields.” Any forces on
+charges at rest in a stationary wire come from the
+[eq] term. Faraday’s
+observations led to the discovery that electric and
+magnetic fields are related by a new law: in a region where the
+magnetic field is changing with time, electric fields are
+generated. It is this electric field which drives the electrons around
+the wire—and so is responsible for the emf in a stationary circuit
+when there is a changing magnetic flux.
+
+The general law for the electric field associated with a changing
+magnetic field is
+\begin{equation}
+\label{Eq:II:17:1}
+\FLPcurl{\FLPE}=-\ddp{\FLPB}{t}.
+\end{equation}
+
+We will call this Faraday’s law. It was discovered
+by Faraday but was first
+written in differential form by Maxwell, as one of his equations. Let’s see how this equation gives
+the “flux rule” for circuits.
+
+Using Stokes’ theorem, this law can be written in integral form as
+ 
+\begin{equation}
+\label{Eq:II:17:2}
+\oint_\Gamma\FLPE\cdot d\FLPs=
+\int_S(\FLPcurl{\FLPE})\cdot\FLPn\,da=
+-\int_S\ddp{\FLPB}{t}\cdot\FLPn\,da,
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+\oint_\Gamma\FLPE\cdot d\FLPs &=
+\int_S(\FLPcurl{\FLPE})\cdot\FLPn\,da\\[1ex]
+&= -\int_S\ddp{\FLPB}{t}\cdot\FLPn\,da,
+\end{aligned}
+\label{Eq:II:17:2}
+\end{equation}
+ 
+where, as usual, [eq] is any closed curve and [eq] is any surface
+bounded by it. Here, remember, [eq] is a mathematical curve
+fixed in space, and [eq] is a fixed surface. Then the time derivative
+can be taken outside the integral and we have
+\begin{equation}
+\begin{aligned}
+\oint_\Gamma\FLPE\cdot d\FLPs& =-\ddt{}{t}\int_S\FLPB\cdot\FLPn\,da \\[1ex]
+&=-\ddt{}{t}(\text{flux through [eq]}).
+\end{aligned}
+\label{Eq:II:17:3}
+\end{equation}
+
+Applying this relation to a curve [eq] that follows a fixed 
+circuit of conductor, we get the “flux rule” once again. The
+integral on the left is the emf, and that on the right is the negative
+rate of change of the flux linked by the circuit. So
+Eq. ( 17.1 ) applied to a fixed circuit is equivalent to the
+“flux rule.”
+
+So the “flux rule”—that the emf in a circuit is equal to the rate
+of change of the magnetic flux through the circuit—applies whether
+the flux changes because the field changes or because the circuit
+moves (or both). The two possibilities—“circuit moves” or “field
+changes”—are not distinguished in the statement of the rule. Yet in
+our explanation of the rule we have used two completely distinct laws
+for the two cases—[eq] for “circuit moves” and
+[eq] for “field changes.”
+
+We know of no other place in physics where such a simple and accurate
+general principle requires for its real understanding an analysis in
+terms of two different phenomena . Usually such a beautiful
+generalization is found to stem from a single deep underlying
+principle. Nevertheless, in this case there does not appear to be any
+such profound implication. We have to understand the “rule” as the
+combined effects of two quite separate phenomena.
+
+We must look at the “flux rule” in the following way. In general,
+the force per unit charge is [eq]. In
+moving wires there is the force from the second term. Also, there is
+an [eq]-field if there is somewhere a changing magnetic field. They
+are independent effects, but the emf around the loop of wire is always
+equal to the rate of change of magnetic flux through it.
+
+We will now give some examples, due in part to
+Faraday, which show the
+importance of keeping clearly in mind the distinction between the two
+effects responsible for induced emf’s. Our examples involve situations
+to which the “flux rule” cannot be applied—either because there is
+no wire at all or because the path taken by induced currents
+moves about within an extended volume of a conductor.
+
+We begin by making an important point: The part of the emf that comes
+from the [eq]-field does not depend on the existence of a physical
+wire (as does the [eq] part). The [eq]-field can
+exist in free space, and its line integral around any imaginary line
+fixed in space is the rate of change of the flux of [eq] through
+that line. (Note that this is quite unlike the [eq]-field produced
+by static charges, for in that case the line integral of [eq]
+around a closed loop is always zero.)
+
+Now we will describe a situation in which the flux through a circuit
+does not change, but there is nevertheless an emf.
+Figure  17–2 shows a conducting disc which can be rotated on
+a fixed axis in the presence of a magnetic field. One contact is made to
+the shaft and another rubs on the outer periphery of the disc. A circuit
+is completed through a galvanometer. As the disc rotates, the
+“circuit,” in the sense of the place in space where the currents are,
+is always the same. But the part of the “circuit” in the disc is in
+material which is moving. Although the flux through the “circuit” is
+constant, there is still an emf, as can be observed by the deflection of
+the galvanometer. Clearly, here is a case where the
+[eq] force in the moving disc gives rise to an emf which cannot be
+equated to
+a change of flux.
+
+Now we consider, as an opposite example, a somewhat unusual situation
+in which the flux through a “circuit” (again in the sense of the
+place where the current is) changes but where there is no 
+emf. Imagine two metal plates with slightly curved edges, as shown in
+Fig.  17–3 , placed in a uniform magnetic field
+perpendicular to their surfaces. Each plate is connected to one of the
+terminals of a galvanometer, as shown. The plates make contact at one
+point [eq], so there is a complete circuit. If the plates are now
+rocked through a small angle, the point of contact will move to [eq].
+If we imagine the “circuit” to be completed through the plates
+on the dotted line shown in the figure, the magnetic flux through this
+circuit changes by a large amount as the plates are rocked back and
+forth. Yet the rocking can be done with small motions, so that
+[eq] is very small and there is practically no emf. The
+“flux rule” does not work in this case. It must be applied to
+circuits in which the material of the circuit remains the
+same. When the material of the circuit is changing, we must return to
+the basic laws. The correct physics is always given by the two
+basic laws
+\begin{align*}
+&\FLPF=q(\FLPE+\FLPv\times\FLPB),\\[1ex]
+&\FLPcurl{\FLPE}=-\ddp{\FLPB}{t}.
+\end{align*}
+
+We have said that the electromotive force generated by a changing
+magnetic field can exist even without conductors; that is, there can
+be magnetic induction without wires. We may still imagine an
+electromotive force around an arbitrary mathematical curve in
+space. It is defined as the tangential component of [eq] integrated
+around the curve. Faraday’s law says that this line
+integral is equal to minus the rate of change of the magnetic flux through the
+closed curve, Eq. ( 17.3 ).
+
+As an example of the effect of such an induced electric field, we want
+now to consider the motion of an electron in a changing magnetic
+field. We imagine a magnetic field which, everywhere on a plane,
+points in a vertical direction, as shown in Fig.  17–4 . The
+magnetic field is produced by an electromagnet, but we will not worry
+about the details. For our example we will imagine that the magnetic
+field is symmetric about some axis, i.e., that the strength of the
+magnetic field will depend only on the distance from the axis. The
+magnetic field is also varying with time. We now imagine an electron
+that is moving in this field on a path that is a circle of constant
+radius with its center at the axis of the field. (We will see later how
+this motion can be arranged.) Because of the changing magnetic field,
+there will be an electric field [eq] tangential to the electron’s
+orbit which will drive it around the circle. Because of the symmetry,
+this electric field will have the same value everywhere on the circle.
+If the electron’s orbit has the radius [eq], the line integral of [eq]
+around the orbit is equal to minus the rate of change of the magnetic flux
+through the circle. The line integral of [eq] is just its magnitude
+times the circumference of the circle, [eq]. The magnetic flux must,
+in general, be obtained from an integral. For the moment, we let
+[eq] represent the average magnetic field in the interior of
+the circle; then the flux is this average magnetic field times the area
+of the circle. We will have
+\begin{equation*}
+2\pi rE=\ddt{}{t}(B_{\text{av}}\cdot\pi r^2).
+\end{equation*}
+
+Since we are assuming [eq] is constant, [eq] is proportional to the time
+derivative of the average field:
+\begin{equation}
+\label{Eq:II:17:4}
+E=\frac{r}{2}\,\ddt{B_{\text{av}}}{t}.
+\end{equation}
+
+The electron will feel the electric force [eq] and will be
+accelerated by it. Remembering that the relativistically correct
+equation of motion is that the rate of change of the momentum is
+proportional to the force, we have
+\begin{equation}
+\label{Eq:II:17:5}
+qE=\ddt{p}{t}.
+\end{equation}
+
+For the circular orbit we have assumed, the electric force on the electron is
+always in the direction of its motion, so its total momentum will be increasing
+at the rate given by Eq. ( 17.5 ). Combining Eqs.
+( 17.5 ) and ( 17.4 ), we may relate the rate of change of
+momentum to the change of the average magnetic field:
+\begin{equation}
+\label{Eq:II:17:6}
+\ddt{p}{t}=\frac{qr}{2}\,\ddt{B_{\text{av}}}{t}.
+\end{equation}
+
+Integrating with respect to [eq], we find for the electron’s momentum
+\begin{equation}
+\label{Eq:II:17:7}
+p=p_0+\frac{qr}{2}\,\Delta B_{\text{av}},
+\end{equation}
+
+where [eq] is the momentum with which the electrons start out, and
+[eq], is the subsequent change in [eq].
+The operation of a
+ betatron —a machine for accelerating electrons
+to high energies—is based on this idea.
+
+To see how the betatron operates in detail, we must
+now examine how the electron can be constrained to move on a
+circle. We have discussed in Chapter  11 of Vol. I the
+principle involved. If we arrange that there is a magnetic field [eq]
+at the orbit of the electron, there will be a transverse
+force [eq] which, for a suitably chosen [eq], can cause
+the electron to keep moving on its assumed orbit. In the
+betatron this transverse force causes the electron to
+move in a circular orbit of constant radius. We can find out what the
+magnetic field at the orbit must be by using again the relativistic
+equation of motion, but this time, for the transverse component of the
+force. In the betatron (see Fig.  17–4 ),
+[eq] is at right angles to [eq], so the transverse force is [eq].
+Thus the force is equal to the rate of change of the transverse
+component [eq] of the momentum:
+\begin{equation}
+\label{Eq:II:17:8}
+qvB=\ddt{p_t}{t}.
+\end{equation}
+When a particle is moving in a circle , the rate of change of
+its transverse momentum is equal to the magnitude of the total
+momentum times [eq], the angular velocity of rotation (following
+the arguments of Chapter  11 , Vol. I):
+\begin{equation}
+\label{Eq:II:17:9}
+\ddt{p_t}{t}=\omega p,
+\end{equation}
+where, since the motion is circular,
+\begin{equation}
+\label{Eq:II:17:10}
+\omega=\frac{v}{r}.
+\end{equation}
+Setting the magnetic force equal to the transverse acceleration, we have
+\begin{equation}
+\label{Eq:II:17:11}
+qvB_{\text{orbit}}=p\,\frac{v}{r},
+\end{equation}
+where [eq] is the field at the radius [eq].
+
+As the betatron operates, the momentum of the electron
+grows in proportion to [eq], according to
+Eq. ( 17.7 ), and if the electron is to continue to move in
+its proper circle, Eq. ( 17.11 ) must continue to hold as the
+momentum of the electron increases. The value of [eq] must
+increase in proportion to the momentum [eq]. Comparing
+Eq. ( 17.11 ) with Eq. ( 17.7 ), which determines
+[eq], we see that the following relation must hold between
+[eq], the average magnetic field inside the orbit at
+the radius [eq], and the magnetic field [eq] at the orbit:
+\begin{equation}
+\label{Eq:II:17:12}
+\Delta B_{\text{av}}=2\,\Delta B_{\text{orbit}}.
+\end{equation}
+The correct operation of a betatron requires that the
+average magnetic field inside the orbit increases at twice the rate of
+the magnetic field at the orbit itself. In these circumstances, as the
+energy of the particle is increased by the induced electric field the
+magnetic field at the orbit increases at just the rate required to
+keep the particle moving in a circle.
+
+The betatron is used to accelerate electrons to
+energies of tens of millions of volts, or even to hundreds of millions
+of volts. However, it becomes impractical for the acceleration of
+electrons to energies much higher than a few hundred million volts for
+several reasons. One of them is the practical difficulty of attaining
+the required high average value for the magnetic field inside the
+orbit. Another is that Eq. ( 17.6 ) is no longer correct
+at very high energies because it does not include the loss of energy
+from the particle due to its radiation of electromagnetic energy (the
+so-called synchrotron radiation discussed in Chapter
+ 34 , Vol. I). For these reasons, the
+acceleration of electrons to the highest energies—to many billions
+of electron volts—is accomplished by means of a different kind of
+machine, called a synchrotron .
+
+We would now like to describe for you an apparent paradox. A paradox
+is a situation which gives one answer when analyzed one way, and a
+different answer when analyzed another way, so that we are left in
+somewhat of a quandary as to actually what should happen. Of course,
+in physics there are never any real paradoxes because there is only
+one correct answer; at least we believe that nature will act in only
+one way (and that is the right way , naturally). So in physics a
+paradox is only a confusion in our own understanding. Here is our
+paradox.
+
+Imagine that we construct a device like that shown in
+Fig.  17–5 . There is a thin, circular plastic disc supported
+on a concentric shaft with excellent bearings, so that it is quite free
+to rotate. On the disc is a coil of wire in the form of a short solenoid
+concentric with the axis of rotation. This solenoid carries a steady
+current [eq] provided by a small battery, also mounted on the disc. Near
+the edge of the disc and spaced uniformly around its circumference are a
+number of small metal spheres insulated from each other and from the
+solenoid by the plastic material of the disc. Each of these small
+conducting spheres is charged with the same electrostatic charge [eq].
+Everything is quite stationary, and the disc is at rest. Suppose now
+that by some accident—or by prearrangement—the current in the
+solenoid is interrupted, without, however, any intervention from the
+outside. So long as the current continued, there was a magnetic flux
+through the solenoid more or less parallel to the axis of the disc. When
+the current is interrupted, this flux must go to zero. There will,
+therefore, be an electric field induced which will circulate around in
+circles centered at the axis. The charged spheres on the perimeter of
+the disc will all experience an electric field tangential to the
+perimeter of the disc. This electric force is in the same sense for all
+the charges and so will result in a net torque on the disc. From these
+arguments we would expect that as the current in the solenoid
+disappears, the disc would begin to rotate. If we knew the moment of
+inertia of the disc, the current in the solenoid, and the charges on the
+small spheres, we could compute the resulting angular velocity.
+
+But we could also make a different argument. Using the principle of
+the conservation of angular momentum, we could say that the angular
+momentum of the disc with all its equipment is initially zero, and so
+the angular momentum of the assembly should remain zero. There should
+be no rotation when the current is stopped. Which argument is correct?
+Will the disc rotate or will it not? We will leave this question for
+you to think about.
+
+We should warn you that the correct answer does not depend on any
+nonessential feature, such as the asymmetric position of a battery,
+for example. In fact, you can imagine an ideal situation such as the
+following: The solenoid is made of superconducting wire through which
+there is a current. After the disc has been carefully placed at rest,
+the temperature of the solenoid is allowed to rise slowly. When the
+temperature of the wire reaches the transition temperature between
+superconductivity and normal conductivity, the current in the solenoid
+will be brought to zero by the resistance of the wire. The flux will,
+as before, fall to zero, and there will be an electric field around
+the axis. We should also warn you that the solution is not easy, nor
+is it a trick. When you figure it out, you will have discovered an
+important principle of electromagnetism.
+
+In the remainder of this chapter we apply the principles of
+Section  17–1 to analyze a number of the phenomena
+discussed in Chapter  16 . We first look in more detail at
+the alternating-current generator. Such a generator consists basically
+of a coil of wire rotating in a uniform magnetic field. The same result
+can also be achieved by a fixed coil in a magnetic field whose direction
+rotates in the manner described in the last chapter. We will consider
+only the former case. Suppose we have a circular coil of wire which can
+be turned on an axis along one of its diameters. Let this coil be
+located in a uniform magnetic field perpendicular to the axis of
+rotation, as in Fig.  17–6 . We also imagine that the two
+ends of the coil are brought to external connections through some kind
+of sliding contacts.
+
+Due to the rotation of the coil, the magnetic flux through it will be
+changing. The circuit of the coil will therefore have an emf in
+it. Let [eq] be the area of the coil and [eq] the angle between the
+magnetic field and the normal to the plane of the coil. 1 The flux through the coil is
+then
+\begin{equation}
+\label{Eq:II:17:13}
+BS\cos\theta.
+\end{equation}
+
+If the coil is rotating at the uniform angular velocity [eq],
+[eq] varies with time as [eq].
+
+Each turn of the coil will have an emf equal to the rate of change of
+this flux. If the coil has [eq] turns of wire the total emf will be
+[eq] times larger, so
+ 
+\begin{equation}
+\label{Eq:II:17:14}
+\emf=-N\,\ddt{}{t}(BS\cos\omega t)=NBS\omega\sin\omega t.
+\end{equation}
+ 
+ 
+
+\begin{align}
+\emf&=-N\,\ddt{}{t}(BS\cos\omega t)\notag\\[1ex]
+\label{Eq:II:17:14}
+&=NBS\omega\sin\omega t.
+\end{align}
+
+If we bring the wires from the generator to a point some distance from
+the rotating coil, where the magnetic field is zero, or at least is
+not varying with time, the curl of [eq] in this region will be zero
+and we can define an electric potential. In fact, if there is no
+current being drawn from the generator, the potential difference [eq]
+between the two wires will be equal to the emf in the rotating
+coil. That is,
+\begin{equation*}
+V=NBS\omega\sin\omega t=V_0\sin\omega t.
+\end{equation*}
+
+The potential difference between the wires varies as $\sin\omega
+t$. Such a varying potential difference is called an alternating
+voltage.
+
+Since there is an electric field between the wires, they must be
+electrically charged. It is clear that the emf of the generator has
+pushed some excess charges out to the wire until the electric field
+from them is strong enough to exactly counterbalance the induction
+force. Seen from outside the generator, the two wires appear as though
+they had been electrostatically charged to the potential difference [eq],
+and as though the charge was being changed with time to give an
+alternating potential difference. There is also another difference
+from an electrostatic situation. If we connect the generator to an
+external circuit that permits passage of a current, we find that the
+emf does not permit the wires to be discharged but continues to
+provide charge to the wires as current is drawn from them, attempting
+to keep the wires always at the same potential difference. If, in
+fact, the generator is connected in a circuit whose total resistance
+is [eq], the current through the circuit will be proportional to the
+emf of the generator and inversely proportional to [eq]. Since the emf
+has a sinusoidal time variation, so also does the current. There is an
+alternating current
+\begin{equation*}
+I=\frac{\emf}{R}=\frac{V_0}{R}\sin\omega t.
+\end{equation*}
+
+The schematic diagram of such a circuit is shown in
+Fig.  17–7 .
+
+We can also see that the emf determines how much energy is supplied by
+the generator. Each charge in the wire is receiving energy at the
+rate [eq], where [eq] is the force on the charge and
+[eq] is its velocity. Now let the number of moving charges per unit
+length of the wire be [eq]; then the power being delivered into any
+element [eq] of the wire is
+\begin{equation*}
+\FLPF\cdot\FLPv n\,ds.
+\end{equation*}
+
+For a wire, [eq] is always along [eq], so we can rewrite the
+power as
+\begin{equation*}
+nv\FLPF\cdot d\FLPs.
+\end{equation*}
+
+The total power being delivered to the complete circuit is the
+integral of this expression around the complete loop:
+\begin{equation}
+\label{Eq:II:17:15}
+\text{Power}=\oint nv\FLPF\cdot d\FLPs.
+\end{equation}
+
+Now remember that [eq] is the current [eq], and that the emf is
+defined as the integral of [eq] around the circuit. We get the result
+\begin{equation}
+\label{Eq:II:17:16}
+\text{Power from a generator}=\emf I.
+\end{equation}
+
+When there is a current in the coil of the generator, there will also
+be mechanical forces on it. In fact, we know that the torque on the
+coil is proportional to its magnetic moment, to the magnetic field
+strength [eq], and to the sine of the angle between. The magnetic
+moment is the current in the coil times its area. Therefore the torque
+is
+\begin{equation}
+\label{Eq:II:17:17}
+\tau=NISB\sin\theta.
+\end{equation}
+
+The rate at which mechanical work must be done to keep the coil
+rotating is the angular velocity [eq] times the torque:
+\begin{equation}
+\label{Eq:II:17:18}
+\ddt{W}{t}=\omega\tau=\omega NISB\sin\theta.
+\end{equation}
+
+Comparing this equation with Eq. ( 17.14 ), we see that
+the rate of mechanical work required to rotate the coil against the
+magnetic forces is just equal to [eq], the rate at which
+electrical energy is delivered by the emf of the generator. All of the
+mechanical energy used up in the generator appears as electrical
+energy in the circuit.
+
+As another example of the currents and forces due to an induced emf,
+let’s analyze what happens in the setup described in
+Section  17–1 , and shown in Fig.  17–1 . There
+are two parallel wires and a sliding crossbar located in a uniform
+magnetic field perpendicular to the plane of the parallel wires. Now
+let’s assume that the “bottom” of the U (the left side in the figure)
+is made of wires of high resistance, while the two side wires are made
+of a good conductor like copper—then we don’t need to worry about the
+change of the circuit resistance as the crossbar is moved. As before,
+the emf in the circuit is
+\begin{equation}
+\label{Eq:II:17:19}
+\emf=vBw.
+\end{equation}
+
+The current in the circuit is proportional to this emf and inversely
+proportional to the resistance of the circuit:
+\begin{equation}
+\label{Eq:II:17:20}
+I=\frac{\emf}{R}=\frac{vBw}{R}.
+\end{equation}
+
+Because of this current there will be a magnetic force on the crossbar
+that is proportional to its length, to the current in it, and to the
+magnetic field, such that
+\begin{equation}
+\label{Eq:II:17:21}
+F=BIw.
+\end{equation}
+
+Taking [eq] from Eq. ( 17.20 ), we have for the force
+\begin{equation}
+\label{Eq:II:17:22}
+F=\frac{B^2w^2}{R}\,v.
+\end{equation}
+
+We see that the force is proportional to the velocity of the
+crossbar. The direction of the force, as you can easily see, is
+opposite to its velocity. Such a “velocity-proportional” force,
+which is like the force of viscosity, is found whenever induced
+currents are produced by moving conductors in a magnetic field. The
+examples of eddy currents we gave in the last chapter also produced
+forces on the conductors proportional to the velocity of the
+conductor, even though such situations, in general, give a complicated
+distribution of currents which is difficult to analyze.
+
+It is often convenient in the design of mechanical systems to have
+damping forces which are proportional to the velocity. Eddy-current
+forces provide one of the most convenient ways of getting such a
+velocity-dependent force. An example of the application of such a
+force is found in the conventional domestic wattmeter. In the
+wattmeter there is a thin aluminum disc that rotates between the poles
+of a permanent magnet. This disc is driven by a small electric motor
+whose torque is proportional to the power being consumed in the
+electrical circuit of the house. Because of the eddy-current forces in
+the disc, there is a resistive force proportional to the velocity. In
+equilibrium, the velocity is therefore proportional to the rate of
+consumption of electrical energy. By means of a counter attached to
+the rotating disc, a record is kept of the number of revolutions it
+makes. This count is an indication of the total energy consumption,
+i.e., the number of watthours used.
+
+We may also point out that Eq. ( 17.22 ) shows that the
+force from induced currents—that is, any eddy-current force—is
+inversely proportional to the resistance. The force will be larger,
+the better the conductivity of the material. The reason, of course, is
+that an emf produces more current if the resistance is low, and the
+stronger currents represent greater mechanical forces.
+
+We can also see from our formulas how mechanical energy is converted
+into electrical energy. As before, the electrical energy supplied to
+the resistance of the circuit is the product [eq]. The rate at
+which work is done in moving the conducting crossbar is the force on
+the bar times its velocity. Using Eq. ( 17.22 ) for the
+force, the rate of doing work is
+\begin{equation*}
+\ddt{W}{t}=\frac{v^2B^2w^2}{R}.
+\end{equation*}
+
+We see that this is indeed equal to the product [eq] we would get from
+Eqs. ( 17.19 ) and ( 17.20 ). Again the mechanical
+work appears as electrical energy.
+
+We now want to consider a situation in which there are fixed coils of
+wire but changing magnetic fields. When we described the production of
+magnetic fields by currents, we considered only the case of steady
+currents. But so long as the currents are changed slowly, the magnetic
+field will at each instant be nearly the same as the magnetic field of
+a steady current. We will assume in the discussion of this section
+that the currents are always varying sufficiently slowly that this is
+true.
+
+In Fig.  17–8 is shown an arrangement of two coils which
+demonstrates the basic effects responsible for the operation of a
+transformer. Coil [eq] consists of a conducting wire wound in the form
+of a long solenoid. Around this coil—and insulated from it—is
+wound coil [eq], consisting of a few turns of wire. If now a current is
+passed through coil [eq], we know that a magnetic field will appear
+inside it. This magnetic field also passes through coil [eq]. As the
+current in coil [eq] is varied, the magnetic flux will also vary, and
+there will be an induced emf in coil [eq]. We will now calculate this
+induced emf.
+
+We have seen in Section  13–5 that the magnetic field
+inside a long solenoid is uniform and has the magnitude
+\begin{equation}
+\label{Eq:II:17:23}
+B=\frac{1}{\epsO c^2}\,\frac{N_1I_1}{l},
+\end{equation}
+
+where [eq] is the number of turns in coil [eq], [eq] is the current
+through it, and [eq] is its length. Let’s say that the cross-sectional
+area of coil [eq] is [eq]; then the flux of [eq] is its magnitude
+times [eq]. If coil [eq] has [eq] turns, this flux links the coil
+[eq] times. Therefore the emf in coil [eq] is given by
+\begin{equation}
+\label{Eq:II:17:24}
+\emf_2=-N_2S\,\ddt{B}{t}.
+\end{equation}
+
+The only quantity in Eq. ( 17.23 ) which varies with time
+is [eq]. The emf is therefore given by
+\begin{equation}
+\label{Eq:II:17:25}
+\emf_2=-\frac{N_1N_2S}{\epsO c^2l}\,\ddt{I_1}{t}.
+\end{equation}
+
+We see that the emf in coil [eq] is proportional to the rate of change
+of the current in coil [eq]. The constant of proportionality, which is
+basically a geometric factor of the two coils, is called the
+ mutual inductance , and is usually designated
+[eq]. Equation ( 17.25 ) is then written
+\begin{equation}
+\label{Eq:II:17:26}
+\emf_2=\mutualInd_{21}\,\ddt{I_1}{t}.
+\end{equation}
+
+Suppose now that we were to pass a current through coil [eq] and ask
+about the emf in coil [eq]. We would compute the magnetic field, which
+is everywhere proportional to the current [eq]. The flux linkage
+through coil [eq] would depend on the geometry, but would be
+proportional to the current [eq]. The emf in coil [eq] would,
+therefore, again be proportional to [eq]: We can write
+\begin{equation}
+\label{Eq:II:17:27}
+\emf_1=\mutualInd_{12}\,\ddt{I_2}{t}.
+\end{equation}
+
+The computation of [eq] would be more difficult than the
+computation we have just done for [eq]. We will not carry
+through that computation now, because we will show later in this
+chapter that [eq] is necessarily equal
+to [eq].
+
+Since for any coil its field is proportional to its current,
+the same kind of result would be obtained for any two coils of
+wire. The equations ( 17.26 ) and ( 17.27 ) would
+have the same form; only the constants [eq]
+and [eq] would be different. Their values would depend on the
+shapes of the coils and their relative positions.
+
+Suppose that we wish to find the mutual inductance between any two
+arbitrary coils—for example, those shown in Fig.  17–9 . We
+know that the general expression for the emf in coil [eq] can be written
+as
+\begin{equation*}
+\emf_1=-\ddt{}{t}\int_{(1)}\FLPB\cdot\FLPn\,da,
+\end{equation*}
+
+where [eq] is the magnetic field and the integral is to be taken
+over a surface bounded by circuit [eq]. We have seen in
+Section  14–1 that such a surface integral of [eq] can
+be related to a line integral of the vector potential. In particular,
+\begin{equation*}
+\int_{(1)}\FLPB\cdot\FLPn\,da=\oint_{(1)}\FLPA\cdot d\FLPs_1,
+\end{equation*}
+
+where [eq] represents the vector potential and [eq] is an
+element of circuit [eq]. The line integral is to be taken around
+circuit [eq]. The emf in coil [eq] can therefore be written as
+\begin{equation}
+\label{Eq:II:17:28}
+\emf_1=-\ddt{}{t}\oint_{(1)}\FLPA\cdot d\FLPs_1.
+\end{equation}
+
+Now let’s assume that the vector potential at circuit [eq] comes from
+currents in circuit [eq]. Then it can be written as a line integral
+around circuit [eq]:
+\begin{equation}
+\label{Eq:II:17:29}
+\FLPA=\frac{1}{4\pi\epsO c^2}\oint_{(2)}\frac{I_2\,d\FLPs_2}{r_{12}},
+\end{equation}
+
+where [eq] is the current in circuit [eq], and [eq] is the distance from the
+element of the circuit [eq] to the point on circuit [eq] at which we are
+evaluating the vector potential. (See Fig.  17–9 .) Combining
+Eqs. ( 17.28 ) and ( 17.29 ), we can express the emf
+in circuit [eq] as a double line integral:
+\begin{equation*}
+\emf_1=-\frac{1}{4\pi\epsO c^2}\,\ddt{}{t}\oint_{(1)}\oint_{(2)}
+\frac{I_2\,d\FLPs_2}{r_{12}}\cdot d\FLPs_1.
+\end{equation*}
+
+In this equation the integrals are all taken with respect to
+stationary circuits. The only variable quantity is the current [eq],
+which does not depend on the variables of integration. We may
+therefore take it out of the integrals. The emf can then be written as
+\begin{equation*}
+\emf_1=\mutualInd_{12}\,\ddt{I_2}{t},
+\end{equation*}
+
+where the coefficient [eq] is
+\begin{equation}
+\label{Eq:II:17:30}
+\mutualInd_{12}=-\frac{1}{4\pi\epsO c^2}\oint_{(1)}\oint_{(2)}
+\frac{d\FLPs_2\cdot d\FLPs_1}{r_{12}}.
+\end{equation}
+
+We see from this integral that [eq] depends only on the
+circuit geometry. It depends on a kind of average separation of the
+two circuits, with the average weighted most for parallel segments of
+the two coils. Our equation can be used for calculating the mutual
+inductance of any two circuits of arbitrary shape. Also, it shows that
+the integral for [eq] is identical to the integral
+for [eq]. We have therefore shown that the two coefficients are
+identical. For a system with only two coils, the coefficients
+[eq] and [eq] are often represented by the
+symbol [eq] without subscripts, called simply the mutual
+inductance :
+\begin{equation*}
+\mutualInd_{12}=\mutualInd_{21}=\mutualInd.
+\end{equation*}
+
+In discussing the induced electromotive forces in the two coils of Figs.
+ 17–8 or  17–9 , we have considered only the case in
+which there was a current in one coil or the other. If there are currents in the
+two coils simultaneously, the magnetic flux linking either coil will be the sum
+of the two fluxes which would exist separately, because the law of superposition
+applies for magnetic fields. The emf in either coil will therefore be
+proportional not only to the change of the current in the other coil, but also
+to the change in the current of the coil itself. Thus the total emf in coil [eq]
+should be written 2 
+\begin{equation}
+\label{Eq:II:17:31}
+\emf_2=\mutualInd_{21}\,\ddt{I_1}{t}+\mutualInd_{22}\,\ddt{I_2}{t}.
+\end{equation}
+
+Similarly, the emf in coil [eq] will depend not only on the changing
+current in coil [eq], but also on the changing current in itself:
+\begin{equation}
+\label{Eq:II:17:32}
+\emf_1=\mutualInd_{12}\,\ddt{I_2}{t}+\mutualInd_{11}\,\ddt{I_1}{t}.
+\end{equation}
+
+The coefficients [eq] and [eq] are always negative
+numbers. It is usual to write
+\begin{equation}
+\label{Eq:II:17:33}
+\mutualInd_{11}=-\selfInd_1,\quad \mutualInd_{22}=-\selfInd_2,
+\end{equation}
+
+where [eq] and [eq] are called the self-inductances 
+of the two coils.
+
+The self-induced emf will, of course, exist even if we have only one
+coil. Any coil by itself will have a self-inductance [eq]. The emf
+will be proportional to the rate of change of the current in it. For a
+single coil, it is usual to adopt the convention that the emf and the
+current are considered positive if they are in the same
+direction. With this convention, we may write for the emf of a single
+coil
+\begin{equation}
+\label{Eq:II:17:34}
+\emf=-\selfInd\,\ddt{I}{t}.
+\end{equation}
+
+The negative sign indicates that the emf opposes the change in
+current—it is often called a “back emf.”
+
+Since any coil has a self-inductance which opposes the change in
+current, the current in the coil has a kind of inertia. In fact, if we
+wish to change the current in a coil we must overcome this inertia by
+connecting the coil to some external voltage source such as a battery
+or a generator, as shown in the schematic diagram of
+Fig.  17–10 (a). In such a circuit, the current [eq] depends
+on the voltage [eq] according to the relation
+\begin{equation}
+\label{Eq:II:17:35}
+\voltage=\selfInd\,\ddt{I}{t}.
+\end{equation}
+
+This equation has the same form as Newton’s law of motion for a
+particle in one dimension. We can therefore study it by the principle
+that “the same equations have the same solutions.” Thus, if we make
+the externally applied voltage [eq] correspond to an externally
+applied force [eq], and the current [eq] in a coil correspond to the
+velocity [eq] of a particle, the inductance [eq] of the coil
+corresponds to the mass [eq] of the particle. 3 See
+Fig.  17–10 (b). We can make the following table of
+corresponding quantities.
+
+Continuing with the analogy of the preceding section, we would expect
+that corresponding to the mechanical momentum [eq], whose rate of
+change is the applied force, there should be an analogous quantity
+equal to [eq], whose rate of change is [eq]. We have no right,
+of course, to say that [eq] is the real momentum of the circuit;
+in fact, it isn’t. The whole circuit may be standing still and have no
+momentum. It is only that [eq] is analogous to the momentum [eq]
+in the sense of satisfying corresponding equations. In the same way,
+to the kinetic energy [eq], there corresponds an
+analogous quantity [eq]. But there we have a
+surprise. This [eq] is really the energy in the
+electrical case also. This is because the rate of doing work on the
+inductance is [eq], and in the mechanical system it is [eq], the
+corresponding quantity. Therefore, in the case of the energy, the
+quantities not only correspond mathematically, but also have the same
+physical meaning as well.
+
+We may see this in more detail as follows. As we found in
+Eq. ( 17.16 ), the rate of electrical work by induced forces
+is the product of the electromotive force and the current:
+\begin{equation*}
+\ddt{W}{t}=\emf I.
+\end{equation*}
+
+Replacing [eq] by its expression in terms of the current from
+Eq. ( 17.34 ), we have
+\begin{equation}
+\label{Eq:II:17:36}
+\ddt{W}{t}=-\selfInd I\,\ddt{I}{t}.
+\end{equation}
+
+Integrating this equation, we find that the energy required from an
+external source to overcome the emf in the self-inductance while
+building up the current 4 (which must equal the energy stored,
+[eq]) is
+\begin{equation}
+\label{Eq:II:17:37}
+-W=U=\tfrac{1}{2}\selfInd I^2.
+\end{equation}
+
+Therefore the energy stored in an inductance is $\tfrac{1}{2}\selfInd
+I^2$.
+
+Applying the same arguments to a pair of coils such as those in Figs.
+ 17–8 or  17–9 , we can show that the total electrical
+energy of the system is given by
+\begin{equation}
+\label{Eq:II:17:38}
+U=\tfrac{1}{2}\selfInd_1I_1^2+\tfrac{1}{2}\selfInd_2I_2^2+\mutualInd I_1I_2.
+\end{equation}
+
+For, starting with [eq] in both coils, we could first turn on the
+current [eq] in coil [eq], with [eq]. The work done is
+just [eq]. But now, on turning up [eq], we not
+only do the work [eq] against the emf in
+circuit [eq], but also an additional amount [eq], which
+is the integral of the emf [[eq]] in circuit [eq]
+times the now constant current [eq] in that circuit.
+
+Suppose we now wish to find the force between any two coils carrying
+the currents [eq] and [eq]. We might at first expect that we could
+use the principle of virtual work, by taking the change in the energy
+of Eq. ( 17.38 ). We must remember, of course, that as we
+change the relative positions of the coils the only quantity which
+varies is the mutual inductance [eq]. We might then write the
+equation of virtual work as
+\begin{equation*}
+-F\,\Delta x=\Delta U=I_1I_2\,\Delta\mutualInd\quad(\text{wrong}).
+\end{equation*}
+
+But this equation is wrong because, as we have seen earlier, it
+includes only the change in the energy of the two coils and not the
+change in the energy of the sources which are maintaining the currents
+[eq] and [eq] at their constant values. We can now understand that
+these sources must supply energy against the induced emf’s in the
+coils as they are moved. If we wish to apply the principle of virtual
+work correctly, we must also include these energies. As we have seen,
+however, we may take a short cut and use the principle of virtual work
+by remembering that the total energy is the negative of what we have
+called [eq], the “mechanical energy.” We can therefore
+write for the force
+\begin{equation}
+\label{Eq:II:17:39}
+-F\,\Delta x=\Delta U_{\text{mech}}=-\Delta U.
+\end{equation}
+
+The force between two coils is then given by
+\begin{equation*}
+F\,\Delta x=I_1I_2\,\Delta\mutualInd.
+\end{equation*}
+
+Equation ( 17.38 ) for the energy of a system of two coils
+can be used to show that an interesting inequality exists between
+mutual inductance [eq] and the self-inductances [eq]
+and [eq] of the two coils. It is clear that the energy of two coils
+must be positive. If we begin with zero currents in the coils and
+increase these currents to some values, we have been adding energy to
+the system. If not, the currents would spontaneously increase with
+release of energy to the rest of the world—an unlikely thing to
+happen! Now our energy equation, Eq. ( 17.38 ), can
+equally well be written in the following form:
+ 
+\begin{equation}
+\label{Eq:II:17:40}
+U=\frac{1}{2}\,\selfInd_1\biggl(I_1+\frac{\mutualInd}{\selfInd_1}\,I_2\biggr)^2+
+\frac{1}{2}\biggl(\selfInd_2-\frac{\mutualInd^2}{\selfInd_1}\biggr)I_2^2.
+\end{equation}
+ 
+ 
+
+\begin{align}
+U=\;\;\frac{1}{2}\,\selfInd_1&\biggl(I_1+\frac{\mutualInd}{\selfInd_1}\,I_2\biggr)^2\notag\\[.75ex]
+\label{Eq:II:17:40}
++\;\frac{1}{2}&\biggl(\selfInd_2-\frac{\mutualInd^2}{\selfInd_1}\biggr)I_2^2.
+\end{align}
+
+ 
+
+
+That is just an algebraic transformation. This quantity must always be
+positive for any values of [eq] and [eq]. In particular, it must be
+positive if [eq] should happen to have the special value
+\begin{equation}
+\label{Eq:II:17:41}
+I_2=-\frac{\selfInd_1}{\mutualInd}\,I_1.
+\end{equation}
+
+But with this current for [eq], the first term in
+Eq. ( 17.40 ) is zero. If the energy is to be positive, the
+last term in ( 17.40 ) must be greater than zero. We have the
+requirement that
+\begin{equation*}
+\selfInd_1\selfInd_2>\mutualInd^2.
+\end{equation*}
+
+We have thus proved the general result that the magnitude of the
+mutual inductance [eq] of any two coils is necessarily less than or
+equal to the geometric mean of the two self-inductances. ([eq]
+itself may be positive or negative, depending on the sign conventions
+for the currents [eq] and [eq].)
+\begin{equation}
+\label{Eq:II:17:42}
+\abs{\mutualInd}<\sqrt{\selfInd_1\selfInd_2}.
+\end{equation}
+
+The relation between [eq] and the self-inductances is usually
+written as
+\begin{equation}
+\label{Eq:II:17:43}
+\mutualInd=k\sqrt{\selfInd_1\selfInd_2}.
+\end{equation}
+
+The constant [eq] is called the coefficient of
+coupling.
+If most of the flux from one coil links the other coil, the coefficient
+of coupling is near one; we say the coils are “tightly coupled.” If
+the coils are far apart or otherwise arranged so that there is very
+little mutual flux linkage, the coefficient of coupling is near zero and
+the mutual inductance is very small.
+
+For calculating the mutual inductance of two coils, we have given in
+Eq. ( 17.30 ) a formula which is a double line integral
+around the two circuits. We might think that the same formula could be
+used to get the self-inductance of a single coil by carrying out both
+line integrals around the same coil. This, however, will not work, because
+the denominator [eq] of the integrand will go to zero when the two
+line elements [eq] and [eq] are at the same point on the
+coil. The self-inductance obtained from this formula is
+infinite. The reason is that this formula is an approximation that is
+valid only when the cross sections of the wires of the two circuits
+are small compared with the distance from one circuit to the
+other. Clearly, this approximation doesn’t hold for a single coil. It
+is, in fact, true that the inductance of a single coil tends
+logarithmically to infinity as the diameter of its wire is made
+smaller and smaller.
+
+We must, then, look for a different way of calculating the
+self-inductance of a single coil. It is necessary to take into account
+the distribution of the currents within the wires because the size of
+the wire is an important parameter. We should therefore ask not what
+is the inductance of a “circuit,” but what is the inductance of a
+ distribution of conductors. Perhaps the easiest way to find
+this inductance is to make use of the magnetic energy. We found
+earlier, in Section  15–3 , an expression for the magnetic
+energy of a distribution of stationary currents:
+\begin{equation}
+\label{Eq:II:17:44}
+U=\tfrac{1}{2}\int\FLPj\cdot\FLPA\,dV.
+\end{equation}
+
+If we know the distribution of current density [eq], we can compute
+the vector potential [eq] and then evaluate the integral of
+Eq. ( 17.44 ) to get the energy. This energy is equal to the
+magnetic energy of the self-inductance, [eq].
+Equating the two gives us a formula for the inductance:
+\begin{equation}
+\label{Eq:II:17:45}
+\selfInd=\frac{1}{I^2}\int\FLPj\cdot\FLPA\,dV.
+\end{equation}
+
+We expect, of course, that the inductance is a number depending only
+on the geometry of the circuit and not on the current [eq] in the
+circuit. The formula of Eq. ( 17.45 ) will indeed give
+such a result, because the integral in this equation is proportional
+to the square of the current—the current appears once
+through [eq] and again through the vector potential [eq]. The integral
+divided by [eq] will depend on the geometry of the circuit but not on
+the current [eq].
+
+Equation ( 17.44 ) for the energy of a current distribution
+can be put in a quite different form which is sometimes more
+convenient for calculation. Also, as we will see later, it is a form
+that is important because it is more generally valid. In the energy
+equation, Eq. ( 17.44 ), both [eq] and [eq] can be
+related to [eq], so we can hope to express the energy in terms of
+the magnetic field—just as we were able to relate the electrostatic
+energy to the electric field. We begin by replacing [eq] by $\epsO
+c^2\FLPcurl{\FLPB}[eq]\FLPA$ so easily, since
+[eq] cannot be reversed to give [eq] in terms
+of [eq]. Anyway, we can write
+\begin{equation}
+\label{Eq:II:17:46}
+U=\frac{\epsO c^2}{2}\int(\FLPcurl{\FLPB})\cdot\FLPA\,dV.
+\end{equation}
+
+The interesting thing is that—with some restrictions—this integral
+can be written as
+\begin{equation}
+\label{Eq:II:17:47}
+U=\frac{\epsO c^2}{2}\int\FLPB\cdot(\FLPcurl{\FLPA})\,dV.
+\end{equation}
+
+To see this, we write out in detail a typical term. Suppose that we
+take the term [eq] which occurs in the integral of
+Eq. ( 17.46 ). Writing out the components, we get
+\begin{equation*}
+\int\biggl(\ddp{B_y}{x}-\ddp{B_x}{y}\biggr)A_z\,dx\,dy\,dz.
+\end{equation*}
+
+(There are, of course, two more integrals of the same kind.) We now
+integrate the first term with respect to [eq]—integrating by
+parts. That is, we can say
+\begin{equation*}
+\int\ddp{B_y}{x}\,A_z\,dx=B_yA_z-\int B_y\,\ddp{A_z}{x}\,dx.
+\end{equation*}
+
+Now suppose that our system—meaning the sources and fields—is
+finite, so that as we go to large distances all fields go to
+zero. Then if the integrals are carried out over all space, evaluating
+the term [eq] at the limits will give zero. We have left only the
+term with [eq], which is evidently one part
+of [eq] and, therefore,
+of [eq]. If you work out the other five terms,
+you will see that Eq. ( 17.47 ) is indeed equivalent to
+Eq. ( 17.46 ).
+
+But now we can replace [eq] by [eq], to get
+\begin{equation}
+\label{Eq:II:17:48}
+U=\frac{\epsO c^2}{2}\int\FLPB\cdot\FLPB\,dV.
+\end{equation}
+
+We have expressed the energy of a magnetostatic situation in terms of
+the magnetic field only. The expression corresponds closely to the
+formula we found for the electrostatic energy:
+\begin{equation}
+\label{Eq:II:17:49}
+U=\frac{\epsO}{2}\int\FLPE\cdot\FLPE\,dV.
+\end{equation}
+
+One reason for emphasizing these two energy formulas is that sometimes
+they are more convenient to use. More important, it turns out that for
+dynamic fields (when [eq] and [eq] are changing with time) the
+two expressions ( 17.48 ) and ( 17.49 ) remain
+true, whereas the other formulas we have given for electric or
+magnetic energies are no longer correct—they hold only for static
+fields.
+
+If we know the magnetic field [eq] of a single coil, we can find
+the self-inductance by equating the energy
+expression ( 17.48 ) to [eq]. Let’s see
+how this works by finding the self-inductance of a long solenoid. We
+have seen earlier that the magnetic field inside a solenoid is uniform
+and [eq] outside is zero. The magnitude of the field inside is
+[eq], where [eq] is the number of turns per unit length in
+the winding and [eq] is the current. If the radius of the coil is [eq] and
+its length is [eq] (we take [eq] very long, so that we can neglect end
+effects, i.e., [eq]), the volume inside is [eq]. The magnetic
+energy is therefore
+\begin{equation*}
+U=\frac{\epsO c^2}{2}\,B^2\cdot(\text{Vol})=\frac{n^2I^2}{2\epsO c^2}\,
+\pi r^2L,
+\end{equation*}
+
+which is equal to [eq]. Or,
+\begin{equation}
+\label{Eq:II:17:50}
+\selfInd=\frac{\pi r^2n^2}{\epsO c^2}\,L.
+\end{equation}

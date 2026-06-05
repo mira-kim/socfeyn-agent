@@ -1,0 +1,1254 @@
+The Feynman Lectures on Physics Vol. III Ch. 9: The Ammonia Maser
+=================================================================
+
+Sections: 9–1 The states of an ammonia molecule | 9–2 The molecule in a static electric field | 9–3 Transitions in a time-dependent field | 9–4 Transitions at resonance | 9–5 Transitions off resonance | 9–6 The absorption of light
+
+
+
+In this chapter we are going to discuss the application of quantum
+mechanics to a practical device, the ammonia maser. You may wonder why
+we stop our formal development of quantum mechanics to do a special
+problem, but you will find that many of the features of this special
+problem are quite common in the general theory of quantum mechanics,
+and you will learn a great deal by considering this one problem in
+detail. The ammonia maser is a device for generating electromagnetic
+waves, whose operation is based on the properties of the ammonia
+molecule which we discussed briefly in the last chapter. We begin by
+summarizing what we found there.
+
+The ammonia molecule has many states, but we are considering it as a
+two-state system, thinking now only about what happens when the
+molecule is in any specific state of rotation or translation. A
+physical model for the two states can be visualized as follows. If the
+ammonia molecule is considered to be rotating about an axis passing
+through the nitrogen atom and perpendicular to the plane of the
+hydrogen atoms, as shown in Fig.  9–1 , there are still
+two possible conditions—the nitrogen may be on one side of the plane
+of hydrogen atoms or on the other. We call these two states
+[eq] and [eq]. They are taken as a set of base
+states for our analysis of the behavior of the ammonia molecule.
+
+In a system with two base states, any state [eq] of the system
+can always be described as a linear combination of the two base
+states; that is, there is a certain amplitude [eq] to be in one base
+state and an amplitude [eq] to be in the other. We can write its
+state vector as
+\begin{equation}
+\label{Eq:III:9:1}
+\ket{\psi}=\ketsl{\slOne}C_1+
+\ketsl{\slTwo}C_2,
+\end{equation}
+
+where
+\begin{equation}
+C_1=\braket{\slOne}{\psi}\quad
+\text{and}\quad
+C_2=\braket{\slTwo}{\psi}.\notag
+\end{equation}
+
+These two amplitudes change with time according to the Hamiltonian equations,
+Eq. ( 8.43 ). Making use of the symmetry of the two states of the
+ammonia molecule, we set [eq],
+and [eq], and get the solution [see Eqs.
+( 8.50 ) and ( 8.51 )]
+\begin{align}
+\label{Eq:III:9:2}
+C_1&=\frac{a}{2}\,e^{-(i/\hbar)(E_0-A)t}+
+\frac{b}{2}\,e^{-(i/\hbar)(E_0+A)t},\\[1ex]
+\label{Eq:III:9:3}
+C_2&=\frac{a}{2}\,e^{-(i/\hbar)(E_0-A)t}-
+\frac{b}{2}\,e^{-(i/\hbar)(E_0+A)t}.
+\end{align}
+
+We want now to take a closer look at these general solutions. Suppose
+that the molecule was initially put into a state [eq]
+for which the coefficient [eq] was equal to zero. Then at [eq] the
+amplitudes to be in the states [eq] and [eq] are
+identical, and they stay that way for all time . Their phases
+both vary with time in the same way—with the
+frequency [eq]. Similarly, if we were to put the molecule into a
+state [eq] for which [eq], the amplitude [eq] is
+the negative of [eq], and this relationship would stay that
+way forever. Both amplitudes would now vary with time with the
+frequency [eq]. These are the only two possibilities of
+states for which the relation between [eq] and [eq] is independent
+of time.
+
+We have found two special solutions in which the two amplitudes
+ do not vary in magnitude and, furthermore, have phases which
+vary at the same frequencies. These are stationary states as we
+defined them in Section  7–1 , which means that they are
+ states of definite energy . The state [eq] has
+the energy [eq], and the state [eq] has
+the energy [eq]. They are the only two stationary states
+that exist, so we find that the molecule has two energy levels, with
+the energy difference [eq]. (We mean, of course, two energy levels for
+the assumed state of rotation and vibration which we referred to in
+our initial assumptions.) 1
+
+If we hadn’t allowed for the possibility of the nitrogen flipping back
+and forth, we would have taken [eq] equal to zero and the two energy
+levels would be on top of each other at energy [eq]. The actual
+levels are not this way; their average energy is [eq], but
+they are split apart by [eq], giving a separation of [eq] between
+the energies of the two states. Since [eq] is, in fact, very small, the
+difference in energy is also very small.
+
+In order to excite an electron inside an atom, the energies
+involved are relatively very high—requiring photons in the optical
+or ultraviolet range. To excite the vibrations of the molecules
+involves photons in the infrared. If you talk about exciting
+ rotations , the energy differences of the states correspond to
+photons in the far infrared. But the energy difference [eq] is lower
+than any of those and is, in fact, below the infrared and well into
+the microwave region. Experimentally, it has been found that there is
+a pair of energy levels with a separation of [eq] electron
+volt—corresponding to a frequency [eq] megacycles. Evidently
+this means that [eq], with [eq] megacycles (corresponding
+to a wavelength of [eq] cm). So here we have a molecule
+that has a transition which does not emit light in the ordinary sense,
+but emits microwaves.
+
+For the work that follows we need to describe these two states of
+definite energy a little bit better. Suppose we were to construct an
+amplitude [eq] by taking the sum of the two numbers [eq]
+and [eq]:
+\begin{equation}
+\label{Eq:III:9:4}
+C_{\slII}=C_1+C_2=\braket{\slOne}{\phi}+\braket{\slTwo}{\phi}.
+\end{equation}
+
+What would that mean? Well, this is just the amplitude to find the
+state [eq] in a new state [eq] in which the
+amplitudes of the original base states are equal. That is,
+writing [eq], we can abstract
+the [eq]
+away from Eq. ( 9.4 )—because it is true for any [eq]—and get
+\begin{equation}
+\bra{\slII}=\bra{\slOne}+\bra{\slTwo},\notag
+\end{equation}
+
+which means the same as
+\begin{equation}
+\label{Eq:III:9:5}
+\ketsl{\slII}=\ketsl{\slOne}+\ketsl{\slTwo}.
+\end{equation}
+
+The amplitude for the state [eq] to be in the state
+[eq] is
+\begin{equation*}
+\braketsl{\slOne}{\slII}=\braketsl{\slOne}{\slOne}+
+\braketsl{\slOne}{\slTwo},
+\end{equation*}
+
+which is, of course, just [eq], since [eq] and [eq]
+are base states. The amplitude for the state [eq] to be in
+the state [eq] is also [eq], so the state [eq] is
+one which has equal amplitudes to be in the two base states
+[eq] and [eq].
+
+We are, however, in a bit of trouble. The state [eq] has a
+total probability greater than one of being in some base state
+ or other . That simply means, however, that the state vector is
+not properly “normalized.” We can take care of that by remembering
+that we should have [eq], which must be so for
+any state. Using the general relation that
+\begin{equation*}
+\braket{\chi}{\phi}=\sum_i\braket{\chi}{i}\braket{i}{\phi},
+\end{equation*}
+
+letting both [eq] and [eq] be the state [eq], and taking the
+sum over the base states [eq] and [eq], we get
+that
+\begin{equation*}
+\braketsl{\slII}{\slII}=\braketsl{\slII}{\slOne}\braketsl{\slOne}{\slII}+
+\braketsl{\slII}{\slTwo}\braketsl{\slTwo}{\slII}.
+\end{equation*}
+
+This will be equal to one as it should if we change our definition
+of [eq]—in Eq. ( 9.4 )—to read
+\begin{equation*}
+C_{\slII}=\frac{1}{\sqrt{2}}\,[C_1+C_2].
+\end{equation*}
+
+In the same way we can construct an amplitude
+\begin{equation}
+C_{\slI}=\frac{1}{\sqrt{2}}\,[C_1-C_2],\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:III:9:6}
+C_{\slI}=\frac{1}{\sqrt{2}}\,[\braket{\slOne}{\phi}-\braket{\slTwo}{\phi}].
+\end{equation}
+
+This amplitude is the projection of the state [eq] into a new
+state [eq] which has opposite amplitudes to be in the states
+[eq] and [eq]. Namely, Eq. ( 9.6 )
+means the same as
+\begin{equation}
+\bra{\slI}=\frac{1}{\sqrt{2}}\,[\bra{\slOne}-\bra{\slTwo}],\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:III:9:7}
+\ketsl{\slI}=\frac{1}{\sqrt{2}}\,[\ketsl{\slOne}-\ketsl{\slTwo}],
+\end{equation}
+
+from which it follows that
+\begin{equation}
+\braketsl{\slOne}{\slI}=\frac{1}{\sqrt{2}}=-\braketsl{\slTwo}{\slI}.\notag
+\end{equation}
+
+Now the reason we have done all this is that the states [eq]
+and [eq] can be taken as a new set of base states 
+which are especially convenient for describing the stationary states
+of the ammonia molecule. You remember that the requirement for a set
+of base states is that
+\begin{equation*}
+\braket{i}{j}=\delta_{ij}.
+\end{equation*}
+
+We have already fixed things so that
+\begin{equation*}
+\braketsl{\slI}{\slI}=\braketsl{\slII}{\slII}=1.
+\end{equation*}
+
+You can easily show from Eqs. ( 9.5 ) and ( 9.7 )
+that
+\begin{equation*}
+\braketsl{\slI}{\slII}=\braketsl{\slII}{\slI}=0.
+\end{equation*}
+
+The amplitudes [eq]
+and [eq] for any state [eq] to be in our new
+base states [eq] and [eq] must also satisfy a
+Hamiltonian equation with the form of Eq. ( 8.39 ). In
+fact, if we just subtract the two equations ( 9.2 )
+and ( 9.3 ) and differentiate with respect to [eq], we see
+that
+\begin{equation}
+\label{Eq:III:9:8}
+i\hbar\,\ddt{C_{\slI}}{t}=(E_0+A)C_{\slI}=E_{\slI}C_{\slI}.
+\end{equation}
+
+And taking the sum of Eqs. ( 9.2 ) and ( 9.3 ), we
+see that
+\begin{equation}
+\label{Eq:III:9:9}
+i\hbar\,\ddt{C_{\slII}}{t}=(E_0-A)C_{\slII}=E_{\slII}C_{\slII}.
+\end{equation}
+
+Using [eq] and [eq] for base states, the Hamiltonian
+matrix has the simple form
+\begin{alignat*}{2}
+H_{\slI,\slI}&=E_{\slI},&\quad
+H_{\slI,\slII}&=0,\\[1ex]
+H_{\slII,\slI}&=0,&\quad
+H_{\slII,\slII}&=E_{\slII}.
+\end{alignat*}
+
+Note that each of the Eqs. ( 9.8 ) and ( 9.9 ) look
+just like what we had in Section  8–6 for the equation of a
+one-state system. They have a simple exponential time dependence corresponding
+to a single energy. As time goes on, the amplitudes to be in each state act
+independently.
+
+The two stationary states [eq] and [eq] we found
+above are, of course, solutions of Eqs. ( 9.8 )
+and ( 9.9 ). The state [eq] (for which [eq]) has
+\begin{equation}
+\label{Eq:III:9:10}
+C_{\slI}=e^{-(i/\hbar)(E_0+A)t},\quad
+C_{\slII}=0.
+\end{equation}
+
+And the state [eq] (for which [eq]) has
+\begin{equation}
+\label{Eq:III:9:11}
+C_{\slI}=0,\quad
+C_{\slII}=e^{-(i/\hbar)(E_0-A)t}.
+\end{equation}
+
+Remember that the amplitudes in Eq. ( 9.10 ) are
+\begin{equation*}
+C_{\slI}=\braket{\slI}{\psi_{\slI}},\quad
+\text{and}\quad
+C_{\slII}=\braket{\slII}{\psi_{\slI}};
+\end{equation*}
+
+so Eq. ( 9.10 ) means the same thing as
+\begin{equation*}
+\ket{\psi_{\slI}}=\ketsl{\slI}\,e^{-(i/\hbar)(E_0+A)t}.
+\end{equation*}
+
+That is, the state vector of the stationary state [eq]
+is the same as the state vector of the base state [eq] except
+for the exponential factor appropriate to the energy of the state. In
+fact at [eq]
+\begin{equation*}
+\ket{\psi_{\slI}}=\ketsl{\slI};
+\end{equation*}
+
+the state [eq] has the same physical configuration as the
+stationary state of energy [eq]. In the same way, we have for the
+second stationary state that
+\begin{equation*}
+\ket{\psi_{\slII}}=\ketsl{\slII}\,e^{-(i/\hbar)(E_0-A)t}.
+\end{equation*}
+
+The state [eq] is just the stationary state of energy [eq]
+at [eq]. Thus our two new base states [eq] and [eq]
+have physically the form of the states of definite energy, with the
+exponential time factor taken out so that they can be time-independent
+base states. (In what follows we will find it convenient not to have
+to distinguish always between the stationary states
+[eq] and [eq] and their base states
+[eq] and [eq], since they differ only by the obvious
+time factors.)
+
+In summary, the state vectors [eq] and [eq] are a
+pair of base vectors which are appropriate for describing the definite
+energy states of the ammonia molecule. They are related to our
+original base vectors by
+\begin{equation}
+\label{Eq:III:9:12}
+\ketsl{\slI}=\frac{1}{\sqrt{2}}\,[\ketsl{\slOne}-\ketsl{\slTwo}],\quad
+\ketsl{\slII}=\frac{1}{\sqrt{2}}\,[\ketsl{\slOne}+\ketsl{\slTwo}].
+\end{equation}
+
+The amplitudes to be in [eq] and [eq] are related to
+[eq] and [eq] by
+\begin{equation}
+\label{Eq:III:9:13}
+C_{\slI}=\frac{1}{\sqrt{2}}\,[C_1-C_2],\quad
+C_{\slII}=\frac{1}{\sqrt{2}}\,[C_1+C_2].
+\end{equation}
+
+Any state at all can be represented by a linear combination of
+[eq] and [eq]—with the coefficients [eq]
+and [eq]—or by a linear combination of the definite energy base states
+[eq] and [eq]—with the coefficients [eq]
+and [eq]. Thus,
+\begin{equation*}
+\ket{\phi} =\ketsl{\slOne}C_1+\ketsl{\slTwo}C_2
+\end{equation*}
+
+or
+\begin{equation*}
+\;\ket{\phi} =\ketsl{\slI}C_{\slI}\,+\ketsl{\slII}C_{\slII}.
+\end{equation*}
+
+The second form gives us the amplitudes for finding the state [eq]
+in a state with the energy [eq] or in a state
+with the energy [eq].
+
+If the ammonia molecule is in either of the two states of definite
+energy and we disturb it at a frequency [eq] such
+that [eq] [eq] [eq], the system may make a transition
+from one state to the other. Or, if it is in the upper state, it may
+change to the lower state and emit a photon. But in order to induce
+such transitions you must have a physical connection to the
+states—some way of disturbing the system. There must be some
+external machinery for affecting the states, such as magnetic or
+electric fields. In this particular case, these states are sensitive
+to an electric field. We will, therefore, look next at the problem of
+the behavior of the ammonia molecule in an external electric field.
+
+To discuss the behavior in an electric field, we will go back to the
+original base system [eq] and [eq], rather than
+using [eq] and [eq]. Suppose that there is an
+electric field in a direction perpendicular to the plane of the
+hydrogen atoms. Disregarding for the moment the possibility of
+flipping back and forth, would it be true that the energy of this
+molecule is the same for the two positions of the nitrogen atom?
+Generally, no. The electrons tend to lie closer to the nitrogen than
+to the hydrogen nuclei, so the hydrogens are slightly positive. The
+actual amount depends on the details of electron distribution. It is a
+complicated problem to figure out exactly what this distribution is,
+but in any case the net result is that the ammonia molecule has an
+electric dipole moment, as indicated in Fig.  9–1 . We can
+continue our analysis without knowing in detail the direction or amount
+of displacement of the charge. However, to be consistent with the
+notation of others, let’s suppose that the electric dipole moment
+is [eq], with its direction pointing from the nitrogen atom and
+perpendicular to the plane of the hydrogen atoms.
+
+Now, when the nitrogen flips from one side to the other, the center of
+mass will not move, but the electric dipole moment will flip over. As
+a result of this moment, the energy in an electric field [eq]
+will depend on the molecular orientation. 2 With the assumption made above,
+the potential energy will be higher if the nitrogen atom points in the
+direction of the field, and lower if it is in the opposite direction;
+the separation in the two energies will be [eq].
+
+In the discussion up to this point, we have assumed values of [eq]
+and [eq] without knowing how to calculate them. According to the
+correct physical theory, it should be possible to calculate these
+constants in terms of the positions and motions of all the nuclei and
+electrons. But nobody has ever done it. Such a system involves ten
+electrons and four nuclei and that’s just too complicated a
+problem. As a matter of fact, there is no one who knows much more
+about this molecule than we do. All anyone can say is that when there
+is an electric field, the energy of the two states is different, the
+difference being proportional to the electric field. We have called
+the coefficient of proportionality [eq], but its value must be
+determined experimentally. We can also say that the molecule has the
+amplitude [eq] to flip over, but this will have to be measured
+experimentally. Nobody can give us accurate theoretical values of
+[eq] and [eq], because the calculations are too complicated to do in
+detail.
+
+For the ammonia molecule in an electric field, our description must be
+changed. If we ignored the amplitude for the molecule to flip from one
+configuration to the other, we would expect the energies of the two
+states [eq] and [eq] to be [eq].
+Following the procedure of the last chapter, we
+take
+\begin{equation}
+\label{Eq:III:9:14}
+H_{11}=E_0+\mu\Efield,\quad
+H_{22}=E_0-\mu\Efield.
+\end{equation}
+
+Also we will assume that for the electric fields of interest the field
+does not affect appreciably the geometry of the molecule and,
+therefore, does not affect the amplitude that the nitrogen will jump
+from one position to the other. We can then take that [eq]
+and [eq] are not changed; so
+\begin{equation}
+\label{Eq:III:9:15}
+H_{12}=H_{21}=-A.
+\end{equation}
+
+We must now solve the Hamiltonian equations, Eq. ( 8.43 ),
+with these new values of [eq]. We could solve them just as we did
+before, but since we are going to have several occasions to want the
+solutions for two-state systems, let’s solve the equations once and for
+all in the general case of arbitrary [eq]—assuming only that they
+do not change with time.
+
+We want the general solution of the pair of Hamiltonian equations
+\begin{align}
+\label{Eq:III:9:16}
+i\hbar\,\ddt{C_1}{t}&=H_{11}C_1+H_{12}C_2,\\[1ex]
+\label{Eq:III:9:17}
+i\hbar\,\ddt{C_2}{t}&=H_{21}C_1+H_{22}C_2.
+\end{align}
+
+Since these are linear differential equations with constant
+coefficients, we can always find solutions which are exponential
+functions of the dependent variable [eq]. We will first look for a
+solution in which [eq] and [eq] both have the same time dependence;
+we can use the trial functions
+\begin{equation*}
+C_1=a_1e^{-i\omega t},\quad
+C_2=a_2e^{-i\omega t}.
+\end{equation*}
+
+Since such a solution corresponds to a state of
+energy [eq], we may as well write right away
+\begin{align}
+\label{Eq:III:9:18}
+C_1&=a_1e^{-(i/\hbar)Et},\\[1ex]
+\label{Eq:III:9:19}
+C_2&=a_2e^{-(i/\hbar)Et},
+\end{align}
+
+where [eq] is as yet unknown and to be determined so that the
+differential equations ( 9.16 ) and ( 9.17 ) are
+satisfied.
+
+When we substitute [eq] and [eq] from ( 9.18 )
+and ( 9.19 ) in the differential equations
+( 9.16 ) and ( 9.17 ), the derivatives give us
+just [eq] times [eq] or [eq], so the left sides become just
+[eq] and [eq]. Cancelling the common exponential factors, we get
+\begin{equation*}
+Ea_1=H_{11}a_1+H_{12}a_2,\quad
+Ea_2=H_{21}a_1+H_{22}a_2.
+\end{equation*}
+
+Or, rearranging the terms, we have
+\begin{align}
+\label{Eq:III:9:20}
+(E-H_{11})a_1-H_{12}a_2&=0,\\[1ex]
+\label{Eq:III:9:21}
+-H_{21}a_1+(E-H_{22})a_2&=0.
+\end{align}
+
+With such a set of homogeneous algebraic equations, there will be
+nonzero solutions for [eq] and [eq] only if the determinant of the
+coefficients of [eq] and [eq] is zero, that is, if
+\begin{equation}
+\label{Eq:III:9:22}
+\Det\begin{pmatrix}
+E-H_{11} & \phantom{E}-H_{12}\\[1ex]
+\phantom{E}-H_{21} & E-H_{22}
+\end{pmatrix}=0.
+\end{equation}
+
+However, when there are only two equations and two unknowns, we don’t
+need such a sophisticated idea. The two equations ( 9.20 )
+and ( 9.21 ) each give a ratio for the two coefficients
+[eq] and [eq], and these two ratios must be equal.
+From ( 9.20 ) we have that
+\begin{equation}
+\label{Eq:III:9:23}
+\frac{a_1}{a_2} =\frac{H_{12}}{E-H_{11}},
+\end{equation}
+
+and from ( 9.21 ) that
+\begin{equation}
+\label{Eq:III:9:24}
+\frac{a_1}{a_2} =\frac{E-H_{22}}{H_{21}}.
+\end{equation}
+
+Equating these two ratios, we get that [eq] must satisfy
+\begin{equation*}
+(E-H_{11})(E-H_{22})-H_{12}H_{21}=0.
+\end{equation*}
+
+This is the same result we would get by solving Eq. ( 9.22 ).
+Either way, we have a quadratic equation for [eq] which has two
+solutions:
+\begin{equation}
+\label{Eq:III:9:25}
+E=\!\frac{H_{11}\!+\!H_{22}}{2}\!\pm\!
+\sqrt{\frac{(H_{11}\!-\!H_{22})^2}{4}\!+\!H_{12}H_{21}}.
+\end{equation}
+
+There are two possible values for the energy [eq]. Note that both
+solutions give real numbers for the energy, because [eq]
+and [eq] are real, and [eq] is equal
+to [eq], which is both real and positive.
+
+Using the same convention we took before, we will call the upper
+energy [eq] and the lower energy [eq]. We have
+\begin{align}
+\label{Eq:III:9:26}
+E_{\slI}&=\!\frac{H_{11}\!+\!H_{22}}{2}\!+\!
+\sqrt{\frac{(H_{11}\!-\!H_{22})^2}{4}\!+\!H_{12}H_{21}},\\[1.5ex]
+\label{Eq:III:9:27}
+E_{\slII}&=\!\frac{H_{11}\!+\!H_{22}}{2}\!-\!
+\sqrt{\frac{(H_{11}\!-\!H_{22})^2}{4}\!+\!H_{12}H_{21}}.
+\end{align}
+
+Using each of these two energies separately in Eqs. ( 9.18 )
+and ( 9.19 ), we have the amplitudes for the two stationary states
+(the states of definite energy). If there are no external disturbances, a system
+initially in one of these states will stay that way forever—only its phase
+changes.
+
+We can check our results for two special cases. If [eq], we have
+that [eq] and [eq]. This is certainly correct,
+because then Eqs. ( 9.16 ) and ( 9.17 ) are
+uncoupled, and each represents a state of energy [eq] and [eq]. Next, if
+we set [eq] and [eq], we get the solution we found
+before:
+\begin{equation*}
+E_{\slI}=E_0+A\quad
+\text{and}\quad
+E_{\slII}=E_0-A.
+\end{equation*}
+
+For the general case, the two solutions [eq] and [eq] refer to two
+states—which we can again call the states
+\begin{equation*}
+\ket{\psi_{\slI}}=\ketsl{\slI}e^{-(i/\hbar)E_{\slI}t}\quad
+\text{and}\quad
+\ket{\psi_{\slII}}=\ketsl{\slII}e^{-(i/\hbar)E_{\slII}t}.
+\end{equation*}
+
+These states will have [eq] and [eq] as given in Eqs.
+( 9.18 ) and ( 9.19 ), where [eq] and [eq] are still to
+be determined. Their ratio is given by either Eq. ( 9.23 ) or
+Eq. ( 9.24 ). They must also satisfy one more condition. If the
+system is known to be in one of the stationary states, the sum of the
+probabilities that it will be found in [eq] or [eq] must
+equal one. We must have that
+\begin{equation}
+\label{Eq:III:9:28}
+\abs{C_1}^2+\abs{C_2}^2=1,
+\end{equation}
+
+or, equivalently,
+\begin{equation}
+\label{Eq:III:9:29}
+\abs{a_1}^2+\abs{a_2}^2=1.
+\end{equation}
+
+These conditions do not uniquely specify [eq] and [eq]; they are
+still undetermined by an arbitrary phase—in other words, by a factor
+like [eq]. Although general solutions for the [eq]’s can be
+written down, 3 it is usually more convenient to work them out for each special
+case.
+
+Let’s go back now to our particular example of the ammonia molecule in
+an electric field. Using the values for [eq], [eq],
+and [eq] given in ( 9.14 ) and ( 9.15 ), we get
+for the energies of the two stationary states
+ 
+\begin{equation}
+\label{Eq:III:9:30}
+E_{\slI}=E_0+\sqrt{A^2+\mu^2\Efield^2},\quad
+E_{\slII}=E_0-\sqrt{A^2+\mu^2\Efield^2}.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+E_{\slI}&=E_0+\sqrt{A^2+\mu^2\Efield^2},\\[1ex]
+E_{\slII}&=E_0-\sqrt{A^2+\mu^2\Efield^2}.
+\end{aligned}
+\label{Eq:III:9:30}
+\end{equation}
+ 
+These two energies are plotted as a function of the electric field
+strength [eq] in Fig.  9–2 . When the electric field
+is zero, the two energies are, of course, just [eq]. When an
+electric field is applied, the splitting between the two levels
+increases. The splitting increases at first slowly with [eq], but
+eventually becomes proportional to [eq]. (The curve is a
+hyperbola.) For enormously strong fields, the energies are just
+ 
+\begin{equation}
+\label{Eq:III:9:31}
+E_{\slI}=E_0+\mu\Efield=H_{11},\quad
+E_{\slII}=E_0-\mu\Efield=H_{22}.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+E_{\slI}&=E_0+\mu\Efield=H_{11},\\[1ex]
+E_{\slII}&=E_0-\mu\Efield=H_{22}.
+\end{aligned}
+\label{Eq:III:9:31}
+\end{equation}
+
+
+ 
+ The fact that there is an amplitude for the nitrogen to flip
+back and forth has little effect when the two positions have very
+different energies . This is an interesting point which we will come
+back to again later.
+
+We are at last ready to understand the operation of the ammonia
+maser. The idea is the following. First, we find a way of separating
+molecules in the state [eq] from those in the
+state [eq]. 4 Then the
+molecules in the higher energy state [eq] are passed through a
+cavity which has a resonant frequency of [eq] megacycles. The
+molecules can deliver energy to the cavity—in a way we will discuss
+later—and leave the cavity in the state [eq]. Each molecule
+that makes such a transition will deliver the
+energy [eq] to the cavity. The energy from the molecules
+will appear as electrical energy in the cavity.
+
+How can we separate the two molecular states? One method is as
+follows. The ammonia gas is let out of a little jet and passed through
+a pair of slits to give a narrow beam, as shown in
+Fig.  9–3 . The beam is then sent through a region in which
+there is a large transverse electric field. The electrodes to produce
+the field are shaped so that the electric field varies rapidly across
+the beam. Then the square of the electric
+field [eq] will have a large gradient perpendicular to
+the beam. Now a molecule in state [eq] has an energy which
+increases with [eq], and therefore this part of the beam will be
+deflected toward the region of lower [eq]. A molecule in
+state [eq] will, on the other hand, be deflected toward the region of
+larger [eq], since its energy decreases as [eq] increases.
+
+Incidentally, with the electric fields which can be generated in the
+laboratory, the energy [eq] is always much smaller than [eq].
+In such cases, the square root in Eqs. ( 9.30 ) can
+be approximated by
+\begin{equation}
+\label{Eq:III:9:32}
+A\biggl(
+1+\frac{1}{2}\,\frac{\mu^2\Efield^2}{A^2}
+\biggr).
+\end{equation}
+
+So the energy levels are, for all practical purposes,
+\begin{equation}
+\label{Eq:III:9:33}
+E_{\slI} =E_0+A+\frac{\mu^2\Efield^2}{2A}
+\end{equation}
+
+and
+\begin{equation}
+\label{Eq:III:9:34}
+E_{\slII} =E_0-A-\frac{\mu^2\Efield^2}{2A}.
+\end{equation}
+
+And the energies vary approximately linearly with [eq]. The
+force on the molecules is then
+\begin{equation}
+\label{Eq:III:9:35}
+\FLPF=\frac{\mu^2}{2A}\,\FLPgrad{\Efield^2}.
+\end{equation}
+
+Many molecules have an energy in an electric field which is
+proportional to [eq]. The coefficient is the polarizability of
+the molecule. Ammonia has an unusually high polarizability because of
+the small value of [eq] in the denominator. Thus, ammonia molecules are
+unusually sensitive to an electric field. (What would you expect for
+the dielectric coefficient of NH[eq] gas?)
+
+In the ammonia maser, the beam with molecules in the
+state [eq] and with the energy [eq] is sent through a resonant
+cavity, as shown in Fig.  9–4 . The other beam is
+discarded. Inside the cavity, there will be a time-varying electric
+field, so the next problem we must discuss is the behavior of a molecule
+in an electric field that varies with time. We have a completely
+different kind of a problem—one with a time-varying Hamiltonian. Since
+[eq] depends upon [eq], the [eq] vary with time, and we
+must determine the behavior of the system in this circumstance.
+
+To begin with, we write down the equations to be solved:
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{C_1}{t}&=(E_0+\mu\Efield)C_1-AC_2,\\[1ex]
+i\hbar\,\ddt{C_2}{t}&=-AC_1+(E_0-\mu\Efield)C_2.
+\end{aligned}
+\label{Eq:III:9:36}
+\end{equation}
+
+To be definite, let’s suppose that the electric field varies
+sinusoidally; then we can write
+\begin{equation}
+\label{Eq:III:9:37}
+\Efield=2\Efield_0\cos\omega t=
+\Efield_0(e^{i\omega t}+e^{-i\omega t}).
+\end{equation}
+
+In actual operation the frequency [eq] will be very nearly equal
+to the resonant frequency of the molecular
+transition [eq], but for the time being we want to keep things
+general, so we’ll let it have any value at all. The best way to solve
+our equations is to form linear combinations of [eq] and [eq] as we
+did before. So we add the two equations, divide by the square root
+of [eq], and use the definitions of [eq] and [eq] that we had
+in Eq. ( 9.13 ). We get
+\begin{equation}
+\label{Eq:III:9:38}
+i\hbar\,\ddt{C_{\slII}}{t}=
+(E_0-A)C_{\slII}+\mu\Efield C_{\slI}.
+\end{equation}
+
+You’ll note that this is the same as Eq. ( 9.9 ) with an
+extra term due to the electric field. Similarly, if we subtract the
+two equations ( 9.36 ), we get
+\begin{equation}
+\label{Eq:III:9:39}
+i\hbar\,\ddt{C_{\slI}}{t}=
+(E_0+A)C_{\slI}+\mu\Efield C_{\slII}.
+\end{equation}
+
+Now the question is, how to solve these equations? They are more
+difficult than our earlier set, because [eq] depends on [eq]; and,
+in fact, for a general [eq] the solution is not expressible in
+elementary functions. However, we can get a good approximation so long
+as the electric field is small. First we will write
+\begin{equation}
+\begin{gathered}
+C_{\slI}=\gamma_{\slI}e^{-i(E_0+A)t/\hbar}=
+\gamma_{\slI}e^{-i(E_{\slI})t/\hbar},\\
+\\
+C_{\slII}=\gamma_{\slII}e^{-i(E_0-A)t/\hbar}=
+\gamma_{\slII}e^{-i(E_{\slII})t/\hbar}.
+\end{gathered}
+\label{Eq:III:9:40}
+\end{equation}
+
+If there were no electric field, these solutions would be correct with
+[eq] and [eq] just chosen as two complex
+constants. In fact, since the probability of being in
+state [eq] is the absolute square of [eq] and the probability
+of being in state [eq] is the absolute square of [eq],
+the probability of being in state [eq] or in
+state [eq] is just [eq]
+or [eq]. For instance, if the system were to start
+originally in state [eq] so that [eq] was zero and
+[eq] was one, this condition would go on
+forever. There would be no chance, if the molecule were originally in
+state [eq], ever to get into state [eq].
+
+Now the idea of writing our equations in the form of
+Eq. ( 9.40 ) is that if [eq] is small in comparison
+with [eq], the solutions can still be written in this way, but then
+[eq] and [eq] become slowly varying functions of
+time—where by “slowly varying” we mean slowly in comparison 
+with the exponential functions. That is the trick. We use the fact that
+[eq] and [eq] vary slowly to get an approximate
+solution.
+
+We want now to substitute [eq] from Eq. ( 9.40 ) in
+the differential equation ( 9.39 ), but we must remember
+that [eq] is also a function of [eq]. We have
+\begin{equation*}
+i\hbar\,\ddt{C_{\slI}}{t}=
+E_{\slI}\gamma_{\slI}e^{-iE_{\slI}t/\hbar}+
+i\hbar\,\ddt{\gamma_{\slI}}{t}\,e^{-iE_{\slI}t/\hbar}.
+\end{equation*}
+
+The differential equation becomes
+ 
+\begin{equation}
+\label{Eq:III:9:41}
+\biggl(E_{\slI}\gamma_{\slI}+i\hbar\,\ddt{\gamma_{\slI}}{t}\biggr)
+e^{-(i/\hbar)E_{\slI}t}=
+E_{\slI}\gamma_{\slI}e^{-(i/\hbar)E_{\slI}t}+
+\mu\Efield\gamma_{\slII}e^{-(i/\hbar)E_{\slII}t}.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+\biggl(E_{\slI}\gamma_{\slI}+i\hbar\,\ddt{\gamma_{\slI}}{t}\biggr)
+e^{-(i/\hbar)E_{\slI}t}=\\[1ex]
+E_{\slI}\gamma_{\slI}e^{-(i/\hbar)E_{\slI}t}+
+\mu\Efield\gamma_{\slII}e^{-(i/\hbar)E_{\slII}t}.
+\end{gathered}
+\label{Eq:III:9:41}
+\end{equation}
+ 
+Similarly, the equation in [eq] becomes
+ 
+\begin{equation}
+\label{Eq:III:9:42}
+\biggl(E_{\slII}\gamma_{\slII}+i\hbar\,\ddt{\gamma_{\slII}}{t}\biggr)
+e^{-(i/\hbar)E_{\slII}t}=
+E_{\slII}\gamma_{\slII}e^{-(i/\hbar)E_{\slII}t}+
+\mu\Efield\gamma_{\slI}e^{-(i/\hbar)E_{\slI}t}.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+\biggl(E_{\slII}\gamma_{\slII}+i\hbar\,\ddt{\gamma_{\slII}}{t}\biggr)
+e^{-(i/\hbar)E_{\slII}t}=\\[1ex]
+E_{\slII}\gamma_{\slII}e^{-(i/\hbar)E_{\slII}t}+
+\mu\Efield\gamma_{\slI}e^{-(i/\hbar)E_{\slI}t}.
+\end{gathered}
+\label{Eq:III:9:42}
+\end{equation}
+ 
+Now you will notice that we have equal terms on both sides of each
+equation. We cancel these terms, and we also multiply the first
+equation by [eq] and the second
+by [eq]. Remembering that
+[eq] [eq] [eq], we have finally,
+\begin{equation}
+\label{Eq:III:9:43}
+\begin{aligned}
+i\hbar\,\ddt{\gamma_{\slI}}{t}&=
+\mu\Efield(t)e^{i\omega_0t}\gamma_{\slII},\\[1ex]
+i\hbar\,\ddt{\gamma_{\slII}}{t}&=
+\mu\Efield(t)e^{-i\omega_0t}\gamma_{\slI}.
+\end{aligned}
+\end{equation}
+
+Now we have an apparently simple pair of equations—and they are
+still exact, of course. The derivative of one variable is a function
+of time [eq], multiplied by the second
+variable; the derivative of the second is a similar time function,
+multiplied by the first. Although these simple equations cannot be
+solved in general, we will solve them for some special cases.
+
+We are, for the moment at least, interested only in the case of an
+oscillating electric field. Taking [eq] as given in
+Eq. ( 9.37 ), we find that the equations for [eq]
+and [eq] become
+\begin{equation}
+\label{Eq:III:9:44}
+\begin{aligned}
+i\hbar\,\ddt{\gamma_{\slI}}{t}&=
+\mu\Efield_0[e^{i(\omega+\omega_0)t}+
+e^{-i(\omega-\omega_0)t}]\gamma_{\slII},\\[1ex]
+i\hbar\,\ddt{\gamma_{\slII}}{t}&=
+\mu\Efield_0[e^{i(\omega-\omega_0)t}+
+e^{-i(\omega+\omega_0)t}]\gamma_{\slI}.
+\end{aligned}
+\end{equation}
+
+Now if [eq] is sufficiently small, the rates of change of
+[eq] and [eq] are also small. The
+two [eq]’s will not vary much with [eq], especially in comparison with
+the rapid variations due to the exponential terms. These exponential
+terms have real and imaginary parts that oscillate at the frequency
+[eq] or [eq]. The terms
+with [eq] oscillate very rapidly about an average value of
+zero and, therefore, do not contribute very much on the average to the
+rate of change of [eq]. So we can make a reasonably good
+approximation by replacing these terms by their average value, namely,
+zero. We will just leave them out, and take as our approximation:
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{\gamma_{\slI}}{t}&=
+\mu\Efield_0e^{-i(\omega-\omega_0)t}\gamma_{\slII},\\[1ex]
+i\hbar\,\ddt{\gamma_{\slII}}{t}&=
+\mu\Efield_0e^{i(\omega-\omega_0)t}\gamma_{\slI}.
+\end{aligned}
+\label{Eq:III:9:45}
+\end{equation}
+
+Even the remaining terms, with exponents proportional
+to [eq], will also vary rapidly unless [eq] is
+near [eq]. Only then will the right-hand side vary slowly enough that
+any appreciable amount will accumulate when we integrate the equations
+with respect to [eq]. In other words, with a weak electric field
+the only significant frequencies are those near [eq].
+
+With the approximation made in getting Eq. ( 9.45 ), the
+equations can be solved exactly, but the work is a little elaborate,
+so we won’t do that until later when we take up another problem of the
+same type. Now we’ll just solve them approximately—or rather, we’ll
+find an exact solution for the case of perfect resonance,
+[eq], and an approximate solution for frequencies near
+resonance.
+
+Let’s take the case of perfect resonance first. If we take
+[eq], the exponentials are equal to one in both equations
+of ( 9.45 ), and we have just
+\begin{equation}
+\label{Eq:III:9:46}
+\ddt{\gamma_{\slI}}{t}=-\frac{i\mu\Efield_0}{\hbar}\,\gamma_{\slII},\quad
+\ddt{\gamma_{\slII}}{t}=-\frac{i\mu\Efield_0}{\hbar}\,\gamma_{\slI}.
+\end{equation}
+
+If we eliminate first [eq] and then [eq] from
+these equations, we find that each satisfies the differential equation
+of simple harmonic motion:
+\begin{equation}
+\label{Eq:III:9:47}
+\frac{d^2\gamma}{dt^2}=-\biggl(
+\frac{\mu\Efield_0}{\hbar}
+\biggr)^2\gamma.
+\end{equation}
+
+The general solutions for these equations can be made up of sines and
+cosines. As you can easily verify, the following equations are a
+solution:
+\begin{equation}
+\begin{aligned}
+\gamma_{\slI}&=a\cos\frac{\mu\Efield_0}{\hbar}t+
+b\sin\frac{\mu\Efield_0}{\hbar}t,\\[1.5ex]
+\gamma_{\slII}&=ib\cos\frac{\mu\Efield_0}{\hbar}t-
+ia\sin\frac{\mu\Efield_0}{\hbar}t,
+\end{aligned}
+\label{Eq:III:9:48}
+\end{equation}
+
+where [eq] and [eq] are constants to be determined to fit any particular
+physical situation.
+
+For instance, suppose that at [eq] our molecular system was in the
+upper energy state [eq], which would require—from
+Eq. ( 9.40 )—that [eq] and [eq]
+at [eq]. For this situation we would need [eq] and [eq]. The
+probability that the molecule is in the state [eq] at some
+later [eq] is the absolute square of [eq], or
+\begin{equation}
+\label{Eq:III:9:49}
+P_{\slI}=\abs{\gamma_{\slI}}^2=
+\cos^2\!\frac{\mu\Efield_0}{\hbar}t.
+\end{equation}
+
+Similarly, the probability that the molecule will be in the
+state [eq] is given by the absolute square of [eq],
+\begin{equation}
+\label{Eq:III:9:50}
+P_{\slII}=\abs{\gamma_{\slII}}^2=
+\sin^2\!\frac{\mu\Efield_0}{\hbar}t.
+\end{equation}
+
+So long as [eq] is small and we are on resonance, the
+probabilities are given by simple oscillating functions. The
+probability to be in state [eq] falls from one to zero and
+back again, while the probability to be in the state [eq]
+rises from zero to one and back. The time variation of the two
+probabilities is shown in Fig.  9–5 . Needless to say, the
+sum of the two probabilities is always equal to one; the molecule is
+always in some state!
+
+Let’s suppose that it takes the molecule the time [eq] to go through
+the cavity. If we make the cavity just long enough so
+that [eq], then a molecule which enters in
+state [eq] will certainly leave it in state [eq]. If it
+enters the cavity in the upper state, it will leave the cavity in the
+lower state. In other words, its energy is decreased, and the loss of
+energy can’t go anywhere else but into the machinery which generates
+the field. The details by which you can see how the energy of the
+molecule is fed into the oscillations of the cavity are not simple;
+however, we don’t need to study these details, because we can use the
+principle of conservation of energy. (We could study them if we had
+to, but then we would have to deal with the quantum mechanics of the
+field in the cavity in addition to the quantum mechanics of the atom.)
+
+In summary: the molecule enters the cavity, the cavity
+field—oscillating at exactly the right frequency—induces
+transitions from the upper to the lower state, and the energy released
+is fed into the oscillating field. In an operating maser the molecules
+deliver enough energy to maintain the cavity oscillations—not only
+providing enough power to make up for the cavity losses but even
+providing small amounts of excess power that can be drawn from the
+cavity. Thus, the molecular energy is converted into the energy of an
+external electromagnetic field.
+
+Remember that before the beam enters the cavity, we have to use a
+filter which separates the beam so that only the upper state
+enters. It is easy to demonstrate that if you were to start with
+molecules in the lower state, the process will go the other way and
+take energy out of the cavity. If you put the unfiltered beam in, as
+many molecules are taking energy out as are putting energy in, so
+nothing much would happen. In actual operation it isn’t necessary, of
+course, to make [eq] exactly [eq]. For any other
+value (except an exact integral multiple of [eq]), there is some
+probability for transitions from state [eq] to
+state [eq]. For other values, however, the device isn’t
+[eq] percent efficient; many of the molecules which leave the cavity could
+have delivered some energy to the cavity but didn’t.
+
+In actual use, the velocity of all the molecules is not the same; they
+have some kind of Maxwell distribution. This means that the ideal
+periods of time for different molecules will be different, and it is
+impossible to get [eq] percent efficiency for all the molecules at
+once. In addition, there is another complication which is easy to take
+into account, but we don’t want to bother with it at this stage. You
+remember that the electric field in a cavity usually varies from place
+to place across the cavity. Thus, as the molecules drift across the
+cavity, the electric field at the molecule varies in a way that is
+more complicated than the simple sinusoidal oscillation in time that
+we have assumed. Clearly, one would have to use a more complicated
+integration to do the problem exactly, but the general idea is still
+the same.
+
+There are other ways of making masers. Instead of separating the atoms
+in state [eq] from those in state [eq] by a
+Stern-Gerlach apparatus, one can have the atoms already in the cavity
+(as a gas or a solid) and shift atoms from state [eq] to
+state [eq] by some means. One way is one used in the so-called
+three-state maser. For it, atomic systems are used which have three
+energy levels, as shown in Fig.  9–6 , with the following
+special properties. The system will absorb radiation (say, light) of
+frequency [eq] and go from the lowest energy
+level [eq], to some high-energy level [eq], and then will quickly emit
+photons of frequency [eq] and go to the state [eq]
+with energy [eq]. The state [eq] has a long lifetime so
+its population can be raised, and the conditions are then appropriate
+for maser operation between states [eq] and [eq].
+Although such a device is called a “three-state” maser, the maser
+operation really works just as a two-state system such as we are
+describing.
+
+A laser ( L ight A mplification by
+ S timulated E mission of R adiation) is just a maser
+working at optical frequencies. The “cavity” for a laser usually
+consists of just two plane mirrors between which standing waves are
+generated.
+
+Finally, we would like to find out how the states vary in the
+circumstance that the cavity frequency is nearly, but not exactly,
+equal to [eq]. We could solve this problem exactly, but instead
+of trying to do that, we’ll take the important case that the electric
+field is small and also the period of time [eq] is small, so
+that [eq] is much less than one. Then, even in the case of
+perfect resonance which we have just worked out, the probability of
+making a transition is small. Suppose that we start again with
+[eq] and [eq]. During the time [eq] we would
+expect [eq] to remain nearly equal to one, and
+[eq] to remain very small compared with unity. Then the
+problem is very easy. We can calculate [eq] from the
+second equation in ( 9.45 ), taking [eq] equal
+to one and integrating from [eq] to [eq]. We get
+\begin{equation}
+\label{Eq:III:9:51}
+\gamma_{\slII}=\frac{\mu\Efield_0}{\hbar}\,\biggl[
+\frac{1-e^{i(\omega-\omega_0)T}}{\omega-\omega_0}
+\biggr].
+\end{equation}
+
+This [eq], used with Eq. ( 9.40 ), gives the
+amplitude to have made a transition from the state [eq] to the
+state [eq] during the time interval [eq]. The
+probability [eq] to make the transition
+is [eq], or
+ 
+\begin{equation}
+\label{Eq:III:9:52}
+P(\slI\to\slII\,)=\abs{\gamma_{\slII}}^2=
+\biggl[\frac{\mu\Efield_0T}{\hbar}\biggr]^2
+\,\frac{\sin^2[(\omega-\omega_0)T/2]}
+{[(\omega-\omega_0)T/2]^2}.
+\end{equation}
+ 
+ 
+\begin{gather}
+P(\slI\to\slII\,)=\abs{\gamma_{\slII}}^2\notag\\[1ex]
+\label{Eq:III:9:52}
+=\biggl[\frac{\mu\Efield_0T}{\hbar}\biggr]^2
+\,\frac{\sin^2[(\omega-\omega_0)T/2]}
+{[(\omega-\omega_0)T/2]^2}.
+\end{gather}
+
+It is interesting to plot this probability for a fixed length of time
+as a function of the frequency of the cavity in order to see how
+sensitive it is to frequencies near the resonant frequency [eq].
+We show such a plot of [eq] in
+Fig.  9–7 . (The vertical scale has been adjusted to be [eq]
+at the peak by dividing by the value of the probability
+when [eq].) We have seen a curve like this in the diffraction
+theory, so you should already be familiar with it. The curve falls
+rather abruptly to zero for [eq] and never regains
+significant size for large frequency deviations. In fact, by far the
+greatest part of the area under the curve lies within the
+range [eq]. It is possible to show 5 that the area under the
+curve is just [eq] and is equal to the area of the shaded rectangle
+drawn in the figure.
+
+Let’s examine the implication of our results for a real maser. Suppose
+that the ammonia molecule is in the cavity for a reasonable length of
+time, say for one millisecond. Then for [eq] megacycles, we
+can calculate that the probability for a transition falls to zero for
+a frequency deviation of [eq], which is four parts
+in [eq]. Evidently the frequency must be very close to [eq] to
+get a significant transition probability. Such an effect is the basis
+of the great precision that can be obtained with “atomic”
+clocks, which work on the maser principle.
+
+Our treatment above applies to a more general situation than the
+ammonia maser. We have treated the behavior of a molecule under the
+influence of an electric field, whether that field was confined in a
+cavity or not. So we could be simply shining a beam of “light”—at
+microwave frequencies—at the molecule and ask for the probability of
+emission or absorption. Our equations apply equally well to this case,
+but let’s rewrite them in terms of the intensity of the
+radiation rather than the electric field. If we define the
+intensity [eq] to be the average energy flow per unit area per second,
+then from Chapter  27 of Volume II, we can write
+\begin{equation*}
+\intensity=\epsO c^2\abs{\Efieldvec\times\FLPB}_{\text{ave}}=
+\tfrac{1}{2}\epsO c^2\abs{\Efieldvec\times\FLPB}_{\text{max}}=
+2\epsO c\Efield_0^2.
+\end{equation*}
+
+(The maximum value of [eq] is [eq].) The transition
+probability now becomes:
+ 
+\begin{equation}
+\label{Eq:III:9:53}
+P(\slI\to\slII\,)=2\pi\biggl[\frac{\mu^2}{4\pi\epsO\hbar^2c}\biggr]
+\intensity T^2\,
+\frac{\sin^2[(\omega-\omega_0)T/2]}
+{[(\omega-\omega_0)T/2]^2}.
+\end{equation}
+ 
+ 
+\begin{gather}
+\label{Eq:III:9:53}
+P(\slI\to\slII\,)=\\[1ex]
+2\pi\biggl[\frac{\mu^2}{4\pi\epsO\hbar^2c}\biggr]
+\intensity T^2\,\frac{\sin^2[(\omega-\omega_0)T/2]}
+{[(\omega-\omega_0)T/2]^2}.\notag
+\end{gather}
+
+Ordinarily the light shining on such a system is not exactly
+monochromatic. It is, therefore, interesting to solve one more
+problem—that is, to calculate the transition probability when the
+light has intensity [eq] per unit frequency interval,
+covering a broad range which includes [eq]. Then, the
+probability of going from [eq] to [eq] will become an
+integral:
+ 
+\begin{equation}
+\label{Eq:III:9:54}
+P(\slI\to\slII\,)=2\pi\biggl[\frac{\mu^2}{4\pi\epsO\hbar^2c}\biggr]T^2
+\int_0^\infty\intensity(\omega)\,
+\frac{\sin^2[(\omega-\omega_0)T/2]}
+{[(\omega-\omega_0)T/2]^2}\,d\omega.
+\end{equation}
+ 
+ 
+\begin{gather}
+\label{Eq:III:9:54}
+P(\slI\to\slII\,)=\\[1ex]
+2\pi\biggl[\frac{\mu^2}{4\pi\epsO\hbar^2c}\biggr]T^2\!\!
+\int_0^\infty\!\!\!\intensity(\omega)\,
+\frac{\sin^2[(\omega-\omega_0)T/2]}
+{[(\omega-\omega_0)T/2]^2}\,d\omega.\notag
+\end{gather}
+ 
+In general, [eq] will vary much more slowly
+with [eq] than the sharp resonance term. The two functions might appear
+as shown in Fig.  9–8 . In such cases, we can
+replace [eq] by its value [eq] at the center
+of the sharp resonance curve and take it outside of the integral. What
+remains is just the integral under the curve of Fig.  9–7 ,
+which is, as we have seen, just equal to [eq]. We get the result
+that
+\begin{equation}
+\label{Eq:III:9:55}
+P(\slI\to\slII\,)=4\pi^2
+\biggl[\frac{\mu^2}{4\pi\epsO\hbar^2c}\biggr]
+\intensity(\omega_0)T.
+\end{equation}
+
+This is an important result, because it is the general theory of the
+absorption of light by any molecular or atomic system . Although we began by
+considering a case in which state [eq] had a higher energy than
+state [eq], none of our arguments depended on that fact.
+Equation ( 9.55 ) still holds if the state [eq] has a
+ lower energy than the state [eq]; then [eq]
+represents the probability for a transition with the absorption of energy
+from the incident electromagnetic wave. The absorption of light by any atomic
+system always involves the amplitude for a transition in an oscillating electric
+field between two states separated by an energy [eq]. For any
+particular case, it is always worked out in just the way we have done here and
+gives an expression like Eq. ( 9.55 ). We, therefore, emphasize the
+following features of this result. First, the probability is proportional
+to [eq]. In other words, there is a constant probability per unit time that
+transitions will occur. Second, this probability is proportional to the
+ intensity of the light incident on the system. Finally, the transition
+probability is proportional to [eq], where, you remember, [eq]
+defined the shift in energy due to the electric field [eq]. Because of
+this, [eq] also appeared in Eqs. ( 9.38 )
+and ( 9.39 ) as the coupling term that is responsible for the
+transition between the otherwise stationary states [eq]
+and [eq]. In other words, for the small [eq] we have been
+considering, [eq] is the so-called “perturbation term” in the
+Hamiltonian matrix element which connects the states [eq]
+and [eq]. In the general case, we would have that [eq] gets
+replaced by the matrix element [eq] (see
+Section  5–6 ).
+
+In Volume I (Section  42–5 ) we talked about the relations
+among light absorption, induced emission, and spontaneous emission in
+terms of the Einstein [eq]- and [eq]-coefficients. Here, we have at last
+the quantum mechanical procedure for computing these coefficients. What
+we have called [eq] for our two-state ammonia molecule
+corresponds precisely to the absorption coefficient [eq] of the
+Einstein radiation theory. For the complicated ammonia molecule—which
+is too difficult for anyone to calculate—we have taken the matrix
+element [eq] as [eq], saying that [eq] is
+to be gotten from experiment. For simpler atomic systems, the [eq]
+which belongs to any particular transition can be calculated from the
+ definition 
+\begin{equation}
+\label{Eq:III:9:56}
+\mu_{mn}\Efield=\bracket{m}{H}{n}=H_{mn},
+\end{equation}
+
+where [eq] is the matrix element of the Hamiltonian which includes
+the effects of a weak electric field. The [eq] calculated in
+this way is called the electric dipole matrix
+element . The quantum mechanical
+theory of the absorption and emission of light is, therefore, reduced to
+a calculation of these matrix elements for particular atomic systems.
+
+Our study of a simple two-state system has thus led us to an
+understanding of the general problem of the absorption and emission of
+light.

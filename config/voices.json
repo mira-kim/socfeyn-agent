@@ -1,0 +1,15 @@
+{
+  "socrates_weight": 0.6,
+  "feynman_weight": 0.4,
+  "temperature": 0.5,
+  "prompt_version": "v1.0",
+  "active_thinkers": ["socrates", "feynman"],
+  "drift_threshold": 0.75,
+  "confidence_threshold": 0.72,
+  "context_budget_tokens": 2000,
+  "rolling_window_turns": 4,
+  "max_response_tokens": 600,
+  "max_scoring_tokens": 300,
+  "max_extraction_tokens": 400,
+  "max_summary_tokens": 200
+}

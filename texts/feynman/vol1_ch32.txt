@@ -1,0 +1,669 @@
+The Feynman Lectures on Physics Vol. I Ch. 32: Radiation Damping. Light Scattering
+==================================================================================
+
+Sections: 32–1 Radiation resistance | 32–2 The rate of radiation of energy | 32–3 Radiation damping | 32–4 Independent sources | 32–5 Scattering of light
+
+
+
+In the last chapter we learned that when a system is oscillating,
+energy is carried away, and we deduced a formula for the energy which
+is radiated by an oscillating system. If we know the electric field,
+then the average of the square of the field times [eq] is the
+amount of energy that passes per square meter per second through a
+surface normal to the direction in which the radiation is going:
+\begin{equation}
+\label{Eq:I:32:1}
+S=\epsO c\avg{E^2}.
+\end{equation}
+Any oscillating charge radiates energy; for instance, a driven antenna
+radiates energy. If the system radiates energy, then in order to
+account for the conservation of energy we must find that power is
+being delivered along the wires which lead into the antenna. That is,
+to the driving circuit the antenna acts like a resistance , or a
+place where energy can be “lost” (the energy is not really lost, it
+is really radiated out, but so far as the circuit is concerned, the
+energy is lost). In an ordinary resistance, the energy which is
+“lost” passes into heat; in this case the energy which is “lost”
+goes out into space. But from the standpoint of circuit theory,
+without considering where the energy goes, the net effect on
+the circuit is the same—energy is “lost” from that
+circuit. Therefore the antenna appears to the generator as having a
+resistance, even though it may be made with perfectly good copper. In
+fact, if it is well built it will appear as almost a pure resistance,
+with very little inductance or capacitance, because we would like to
+radiate as much energy as possible out of the antenna. This resistance
+that an antenna shows is called the radiation resistance .
+
+If a current [eq] is going to the antenna, then the average rate at
+which power is delivered to the antenna is the average of the square
+of the current times the resistance. The rate at which power is
+ radiated by the antenna is proportional to the square of the
+current in the antenna, of course, because all the fields are
+proportional to the currents, and the energy liberated is proportional
+to the square of the field. The coefficient of proportionality between
+radiated power and [eq] is the radiation resistance.
+
+An interesting question is, what is this radiation resistance due to?
+Let us take a simple example: let us say that currents are driven up
+and down in an antenna. We find that we have to put work in, if the
+antenna is to radiate energy. If we take a charged body and accelerate
+it up and down it radiates energy; if it were not charged it would not
+radiate energy. It is one thing to calculate from the conservation of
+energy that energy is lost, but another thing to answer the question,
+ against what force are we doing the work? That is an
+interesting and very difficult question which has never been
+completely and satisfactorily answered for electrons, although it has
+been for antennas. What happens is this: in an antenna, the fields
+produced by the moving charges in one part of the antenna react on the
+moving charges in another part of the antenna. We can calculate these
+forces and find out how much work they do, and so find the right rule
+for the radiation resistance. When we say “We can calculate—” that
+is not quite right— we cannot, because we have not yet studied
+the laws of electricity at short distances; only at large distances do
+we know what the electric field is. We saw the
+formula ( 28.3 ), but at present it is too complicated for
+ us to calculate the fields inside the wave zone. Of course, since
+conservation of energy is valid, we can calculate the result all right
+without knowing the fields at short distances. (As a matter of fact, by
+using this argument backwards it turns out that one can find the formula
+for the forces at short distances only by knowing the field at very
+large distances, by using the laws of conservation of energy, but we
+shall not go into that here.)
+
+The problem in the case of a single electron is this: if there is only
+one charge, what can the force act on? It has been proposed, in the
+old classical theory, that the charge was a little ball, and that one
+part of the charge acted on the other part. Because of the delay in
+the action across the tiny electron, the force is not exactly in phase
+with the motion. That is, if we have the electron standing still, we
+know that “action equals reaction.” So the various internal forces
+are equal, and there is no net force. But if the electron is
+accelerating, then because of the time delay across it, the force
+which is acting on the front from the back is not exactly the same as
+the force on the back from the front, because of the delay in the
+effect. This delay in the timing makes for a lack of balance, so, as a
+net effect, the thing holds itself back by its bootstraps! This model
+of the origin of the resistance to acceleration, the radiation
+resistance of a moving charge, has run into many difficulties, because
+our present view of the electron is that it is not a “little
+ball”; this problem has never been solved. Nevertheless we can
+calculate exactly, of course, what the net radiation resistance force
+must be, i.e., how much loss there must be when we accelerate a
+charge, in spite of not knowing directly the mechanism of how that
+force works.
+
+Now we shall calculate the total energy radiated by an accelerating
+charge. To keep the discussion general, we shall take the case of a
+charge accelerating any which way, but nonrelativistically. At a
+moment when the acceleration is, say, vertical, we know that the
+electric field that is generated is the charge multiplied by the
+projection of the retarded acceleration, divided by the distance. So
+we know the electric field at any point, and we therefore know the
+square of the electric field and thus the energy [eq] leaving
+through a unit area per second.
+
+The quantity [eq] appears quite often in expressions involving
+radiowave propagation. Its reciprocal is called the impedance of a
+vacuum , and it is an easy number to
+remember: it has the value [eq] ohms. So the power in watts
+per square meter is equal to the average of the field squared, divided
+by [eq].
+
+Using our expression ( 29.1 ) for the electric field, we find
+that
+\begin{equation}
+\label{Eq:I:32:2}
+S=\frac{q^2a'^2\sin^2\theta}{16\pi^2\epsO r^2c^3}
+\end{equation}
+is the power per square meter radiated in the direction [eq]. We
+notice that it goes inversely as the square of the distance, as we
+said before. Now suppose we wanted the total energy radiated in all
+directions: then we must integrate ( 32.2 ) over all
+directions. First we multiply by the area, to find the amount that
+flows within a little angle [eq] (Fig.  32–1 ). We
+need the area of a spherical section. The way to think of it is this:
+if [eq] is the radius, then the width of the annular segment
+is [eq], and the circumference is [eq], because
+[eq] is the radius of the circle. So the area of the little
+piece of the sphere is [eq] times [eq]:
+\begin{equation}
+\label{Eq:I:32:3}
+dA=2\pi r^2\sin\theta\,d\theta.
+\end{equation}
+By multiplying the flux [( 32.2 ), the power per square
+meter] by the area in square meters included in the small
+angle [eq], we find the amount of energy that is liberated in this
+direction between [eq] and [eq]; then we integrate
+that over all the angles [eq] from [eq] to [eq]:
+\begin{equation}
+\label{Eq:I:32:4}
+P=\int S\,dA=\frac{q^2a'^2}{8\pi\epsO c^3}
+\int_0^\pi\sin^3\theta\,d\theta.
+\end{equation}
+By writing [eq] it is not hard
+to show that [eq]. Using that fact,
+we finally get
+\begin{equation}
+\label{Eq:I:32:5}
+P=\frac{q^2a'^2}{6\pi\epsO c^3}.
+\end{equation}
+This expression deserves some remarks. First of all, since the
+vector [eq] had a certain direction, the [eq] in ( 32.5 )
+would be the square of the vector [eq], that is,
+[eq], the length of the vector, squared. Secondly, the
+flux ( 32.2 ) was calculated using the retarded acceleration;
+that is, the acceleration at the time at which the energy now passing
+through the sphere was radiated. We might like to say that this energy
+was in fact liberated at this earlier time. This is not exactly true;
+it is only an approximate idea. The exact time when the energy is
+liberated cannot be defined precisely. All we can really calculate
+precisely is what happens in a complete motion, like an oscillation or
+something, where the acceleration finally ceases. Then what we find is
+that the total energy flux per cycle is the average of acceleration
+squared, for a complete cycle. This is what should really appear
+in ( 32.5 ). Or, if it is a motion with an acceleration that is
+initially and finally zero, then the total energy that has flown out is
+the time integral of ( 32.5 ).
+
+To illustrate the consequences of formula ( 32.5 ) when we
+have an oscillating system, let us see what happens if the
+displacement [eq] of the charge is oscillating so that the acceleration [eq]
+is [eq]. The average of the acceleration
+squared over a cycle (remember that we have to be very careful when we
+square things that are written in complex notation—it really is the
+cosine, and the average of [eq] is one-half) thus is
+\begin{equation}
+\avg{a'^2} = \tfrac{1}{2}\omega^4x_0^2.\notag
+\end{equation}
+Therefore
+\begin{equation}
+\label{Eq:I:32:6}
+P=\frac{q^2\omega^4x_0^2}{12\pi\epsO c^3}.
+\end{equation}
+
+The formulas we are now discussing are relatively advanced and more or
+less modern; they date from the beginning of the twentieth century,
+and they are very famous. Because of their historical value, it is
+important for us to be able to read about them in older books. In
+fact, the older books also used a system of units different from our
+present mks system. However, all these complications can be
+straightened out in the final formulas dealing with electrons by the
+following rule: The quantity [eq], where [eq] is the
+electronic charge (in coulombs), has, historically, been written
+as [eq]. It is very easy to calculate that [eq] in the mks system is
+numerically equal to [eq], because we know that,
+numerically, [eq] and $1/4\pi\epsO =
+8.98748\times10^9$. Therefore we shall often use the convenient
+abbreviation
+\begin{equation}
+\label{Eq:I:32:7}
+e^2=\frac{q_e^2}{4\pi\epsO}.
+\end{equation}
+If we use the above numerical value of [eq] in the older formulas and
+treat them as though they were written in mks units, we will get the
+right numerical results. For example, the older form
+of ( 32.5 ) is [eq]. Again, the
+potential energy of a proton and an electron at distance [eq] is
+[eq] or [eq], with [eq] (mks).
+
+Now the fact that an oscillator loses a certain energy would mean that
+if we had a charge on the end of a spring (or an electron in an atom)
+which has a natural frequency [eq], and we start it oscillating
+and let it go, it will not oscillate forever, even if it is in empty
+space millions of miles from anything. There is no oil, no resistance,
+in an ordinary sense; no “viscosity.” But nevertheless it will not
+oscillate, as we might once have said, “forever,” because if it is
+charged it is radiating energy, and therefore the oscillation will
+slowly die out. How slowly? What is the [eq] of such an oscillator,
+caused by the electromagnetic effects, the so-called radiation
+resistance or radiation damping of the oscillator? The [eq] of any
+oscillating system is the total energy content of the oscillator at
+any time divided by the energy loss per radian:
+\begin{equation*}
+Q=-\frac{W}{dW/d\phi}.
+\end{equation*}
+Or (another way to write it), since [eq] [eq]
+[eq],
+\begin{equation}
+\label{Eq:I:32:8}
+Q=-\frac{\omega W}{dW/dt}.
+\end{equation}
+If for a given [eq] this tells us how the energy of the oscillation
+dies out, [eq], which has the solution $W =
+W_0e^{-\omega t/Q}[eq]W_0[eq]t = 0$).
+
+To find the [eq] for a radiator, we go back to ( 32.8 ) and
+use ( 32.6 ) for [eq].
+
+Now what do we use for the energy [eq] of the oscillator? The kinetic
+energy of the oscillator is [eq], and the mean 
+kinetic energy is [eq]. But we remember that for the
+total energy of an oscillator, on the average half is kinetic and half
+is potential energy, and so we double our result, and find for the
+total energy of the oscillator
+\begin{equation}
+\label{Eq:I:32:9}
+W=\tfrac{1}{2}m\omega^2x_0^2.
+\end{equation}
+What do we use for the frequency in our formulas? We use the natural
+frequency [eq] because, for all practical purposes, that is the
+frequency at which our atom is radiating, and for [eq] we use the
+electron mass [eq]. Then, making the necessary divisions and
+cancellations, the formula comes down to
+\begin{equation}
+\label{Eq:I:32:10}
+\frac{1}{Q}=\frac{4\pi e^2}{3\lambda m_ec^2}.
+\end{equation}
+(In order to see it better and in a more historical form we write it
+using our abbreviation [eq], and the
+factor [eq] which was left over has been written as [eq].)
+Since [eq] is dimensionless, the combination [eq] must be a
+property only of the electron charge and mass, an intrinsic property
+of the electron, and it must be a length . It has been given a
+name, the classical electron radius , because the early atomic models, which were invented
+to explain the radiation resistance on the basis of the force of one
+part of the electron acting on the other parts, all needed to have an
+electron whose dimensions were of this general order of magnitude.
+However, this quantity no longer has the significance that we believe
+that the electron really has such a radius. Numerically, the
+magnitude of the radius is
+\begin{equation}
+\label{Eq:I:32:11}
+r_0=\frac{e^2}{m_ec^2}=2.82\times10^{-15}\text{ m}.
+\end{equation}
+
+Now let us actually calculate the [eq] of an atom that is emitting
+light—let us say a sodium atom. For a sodium atom, the wavelength is
+roughly [eq] angstroms, in the yellow part of the visible spectrum,
+and this is a typical wavelength. Thus
+\begin{equation}
+\label{Eq:I:32:12}
+Q=\frac{3\lambda}{4\pi r_0}\approx 5\times10^7,
+\end{equation}
+so the [eq] of an atom is of the order [eq]. This means that an
+atomic oscillator will oscillate for [eq] radians or about
+[eq] oscillations, before its energy falls by a factor [eq]. The frequency
+of oscillation of light corresponding to [eq] angstroms, $\nu =
+c/\lambda[eq]10^{15}$ cycles/sec, and therefore the
+lifetime, the time it takes for the energy of a radiating atom to die
+out by a factor [eq], is on the order of [eq] sec. In ordinary
+circumstances, freely emitting atoms usually take about this long to
+radiate. This is valid only for atoms which are in empty space, not
+being disturbed in any way. If the electron is in a solid and it has
+to hit other atoms or other electrons, then there are additional
+resistances and different damping.
+
+The effective resistance term [eq] in the resistance law for the
+oscillator can be found from the relation [eq], and we
+remember that the size of [eq] determines how wide the resonance
+curve is (Fig.  23–2 ). Thus we have just computed the
+ widths of spectral lines for freely radiating atoms! Since
+[eq], we find that
+\begin{align}
+\notag
+\Delta\lambda &=2\pi c\,\Delta\omega/\omega^2=
+2\pi c\gamma/\omega_0^2=2\pi c/Q\omega_0\\[1ex]
+\label{Eq:I:32:13}
+&=\lambda/Q=4\pi r_0/3=1.18\times10^{-14}\text{ m}.
+\end{align}
+
+In preparation for our second topic, the scattering of light, we must
+now discuss a certain feature of the phenomenon of interference that
+we neglected to discuss previously. This is the question of when
+interference does not occur. If we have two sources [eq]
+and [eq], with amplitudes [eq] and [eq], and we make an observation in
+a certain direction in which the phases of arrival of the two signals
+are [eq] and [eq] (a combination of the actual time of
+oscillation and the delayed time, depending on the position of
+observation), then the energy that we receive can be found by
+compounding the two complex number vectors [eq] and [eq], one at
+angle [eq] and the other at angle [eq] (as we did in
+Chapter  29 ) and we find that the resultant energy is
+proportional to
+\begin{equation}
+\label{Eq:I:32:14}
+A_R^2=A_1^2+A_2^2+2A_1A_2\cos\,(\phi_1-\phi_2).
+\end{equation}
+Now if the cross term [eq] were not there,
+then the total energy that would be received in a given direction
+would simply be the sum of the energies, [eq], that would
+be liberated by each source separately, which is what we usually
+expect. That is, the combined intensity of light shining on something
+from two sources is the sum of the intensities of the two lights. On
+the other hand, if we have things set just right and we have a cross
+term, it is not such a sum, because there is also some
+interference. If there are circumstances in which this term is of no
+importance, then we would say the interference is apparently lost. Of
+course, in nature it is always there, but we may not be able to detect
+it.
+
+Let us consider some examples. Suppose, first, that the two sources
+are [eq] wavelengths apart, not an impossible
+arrangement. Then in a given direction it is true that there is a very
+definite value of these phase differences. But, on the other hand, if
+we move just a hair in one direction, a few wavelengths, which is no
+distance at all (our eye already has a hole in it that is so large
+that we are averaging the effects over a range very wide compared with
+one wavelength) then we change the relative phase, and the cosine
+changes very rapidly. If we take the average of the intensity
+over a little region, then the cosine, which goes plus, minus, plus,
+minus, as we move around, averages to zero.
+
+So if we average over regions where the phase varies very rapidly with
+position, we get no interference.
+
+Another example. Suppose that the two sources are two independent
+radio oscillators—not a single oscillator being fed by two wires,
+which guarantees that the phases are kept together, but two
+independent sources—and that they are not precisely tuned at
+the same frequency (it is very hard to make them at exactly the same
+frequency without actually wiring them together). In this case we have
+what we call two independent sources. Of course, since the
+frequencies are not exactly equal, although they started in phase, one
+of them begins to get a little ahead of the other, and pretty soon
+they are out of phase, and then it gets still further ahead, and
+pretty soon they are in phase again. So the phase difference between
+the two is gradually drifting with time, but if our observation is so
+crude that we cannot see that little time, if we average over a much
+longer time, then although the intensity swells and falls like what we
+call “beats” in sound, if these swellings and fallings are too rapid
+for our equipment to follow, then again this term averages out.
+
+In other words, in any circumstance in which the phase shift averages
+out, we get no interference!
+
+One finds many books which say that two distinct light sources never
+interfere. This is not a statement of physics, but is merely a
+statement of the degree of sensitivity of the technique of the
+experiments at the time the book was written. What happens in a light
+source is that first one atom radiates, then another atom radiates,
+and so forth, and we have just seen that atoms radiate a train of
+waves only for about [eq] sec; after [eq] sec, some atom has
+probably taken over, then another atom takes over, and so on. So the
+phases can really only stay the same for about [eq] sec.
+Therefore, if we average for very much more than [eq] sec,
+we do not see an interference from two different sources, because they
+cannot hold their phases steady for longer than [eq] sec. With
+photocells, very high-speed detection is possible, and one can show
+that there is an interference which varies with time, up and down, in
+about [eq] sec. But most detection equipment, of course, does not
+look at such fine time intervals, and thus sees no
+interference. Certainly with the eye, which has a tenth-of-a-second
+averaging time, there is no chance whatever of seeing an interference
+between two different ordinary sources.
+
+Recently it has become possible to make light sources which get around
+this effect by making all the atoms emit together in time. The
+device which does this is a very complicated thing, and has to be
+understood in a quantum-mechanical way. It is called a
+ laser , and it is possible to produce from a
+laser a source in which the time during which the phase is
+kept constant, is very much longer than [eq] sec. It can be of the
+order of a hundredth, a tenth, or even one second, and so, with ordinary
+photocells, one can pick up the frequency between two different
+lasers. One can easily detect the pulsing of the beats
+between two laser sources. Soon, no doubt, someone will be
+able to demonstrate two sources shining on a wall, in which the beats
+are so slow that one can see the wall get bright and dark!
+
+Another case in which the interference averages out is that in which,
+instead of having only two sources, we have many . In
+this case, we would write the expression for [eq] as the sum of a
+whole lot of amplitudes, complex numbers, squared, and we would get
+the square of each one, all added together, plus cross terms between
+every pair, and if the circumstances are such that the latter average
+out, then there will be no effects of interference. It may be that the
+various sources are located in such random positions that, although
+the phase difference between [eq] and [eq] is also definite, it is
+very different from that between [eq] and [eq], etc. So we would get
+a whole lot of cosines, many plus, many minus, all averaging out.
+
+So it is that in many circumstances we do not see the effects of
+interference, but see only a collective, total intensity equal to the
+sum of all the intensities.
+
+The above leads us to an effect which occurs in air as a consequence
+of the irregular positions of the atoms. When we were discussing the
+index of refraction, we saw that an incoming beam of light will make
+the atoms radiate again. The electric field of the incoming beam
+drives the electrons up and down, and they radiate because of their
+acceleration. This scattered radiation combines to give a beam in the
+same direction as the incoming beam, but of somewhat different phase,
+and this is the origin of the index of refraction.
+
+But what can we say about the amount of re-radiated light in some
+other direction? Ordinarily, if the atoms are very beautifully located
+in a nice pattern, it is easy to show that we get nothing in other
+directions, because we are adding a lot of vectors with their phases
+always changing, and the result comes to zero. But if the objects are
+ randomly located, then the total intensity in any direction is
+the sum of the intensities that are scattered by each atom, as
+we have just discussed. Furthermore, the atoms in a gas are in actual
+motion, so that although the relative phase of two atoms is a definite
+amount now, later the phase would be quite different, and therefore
+ each cosine term will average out. Therefore, to find out how
+much light is scattered in a given direction by a gas, we merely study
+the effects of one atom and multiply the intensity it radiates
+by the number of atoms.
+
+Earlier, we remarked that the phenomenon of scattering of light of
+this nature is the origin of the blue of the sky. The sunlight goes
+through the air, and when we look to one side of the sun—say
+at [eq] to the beam—we see blue light; what we now have to
+calculate is how much light we see and why it is blue .
+
+If the incident beam has the electric field 1  $\FLPE =
+\hat{\FLPE}_0e^{i\omega t}$ at the point where the atom is located, we
+know that an electron in the atom will vibrate up and down in response
+to this [eq] (Fig.  32–2 ). From Eq. ( 23.8 ), the
+response will be
+\begin{equation}
+\label{Eq:I:32:15}
+\hat{\FLPx}=\frac{q_e\hat{\FLPE}_0}{m(\omega_0^2-\omega^2+i\gamma\omega)}.
+\end{equation}
+We could include the damping and the possibility that the atom acts
+like several oscillators of different frequency and sum over the
+various frequencies, but for simplicity let us just take one
+oscillator and neglect the damping. Then the response to the external
+electric field, which we have already used in the calculation of the
+index of refraction, is simply
+\begin{equation}
+\label{Eq:I:32:16}
+\hat{\FLPx}=\frac{q_e\hat{\FLPE}_0}{m(\omega_0^2-\omega^2)}.
+\end{equation}
+We could now easily calculate the intensity of light that is emitted
+in various directions, using formula ( 32.2 ) and the
+acceleration corresponding to the above [eq].
+
+Rather than do this, however, we shall simply calculate the
+ total amount of light scattered in all directions, just
+to save time. The total amount of light energy per second, scattered
+in all directions by the single atom, is of course given by
+Eq. ( 32.6 ). So, putting together the various pieces and
+regrouping them, we get
+\begin{align}
+P&=[(q_e^2\omega^4/12\pi\epsO c^3)q_e^2E_0^2/m_e^2
+(\omega^2\!-\omega_0^2)^2]\notag\\[1ex]
+&=(\tfrac{1}{2}\epsO cE_0^2)(8\pi/3)(q_e^4/16\pi^2\epsO^2m_e^2c^4)
+[\omega^4\!/(\omega^2\!-\omega_0^2)^2]\notag\\[1ex]
+\label{Eq:I:32:17}
+&=(\tfrac{1}{2}\epsO cE_0^2)(8\pi r_0^2/3)
+[\omega^4\!/(\omega^2\!-\omega_0^2)^2]
+\end{align}
+for the total scattered power, radiated in all directions.
+
+We have written the result in the above form because it is then easy
+to remember: First, the total energy that is scattered is proportional
+to the square of the incident field. What does that mean? Obviously,
+the square of the incident field is proportional to the energy which
+is coming in per second. In fact, the energy incident per square meter
+per second is [eq] times the average [eq] of the square of
+the electric field, and if [eq] is the maximum value of [eq], then
+[eq]. In other words, the total energy
+scattered is proportional to the energy per square meter that comes
+in; the brighter the sunlight that is shining in the sky, the brighter
+the sky is going to look.
+
+Next, what fraction of the incoming light is scattered? Let us
+imagine a “target” with a certain area, let us say [eq], in the
+beam (not a real, material target, because this would diffract light,
+and so on; we mean an imaginary area drawn in space). The total amount
+of energy that would pass through this surface [eq] in a given
+circumstance is proportional both to the incoming intensity and
+to [eq], and the total power would be
+\begin{equation}
+\label{Eq:I:32:18}
+P=(\tfrac{1}{2}\epsO cE_0^2)\sigma.
+\end{equation}
+
+Now we invent an idea: we say that the atom scatters a total amount of
+intensity which is the amount which would fall on a certain
+geometrical area, and we give the answer by giving that area. That
+answer, then, is independent of the incident intensity; it gives the
+ratio of the energy scattered to the energy incident per square
+meter. In other words, the ratio
+\begin{equation*}
+\frac{\text{total energy scattered per second}}
+{\text{energy incident per square meter per second}}
+\text{ is an area}.
+\end{equation*}
+The significance of this area is that, if all the energy that impinged
+on that area were to be spewed in all directions, then that is the
+amount of energy that would be scattered by the atom.
+
+This area is called a cross section for scattering ; the idea of cross section is used
+constantly, whenever some phenomenon occurs in proportion to the
+intensity of a beam. In such cases one always describes the amount of
+the phenomenon by saying what the effective area would have to be to
+pick up that much of the beam. It does not mean in any way that this
+oscillator actually has such an area. If there were nothing
+present but a free electron shaking up and down there would be no area
+directly associated with it, physically. It is merely a way of
+expressing the answer to a certain kind of problem; it tells us what
+area the incident beam would have to hit in order to account for that
+much energy coming off. Thus, for our case,
+\begin{equation}
+\label{Eq:I:32:19}
+\sigma_s=\frac{8\pi r_0^2}{3}\cdot
+\frac{\omega^4}{(\omega^2-\omega_0^2)^2}
+\end{equation}
+(the subscript [eq] is for “scattering”).
+
+Let us look at some examples. First, if we go to a very low natural
+frequency [eq], or to completely unbound electrons, for which
+[eq], then the frequency [eq] cancels out and the cross
+section is a constant. This low-frequency limit, or the free electron
+cross section, is known as the Thomson scattering cross
+section . It is an area
+whose dimensions are approximately [eq] meter, more or less, on a
+side, i.e., [eq] square meter, which is rather small!
+
+On the other hand, if we take the case of light in the air, we
+remember that for air the natural frequencies of the oscillators are
+higher than the frequency of the light that we use. This means that,
+to a first approximation, we can disregard [eq] in the
+denominator, and we find that the scattering is proportional to the
+ fourth power of the frequency. That is to say, light which is
+of higher frequency by, say, a factor of two, is sixteen times 
+more intensely scattered, which is a quite sizable difference. This
+means that blue light, which has about twice the frequency of the
+reddish end of the spectrum, is scattered to a far greater extent than
+red light. Thus when we look at the sky it looks that glorious blue
+that we see all the time!
+
+There are several points to be made about the above results. One
+interesting question is, why do we ever see the clouds ? Where
+do the clouds come from? Everybody knows it is the condensation of
+water vapor. But, of course, the water vapor is already in the
+atmosphere before it condenses, so why don’t we see it then?
+After it condenses it is perfectly obvious. It wasn’t there, now it
+ is there. So the mystery of where the clouds come from is not
+really such a childish mystery as “Where does the water come from,
+Daddy?,” but has to be explained.
+
+We have just explained that every atom scatters light, and of course
+the water vapor will scatter light, too. The mystery is why, when the
+water is condensed into clouds, does it scatter such a
+ tremendously greater amount of light?
+
+Consider what would happen if, instead of a single atom, we had an
+agglomerate of atoms, say two, very close together compared with the
+wavelength of the light. Remember, atoms are only an angstrom or so
+across, while the wavelength of light is some [eq] angstroms, so
+when they form a clump, a few atoms together, they can be very
+close together compared with the wavelength of light. Then when the
+electric field acts, both of the atoms will move together . The
+electric field that is scattered will then be the sum of the two
+electric fields in phase, i.e., double the amplitude that there was
+with a single atom, and the energy which is scattered is
+therefore four times what it is with a single atom, not twice!
+So lumps of atoms radiate or scatter more energy than they do as
+single atoms. Our argument that the phases are independent is based on
+the assumption that there is a real and large difference in phase
+between any two atoms, which is true only if they are several
+wavelengths apart and randomly spaced, or moving. But if they are
+right next to each other, they necessarily scatter in phase, and they
+have a coherent interference which produces an increase in the
+scattering.
+
+If we have [eq] atoms in a lump, which is a tiny droplet of water, then
+each one will be driven by the electric field in about the same way as
+before (the effect of one atom on the other is not important; it is
+just to get the idea anyway) and the amplitude of scattering from each
+one is the same, so the total field which is scattered is [eq]-fold
+increased. The intensity of the light which is scattered is
+then the square, or [eq]-fold, increased. We would have expected, if
+the atoms were spread out in space, only [eq] times as much as [eq],
+whereas we get [eq] times as much as [eq]! That is to say, the
+scattering of water in lumps of [eq] molecules each is [eq] times more
+intense than the scattering of the single atoms. So as the water
+agglomerates the scattering increases. Does it increase ad
+infinitum ? No! When does this analysis begin to fail? How many atoms
+can we put together before we cannot drive this argument any further?
+ Answer : If the water drop gets so big that from one end to the
+other is a wavelength or so, then the atoms are no longer all in phase
+because they are too far apart. So as we keep increasing the size of
+the droplets we get more and more scattering, until such a time that a
+drop gets about the size of a wavelength, and then the scattering does
+not increase anywhere nearly as rapidly as the drop gets
+bigger. Furthermore, the blue disappears, because for long wavelengths
+the drops can be bigger, before this limit is reached, than they can
+be for short wavelengths. Although the short waves scatter more per
+atom than the long waves, there is a bigger enhancement for the red
+end of the spectrum than for the blue end when all the drops are
+bigger than the wavelength, so the color is shifted from the blue
+toward the red.
+
+Now we can make an experiment that demonstrates this. We can make
+particles that are very small at first, and then gradually grow in
+size. We use a solution of sodium thiosulfate (hypo) with sulfuric
+acid, which precipitates very fine grains of sulfur. As the sulfur
+precipitates, the grains first start very small, and the scattering is
+a little bluish. As it precipitates more it gets more intense, and
+then it will get whitish as the particles get bigger. In addition, the
+light which goes straight through will have the blue taken out. That
+is why the sunset is red, of course, because the light that comes
+through a lot of air, to the eye has had a lot of blue light scattered
+out, so it is yellow-red.
+
+Finally, there is one other important feature which really belongs in
+the next chapter, on polarization, but it is so interesting that we
+point it out now. This is that the electric field of the scattered
+light tends to vibrate in a particular direction. The electric field
+in the incoming light is oscillating in some way, and the driven
+oscillator goes in this same direction, and if we are situated about
+at right angles to the beam, we will see polarized 
+light, that is to
+say, light in which the electric field is going only one way. In
+general, the atoms can vibrate in any direction at right angles to the
+beam, but if they are driven directly toward or away from us, we do not
+see it. So if the incoming light has an electric field which changes and
+oscillates in any direction, which we call unpolarized light, then the
+light which is coming out at [eq] to the beam vibrates in only one
+direction! (See Fig.  32–3 .)
+
+There is a substance called polaroid which has the property that when
+light goes through it, only the piece of the electric field which is
+along one particular axis can get through. We can use this to test for
+polarization, and indeed we find the light scattered by the hypo
+solution to be strongly polarized.

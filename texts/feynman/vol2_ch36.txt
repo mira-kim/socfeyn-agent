@@ -1,0 +1,1198 @@
+The Feynman Lectures on Physics Vol. II Ch. 36: Ferromagnetism
+==============================================================
+
+Sections: 36–1 Magnetization currents | 36–2 The field [eq] | 36–3 The magnetization curve | 36–4 Iron-core inductances | 36–5 Electromagnets | 36–6 Spontaneous magnetization
+
+
+
+In this chapter we will discuss some materials in which the net
+effect
+of the magnetic moments in the material is much greater than in the
+case of paramagnetism or diamagnetism. The phenomenon is called
+ ferromagnetism . In paramagnetic and diamagnetic materials the
+induced magnetic moments are usually so weak that we don’t have to
+worry about the additional fields produced by the magnetic
+moments. For ferromagnetic materials, however, the magnetic
+moments induced by applied magnetic fields are quite enormous and have
+a great effect on the fields themselves. In fact, the induced moments
+are so strong that they are often the dominant effect in producing the
+observed fields. So one of the things we will have to worry about is
+the mathematical theory of large induced magnetic moments. That is, of
+course, just a technical question. The real problem is, why are the
+magnetic moments so strong—how does it all work? We will come to
+that question in a little while.
+
+Finding the magnetic fields of ferromagnetic materials is something like
+the problem of finding the electrostatic field in the presence of
+dielectrics. You will remember that we first described the internal
+properties of a dielectric in terms of a vector field [eq], the
+dipole moment per unit volume. Then we figured out that the effects of
+this polarization are equivalent to a charge density [eq]
+given by the divergence of [eq]:
+\begin{equation}
+\label{Eq:II:36:1}
+\rho_{\text{pol}}=-\FLPdiv{\FLPP}.
+\end{equation}
+
+The total charge in any situation can be written as the sum of this
+polarization charge plus all other charges, whose density we
+write 1  [eq]. Then the Maxwell
+equation
+which relates the divergence of [eq] to the charge density becomes
+\begin{equation*}
+\FLPdiv{\FLPE}=\frac{\rho}{\epsO}=
+\frac{\rho_{\text{pol}}+\rho_{\text{other}}}{\epsO},
+\end{equation*}
+
+or
+\begin{equation*}
+\FLPdiv{\FLPE}=-\frac{\FLPdiv{\FLPP}}{\epsO}+
+\frac{\rho_{\text{other}}}{\epsO}.
+\end{equation*}
+
+We can then pull out the polarization part of the charge and put it on
+the other side of the equation, to get the new law
+\begin{equation}
+\label{Eq:II:36:2}
+\FLPdiv{(\epsO\FLPE+\FLPP)}=\rho_{\text{other}}.
+\end{equation}
+
+The new law says the divergence of the quantity [eq]
+is equal to the density of the other charges.
+
+Pulling [eq] and [eq] together as in Eq. ( 36.2 ),
+of course, is useful only if we know some relation between them. We
+have seen that the theory which relates the induced electric dipole
+moment to the field was a relatively complicated business and can
+really only be applied to certain simple situations, and even then as
+an approximation. We would like to remind you of one of the
+approximate ideas we used. To find the induced dipole moment of an
+atom inside a dielectric, it is necessary to know the electric field
+that acts on an individual atom. We made the approximation—which is
+not too bad in many cases—that the field on the atom is the same as
+it would be at the center of the small hole which would be left if we
+took out the atom (keeping the dipole moments of all the neighboring
+atoms the same). You will also remember that the electric field in a
+hole in a polarized dielectric depends on the shape of the hole. We
+summarize our earlier results in Fig.  36–1 . For a thin, disc-shaped
+hole perpendicular to the polarization, the electric field in the hole
+is given by
+\begin{equation*}
+\FLPE_{\text{hole}}=\FLPE_{\text{dielectric}}+\frac{\FLPP}{\epsO},
+\end{equation*}
+
+which we showed by using Gauss’ law. On the other hand, in a
+needle-shaped slot parallel to the polarization, we showed—by using
+the fact that the curl of [eq] is zero—that the electric fields
+inside and outside of the slot are the same. Finally, we found that
+for a spherical hole the electric field was one-third of the way
+between the field of the slot and the field of the disc:
+\begin{equation}
+\label{Eq:II:36:3}
+\FLPE_{\text{hole}}=\FLPE_{\text{dielectric}}+\frac{1}{3}\,
+\frac{\FLPP}{\epsO}\:(\text{spherical hole}).
+\end{equation}
+
+This was the field we used in thinking about what happens to an atom
+inside a polarized dielectric.
+
+Now we have to discuss the analog of all this for the case of
+magnetism. One simple, short-cut way of doing this is to say the
+[eq], the magnetic moment per unit volume, is just like [eq],
+the electric dipole moment per unit volume, and that, therefore, the
+negative of the divergence of [eq] is equivalent to a “magnetic
+charge density” [eq]—whatever that may mean. The trouble is, of
+course, that there isn’t any such thing as a “magnetic charge” in
+the physical world. As we know, the divergence of [eq] is always
+zero. But that does not stop us from making an artificial
+ analog and writing
+\begin{equation}
+\label{Eq:II:36:4}
+\FLPdiv{\FLPM}=-\rho_m,
+\end{equation}
+
+where it is to be understood that [eq] is purely
+mathematical. Then we could make a complete analogy with the
+electrostatic case and use all our old equations from
+electrostatics. People have often done something like that. In fact,
+historically, people even believed that the analogy was right. They
+believed that the quantity [eq] represented the density of
+“magnetic poles.” These days, however, we know that the
+magnetization of materials comes from circulating currents within the
+atoms—either from the spinning electrons or from the motion of the
+electrons in the atom. It is therefore nicer from a physical point of
+view to describe things realistically in terms of the atomic
+currents, rather
+than in terms of a density of some mythical “magnetic poles.”
+Incidentally, these currents are sometimes called “Ampèrian”
+currents, because
+Ampère first suggested that the magnetism of matter came from
+circulating atomic currents.
+
+The actual microscopic current density in magnetized matter is, of
+course, very complicated. Its value depends on where you look in the
+atom—it’s large in some places and small in others; it goes one way
+in one part of the atom and the opposite way in another part (just as
+the microscopic electric field varies enormously inside a
+dielectric). In many practical problems, however, we are interested
+only in the fields outside of the matter or in the average 
+magnetic field inside of the matter—where we mean an average taken
+over many, many atoms. It is only for such macroscopic problems
+that it is convenient to describe the magnetic state of the matter in
+terms of [eq], the average dipole moment per unit volume. What we
+want to show now is that the atomic currents of magnetized matter can give
+rise to certain large-scale currents which are related to [eq].
+
+What we are going to do, then, is to separate the current
+density [eq]—which is the real source of the magnetic fields—into
+various parts: one part to describe the circulating currents of the
+atomic magnets, and the other parts to describe what other currents
+there may be. It is usually most convenient to separate the currents
+into three parts. In Chapter  32 we made a distinction
+between the currents which flow freely on conductors and the ones
+which are due to the back and forth motions of the bound charges in
+dielectrics. In Section  32–2 we wrote
+\begin{equation*}
+\FLPj=\FLPj_{\text{pol}}+\FLPj_{\text{other}},
+\end{equation*}
+
+where [eq] represented the currents from the motion of
+the bound charges in dielectrics and [eq] took care
+of all other currents. Now we want to go further. We want to separate
+[eq] into one part, [eq], which
+describes the average currents inside of magnetized materials, and an
+additional term which we can call [eq] for whatever
+is left over. The last term will generally refer to currents in
+conductors, but it may also include other currents—for example the
+currents from charges moving freely through empty space. So we will
+write for the total current density:
+\begin{equation}
+\label{Eq:II:36:5}
+\FLPj=\FLPj_{\text{pol}}+\FLPj_{\text{mag}}+\FLPj_{\text{cond}}.
+\end{equation}
+
+Of course it is this total current which belongs in the Maxwell
+equation
+for the curl of [eq]:
+\begin{equation}
+\label{Eq:II:36:6}
+c^2\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO}+\ddp{\FLPE}{t}.
+\end{equation}
+
+Now we have to relate the current [eq] to the
+magnetization vector [eq]. So that you can see where we are going,
+we will tell you that the result is going to be that
+\begin{equation}
+\label{Eq:II:36:7}
+\FLPj_{\text{mag}}=\FLPcurl{\FLPM}.
+\end{equation}
+
+If we are given the magnetization vector [eq] everywhere in a
+magnetic material, the circulation current density is given by the
+curl of [eq]. Let’s see if we can understand why this is so.
+
+First, let’s take the case of a cylindrical rod which has a uniform
+magnetization parallel to its axis. Physically, we know that such a
+uniform magnetization really means a uniform density of atomic
+circulating currents everywhere inside the material. Suppose we try to imagine what
+the actual currents would look like in a cross section of the material.
+We would expect to see currents something like those shown in
+Fig.  36–2 . Each atomic current goes around and around in a
+little circle, with all the circulating currents going around in the
+same direction. Now what is the effective current of such a thing? Well,
+in most of the bar there is no effect at all, because right next to each
+current there is another current going in the opposite direction. If we
+imagine a small surface—but one still quite a bit larger than a single
+atom—such as is indicated in Fig.  36–2 by the
+line [eq], the net current through such a surface is zero.
+There is no net current anywhere inside the material. Note, however,
+that at the surface of the material there are atomic
+currents which are
+not cancelled by neighboring currents going the other way. At the
+surface there is a net current always going in the same direction around
+the rod. Now you see why we said earlier that a uniformly magnetized rod
+is equivalent to a long solenoid carrying an electric current.
+
+How does this view fit with Eq. ( 36.7 )? First, inside the
+material the magnetization [eq] is constant, so all its derivatives
+are zero. This agrees with our geometric picture. At the surface,
+however, [eq] is not really constant—it is constant up to the edge
+and then suddenly collapses to zero. So, right at the surface there are
+terrific gradients which, according to ( 36.7 ), will give a
+high current density. Suppose we look at what happens near the point [eq]
+in Fig.  36–2 . Taking the [eq]- and [eq]-directions as in the
+figure, the magnetization [eq] is in the [eq]-direction. Writing out
+the components of Eq. ( 36.7 ), we have
+\begin{equation}
+\begin{aligned}
+\ddp{M_z}{y}&=(j_{\text{mag}})_x,\\[1ex]
+-\ddp{M_z}{x}&=(j_{\text{mag}})_y.
+\end{aligned}
+\label{Eq:II:36:8}
+\end{equation}
+
+At the point [eq], the derivative [eq] is zero, but
+[eq] is large and positive. Equation ( 36.7 )
+says that there is a large current density in the minus
+[eq]-direction. This agrees with our picture of a surface current going
+around the bar.
+
+Now we want to find the current density for a more complicated case in
+which the magnetization varies from point to point in a material. It
+is easy to see qualitatively that if the magnetization is different in
+two neighboring regions, there will not be a perfect cancellation of
+the circulating currents so that there will be a net current in the
+volume of the material. It is this effect that we want to work out
+quantitatively.
+
+First, we need to recall the results of Section  14–5 
+that a circulating current [eq] has a magnetic moment [eq] given by
+\begin{equation}
+\label{Eq:II:36:9}
+\mu=IA,
+\end{equation}
+
+where [eq] is the area of the current loop (see Fig.  36–3 ).
+Now let’s consider a small rectangular block inside of a magnetized
+material, as sketched in Fig.  36–4 . We take the block so
+small that we can consider that the magnetization is uniform inside it.
+If this block has a magnetization [eq] in the [eq]-direction, the net
+effect will be the same as a surface current going around on the
+vertical faces, as shown. We can find the magnitude of these currents
+from Eq. ( 36.9 ). The total magnetic moment of the block is
+equal to the magnetization times the volume:
+\begin{equation*}
+\mu=M_z(abc),
+\end{equation*}
+
+from which we get (remembering that the area of the loop is [eq])
+\begin{equation*}
+I=M_zb.
+\end{equation*}
+
+In other words, the current per unit length (vertically) on each of
+the vertical surfaces is equal to [eq].
+
+Now suppose that we imagine two such little blocks next to each other,
+as shown in Fig.  36–5 . Because block [eq] is slightly
+displaced from block [eq], it will have a slightly different vertical
+component of magnetization, which we call [eq]. Now on the
+surface between the two blocks there will be two contributions to the
+total current. Block [eq] will produce a current [eq] flowing in the
+positive [eq]-direction, and block [eq] will produce a surface
+current [eq] flowing in the negative [eq]-direction. The total surface current
+in the positive [eq]-direction is the sum:
+\begin{align*}
+I&=I_1-I_2=M_zb-(M_z+\Delta M_z)b\\[1ex]
+&=-\Delta M_zb.
+\end{align*}
+
+We can write [eq], as the derivative of [eq] in the
+[eq]-direction times the displacement from block [eq] to block [eq],
+which is just [eq]:
+\begin{equation*}
+\Delta M_z=\ddp{M_z}{x}\,a.
+\end{equation*}
+
+The current flowing between the two blocks is then
+\begin{equation*}
+I=-\ddp{M_z}{x}\,ab.
+\end{equation*}
+
+To relate the current [eq] to an average volume current
+density [eq], we must realize that this current [eq] is really spread over a
+certain cross-sectional area. If we imagine the whole volume of the
+material to be filled with such little blocks, one such side face
+(perpendicular to the [eq]-axis) can be associated with each
+block. 2 Then we see
+that the area to be associated with the current [eq] is just the
+area [eq] of one of the front faces. We get the result
+\begin{equation*}
+j_y=\frac{I}{ab}=-\ddp{M_z}{x}.
+\end{equation*}
+
+We have at least the beginning of the curl of [eq].
+
+There should be another term in [eq] from the variation of the
+[eq]-component of the magnetization with [eq]. This contribution
+to [eq] will come from the surface between two little blocks stacked
+one on top of the other, as shown in Fig.  36–6 . Using the same
+arguments we have just made, you can show that this surface will
+contribute to [eq] the amount [eq]. These are the only
+surfaces which can contribute to the [eq]-component of the current so
+we have that the total current density in the [eq]-direction is
+\begin{equation*}
+j_y=\ddp{M_x}{z}-\ddp{M_z}{x}.
+\end{equation*}
+
+Working out the currents on the remaining faces of a cube—or using
+the fact that our [eq]-direction is completely arbitrary—we can
+conclude that the vector current density is indeed given by the
+equation
+\begin{equation*}
+\FLPj=\FLPcurl{\FLPM}.
+\end{equation*}
+
+So if we choose to describe the magnetic situation in matter in terms of the
+average magnetic moment per unit volume [eq], we find that the circulating
+atomic currents are equivalent to an average current density in matter given by
+Eq. ( 36.7 ). If the material is also a dielectric, there may be, in
+addition, a polarization current [eq]. And if
+the material is also a conductor, we may have a conduction
+current [eq] as well. We can write the total current as
+\begin{equation}
+\label{Eq:II:36:10}
+\FLPj=\FLPj_{\text{cond}}+\FLPcurl{\FLPM}+\ddp{\FLPP}{t}.
+\end{equation}
+
+Next, we want to insert the current as written in
+Eq. ( 36.10 ) into Maxwell’s
+equations. We get
+ 
+\begin{equation*}
+c^2\FLPcurl{\FLPB}=\frac{\FLPj}{\epsO}+\ddp{\FLPE}{t}=
+\frac{1}{\epsO}\biggl(
+\FLPj_{\text{cond}}+\FLPcurl{\FLPM}+\ddp{\FLPP}{t}
+\biggr)+\ddp{\FLPE}{t}.
+\end{equation*}
+ 
+ 
+\begin{align*}
+c^2\FLPcurl{\FLPB}&=\frac{\FLPj}{\epsO}+\ddp{\FLPE}{t}\\[1ex]
+&=\frac{1}{\epsO}\biggl(\!
+\FLPj_{\text{cond}}\!+\!\FLPcurl{\FLPM}\!+\!\ddp{\FLPP}{t}
+\!\biggr)\!+\!\ddp{\FLPE}{t}.
+\end{align*}
+ 
+We can move the term in [eq] to the left-hand side:
+ 
+\begin{equation}
+\label{Eq:II:36:11}
+c^2\FLPcurl{\biggl(\FLPB-\frac{\FLPM}{\epsO c^2}\biggr)}=\,
+\frac{\FLPj_{\text{cond}}}{\epsO}+\ddp{}{t}\biggl(
+\FLPE+\frac{\FLPP}{\epsO}\biggr).
+\end{equation}
+ 
+ 
+\begin{equation}
+\label{Eq:II:36:11}
+c^2\FLPcurl{\biggl(\!\FLPB\!-\!\frac{\FLPM}{\epsO c^2}\!\biggr)}\!=
+\frac{\FLPj_{\text{cond}}}{\epsO}\!+\!\ddp{}{t}\biggl(\!
+\FLPE\!+\!\frac{\FLPP}{\epsO}\!\biggr).
+\end{equation}
+ 
+As we remarked in Chapter  32 , many people like to
+write [eq] as a new vector field [eq]. Similarly,
+it is often convenient to write [eq] as a single
+vector field. We choose to define a new vector field [eq] by
+\begin{equation}
+\label{Eq:II:36:12}
+\FLPH=\FLPB-\frac{\FLPM}{\epsO c^2}.
+\end{equation}
+Then Eq. ( 36.11 ) becomes
+\begin{equation}
+\label{Eq:II:36:13}
+\epsO c^2\FLPcurl{\FLPH}=\FLPj_{\text{cond}}+\ddp{\FLPD}{t}.
+\end{equation}
+
+It looks simple, but all the complexity is just hidden in the letters
+[eq] and [eq].
+
+Now we have to give you a warning. Most people who use the mks units
+have chosen to use a different definition of [eq]. Calling
+ their field [eq] (of course, they still call it [eq]
+without the prime), it is defined by
+\begin{equation}
+\label{Eq:II:36:14}
+\FLPH'=\epsO c^2\FLPB-\FLPM.
+\end{equation}
+
+(Also, they usually write [eq] as a new number [eq]; then
+they have one more constant to keep track of!) With this definition,
+Eq. ( 36.13 ) looks even simpler:
+\begin{equation}
+\label{Eq:II:36:15}
+\FLPcurl{\FLPH'}=\FLPj_{\text{cond}}+\ddp{\FLPD}{t}.
+\end{equation}
+
+But the difficulties with this definition of [eq] are, first, that
+it doesn’t agree with the definition of people who don’t use the mks
+units, and second, that it makes [eq] and [eq] have different
+units. We think it is more convenient for [eq] to have the same units
+as [eq]—rather than the units of [eq], as [eq] does. But if
+you are going to be an engineer and work on the design of transformers,
+magnets, and such, you will have to watch out. You will find many books
+which use for [eq] the definition of Eq. ( 36.14 ) rather
+than our definition of Eq. ( 36.12 ), and many other
+books—especially handbooks about magnetic materials—that relate
+[eq] and [eq] the way we have done. You’ll have to be careful to
+figure out which convention they are using.
+
+One way to tell is by the units they use. Remember that in the mks
+system, [eq]—and therefore our  [eq]—are measured with
+the unit: one weber per square meter, equal to [eq] gauss. In the
+mks system, a magnetic moment (a current times an area) has the unit:
+one ampere-meter[eq]. The magnetization [eq], then, has the unit: one
+ampere per meter. For [eq] the units are the same as
+for [eq]. You can see that this also agrees with Eq. ( 36.15 ),
+since [eq] has the dimensions of one over a length. People who
+are working with electromagnets also get in the habit of calling the
+unit of [eq] (with the [eq] definition) “one ampere turn 
+per meter”—thinking of the turns of wire on a winding. But a “turn”
+is really a dimensionless number, so that doesn’t need to confuse you.
+Since our [eq] is equal to [eq], if you are using the mks
+system, [eq] (in webers/meter[eq]) is equal to [eq]
+times [eq] (in amperes per meter). It is perhaps more convenient to remember
+that [eq] (in gauss)[eq] (in amp/meter).
+
+There is one more horrible thing. Many people who use our 
+definition of [eq] have decided to call the units of [eq]
+and [eq] by different names ! Even though they have the same
+dimensions, they call the unit of [eq] one gauss ,
+and the unit
+of [eq] one oersted (after
+Gauss and
+Oersted, of
+course). So, in many books you will find graphs with [eq] plotted in
+gauss and [eq] in oersteds. They are really the same unit—[eq] of
+the mks unit. We have summarized the confusion about magnetic units
+in Table  36–1 .
+
+Now we will look at some simple situations in which the magnetic field
+is constant, or in which the fields change slowly enough that we can
+neglect [eq] in comparison
+with [eq]. Then the fields obey the equations
+\begin{gather}
+\label{Eq:II:36:16}
+\FLPdiv{\FLPB}=0,\\[1.5ex]
+\label{Eq:II:36:17}
+\FLPcurl{\FLPH}=\FLPj_{\text{cond}}/\epsO c^2,\\[1.5ex]
+\label{Eq:II:36:18}
+\FLPH=\FLPB-\FLPM/\epsO c^2.
+\end{gather}
+
+Suppose we have a torus (a donut) of iron wrapped with a coil of copper
+wire, as shown in Fig.  36–7 (a). A current [eq] flows in the
+wire. What is the magnetic field? The magnetic field will be mainly
+inside the iron; there, the lines of [eq] will be circles, as drawn
+in Fig.  36–7 (b). Since the flux of [eq] is continuous,
+its divergence is zero, and Eq. ( 36.16 ) is satisfied. Next,
+we write Eq. ( 36.17 ) in another form by integrating around
+the closed loop [eq] drawn in Fig.  36–7 (b). From
+Stokes’ theorem, we have that
+\begin{equation}
+\label{Eq:II:36:19}
+\oint_\Gamma\FLPH\cdot d\FLPs=\frac{1}{\epsO c^2}
+\int_S\FLPj_{\text{cond}}\cdot\FLPn\,da,
+\end{equation}
+
+where the integral of [eq] is to be carried out over any surface [eq]
+bounded by [eq]. This surface is cut once by each turn of the
+winding. Each turn contributes the current [eq] to the integral, and,
+if there are [eq] turns in all, the integral is [eq]. From the symmetry
+of our problem, [eq] is the same all around the curve [eq]; if
+we assume that the magnetization, and therefore, the field [eq] is also
+constant along [eq], Eq. ( 36.19 ) becomes
+\begin{equation*}
+Hl=\frac{NI}{\epsO c^2},
+\end{equation*}
+
+where [eq] is the length of the curve [eq]. So,
+\begin{equation}
+\label{Eq:II:36:20}
+H=\frac{1}{\epsO c^2}\,\frac{NI}{l}.
+\end{equation}
+
+It is because [eq] is directly proportional to the magnetizing
+current in cases like this one that [eq] is sometimes called the
+ magnetizing field .
+
+Now all we need is an equation which relates [eq] to [eq]. But
+there isn’t any such equation! There is, of course,
+Eq. ( 36.18 ), but it is no help because there is no direct
+relation between [eq] and [eq] for a ferromagnetic material like
+iron. The magnetization [eq] depends on the whole past history of the
+iron, and not only on what [eq] is at the moment.
+
+All is not lost, though. We can get solutions in certain simple cases.
+If we start out with unmagnetized iron—let’s say with iron that has
+been annealed at high temperatures—then in the simple geometry of the
+torus, all the iron will have the same magnetic history. Then we can say
+something about [eq]—and therefore about the relation between
+[eq] and [eq]—from experimental measurements. The field [eq]
+in the torus is, from Eq. ( 36.20 ), given as a constant times
+the current [eq] in the winding. The field [eq] can be measured by
+integrating over time the emf in the coil (or in an extra coil wound
+over the magnetizing coil shown in the figure). This emf is equal to the
+rate of change of the flux of [eq], so the integral of the emf with
+time is equal to [eq] times the cross-sectional area of the torus.
+
+Figure  36–8 shows the relation between [eq] and [eq],
+observed
+with a torus of soft iron. When the current is first turned on,
+[eq] increases with increasing [eq] along the curve [eq]. Note
+the different scales on [eq] and [eq]; initially, it takes only
+a relatively small [eq] to make a large [eq]. Why is [eq] so
+much larger with the iron than it would be with air? Because there is
+a large magnetization [eq] which is equivalent to a large surface
+current on the iron—the field [eq] comes from the sum of
+this current and the conduction current in the winding. Why [eq]
+should be so large, we will discuss later.
+
+At higher values of [eq], the magnetization curve levels off. We
+say that the iron saturates . With the scales of our figure, the
+curve appears to become horizontal. Actually, it continues to rise
+slightly—for large fields, [eq] becomes proportional to [eq],
+and with a unit slope. There is no further increase of [eq].
+Incidentally, we should point out that if the torus were made
+of some nonmagnetic material, [eq] would be zero and [eq] would
+equal [eq] for all fields.
+
+The first thing we notice is that curve [eq] in Fig.  36–8 —which is
+the so-called magnetization curve —is highly nonlinear. But
+it’s worse than that. If, after reaching saturation, we decrease the
+current in the coil to bring [eq] back to zero, the magnetic
+field [eq] falls along curve [eq]. When [eq] reaches zero, there is
+still some [eq] left. Even with no magnetizing current there is a
+magnetic field in the iron—it has become permanently magnetized. If
+we now turn on a negative current in the coil, the
+[eq]-[eq] curve continues along [eq] until the iron is saturated in the negative
+direction. If we then bring the current back to zero again, [eq]
+goes along curve [eq]. If we alternate the current between large
+positive and negative values, the [eq]-[eq] curve goes back and forth
+along very nearly the curves [eq] and [eq]. If we vary [eq] in some
+arbitrary way, however, we can get more complicated curves which will,
+in general, lie somewhere between the curves [eq] and [eq]. The loop
+made by repeated oscillation of the fields is called a
+ hysteresis loop of the iron.
+
+We see then that we cannot write a functional relationship
+like [eq], because the value of [eq] at any instant depends not
+only on what [eq] is at that time, but on its whole past history.
+Naturally, the magnetization and hysteresis curves are different for
+different substances. The shape of the curves depends critically on the
+chemical composition of the material, and also on the details of its
+preparation and subsequent physical treatment. We will discuss some of
+the physical explanations for these complications in the next chapter.
+
+One of the most important applications of magnetic materials is in
+electrical circuits—for example, in transformers, electric motors, and
+so on. One reason is that with iron we can control where the magnetic
+fields go, and also get much larger fields for a given electric current.
+For example, the typical “toroidal” inductance is made very much like
+the object shown in Fig.  36–7 . For a given inductance, it
+can be much smaller in volume and use much less copper than an
+equivalent “air-core” inductance. For a given inductance, we get a
+much smaller resistance in the winding, so the inductance is more nearly
+“ideal”—particularly for low frequencies. It is very easy to
+understand, qualitatively, how such an inductance works. If [eq] is the
+current in the winding, then the field [eq] which is produced in the
+inside is proportional to [eq]—as given by Eq. ( 36.20 ). The
+voltage [eq] across the terminals is related to the magnetic
+field [eq]. Neglecting the resistance of the winding, the
+voltage [eq] is proportional to [eq]. The
+inductance [eq], which is the ratio of [eq] to [eq] (see
+Section  17–7 ), thus involves the relation between [eq]
+and [eq] in the iron. Since the [eq] is so much bigger than the [eq],
+we get a large factor in the inductance. Physically, what happens is
+that a small current in the coil, which would ordinarily produce a small
+magnetic field, causes the little “slave” magnets in the iron to line
+up and produce a tremendously greater “magnetic” current than the
+external current in the winding. It is as if we had a lot more current
+going through the coil than we really have. When we reverse the current,
+all the little magnets flip over—all those internal currents
+reverse—and we get a much higher induced emf than we would get without
+the iron. If we want to calculate the inductance, we can do so through
+the energy—as described in Section  17–8 . The rate 
+at which energy is delivered from the current source is [eq]. The
+voltage [eq] is the cross-sectional area [eq] of the core,
+times [eq], times [eq]. From Eq. ( 36.20 ), [eq].
+So we have
+\begin{equation*}
+\ddt{U}{t}=\voltage I=(\epsO c^2lA)H\,\ddt{B}{t}.
+\end{equation*}
+
+Integrating over time, we have
+\begin{equation}
+\label{Eq:II:36:21}
+U=(\epsO c^2lA)\int H\,dB.
+\end{equation}
+
+Notice that [eq] is the volume of the torus, so we have shown that the
+energy density [eq] in a magnetic material is given by
+\begin{equation}
+\label{Eq:II:36:22}
+u=\epsO c^2\int H\,dB.
+\end{equation}
+
+An interesting feature is involved here. When we use alternating
+currents, the iron is driven around a hysteresis loop. Since [eq] is
+not a single-valued function of [eq], the integral of [eq]
+around one complete cycle is not equal to zero. It is the area
+enclosed inside the hysteresis curve. Thus, the driving source
+delivers a certain net energy each cycle—an energy proportional to
+the area inside the hysteresis loop. And that energy is “lost.” It
+is lost from the electromagnetic goings on, but turns up as heat in
+the iron. It is called the hysteresis loss . To keep such energy
+losses small, we would like the hysteresis loop to be as narrow as
+possible. One way to decrease the area of the loop is to reduce the
+maximum field that is reached during each cycle. For smaller maximum
+fields, we get a hysteresis curve like the one shown in
+Fig.  36–9 . Also, special materials are designed to have a
+very narrow loop. The so-called transformer irons —which are
+iron alloys with a small amount of silicon—have been developed to have
+this property.
+
+When an inductance is run over a small hysteresis loop, the
+relationship between [eq] and [eq] can be approximated by a linear
+equation. People usually write
+\begin{equation}
+\label{Eq:II:36:23}
+B=\mu H.
+\end{equation}
+
+The constant [eq] is not the magnetic moment we have used
+before. It is called the permeability of the
+iron. (It is also sometimes called the “ relative
+permeability .”) The permeability of ordinary irons is typically several
+thousand. There are special alloys alike
+“supermalloy” which can have permeabilities as high
+as a million.
+
+If we use the approximation that [eq] in Eq. ( 36.21 ),
+we can write the energy in a toroidal inductance as
+ 
+\begin{equation}
+\label{Eq:II:36:24}
+U=(\epsO c^2lA)\mu\int H\,dH=(\epsO c^2lA)\,\frac{\mu H^2}{2}.
+\end{equation}
+ 
+ 
+\begin{align}
+U&=(\epsO c^2lA)\mu\int H\,dH\notag\\[1ex]
+\label{Eq:II:36:24}
+&=(\epsO c^2lA)\,\frac{\mu H^2}{2}.
+\end{align}
+ 
+So the energy density is approximately
+\begin{equation*}
+u\approx\frac{\epsO c^2}{2}\,\mu H^2.
+\end{equation*}
+
+We can now set the energy of Eq. ( 36.24 ) equal to the
+energy [eq] of an inductance, and solve for [eq]. We get
+\begin{equation*}
+\selfInd=(\epsO c^2lA)\mu\biggl(\frac{H}{I}\biggr)^2.
+\end{equation*}
+
+Using [eq] from Eq. ( 36.20 ), we have
+\begin{equation}
+\label{Eq:II:36:25}
+\selfInd=\frac{\mu N^2A}{\epsO c^2l}.
+\end{equation}
+
+The inductance is proportional to [eq]. If you want inductances for
+such things as audio amplifiers, you will try to operate them on a
+hysteresis loop where the [eq]-[eq] relationship is as linear as possible.
+(You will remember that we spoke in Chapter  50 , Vol. I,
+about the generation of harmonics in nonlinear systems.) For such
+purposes, Eq. ( 36.23 ) is a useful approximation. On the
+other hand, if you want to generate harmonics, you may use an
+inductance which is intentionally operated in a highly nonlinear way.
+Then you will have to use the complete [eq]-[eq] curves, and analyze what
+happens by graphical or numerical methods.
+
+A “transformer” is often made by putting two coils on the same
+torus—or core —of a magnetic material. (For the larger
+transformers, the core is made with rectangular proportions for
+convenience.) Then a varying current in the “primary” winding causes
+the magnetic field in the core to change, which induces an emf in the
+“secondary” winding. Since the flux through each turn of both
+windings is the same, the emf’s in the two windings are in the same
+ratio as the number of turns on each. A voltage applied to the primary
+is transformed to a different voltage at the secondary. Since a
+certain net current around the core is needed to produce the
+required change in the magnetic field, the algebraic sum of the
+currents in the two windings will be fixed and equal to the required
+“magnetizing” current. If the current drawn from the secondary
+increases, the primary current must increase in proportion—there is
+a “transformation” of currents as well as voltage.
+
+Now let’s discuss a practical situation which is a little more
+complicated. Suppose we have an electromagnet of the rather standard
+form shown in Fig.  36–10 —there is a “C-shaped” yoke of iron,
+with a coil of many turns of wire wrapped around the yoke. What is the
+magnetic field [eq] in the gap?
+
+If the gap thickness is small compared with all the other dimensions,
+we can, as a first approximation, assume that the lines of [eq]
+will go around through the loop, just as they did in the torus. They
+will look more or less as shown in Fig.  36–11 (a). They tend to
+spread out somewhat in the gap, but if the gap is narrow, this will be
+a small effect. It is a fair approximation to assume that the flux
+of [eq] through any cross section of the yoke is a constant. If the
+yoke has a uniform cross-sectional area [eq]—and if we neglect any edge
+effects at the gaps or at the corners—we can say that [eq] is
+uniform around the yoke.
+
+Also, [eq] will have the same value in the gap. This follows from
+Eq. ( 36.16 ). Imagine the closed surface [eq], shown in
+Fig.  36–11 (b), which has one face in the gap and the other
+in the iron. The total flux of [eq] out of this surface must be zero.
+Calling [eq] the field in the gap and [eq] the field in the iron, we
+have (to our approximation) that
+\begin{equation*}
+B_1A-B_2A=0.
+\end{equation*}
+
+It follows that [eq].
+
+Now let’s look at [eq]. We can again use Eq. ( 36.19 ), taking
+the line integral around the curve [eq] in
+Fig.  36–11 (b). As before, the integral on the right-hand
+side is [eq], the number of turns times the current. Now, however, [eq]
+will be different in the iron and in the air. Calling [eq] the field in
+the iron and [eq] the path length around the yoke, this part of the
+curve will contribute the amount [eq] to the integral. Calling [eq]
+the field in the gap and [eq] the gap thickness, we get the
+contribution [eq] from the gap. We have that
+\begin{equation}
+\label{Eq:II:36:26}
+H_1l_1+H_2l_2=\frac{NI}{\epsO c^2}.
+\end{equation}
+
+Now we know something else: that in the air gap, the magnetization is
+negligible, so that [eq]. Since [eq], Eq. ( 36.26 )
+becomes
+\begin{equation}
+\label{Eq:II:36:27}
+B_2l_1+H_2l_2=\frac{NI}{\epsO c^2}.
+\end{equation}
+
+We still have two unknowns. To find [eq] and [eq], we need another
+relationship—namely, the one which relates [eq] to [eq] in the iron.
+
+If we can make the approximation that [eq], we can solve the
+equation algebraically. However, let’s do the general case, in which the
+magnetization curve of the iron is one like that shown in
+Fig.  36–8 . What we want is the simultaneous solution of
+this functional relationship together with Eq. ( 36.27 ). We
+can find it by plotting a graph of Eq. ( 36.27 ) on the same
+graph with the magnetization curve, as is done in
+Fig.  36–12 . Where the two curves intersect, we have our
+solution.
+
+For a given current [eq], the function ( 36.27 ) is the
+straight line marked [eq] in Fig.  36–12 . The line intersects the
+[eq]-axis ([eq]) at [eq], and the slope
+is [eq]. Different currents just shift the line horizontally. From
+Fig.  36–12 , we see that for a given current there are several
+different solutions, depending on how you got there. If you have just
+built the magnet and turned the current up to [eq], the field [eq]
+(which is also [eq]) will have the value given by point [eq]. If you
+have run the current to some very high value and come down to [eq], the
+field will be given by point [eq]. Or, if you have just had a high
+negative current in the magnet and then come up to [eq], the
+field is the one at point [eq]. The field in the gap will depend on
+what you have done in the past.
+
+When the current in the magnet is zero, the relation between [eq]
+and [eq] in Eq. ( 36.27 ) is shown by the line marked [eq]
+in the figure. There are still various possible solutions. If you have
+first saturated the iron, there may be a considerable residual field
+in the magnet as given by point [eq]. You can take the coil off, and
+you have a permanent magnet. You can see that for a good permanent
+magnet, you would want a material with a wide hysteresis
+loop. Special alloys, such as Alnico V, have very wide loops.
+
+We now turn to the question of why it is that in ferromagnetic
+materials a small magnetic field produces such a large
+magnetization. The magnetization of ferromagnetic materials like iron
+and nickel comes from the magnetic moment of the electrons in the
+inner shell of the atom. Each electron has a magnetic moment [eq]
+equal to [eq] times its [eq]-factor, times its angular
+momentum [eq]. For a single electron with no net orbital motion, [eq], and
+the component of [eq] in any direction—say the
+[eq]-direction—is [eq],
+so the component of [eq] along the [eq]-axis is
+\begin{equation}
+\label{Eq:II:36:28}
+\mu_z=\frac{q\hbar}{2m}=0.928\times10^{-23}\text{ amp[eq]m[eq]}.
+\end{equation}
+
+In an iron atom, there are actually two electrons that contribute to
+the ferromagnetism, so to keep the discussion simpler we will talk
+about nickel, which is ferromagnetic like iron but which has only one
+electron in the inner shell. (It is easy to extend the arguments to
+iron.)
+
+Now the point is that in the presence of an external field [eq],
+the atomic magnets tend to line up with the field, but are knocked
+about by thermal motions just as we described for paramagnetic
+materials. In the last chapter we found out that the balance between a
+magnetic field trying to line up the atomic magnets and the thermal
+motions trying to derange them produced the result that the mean
+magnetic moment per unit volume will end up as
+\begin{equation}
+\label{Eq:II:36:29}
+M=N\mu\tanh\frac{\mu B_a}{kT}.
+\end{equation}
+
+By [eq] we mean the field acting at the atom, and [eq] is the
+Boltzmann energy. In the theory
+of paramagnetism we used for [eq] just [eq] itself, neglecting the part
+of the field at any given atom contributed by the atoms nearby. In the
+ferromagnetic case, there is a complication. We shouldn’t use the
+average field in the iron for the [eq] acting on an individual
+atom. Instead, we must do as we did in the case of dielectrics—we have
+to find the local field acting at a single atom. For an exact
+calculation we should add up the fields at the atom in question
+contributed by all of the other atoms in the crystal lattice. But as we
+did for dielectrics, we will make the approximation that the field at an
+atom is the same as we would find in a small spherical hole in the
+material—assuming that the moments of the atoms in the neighborhood
+are not changed by the presence of the hole.
+
+Following the arguments we made in Chapter  11 , we might
+think that we could write
+\begin{equation*}
+\FLPB_{\text{hole}}=\FLPB+\frac{1}{3}\,\frac{\FLPM}{\epsO c^2}\quad
+(\text{wrong!}).
+\end{equation*}
+
+But that is not right. We can , however, make use of the results
+of Chapter  11 if we make a careful comparison of the
+equations of Chapter  11 with the equations for
+ferromagnetism in this chapter. Let’s put together the corresponding
+equations. For regions where there are no conduction currents or
+charges we have:
+ 
+\begin{equation}
+\begin{alignedat}{2}
+&\text{Electrostatics}&\qquad
+&\text{Static ferromagnetism}\\
+&\FLPdiv{\biggl(\FLPE+\frac{\FLPP}{\epsO}\biggr)}=0&\qquad
+&\FLPdiv{\FLPB}=0\\
+&\FLPcurl{\FLPE}=\FLPzero&\qquad
+&\FLPcurl{\biggl(\FLPB-\frac{\FLPM}{\epsO c^2}\biggr)}=\FLPzero
+\end{alignedat}
+\label{Eq:II:36:30}
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+&\text{Electrostatics}\\[.5ex]
+&\FLPdiv{\biggl(\FLPE+\frac{\FLPP}{\epsO}\biggr)}=0\\[1ex]
+&\FLPcurl{\FLPE}=\FLPzero\\[2ex]
+&\text{Static ferromagnetism}\\[1ex]
+&\FLPdiv{\FLPB}=0\\[1ex]
+&\FLPcurl{\biggl(\FLPB-\frac{\FLPM}{\epsO c^2}\biggr)}=\FLPzero
+\end{aligned}
+\label{Eq:II:36:30}
+\end{equation}
+ 
+
+These two sets of equations can be thought of as analogous if we make
+the following purely mathematical correspondences:
+\begin{equation*}
+\FLPE\to\FLPB-\frac{\FLPM}{\epsO c^2},\quad
+\FLPE+\frac{\FLPP}{\epsO}\to\FLPB.
+\end{equation*}
+
+This is the same as making the analogy
+\begin{equation}
+\label{Eq:II:36:31}
+\FLPE\to\FLPH,\quad\FLPP\to\FLPM/c^2.
+\end{equation}
+
+In other words, if we write the equations of ferromagnetism as
+\begin{equation}
+\begin{aligned}
+&\FLPdiv{\biggl(\FLPH+\frac{\FLPM}{\epsO c^2}\biggr)}=0,\\[1ex]
+&\FLPcurl{\FLPH}=\FLPzero,
+\end{aligned}
+\label{Eq:II:36:32}
+\end{equation}
+
+they look like the equations of electrostatics.
+
+This purely algebraic correspondence has led to some confusion in the
+past. People tended to think that [eq] was “ the magnetic
+field.” But, as we have seen, [eq] and [eq] are physically the
+fundamental fields, and [eq] is a derived idea. So although the
+ equations are analogous, the physics is not
+analogous. However, that doesn’t need to stop us from using the
+principle that the same equations have the same solutions.
+
+We can use our earlier results for the electric field inside of holes of
+various shapes in dielectrics—summarized in
+Fig.  36–1 —to find the field [eq] inside of
+corresponding holes. Knowing [eq], we can determine [eq]. For
+instance (using the results we summarized in
+Section  36–1 ), the field [eq] in a needle-shaped hole
+parallel to [eq] is the same as the [eq] in the material,
+\begin{equation*}
+\FLPH_{\text{hole}}=\FLPH_{\text{material}}.
+\end{equation*}
+
+But since [eq] in the hole is zero, we have
+\begin{equation}
+\label{Eq:II:36:33}
+\FLPB_{\text{hole}}=\FLPB_{\text{material}}-\frac{\FLPM}{\epsO c^2}.
+\end{equation}
+
+On the other hand, for a disc-shaped hole, perpendicular to [eq],
+we have
+\begin{equation}
+\FLPE_{\text{hole}}=\FLPE_{\text{dielectric}}+\frac{\FLPP}{\epsO},\notag
+\end{equation}
+
+which translates into
+\begin{equation}
+\FLPH_{\text{hole}}=\FLPH_{\text{material}}+\frac{\FLPM}{\epsO c^2}.\notag
+\end{equation}
+
+Or, in terms of [eq],
+\begin{equation}
+\label{Eq:II:36:34}
+\FLPB_{\text{hole}}=\FLPB_{\text{material}}.
+\end{equation}
+
+Finally, for a spherical hole, by making our analogy with
+Eq. ( 36.3 ) we would have
+\begin{equation}
+\FLPH_{\text{hole}}=\FLPH_{\text{material}}+\frac{\FLPM}{3\epsO c^2}\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:II:36:35}
+\FLPB_{\text{hole}}=\FLPB_{\text{material}}-\frac{2}{3}\,
+\frac{\FLPM}{\epsO c^2}.
+\end{equation}
+
+This result is quite different from what we got for [eq].
+
+It is, of course, possible to get these results in a more physical way,
+by using the Maxwell equations directly. For example,
+Eq. ( 36.34 ) follows directly from [eq]. (You
+use a Gaussian surface that is half in the material and half out.)
+Similarly, you can get Eq. ( 36.33 ) by using a line integral
+along a curve that goes up inside the hole and returns through the
+material. Physically, the field in the hole is reduced because of the
+surface currents—which are given by [eq]. We will leave
+it for you to show that Eq. ( 36.35 ) can also be obtained by
+considering the effects of the surface currents on the boundary of the
+spherical cavity.
+
+In finding the equilibrium magnetization from Eq. ( 36.29 ),
+it turns out to be most convenient to deal with [eq]; so write
+\begin{equation}
+\label{Eq:II:36:36}
+\FLPB_a=\FLPH+\lambda\,\frac{\FLPM}{\epsO c^2}.
+\end{equation}
+
+In the spherical hole approximation, we would have
+[eq], but, as you will see, we will want later to
+use some other value, so we leave it as an adjustable parameter. Also,
+we will take all the fields in the same direction so that we won’t
+need to worry about the vector directions. If we were now to
+substitute Eq. ( 36.36 ) into Eq. ( 36.29 ),
+we would have one equation that relates the magnetization [eq] to the
+magnetizing field [eq]:
+\begin{equation*}
+M=N\mu\tanh\biggl(\mu\,\frac{H+\lambda M/\epsO c^2}{kT}\biggr).
+\end{equation*}
+
+It is however, an equation that cannot be solved explicitly, so we
+will do it graphically.
+
+Let’s put the problem in a generalized form by writing
+Eq. ( 36.29 ) as
+\begin{equation}
+\label{Eq:II:36:37}
+\frac{M}{M_{\text{sat}}}=\tanh x,
+\end{equation}
+
+where [eq] is the saturation value of the magnetization,
+namely, [eq], and [eq] represents [eq]. The dependence
+of [eq] on [eq] is shown by curve [eq] in
+Fig.  36–13 . We can also write [eq] as a function
+of [eq]—using Eq. ( 36.36 ) for [eq]—as
+\begin{equation}
+\label{Eq:II:36:38}
+x=\frac{\mu B_a}{kT}=\frac{\mu H}{kT}+\biggl(\frac{\mu\lambda M_{\text{sat}}}
+{\epsO c^2kT}\biggr)\frac{M}{M_{\text{sat}}}.
+\end{equation}
+
+For any given value of [eq], this is a straight-line relationship
+between [eq] and [eq]. The [eq] intercept is at $x=\mu
+H/kT[eq]\epsO c^2kT/\mu\lambda M_{\text{sat}}$. For
+any particular [eq], we would have a line like the one marked [eq] in
+Fig.  36–13 . The intersection of curves [eq] and [eq] gives us the
+solution for [eq]. We have solved the problem.
+
+Let’s look at how the solutions will go for various circumstances. We
+start with [eq]. There are two possible situations, shown by the lines
+[eq] and [eq] in Fig.  36–14 . You will notice from
+Eq. ( 36.38 ) that the slope of the line is proportional to
+the absolute temperature [eq]. So, at high temperatures we would
+have a line like [eq]. The solution is [eq]. When the
+magnetizing field [eq] is zero, the magnetization is also zero. But at
+ low temperatures , we would have a line like [eq], and there are
+ two solutions for [eq]—one with
+[eq] and one with [eq] near one. It turns
+out that only the upper solution is stable—as you can see by
+considering small variations about these solutions.
+
+According to these ideas, then, a magnetic material should magnetize
+itself spontaneously at sufficiently low temperatures. In
+short, when the thermal motions are small enough, the coupling between
+the atomic magnets causes them all to line up parallel to each
+other—we have a permanently magnetized material analogous to the
+ferroelectrics we discussed in Chapter  11 .
+
+If we start at high temperatures and come down, there is a critical
+temperature, called the Curie temperature [eq], where the ferromagnetic
+behavior suddenly sets in. This temperature corresponds to the
+line [eq] of Fig.  36–14 , which is tangent to the
+curve [eq], and has, therefore, a slope of [eq]. The Curie temperature is
+given by
+\begin{equation}
+\label{Eq:II:36:39}
+\frac{\epsO c^2kT_c}{\mu\lambda M_{\text{sat}}}=1.
+\end{equation}
+
+We can, if we wish, write Eq. ( 36.38 ) more simply in
+terms of [eq] as
+\begin{equation}
+\label{Eq:II:36:40}
+x=\frac{\mu H}{kT}+\frac{T_c}{T}\biggl(\frac{M}{M_{\text{sat}}}\biggr).
+\end{equation}
+
+Now we want to see what happens for small magnetizing fields [eq]. We
+can see from Fig.  36–14 how things will go if we shift our straight
+lines a little to the right. For the low-temperature case, the
+intersection point will move out a little bit along the low-slope part
+of curve [eq], and [eq] will change relatively little. For the
+high-temperature case, however, the intersection point runs up the
+steep part of curve [eq], and [eq] will change relatively rapidly. In
+fact, we can approximate this part of curve [eq] by a straight line of
+unit slope, and write:
+\begin{equation*}
+\frac{M}{M_{\text{sat}}}=x=\frac{\mu H}{kT}+
+\frac{T_c}{T}\biggl(\frac{M}{M_{\text{sat}}}\biggr).
+\end{equation*}
+
+Now we can solve for [eq]:
+\begin{equation}
+\label{Eq:II:36:41}
+\frac{M}{M_{\text{sat}}}=\frac{\mu H}{k(T-T_c)}.
+\end{equation}
+
+We have a law that is something like the one we had for
+paramagnetism. For paramagnetism, we had
+\begin{equation}
+\label{Eq:II:36:42}
+\frac{M}{M_{\text{sat}}}=\frac{\mu B}{kT}.
+\end{equation}
+
+One difference now is that we have the magnetization in terms of [eq],
+which includes some of the effects of the interaction of the atomic
+magnets, but the main difference is that the magnetization is inversely
+proportional to the difference between [eq] and [eq], instead of
+to the absolute temperate [eq], alone. Neglecting the interactions
+between neighboring atoms corresponds to taking [eq], which from
+Eq. ( 36.39 ) means taking [eq]. Then the results are just
+what we had in Chapter  35 .
+
+We can check our theoretical picture with the experimental data for
+nickel. It is observed experimentally that the ferromagnetic behavior of
+nickel disappears when its temperature is raised above [eq]K. We
+can compare this with [eq] calculated from Eq. ( 36.39 ).
+Remembering that [eq], we have
+\begin{equation*}
+T_c=\lambda\,\frac{N\mu^2}{k\epsO c^2}.
+\end{equation*}
+
+From the density and atomic weight of nickel, we get
+\begin{equation*}
+N=9.1\times10^{28}\:\text{m}^{-3}.
+\end{equation*}
+
+Taking [eq] from Eq. ( 36.28 ), and setting
+[eq], we get
+\begin{equation*}
+T_c=0.24^\circ\text{K}.
+\end{equation*}
+
+There is a discrepancy of a factor of about [eq]! Our theory of
+ferromagnetism fails completely.
+
+We can try to “patch up” the theory as Weiss did by saying that for
+some unknown reason [eq] is not one-third,
+but [eq]—or about [eq]. It turns out that one
+gets similar values for other ferromagnetic materials like iron. To
+see what this means, let’s go back to Eq. ( 36.36 ). We
+see that a large [eq] means that [eq], the local field on the
+atom, appears to be much, much larger than we would think. In fact,
+writing [eq], we have
+\begin{equation*}
+B_a=B+\frac{(\lambda-1)M}{\epsO c^2}.
+\end{equation*}
+
+According to our original idea—with [eq] the local
+magnetization [eq] reduces the effective field [eq] by the
+amount [eq]. Even if our model of a spherical
+hole were not very good, we would still expect some 
+reduction. Instead, to explain the phenomenon of ferromagnetism, we
+have to imagine that the magnetization of the field enhances 
+the local field by some large factor—like one thousand or
+more. There doesn’t seem to be any reasonable way to manufacture such
+tremendous fields at an atom—nor even fields of the proper sign!
+Clearly, our “magnetic” theory of ferromagnetism is a dismal
+failure. We must conclude, then, that ferromagnetism has to do with
+some nonmagnetic interaction between the spinning electrons in
+neighboring atoms. This interaction must generate a strong tendency
+for all of the nearby spins to line up in one direction. We will see
+later that it has to do with quantum mechanics and the Pauli exclusion
+principle.
+
+Finally, we look at what happens at low temperatures—for [eq]. We
+have seen that there will then be a spontaneous magnetization—even
+with [eq]—given by the intersection of the curves [eq] and [eq] of
+Fig.  36–14 . If we solve for [eq] for various
+temperatures—by varying the slope of the line [eq]—we get the
+theoretical curve shown in Fig.  36–15 . This curve should be
+the same for all ferromagnetic materials for which the atomic moment
+comes from a single electron. The curves for other materials are only
+slightly different.
+
+In the limit, as [eq] goes to absolute zero, [eq] goes
+to [eq]. As the temperature is increased, the magnetization
+decreases, falling to zero at the Curie temperature. The points in
+Fig.  36–15 are the experimental observations for nickel.
+They fit the theoretical curve fairly well. Even though we don’t
+understand the basic mechanism, the general features of the theory seem
+to be correct.
+
+Finally, there is one more disturbing discrepancy in our attempt to
+understand ferromagnetism. We have found that above some temperature
+the material should behave like a paramagnetic substance with a
+magnetization [eq] proportional to [eq] (or [eq]), and that below that
+temperature it should become spontaneously magnetized. But that’s not
+what we found when we measured the magnetization curve for iron. It
+only became permanently magnetized after we had “magnetized”
+it. According to the ideas just discussed, it would magnetize itself!
+What is wrong? Well, it turns out that if you look at a small
+enough crystal of iron or nickel, it is indeed completely magnetized!
+But in large pieces of iron, there are many small regions or
+“domains” that are magnetized in different directions, so that on a
+large scale the average magnetization appears to be zero. In
+each small domain, however, the iron has a locked-in magnetization
+with [eq] nearly equal to [eq]. The consequences of this
+domain structure are that gross properties of large pieces of material
+are quite different from the microscopic properties that we have
+really been treating. We will take up in the next lecture the story of
+the practical behavior of bulk magnetic materials.

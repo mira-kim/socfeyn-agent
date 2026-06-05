@@ -1,0 +1,18 @@
+# don't save run data
+experiments/runs/*
+
+# secrets and local config
+.env
+
+# runtime data — conversation history, sessions, claims
+philosopher.db
+*.db
+
+# local logs
+mira-logs.txt
+*.log
+
+# tooling
+.claude
+.pytest_cache
+.ruff_cache

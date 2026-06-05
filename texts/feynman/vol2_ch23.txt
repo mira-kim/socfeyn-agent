@@ -1,0 +1,800 @@
+The Feynman Lectures on Physics Vol. II Ch. 23: Cavity Resonators
+=================================================================
+
+Sections: 23–1 Real circuit elements | 23–2 A capacitor at high frequencies | 23–3 A resonant cavity | 23–4 Cavity modes | 23–5 Cavities and resonant circuits
+
+
+
+When looked at from any one pair of terminals, any arbitrary circuit
+made up of ideal impedances and generators is, at any given frequency,
+equivalent to a generator [eq] in series with an impedance [eq].
+That comes about because if we put a voltage [eq] across the
+terminals and solve all the equations to find the current [eq], we must
+get a linear relation between the current and the voltage. Since all
+the equations are linear, the result for [eq] must also depend only
+linearly on [eq]. The most general linear form can be expressed as
+\begin{equation}
+\label{Eq:II:23:1}
+I=\frac{1}{z}(V-\emf).
+\end{equation}
+
+In general, both [eq] and [eq] may depend in some complicated way on
+the frequency [eq]. Equation ( 23.1 ), however, is the
+relation we would get if behind the two terminals there was just the
+generator [eq] in series with the impedance [eq].
+
+There is also the opposite kind of question: If we have any
+electromagnetic device at all with two terminals and we measure 
+the relation between [eq] and [eq] to determine [eq] and [eq] as
+functions of frequency, can we find a combination of our ideal elements
+that is equivalent to the internal impedance [eq]? The answer is that for
+any reasonable—that is, physically meaningful—function [eq],
+it is possible to approximate the situation to as high an
+accuracy as you wish with a circuit containing a finite set of ideal
+elements. We don’t want to consider the general problem now, but only
+look at what might be expected from physical arguments for a few cases.
+
+If we think of a real resistor, we know that the current through it
+will produce a magnetic field. So any real resistor should also have
+some inductance. Also, when a resistor has a potential difference
+across it, there must be charges on the ends of the resistor to
+produce the necessary electric fields. As the voltage changes, the
+charges will change in proportion, so the resistor will also have some
+capacitance. We expect that a real resistor might have the
+equivalent circuit shown in Fig.  23–1 . In a
+well-designed resistor, the so-called “parasitic” elements [eq]
+and [eq] are small, so that at the frequencies for which it is intended,
+[eq] is much less than [eq], and [eq] is much greater
+than [eq]. It may therefore be possible to neglect them. As the
+frequency is raised, however, they will eventually become important,
+and a resistor begins to look like a resonant circuit.
+
+A real inductance is also not equal to the idealized inductance, whose
+impedance is [eq]. A real coil of wire will have some
+resistance, so at low frequencies the coil is really equivalent to an
+inductance in series with some resistance, as shown in
+Fig.  23–2 (a). But, you are thinking, the resistance and
+inductance are together in a real coil—the resistance is spread
+all along the wire, so it is mixed in with the inductance. We should
+probably use a circuit more like the one in Fig.  23–2 (b),
+which has several little [eq]’s and [eq]’s in series. But the total
+impedance of such a circuit is just [eq], which is
+equivalent to the simpler diagram of part (a).
+
+As we go up in frequency with a real coil, the approximation of an
+inductance plus a resistance is no longer very good. The charges that
+must build up on the wires to make the voltages will become important.
+It is as if there were little condensers across the turns of the coil,
+as sketched in Fig.  23–3 (a). We might try to approximate
+the real coil by the circuit in Fig.  23–3 (b). At low
+frequencies, this circuit can be imitated fairly well by the simpler one
+in part (c) of the figure (which is again the same resonant circuit we
+found for the high-frequency model of a resistor). For higher
+frequencies, however, the more complicated circuit of
+Fig.  23–3 (b) is better. In fact, the more accurately you
+wish to represent the actual impedance of a real, physical inductance,
+the more ideal elements you will have to use in the artificial model of
+it.
+
+Let’s look a little more closely at what goes on in a real coil. The
+impedance of an inductance goes as [eq], so it becomes zero at
+low frequencies—it is a “short circuit”: all we see is the
+resistance of the wire. As we go up in frequency, [eq] soon
+becomes much larger than [eq], and the coil looks pretty much like an
+ideal inductance. As we go still higher, however, the capacities
+become important. Their impedance is proportional to [eq],
+which is large for small [eq]. For small enough frequencies a
+condenser is an “open circuit,” and when it is in parallel with
+something else, it draws no current. But at high frequencies, the
+current prefers to flow into the capacitance between the turns, rather
+than through the inductance. So the current in the coil jumps from one
+turn to the other and doesn’t bother to go around and around where it
+has to buck the emf. So although we may have intended that the
+current should go around the loop, it will take the easier path—the
+path of least impedance.
+
+If the subject had been one of popular interest, this effect would
+have been called “the high-frequency barrier,” or some such
+name. The same kind of thing happens in all subjects. In aerodynamics,
+if you try to make things go faster than the speed of sound when they
+were designed for lower speeds, they don’t work. It doesn’t mean that
+there is a great “barrier” there; it just means that the object
+should be redesigned. So this coil which we designed as an
+“inductance” is not going to work as a good inductance, but as some
+other kind of thing at very high frequencies. For high frequencies, we
+have to find a new design.
+
+Now we want to discuss in detail the behavior of a capacitor—a
+geometrically ideal capacitor—as the frequency gets larger and
+larger, so we can see the transition of its properties. (We prefer to
+use a capacitor instead of an inductance, because the geometry of a
+pair of plates is much less complicated than the geometry of a coil.)
+We consider the capacitor shown in Fig.  23–4 (a), which
+consists of two parallel circular plates connected to an external
+generator by a pair of wires. If we charge the capacitor with
+ dc , there will be a positive charge on one plate and a
+negative charge on the other; and there will be a uniform electric
+field between the plates.
+
+Now suppose that instead of dc , we put an ac of low
+frequency on the plates. (We will find out later what is “low” and
+what is “high”.) Say we connect the capacitor to a lower-frequency
+generator. As the voltage alternates, the positive charge on the top
+plate is taken off and negative charge is put on. While that is
+happening, the electric field disappears and then builds up in the
+opposite direction. As the charge sloshes back and forth slowly, the
+electric field follows. At each instant the electric field is uniform,
+as shown in Fig.  23–4 (b), except for some edge effects
+which we are going to disregard. We can write the magnitude
+of the electric field as
+\begin{equation}
+\label{Eq:II:23:2}
+E=E_0e^{i\omega t},
+\end{equation}
+
+where [eq] is a constant.
+
+Now will that continue to be right as the frequency goes up? No, because
+as the electric field is going up and down, there is a flux of electric
+field through any loop like [eq] in Fig.  23–4 (a).
+And, as you know, a changing electric field acts to produce a magnetic
+field. One of Maxwell’s equations says that when there is a varying electric field, as there is
+here, there has got to be a line integral of the magnetic field. The
+integral of the magnetic field around a closed ring, multiplied
+by [eq], is equal to the time rate-of-change of the electric flux
+through the area inside the ring (if there are no currents):
+\begin{equation}
+\label{Eq:II:23:3}
+c^2\oint_\Gamma\FLPB\cdot d\FLPs=\ddt{}{t}\kern{-1.7ex}
+\underset{\text{inside [eq]}}{\int}
+\FLPE\cdot\FLPn\,da.
+\end{equation}
+
+So how much magnetic field is there? That’s not very hard. Suppose
+that we take the loop [eq], which is a circle of radius [eq]. We
+can see from symmetry that the magnetic field goes around as shown in
+the figure. Then the line integral of [eq] is [eq]. And, since
+the electric field is uniform, the flux of the electric field is
+simply [eq] multiplied by [eq], the area of the circle:
+\begin{equation}
+\label{Eq:II:23:4}
+c^2B\cdot2\pi r=\ddp{}{t}\,E\cdot\pi r^2.
+\end{equation}
+
+The derivative of [eq] with respect to time is, for our alternating
+field, simply [eq]. So we find that our
+capacitor has the magnetic field
+\begin{equation}
+\label{Eq:II:23:5}
+B=\frac{i\omega r}{2c^2}\,E_0e^{i\omega t}.
+\end{equation}
+
+In other words, the magnetic field also oscillates and has a strength
+proportional to [eq].
+
+What is the effect of that? When there is a magnetic field that is
+varying, there will be induced electric fields and the capacitor will
+begin to act a little bit like an inductance. As the frequency goes
+up, the magnetic field gets stronger; it is proportional to the rate
+of change of [eq], and so to [eq]. The impedance of the capacitor
+will no longer be simply [eq].
+
+Let’s continue to raise the frequency and to analyze what happens more
+carefully. We have a magnetic field that goes sloshing back and
+forth. But then the electric field cannot be uniform, as we have
+assumed! When there is a varying magnetic field, there must be a line
+integral of the electric field—because of Faraday’s law. So if there
+is an appreciable magnetic field, as begins to happen at high
+frequencies, the electric field cannot be the same at all distances
+from the center. The electric field must change with [eq] so that the
+line integral of the electric field can equal the changing flux of the
+magnetic field.
+
+Let’s see if we can figure out the correct electric field. We can do
+that by computing a “correction” to the uniform field we originally
+assumed for low frequencies. Let’s call the uniform field [eq], which
+will still be [eq], and write the correct field as
+\begin{equation*}
+E=E_1+E_2,
+\end{equation*}
+
+where [eq] is the correction due to the changing magnetic field. For
+any [eq] we will write the field at the center of the condenser
+as [eq] (thereby defining [eq]), so that we have no
+correction at the center; [eq] at [eq].
+
+To find [eq] we can use the integral form of Faraday’s law:
+\begin{equation*}
+\oint_\Gamma\FLPE\cdot d\FLPs=-\ddt{}{t}(\text{flux of [eq]}).
+\end{equation*}
+
+The integrals are simple if we take them for the curve [eq],
+shown in Fig.  23–4 (b), which goes up along the axis,
+out radially the distance [eq] along the top plate, down vertically to
+the bottom plate, and back to the axis. The line integral of [eq]
+around this curve is, of course, zero; so only [eq] contributes, and
+its integral is just [eq], where [eq] is the spacing
+between the plates. (We call [eq] positive if it points upward.) This
+is equal to minus the rate of change of the flux of [eq], which we have
+to get by an integral over the shaded area [eq] inside [eq] in
+Fig.  23–4 (b). The flux through a vertical strip of
+width [eq] is [eq], so the total flux is
+\begin{equation*}
+h\int B(r)\,dr.
+\end{equation*}
+
+Setting [eq] of the flux equal to the line integral of [eq],
+we have
+\begin{equation}
+\label{Eq:II:23:6}
+E_2(r)=\ddp{}{t}\int B(r)\,dr.
+\end{equation}
+
+Notice that the [eq] cancels out; the fields don’t depend on the
+separation of the plates.
+
+Using Eq. ( 23.5 ) for [eq], we have
+\begin{equation*}
+E_2(r)=\ddp{}{t}\,\frac{i\omega r^2}{4c^2}\,E_0e^{i\omega t}.
+\end{equation*}
+
+The time derivative just brings down another factor [eq]; we get
+\begin{equation}
+\label{Eq:II:23:7}
+E_2(r)=-\frac{\omega^2r^2}{4c^2}\,E_0e^{i\omega t}.
+\end{equation}
+
+As we expect, the induced field tends to reduce the electric
+field farther out. The corrected field [eq] is then
+\begin{equation}
+\label{Eq:II:23:8}
+E=E_1+E_2=\biggl(1-\frac{1}{4}\,\frac{\omega^2r^2}{c^2}
+\biggr)E_0e^{i\omega t}.
+\end{equation}
+
+The electric field in the capacitor is no longer uniform; it has the
+parabolic shape shown by the broken line in Fig.  23–5 . You
+see that our simple capacitor is getting slightly complicated.
+
+We could now use our results to calculate the impedance of the
+capacitor at high frequencies. Knowing the electric field, we could
+compute the charges on the plates and find out how the current through
+the capacitor depends on the frequency [eq], but we are not
+interested in that problem for the moment. We are more interested in
+seeing what happens as we continue to go up with the frequency—to
+see what happens at even higher frequencies. Aren’t we already
+finished? No, because we have corrected the electric field, which
+means that the magnetic field we have calculated is no longer
+right. The magnetic field of Eq. ( 23.5 ) is approximately
+right, but it is only a first approximation. So let’s call
+it [eq]. We should then rewrite Eq. ( 23.5 ) as
+\begin{equation}
+\label{Eq:II:23:9}
+B_1=\frac{i\omega r}{2c^2}\,E_0e^{i\omega t}.
+\end{equation}
+
+You will remember that this field was produced by the variation
+of [eq]. Now the correct magnetic field will be that produced by the
+total electric field [eq]. If we write the magnetic field
+as [eq], the second term is just the additional field produced
+by [eq]. To find [eq] we can go through the same arguments we have used
+to find [eq]; the line integral of [eq] around the curve [eq]
+is equal to the rate of change of the flux of [eq]
+through [eq]. We will just have Eq. ( 23.4 ) again with [eq]
+replaced by [eq] and [eq] replaced by [eq]:
+\begin{equation*}
+c^2B_2\cdot2\pi r=\ddt{}{t}(\text{flux of [eq] through [eq]}).
+\end{equation*}
+
+Since [eq] varies with radius, to obtain its flux we must integrate
+over the circular surface inside [eq]. Using [eq] as the
+element of area, this integral is
+\begin{equation}
+\int_0^rE_2(r)\cdot2\pi r\,dr.\notag
+\end{equation}
+
+So we get for [eq]
+\begin{equation}
+\label{Eq:II:23:10}
+B_2(r)=\frac{1}{rc^2}\,\ddp{}{t}
+\int E_2(r)r\,dr.
+\end{equation}
+
+Using [eq] from Eq. ( 23.7 ), we need the integral
+of [eq], which is, of course, [eq]. Our correction to the
+magnetic field becomes
+\begin{equation}
+\label{Eq:II:23:11}
+B_2(r)=-\frac{i\omega^3r^3}{16c^4}\,E_0e^{i\omega t}.
+\end{equation}
+
+But we are still not finished! If the magnetic field [eq] is not the
+same as we first thought, then we have incorrectly computed [eq]. We
+must make a further correction to [eq], which comes from the extra
+magnetic field [eq]. Let’s call this additional correction to the
+electric field [eq]. It is related to the magnetic field [eq] in the
+same way that [eq] was related to [eq]. We can use
+Eq. ( 23.6 ) all over again just by changing the subscripts:
+\begin{equation}
+\label{Eq:II:23:12}
+E_3(r)=\ddp{}{t}\int B_2(r)\,dr.
+\end{equation}
+
+Using our result, Eq. ( 23.11 ), for [eq], the new
+correction to the electric field is
+\begin{equation}
+\label{Eq:II:23:13}
+E_3(r)=+\frac{\omega^4r^4}{64c^4}\,E_0e^{i\omega t}.
+\end{equation}
+
+Writing our doubly corrected electric field as [eq], we get
+\begin{equation}
+\label{Eq:II:23:14}
+E=E_0e^{i\omega t}\biggl[
+1-\frac{1}{2^2}\biggl(\frac{\omega r}{c}\biggr)^2\kern{-1.25ex}+
+\frac{1}{2^2\cdot4^2}\biggl(\frac{\omega r}{c}\biggr)^4
+\biggr].
+\end{equation}
+
+The variation of the electric field with radius is no longer the
+simple parabola we drew in Fig.  23–5 , but at large
+radii lies slightly above the curve [eq].
+
+We are not quite through yet. The new electric field produces a new
+correction to the magnetic field, and the newly corrected magnetic
+field will produce a further correction to the electric field, and on
+and on. However, we already have all the formulas that we need.
+For [eq] we can use Eq. ( 23.10 ), changing the subscripts of
+[eq] and [eq] from [eq] to [eq].
+
+The next correction to the electric field is
+\begin{equation*}
+E_4=-\frac{1}{2^2\cdot4^2\cdot6^2}
+\biggl(\frac{\omega r}{c}\biggr)^6
+E_0e^{i\omega t}.
+\end{equation*}
+
+So to this order we have that the complete electric field is given by
+ 
+\begin{equation}
+\label{Eq:II:23:15}
+E=E_0e^{i\omega t}\biggl[
+1-\frac{1}{(1!)^2}\biggl(\frac{\omega r}{2c}\biggr)^2\kern{-1.25ex}+
+\frac{1}{(2!)^2}\biggl(\frac{\omega r}{2c}\biggr)^4\kern{-1.25ex}-
+\frac{1}{(3!)^2}\biggl(\frac{\omega r}{2c}\biggr)^6\pm\dotsb
+\biggr].
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:II:23:15}
+E=E_0&e^{i\omega t}\biggl[
+1-\frac{1}{(1!)^2}\biggl(\frac{\omega r}{2c}\biggr)^2\kern{-1ex}+\\[1ex]
+&\frac{1}{(2!)^2}\biggl(\frac{\omega r}{2c}\biggr)^4\kern{-1ex}-
+\frac{1}{(3!)^2}\biggl(\frac{\omega r}{2c}\biggr)^6\kern{-1ex}\pm\dotsb
+\biggr].\notag
+\end{align}
+ 
+where we have written the numerical coefficients in such a way that it
+is obvious how the series is to be continued.
+
+Our final result is that the electric field between the plates of the
+capacitor, for any frequency, is given by [eq] times the
+infinite series which contains only the variable [eq]. If we
+wish, we can define a special function, which we will call [eq], as
+the infinite series that appears in the brackets of
+Eq. ( 23.15 ):
+ 
+\begin{equation}
+\label{Eq:II:23:16}
+J_0(x)=1-\frac{1}{(1!)^2}\biggl(\frac{x}{2}\biggr)^2\kern{-1.25ex}+
+\frac{1}{(2!)^2}\biggl(\frac{x}{2}\biggr)^4\kern{-1.25ex}-
+\frac{1}{(3!)^2}\biggl(\frac{x}{2}\biggr)^6\pm\dotsb
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:II:23:16}
+J_0(x)=&\;1-\frac{1}{(1!)^2}\biggl(\frac{x}{2}\biggr)^2\kern{-1ex}+\\[1ex]
+&\frac{1}{(2!)^2}\biggl(\frac{x}{2}\biggr)^4\kern{-1ex}-
+\frac{1}{(3!)^2}\biggl(\frac{x}{2}\biggr)^6\kern{-1ex}\pm\dotsb\notag
+\end{align}
+ 
+Then we can write our solution as [eq] times this
+function, with [eq]:
+\begin{equation}
+\label{Eq:II:23:17}
+E=E_0e^{i\omega t}J_0\biggl(\frac{\omega r}{c}\biggr).
+\end{equation}
+
+The reason we have called our special function [eq] is that, naturally,
+this is not the first time anyone has ever worked out a problem with
+oscillations in a cylinder. The function has come up before and is
+usually called [eq]. It always comes up whenever you solve a problem
+about waves with cylindrical symmetry. The function [eq] is to
+cylindrical waves what the cosine function is to waves on a straight
+line. So it is an important function, invented a long time ago. Then a
+man named Bessel got his name
+attached to it. The subscript zero means that
+Bessel invented a whole lot of different
+functions and this is just the first of them.
+
+The other functions of Bessel—[eq], [eq],
+and so on—have to do with cylindrical waves which have a variation
+of their strength with the angle around the axis of the cylinder.
+
+The completely corrected electric field between the plates of our
+circular capacitor, given by Eq. ( 23.17 ), is plotted as
+the solid line in Fig.  23–5 . For frequencies that are
+not too high, our second approximation was already quite good. The
+third approximation was even better—so good, in fact, that if we had
+plotted it, you would not have been able to see the difference between
+it and the solid curve. You will see in the next section, however,
+that the complete series is needed to get an accurate description for
+large radii, or for high frequencies.
+
+We want to look now at what our solution gives for the electric field
+between the plates of the capacitor as we continue to go to higher and
+higher frequencies. For large [eq], the parameter [eq]
+also gets large, and the first few terms in the series for [eq]
+of [eq] will increase rapidly. That means that the parabola we have drawn
+in Fig.  23–5 curves downward more steeply at higher
+frequencies. In fact, it looks as though the field would fall all the
+way to zero at some high frequency, perhaps when [eq] is
+approximately one-half of [eq]. Let’s see whether [eq] does indeed go
+through zero and become negative. We begin by trying [eq]:
+\begin{equation*}
+J_0(2)=1-1+\tfrac{1}{4}-\tfrac{1}{36}=0.22.
+\end{equation*}
+
+The function is still not zero, so let’s try a higher value of [eq],
+say, [eq]. Putting in numbers, we write
+\begin{equation*}
+J_0(2.5)=1-1.56+0.61-0.11=-0.06.
+\end{equation*}
+
+The function [eq] has already gone through zero by the time we get
+to [eq]. Comparing the results for [eq] and [eq], it looks as
+though [eq] goes through zero at one-fifth of the way from [eq]
+to [eq]. We would guess that the zero occurs for [eq] approximately equal
+to [eq]. Let’s see what that value of [eq] gives:
+\begin{equation*}
+J_0(2.4)=1-1.44+0.52-0.08=0.00.
+\end{equation*}
+
+We get zero to the accuracy of our two decimal places. If we make the
+calculation more accurate (or since [eq] is a well-known function, if
+we look it up in a book), we find that it goes through zero
+at [eq]. We have worked it out by hand to show you that you too
+could have discovered these things rather than having to borrow them
+from a book.
+
+As long as we are looking up [eq] in a book, it is interesting to
+notice how it goes for larger values of [eq]; it looks like the graph
+in Fig.  23–6 . As [eq] increases, [eq] oscillates
+between positive and negative values with a decreasing amplitude of
+oscillation.
+
+We have gotten the following interesting result: If we go high enough
+in frequency, the electric field at the center of our condenser will
+be one way and the electric field near the edge will point in the
+opposite direction. For example, suppose that we take an [eq] high
+enough so that [eq] at the outer edge of the capacitor is
+equal to [eq]; then the edge of the capacitor corresponds to the
+abscissa [eq] in Fig.  23–6 . This means that our
+capacitor is being operated at the frequency [eq]. At the
+edge of the plates, the electric field will have a rather high
+magnitude opposite the direction we would expect. That is the terrible
+thing that can happen to a capacitor at high frequencies. If we go to
+very high frequencies, the direction of the electric field oscillates
+back and forth many times as we go out from the center of the
+capacitor. Also there are the magnetic fields associated with these
+electric fields. It is not surprising that our capacitor doesn’t look
+like the ideal capacitance for high frequencies. We may even start to
+wonder whether it looks more like a capacitor or an inductance. We
+should emphasize that there are even more complicated effects that we
+have neglected which happen at the edges of the capacitor. For
+instance, there will be a radiation of waves out past the edges, so
+the fields are even more complicated than the ones we have computed,
+but we will not worry about those effects now.
+
+We could try to figure out an equivalent circuit for the capacitor, but
+perhaps it is better if we just admit that the capacitor we have
+designed for low-frequency fields is just no longer satisfactory when
+the frequency is too high. If we want to treat the operation of such an
+object at high frequencies, we should abandon the approximations to
+Maxwell’s equations that we
+have made for treating circuits and return to the complete set of
+equations which describe completely the fields in space. Instead of
+dealing with idealized circuit elements, we have to deal with the real
+conductors as they are, taking into account all the fields in the spaces
+in between. For instance, if we want a resonant circuit at high
+frequencies we will not try to design one using a coil and a
+parallel-plate capacitor.
+
+We have already mentioned that the parallel-plate capacitor we have been
+analyzing has some of the aspects of both a capacitor and an inductance.
+With the electric field there are charges on the surfaces of the plates,
+and with the magnetic fields there are back emf’s. Is it possible that
+we already have a resonant circuit? We do indeed. Suppose we pick a
+frequency for which the electric field pattern falls to zero at some
+radius inside the edge of the disc; that is, we choose [eq]
+greater than [eq]. Everywhere on a circle coaxial with the plates the
+electric field will be zero. Now suppose we take a thin metal sheet and
+cut a strip just wide enough to fit between the plates of the capacitor.
+Then we bend it into a cylinder that will go around at the radius where
+the electric field is zero. Since there are no electric fields there,
+when we put this conducting cylinder in place, no currents will flow in
+it; and there will be no changes in the electric and magnetic fields. We
+have been able to put a direct short circuit across the capacitor
+without changing anything. And look what we have; we have a complete
+cylindrical can with electrical and magnetic fields inside and no
+connection at all to the outside world. The fields inside won’t change
+even if we throw away the edges of the plates outside our can, and also
+the capacitor leads. All we have left is a closed can with electric and
+magnetic fields inside, as shown in Fig.  23–7 (a). The
+electric fields are oscillating back and forth at the
+frequency [eq]—which, don’t forget, determined the diameter of the can. The
+amplitude of the oscillating [eq] field varies with the distance from the
+axis of the can, as shown in the graph of Fig.  23–7 (b).
+This curve is just the first arch of the Bessel function of zero
+order. There is also a magnetic field which goes in circles around the
+axis and oscillates in time [eq] out of phase with the electric
+field.
+
+We can also write out a series for the magnetic field and plot it, as
+shown in the graph of Fig.  23–7 (c).
+
+How is it that we can have an electric and magnetic field inside a can
+with no external connections? It is because the electric and magnetic
+fields maintain themselves, the changing [eq] makes a [eq] and
+the changing [eq] makes an [eq]—all according to the equations
+of Maxwell.
+The magnetic field has an inductive aspect, and the
+electric field a capacitive aspect; together they make something like
+a resonant circuit. Notice that the conditions we have described would
+only happen if the radius of the can is exactly [eq]. For
+a can of a given radius, the oscillating electric and magnetic fields
+will maintain themselves—in the way we have described—only at that
+particular frequency. So a cylindrical can of radius [eq] is
+ resonant at the frequency
+\begin{equation}
+\label{Eq:II:23:18}
+\omega_0=2.405\,\frac{c}{r}.
+\end{equation}
+
+We have said that the fields continue to oscillate in the same way after
+the can is completely closed. That is not exactly right. It would be
+possible if the walls of the can were perfect conductors. For a real
+can, however, the oscillating currents which exist on the inside walls
+of the can lose energy because of the resistance of the material. The
+oscillations of the fields will gradually die away. We can see from
+Fig.  23–7 that there must be strong currents associated
+with electric and magnetic fields inside the cavity. Because the
+vertical electrical field stops suddenly at the top and bottom plates of
+the can, it has a large divergence there; so there must be positive and
+negative electric charges on the inner surfaces of the can, as shown in
+Fig.  23–7 (a). When the electric field reverses, the charges
+must reverse also, so there must be an alternating current between the
+top and bottom plates of the can. These charges will flow in the sides
+of the can, as shown in the figure. We can also see that there must be
+currents in the sides of the can by considering what happens to the
+magnetic field. The graph of Fig.  23–7 (c) tells us that the
+magnetic field suddenly drops to zero at the edge of the can. Such a
+sudden change in the magnetic field can happen only if there is a
+current in the wall. This current is what gives the alternating electric
+charges on the top and bottom plates of the can.
+
+You may be wondering about our discovery of currents in the vertical
+sides of the can. What about our earlier statement that nothing would
+be changed when we introduced these vertical sides in a region where
+the electric field was zero? Remember, however, that when we first put
+in the sides of the can, the top and bottom plates extended out beyond
+them, so that there were also magnetic fields on the outside of our
+can. It was only when we threw away the parts of the capacitor plates
+beyond the edges of the can that net currents had to appear on the
+insides of the vertical walls.
+
+Although the electric and magnetic fields in the completely enclosed
+can will gradually die away because of the energy losses, we can stop
+this from happening if we make a little hole in the can and put in a
+little bit of electrical energy to make up the losses. We take a small
+wire, poke it through the hole in the side of the can, and fasten it
+to the inside wall so that it makes a small loop, as shown in
+Fig.  23–8 . If we now connect this wire to a source of
+high-frequency alternating current, this current will couple energy into
+the electric and magnetic fields of the cavity and keep the oscillations
+going. This will happen, of course, only if the frequency of the driving
+source is at the resonant frequency of the can. If the source is at the
+wrong frequency, the electric and magnetic fields will not resonate, and
+the fields in the can will be very weak.
+
+The resonant behavior can easily be seen by making another small hole
+in the can and hooking in another coupling loop, as we have also drawn
+in Fig.  23–8 . The changing magnetic field through this loop will
+generate an induced electromotive force in the loop. If this loop is
+now connected to some external measuring circuit, the currents will be
+proportional to the strength of the fields in the cavity. Suppose we
+now connect the input loop of our cavity to an RF signal generator, as
+shown in Fig.  23–9 . The signal generator contains a source of
+alternating current whose frequency can be varied by varying the knob
+on the front of the generator. Then we connect the output loop of the
+cavity to a “detector,” which is an instrument that measures the
+current from the output loop. It gives a meter reading proportional to
+this current. If we now measure the output current as a function of
+the frequency of the signal generator, we find a curve like that shown
+in Fig.  23–10 . The output current is small for all frequencies
+except those very near the frequency [eq], which is the resonant
+frequency of the cavity. The resonance curve is very much like those
+we described in Chapter  23 of Vol. I. The width of the
+resonance is however, much narrower than we usually find for resonant
+circuits made of inductances and capacitors; that is, the [eq] of the
+cavity is very high. It is not unusual to find [eq]’s as high
+as [eq] or more if the inside walls of the cavity are made of some
+material with a very good conductivity, such as silver.
+
+Suppose we now try to check our theory by making measurements with an
+actual can. We take a can which is a cylinder with a diameter of
+[eq] inches and a height of about [eq] inches. The can is fitted with
+an input and output loop, as shown in Fig.  23–8 . If we
+calculate the resonant frequency expected for this can according to
+Eq. ( 23.18 ), we get that
+[eq] [eq] [eq] megacycles. When we set the frequency of our
+signal generator near [eq] megacycles and vary it slightly until we
+find the resonance, we observe that the maximum output current occurs
+for a frequency of [eq] megacycles, which is quite close to the
+predicted resonant frequency, but not exactly the same. There are
+several possible reasons for the discrepancy. Perhaps the resonant
+frequency is changed a little bit because of the holes we have cut to
+put in the coupling loops. A little thought, however, shows that the
+holes should lower the resonant frequency a little bit, so that cannot
+be the reason. Perhaps there is some slight error in the frequency
+calibration of the signal generator, or perhaps our measurement of the
+diameter of the cavity is not accurate enough. Anyway, the agreement is
+fairly close.
+
+Much more important is something that happens if we vary the frequency
+of our signal generator somewhat further from [eq] megacycles. When we
+do that we get the results shown in Fig.  23–11 . We find
+that, in addition to the resonance we expected near [eq] megacycles,
+there is also a resonance near [eq] megacycles and one near
+[eq] megacycles. What do these extra resonances mean? We might get a
+clue from Fig.  23–6 . Although we have been assuming that
+the first zero of the Bessel function occurs at
+the edge of the can, it could also be that the second zero of the Bessel
+function corresponds to the edge of the can, so
+that there is one complete oscillation of the electric field as we move
+from the center of the can out to the edge, as shown in
+Fig.  23–12 . This is another possible mode for the
+oscillating fields. We should certainly expect the can to resonate in
+such a mode. But notice, the second zero of the Bessel
+function occurs at [eq], which is over twice
+as large as the value at the first zero. The resonant frequency of this
+mode should therefore be higher than [eq] megacycles. We would, no
+doubt, find it there, but it doesn’t explain the resonance we observe
+at [eq].
+
+The trouble is that in our analysis of the behavior of a resonant
+cavity we have considered only one possible geometric arrangement of
+the electric and magnetic fields. We have assumed that the electric
+fields are vertical and that the magnetic fields lie in horizontal
+circles. But other fields are possible. The only requirements are that
+the fields should satisfy Maxwell’s
+equations inside the can and that the
+electric field should meet the wall at right angles. We have considered
+the case in which the top and the bottom of the can are flat, but things
+would not be completely different if the top and bottom were curved. In
+fact, how is the can supposed to know which is its top and bottom, and
+which are its sides? It is, in fact, possible to show that there is a
+mode of oscillation of the fields inside the can in which the electric
+fields go more or less across the diameter of the can, as shown in
+Fig.  23–13 .
+
+It is not too hard to understand why the natural frequency of this
+mode should be not very different from the natural frequency of the
+first mode we have considered. Suppose that instead of our cylindrical
+cavity we had taken a cavity which was a cube [eq] inches on a side. It
+is clear that this cavity would have three different modes, but all
+with the same frequency. A mode with the electric field going more or
+less up and down would certainly have the same frequency as the mode
+in which the electric field was directed right and left. If we now
+distort the cube into a cylinder, we will change these frequencies
+somewhat. We would still expect them not to be changed too much,
+provided we keep the dimensions of the cavity more or less the same. So
+the frequency of the mode of Fig.  23–13 should not be too
+different from the mode of Fig.  23–8 . We could make a
+detailed calculation of the natural frequency of the mode shown in
+Fig.  23–13 , but we will not do that now. When the
+calculations are carried through, it is found that, for the dimensions
+we have assumed, the resonant frequency comes out very close to the
+observed resonance at [eq] megacycles.
+
+By similar calculations it is possible to show that there should be
+still another mode at the other resonant frequency we found near
+[eq] megacycles. For this mode, the electric and magnetic fields are
+as shown in Fig.  23–14 . The electric field does not bother to go all
+the way across the cavity. It goes from the sides to the ends, as
+shown.
+
+As you will probably now believe, if we go higher and higher in
+frequency we should expect to find more and more resonances. There are
+many different modes, each of which will have a different resonant
+frequency corresponding to some particular complicated arrangement of
+the electric and magnetic fields. Each of these field arrangements is
+called a resonant mode . The resonance
+frequency of each mode can be calculated by solving Maxwell’s
+equations for the electric and
+magnetic fields in the cavity.
+
+When we have a resonance at some particular frequency, how can we know
+which mode is being excited? One way is to poke a little wire into the
+cavity through a small hole. If the electric field is along the wire, as
+in Fig.  23–15 (a), there will be relatively large currents
+in the wire, sapping energy from the fields, and the resonance will be
+suppressed. If the electric field is as shown in
+Fig.  23–15 (b), the wire will have a much smaller effect. We
+could find which way the field points in this mode by bending the end of
+the wire, as shown in Fig.  23–15 (c). Then, as we rotate the
+wire, there will be a big effect when the end of the wire is parallel
+to [eq] and a small effect when it is rotated so as to be at [eq]
+to [eq].
+
+Although the resonant cavity we have been describing seems to be quite
+different from the ordinary resonant circuit consisting of an inductance
+and a capacitor, the two resonant systems are, of course, closely
+related. They are both members of the same family; they are just two
+extreme cases of electromagnetic resonators—and there are many
+intermediate cases between these two extremes. Suppose we start by
+considering the resonant circuit of a capacitor in parallel with an
+inductance, as shown in Fig.  23–16 (a). This circuit will
+resonate at the frequency [eq]. If we want to raise
+the resonant frequency of this circuit, we can do so by lowering the
+inductance [eq]. One way is to decrease the number of turns in the coil.
+We can, however, go only so far in this direction. Eventually we will
+get down to the last turn, and we will have just a piece of wire joining
+the top and bottom plates of the condenser. We could raise the resonant
+frequency still further by making the capacitance smaller; however, we
+can also continue to decrease the inductance by putting several
+inductances in parallel. Two one-turn inductances in parallel will have
+only half the inductance of each turn. So when our inductance has been
+reduced to a single turn, we can continue to raise the resonant
+frequency by adding other single loops from the top plate to the bottom
+plate of the condenser. For instance, Fig.  23–16 (b) shows
+the condenser plates connected by six such “single-turn inductances.”
+If we continue to add many such pieces of wire, we can make the
+transition to the completely enclosed resonant system shown in part (c)
+of the figure, which is a drawing of the cross section of a
+cylindrically symmetrical object. Our inductance is now a cylindrical
+hollow can attached to the edges of the condenser plates. The electric
+and magnetic fields will be as shown in the figure. Such an object is,
+of course, a resonant cavity. It is called a “loaded” cavity. But we
+can still think of it as an [eq]-[eq] circuit in which the capacity
+section is the region where we find most of the electric field and the
+inductance section is that region where we find most of the magnetic
+field.
+
+If we want to make the frequency of the resonator in
+Fig.  23–16 (c) still higher, we can do so by continuing to
+decrease the inductance [eq]. To do that, we must decrease the geometric
+dimensions of the inductance section, for example by decreasing the
+dimension [eq] in the drawing. As [eq] is decreased, the resonant
+frequency will be increased. Eventually, of course, we will get to the
+situation in which the height [eq] is just equal to the separation
+between the condenser plates. We then have just a cylindrical can; our
+resonant circuit has become the cavity resonator of
+Fig.  23–7 .
+
+You will notice that in the original [eq]-[eq] resonant circuit of
+Fig.  23–16 the electric and magnetic fields are quite
+separate. As we have gradually modified the resonant system to make
+higher and higher frequencies, the magnetic field has been brought
+closer and closer to the electric field until in the cavity resonator
+the two are quite intermixed.
+
+Although the cavity resonators we have talked about in this chapter
+have been cylindrical cans, there is nothing magic about the
+cylindrical shape. A can of any shape will have resonant frequencies
+corresponding to various possible modes of oscillations of the
+electric and magnetic fields. For example, the “cavity” shown in
+Fig.  23–17 will have its own particular set of resonant
+frequencies—although they would be rather difficult to calculate.

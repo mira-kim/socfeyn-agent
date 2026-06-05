@@ -1,0 +1,751 @@
+The Feynman Lectures on Physics Vol. I Ch. 22: Algebra
+======================================================
+
+Sections: 22–1 Addition and multiplication | 22–2 The inverse operations | 22–3 Abstraction and generalization | 22–4 Approximating irrational numbers | 22–5 Complex numbers | 22–6 Imaginary exponents
+
+
+
+In our study of oscillating systems we shall have occasion
+to use one of the most remarkable, almost astounding, formulas in all of
+mathematics. From the physicist’s point of view we could bring forth
+this formula in two minutes or so, and be done with it. But science is
+as much for intellectual enjoyment as for practical utility, so instead
+of just spending a few minutes on this amazing jewel, we shall surround
+the jewel by its proper setting in the grand design of that branch of
+mathematics which is called elementary algebra.
+
+Now you may ask, “What is mathematics doing in a physics lecture?”
+We have several possible excuses: first, of course, mathematics is an
+important tool, but that would only excuse us for giving the formula
+in two minutes. On the other hand, in theoretical physics we discover
+that all our laws can be written in mathematical form; and that this
+has a certain simplicity and beauty about it. So, ultimately, in order
+to understand nature it may be necessary to have a deeper
+understanding of mathematical relationships. But the real reason is
+that the subject is enjoyable, and although we humans cut nature up in
+different ways, and we have different courses in different
+departments, such compartmentalization is really artificial, and we
+should take our intellectual pleasures where we find them.
+
+Another reason for looking more carefully at algebra now, even though
+most of us studied algebra in high school, is that that was the first
+time we studied it; all the equations were unfamiliar, and it was hard
+work, just as physics is now. Every so often it is a great pleasure to
+look back to see what territory has been covered, and what the great
+map or plan of the whole thing is. Perhaps some day somebody in the
+Mathematics Department will present a lecture on mechanics in such a
+way as to show what it was we were trying to learn in the physics
+course!
+
+The subject of algebra will not be developed from the point of view of
+a mathematician, exactly, because the mathematicians are mainly
+interested in how various mathematical facts are demonstrated, and how
+many assumptions are absolutely required, and what is not
+required. They are not so interested in the result of what they
+prove. For example, we may find the Pythagorean theorem quite
+interesting, that the sum of the squares of the sides of a right
+triangle is equal to the square of the hypotenuse; that is an
+interesting fact, a curiously simple thing, which may be appreciated
+without discussing the question of how to prove it, or what axioms are
+required. So, in the same spirit, we shall describe qualitatively, if
+we may put it that way, the system of elementary algebra. We say
+ elementary algebra because there is a branch of mathematics
+called modern algebra in which some of the rules such as $ab =
+ba$, are abandoned, and it is still called algebra, but we shall not
+discuss that.
+
+To discuss this subject we start in the middle. We suppose that we
+already know what integers are, what zero is, and what it means to
+increase a number by one unit. You may say, “That is not in the
+middle!” But it is the middle from a mathematical standpoint, because
+we could go even further back and describe the theory of sets in order
+to derive some of these properties of integers. But we are not
+going in that direction, the direction of mathematical philosophy and
+mathematical logic, but rather in the other direction, from the
+assumption that we know what integers are and we know how to count.
+
+If we start with a certain number [eq], an integer, and we count
+successively one unit [eq] times, the number we arrive at we call
+[eq], and that defines addition of integers.
+
+Once we have defined addition, then we can consider this: if we start
+with nothing and add [eq] to it, [eq] times in succession, we call the
+result multiplication of integers; we call it [eq] times  [eq].
+
+Now we can also have a succession of multiplications: if we
+start with [eq] and multiply by [eq], [eq] times in succession, we call
+that raising to a power:  [eq].
+
+Now as a consequence of these definitions it can be easily shown that
+all of the following relationships are true:
+ 
+\begin{equation}
+\begin{alignedat}{4}
+&(\text{a})&\quad
+&a+b=b+a&\quad\quad
+&(\text{b})&\quad
+&a+(b+c)=(a+b)+c\\
+&(\text{c})&\quad
+&ab=ba&\quad\quad
+&(\text{d})&\quad
+&a(b+c)=ab+ac\\
+&(\text{e})&\quad
+&(ab)c=a(bc)&\quad\quad
+&(\text{f})&\quad
+&(ab)^c=a^cb^c\\
+&(\text{g})&\quad
+&a^ba^c=a^{(b+c)}&\quad\quad
+&(\text{h})&\quad
+&(a^b)^c=a^{(bc)}\\
+&(\text{i})&\quad
+&a+0=a&\quad\quad
+&(\text{j})&\quad
+&a\cdot 1=a\\
+&(\text{k})&\quad
+&a^1=a
+\end{alignedat}
+\label{Eq:I:22:1}
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{alignedat}{4}
+&(\text{a})&\quad&a+b=b+a\\
+&(\text{b})&\quad&a+(b+c)=(a+b)+c\\
+&(\text{c})&\quad&ab=ba\\
+&(\text{d})&\quad&a(b+c)=ab+ac\\
+&(\text{e})&\quad&(ab)c=a(bc)\\
+&(\text{f})&\quad&(ab)^c=a^cb^c\\
+&(\text{g})&\quad&a^ba^c=a^{(b+c)}\\
+&(\text{h})&\quad&(a^b)^c=a^{(bc)}\\
+&(\text{i})&\quad&a+0=a\\
+&(\text{j})&\quad&a\cdot 1=a\\
+&(\text{k})&\quad&a^1=a
+\end{alignedat}
+\label{Eq:I:22:1}
+\end{equation}
+ 
+These results are well known and we shall not belabor the point, we
+merely list them. Of course, [eq] and [eq] have special properties; for
+example, [eq] is [eq], [eq] times [eq], and [eq] to the first power
+is [eq].
+
+In this discussion we must also assume a few other properties like
+continuity and ordering, which are very hard to define; we will let
+the rigorous theory do it. Furthermore, it is definitely true that we
+have written down too many “rules”; some of them may be deducible
+from the others, but we shall not worry about such matters.
+
+In addition to the direct operations of addition, multiplication, and
+raising to a power, we have also the inverse operations, which
+are defined as follows. Let us assume that [eq] and [eq] are given, and
+that we wish to find what values of [eq] satisfy such equations as $a +
+b = c[eq]ab = c[eq]b^a = c[eq]a + b= c[eq]b[eq]c - a$,
+which is called subtraction . The operation called division is
+also clear: if [eq], then [eq] defines division—a solution
+of the equation [eq] “backwards.” Now if we have a power $b^a =
+c[eq]b$?,” it is called the
+[eq]th  root of [eq]: [eq]. For instance, if we ask
+ourselves the following question, “What integer, raised to the third
+power, equals [eq]?,” then the answer is called the cube root 
+of [eq]; it is [eq]. Because [eq] and [eq] are not equal, there are
+ two inverse problems associated with powers, and the other
+inverse problem would be, “To what power must we raise [eq] to
+get [eq]?” This is called taking the logarithm . If
+[eq], we
+write [eq]. The fact that it has a cumbersome notation
+relative to the others does not mean that it is any less elementary,
+at least applied to integers, than the other processes. Although
+logarithms come late in an algebra class, in practice they
+are, of
+course, just as simple as roots; they are just a different kind of
+solution of an algebraic equation. The direct and inverse operations
+are summarized as follows:
+\begin{equation}
+\begin{alignedat}{5}
+&(\text{a})&&\quad
+\text{addition}&&\quad
+&&(\text{a}')&&\quad
+\text{subtraction}\\
+& &&\quad a+b=c&&\quad
+&& &&\quad b=c-a\\
+&(\text{b})&&\quad
+\text{multiplication}&&\quad
+&&(\text{b}')&&\quad
+\text{division}\\
+& &&\quad ab=c&&\quad
+&& &&\quad b=c/a\\
+&(\text{c})&&\quad
+\text{power}&&\quad
+&&(\text{c}')&&\quad
+\text{root}\\
+& &&\quad b^a=c&&\quad
+&& &&\quad b=\sqrt[a]{c}\\
+&(\text{d})&&\quad
+\text{power}&&\quad
+&&(\text{d}')&&\quad
+\text{logarithm}\\
+& &&\quad a^b=c&&\quad
+&& &&\quad b=\log_ac\\
+\end{alignedat}
+\label{Eq:I:22:2}
+\end{equation}
+
+Now here is the idea. These relationships, or rules, are correct for
+integers, since they follow from the definitions of addition,
+multiplication, and raising to a power. We are going to discuss
+whether or not we can broaden the class of objects which [eq], [eq],
+and [eq] represent so that they will obey these same rules , although the
+processes for [eq], and so on, will not be definable in terms of
+the direct action of adding [eq], for instance, or successive
+multiplications by integers.
+
+When we try to solve simple algebraic equations using all these
+definitions, we soon discover some insoluble problems, such as the
+following. Suppose that we try to solve the equation [eq]. That
+means, according to our definition of subtraction, that we must find a
+number which, when added to [eq], gives [eq]. And of course there
+ is no such number, because we consider only positive integers;
+this is an insoluble problem. However, the plan, the great idea, is
+this: abstraction and generalization . From the whole structure
+of algebra, rules plus integers, we abstract the original definitions
+of addition and multiplication, but we leave the rules ( 22.1 )
+and ( 22.2 ), and assume these to be true in general on
+a wider class of numbers, even though they are originally derived on a
+smaller class. Thus, rather than using integers symbolically to define
+the rules, we use the rules as the definition of the symbols, which then
+represent a more general kind of number. As an example, by working with
+the rules alone we can show that [eq]. In fact we can show
+that one can make all subtractions, provided we define a whole
+set of new numbers: [eq], [eq], [eq], [eq], and so on,
+called the negative integers . Then we may use all the other
+rules, like [eq] and so forth, to find what the rules
+are for multiplying negative numbers, and we will discover, in fact,
+that all of the rules can be maintained with negative as well as
+positive integers.
+
+So we have increased the range of objects over which the rules work,
+but the meaning of the symbols is different.
+
+One cannot say, for instance, that [eq] times [eq] really means to
+add [eq] together successively [eq] times. That means nothing. But
+nevertheless everything will work out all right according to the
+rules.
+
+An interesting problem comes up in taking powers. Suppose that we wish
+to discover what [eq] means. We know only that [eq] is a
+solution of the problem, [eq]. Knowing that, we know that
+[eq]. Therefore [eq], by the
+definition of division. With a little more work, this can be reduced
+to [eq]. So we find that the negative powers are the reciprocals of
+the positive powers, but [eq] is a meaningless symbol, because if
+[eq] is a positive or negative integer, the square of it can be greater
+than [eq], and we do not yet know what we mean by [eq] divided by a
+number greater than [eq]!
+
+Onward! The great plan is to continue the process of generalization;
+whenever we find another problem that we cannot solve we extend our
+realm of numbers. Consider division: we cannot find a number which is
+an integer, even a negative integer, which is equal to the result of
+dividing [eq] by [eq]. But if we suppose that all fractional numbers
+also satisfy the rules, then we can talk about multiplying and adding
+fractions, and everything works as well as it did before.
+
+Take another example of powers: what is [eq]? We know only that
+[eq], since that was the definition of [eq]. So we know also
+that [eq] [eq] [eq], because this is one of the
+rules. Then by the definition of roots we find that $a^{(3/5)} =
+\sqrt[5]{a^3}$.
+
+In this way, then, we can define what we mean by putting fractions in
+the various symbols, by using the rules themselves to help us
+determine the definition—it is not arbitrary. It is a remarkable
+fact that all the rules still work for positive and negative integers,
+as well as for fractions!
+
+We go on in the process of generalization. Are there any other
+equations we cannot solve? Yes, there are. For example, it is
+impossible to solve this equation: [eq] [eq] [eq]. It is
+impossible to find a number which is rational (a fraction) whose
+square is equal to [eq]. It is very easy for us in modern days to
+answer this question. We know the decimal system, and so we have no
+difficulty in appreciating the meaning of an unending decimal as a
+type of approximation to the square root of [eq]. Historically, this
+idea presented great difficulty to the Greeks. To really define
+ precisely what is meant here requires that we add some
+substance of continuity and ordering, and it is, in fact, quite the
+most difficult step in the processes of generalization just at this
+point. It was made, formally and rigorously, by
+Dedekind. However, without
+worrying about the mathematical rigor of the thing, it is quite easy to
+understand that what we mean is that we are going to find a whole
+sequence of approximate fractions, perfect fractions (because any
+decimal, when stopped somewhere, is of course rational), which just
+keeps on going, getting closer and closer to the desired result. That is
+good enough for what we wish to discuss, and it permits us to involve
+ourselves in irrational numbers, and to calculate things like the square
+root of [eq] to any accuracy that we desire, with enough work.
+
+The next problem comes with what happens with the irrational
+powers. Suppose that we want to define, for instance,
+[eq]. In principle, the answer is simple enough. If we
+approximate the square root of [eq] to a certain number of decimal
+places, then the power is rational, and we can take the approximate
+root, using the above method, and get an approximation 
+to [eq]. Then we may run it up a few more decimal places (it
+is again rational), take the appropriate root, this time a much higher
+root because there is a much bigger denominator in the fraction, and
+get a better approximation. Of course we are going to get some
+enormously high roots involved here, and the work is quite
+difficult. How can we cope with this problem?
+
+In the computations of square roots, cube roots, and other small
+roots, there is an arithmetical process available by which we can get
+one decimal place after another. But the amount of labor needed to
+calculate irrational powers and the logarithms that go with them (the
+inverse problem) is so great that there is no simple arithmetical
+process we can use. Therefore tables have been built up which permit
+us to calculate these powers, and these are called the tables of
+logarithms, or the tables of powers, depending on which way the table
+is set up. It is merely a question of saving time; if we must raise
+some number to an irrational power, we can look it up rather than
+having to compute it. Of course, such a computation is just a
+technical problem, but it is an interesting one, and of great
+historical value. In the first place, not only do we have the problem
+of solving [eq], but we also have the problem of solving
+[eq], or [eq]. This is not a problem where we have
+to define a new kind of number for the result, it is merely a
+computational problem. The answer is simply an irrational number, an
+unending decimal, not a new kind of a number.
+
+Let us now discuss the problem of calculating solutions of such
+equations. The general idea is really very simple. If we could
+calculate [eq], and [eq], and [eq], and [eq]
+and so on, and multiply them all together, we would get
+[eq] or [eq], and that is the general idea on
+which things work. But instead of calculating [eq] and so on,
+we shall calculate [eq], [eq], and so on. Before we start,
+we should explain why we make so much work with [eq], instead of some
+other number. Of course, we realize that logarithm tables are of great
+practical utility, quite aside from the mathematical problem of taking
+roots, since with any base at all,
+\begin{equation}
+\label{Eq:I:22:3}
+\log_b(ac)=\log_ba+\log_bc.
+\end{equation}
+We are all familiar with the fact that one can use this fact in a
+practical way to multiply numbers if we have a table of
+logarithms. The only question is, with what base [eq] shall we compute?
+It makes no difference what base is used; we can use the same
+principle all the time, and if we are using logarithms to any
+particular base, we can find logarithms to any other base merely by a
+change in scale, a multiplying factor. If we multiply
+Eq. ( 22.3 ) by [eq], it is just as true, and if we had a table
+of logs with a base [eq], and somebody else multiplied all of our table
+by [eq], there would be no essential difference. Suppose that we know
+the logarithms of all the numbers to the base [eq]. In other words, we
+can solve the equation [eq] for any [eq] because we have a table.
+The problem is to find the logarithm of the same number [eq] to some
+other base, let us say the base [eq]. We would like to solve $x^{a'} =
+c[eq]x = b^t$, which
+defines [eq], knowing [eq] and [eq]. As a matter of fact, [eq].
+Then if we put that in and solve for [eq], we see that $(b^t)^{a'} =
+b^{a't} = c[eq]ta'[eq]c[eq]b$.
+Thus [eq]. Thus logs to base [eq] are just [eq], which is a
+constant, times the logs to the base, [eq]. Therefore any log table is
+equivalent to any other log table if we multiply by a constant, and the
+constant is [eq]. This permits us to choose a particular base,
+and for convenience we take the base [eq]. (The question may arise as to
+whether there is any natural base, any base in which things are somehow
+simpler, and we shall try to find an answer to that later. At the moment
+we shall just use the base [eq].)
+
+Now let us see how to calculate logarithms. We begin by computing
+successive square roots of [eq], by cut and try. The results are shown
+in Table  22–1 . The powers of [eq] are given in the first
+column, and the result, [eq], is given in the third column. Thus
+[eq]. The one-half power of [eq] we can easily work out,
+because that is the square root of [eq], and there is a known, simple
+process for taking square roots of any number. 1 Using this process, we find
+the first square root to be [eq]. What good is that? It already
+tells us something, it tells us how to take [eq], so we now know
+at least one logarithm, if we happen to need the logarithm
+of [eq], we know the answer is close to [eq]. But we must do a
+little bit better than that; we clearly need more information. So we
+take the square root again, and find [eq], which
+is [eq]. Now we have the logarithm of more numbers than we had
+before, [eq] is the logarithm of [eq] and, incidentally, if it
+happens that somebody asks for [eq], we can get it, because
+that is [eq]; it is therefore the product of the second
+and third numbers. If we can get enough numbers in column [eq] to be
+able to make up almost any number, then by multiplying the proper
+things in column 3, we can get [eq] to any power; that is the plan. So
+we evaluate ten successive square roots of [eq], and that is the main
+work which is involved in the calculations.
+
+Why don’t we keep on going for more and more accuracy? Because we
+begin to notice something. When we raise [eq] to a very small power,
+we get [eq] plus a small amount. The reason for this is clear, because
+we are going to have to take the [eq]th power of [eq] to
+get back to [eq], so we had better not start with too big a number; it
+has to be close to [eq]. What we notice is that the small numbers that
+are added to [eq] begin to look as though we are merely dividing by [eq]
+each time; we see [eq] becomes [eq], then [eq], [eq]; so it is
+clear that, to an excellent approximation, if we take another root, we
+shall get [eq] something, and rather than actually take 
+all the square roots, we guess at the ultimate limit. When we
+take a small fraction [eq] as [eq] approaches zero,
+what will the answer be? Of course it will be some number close
+to [eq]. Not exactly [eq], however—we
+can get a better value by the following trick: we subtract the [eq],
+and then divide by the power [eq]. This ought to correct all the
+excesses to the same value. We see that they are very closely
+equal. At the top of the table they are not equal, but as they come
+down, they get closer and closer to a constant value. What is the
+value? Again we look to see how the series is going, how it has
+changed with [eq]. It changed by [eq], by [eq], by [eq], by
+[eq]. These changes are obviously half of each other, very closely, as
+we go down. Therefore, if we kept going, the changes would be
+[eq], [eq], [eq], [eq] and [eq], more or less, or a total of [eq]. Thus we have
+only [eq] more to go, and so we find that the true number
+is [eq]. (Actually, we shall later see that the exact number
+should be [eq], but to keep it realistic, we shall not alter
+anything in the arithmetic.) From this table we can now calculate any
+power of [eq], by compounding the power out of [eq]ths.
+
+Let us now actually calculate a logarithm, because the process we
+shall use is where logarithm tables actually come from. The procedure
+is shown in Table  22–2 , and the numerical values are shown
+in Table  22–1 (columns 2 and 3).
+
+Suppose we want the logarithm of [eq]. That is, we want to know to what
+power we must raise [eq] to get [eq]. Can we raise [eq] to the
+[eq] power? No; that is too big. In other words, we can see that the
+answer is going to be bigger than [eq], and less than [eq]. Let us
+take the factor [eq] out; we divide [eq] by [eq], and get
+[eq], and so on, and now we know that we have taken away
+[eq] from the logarithm. The number [eq], is now the
+number whose logarithm we need. When we are finished we shall add back
+the [eq], or [eq]. Now we look in the table for the next number
+just below [eq], and that is [eq]. We therefore divide
+by [eq] and get [eq]. From that we discover that [eq] can
+be made up of a product of numbers that are in Table  22–1 ,
+as follows:
+ 
+\begin{equation*}
+2 = (1.77828)(1.074607)(1.036633)(1.0090350)(1.000573).
+\end{equation*}
+ 
+ 
+\begin{gather*}
+2 = (1.77828)(1.074607)(1.036633)\;\times\\
+(1.0090350)(1.000573).
+\end{gather*}
+ 
+
+
+
+There was one factor [eq] left over, naturally, which is
+beyond the range of our table. To get the logarithm of this factor, we
+use our result that $10^{\Delta/1024} \approx 1+ 2.3025
+\Delta/1024[eq]\Delta= 0.254[eq]10$ to
+the following power: [eq]. Adding those
+together, we get [eq]. Dividing, we get [eq], so we
+know that the [eq], which happens to be right
+to [eq] figures!
+
+This is how logarithms were originally computed by Mr. Briggs of Halifax, in 1620. He said, “I computed successively
+[eq] square roots of [eq].” We know he really computed only the first [eq],
+because the rest of them can be obtained by this trick with [eq]. His work
+involved calculating the square root of [eq] twenty-seven times, which is not
+much more than the ten times we did; however, it was more work because he
+calculated to sixteen decimal places, and then reduced his answer to fourteen
+when he published it, so that there were no rounding errors. He made tables of
+logarithms to fourteen decimal places by this method, which is quite tedious.
+But all logarithm tables for three hundred years were borrowed from
+Mr. Briggs’ tables by reducing the number
+of decimal places. Only in modern times, with the WPA and computing machines,
+have new tables been independently computed. There are much more efficient
+methods of computing logarithms today, using certain series expansions.
+
+In the above process, we discovered something rather interesting, and
+that is that for very small powers [eq] we can calculate
+[eq] easily; we have discovered that $10^\epsilon = 1+
+2.3025\epsilon$, by sheer numerical analysis. Of course this also
+means that [eq] if [eq] is very small. Now logarithms
+to any other base are merely multiples of logarithms to the
+base [eq]. The base [eq] was used only because we have [eq] fingers, and
+the arithmetic of it is easy, but if we ask for a mathematically
+natural base, one that has nothing to do with the number of fingers on
+human beings, we might try to change our scale of logarithms in some
+convenient and natural manner, and the method which people have chosen
+is to redefine the logarithms by multiplying all the logarithms to the
+base [eq] by [eq] This then corresponds to using some other
+base, and this is called the natural base, or base [eq]. Note
+that [eq], or [eq] as [eq].
+
+It is easy enough to find out what [eq] is: [eq]
+or [eq], an irrational power. Our table of the successive
+square roots of [eq] can be used to compute, not just logarithms, but
+also [eq] to any power, so let us use it to calculate this natural
+base [eq]. For convenience we transform [eq] into
+[eq]. Now, [eq] is $256 + 128 + 32 + 16 + 8 + 4 +
+0.73[eq]e$, since it is an exponent of a sum, will be a
+product of the numbers
+ 
+\begin{equation*}
+(1.77828)\!(1.33352)\!(1.074607)\!(1.036633)\!(1.018152)\!
+(1.009035)\!(1.001643) = 2.7184.
+\end{equation*}
+ 
+ 
+\begin{align*}
+(1.&77828)\!(1.33352)\!(1.074607)\!(1.036633)\;\times\\
+&(1.018152)\!(1.009035)\!(1.001643)= 2.7184.
+\end{align*}
+ 
+(The only problem is the last one, which is [eq], and which is not
+in the table, but we know that if [eq] is small enough, the answer
+is [eq].) When we multiply all these together, we get
+[eq] (it should be [eq], but it is good enough). The use of
+such tables, then, is the way in which irrational powers and the
+logarithms of irrational numbers are all calculated. That takes care
+of the irrationals.
+
+Now it turns out that after all that work we still cannot solve
+every equation! For instance, what is the square root of [eq]?
+Suppose we have to find [eq]. The square of no rational, of no
+irrational, of nothing that we have discovered so far, is equal
+to [eq]. So we again have to generalize our numbers to a still wider
+class. Let us suppose that a specific solution of [eq] is called
+something, we shall call it [eq]; [eq] has the property, by definition,
+that its square is [eq]. That is about all we are going to say about
+it; of course, there is more than one root of the equation $x^2
+=-1[eq]i$, but another could say, “No, I prefer
+[eq]. My [eq] is minus your [eq].” It is just as good a solution, and
+since the only definition that [eq] has is that [eq], it must be
+true that any equation we can write is equally true if the sign of [eq]
+is changed everywhere. This is called taking the complex
+conjugate . Now we are going to make up numbers by adding
+successive [eq]’s, and multiplying [eq]’s by numbers, and adding other numbers,
+and
+so on, according to all of our rules. In this way we find that numbers
+can all be written in the form [eq], where [eq] and [eq] are what we
+call real numbers, i.e., the numbers we have been defining up
+until now. The number [eq] is called the unit imaginary number.
+Any real multiple of [eq] is called pure imaginary . The most
+general number, [eq], is of the form [eq] and is called a
+ complex number . Things do not get any worse if, for instance,
+we multiply two such numbers, let us say [eq]. Then,
+using the rules, we get
+\begin{align}
+(r + is)(p + iq) &= rp + r(iq) + (is)p + (is)(iq)\notag\\[1ex]
+&= rp + i(rq) + i(sp) + (ii)(sq)\notag\\[1ex]
+\label{Eq:I:22:4}
+&= (rp - sq) + i(rq + sp),
+\end{align}
+since [eq] [eq] [eq]. Therefore all the numbers that now belong in
+the rules ( 22.1 ) have this mathematical form.
+
+Now you say, “This can go on forever! We have defined powers of
+imaginaries and all the rest, and when we are all finished, somebody
+else will come along with another equation which cannot be solved,
+like [eq]. Then we have to generalize all over again!”
+But it turns out that with this one more invention , just the
+square root of [eq], every algebraic equation can be solved! 
+This is a fantastic fact, which we must leave to the Mathematics
+Department to prove. The proofs are very beautiful and very
+interesting, but certainly not self-evident. In fact, the most obvious
+supposition is that we are going to have to invent again and again and
+again. But the greatest miracle of all is that we do not. This is the
+last invention. After this invention of complex numbers, we find that
+the rules still work with complex numbers, and we are finished
+inventing new things. We can find the complex power of any complex
+number, we can solve any equation that is written algebraically, in
+terms of a finite number of those symbols. We do not find any new
+numbers. The square root of [eq], for instance, has a definite result,
+it is not something new; and [eq] is something. We will discuss that
+now.
+
+We have already discussed multiplication, and addition is also easy;
+if we add two complex numbers, [eq], the answer is
+[eq]. Now we can add and multiply complex numbers. But
+the real problem, of course, is to compute complex powers of
+complex numbers . It turns out that the problem is actually no more
+difficult than computing complex powers of real numbers. So let us
+concentrate now on the problem of calculating [eq] to a complex power,
+not just an irrational power, but [eq]. Of course, we must at
+all times use our rules ( 22.1 ) and ( 22.2 ). Thus
+\begin{equation}
+\label{Eq:I:22:5}
+10^{(r+is)}=10^r10^{is}.
+\end{equation}
+But [eq] we already know how to compute, and we can always multiply
+anything by anything else; therefore the problem is to compute only
+[eq]. Let us call it some complex number, [eq]. Problem:
+given [eq], find [eq], find [eq]. Now if
+\begin{equation*}
+10^{is}=x+iy,
+\end{equation*}
+then the complex conjugate of this equation must also be true, so that
+\begin{equation*}
+10^{-is}=x-iy.
+\end{equation*}
+(Thus we see that we can deduce a number of things without actually
+computing anything, by using our rules.) We deduce another interesting
+thing by multiplying these together:
+ 
+\begin{equation}
+\label{Eq:I:22:6}
+10^{is}10^{-is}=10^0=1=(x+iy)(x-iy)=x^2+y^2.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+\label{Eq:I:22:6}
+10^{is}10^{-is}=10^0=1\\
+=(x+iy)(x-iy)=x^2+y^2.
+\end{gathered}
+\end{equation}
+ 
+Thus if we find [eq], we have [eq] also.
+
+Now the problem is how to compute [eq] to an imaginary
+power. What guide is there? We may work over our rules until we can go
+no further, but here is a reasonable guide: if we can compute it for
+any particular [eq], we can get it for all the rest. If we know
+[eq] for any one [eq] and then we want it for twice that [eq], we
+can square the number, and so on. But how can we find [eq] for
+even one special value of [eq]? To do so we shall make one additional
+assumption, which is not quite in the category of all the other rules,
+but which leads to reasonable results and permits us to make progress:
+when the power is small, we shall suppose that the “law”
+[eq] is right, as [eq] gets very
+small, not only for real [eq], but for complex [eq]
+as well . Therefore, we begin with the supposition that this law is
+true in general, and that tells us that [eq],
+for [eq]. So we assume that if [eq] is very small, say one part
+in [eq], we have a rather good approximation to [eq].
+
+Now we make a table by which we can compute all the imaginary
+powers of [eq], that is, compute [eq] and [eq]. It is done as
+follows. The first power we start with is the [eq] power, which we
+presume is very nearly [eq]. Thus we start with
+\begin{equation}
+\label{Eq:I:22:7}
+10^{i/1024}=1.00000+0.0022486i,
+\end{equation}
+and if we keep multiplying the number by itself, we can get to a
+higher imaginary power. In fact, we may just reverse the procedure we
+used in making our logarithm table, and calculate the square, [eq]th
+power, [eq]th power, etc., of ( 22.7 ), and thus build up the
+values shown in Table  22–3 . We notice an interesting
+thing, that the [eq] numbers are positive at first, but then swing
+negative. We shall look into that a little bit more in a moment. But
+first we may be curious to find for what number [eq] the real part
+of [eq] is zero . The [eq]-value would be [eq], and so we would
+have [eq], or [eq]. As an example of how to use
+this table, just as we calculated [eq] before, let us now use
+Table  22–3 to find [eq].
+
+Which of the numbers in Table  22–3 do we have to multiply
+together to get a pure imaginary result? After a little trial and
+error, we discover that to reduce [eq] the most, it is best to multiply
+“[eq]” by “[eq].” This gives [eq]. Then we
+discover that we should multiply this by a number whose imaginary part
+is about equal to the size of the real part we are trying to
+remove. Thus we choose “[eq]” whose [eq]-value is [eq], since
+that is closest to [eq]. This then gives $-0.01308 +
+1.00008i[eq]0.99996 +
+0.00900i[eq]i$ and
+multiplying by [eq] (which works if $x^2 + y^2 =
+1$). Continuing in this way, we find that the entire power to which
+[eq] must be raised to give [eq] is $i(512 + 128 + 64 - 4 - 2 +
+0.20)/1024[eq]698.20i/1024[eq]10$ to that power, we can
+get [eq]. Therefore [eq].
+
+To further investigate the subject of taking complex imaginary powers,
+let us look at the powers of [eq] taking successive powers , not
+doubling the power each time, in order to follow Table  22–3 
+further and to see what happens to those minus signs. This is shown in
+Table  22–4 , in which we take [eq], and just keep
+multiplying it. We see that [eq] decreases, passes through zero, swings
+almost to [eq] (if we could get in between [eq] and [eq] it
+would obviously swing to [eq]), and swings back. The [eq]-value is going
+back and forth too.
+
+In Fig.  22–1 the dots represent the numbers that appear
+in Table  22–4 , and the lines are just drawn to help you
+visually. So we see that the numbers [eq] and [eq] oscillate; [eq]
+ repeats itself , it is a periodic thing, and as such, it
+is easy enough to explain, because if a certain power is [eq], then the
+fourth power of that would be [eq] squared . It would be [eq]
+again, and therefore, since [eq] is equal to [eq], by taking
+the fourth power we discover that [eq] is equal to [eq].
+Therefore, if we wanted [eq], for instance, we could write it
+as [eq] times [eq]. In other words, it has a period,
+it repeats. Of course, we recognize what the curves look like! They
+look like the sine and cosine, and we shall call them, for a while,
+the algebraic sine and algebraic cosine. However, instead of using the
+base [eq], we shall put them into our natural base, which only changes
+the horizontal scale; so we denote [eq] by [eq], and write
+[eq], where [eq] is a real number. Now [eq],
+and we shall write this as the algebraic cosine of [eq] plus [eq] times
+the algebraic sine of [eq]. Thus
+\begin{equation}
+\label{Eq:I:22:8}
+e^{it}=\operatorname{\underline{\cos}}t+
+i\operatorname{\underline{\sin}}t.
+\end{equation}
+What are the properties of [eq]
+and [eq]? First, we know, for instance,
+that [eq] must be [eq]; we have proved that before, and it is
+just as true for base [eq] as for base [eq]. Therefore
+$\operatorname{\underline{\cos}}^2 t+
+\operatorname{\underline{\sin}}^2 t= 1$. We also know that, for small
+[eq], [eq], and therefore $\operatorname{\underline{\cos}}
+t[eq]1[eq]\operatorname{\underline{\sin}} t$ is nearly
+[eq], and so it goes, that all of the various properties of these
+remarkable functions , which come from taking imaginary powers,
+ are the same as the sine and cosine of trigonometry .
+
+Is the period the same? Let us find out. [eq] to what power is equal
+to [eq]? What is the logarithm of [eq] to the base [eq]? We worked it out
+before, in the base [eq] it was [eq], but when we change our
+logarithmic scale to [eq], we have to multiply by [eq], and if we
+do that it comes out [eq]. So this will be called “algebraic
+[eq].” But, we see, it differs from the regular [eq] by only
+one place in the last point, and that, of course, is the result of
+errors in our arithmetic! So we have created two new functions in a
+purely algebraic manner, the cosine and the sine, which belong to
+algebra, and only to algebra. We wake up at the end to discover the
+very functions that are natural to geometry. So there is a connection,
+ultimately, between algebra and geometry.
+
+We summarize with this, the most remarkable formula in mathematics:
+\begin{equation}
+\label{Eq:I:22:9}
+e^{i\theta}=\cos\theta+i\sin\theta.
+\end{equation}
+This is our jewel.
+
+We may relate the geometry to the algebra by representing complex
+numbers in a plane; the horizontal position of a point is [eq], the
+vertical position of a point is [eq] (Fig.  22–2 ). We
+represent every complex number, [eq]. Then if the radial distance to
+this point is called [eq] and the angle is called [eq], the
+algebraic law is that [eq] is written in the form [eq],
+where the geometrical relationships between [eq], [eq], [eq],
+and [eq] are as shown. This, then, is the unification of algebra and
+geometry.
+
+When we began this chapter, armed only with the basic notions of
+integers and counting, we had little idea of the power of the
+processes of abstraction and generalization. Using the set of
+algebraic “laws,” or properties of numbers, Eq. ( 22.1 ),
+and the definitions of inverse operations ( 22.2 ), we have
+been able here, ourselves, to manufacture not only numbers but useful
+things like tables of logarithms, powers, and trigonometric functions
+(for these are what the imaginary powers of real numbers are), all
+merely by extracting ten successive square roots of ten!

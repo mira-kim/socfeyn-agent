@@ -1,0 +1,1120 @@
+The Feynman Lectures on Physics Vol. II Ch. 31: Tensors
+=======================================================
+
+Sections: 31–1 The tensor of polarizability | 31–2 Transforming the tensor components | 31–3 The energy ellipsoid | 31–4 Other tensors; the tensor of inertia | 31–5 The cross product | 31–6 The tensor of stress | 31–7 Tensors of higher rank | 31–8 The four-tensor of electromagnetic momentum
+
+
+
+Physicists always have a habit of taking the simplest example of any
+phenomenon and calling it “physics,” leaving the more complicated
+examples to become the concern of other fields—say of applied
+mathematics, electrical engineering, chemistry, or
+crystallography. Even solid-state physics is almost only half physics
+because it worries too much about special substances. So in these
+lectures we will be leaving out many interesting things. For instance,
+one of the important properties of crystals—or of most
+substances—is that their electric polarizability is different in
+different directions. If you apply a field in any direction, the
+atomic charges shift a little and produce a dipole moment, but the
+magnitude of the moment depends very much on the direction of the
+field. That is, of course, quite a complication. But in physics we
+usually start out by talking about the special case in which the
+polarizability is the same in all directions, to make life easier. We
+leave the other cases to some other field. Therefore, for our later
+work, we will not need at all what we are going to talk about in this
+chapter.
+
+The mathematics of tensors is particularly useful for describing
+properties of substances which vary in direction—although that’s
+only one example of their use. Since most of you are not going to
+become physicists, but are going to go into the real world,
+where things depend severely upon direction, sooner or later you will
+need to use tensors. In order not to leave anything out, we are going
+to describe tensors, although not in great detail. We want the feeling
+that our treatment of physics is complete. For example, our
+electrodynamics is complete—as complete as any electricity and
+magnetism course, even a graduate course. Our mechanics is not
+complete, because we studied mechanics when you didn’t have a high
+level of mathematical sophistication, and we were not able to discuss
+subjects like the principle of least action, or Lagrangians, or
+Hamiltonians, and so on, which are more elegant ways of
+describing mechanics. Except for general relativity, however, we do
+have the complete laws of mechanics. Our electricity and
+magnetism is complete, and a lot of other things are quite
+complete. The quantum mechanics, naturally, will not be—we have to
+leave something for the future. But you should at least know what a
+tensor is.
+
+We emphasized in Chapter  30 that the properties of
+crystalline substances are different in different directions—we say
+they are anisotropic . The variation of the induced dipole
+moment with the direction of the applied electric field is only one
+example, the one we will use for our example of a tensor. Let’s say
+that for a given direction of the electric field the induced dipole
+moment per unit volume [eq] is proportional to the strength of the
+applied field [eq]. (This is a good approximation for many
+substances if [eq] is not too large.) We will call the
+proportionality constant [eq]. 1 We want now to consider substances in
+which [eq] depends on the direction of the applied field, as, for
+example, in crystals like calcite, which make double images when you
+look through them.
+
+Suppose, in a particular crystal, we find that an electric
+field [eq] in the [eq]-direction produces the polarization [eq]
+in the [eq]-direction. Then we find that an electric field [eq] in
+the [eq]-direction, with the same strength as [eq], produces
+a different polarization [eq] in the [eq]-direction. What would
+happen if we put an electric field at [eq]? Well, that’s a
+superposition of two fields along [eq] and [eq], so the
+polarization [eq] will be the vector sum of [eq] and [eq],
+as shown in Fig.  31–1 (a). The polarization is no longer in
+the same direction as the electric field. You can see how that might
+come about. There may be charges which can move easily up and down, but
+which are rather stiff for sidewise motions. When a force is applied
+at [eq], the charges move farther up than they do toward the side.
+The displacements are not in the direction of the external force,
+because there are asymmetric internal elastic forces.
+
+There is, of course, nothing special about [eq]. It is
+ generally true that the induced polarization of a crystal is
+ not in the direction of the electric field. In our example
+above, we happened to make a “lucky” choice of our [eq]-
+and [eq]-axes, for which [eq] was along [eq] for both the [eq]-
+and [eq]-directions. If the crystal were rotated with respect to the
+coordinate axes, the electric field [eq] in the [eq]-direction
+would have produced a polarization [eq] with both an [eq]- and
+a [eq]-component. Similarly, the polarization due to an electric field in
+the [eq]-direction would have produced a polarization with an
+[eq]-component and a [eq]-component. Then the polarizations would be as
+shown in Fig.  31–1 (b), instead of as in part (a). Things
+get more complicated—but for any field [eq], the magnitude 
+of [eq] is still proportional to the magnitude of [eq].
+
+We want now to treat the general case of an arbitrary orientation of a
+crystal with respect to the coordinate axes. An electric field in the
+[eq]-direction will produce a polarization [eq] with [eq]-, [eq]-,
+and [eq]-components; we can write
+\begin{equation}
+\label{Eq:II:31:1}
+P_x=\alpha_{xx}E_x,\quad
+P_y=\alpha_{yx}E_x,\quad
+P_z=\alpha_{zx}E_x.
+\end{equation}
+
+All we are saying here is that if the electric field is in the
+[eq]-direction, the polarization does not have to be in that same
+direction, but rather has an [eq]-, a [eq]-, and a [eq]-component—each
+proportional to [eq]. We are calling the constants of proportionality
+[eq], [eq], and [eq], respectively (the
+first letter to tell us which component of [eq] is involved, the
+last to refer to the direction of the electric field).
+
+Similarly, for a field in the [eq]-direction, we can write
+\begin{equation}
+\label{Eq:II:31:2}
+P_x=\alpha_{xy}E_y,\quad
+P_y=\alpha_{yy}E_y,\quad
+P_z=\alpha_{zy}E_y;
+\end{equation}
+
+and for a field in the [eq]-direction,
+\begin{equation}
+\label{Eq:II:31:3}
+P_x=\alpha_{xz}E_z,\quad
+P_y=\alpha_{yz}E_z,\quad
+P_z=\alpha_{zz}E_z.
+\end{equation}
+
+Now we have said that polarization depends linearly on the fields, so if there
+is an electric field [eq] that has both an [eq]- and a [eq]-component, the
+resulting [eq]-component of [eq] will be the sum of the two [eq]’s of
+Eqs. ( 31.1 ) and ( 31.2 ). If [eq] has components
+along [eq], [eq], and [eq], the resulting components of [eq] will be the sum of
+the three contributions in Eqs. ( 31.1 ), ( 31.2 ),
+and ( 31.3 ). In other words, [eq] will be given by
+\begin{equation}
+\begin{alignedat}{4}
+P_x&=\alpha_{xx}&&E_x+\alpha_{xy}&&E_y+\alpha_{xz}&&E_z,\\[1ex]
+P_y&=\alpha_{yx}&&E_x+\alpha_{yy}&&E_y+\alpha_{yz}&&E_z,\\[1ex]
+P_z&=\alpha_{zx}&&E_x+\alpha_{zy}&&E_y+\alpha_{zz}&&E_z.
+\end{alignedat}
+\label{Eq:II:31:4}
+\end{equation}
+
+The dielectric behavior of the crystal is then completely described by
+the nine quantities ([eq], [eq], [eq],
+[eq], …), which we can represent by the
+symbol [eq]. (The subscripts [eq] and [eq] each stand for any one of
+the three possible letters [eq], [eq], and [eq].) Any arbitrary electric
+field [eq] can be resolved with the components [eq], [eq], and [eq];
+from these we can use the [eq] to find [eq], [eq],
+and [eq], which together give the total polarization [eq]. The set
+of nine coefficients [eq] is called a tensor —in this
+instance, the tensor of polarizability . Just as we say that the
+three numbers [eq] “form the vector [eq],” we say that
+the nine numbers ([eq], [eq], …) “form the
+tensor [eq].”
+
+You know that when we change to a different coordinate system [eq], [eq],
+and [eq], the components [eq], [eq], and [eq] of the
+vector will be quite different—as will also the components 
+of [eq]. So all the coefficients [eq] will be different for a
+different set of coordinates. You can, in fact, see how the [eq]’s
+must be changed by changing the components of [eq] and [eq] in
+the proper way, because if we describe the same physical 
+electric field in the new coordinate system we should get the same
+polarization. For any new set of coordinates, [eq] is a linear
+combination of [eq], [eq], and [eq]:
+\begin{equation*}
+P_{x'}=aP_x+bP_y+cP_z,
+\end{equation*}
+
+and similarly for the other components. If you substitute for
+[eq], [eq], and [eq] in terms of the [eq]’s, using
+Eq. ( 31.4 ), you get
+\begin{alignat*}{6}
+P_{x'}&=&&\,a&&(\alpha_{xx}&&E_x+\alpha_{xy}&&E_y+\alpha_{xz}&&E_z)\\[.5ex]
+&+\,&&\,b&&(\alpha_{yx}&&E_x+\alpha_{yy}&&E_y+\alpha_{yz}&&E_z)\\[.5ex]
+&+\,&&\,c&&(\alpha_{zx}&&E_x+\alpha_{zy}&&E_y+\alpha_{zz}&&E_z).
+\end{alignat*}
+
+Then you write [eq], [eq], and [eq] in terms of [eq], [eq],
+and [eq]; for instance,
+\begin{equation*}
+E_x=a'E_{x'}+b'E_{y'}+c'E_{z'},
+\end{equation*}
+
+where [eq], [eq], [eq] are related to, but not equal to, [eq], [eq],
+[eq]. So you have [eq], expressed in terms of the components
+[eq], [eq], and [eq]; that is, you have the new [eq].
+It is fairly messy, but quite straightforward.
+
+When we talk about changing the axes we are assuming that the crystal
+stays put in space . If the crystal were rotated with the
+axes, the [eq]’s would not change. Conversely, if the orientation
+of the crystal were changed with respect to the axes, we would have a
+new set of [eq]’s. But if they are known for any one
+orientation of the crystal, they can be found for any other
+orientation by the transformation we have just described. In other
+words, the dielectric property of a crystal is described
+ completely by giving the components of the polarization
+tensor [eq] with respect to any arbitrarily chosen set of axes. Just
+as we can associate a vector velocity [eq] with a
+particle, knowing that the three components will change in a certain
+definite way if we change our coordinate axes, so with a crystal we
+associate its polarization tensor [eq], whose nine components
+will transform in a certain definite way if the coordinate system is
+changed.
+
+The relation between [eq] and [eq] written in
+Eq. ( 31.4 ) can be put in the more compact notation:
+\begin{equation}
+\label{Eq:II:31:5}
+P_i=\sum_j\alpha_{ij}E_j,
+\end{equation}
+
+where it is understood that [eq] represents either [eq], [eq], or [eq] and
+that the sum is taken on [eq], [eq], and [eq]. Many special notations
+have been invented for dealing with tensors, but each of them is
+convenient only for a limited class of problems. One common convention
+is to omit the sum sign [eq] in Eq. ( 31.5 ), leaving
+it understood that whenever the same subscript occurs twice
+(here [eq]), a sum is to be taken over that index. Since we will be using
+tensors so little, we will not bother to adopt any such special
+notations or conventions.
+
+We want now to get some experience with tensors. Suppose we ask the
+interesting question: What energy is required to polarize the crystal
+(in addition to the energy in the electric field which we know is $\epsO
+E^2/2$ per unit volume)? Consider for a moment the atomic charges that
+are being displaced. The work done in displacing the charge the
+distance [eq] is [eq], and if there are [eq] charges per unit volume, the
+work done is [eq]. But [eq] is the change [eq] in the
+dipole moment per unit volume. So the energy required per unit
+volume is
+\begin{equation*}
+E_x\,dP_x.
+\end{equation*}
+
+Combining the work for the three components of the field, the work per
+unit volume is found to be
+\begin{equation*}
+\FLPE\cdot d\FLPP.
+\end{equation*}
+
+Since the magnitude of [eq] is proportional to [eq], the work
+done per unit volume in bringing the polarization from [eq]
+to [eq] is the integral of [eq]. Calling this
+work [eq], 2 we write
+\begin{equation}
+\label{Eq:II:31:6}
+u_P=\tfrac{1}{2}\FLPE\cdot\FLPP=\tfrac{1}{2}
+\sum_iE_iP_i.
+\end{equation}
+
+Now we can express [eq] in terms of [eq] by
+Eq. ( 31.5 ), and we have that
+\begin{equation}
+\label{Eq:II:31:7}
+u_P=\tfrac{1}{2}\sum_i\sum_j\alpha_{ij}E_iE_j.
+\end{equation}
+
+The energy density [eq] is a number independent of the choice of
+axes, so it is a scalar. A tensor has then the property that when it
+is summed over one index (with a vector), it gives a new vector; and
+when it is summed over both indexes (with two 
+vectors), it gives a scalar.
+
+The tensor [eq] should really be called a “tensor of second
+rank,” because it has two indexes. A vector—with one 
+index—is a tensor of the first rank, and a scalar—with no
+index—is a tensor of zero rank. So we say that the electric
+field [eq] is a tensor of the first rank and that the energy
+density [eq] is a tensor of zero rank. It is possible to extend the ideas of
+a tensor to three or more indexes, and so to make tensors of ranks
+higher than two.
+
+The subscripts of the polarization tensor range over three possible
+values—they are tensors in three dimensions. The mathematicians
+consider tensors in four, five, or more dimensions. We have already
+used a four-dimensional tensor [eq] in our relativistic
+description of the electromagnetic field (Chapter  26 ).
+
+The polarization tensor [eq] has the interesting property
+that it is symmetric , that is, that [eq],
+and so on for any pair of indexes. (This is a physical property
+of a real crystal and not necessary for all tensors.) You can prove
+for yourself that this must be true by computing the change in energy
+of a crystal through the following cycle: (1) Turn on a field in the
+[eq]-direction; (2) turn on a field in the [eq]-direction; (3) turn
+ off the [eq]-field; (4) turn off the [eq]-field. The crystal is
+now back where it started, and the net work done on the polarization
+must be back to zero. You can show, however, that for this to be true,
+[eq] must be equal to [eq]. The same kind of
+argument can, of course, be given for [eq], etc. So the
+polarization tensor is symmetric.
+
+This also means that the polarization tensor can be measured by just
+measuring the energy required to polarize the crystal in various
+directions. Suppose we apply an [eq]-field with only an [eq]- and a
+[eq]-component; then according to Eq. ( 31.7 ),
+\begin{equation}
+\label{Eq:II:31:8}
+u_P=\tfrac{1}{2}[\alpha_{xx}E_x^2+(\alpha_{xy}+\alpha_{yx})E_xE_y+
+\alpha_{yy}E_y^2].
+\end{equation}
+
+With an [eq] alone, we can determine [eq]; with an [eq]
+alone, we can determine [eq]; with both [eq] and [eq], we
+get an extra energy due to the term
+with [eq]. Since the [eq] and [eq]
+are equal, this term is [eq] and can be related to the
+energy.
+
+The energy expression, Eq. ( 31.8 ), has a nice geometric
+interpretation. Suppose we ask what fields [eq] and [eq] correspond to some
+given energy density—say [eq]. That is just the mathematical problem of
+solving the equation
+\begin{equation*}
+\alpha_{xx}E_x^2+2\alpha_{xy}E_xE_y+\alpha_{yy}E_y^2=2u_0.
+\end{equation*}
+
+This is a quadratic equation, so if we plot [eq] and [eq] the
+solutions of this equation are all the points on an ellipse
+(Fig.  31–2 ). (It must be an ellipse, rather than a parabola
+or a hyperbola, because the energy for any field is always positive and
+finite.) The vector [eq] with components [eq] and [eq] can be drawn
+from the origin to the ellipse. So such an “energy ellipse” is a nice
+way of “visualizing” the polarization tensor.
+
+If we now generalize to include all three components, the electric
+vector [eq] in any direction required to give a unit energy
+density gives a point which will be on the surface of an ellipsoid, as
+shown in Fig.  31–3 . The shape of this ellipsoid of
+constant energy uniquely characterizes the tensor polarizability.
+
+Now an ellipsoid has the nice property that it can always be described
+simply by giving the directions of three “principal axes” and the
+diameters of the ellipse along these axes. The “principal axes” are
+the directions of the longest and shortest diameters and the direction
+at right angles to both. They are indicated by the axes [eq], [eq],
+and [eq] in Fig.  31–3 . With respect to these axes, the
+ellipsoid has the particularly simple equation
+\begin{equation*}
+\alpha_{aa}E_a^2+\alpha_{bb}E_b^2+\alpha_{cc}E_c^2=2u_0.
+\end{equation*}
+
+So with respect to these axes, the dielectric tensor has only three
+components that are not zero: [eq], [eq],
+and [eq]. That is to say, no matter how complicated a crystal is,
+it is always possible to choose a set of axes (not necessarily the
+crystal axes) for which the polarization tensor has only three
+components. With such a set of axes, Eq. ( 31.4 ) becomes
+simply
+\begin{equation}
+\label{Eq:II:31:9}
+P_a=\alpha_{aa}E_a,\quad
+P_b=\alpha_{bb}E_b,\quad
+P_c=\alpha_{cc}E_c.
+\end{equation}
+
+An electric field along any one of the principal axes produces a
+polarization along the same axis, but the coefficients for the three
+axes may, of course, be different.
+
+Often, a tensor is described by listing the nine coefficients in a
+table inside of a pair of brackets:
+\begin{equation}
+\label{Eq:II:31:10}
+\begin{bmatrix}
+\alpha_{xx} & \alpha_{xy} & \alpha_{xz}\\
+\alpha_{yx} & \alpha_{yy} & \alpha_{yz}\\
+\alpha_{zx} & \alpha_{zy} & \alpha_{zz}
+\end{bmatrix}.
+\end{equation}
+
+For the principal axes [eq], [eq], and [eq], only the diagonal terms are
+not zero; we say then that “the tensor is diagonal.” The complete
+tensor is
+\begin{equation}
+\label{Eq:II:31:11}
+\begin{bmatrix}
+\alpha_{aa} & 0 & 0\\
+0 & \alpha_{bb} & 0\\
+0 & 0 & \alpha_{cc}
+\end{bmatrix}.
+\end{equation}
+
+The important point is that any polarization tensor (in fact,
+ any symmetric tensor of rank two in any number of dimensions)
+can be put in this form by choosing a suitable set of coordinate axes.
+
+If the three elements of the polarization tensor in diagonal form are
+all equal, that is, if
+\begin{equation}
+\label{Eq:II:31:12}
+\alpha_{aa}=\alpha_{bb}=\alpha_{cc}=\alpha,
+\end{equation}
+
+the energy ellipsoid becomes a sphere, and the polarizability is the
+same in all directions. The material is isotropic. In the tensor
+notation,
+\begin{equation}
+\label{Eq:II:31:13}
+\alpha_{ij}=\alpha\delta_{ij}
+\end{equation}
+
+where [eq] is the unit tensor 
+\begin{equation}
+\label{Eq:II:31:14}
+\delta_{ij}=
+\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{bmatrix}.
+\end{equation}
+
+That means, of course,
+\begin{equation}
+\begin{aligned}
+&\delta_{ij}=1,\quad\text{if}\quad i=j;\\[1mm]
+&\delta_{ij}=0,\quad\text{if}\quad i\neq j.
+\end{aligned}
+\label{Eq:II:31:15}
+\end{equation}
+
+The tensor [eq] is often called the “Kronecker
+delta.” You may amuse yourself by proving that the
+tensor ( 31.14 ) has exactly the same form if you change the
+coordinate system to any other rectangular one. The polarization tensor
+of Eq. ( 31.13 ) gives
+\begin{equation*}
+P_i=\alpha\sum_j\delta_{ij}E_j=\alpha E_i,
+\end{equation*}
+
+which means the same as our old result for isotropic dielectrics:
+\begin{equation*}
+\FLPP=\alpha\FLPE.
+\end{equation*}
+
+The shape and orientation of the polarization ellipsoid can sometimes
+be related to the symmetry properties of the crystal. We have said in
+Chapter  30 that there are [eq] different possible
+internal symmetries of a three-dimensional lattice and that they can,
+for many purposes, be conveniently grouped into seven classes,
+according to the shape of the unit cell. Now the ellipsoid of
+polarizability must share the internal geometric symmetries of the
+crystal. For example, a triclinic crystal has low symmetry—the
+ellipsoid of polarizability will have unequal axes, and its
+orientation will not, in general, be aligned with the crystal axes. On
+the other hand, a monoclinic crystal has the property that its
+properties are unchanged if the crystal is rotated [eq] about
+one axis. So the polarization tensor must be the same after such a
+rotation. It follows that the ellipsoid of the polarizability must
+return to itself after a [eq] rotation. That can happen only if
+one of the axes of the ellipsoid is in the same direction as the
+symmetry axis of the crystal. Otherwise, the orientation and
+dimensions of the ellipsoid are unrestricted.
+
+For an orthorhombic crystal, however, the axes of the ellipsoid must
+correspond to the crystal axes, because a [eq] rotation about
+any one of the three axes repeats the same lattice. If we go to a
+tetragonal crystal, the ellipse must have the same symmetry, so it
+must have two equal diameters. Finally, for a cubic crystal, all three
+diameters of the ellipsoid must be equal; it becomes a sphere, and the
+polarizability of the crystal is the same in all directions.
+
+There is a big game of figuring out the possible kinds of tensors for
+all the possible symmetries of a crystal. It is called a
+“group-theoretical” analysis. But for the simple case of the
+polarizability tensor, it is relatively easy to see what the relations
+must be.
+
+There are many other examples of tensors appearing in physics. For
+example, in a metal, or in any conductor, one often finds that the
+current density [eq] is approximately proportional to the electric
+field [eq]; the proportionality constant is called the
+conductivity [eq]:
+\begin{equation*}
+\FLPj=\sigma\FLPE.
+\end{equation*}
+
+For crystals, however, the relation between [eq] and [eq] is
+more complicated; the conductivity is not the same in all
+directions. The conductivity is a tensor, and we write
+\begin{equation*}
+j_i=\sum\sigma_{ij}E_j.
+\end{equation*}
+
+Another example of a physical tensor is the moment of inertia. In
+Chapter  18 of Volume I we saw that a solid object
+rotating about a fixed axis has an angular momentum [eq] proportional
+to the angular velocity [eq], and we called the proportionality
+factor [eq], the moment of inertia:
+\begin{equation*}
+L=I\omega.
+\end{equation*}
+
+For an arbitrarily shaped object, the moment of inertia depends on its
+orientation with respect to the axis of rotation. For instance, a
+rectangular block will have different moments about each of its three
+orthogonal axes. Now angular velocity [eq] and angular
+momentum [eq] are both vectors. For rotations about one of the axes of
+symmetry, they are parallel. But if the moment of inertia is different
+for the three principal axes, then [eq] and [eq] are, in
+general, not in the same direction (see Fig.  31–4 ). They are
+related
+in a way analogous to the relation between [eq] and [eq]. In
+general, we must write
+\begin{equation}
+\begin{alignedat}{4}
+L_x&=I_{xx}&&\omega_x+I_{xy}&&\omega_y+I_{xz}&&\omega_z,\\[3pt]
+L_y&=I_{yx}&&\omega_x+I_{yy}&&\omega_y+I_{yz}&&\omega_z,\\[3pt]
+L_z&=I_{zx}&&\omega_x+I_{zy}&&\omega_y+I_{zz}&&\omega_z.
+\end{alignedat}
+\label{Eq:II:31:16}
+\end{equation}
+
+The nine coefficients [eq] are called the tensor of
+inertia. Following the analogy with the polarization, the kinetic
+energy for any angular momentum must be some quadratic form in the
+components [eq], [eq], and [eq]:
+\begin{equation}
+\label{Eq:II:31:17}
+\text{KE}=\tfrac{1}{2}\sum_{ij}I_{ij}\omega_i\omega_j.
+\end{equation}
+
+We can use the energy to define the ellipsoid of inertia. Also, energy
+arguments can be used to show that the tensor is
+symmetric—that [eq].
+
+The tensor of inertia for a rigid body can be worked out if the shape
+of the object is known. We need only to write down the total kinetic
+energy of all the particles in the body. A particle of mass [eq] and
+velocity [eq] has the kinetic energy [eq], and the
+total kinetic energy is just the sum
+\begin{equation*}
+\sum\tfrac{1}{2}mv^2
+\end{equation*}
+
+over all of the particles of the body. The velocity [eq] of each
+particle is related to the angular velocity [eq] of the solid
+body. Let’s assume that the body is rotating about its center of mass,
+which we take to be at rest. Then if [eq] is the displacement of a
+particle from the center of mass, its velocity [eq] is given
+by [eq]. So the total kinetic energy is
+\begin{equation}
+\label{Eq:II:31:18}
+\text{KE}=\sum\tfrac{1}{2}m(\FLPomega\times\FLPr)^2.
+\end{equation}
+
+Now all we have to do is write [eq] out in terms of
+the components [eq], [eq], [eq], and [eq], [eq], [eq],
+and compare the result with Eq. ( 31.17 ); we
+find [eq] by identifying terms. Carrying out the algebra, we write
+\begin{align*}
+(\FLPomega\times\FLPr)^2&=
+(\FLPomega\times\FLPr)_x^2+
+(\FLPomega\times\FLPr)_y^2+
+(\FLPomega\times\FLPr)_z^2\\[1ex]
+&=(\omega_yz-\omega_zy)^2+
+(\omega_zx-\omega_xz)^2+
+(\omega_xy-\omega_yx)^2\\[1ex]
+&=\begin{alignedat}[t]{7}
+&+\;\omega_y^2&&z^2&&-\;2\omega_y&&\omega_z&&zy&&\;+\;\omega_z^2&&y^2\\
+&+\;\omega_z^2&&x^2&&-\;2\omega_z&&\omega_x&&xz&&\;+\;\omega_x^2&&z^2\\[.3ex]
+&+\;\omega_x^2&&y^2&&-\;2\omega_x&&\omega_y&&yx&&\;+\;\omega_y^2&&x^2.
+\end{alignedat}
+\end{align*}
+
+Multiplying this equation by [eq], summing over all particles, and
+comparing with Eq. ( 31.17 ), we see that [eq], for
+instance, is given by
+\begin{equation*}
+I_{xx}=\sum m(y^2+z^2).
+\end{equation*}
+
+This is the formula we have had before (Chapter  19 ,
+Vol. I) for the moment of inertia of a body about the
+[eq]-axis. Since [eq], we can also write this term as
+\begin{equation*}
+I_{xx}=\sum m(r^2-x^2).
+\end{equation*}
+
+Working out all of the other terms, the tensor of inertia can be
+written as
+ 
+\begin{equation}
+\label{Eq:II:31:19}
+I_{ij}=
+\begin{bmatrix}
+\sum m(r^2-x^2) & -\sum mxy & -\sum mxz\\
+-\sum myx & \sum m(r^2-y^2) & -\sum myz\\
+-\sum mzx & -\sum mzy & \sum m(r^2-z^2)
+\end{bmatrix}.
+\end{equation}
+ 
+ 
+\begin{gather}
+\label{Eq:II:31:19}
+I_{ij}=\\[1ex]
+\left[\begin{alignedat}{4}
+\sum &m(r^2\!-x^2)& -\!&\sum\!mxy& -\!&\sum\!mxz&\\[.5ex]
+-\!&\sum\!myx& \sum &m(r^2\!-y^2)& -\!&\sum\!myz&\\[.5ex]
+-\!&\sum\!mzx& -\!&\sum\!mzy& \sum &m(r^2\!-z^2)&
+\end{alignedat}\right]\notag
+\end{gather}
+
+If you wish, this may be written in “tensor notation” as
+\begin{equation}
+\label{Eq:II:31:20}
+I_{ij}=\sum m(r^2\delta_{ij}-r_ir_j),
+\end{equation}
+
+where the [eq] are the components [eq] of the position vector of
+a particle and the [eq] means to sum over all the particles. The
+moment of inertia, then, is a tensor of the second rank whose terms
+are a property of the body and relate [eq] to [eq] by
+\begin{equation}
+\label{Eq:II:31:21}
+L_i=\sum_jI_{ij}\omega_j.
+\end{equation}
+
+For a body of any shape whatever, we can find the ellipsoid of inertia
+and, therefore, the three principal axes. Referred to these axes, the
+tensor will be diagonal, so for any object there are always three
+orthogonal axes for which the angular velocity and angular momentum
+are parallel. They are called the principal axes of inertia.
+
+We should point out that we have been using tensors of the second rank
+since Chapter  20 of Volume I. There, we defined a
+“torque in a plane,” such as [eq] by
+\begin{equation*}
+\tau_{xy}=xF_y-yF_x.
+\end{equation*}
+
+Generalized to three dimensions, we could write
+\begin{equation}
+\label{Eq:II:31:22}
+\tau_{ij}=r_iF_j-r_jF_i.
+\end{equation}
+
+The quantity [eq] is a tensor of the second rank. One way to
+see that this is so is by combining [eq] with some vector, say
+the unit vector [eq], according to
+\begin{equation*}
+\sum_j\tau_{ij}e_j.
+\end{equation*}
+
+If this quantity is a vector , then [eq] must transform
+as a tensor—this is our definition of a tensor. Substituting
+for [eq], we have
+\begin{align*}
+\sum_j\tau_{ij}e_j&=\sum_jr_iF_je_j-\sum_jr_je_jF_i\\[1ex]
+&=r_i(\FLPF\cdot\FLPe)-(\FLPr\cdot\FLPe)F_i.
+\end{align*}
+
+Since the dot products are scalars, the two terms on the right-hand
+side are vectors, and likewise their difference. So [eq] is a
+tensor.
+
+But [eq] is a special kind of tensor; it is
+ antisymmetric , that is,
+\begin{equation*}
+\tau_{ij}=-\tau_{ji},
+\end{equation*}
+
+so it has only three nonzero terms—[eq], [eq],
+and [eq]. We were able to show in Chapter  20 of
+Volume I that these three terms, almost “by accident,” transform
+like the three components of a vector, so that we could define 
+\begin{equation*}
+\FLPtau=(\tau_x,\tau_y,\tau_z)=(\tau_{yz},\tau_{zx},\tau_{xy})
+\end{equation*}
+
+We say “by accident,” because it happens only in three
+dimensions. In four dimensions, for instance, an antisymmetric tensor
+of the second rank has up to six nonzero terms and certainly cannot
+be replaced by a vector with four components.
+
+Just as the axial vector [eq] is a tensor, so
+also is every cross product of two polar vectors—all the same
+arguments apply. By luck, however, they are also representable by
+vectors (really pseudo vectors), so our mathematics has been made
+easier for us.
+
+Mathematically, if [eq] and [eq] are any two vectors, the nine
+quantities [eq] form a tensor (although it may have no useful
+physical purpose). Thus, for the position vector [eq], [eq] is
+a tensor, and since [eq] is also, we see that the right side
+of Eq. ( 31.20 ) is indeed a tensor. Likewise
+Eq. ( 31.22 ) is a tensor, since the two terms on the
+right-hand side are tensors.
+
+The symmetric tensors we have described so far arose as coefficients
+in relating one vector to another. We would like to look now at a
+tensor which has a different physical significance—the tensor of
+ stress . Suppose we have a solid object with various forces on
+it. We say that there are various “stresses” inside, by which we
+mean that there are internal forces between neighboring parts of the
+material. We have talked a little about such stresses in a
+two-dimensional case when we considered the surface tension in a
+stretched diaphragm in Section  12–3 . We will now see
+that the internal forces in the material of a three-dimensional body
+can be described in terms of a tensor.
+
+Consider a body of some elastic material—say a block of jello. If we
+make a cut through the block, the material on each side of the cut
+will, in general, get displaced by the internal forces. Before the cut
+was made, there must have been forces between the two parts of the
+block that kept the material in place; we can define the stresses in
+terms of these forces. Suppose we look at an imaginary plane
+perpendicular to the [eq]-axis—like the plane [eq] in
+Fig.  31–5 —and ask about the force across a small
+area [eq] in this plane. The material on the left of the area
+exerts the force [eq] on the material to the right, as shown
+in part (b) of the figure. There is, of course, the opposite reaction
+force [eq] exerted on the material to the left of the
+surface. If the area is small enough, we expect that [eq] is
+proportional to the area [eq].
+
+You are already familiar with one kind of stress—the pressure in a
+static liquid. There the force is equal to the pressure times the area
+and is at right angles to the surface element. For solids—also for
+viscous liquids in motion—the force need not be normal to the
+surface; there are shear forces in addition to pressures
+(positive or negative). (By a “shear” force we mean the
+ tangential components of the force across a surface.) All three
+components of the force must be taken into account. Notice also that
+if we make our cut on a plane with some other orientation, the forces
+will be different. A complete description of the internal stress
+requires a tensor.
+
+We define the stress tensor in the following way: First, we imagine a
+cut perpendicular to the [eq]-axis and resolve the force [eq]
+across the cut into its components [eq], [eq],
+[eq], as in Fig.  31–6 . The ratio of these forces
+to the area [eq], we call [eq], [eq],
+and [eq]. For example,
+\begin{equation*}
+S_{yx}=\frac{\Delta F_{y1}}{\Delta y\,\Delta z}.
+\end{equation*}
+
+The first index [eq] refers to the direction force component; the
+second index [eq] is normal to the area. If you wish, you can write the
+area [eq] as [eq], meaning an element of area
+perpendicular to [eq]. Then
+\begin{equation*}
+S_{yx}=\frac{\Delta F_{y1}}{\Delta a_x}.
+\end{equation*}
+
+Next, we think of an imaginary cut perpendicular to the [eq]-axis. Across
+a small area [eq] there will be a force [eq].
+Again we resolve this force into three components, as shown in
+Fig.  31–7 , and define the three components of the stress,
+[eq], [eq], [eq], as the force per unit area in the three
+directions. Finally, we make an imaginary cut perpendicular to [eq] and
+define the three components [eq], [eq], and [eq]. So we have
+the nine numbers
+\begin{equation}
+\label{Eq:II:31:23}
+S_{ij}=\begin{bmatrix}
+S_{xx} & S_{xy} & S_{xz}\\
+S_{yx} & S_{yy} & S_{yz}\\
+S_{zx} & S_{zy} & S_{zz}\\
+\end{bmatrix}.
+\end{equation}
+
+We want to show now that these nine numbers are sufficient to describe
+completely the internal state of stress, and that [eq] is indeed a
+tensor. Suppose we want to know the force across a surface oriented at
+some arbitrary angle. Can we find it from [eq]? Yes, in the
+following way: We imagine a little solid figure which has one face [eq]
+in the new surface, and the other faces parallel to the coordinate axes.
+If the face [eq] happened to be parallel to the [eq]-axis, we would have
+the triangular piece shown in Fig.  31–8 . (This is a
+somewhat special case, but will illustrate well enough the general
+method.) Now the stress forces on the little solid triangle in
+Fig.  31–8 are in equilibrium (at least in the limit of
+infinitesimal dimensions), so the total force on it must be zero. We
+know the forces on the faces parallel to the coordinate axes directly
+from [eq]. Their vector sum must equal the force on the face [eq], so
+we can express this force in terms of [eq].
+
+Our assumption that the surface forces on the small triangular
+volume are in equilibrium neglects any other body forces that
+might be present, such as gravity or pseudo forces if our coordinate
+system is not an inertial frame. Notice, however, that such body
+forces will be proportional to the volume of the little
+triangle and, therefore, to [eq], whereas
+all the surface forces are proportional to the areas such as $\Delta
+x\,\Delta y[eq]\Delta y\,\Delta z$, etc. So if we take the scale of
+the little wedge small enough, the body forces can always be neglected
+in comparison with the surface forces.
+
+Let’s now add up the forces on the little wedge. We take first the
+[eq]-component, which is the sum of five parts—one from each
+face. However, if [eq] is small enough, the forces on the
+triangular faces (perpendicular to the [eq]-axis) will be equal and
+opposite, so we can forget them. The [eq]-component of the force on the
+bottom rectangle is
+\begin{equation*}
+\Delta F_{x2}=S_{xy}\,\Delta x\,\Delta z.
+\end{equation*}
+
+The [eq]-component of the force on the vertical rectangle is
+\begin{equation*}
+\Delta F_{x1}=S_{xx}\,\Delta y\,\Delta z.
+\end{equation*}
+
+These two must be equal to the [eq]-component of the force
+ outward across the face [eq]. Let’s call [eq] the unit vector
+normal to the face [eq], and the force on it [eq]; then we have
+\begin{equation*}
+\Delta F_{xn}=S_{xx}\,\Delta y\,\Delta z+S_{xy}\,\Delta x\,\Delta z.
+\end{equation*}
+
+The [eq]-component [eq] of the stress across this plane is equal
+to [eq] divided by the area, which is $\Delta z\sqrt{\Delta
+x^2+\Delta y^2}$, or
+\begin{equation*}
+S_{xn}=S_{xx}\,\frac{\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}+
+S_{xy}\,\frac{\Delta x}{\sqrt{\Delta x^2+\Delta y^2}}.
+\end{equation*}
+
+Now [eq] is the cosine of the
+angle [eq] between [eq] and the [eq]-axis, as shown in
+Fig.  31–8 , so it can also be written as [eq], the
+[eq]-component of [eq]. Similarly, $\Delta y/\sqrt{\Delta x^2+\Delta
+y^2}[eq]\sin\theta=n_x$. We can write
+\begin{equation*}
+S_{xn}=S_{xx}n_x+S_{xy}n_y.
+\end{equation*}
+
+If we now generalize to an arbitrary surface element, we would get
+that
+\begin{equation*}
+S_{xn}=S_{xx}n_x+S_{xy}n_y+S_{xz}n_z
+\end{equation*}
+
+or, in general,
+\begin{equation}
+\label{Eq:II:31:24}
+S_{in}=\sum_jS_{ij}n_j.
+\end{equation}
+
+We can find the force across any surface element in terms of
+the [eq], so it does describe completely the state of internal
+stress of the material.
+
+Equation ( 31.24 ) says that the tensor [eq] relates the
+stress [eq] to the unit vector [eq], just as [eq]
+relates [eq] to [eq]. Since [eq] and [eq] are vectors,
+the components of [eq] must transform as a tensor with changes in
+coordinate axes. So [eq] is indeed a tensor.
+
+We can also show that [eq] is a symmetric tensor by looking
+at the forces on a little cube of material. Suppose we take a little
+cube, oriented with its faces parallel to our coordinate axes, and
+look at it in cross section, as shown in Fig.  31–9 . If we let the
+edge of the cube be one unit, the [eq]- and [eq]-components of the
+forces on the faces normal to the [eq]- and [eq]-axes might be as shown
+in the figure. If the cube is small, the stresses do not change
+appreciably from one side of the cube to the opposite side, so the
+force components are equal and opposite as shown. Now there must be no
+torque on the cube, or it would start spinning. The total torque about
+the center is [eq] (times the unit edge of the cube), and
+since the total is zero, [eq] is equal to [eq], and the stress
+tensor is symmetric.
+
+Since [eq] is a symmetric tensor, it can be described by an
+ellipsoid which will have three principal axes. For surfaces normal to
+these axes, the stresses are particularly simple—they correspond to
+pushes or pulls perpendicular to the surfaces. There are no shear
+forces along these faces. For any stress, we can always choose
+our axes so that the shear components are zero. If the ellipsoid is a
+sphere, there are only normal forces in any direction. This
+corresponds to a hydrostatic pressure (positive or negative). So for a
+hydrostatic pressure, the tensor is diagonal and all three components
+are equal; they are, in fact, just equal to the pressure [eq]. We can
+write
+\begin{equation}
+\label{Eq:II:31:25}
+S_{ij}=p\delta_{ij}.
+\end{equation}
+
+The stress tensor—and also its ellipsoid—will, in general, vary
+from point to point in a block of material; to describe the whole
+block we need to give the value of each component of [eq] as a
+function of position. So the stress tensor is a field . We have
+had scalar fields , like the temperature [eq], which give
+one number for each point in space, and vector fields 
+like [eq], which give three numbers for each point. Now we
+have a tensor field which gives nine numbers
+for each point in space—or really six for the symmetric
+tensor [eq]. A complete description of the internal forces in an
+arbitrarily distorted solid requires six functions of [eq], [eq], and [eq].
+
+The stress tensor [eq] describes the internal forces of
+matter. If the material is elastic, it is convenient to describe the
+internal distortion in terms of another
+tensor [eq]—called the strain tensor. For a simple object like a bar of
+metal, you know that the change in length, [eq], is approximately
+proportional to the force, so we say it obeys Hooke’s
+law:
+\begin{equation*}
+\Delta L=\gamma F.
+\end{equation*}
+
+For a solid elastic body with arbitrary distortions, the strain [eq]
+is related to the stress [eq] by a set of linear equations:
+\begin{equation}
+\label{Eq:II:31:26}
+T_{ij}=\sum_{k,l}\gamma_{ijkl}S_{kl}.
+\end{equation}
+
+Also, you know that the potential energy of a spring (or bar) is
+\begin{equation*}
+\tfrac{1}{2}F\,\Delta L=\tfrac{1}{2}\gamma F^2.
+\end{equation*}
+
+The generalization for the elastic energy density in a solid
+body is
+\begin{equation}
+\label{Eq:II:31:27}
+U_{\text{elastic}}=\sum_{ijkl}\tfrac{1}{2}\gamma_{ijkl}S_{ij}S_{kl}.
+\end{equation}
+
+The complete description of the elastic properties of a crystal must
+be given in terms of the coefficients [eq]. This introduces
+us to a new beast. It is a tensor of the fourth rank. Since
+each index can take on any one of three values, [eq], [eq], or [eq],
+there are [eq] coefficients. But there are really only
+[eq]  different numbers. First, since [eq] is symmetric, it has
+only six different values, and only [eq]  different coefficients
+are needed in Eq. ( 31.27 ). But also, [eq] can be
+interchanged with [eq] without changing the energy,
+so [eq] must be symmetric if we interchange [eq]
+and [eq]. This reduces the number of different coefficients to [eq]. So to
+describe the elastic properties of a crystal of the lowest possible
+symmetry requires [eq] elastic constants! This number is, of course,
+reduced for crystals of higher symmetry. For example, a cubic crystal
+has only three elastic constants, and an isotropic substance has only
+two.
+
+That the latter is true can be seen as follows. How can the components
+of [eq] be independent of the direction of the axes, as they
+must be if the material is isotropic? Answer: They can be
+independent only if they are expressible in terms of the
+tensor [eq]. There are two possible expressions,
+[eq]
+and [eq], which have the
+required symmetry, so [eq] must be a linear combination of
+them. Therefore, for isotropic materials,
+\begin{equation*}
+\gamma_{ijkl}=a(\delta_{ij}\delta_{kl})+
+b(\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk}),
+\end{equation*}
+
+and the material requires two constants, [eq] and [eq], to describe its
+elastic properties. We will leave it for you to show that a cubic
+crystal needs only three.
+
+As a final example, this time of a third-rank tensor, we have the
+piezoelectric effect. Under stress, a crystal generates an electric
+field proportional to the stress; hence, in general, the law is
+\begin{equation*}
+E_i=\sum_{j,k}P_{ijk}S_{jk},
+\end{equation*}
+
+where [eq] is the electric field, and the [eq] are the
+piezoelectric coefficients—or the piezoelectric tensor. Can you show
+that if the crystal has a center of inversion (invariant
+under [eq]) the piezoelectric coefficients are all zero?
+
+All the tensors we have looked at so far in this chapter relate to the
+three dimensions of space; they are defined to have a certain
+transformation property under spatial rotations. In
+Chapter  26 we had occasion to use a tensor in the four
+dimensions of relativistic space-time—the electromagnetic field
+tensor [eq]. The components of such a four-tensor transform under a
+Lorentz transformation of the coordinates in a special way that we
+worked out. (Although we did not do it that way, we could have
+considered the Lorentz transformation as a “rotation” in a
+four-dimensional “space” called Minkowski space; then the analogy with
+what we are doing here would have been clearer.)
+
+As our last example, we want to consider another tensor in the four
+dimensions [eq] of relativity theory. When we wrote the stress
+tensor, we defined [eq] as a component of a force across a unit
+area. But a force is equal to the time rate of change of a momentum.
+Therefore, instead of saying “[eq] is the [eq]-component of the
+force across a unit area perpendicular to [eq],” we could equally well
+say, “[eq] is the rate of flow of the [eq]-component of momentum
+through a unit area perpendicular to [eq].” In other words, each term
+of [eq] also represents the flow of the [eq]-component of momentum
+through a unit area perpendicular to the [eq]-direction. These are pure
+space components, but they are parts of a “larger” tensor [eq]
+in four dimensions ([eq] and [eq]) containing additional
+components like [eq], [eq], [eq], etc. We will now try to
+find the physical meaning of these extra components.
+
+We know that the space components represent flow of momentum. We can
+get a clue on how to extend this to the time dimension by studying
+another kind of “flow”—the flow of electric charge. For the
+ scalar quantity, charge, the rate of flow (per unit area
+perpendicular to the flow) is a space vector —the current
+density vector [eq]. We have seen that the time component of this
+flow vector is the density of the stuff that is flowing. For instance,
+[eq] can be combined with a time component, [eq], the charge
+density, to make the four-vector [eq]; that is,
+the [eq] in [eq] takes on the values [eq], [eq], [eq], [eq] to mean
+“density, rate of flow in the [eq]-direction, rate of flow in [eq],
+rate of flow in [eq]” of the scalar charge.
+
+Now by analogy with our statement about the time component of the flow
+of a scalar quantity, we might expect that with [eq], [eq],
+and [eq], describing the flow of the [eq]-component of momentum,
+there should be a time component [eq] which would be the density
+of whatever is flowing; that is, [eq] should be the density of
+[eq]-momentum. So we can extend our tensor horizontally to include a
+[eq]-component. We have
+\begin{equation*}
+\begin{aligned}
+S_{xt}&=\text{density of [eq]-momentum},\\[1ex]
+S_{xx}&=\text{[eq]-flow of [eq]-momentum},\\[1ex]
+S_{xy}&=\text{[eq]-flow of [eq]-momentum},\\[1ex]
+S_{xz}&=\text{[eq]-flow of [eq]-momentum}.
+\end{aligned}
+\end{equation*}
+
+Similarly, for the [eq]-component of momentum we have the three
+components of flow—[eq], [eq], [eq]—to which we should
+add a fourth term:
+\begin{equation*}
+S_{yt}=\text{density of [eq]-momentum}.
+\end{equation*}
+
+And, of course, to [eq], [eq], [eq] we would add
+\begin{equation*}
+S_{zt}=\text{density of [eq]-momentum}.
+\end{equation*}
+
+In four dimensions there is also a [eq]-component of momentum, which
+is, we know, energy. So the tensor [eq] should be extended
+vertically with [eq], [eq], and [eq], where
+\begin{equation}
+\label{Eq:II:31:28}
+\begin{aligned}
+S_{tx}&=\text{[eq]-flow of energy},\\[1ex]
+S_{ty}&=\text{[eq]-flow of energy},\\[1ex]
+S_{tz}&=\text{[eq]-flow of energy};
+\end{aligned}
+\end{equation}
+
+that is, [eq] is the flow of energy per unit area and per unit
+time across a surface perpendicular to the [eq]-axis, and so
+on. Finally, to complete our tensor we need [eq], which would be
+the density of energy . We have extended our stress
+tensor [eq] of three dimensions to the four-dimensional
+ stress-energy tensor  [eq]. The index [eq] can take on
+the four values [eq], [eq], [eq], and [eq], meaning, respectively,
+“density,” “flow per unit area in the [eq]-direction,” “flow per
+unit area in the [eq]-direction,” and “flow per unit area in the
+[eq]-direction.” In the same way, [eq] takes on the four values
+[eq], [eq], [eq], [eq] to tell us what flows, namely, “energy,”
+“momentum in the [eq]-direction,” “momentum in the [eq]-direction,”
+and “momentum in the [eq]-direction.”
+
+As an example, we will discuss this tensor not in matter, but in a
+region of free space in which there is an electromagnetic field. We know
+that the flow of energy is the Poynting vector $\FLPS=\epsO
+c^2\FLPE\times\FLPB[eq]x[eq]y[eq]z[eq]\FLPS$
+are, from the relativistic point of view, the components
+[eq], [eq], and [eq] of our four-dimensional stress-energy
+tensor. The symmetry of the tensor [eq] carries over into the time
+components as well, so the four-dimensional tensor [eq] is
+symmetric:
+\begin{equation}
+\label{Eq:II:31:29}
+S_{\mu\nu}=S_{\nu\mu}.
+\end{equation}
+
+In other words, the components [eq], [eq], [eq], which are
+the densities of [eq], [eq], and [eq] momentum , are also
+equal to the [eq]-, [eq]-, and [eq]-components of the Poynting
+vector [eq], the energy flow —as we have already shown in an
+earlier chapter by a different kind of argument.
+
+The remaining components of the electromagnetic stress tensor [eq]
+can also be expressed in terms of the electric and
+magnetic fields [eq] and [eq]. That is to say, we must admit
+stress or, to put it less mysteriously, flow of momentum in the
+electromagnetic field. We discussed this in Chapter  27 in
+connection with Eq. ( 27.21 ), but did not work out the
+details.
+
+Those who want to exercise their prowess in tensors in four dimensions
+might like to see the formula for [eq] in terms of the fields:
+\begin{equation*}
+S_{\mu\nu}=-\epsO\biggl(
+\sum_\alpha F_{\mu\alpha}F_{\nu\alpha}-\tfrac{1}{4}\delta_{\mu\nu}
+\sum_{\alpha,\beta}F_{\beta\alpha}F_{\beta\alpha}
+\biggr),
+\end{equation*}
+
+where sums on [eq], [eq] are on [eq], [eq], [eq], [eq] but (as
+usual in relativity) we adopt a special meaning for the sum
+sign [eq] and for the symbol [eq]. In the sums the [eq], [eq], [eq]
+terms are to be subtracted and [eq], while
+[eq] [eq] [eq] [eq] and [eq]
+for [eq] ([eq]). Can you verify that it gives the energy
+density [eq] and the Poynting
+vector [eq]? Can you show that in an electrostatic field
+with [eq] the principal axes of stress are in the
+direction of the electric field, that there is a
+ tension  [eq] along the direction of the field, and that there
+is an
+equal pressure in directions perpendicular to the field
+direction?

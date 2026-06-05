@@ -1,0 +1,513 @@
+The Feynman Lectures on Physics Vol. I Ch. 27: Geometrical Optics
+=================================================================
+
+Sections: 27–1 Introduction | 27–2 The focal length of a spherical surface | 27–3 The focal length of a lens | 27–4 Magnification | 27–5 Compound lenses | 27–6 Aberrations | 27–7 Resolving power
+
+
+
+In this chapter we shall discuss some elementary applications of the
+ideas of the previous chapter to a number of practical devices, using
+the approximation called geometrical optics . This is a most
+useful approximation in the practical design of many optical systems
+and instruments. Geometrical optics is either very simple or else it
+is very complicated. By that we mean that we can either study it only
+superficially, so that we can design instruments roughly, using rules
+that are so simple that we hardly need deal with them here at all,
+since they are practically of high school level, or else, if we want
+to know about the small errors in lenses and similar details, the
+subject gets so complicated that it is too advanced to discuss here!
+If one has an actual, detailed problem in lens design, including
+analysis of aberrations, then he is advised to read about the subject
+or else simply to trace the rays through the various surfaces (which
+is what the book tells how to do), using the law of refraction from
+one side to the other, and to find out where they come out and see if
+they form a satisfactory image. People have said that this is too
+tedious, but today, with computing machines, it is the right way to do
+it. One can set up the problem and make the calculation for one ray
+after another very easily. So the subject is really ultimately quite
+simple, and involves no new principles. Furthermore, it turns out that
+the rules of either elementary or advanced optics are seldom
+characteristic of other fields, so that there is no special reason to
+follow the subject very far, with one important exception.
+
+The most advanced and abstract theory of geometrical optics was worked
+out by Hamilton, and it turns out that this has very important
+applications in mechanics. It is actually even more important in
+mechanics than it is in optics, and so we leave Hamilton’s theory for
+the subject of advanced analytical mechanics, which is studied in the
+senior year or in graduate school. So, appreciating that geometrical
+optics contributes very little, except for its own sake, we now go on
+to discuss the elementary properties of simple optical systems on the
+basis of the principles outlined in the last chapter.
+
+In order to go on, we must have one geometrical formula, which is the
+following: if we have a triangle with a small altitude [eq] and a long
+base [eq], then the diagonal [eq] (we are going to need it to find the
+difference in time between two different routes) is longer than the
+base (Fig.  27–1 ). How much longer? The
+difference [eq] can be found in a number of ways. One way is this. We
+see that [eq], or [eq]. But $s - d =
+\Delta[eq]s + d \approx 2s$. Thus
+\begin{equation}
+\label{Eq:I:27:1}
+\Delta \approx h^2/2s.
+\end{equation}This is all the geometry we need to discuss the formation of images by
+curved surfaces!
+
+The first and simplest situation to discuss is a single refracting
+surface, separating two media with different indices of refraction
+(Fig.  27–2 ). We leave the case of arbitrary indices of
+refraction to the student, because ideas are always the most
+important thing, not the specific situation, and the problem is easy
+enough to do in any case. So we shall suppose that, on the left, the
+speed is [eq] and on the right it is [eq], where [eq] is the index of
+refraction. The light travels more slowly in the glass by a factor [eq].
+
+Now suppose that we have a point at [eq], at a distance [eq] from the
+front surface of the glass, and another point [eq] at a distance [eq]
+inside the glass, and we desire to arrange the curved surface in such
+a manner that every ray from [eq] which hits the surface, at any
+point [eq], will be bent so as to proceed toward the point [eq]. For that to
+be true, we have to shape the surface in such a way that the time it
+takes for the light to go from [eq] to [eq], that is, the distance [eq]
+divided by the speed of light (the speed here is unity), plus $n \cdot
+O'P[eq]P[eq]O'$, is equal to a
+constant independent of the point [eq]. This condition supplies us with
+an equation for determining the surface. The answer is that the
+surface is a very complicated fourth-degree curve, and the student may
+entertain himself by trying to calculate it by analytic geometry. It
+is simpler to try a special case that corresponds to [eq],
+because then the curve is a second-degree curve and is more
+recognizable. It is interesting to compare this curve with the
+parabolic curve we found for a focusing mirror when the light is
+coming from infinity.
+
+So the proper surface cannot easily be made—to focus the light from
+one point to another requires a rather complicated surface. It turns
+out in practice that we do not try to make such complicated surfaces
+ordinarily, but instead we make a compromise. Instead of trying to get
+ all the rays to come to a focus, we arrange it so that only the
+rays fairly close to the axis [eq] come to a focus. The farther ones
+may deviate if they want to, unfortunately, because the ideal surface
+is complicated, and we use instead a spherical surface with the right
+curvature at the axis. It is so much easier to fabricate a sphere than
+other surfaces that it is profitable for us to find out what happens
+to rays striking a spherical surface, supposing that only the rays
+near the axis are going to be focused perfectly. Those rays which are
+near the axis are sometimes called paraxial rays , and what we are analyzing are the conditions for the focusing of
+paraxial rays. We shall discuss later the errors
+that are introduced by the fact that all rays are not always close to
+the axis.
+
+Thus, supposing [eq] is close to the axis, we drop a perpendicular [eq]
+such that the height [eq] is [eq]. For a moment, we imagine that the
+surface is a plane passing through [eq]. In that case, the time needed
+to go from [eq] to [eq] would exceed the time from [eq] to [eq], and also,
+the time from [eq] to [eq] would exceed the time from [eq] to [eq]. But
+that is why the glass must be curved, because the total excess time
+must be compensated by the delay in passing from [eq] to [eq]! Now the
+ excess time along route [eq] is [eq], and the excess time
+on the other route is [eq]. This excess time, which must be
+matched by the delay in going along [eq], differs from what it would
+have been in a vacuum, because there is a medium present. In other
+words, the time to go from [eq] to [eq] is not as if it were straight in
+the air, but it is slower by the factor [eq], so that the excess delay
+in this distance is then [eq]. And now, how large is [eq]? If
+the point [eq] is the center of the sphere and if its radius is [eq], we
+see by the same formula that the distance [eq] is equal
+to [eq]. Therefore we discover that the law that connects the
+distances [eq] and [eq], and that gives us the radius of curvature [eq]
+of the surface that we need, is
+\begin{equation}
+\label{Eq:I:27:2}
+(h^2/2s) + (nh^2/2s') = (n-1)h^2/2R
+\end{equation}
+or
+\begin{equation}
+\label{Eq:I:27:3}
+(1/s)+(n/s')=(n-1)/R.
+\end{equation}
+If we have a position [eq] and another position [eq], and want to focus
+light from [eq] to [eq], then we can calculate the required radius of
+curvature [eq] of the surface by this formula.
+
+Now it turns out, interestingly, that the same lens, with the same
+curvature [eq], will focus for other distances, namely, for any pair of
+distances such that the sum of the two reciprocals, one multiplied
+by [eq], is a constant. Thus a given lens will (so long as we limit
+ourselves to paraxial rays) focus not only from [eq] to [eq], but
+between an infinite number of other pairs of points, so long as those
+pairs of points bear the relationship that [eq] is a constant,
+characteristic of the lens.
+
+In particular, an interesting case is that in which [eq]. We
+can see from the formula that as one [eq] increases, the other
+decreases. In other words, if point [eq] goes out, point [eq] comes in,
+and vice versa. As point [eq] goes toward infinity, point [eq] keeps
+moving in until it reaches a certain distance, called the focal
+length  [eq], inside the material. If parallel rays come in, they will
+meet the axis at a distance [eq]. Likewise, we could imagine it the
+other way. (Remember the reciprocity rule: if light will go from [eq]
+to [eq], of course it will also go from [eq] to [eq].) Therefore, if we
+had a light source inside the glass, we might want to know where the
+focus is. In particular, if the light in the glass were at infinity
+(same problem) where would it come to a focus outside? This distance
+is called [eq]. Of course, we can also put it the other way. If we had
+a light source at [eq] and the light went through the surface, then it
+would go out as a parallel beam. We can easily find out what [eq]
+and [eq] are:
+\begin{alignat}{3}
+\label{Eq:I:27:4}
+&n/f'&&=(n-1)/R\quad\text{or}\quad f'&&=Rn/(n-1),\\[2ex]
+\label{Eq:I:27:5}
+&1/f&&=(n-1)/R\quad\text{or}\quad f&&=R/(n-1).
+\end{alignat}
+
+We see an interesting thing: if we divide each focal length by the
+corresponding index of refraction we get the same result! This theorem,
+in fact, is general. It is true of any system of lenses, no matter how
+complicated, so it is interesting to remember. We did not prove here
+that it is general—we merely noted it for a single surface, but it
+happens to be true in general that the two focal lengths of a system are
+related in this way. Sometimes Eq. ( 27.3 ) is written in the
+form
+\begin{equation}
+\label{Eq:I:27:6}
+1/s+n/s'=1/f.
+\end{equation}
+This is more useful than ( 27.3 ) because we can measure [eq]
+more easily than we can measure the curvature and index of refraction
+of the lens: if we are not interested in designing a lens or in
+knowing how it got that way, but simply lift it off a shelf, the
+interesting quantity is [eq], not the [eq] and the [eq] and the [eq]!
+
+Now an interesting situation occurs if [eq] becomes less than [eq]. What
+happens then? If [eq], then [eq], and therefore [eq] is
+negative; our equation says that the light will focus only with a
+negative value of [eq], whatever that means! It does mean something
+very interesting and very definite. It is still a useful formula, in
+other words, even when the numbers are negative. What it means is
+shown in Fig.  27–3 . If we draw the rays which are
+diverging from [eq], they will be bent, it is true, at the surface, and
+they will not come to a focus, because [eq] is so close in that they
+are “beyond parallel.” However, they diverge as if they had come
+from a point [eq] outside the glass. This is an apparent image,
+sometimes called a virtual image . The
+image [eq] in Fig.  27–2 is called a real image . If
+the light really comes to a point, it is a real image. But if the light
+ appears to be coming from a point, a fictitious point
+different from the original point, it is a virtual image. So when [eq]
+comes out negative, it means that [eq] is on the other side of the
+surface, and everything is all right.
+
+Now consider the interesting case where [eq] is equal to infinity; then
+we have [eq]. In other words, [eq], which means
+that if we look from a dense medium into a rare medium and see a point
+in the rare medium, it appears to be deeper by a factor [eq]. Likewise,
+we can use the same equation backwards, so that if we look into a
+plane surface at an object that is at a certain distance inside the
+dense medium, it will appear as though the light is coming from not as
+far back (Fig.  27–4 ). When we look at the bottom of a
+swimming pool from above, it does not look as deep as it really is, by
+a factor [eq], which is the reciprocal of the index of refraction of
+water.
+
+We could go on, of course, to discuss the spherical mirror. But if one
+appreciates the ideas involved, he should be able to work it out for
+himself. Therefore we leave it to the student to work out the formula
+for the spherical mirror, but we mention that it is well to adopt
+certain conventions concerning the distances involved:
+
+In working out the corresponding formula for a mirror, using the above
+conventions, you will find that if you put [eq] throughout the
+formula ( 27.3 ) (as though the material behind the mirror
+had an index [eq]), the right formula for a mirror results!
+
+Although the derivation of formula ( 27.3 ) is simple and
+elegant, using least time, one can of course work out the same formula
+using Snell’s law, remembering that the angles are so small that the
+sines of angles can be replaced by the angles themselves.
+
+Now we go on to consider another situation, a very practical one. Most
+of the lenses that we use have two surfaces, not just one. How does this
+affect matters? Suppose that we have two surfaces of different
+curvature, with glass filling the space between them
+(Fig.  27–5 ). We want to study the problem of focusing from a
+point [eq] to an alternate point [eq]. How can we do that? The answer is
+this: First, use formula ( 27.3 ) for the first surface,
+forgetting about the second surface. This will tell us that the light
+which was diverging from [eq] will appear to be converging or diverging,
+depending on the sign, from some other point, say [eq]. Now we consider
+a new problem. We have a different surface, between glass and air, in
+which rays are converging toward a certain point [eq]. Where will they
+actually converge? We use the same formula again! We find that they
+converge at [eq]. Thus, if necessary, we can go through [eq] surfaces
+by just using the same formula in succession, from one to the next!
+
+There are some rather high-class formulas that would save us
+considerable energy in the few times in our lives that we might have
+to chase the light through five surfaces, but it is easier just to
+chase it through five surfaces when the problem arises than it is to
+memorize a lot of formulas, because it may be we will never have to
+chase it through any surfaces at all!
+
+In any case, the principle is that when we go through one surface we
+find a new position, a new focal point, and then take that point as
+the starting point for the next surface, and so on. In order to
+actually do this, since on the second surface we are going from [eq]
+to [eq] rather than from [eq] to [eq], and since in many systems there is
+more than one kind of glass, so that there are indices [eq], [eq],
+…, we really need a generalization of formula ( 27.3 )
+for a case where there are two different indices, [eq] and [eq],
+rather than only [eq]. Then it is not difficult to prove that the
+general form of ( 27.3 ) is
+\begin{equation}
+\label{Eq:I:27:7}
+(n_1/s)+(n_2/s')=(n_2-n_1)/R.
+\end{equation}
+
+Particularly simple is the special case in which the two surfaces are
+very close together—so close that we may ignore small errors due to
+the thickness. If we draw the lens as shown in Fig.  27–6 , we
+may ask this question: How must the lens be built so as to focus light
+from [eq] to [eq]? Suppose the light comes exactly to the edge of the
+lens, at point [eq]. Then the excess time in going from [eq] to [eq] is
+[eq], ignoring for a moment the presence of the
+thickness [eq] of glass of index [eq]. Now, to make the time for the
+direct path equal to that for the path [eq], we have to use a piece of
+glass whose thickness [eq] at the center is such that the delay
+introduced in going through this thickness is enough to compensate for
+the excess time above. Therefore the thickness of the lens at the center
+must be given by the relationship
+\begin{equation}
+\label{Eq:I:27:8}
+(n_1h^2/2s)+(n_1h^2/2s')=(n_2-n_1)T.
+\end{equation}
+We can also express [eq] in terms of the radii [eq] and [eq] of the
+two surfaces. Paying attention to our convention (3), we thus find,
+for [eq] (a convex lens),
+\begin{equation}
+\label{Eq:I:27:9}
+T = (h^2/2R_1) - (h^2/2R_2).
+\end{equation}
+Therefore, we finally get
+\begin{equation}
+\label{Eq:I:27:10}
+(n_1/s)+(n_1/s') = (n_2-n_1)(1/R_1-1/R_2).
+\end{equation}
+Now we note again that if one of the points is at infinity, the other
+will be at a point which we will call the focal length [eq]. The focal
+length [eq] is given by
+\begin{equation}
+\label{Eq:I:27:11}
+1/f = (n-1)(1/R_1-1/R_2).
+\end{equation}
+where [eq].
+
+Now, if we take the opposite case, where [eq] goes to infinity, we see
+that [eq] is at the focal length [eq]. This time the focal lengths are
+equal. (This is another special case of the general rule that the
+ratio of the two focal lengths is the ratio of the indices of
+refraction in the two media in which the rays focus. In this
+particular optical system, the initial and final indices are the same,
+so the two focal lengths are equal.)
+
+Forgetting for a moment about the actual formula for the focal length,
+if we bought a lens that somebody designed with certain radii of
+curvature and a certain index, we could measure the focal length, say,
+by seeing where a point at infinity focuses. Once we had the focal
+length, it would be better to write our equation in terms of the focal
+length directly, and the formula then is
+\begin{equation}
+\label{Eq:I:27:12}
+(1/s) + (1/s') = 1/f.
+\end{equation}
+
+Now let us see how the formula works and what it implies in different
+circumstances. First, it implies that if [eq] or [eq] is infinite the
+other one is [eq]. That means that parallel light focuses at a
+distance [eq], and this in effect defines [eq]. Another interesting thing
+it says is that both points move in the same direction. If one moves
+to the right, the other does also. Another thing it says is that [eq]
+and [eq] are equal if they are both equal to [eq]. In other words, if
+we want a symmetrical situation, we find that they will both focus at
+a distance [eq].
+
+So far we have discussed the focusing action only for points on the
+axis. Now let us discuss also the imaging of objects not exactly on
+the axis, but a little bit off, so that we can understand the
+properties of magnification . When we set up a lens so as to
+focus light from a small filament onto a “point” on a screen, we
+notice that on the screen we get a “picture” of the same filament,
+except of a larger or smaller size than the true filament. This must
+mean that the light comes to a focus from each point of the
+filament. In order to understand this a little better, let us analyze
+the thin lens system shown schematically in Fig.  27–7 . We
+know the following facts:
+
+Without actually deriving it, we shall briefly describe the general
+result when we have a number of lenses. If we have a system of several
+lenses, how can we possibly analyze it? That is easy. We start with
+some object and calculate where its image is for the first lens, using
+formula ( 27.16 ) or ( 27.12 ) or any other
+equivalent formula, or by drawing diagrams. So we find an image. Then
+we treat this image as the source for the next lens, and use the
+second lens with whatever its focal length is to again find an
+image. We simply chase the thing through the succession of
+lenses. That is all there is to it. It involves nothing new in
+principle, so we shall not go into it. However, there is a very
+interesting net result of the effects of any sequence of lenses on
+light that starts and ends up in the same medium, say air. Any optical
+instrument—a telescope or a microscope with any number of lenses and
+mirrors—has the following property: There exist two planes, called
+the principal planes of the system (these planes are often
+fairly close to the first surface of the first lens and the last
+surface of the last lens), which have the following properties: (1) If
+light comes into the system parallel from the first side, it comes out
+at a certain focus, at a distance from the second principal
+plane equal to the focal length, just as though the system were a thin
+lens situated at this plane. (2) If parallel light comes in the other
+way, it comes to a focus at the same distance [eq] from the
+ first principal plane, again as if a thin lens were situated
+there. (See Fig.  27–8 .)
+
+Of course, if we measure the distances [eq] and [eq], and [eq] and [eq]
+as before, the formula ( 27.16 ) that we have written for the
+thin lens is absolutely general, provided that we measure the focal
+length from the principal planes and not from the center of the
+lens. It so happens that for a thin lens the principal planes are
+coincident. It is just as though we could take a thin lens, slice it
+down the middle, and separate it, and not notice that it was
+separated. Every ray that comes in pops out immediately on the other
+side of the second plane from the same point as it went into the first
+plane! The principal planes and the focal length may be found either
+by experiment or by calculation, and then the whole set of properties
+of the optical system are described. It is very interesting that the
+result is not complicated when we are all finished with such a big,
+complicated optical system.
+
+Before we get too excited about how marvelous lenses are, we must
+hasten to add that there are also serious limitations, because of the
+fact that we have limited ourselves, strictly speaking, to paraxial
+rays, the rays near the axis. A real lens having a finite size will,
+in general, exhibit aberrations . For example, a ray that is on
+the axis, of course, goes through the focus; a ray that is very close
+to the axis will still come to the focus very well. But as we go
+farther out, the ray begins to deviate from the focus, perhaps by
+falling short, and a ray striking near the top edge comes down and
+misses the focus by quite a wide margin. So, instead of getting a
+point image, we get a smear. This effect is called spherical
+aberration , because it is a property of the spherical surfaces we use in
+place of the right shape. This could be remedied, for any specific
+object distance, by re-forming the shape of the lens surface, or perhaps
+by using several lenses arranged so that the aberrations of the
+individual lenses tend to cancel each other.
+
+Lenses have another fault: light of different colors has different
+speeds, or different indices of refraction, in the glass, and
+therefore the focal length of a given lens is different for different
+colors. So if we image a white spot, the image will have colors,
+because when we focus for the red, the blue is out of focus, or vice
+versa. This property is called chromatic
+aberration .
+
+There are still other faults. If the object is off the axis, then the
+focus really isn’t perfect any more, when it gets far enough off the
+axis. The easiest way to verify this is to focus a lens and then tilt
+it so that the rays are coming in at a large angle from the axis. Then
+the image that is formed will usually be quite crude, and there may be
+no place where it focuses well. There are thus several kinds of errors
+in lenses that the optical designer tries to remedy by using many
+lenses to compensate each other’s errors.
+
+How careful do we have to be to eliminate aberrations? Is it possible
+to make an absolutely perfect optical system? Suppose we had built an
+optical system that is supposed to bring light exactly to a
+point. Now, arguing from the point of view of least time, can we find
+a condition on how perfect the system has to be? The system will have
+some kind of an entrance opening for the light. If we take the
+farthest ray from the axis that can come to the focus (if the system
+is perfect, of course), the times for all rays are exactly equal. But
+nothing is perfect, so the question is, how wrong can the time be for
+this ray and not be worth correcting any further? That depends on how
+perfect we want to make the image. But suppose we want to make the
+image as perfect as it possibly can be made. Then, of course, our
+impression is that we have to arrange that every ray takes as nearly
+the same time as possible. But it turns out that this is not true,
+that beyond a certain point we are trying to do something that is too
+fine, because the theory of geometrical optics does not work!
+
+Remember that the principle of least time is not an accurate
+formulation, unlike the principle of conservation of energy or the
+principle of conservation of momentum. The principle of least time is
+only an approximation , and it is interesting to know how much
+error can be allowed and still not make any apparent difference. The
+answer is that if we have arranged that between the maximal ray—the
+worst ray, the ray that is farthest out—and the central ray, the
+difference in time is less than about the period that corresponds to
+one oscillation of the light, then there is no use improving it any
+further. Light is an oscillatory thing with a definite frequency that
+is related to the wavelength, and if we have arranged that the time
+difference for different rays is less than about a period, there is no
+use going any further.
+
+Another interesting question—a very important technical question
+with all optical instruments—is how much resolving power they
+have. If we build a microscope, we want to see the objects that we are
+looking at. That means, for instance, that if we are looking at a
+bacterium with a spot on each end, we want to see that there
+are two dots when we magnify them. One might think that all we have to
+do is to get enough magnification—we can always add another lens,
+and we can always magnify again and again, and with the cleverness of
+designers, all the spherical aberrations and chromatic aberrations can
+be cancelled out, and there is no reason why we cannot keep on
+magnifying the image. So the limitations of a microscope are not that
+it is impossible to build a lens that magnifies more than
+[eq] diameters. We can build a system of lenses that magnifies
+[eq] diameters, but we still could not see two points that are too
+close together because of the limitations of geometrical optics,
+because of the fact that least time is not precise.
+
+To discover the rule that determines how far apart two points have to
+be so that at the image they appear as separate points can be stated
+in a very beautiful way associated with the time it takes for
+different rays. Suppose that we disregard the aberrations now, and
+imagine that for a particular point [eq] (Fig.  27–9 ) all
+the rays from object to image [eq] take exactly the same time. (It is
+not true, because it is not a perfect system, but that is another
+problem.) Now take another nearby point, [eq], and ask whether its
+image will be distinct from [eq]. In other words, whether we can make
+out the difference between them. Of course, according to geometrical
+optics, there should be two point images, but what we see may be
+rather smeared and we may not be able to make out that there are two
+points. The condition that the second point is focused in a distinctly
+different place from the first one is that the two times for the
+extreme rays [eq] and [eq] on each side of the big opening of the
+lenses to go from one end to the other, must not be equal from
+the two possible object points to a given image point. Why? Because,
+if the times were equal, of course both would focus at the same
+point. So the times are not going to be equal. But by how much do they
+have to differ so that we can say that both do not come to a
+common focus, so that we can distinguish the two image points? The
+general rule for the resolution of any optical instrument is this: two
+different point sources can be resolved only if one source is focused
+at such a point that the times for the maximal rays from the other
+source to reach that point, as compared with its own true image point,
+differ by more than one period. It is necessary that the difference in
+time between the top ray and the bottom ray to the wrong focus
+shall exceed a certain amount, namely, approximately the period of
+oscillation of the light:
+\begin{equation}
+\label{Eq:I:27:17}
+t_2-t_1 > 1/\nu,
+\end{equation}
+where [eq] is the frequency of the light (number of oscillations per
+second; also speed divided by wavelength). If the distance of
+separation of the two points is called [eq], and if the opening half-angle
+of the lens is called [eq], then one can demonstrate
+that ( 27.17 ) is exactly equivalent to the statement that [eq]
+must exceed [eq], where [eq] is the index of refraction
+at [eq] and [eq] is the wavelength. The smallest things that we can
+see are therefore approximately the wavelength of light. A corresponding
+formula exists for telescopes, which tells us the smallest difference in
+angle between two stars that can just be distinguished. 1

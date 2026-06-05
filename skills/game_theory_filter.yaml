@@ -1,0 +1,95 @@
+# skills/game_theory_filter.yaml
+# ─────────────────────────────────────────────────────────────────────────────
+# Soft-flag filter: detects when the agent assumes rational actor / game theory
+# framing when discussing human behaviour.
+#
+# This is a contested empirical claim, not a neutral starting point.
+# Behavioural economics, anthropology, and psychology all show that people
+# are motivated by social norms, emotion, identity, habit, and context —
+# not just self-interested utility maximisation.
+#
+# Detection mode only: response is shown in full, violation surfaced in the
+# Flags panel with explanation and correction hint. Run is saved as flagged.
+# ─────────────────────────────────────────────────────────────────────────────
+
+id: game_theory_filter
+name: "No Rational Actor Assumption"
+version: "1.0"
+
+description: >
+  Flags responses that treat rational self-interest as the default
+  explanation for human behaviour. People are motivated by a complex
+  mix of factors. Defaulting to game-theoretic framing without
+  acknowledging this is an assumption, not a neutral baseline.
+
+# Topics that trigger this skill to activate.
+# Skill only runs when the query's embedding is sufficiently close
+# to one of these trigger phrases (relevance_threshold controls cutoff).
+triggers:
+  - human behavior
+  - decision making
+  - incentives
+  - rationality
+  - cooperation
+  - conflict
+  - negotiation
+  - social dynamics
+  - motivation
+  - economics
+  - self interest
+  - why people act
+  - human nature
+  - collective action
+
+# Relevance threshold for topic matching.
+# Queries with cosine similarity above this to any trigger get checked.
+# Start here — the optimizer will tune this after 20+ runs.
+relevance_threshold: 0.55
+
+# Severity determines how prominently the violation is displayed.
+# low / medium / high
+severity: medium
+
+# Principles this skill enforces.
+# Add new principles here — no code changes needed.
+principles:
+
+  - id: no_rational_actor
+    description: >
+      Response must not assume people naturally maximise self-interest.
+      This flattens human motivation to a single axis and imports a
+      contested economic model into philosophical discussion.
+    violation_signals:
+      - "rational actor"
+      - "self-interest"
+      - "utility maximization"
+      - "utility maximisation"
+      - "homo economicus"
+      - "incentive structure"
+      - "respond to incentives"
+      - "act in their own interest"
+      - "maximize their"
+      - "maximise their"
+      - "rational self"
+    correction_hint: >
+      People are motivated by identity, social norms, emotion, habit,
+      reciprocity, and context — not just self-interest. Acknowledge
+      this complexity rather than defaulting to the rational actor model.
+
+  - id: no_nash_default
+    description: >
+      Do not default to Nash equilibrium, zero-sum framing, or dominant
+      strategy as the natural outcome of human interaction. Most human
+      situations are not zero-sum and cooperation is primary, not residual.
+    violation_signals:
+      - "nash equilibrium"
+      - "zero-sum"
+      - "dominant strategy"
+      - "prisoner's dilemma"
+      - "prisoners dilemma"
+      - "defect"
+      - "free rider"
+    correction_hint: >
+      Most human interactions are non-zero-sum. Cooperation, trust, and
+      reciprocity are primary human modes — not exceptions requiring
+      special explanation within a game-theoretic frame.

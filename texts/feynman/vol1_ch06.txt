@@ -1,0 +1,674 @@
+The Feynman Lectures on Physics Vol. I Ch. 6: Probability
+=========================================================
+
+Sections: 6–1 Chance and likelihood | 6–2 Fluctuations | 6–3 The random walk | 6–4 A probability distribution | 6–5 The uncertainty principle
+
+
+
+“The true logic of this world is in the calculus of probabilities.”    —James Clerk Maxwell
+
+“Chance” is a word which is in common use in everyday
+living. The radio reports speaking of tomorrow’s weather may say:
+“There is a sixty percent chance of rain.” You might say: “There is a
+small chance that I shall live to be one hundred years old.” Scientists
+also use the word chance. A seismologist may be interested in the
+question: “What is the chance that there will be an earthquake of a
+certain size in Southern California next year?” A physicist might ask
+the question: “What is the chance that a particular geiger counter will
+register twenty counts in the next ten seconds?” A politician or
+statesman might be interested in the question: “What is the chance that
+there will be a nuclear war within the next ten years?” You may be
+interested in the chance that you will learn something from this
+chapter.
+
+By chance , we mean something like a guess. Why do we make
+guesses? We make guesses when we wish to make a judgment but have
+incomplete information or uncertain knowledge. We want to make a guess
+as to what things are, or what things are likely to happen. Often we
+wish to make a guess because we have to make a decision. For example:
+Shall I take my raincoat with me tomorrow? For what earth movement
+should I design a new building? Shall I build myself a fallout shelter?
+Shall I change my stand in international negotiations? Shall I go to
+class today?
+
+Sometimes we make guesses because we wish, with our limited knowledge,
+to say as much as we can about some situation. Really, any
+generalization is in the nature of a guess. Any physical theory is a
+kind of guesswork. There are good guesses and there are bad guesses. The
+theory of probability is a system for making better guesses. The
+language of probability allows us to speak quantitatively about some
+situation which may be highly variable, but which does have some
+consistent average behavior.
+
+Let us consider the flipping of a coin. If the toss—and the coin—are
+“honest,” we have no way of knowing what to expect for the outcome of
+any particular toss. Yet we would feel that in a large number of tosses
+there should be about equal numbers of heads and tails. We say: “The
+probability that a toss will land heads is [eq].”
+
+We speak of probability only for observations that we contemplate being
+made in the future. By the “probability” of a particular outcome
+of an observation we mean our estimate for the most likely fraction of a
+number of repeated observations that will yield that particular
+outcome . If we imagine repeating an observation—such as looking at a
+freshly tossed coin—[eq] times, and if we call [eq] our
+estimate of the most likely number of our observations that will give
+some specified result [eq], say the result “heads,” then by [eq], the
+probability of observing [eq], we mean
+\begin{equation}
+\label{Eq:I:6:1}
+P(A)=N_A/N.
+\end{equation}
+
+Our definition requires several comments. First of all, we may speak of
+a probability of something happening only if the occurrence is a
+possible outcome of some repeatable observation. It is not clear
+that it would make any sense to ask: “What is the probability that
+there is a ghost in that house?”
+
+You may object that no situation is exactly repeatable. That is
+right. Every different observation must at least be at a different time
+or place. All we can say is that the “repeated” observations should,
+for our intended purposes, appear to be equivalent . We should
+assume, at least, that each observation was made from an equivalently
+prepared situation, and especially with the same degree of ignorance at
+the start. (If we sneak a look at an opponent’s hand in a card game, our
+estimate of our chances of winning are different than if we do not!)
+
+We should emphasize that [eq] and [eq] in Eq. ( 6.1 ) are
+ not intended to represent numbers based on actual observations.
+[eq] is our best estimate of what would occur in [eq]
+ imagined observations. Probability depends, therefore, on our
+knowledge and on our ability to make estimates. In effect, on our common
+sense! Fortunately, there is a certain amount of agreement in the
+common sense of many things, so that different people will make the same
+estimate. Probabilities need not, however, be “absolute” numbers.
+Since they depend on our ignorance, they may become different if our
+knowledge changes.
+
+You may have noticed another rather “subjective” aspect of our
+definition of probability. We have referred to [eq] as “our estimate
+of the most likely number …” We do not mean that we expect to
+observe exactly  [eq], but that we expect a number
+ near  [eq], and that the number [eq] is more likely than
+any other number in the vicinity. If we toss a coin, say, [eq] times, we
+should expect that the number of heads would not be very likely to be
+exactly [eq], but rather only some number near to [eq], say [eq], [eq],
+[eq], [eq], [eq], or [eq]. However, if we must choose, we would
+decide that [eq] heads is more likely than any other number. We
+would write [eq].
+
+Why did we choose [eq] as more likely than any other number? We must
+have argued with ourselves in the following manner: If the most likely
+number of heads is [eq] in a total number of tosses [eq], then the most
+likely number of tails [eq] is [eq]. (We are assuming that every
+toss gives either heads or tails, and no “other”
+result!) But if the coin is “honest,” there is no preference for heads
+or tails. Until we have some reason to think the coin (or toss) is
+dishonest, we must give equal likelihoods for heads and tails. So we
+must set [eq]. It follows that [eq] [eq] [eq], or [eq] [eq] [eq].
+
+We can generalize our reasoning to any situation in which there
+are [eq] different but “equivalent” (that is, equally likely) possible
+results of an observation. If an observation can yield [eq] different
+results, and we have reason to believe that any one of them is as likely
+as any other, then the probability of a particular outcome [eq]
+is [eq].
+
+If there are seven different-colored balls in an opaque box and we pick
+one out “at random” (that is, without looking), the probability of
+getting a ball of a particular color is [eq]. The probability
+that a “blind draw” from a shuffled deck of [eq] cards will show the
+ten of hearts is [eq]. The probability of throwing a
+double-one with dice is [eq].
+
+In Chapter  5 we described the size of a nucleus in terms of
+its apparent area, or “cross section.” When we did so we were really
+talking about probabilities. When we shoot a high-energy particle at a
+thin slab of material, there is some chance that it will pass right
+through and some chance that it will hit a nucleus. (Since the nucleus
+is so small that we cannot see it, we cannot aim right at a
+nucleus. We must “shoot blind.”) If there are [eq] atoms in our slab
+and the nucleus of each atom has a cross-sectional area [eq], then
+the total area “shadowed” by the nuclei is [eq]. In a large
+number [eq] of random shots, we expect that the number of hits [eq] of
+ some nucleus will be in the ratio to [eq] as the shadowed area is
+to the total area of the slab:
+\begin{equation}
+\label{Eq:I:6:2}
+N_C/N=n\sigma/A.
+\end{equation}
+We may say, therefore, that the probability that any one
+projectile particle will suffer a collision in passing through the slab
+is
+\begin{equation}
+\label{Eq:I:6:3}
+P_C=\frac{n}{A}\,\sigma,
+\end{equation}
+where [eq] is the number of atoms per unit area in our slab.
+
+We would like now to use our ideas about probability to consider in some
+greater detail the question: “How many heads do I really expect 
+to get if I toss a coin [eq] times?” Before answering the question,
+however, let us look at what does happen in such an “experiment.”
+Figure  6–1 shows the results obtained in the first three
+“runs” of such an experiment in which [eq]. The sequences of
+“heads” and “tails” are shown just as they were obtained. The first
+game gave [eq] heads; the second also [eq]; the third [eq]. In three
+trials we did not once get [eq] heads. Should we begin to suspect the
+coin? Or were we wrong in thinking that the most likely number of
+“heads” in such a game is [eq]? Ninety-seven more runs were made to
+obtain a total of [eq] experiments of [eq] tosses each. The results of
+the experiments are given in Table  6–1 . 1
+
+Looking at the numbers in Table  6–1 , we see that most of the
+results are “near” [eq], in that they are between [eq] and [eq]. We
+can get a better feeling for the details of these results if we plot a
+graph of the distribution of the results. We count the number of
+games in which a score of [eq] was obtained, and plot this number for
+each [eq]. Such a graph is shown in Fig.  6–2 . A score of
+[eq] heads was obtained in [eq] games. A score of [eq] heads was also
+obtained [eq] times. Scores of [eq] and [eq] were each obtained
+ more than [eq] times. Are we to conclude that there is some bias
+toward heads? Was our “best estimate” not good enough? Should we
+conclude now that the “most likely” score for a run of [eq] tosses is
+really [eq] heads? But wait! In all the games taken together, there were
+[eq] tosses. And the total number of heads obtained was [eq]. The
+fraction of tosses that gave heads is [eq], very nearly, but slightly
+ less than half. We should certainly not assume that the
+probability of throwing heads is greater than [eq]! The fact that one
+ particular set of observations gave [eq] heads most often, is a
+ fluctuation . We still expect that the most likely number
+of heads is [eq].
+
+We may ask the question: “What is the probability that a game of
+[eq] tosses will yield [eq] heads—or [eq], or any other number?” We
+have said that in a game of one toss, the probability of obtaining
+ one head is [eq], and the probability of obtaining no head
+is [eq]. In a game of two tosses there are four possible
+outcomes: [eq], [eq], [eq], [eq]. Since each of these sequences is
+equally likely, we conclude that (a) the probability of a score of two
+heads is [eq], (b) the probability of a score of one head
+is [eq], (c) the probability of a zero score
+is [eq]. There are two ways of obtaining one head, but
+only one of obtaining either zero or two heads.
+
+Consider now a game of [eq] tosses. The third toss is equally likely to
+be heads or tails. There is only one way to obtain [eq] heads: we
+ must have obtained [eq] heads on the first two tosses, and then
+heads on the last. There are, however, three ways of obtaining
+[eq] heads. We could throw tails after having thrown two heads (one way)
+or we could throw heads after throwing only one head in the first two
+tosses (two ways). So for scores of [eq]-[eq], [eq]-[eq], [eq]-[eq], [eq]-[eq]
+we have that the number of equally likely ways is [eq], [eq], [eq], [eq],
+with a total of [eq] different possible sequences. The probabilities are
+[eq], [eq], [eq], [eq].
+
+The argument we have been making can be summarized by a diagram like
+that in Fig.  6–3 . It is clear how the diagram should be
+continued for games with a larger number of tosses.
+Figure  6–4 shows such a diagram for a game of [eq] tosses.
+The number of “ways” to any point on the diagram is just the number of
+different “paths” (sequences of heads and tails) which can be taken
+from the starting point. The vertical position gives us the total number
+of heads thrown. The set of numbers which appears in such a diagram is
+known as Pascal’s triangle . The numbers are also known as
+the binomial coefficients , because they also appear in the
+expansion of [eq]. If we call [eq] the number of tosses and [eq] the
+number of heads thrown, then the numbers in the diagram are usually
+designated by the symbol [eq]. We may remark in passing that
+the binomial coefficients can also be computed from
+\begin{equation}
+\label{Eq:I:6:4}
+\binom{n}{k}=\frac{n!}{k!(n-k)!},
+\end{equation}
+where [eq], called “[eq]-factorial,” represents the
+product [eq].
+
+We are now ready to compute the probability [eq] of throwing
+[eq] heads in [eq] tosses, using our definition Eq. ( 6.1 ). The
+total number of possible sequences is [eq] (since there are
+[eq] outcomes for each toss), and the number of ways of obtaining
+[eq] heads is [eq], all equally likely, so we have
+\begin{equation}
+\label{Eq:I:6:5}
+P(k,n)=\frac{\tbinom{n}{k}}{2^n}.
+\end{equation}
+
+Since [eq] is the fraction of games which we expect to yield
+[eq] heads, then in [eq] games we should expect to find [eq] heads
+[eq] times. The dashed curve in Fig.  6–2 passes
+through the points computed from [eq]. We see that we
+ expect to obtain a score of [eq] heads in [eq] or [eq] games,
+whereas this score was observed in [eq] games. We expect a score
+of [eq] in [eq] or [eq] games, but we obtained that score in [eq] games.
+Such fluctuations are “part of the game.”
+
+The method we have just used can be applied to the most general
+situation in which there are only two possible outcomes of a single
+observation. Let us designate the two outcomes by [eq] (for “win”)
+and [eq] (for “lose”). In the general case, the probability of [eq]
+or [eq] in a single event need not be equal. Let [eq] be the probability
+of obtaining the result [eq]. Then [eq], the probability of [eq], is
+necessarily [eq]. In a set of [eq] trials, the probability [eq]
+that [eq] will be obtained [eq] times is
+\begin{equation}
+\label{Eq:I:6:6}
+P(k,n)=\tbinom{n}{k}p^kq^{n-k}.
+\end{equation}
+This probability function is called the Bernoulli or, also, the
+ binomial probability.
+
+There is another interesting problem in which the idea of probability is
+required. It is the problem of the “random walk.” In its simplest
+version, we imagine a “game” in which a “player” starts at the
+point [eq] and at each “move” is required to take a step
+ either forward (toward [eq]) or backward (toward [eq]).
+The choice is to be made randomly , determined, for example, by
+the toss of a coin. How shall we describe the resulting motion? In its
+general form the problem is related to the motion of atoms (or other
+particles) in a gas—called Brownian
+motion—and also to the combination of
+errors in measurements. You will see that the random-walk problem is
+closely related to the coin-tossing problem we have already discussed.
+
+First, let us look at a few examples of a random walk. We may
+characterize the walker’s progress by the net distance [eq] traveled in
+[eq] steps. We show in the graph of Fig.  6–5 three examples
+of the path of a random walker. (We have used for the random sequence of
+choices the results of the coin tosses shown in Fig.  6–1 .)
+
+What can we say about such a motion? We might first ask: “How far does
+he get on the average?” We must expect that his average progress
+will be zero, since he is equally likely to go either forward or
+backward. But we have the feeling that as [eq] increases, he is more
+likely to have strayed farther from the starting point. We might,
+therefore, ask what is his average distance travelled in absolute
+value , that is, what is the average of [eq]. It
+is, however, more convenient to deal with another measure of
+“progress,” the square of the distance: [eq] is positive for either
+positive or negative motion, and is therefore a reasonable
+ measure of such random wandering.
+
+We can show that the expected value of [eq] is just [eq], the number
+of steps taken. By “expected value” we mean the probable value (our
+best guess), which we can think of as the expected average
+behavior in many repeated sequences. We represent such an
+expected value by [eq], and may refer to it also as the
+“mean square distance.” After one step,
+[eq] is always [eq], so we have certainly [eq]. (All
+distances will be measured in terms of a unit of one step. We shall not
+continue to write the units of distance.)
+
+The expected value of [eq] for [eq] can be obtained from [eq].
+If, after [eq] steps, we have [eq], then after [eq] steps we have
+[eq] or  [eq]. For the squares,
+\begin{equation}
+\label{Eq:I:6:7}
+D_N^2=
+\begin{cases}
+D_{N-1}^2+2D_{N-1}+1,\\[2ex]
+\kern{3.7em}\textit{or}\\[2ex]
+D_{N-1}^2-2D_{N-1}+1.
+\end{cases}
+\end{equation}
+In a number of independent sequences, we expect to obtain each value
+one-half of the time, so our average expectation is just the average of
+the two possible values. The expected value of [eq] is then
+[eq]. In general , we should expect 
+for [eq] its “expected value” [eq] (by
+definition!). So
+\begin{equation}
+\label{Eq:I:6:8}
+\expval{D_N^2}=\expval{D_{N-1}^2}+1.
+\end{equation}
+
+We have already shown that [eq]; it follows then that
+\begin{equation}
+\label{Eq:I:6:9}
+\expval{D_N^2}=N,
+\end{equation}
+a particularly simple result!
+
+If we wish a number like a distance, rather than a distance squared, to
+represent the “progress made away from the origin” in a random walk,
+we can use the “root-mean-square distance” [eq]:
+\begin{equation}
+\label{Eq:I:6:10}
+D_{\text{rms}}=\sqrt{\expval{D^2}}=\sqrt{N}.
+\end{equation}
+
+We have pointed out that the random walk is closely similar in its
+mathematics to the coin-tossing game we considered at the beginning of
+the chapter. If we imagine the direction of each step to be in
+correspondence with the appearance of heads or tails in a coin toss,
+then [eq] is just [eq], the difference in the number of heads and
+tails. Since [eq], the total number of steps (and tosses), we
+have [eq]. We have derived earlier an expression for the expected
+distribution of [eq] (also called [eq]) and obtained the result of
+Eq. ( 6.5 ). Since [eq] is just a constant, we have the
+corresponding distribution for [eq]. (Since for every head more than
+[eq] there is a tail “missing,” we have the factor of [eq] between
+[eq] and [eq].) The graph of Fig.  6–2 represents the
+distribution of distances we might get in [eq] random steps (where
+[eq] is to be read [eq]; [eq], [eq]; etc.).
+
+The variation of [eq] from its expected value [eq] is
+\begin{equation}
+\label{Eq:I:6:11}
+N_H-\frac{N}{2}=\frac{D}{2}.
+\end{equation}
+The rms deviation is
+\begin{equation}
+\label{Eq:I:6:12}
+\biggl(N_H-\frac{N}{2}\biggr)_{\text{rms}}=\tfrac{1}{2}\sqrt{N}.
+\end{equation}
+
+According to our result for [eq], we expect that the
+“typical” distance in [eq] steps ought to be [eq], or a
+typical [eq] should be about [eq] units from [eq]. We see that the
+“width” of the curve in Fig.  6–2 , measured from the
+center, is just about [eq] units, in agreement with this result.
+
+We are now in a position to consider a question we have avoided until
+now. How shall we tell whether a coin is “honest” or “loaded”? We
+can give now at least a partial answer. For an honest coin, we expect
+the fraction of the times heads appears to be [eq], that is,
+\begin{equation}
+\label{Eq:I:6:13}
+\frac{\expval{N_H}}{N}=0.5.
+\end{equation}
+We also expect an actual [eq] to deviate from [eq] by about
+[eq], or the fraction to deviate by
+\begin{equation*}
+\frac{1}{N}\,\frac{\sqrt{N}}{2}=\frac{1}{2\sqrt{N}}.
+\end{equation*}
+The larger [eq] is, the closer we expect the fraction [eq] to
+be to one-half.
+
+In Fig.  6–6 we have plotted the fraction [eq] for the
+coin tosses reported earlier in this chapter. We see the tendency for
+the fraction of heads to approach [eq] for large [eq]. Unfortunately,
+for any given run or combination of runs there is no guarantee 
+that the observed deviation will be even near the expected 
+deviation. There is always the finite chance that a large
+fluctuation—a long string of heads or tails—will give an arbitrarily
+large deviation. All we can say is that if the deviation is near
+the expected [eq] (say within a factor of [eq] or [eq]), we have
+no reason to suspect the honesty of the coin. If it is much larger, we
+may be suspicious, but cannot prove, that the coin is loaded (or that
+the tosser is clever!).
+
+We have also not considered how we should treat the case of a “coin”
+or some similar “chancy” object (say a stone that always lands in
+either of two positions) that we have good reason to believe
+ should have a different probability for heads and tails. We have
+defined [eq]. How shall we know what to expect 
+for [eq]? In some cases, the best we can do is to observe the number of
+heads obtained in large numbers of tosses. For want of anything better,
+we must set [eq]. (How could we expect
+anything else?) We must understand, however, that in such a case a
+different experiment, or a different observer, might conclude that
+[eq] was different. We would expect , however, that the various
+answers should agree within the deviation [eq] [if [eq] is
+near one-half]. An experimental physicist usually says that an
+“experimentally determined” probability has an “error,” and writes
+\begin{equation}
+\label{Eq:I:6:14}
+P(H)=\frac{N_H}{N}\pm\frac{1}{2\sqrt{N}}.
+\end{equation}
+There is an implication in such an expression that there is a
+“true” or “correct” probability which could be computed if we
+knew enough, and that the observation may be in “error” due to a
+fluctuation. There is, however, no way to make such thinking logically
+consistent. It is probably better to realize that the probability
+concept is in a sense subjective, that it is always based on uncertain
+knowledge, and that its quantitative evaluation is subject to change as
+we obtain more information.
+
+Let us return now to the random walk and consider a modification of it.
+Suppose that in addition to a random choice of the direction ([eq]
+or [eq]) of each step, the length of each step also varied in some
+unpredictable way, the only condition being that on the average 
+the step length was one unit. This case is more representative of
+something like the thermal motion of a molecule in a gas. If we call the
+length of a step [eq], then [eq] may have any value at all, but most often
+will be “near” [eq]. To be specific, we shall let [eq] or,
+equivalently, [eq]. Our derivation for [eq]
+would proceed as before except that Eq. ( 6.8 ) would be
+changed now to read
+\begin{equation}
+\label{Eq:I:6:15}
+\expval{D_N^2}=\expval{D_{N-1}^2}+\expval{S^2}=\expval{D_{N-1}^2}+1.
+\end{equation}
+We have, as before, that
+\begin{equation}
+\label{Eq:I:6:16}
+\expval{D_N^2}=N.
+\end{equation}
+
+What would we expect now for the distribution of distances [eq]? What is,
+for example, the probability that [eq] after [eq] steps? The answer is
+zero! The probability is zero that [eq] will be any particular 
+value, since there is no chance at all that the sum of the backward
+steps (of varying lengths) would exactly equal the sum of forward steps.
+We cannot plot a graph like that of Fig.  6–2 .
+
+We can, however, obtain a representation similar to that of
+Fig.  6–2 , if we ask, not what is the probability of
+obtaining [eq] exactly equal to [eq], [eq], or [eq], but instead what is the
+probability of obtaining [eq] near [eq], [eq], or [eq]. Let us
+define [eq] as the probability that [eq] will lie in the
+interval [eq] located at [eq] (say from [eq] to [eq]). We
+expect that for small [eq] the chance of [eq] landing in the
+interval is proportional to [eq], the width of the interval. So we
+can write
+\begin{equation}
+\label{Eq:I:6:17}
+P(x,\Delta x)=p(x)\,\Delta x.
+\end{equation}
+The function [eq] is called the probability
+density .
+
+The form of [eq] will depend on [eq], the number of steps taken, and
+also on the distribution of individual step lengths. We cannot
+demonstrate the proofs here, but for large [eq], [eq] is the
+ same for all reasonable distributions in individual step lengths,
+and depends only on [eq]. We plot [eq] for three values of [eq] in
+Fig.  6–7 . You will notice that the “half-widths” (typical
+spread from [eq]) of these curves is [eq], as we have shown it
+should be.
+
+You may notice also that the value of [eq] near zero is inversely
+proportional to [eq]. This comes about because the curves are all
+of a similar shape and their areas under the curves must all be equal.
+Since [eq] is the probability of finding [eq] in [eq]
+when [eq] is small, we can determine the chance of finding [eq]
+ somewhere inside an arbitrary interval from [eq] to [eq], by
+cutting the interval in a number of small increments [eq] and
+evaluating the sum of the terms [eq] for each increment. The
+probability that [eq] lands somewhere between [eq] and [eq], which we
+may write [eq], is equal to the shaded area in
+Fig.  6–8 . The smaller we take the increments [eq], the
+more correct is our result. We can write, therefore,
+ 
+\begin{equation}
+\label{Eq:I:6:18}
+P(x_1 < D < x_2)=\sum p(x)\,\Delta x=\int_{x_1}^{x_2}p(x)\,dx.
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+P(x_1 < D < x_2)=\sum p(x)\Delta x\\[1ex]
+=\int_{x_1}^{x_2}p(x)\,dx.
+\end{gathered}
+\label{Eq:I:6:18}
+\end{equation}
+
+The area under the whole curve is the probability that [eq] lands
+somewhere (that is, has some value between [eq]
+and [eq]). That probability is surely [eq]. We must have that
+\begin{equation}
+\label{Eq:I:6:19}
+\int_{-\infty}^{+\infty}p(x)\,dx=1.
+\end{equation}
+Since the curves in Fig.  6–7 get wider in proportion
+to [eq], their heights must be proportional to [eq] to
+maintain the total area equal to [eq].
+
+The probability density function we have been
+describing is one that is encountered most commonly. It is known as the
+ normal or Gaussian probability density. It has the mathematical form
+\begin{equation}
+\label{Eq:I:6:20}
+p(x)=\frac{1}{\sigma\sqrt{2\pi}}\,e^{-x^2/2\sigma^2},
+\end{equation}
+where [eq] is called the standard deviation and is given, in our case, by [eq] or, if the
+rms step size is different from [eq], by [eq].
+
+We remarked earlier that the motion of a molecule, or of any particle,
+in a gas is like a random walk. Suppose we open a bottle of an organic
+compound and let some of its vapor escape into the air. If there are air
+currents, so that the air is circulating, the currents will also carry
+the vapor with them. But even in perfectly still air , the vapor
+will gradually spread out—will diffuse—until it has penetrated
+throughout the room. We might detect it by its color or odor. The
+individual molecules of the organic vapor spread out in still air
+because of the molecular motions caused by collisions with other
+molecules. If we know the average “step” size, and the number of steps
+taken per second, we can find the probability that one, or several,
+molecules will be found at some distance from their starting point after
+any particular passage of time. As time passes, more steps are taken and
+the gas spreads out as in the successive curves of Fig.  6–7 .
+In a later chapter, we shall find out how the step sizes and step
+frequencies are related to the temperature and pressure of a gas.
+
+Earlier, we said that the pressure of a gas is due to the molecules
+bouncing against the walls of the container. When we come later to make
+a more quantitative description, we will wish to know how fast the
+molecules are going when they bounce, since the impact they make will
+depend on that speed. We cannot, however, speak of the speed of
+the molecules. It is necessary to use a probability description. A
+molecule may have any speed, but some speeds are more likely than
+others. We describe what is going on by saying that the probability that
+any particular molecule will have a speed between [eq] and [eq]
+is [eq], where [eq], a probability density, is a given
+function of the speed [eq]. We shall see later how
+Maxwell, using common sense
+and the ideas of probability, was able to find a mathematical expression
+for [eq]. The form 2 of the
+function [eq] is shown in Fig.  6–9 . Velocities may have
+any value, but are most likely to be near the most probable value [eq].
+
+We often think of the curve of Fig.  6–9 in a somewhat
+different way. If we consider the molecules in a typical container (with
+a volume of, say, one liter), then there are a very large number [eq] of
+molecules present ([eq]). Since [eq]
+is the probability that one molecule will have its velocity
+in [eq], by our definition of probability we mean that the
+ expected number [eq] to be found with a velocity
+in the interval [eq] is given by
+\begin{equation}
+\label{Eq:I:6:21}
+\expval{\Delta N}=N\,p(v)\,\Delta v.
+\end{equation}
+We call [eq] the “distribution in velocity.” The area under the
+curve between two velocities [eq] and [eq], for example the shaded
+area in Fig.  6–9 , represents [for the curve [eq]] the
+expected number of molecules with velocities between [eq] and [eq].
+Since with a gas we are usually dealing with large numbers of molecules,
+we expect the deviations from the expected numbers to be small
+(like [eq]), so we often neglect to say the “expected” number,
+and say instead: “The number of molecules with velocities between [eq]
+and [eq] is the area under the curve.” We should remember,
+however, that such statements are always about probable numbers.
+
+The ideas of probability are certainly useful in describing the behavior
+of the [eq] or so molecules in a sample of a gas, for it is clearly
+impractical even to attempt to write down the position or velocity of
+each molecule. When probability was first applied to such problems, it
+was considered to be a convenience —a way of dealing with very
+complex situations. We now believe that the ideas of probability are
+ essential to a description of atomic happenings. According to
+quantum mechanics, the mathematical theory of
+particles, there is always some uncertainty in the specification 
+of positions and velocities. We can, at best, say that there is a
+certain probability that any particle will have a position near some
+coordinate [eq].
+
+We can give a probability density [eq], such that [eq]
+is the probability that the particle will be found between [eq]
+and [eq]. If the particle is reasonably well localized, say
+near [eq], the function [eq] might be given by the graph of
+Fig.  6–10 (a). Similarly, we must specify the velocity of the
+particle by means of a probability density [eq],
+with [eq] the probability that the velocity will be found
+between [eq] and [eq].
+
+It is one of the fundamental results of quantum mechanics that the two functions [eq] and [eq] cannot be chosen
+independently and, in particular, cannot both be made arbitrarily
+narrow. If we call the typical “width” of the [eq] curve $[\Delta
+x][eq]p_2(v)[eq][\Delta v]$ (as shown in the
+figure), nature demands that the product of the two widths be at
+least as big as the number [eq], where [eq] is the mass of the
+particle. We may write this basic relationship as
+\begin{equation}
+\label{Eq:I:6:22}
+[\Delta x]\cdot[\Delta v]\geq\hbar/2m.
+\end{equation}
+This equation is a statement of the Heisenberg uncertainty
+principle that we mentioned earlier.
+
+Since the right-hand side of Eq. ( 6.22 ) is a constant, this
+equation says that if we try to “pin down” a particle by forcing it to
+be at a particular place, it ends up by having a high speed. Or if we
+try to force it to go very slowly, or at a precise velocity, it
+“spreads out” so that we do not know very well just where it is.
+Particles behave in a funny way!
+
+The uncertainty principle describes an inherent fuzziness that must
+exist in any attempt to describe nature. Our most precise description of
+nature must be in terms of probabilities . There are some
+people who do not like this way of describing nature. They feel somehow
+that if they could only tell what is really going on with a
+particle, they could know its speed and position simultaneously. In the
+early days of the development of quantum mechanics, Einstein was quite
+worried about this problem. He used to shake his head and say, “But,
+surely God does not throw dice in determining how electrons should go!”
+He worried about that problem for a long time and he probably never
+really reconciled himself to the fact that this is the best description
+of nature that one can give. There are still one or two physicists who
+are working on the problem who have an intuitive conviction that it is
+possible somehow to describe the world in a different way and that all
+of this uncertainty about the way things are can be removed. No one has
+yet been successful.
+
+The necessary uncertainty in our specification of the position of a
+particle becomes most important when we wish to describe the structure
+of atoms. In the hydrogen atom, which has a nucleus of one proton with
+one electron outside of the nucleus, the uncertainty in the position of
+the electron is as large as the atom itself! We cannot, therefore,
+properly speak of the electron moving in some “orbit” around the
+proton. The most we can say is that there is a certain
+ chance  [eq], of observing the electron in an element
+of volume [eq] at the distance [eq] from the proton. The
+probability density [eq] is given by quantum mechanics. For an undisturbed hydrogen atom [eq]. The
+number [eq] is the “typical” radius, where the function is decreasing
+rapidly. Since there is a small probability of finding the electron at
+distances from the nucleus much greater than [eq], we may think of [eq] as
+“the radius of the atom,” about [eq] meter.
+
+We can form an image of the hydrogen atom by imagining a “cloud” whose
+density is proportional to the probability density for observing the
+electron. A sample of such a cloud is shown in Fig.  6–11 .
+Thus our best “picture” of a hydrogen atom is a nucleus surrounded by
+an “electron cloud” (although we really 
+mean a “probability cloud”). The electron is there somewhere, but
+nature permits us to know only the chance of finding it at any
+particular place.
+
+In its efforts to learn as much as possible about nature, modern physics
+has found that certain things can never be “known” with certainty.
+Much of our knowledge must always remain uncertain. The most we
+can know is in terms of probabilities.

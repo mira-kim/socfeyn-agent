@@ -1,0 +1,1053 @@
+The Feynman Lectures on Physics Vol. III Ch. 13: Propagation in a Crystal Lattice
+=================================================================================
+
+Sections: 13–1 States for an electron in a one-dimensional lattice | 13–2 States of definite energy | 13–3 Time-dependent states | 13–4 An electron in a three-dimensional lattice | 13–5 Other states in a lattice | 13–6 Scattering from imperfections in the lattice | 13–7 Trapping by a lattice imperfection | 13–8 Scattering amplitudes and bound states
+
+
+
+You would, at first sight, think that a low-energy electron
+would have great difficulty passing through a solid crystal. The atoms
+are packed together with their centers only a few angstroms apart, and
+the effective diameter of the atom for electron scattering is roughly an
+angstrom or so. That is, the atoms are large, relative to their spacing,
+so that you would expect the mean free path between collisions to be of
+the order of a few angstroms—which is practically nothing. You would
+expect the electron to bump into one atom or another almost immediately.
+Nevertheless, it is a ubiquitous phenomenon of nature that if the
+lattice is perfect, the electrons are able to travel through the crystal
+smoothly and easily—almost as if they were in a vacuum. This strange
+fact is what lets metals conduct electricity so easily; it has also
+permitted the development of many practical devices. It is, for
+instance, what makes it possible for a transistor to imitate the radio
+tube. In a radio tube electrons move freely through a vacuum, while in
+the transistor they move freely through a crystal lattice. The machinery
+behind the behavior of a transistor will be described in this chapter;
+the next one will describe the application of these principles in
+various practical devices.
+
+The conduction of electrons in a crystal is one example of a very common
+phenomenon. Not only can electrons travel through crystals, but other
+“things” like atomic excitations can also travel in a similar manner.
+So the phenomenon which we want to discuss appears in many ways in the
+study of the physics of the solid state.
+
+You will remember that we have discussed many examples of two-state
+systems. Let’s now think of an electron which can be in either one of
+two positions, in each of which it is in the same kind of
+environment. Let’s also suppose that there is a certain amplitude to
+go from one position to the other, and, of course, the same amplitude
+to go back, just as we have discussed for the hydrogen molecular ion
+in Section  10–1 . The laws of quantum mechanics then
+give the following results. There are two possible states of definite
+energy for the electron. Each state can be described by the amplitude
+for the electron to be in each of the two basic positions. In either
+of the definite-energy states, the magnitudes of these two amplitudes
+are constant in time, and the phases vary in time with the same
+frequency. On the other hand, if we start the electron in one
+position, it will later have moved to the other, and still later will
+swing back again to the first position. The amplitude is analogous to
+the motions of two coupled pendulums.
+
+Now consider a perfect crystal lattice in which we imagine that an
+electron can be situated in a kind of “pit” at one particular atom
+and with some particular energy. Suppose also that the electron has
+some amplitude to move into a different pit at one of the nearby
+atoms. It is something like the two-state system—but with an
+additional complication. When the electron arrives at the neighboring
+atom, it can afterward move on to still another position as well as
+return to its starting point. Now we have a situation analogous not to
+ two coupled pendulums, but to an infinite number of
+pendulums all coupled together. It is something like what you see in
+one of those machines—made with a long row of bars mounted on a
+torsion wire—that is used in first-year physics to demonstrate wave
+propagation.
+
+If you have a harmonic oscillator which is coupled to another harmonic
+oscillator, and that one to another, and so on …, and if you
+start an irregularity in one place, the irregularity will propagate as
+a wave along the line. The same situation exists if you place an
+electron at one atom of a long chain of atoms.
+
+Usually, the simplest way of analyzing the mechanical problem is not
+to think in terms of what happens if a pulse is started at a definite
+place, but rather in terms of steady-wave solutions. There exist
+certain patterns of displacements which propagate through the crystal
+as a wave of a single, fixed frequency. Now the same thing happens
+with the electron—and for the same reason, because it’s described in
+quantum mechanics by similar equations.
+
+You must appreciate one thing, however; the amplitude for the electron
+to be at a place is an amplitude , not a probability. If the
+electron were simply leaking from one place to another, like water
+going through a hole, the behavior would be completely different. For
+example, if we had two tanks of water connected by a tube to permit
+some leakage from one to the other, then the levels would approach
+each other exponentially. But for the electron, what happens is
+amplitude leakage and not just a plain probability leakage. And it’s a
+characteristic of the imaginary term—the [eq] in the differential
+equations of quantum mechanics—which changes the exponential
+solution to an oscillatory solution. What happens then is quite
+different from the leakage between interconnected tanks.
+
+We want now to analyze quantitatively the quantum mechanical
+situation. Imagine a one-dimensional system made of a long line of
+atoms as shown in Fig.  13–1 (a). (A crystal is, of course,
+three-dimensional but the physics is very much the same; once you
+understand the one-dimensional case you will be able to understand
+what happens in three dimensions.) Next, we want to see what happens
+if we put a single electron on this line of atoms. Of course, in a
+real crystal there are already millions of electrons. But most of them
+(nearly all for an insulating crystal) take up positions in some
+pattern of motion each around its own atom—and everything is quite
+stationary. However, we now want to think about what happens if we put
+an extra electron in. We will not consider what the other ones
+are doing because we suppose that to change their motion involves a
+lot of excitation energy. We are going to add an electron as if to
+produce one slightly bound negative ion. In watching what the
+ one extra electron does we are making an approximation which
+disregards the mechanics of the inside workings of the atoms.
+
+Of course the electron could then move to another atom, transferring
+the negative ion to another place. We will suppose that just as in the
+case of an electron jumping between two protons, the electron can jump
+from one atom to the neighbor on either side with a certain amplitude.
+
+Now how do we describe such a system? What will be reasonable base
+states? If you remember what we did when we had only two possible
+positions, you can guess how it will go. Suppose that in our line of
+atoms the spacings are all equal; and that we number the atoms in
+sequence, as shown in Fig.  13–1 (a). One of the base states
+is that the electron is at atom number [eq], another base state is that
+the electron is at atom number [eq], or at atom number [eq], and so on. We
+can describe the [eq]th base state by saying that the electron is at atom
+number [eq]. Let’s say that this is the base state [eq].
+Figure  13–1 shows what we mean by the three base states
+\begin{equation*}
+\ket{n-1},\:\ket{n},\:\text{and }\:\ket{n+1}.
+\end{equation*}
+
+Using these base states, any state [eq] of the electron in our
+one-dimensional crystal can be described by giving all the
+amplitudes [eq] that the state [eq] is in one of the base
+states—which means the amplitude that it is located at one
+particular atom. Then we can write the state [eq] as a
+superposition of the base states
+\begin{equation}
+\label{Eq:III:13:1}
+\ket{\phi}=\sum_n\ket{n}\braket{n}{\phi}.
+\end{equation}
+
+Next, we are going to suppose that when the electron is at one atom,
+there is a certain amplitude that it will leak to the atom on either
+side. And we’ll take the simplest case for which it can only leak to
+the nearest neighbors—to get to the next-nearest neighbor, it has to
+go in two steps. We’ll take that the amplitudes for the electron jump
+from one atom to the next is [eq] (per unit time).
+
+For the moment we would like to write the amplitude [eq]
+to be on the [eq]th atom as [eq]. Then Eq. ( 13.1 ) will
+be written
+\begin{equation}
+\label{Eq:III:13:2}
+\ket{\phi}=\sum_n\ket{n}C_n.
+\end{equation}
+
+If we knew each of the amplitudes [eq] at a given moment, we could
+take their absolute squares and get the probability that you would
+find the electron if you looked at atom [eq] at that time.
+
+What will the situation be at some later time? By analogy with the
+two-state systems we have studied, we would propose that the
+Hamiltonian equations for this system should be made up of equations
+like this:
+\begin{equation}
+\label{Eq:III:13:3}
+i\hbar\,\ddt{C_n(t)}{t}=E_0C_n(t)-AC_{n+1}(t)-AC_{n-1}(t).
+\end{equation}
+
+The first coefficient on the right, [eq], is, physically, the energy
+the electron would have if it couldn’t leak away from one of the
+atoms. (It doesn’t matter what we call [eq]; as we have seen many
+times, it represents really nothing but our choice of the zero of
+energy.) The next term represents the amplitude per unit time that
+the electron is leaking into the [eq]th pit from the [eq]st pit; and
+the last term is the amplitude for leakage from the [eq]st pit. As
+usual, we’ll assume that [eq] is a constant (independent of [eq]).
+
+For a full description of the behavior of any state [eq], we
+would have one equation like ( 13.3 ) for every one of the
+amplitudes [eq]. Since we want to consider a crystal with a very
+large number of atoms, we’ll assume that there are an indefinitely
+large number of states—that the atoms go on forever in both
+directions. (To do the finite case, we will have to pay special
+attention to what happens at the ends.) If the number [eq] of our base
+states is indefinitely large, then also our full Hamiltonian equations
+are infinite in number! We’ll write down just a sample:
+\begin{equation}
+\begin{aligned}
+\vdots\qquad&\qquad\qquad\qquad\qquad\:\:\vdots\\
+i\hbar\,\ddt{C_{n-1}}{t}&=
+E_0C_{n-1}-AC_{n-2}-AC_n,\\[1ex]
+i\hbar\,\ddt{C_n}{t}&=
+E_0C_n-AC_{n-1}-AC_{n+1},\\[1ex]
+i\hbar\,\ddt{C_{n+1}}{t}&=
+E_0C_{n+1}-AC_n-AC_{n+2},\\[1ex]
+\vdots\qquad&\qquad\qquad\qquad\qquad\:\:\vdots
+\end{aligned}
+\label{Eq:III:13:4}
+\end{equation}
+
+We could study many things about an electron in a lattice, but first
+let’s try to find the states of definite energy. As we have seen in
+earlier chapters this means that we have to find a situation in which
+the amplitudes all change at the same frequency if they change with
+time at all. We look for solutions of the form
+\begin{equation}
+\label{Eq:III:13:5}
+C_n=a_ne^{-iEt/\hbar}.
+\end{equation}
+
+The complex numbers [eq] tell us about the non-time-varying part of
+the amplitude to find the electron at the [eq]th atom. If we put this
+trial solution into the equations of ( 13.4 ) to test them
+out, we get the result
+\begin{equation}
+\label{Eq:III:13:6}
+Ea_n=E_0a_n-Aa_{n+1}-Aa_{n-1}.
+\end{equation}
+
+We have an infinite number of such equations for the infinite number
+of unknowns [eq]—which is rather petrifying.
+
+All we have to do is take the determinant … but wait!
+Determinants are fine when there are [eq], [eq], or [eq] equations. But
+if there are a large number—or an infinite number—of equations,
+the determinants are not very convenient. We’d better just try to
+solve the equations directly. First, let’s label the atoms by their
+ positions ; we’ll say that the atom [eq] is at [eq] and the
+atom [eq] is at [eq]. If the atomic spacing is [eq]—as in
+Fig.  13–1 —we will have that [eq]. By choosing
+our origin at atom zero, we can even have it that [eq]. We can
+rewrite Eq. ( 13.5 ) as
+\begin{equation}
+\label{Eq:III:13:7}
+C_n=a(x_n)e^{-iEt/\hbar},
+\end{equation}
+
+and Eq. ( 13.6 ) would become
+\begin{equation}
+\label{Eq:III:13:8}
+Ea(x_n)=E_0a(x_n)-Aa(x_{n+1})-Aa(x_{n-1}).
+\end{equation}
+
+Or, using the fact that [eq], we could also write
+\begin{equation}
+\label{Eq:III:13:9}
+Ea(x_n)=E_0a(x_n)\!-\!Aa(x_n\!+b)\!-\!Aa(x_n\!-b).
+\end{equation}
+
+This equation is somewhat similar to a differential equation. It tells
+us that a quantity, [eq], at one point, ([eq]), is related to the
+same physical quantity at some neighboring points, ([eq]). (A
+differential equation relates the value of a function at a point to
+the values at infinitesimally nearby points.) Perhaps the methods we
+usually use for solving differential equations will also work here;
+let’s try.
+
+Linear differential equations with constant coefficients can always be
+solved in terms of exponential functions. We can try the same thing
+here; let’s take as a trial solution
+\begin{equation}
+\label{Eq:III:13:10}
+a(x_n)=e^{ikx_n}.
+\end{equation}
+
+Then Eq. ( 13.9 ) becomes
+\begin{equation}
+\label{Eq:III:13:11}
+Ee^{ikx_n}=E_0e^{ikx_n}-Ae^{ik(x_n+b)}-Ae^{ik(x_n-b)}.
+\end{equation}
+
+We can now divide out the common factor [eq]; we get
+\begin{equation}
+\label{Eq:III:13:12}
+E=E_0-Ae^{ikb}-Ae^{-ikb}.
+\end{equation}
+
+The last two terms are just equal to [eq], so
+\begin{equation}
+\label{Eq:III:13:13}
+E=E_0-2A\cos kb.
+\end{equation}
+
+We have found that for any choice at all for the constant [eq]
+there is a solution whose energy is given by this equation. There are
+various possible energies depending on [eq], and each [eq] corresponds
+to a different solution. There are an infinite number of
+solutions—which is not surprising, since we started out with an
+infinite number of base states.
+
+Let’s see what these solutions mean. For each [eq], the [eq]’s are given
+by Eq. ( 13.10 ). The amplitudes [eq] are then given by
+\begin{equation}
+\label{Eq:III:13:14}
+C_n=e^{ikx_n}e^{-(i/\hbar)Et},
+\end{equation}
+
+where you should remember that the energy [eq] also depends on [eq] as
+given in Eq. ( 13.13 ). The space
+dependence of the
+amplitudes is [eq]. The amplitudes oscillate as we go along from
+one atom to the next.
+
+We mean that, in space, the amplitude goes as a complex 
+oscillation—the magnitude is the same at every atom, but the
+phase at a given time advances by the amount [eq] from one atom to
+the next. We can visualize what is going on by plotting a vertical
+line to show just the real part at each atom as we have done in
+Fig.  13–2 . The envelope of these vertical lines (as shown
+by the broken-line curve) is, of course, a cosine curve. The imaginary
+part of [eq] is also an oscillating function, but is shifted [eq]
+in phase so that the absolute square (which is the sum of the squares of
+the real and imaginary parts) is the same for all the [eq]’s.
+
+Thus if we pick a [eq], we get a stationary state of a particular
+energy [eq]. And for any such state, the electron is equally likely to
+be found at every atom—there is no preference for one atom or the
+other. Only the phase is different for different atoms. Also, as time
+goes on the phases vary. From Eq. ( 13.14 ) the real and
+imaginary parts propagate along the crystal as waves—namely as the
+real or imaginary parts of
+\begin{equation}
+\label{Eq:III:13:15}
+e^{i[kx_n-(E/\hbar)t]}.
+\end{equation}
+
+The wave can travel toward positive or negative [eq] depending on the
+sign we have picked for [eq].
+
+Notice that we have been assuming that the number [eq] that we put in
+our trial solution, Eq. ( 13.10 ), was a real number. We
+can see now why that must be so if we have an infinite line of
+atoms. Suppose that [eq] were an imaginary number, say [eq]. Then the
+amplitudes [eq] would go as [eq], which means that the
+amplitude would get larger and larger as we go toward large negative [eq]’s—or
+toward large positive [eq]’s if [eq] is a negative number. This kind of
+solution would be O.K. if we were dealing with a line of atoms that
+ended, but cannot be a physical solution for an infinite chain of
+atoms. It would give infinite amplitudes—and, therefore, infinite
+probabilities—which can’t represent a real situation. Later on we
+will see an example in which an imaginary [eq] does make sense.
+
+The relation between the energy [eq] and the wave number [eq] as given
+in Eq. ( 13.13 ) is plotted in Fig.  13–3 . As you can
+see from the figure, the energy can go from [eq] at [eq] to
+[eq] at [eq]. The graph is plotted for positive [eq]; if
+[eq] were negative, the curve would simply be inverted, but the range
+would be the same. The significant result is that any energy is
+possible within a certain range or “band” of energies, but no
+others. According to our assumptions, if an electron in a crystal is
+in a stationary state, it can have no energy other than values in this
+band.
+
+According to Eq. ( 13.13 ), the smallest [eq]’s correspond
+to low-energy states—[eq]. As [eq] increases in
+magnitude (toward either positive or negative values) the energy at
+first increases, but then reaches a maximum at [eq], as shown
+in Fig.  13–3 . For [eq]’s larger than [eq], the energy would
+start
+to decrease again. But we do not really need to consider such values
+of [eq], because they do not give new states—they just repeat states
+we already have for smaller [eq]. We can see that in the following
+way. Consider the lowest energy state for which [eq]. The
+coefficient [eq] is the same for all [eq]. Now we would get the same energy
+for [eq]. But then, using Eq. ( 13.10 ), we have
+that
+\begin{equation*}
+a(x_n)=e^{i(2\pi/b)x_n}.
+\end{equation*}
+
+However, taking [eq] to be at the origin, we can set [eq]; then
+[eq] becomes
+\begin{equation*}
+a(x_n)=e^{i2\pi n}=1.
+\end{equation*}
+
+The state described by these [eq] is physically the same state we
+got for [eq]. It does not represent a different solution.
+
+As another example, suppose that [eq] were [eq]. The real part
+of [eq] would vary as shown by curve [eq] in Fig.  13–4 .
+If [eq] were [eq], the real part of [eq] would vary as shown by
+curve [eq] in the figure. (The complete cosine curves don’t mean
+anything, of course; all that matters is their values at the
+points [eq] . The curves are just to help you see how things are
+going.) You see that both values of [eq] give the same amplitudes at all
+of the [eq]’s.
+
+The upshot is that we have all the possible solutions of our problem
+if we take only [eq]’s in a certain limited range. We’ll pick the range
+between [eq] and [eq]—the one shown in
+Fig.  13–3 . In this range, the energy of the stationary
+states increases uniformly with an increase in the magnitude of [eq].
+
+One side remark about something you can play with. Suppose that the
+electron cannot only jump to the nearest neighbor with
+amplitude [eq], but also has the possibility to jump in one direct leap to
+the next nearest neighbor with some other
+amplitude [eq]. You will find that the solution can again be written in
+the form [eq]—this type of solution is universal. You
+will also find that the stationary states with wave number [eq] have an
+energy equal to [eq]. This shows that the
+shape of the curve of [eq] against [eq] is not universal, but depends
+upon the particular assumptions of the problem. It is not always a
+cosine wave—it’s not even necessarily symmetrical about some
+horizontal line. It is true, however, that the curve always repeats
+itself outside of the interval from [eq] to [eq], so you never
+need to worry about other values of [eq].
+
+Let’s look a little more closely at what happens for small [eq]—that
+is, when the variations of the amplitudes from one [eq] to the next
+are quite slow. Suppose we choose our zero of energy by
+defining [eq]; then the minimum of the curve in Fig.  13–3 is
+at
+the zero of energy. For small enough [eq], we can write that
+\begin{equation*}
+\cos kb\approx1-k^2b^2/2,
+\end{equation*}
+
+and the energy of Eq. ( 13.13 ) becomes
+\begin{equation}
+\label{Eq:III:13:16}
+E=Ak^2b^2.
+\end{equation}
+
+We have that the energy of the state is proportional to the square of
+the wave number which describes the spatial variations of the
+amplitudes [eq].
+
+In this section we would like to discuss the behavior of states in the
+one-dimensional lattice in more detail. If the amplitude for an electron
+to be at [eq] is [eq], the probability of finding it there
+is [eq]. For the stationary states described by
+Eq. ( 13.14 ), this probability is the same for all [eq] and
+does not change with time. How can we represent a situation which we
+would describe roughly by saying an electron of a certain energy is
+localized in a certain region—so that it is more likely to be found at
+one place than at some other place? We can do that by making a
+superposition of several solutions like Eq. ( 13.14 ) with
+slightly different values of [eq]—and, therefore, slightly different
+energies. Then at [eq], at least, the amplitude [eq] will vary with
+position because of the interference between the various terms, just as
+one gets beats when there is a mixture of waves of different wavelengths
+(as we discussed in Chapter  48 , Vol. I). So we can make up
+a “wave packet” with a predominant wave
+number [eq], but with various other wave numbers
+near [eq]. 1
+
+In our superposition of stationary states, the amplitudes with
+different [eq]’s will represent states of slightly different energies, and,
+therefore, of slightly different frequencies; the interference pattern
+of the total [eq] will, therefore, also vary with time—there will be
+a pattern of “beats.” As we have seen in Chapter  48 of
+Volume I, the peaks of the beats [the place where [eq] is
+large] will move along in [eq] as time goes on; they move with the speed
+we have called the “group velocity.” We found that this group velocity
+was related to the variation of [eq] with frequency by
+\begin{equation}
+\label{Eq:III:13:17}
+v_{\text{group}}=\ddt{\omega}{k};
+\end{equation}
+the same derivation would apply equally well here. An electron state
+which is a “clump”—namely one for which the [eq] vary in space
+like the wave packet of Fig.  13–5 —will move along our
+one-dimensional “crystal” with the speed [eq] equal to [eq],
+where [eq]. Using ( 13.16 ) for [eq], we get
+that
+\begin{equation}
+\label{Eq:III:13:18}
+v=\frac{2Ab^2}{\hbar}\,k.
+\end{equation}
+In other words, the electrons move along with a speed proportional to
+the typical [eq]. Equation ( 13.16 ) then says that the
+energy of such an electron is proportional to the square of its
+velocity— it acts like a classical particle . So long as we
+look at things on a scale gross enough that we don’t see the fine
+structure, our quantum mechanical picture begins to give results like
+classical physics. In fact, if we solve Eq. ( 13.18 )
+for [eq] and substitute into ( 13.16 ), we can write
+\begin{equation}
+\label{Eq:III:13:19}
+E=\tfrac{1}{2}m_{\text{eff}}\,v^2,
+\end{equation}
+where [eq] is a constant. The extra “energy of motion”
+of the electron in a packet depends on the velocity just as for a
+classical particle. The constant [eq]—called the
+“effective mass”—is given by
+\begin{equation}
+\label{Eq:III:13:20}
+m_{\text{eff}}=\frac{\hbar^2}{2Ab^2}.
+\end{equation}
+Also notice that we can write
+\begin{equation}
+\label{Eq:III:13:21}
+m_{\text{eff}}\,v=\hbar k.
+\end{equation}
+If we choose to call [eq] the “momentum,” it is
+related to the wave number [eq] in the way we have described earlier
+for a free particle.
+
+Don’t forget that [eq] has nothing to do with the real
+mass of an electron. It may be quite different—although in commonly used metals
+and semiconductors it often happens to turn out to be the same general order of
+magnitude, about [eq] to [eq] times the free-space mass of the
+electron.
+
+We have now explained a remarkable mystery—how an electron in a
+crystal (like an extra electron put into germanium) can ride right
+through the crystal and flow perfectly freely even though it has to
+hit all the atoms. It does so by having its amplitudes going
+pip-pip-pip from one atom to the next, working its way through the
+crystal. That is how a solid can conduct electricity.
+
+Let’s look for a moment at how we could apply the same ideas to see
+what happens to an electron in three dimensions. The results turn out
+to be very similar. Suppose we have a rectangular lattice of atoms
+with lattice spacings of [eq], [eq], [eq] in the three directions. (If
+you want a cubic lattice, take the three spacings all equal.) Also
+suppose that the amplitude to leap in the [eq]-direction to a neighbor
+is [eq], to leap in the [eq]-direction is [eq], and
+to leap in the [eq]-direction is [eq]. Now how should we
+describe the base states? As in the one-dimensional case, one base
+state is that the electron is at the atom whose locations are [eq],
+[eq], [eq], where [eq] is one of the lattice points. Choosing our
+origin at one atom, these points are all at
+\begin{equation*}
+x=n_xa,\quad
+y=n_yb,\quad
+\text{and}\quad
+z=n_zc,
+\end{equation*}
+
+where [eq], [eq], [eq] are any three integers. Instead of using
+subscripts to indicate such points, we will now just use [eq], [eq],
+and [eq], understanding that they take on only their values at the lattice
+points. Thus the base state is represented by the
+symbol [eq], and the amplitude for an electron
+in some state [eq] to be in this base state
+is [eq].
+
+As before, the amplitudes [eq] may vary with time. With our
+assumptions, the Hamiltonian equations should be like this:
+ 
+\begin{align}
+i\hbar\dfrac{dC(x,y,z)}{dt}=E_0C(x,y,z)
+&-A_xC(x+a,y,z)-A_xC(x-a,y,z)\notag\\[-1pt]
+&-A_yC(x,y+b,z)-A_yC(x,y-b,z)\notag\\[4pt]
+\label{Eq:III:13:22}
+&-A_zC(x,y,z+c)-A_zC(x,y,z-c).
+\end{align}
+ 
+ 
+\begin{align}
+i\hbar\dfrac{dC(x,y,z)}{dt}&=E_0C(x,y,z)\notag\\[-.3ex]
+-&A_xC(x\!+\!a,y,z)\!-\!A_xC(x\!-\!a,y,z)\notag\\[1ex]
+-&A_yC(x,y\!+\!b,z)\!-\!A_yC(x,y\!-\!b,z)\notag\\[.9ex]
+\label{Eq:III:13:22}
+-&A_zC(x,y,z\!+\!c)\!-\!A_zC(x,y,z\!-\!c).
+\end{align}
+ 
+It looks rather long, but you can see where each term comes from.
+
+Again we can try to find a stationary state in which all the [eq]’s
+vary with time in the same way. Again the solution is an exponential:
+\begin{equation}
+\label{Eq:III:13:23}
+C(x,y,z)=e^{-iEt/\hbar}e^{i(k_xx+k_yy+k_zz)}.
+\end{equation}
+
+If you substitute this into ( 13.22 ) you see that it
+works, provided that the energy [eq] is related to [eq], [eq],
+and [eq] in the following way:
+\begin{equation}
+\label{Eq:III:13:24}
+E=E_0\!-\!2A_x\!\cos k_xa\!-\!2A_y\!\cos k_yb\!-\!2A_z\!\cos k_zc.
+\end{equation}
+
+
+The energy now depends on the three wave numbers [eq], [eq],
+[eq], which, incidentally, are the components of a three-dimensional
+vector [eq]. In fact, we can write Eq. ( 13.23 ) in
+vector notation as
+\begin{equation}
+\label{Eq:III:13:25}
+C(x,y,z)=e^{-iEt/\hbar}e^{i\FLPk\cdot\FLPr}.
+\end{equation}
+
+The amplitude varies as a complex plane wave in three
+dimensions, moving in the direction of [eq], and with the wave
+number [eq].
+
+The energy associated with these stationary states depends on the
+three components of [eq] in the complicated way given in
+Eq. ( 13.24 ). The nature of the variation of [eq]
+with [eq] depends on relative signs and magnitudes of [eq], [eq],
+and [eq]. If these three numbers are all positive, and if we are interested
+in small values of [eq], the dependence is relatively simple.
+
+Expanding the cosines as we did before to get Eq. ( 13.16 ),
+we can now get that
+\begin{equation}
+\label{Eq:III:13:26}
+E=E_{\text{min}}+A_xa^2k_x^2+A_yb^2k_y^2+A_zc^2k_z^2.
+\end{equation}
+
+For a simple cubic lattice with lattice spacing [eq] we expect that
+[eq] and [eq] and [eq] would be equal—say all are just [eq]—and
+we would have just
+\begin{equation}
+E=E_{\text{min}}+Aa^2(k_x^2+k_y^2+k_z^2),\notag
+\end{equation}
+or
+\begin{equation}
+\label{Eq:III:13:27}
+E=E_{\text{min}}+Aa^2k^2.
+\end{equation}
+This is just like Eq. ( 13.16 ). Following the arguments
+used there, we would conclude that an electron packet in three 
+dimensions (made up by superposing many states with nearly equal
+energies) also moves like a classical particle with some effective
+mass.
+
+In a crystal with a lower symmetry than cubic (or even in a cubic
+crystal in which the state of the electron at each atom is not
+symmetrical) the three coefficients [eq], [eq], and [eq] are
+different. Then the “effective mass” of an electron localized in a
+small region depends on its direction of motion . It could, for
+instance, have a different inertia for motion in the [eq]-direction
+than for motion in the [eq]-direction. (The details of such a situation
+are sometimes described in terms of an “effective mass tensor.”)
+
+According to Eq. ( 13.24 ) the electron states we have
+been talking about can have energies only in a certain “band” of
+energies which covers the energy range from the minimum energy
+\begin{equation*}
+E_0-2(A_x+A_y+A_z)\hphantom{.}
+\end{equation*}
+
+to the maximum energy
+\begin{equation*}
+E_0+2(A_x+A_y+A_z).
+\end{equation*}
+Other energies are possible, but they belong to a different class of
+electron states. For the states we have described, we imagined base
+states in which an electron is placed on an atom of the crystal in
+some particular state, say the lowest energy state.
+
+If you have an atom in empty space, and add an electron to make an ion,
+the ion can be formed in many ways. The electron can go on in such a way
+as to make the state of lowest energy, or it can go on to make one or
+another of many possible “excited states” of the ion each with a definite
+energy above the lowest energy. The same thing can happen in a crystal.
+Let’s suppose that the energy [eq] we picked above corresponds to base
+states which are ions of the lowest possible energy. We could also
+imagine a new set of base states in which the electron sits near the
+[eq]th atom in a different way—in one of the excited states of the
+ion—so that the energy [eq] is now quite a bit higher. As before
+there is some amplitude [eq] (different from before) that the electron
+will jump from its excited state at one atom to the same excited state
+at a neighboring atom. The whole analysis goes as before; we find a band
+of possible energies centered at a higher energy. There can, in general,
+be many such bands each corresponding to a different level of
+excitation.
+
+There are also other possibilities. There may be some amplitude that
+the electron jumps from an excited condition at one atom to an
+unexcited condition at the next atom. (This is called an interaction
+between bands.) The mathematical theory gets more and more complicated
+as you take into account more and more bands and add more and more
+coefficients for leakage between the possible states. No new ideas are
+involved, however; the equations are set up much as we have done in
+our simple example.
+
+We should remark also that there is not much more to be said about the
+various coefficients, such as the amplitude [eq], which appear in the
+theory. Generally they are very hard to calculate, so in practical
+cases very little is known theoretically about these parameters and
+for any particular real situation we can only take values determined
+experimentally.
+
+There are other situations where the physics and mathematics are
+almost exactly like what we have found for an electron moving in a
+crystal, but in which the “object” that moves is quite
+different. For instance, suppose that our original crystal—or rather
+linear lattice—was a line of neutral atoms, each with a loosely
+bound outer electron. Then imagine that we were to remove one
+electron. Which atom has lost its electron? Let [eq] now represent
+the amplitude that the electron is missing from the atom
+at [eq]. There will, in general, be some amplitude [eq] that the
+electron at a neighboring atom—say the [eq]st atom—will jump to
+the [eq]th leaving the [eq]st atom without its electron. This is the
+same as saying that there is an amplitude [eq] for the “missing
+electron” to jump from the [eq]th atom to the [eq]st atom. You can
+see that the equations will be exactly the same—of course, the value
+of [eq] need not be the same as we had before. Again we will get the
+same formulas for the energy levels, for the “waves” of probability
+which move through the crystal with the group velocity of
+Eq. ( 13.18 ), for the effective mass, and so on. Only now
+the waves describe the behavior of the missing electron —or
+“hole” as it is called. So a “hole” acts just like a particle with a
+certain mass [eq]. You can see that this particle will
+appear to have a positive charge. We’ll have some more to say about such
+holes in the next chapter.
+
+As another example, we can think of a line of identical neutral 
+atoms one of which has been put into an excited state—that is, with
+more than its normal ground state energy. Let [eq] be the amplitude
+that the [eq]th atom has the excitation. It can interact with a
+neighboring atom by handing over to it the extra energy and returning
+to the ground state. Call the amplitude for this
+process [eq]. You can see that it’s the same mathematics all over
+again. Now the object which moves is called an
+ exciton . It behaves like a neutral “particle”
+moving through the crystal, carrying the excitation energy. Such motion
+may be involved in certain biological processes such as
+vision, or photosynthesis. It has been guessed that the
+absorption of light in the retina produces an “exciton”
+which moves through some periodic structure (such as the layers in the
+rods we described in
+Chapter  36 , Vol. I; see Fig.  36–5 ) to be
+accumulated at some special station where the energy is used to induce a
+chemical reaction.
+
+We want now to consider the case of a single electron in a crystal
+which is not perfect. Our earlier analysis says that perfect crystals
+have perfect conductivity—that electrons can go slipping through the
+crystal, as in a vacuum, without friction. One of the most important
+things that can stop an electron from going on forever is an
+imperfection or irregularity in the crystal. As an example, suppose
+that somewhere in the crystal there is a missing atom; or suppose that
+someone put one wrong atom at one of the atomic sites so that things
+there are different than at the other atomic sites. Say the
+energy [eq] or the amplitude [eq] could be different. How would we describe
+what happens then?
+
+To be specific, we will return to the one-dimensional case and we will
+assume that atom number “zero” is an “impurity” atom and has a
+different value of [eq] than any of the other atoms. Let’s call this
+energy [eq]. What happens? When an electron arrives at atom
+“zero” there is some probability that the electron is scattered
+backwards. If a wave packet is moving along and it reaches a place
+where things are a little bit different, some of it will continue
+onward and some of it will bounce back. It’s quite difficult to
+analyze such a situation using a wave packet, because everything
+varies in time. It is much easier to work with steady-state
+solutions. So we will work with stationary states, which we will find
+can be made up of continuous waves which have transmitted and
+reflected parts. In three dimensions we would call the reflected part
+the scattered wave, since it would spread out in various directions.
+
+We start out with a set of equations which are just like the ones in
+Eq. ( 13.6 ) except that the equation for [eq] is
+different from all the rest. The five equations for [eq], [eq], [eq],
+[eq], and [eq] look like this:
+\begin{equation}
+\begin{aligned}
+\vdots\quad&\qquad\qquad\qquad\quad\vdots\\
+Ea_{-2}&=E_0a_{-2}-Aa_{-1}-Aa_{-3},\\[2pt]
+Ea_{-1}&=E_0a_{-1}-Aa_0-Aa_{-2},\\[2pt]
+Ea_0&=(E_0+F)a_0-Aa_1-Aa_{-1},\\[2pt]
+Ea_1&=E_0a_1-Aa_2-Aa_0,\\[2pt]
+Ea_2&=E_0a_2-Aa_3-Aa_1,\\
+\vdots\quad&\qquad\qquad\qquad\quad\vdots
+\end{aligned}
+\label{Eq:III:13:28}
+\end{equation}
+
+There are, of course, all the other equations for [eq] is greater
+than 2. They will look just like Eq. ( 13.6 ).
+
+For the general case, we really ought to use a different [eq] for the
+amplitude that the electron jumps to or from atom “zero,” but the
+main features of what goes on will come out of a simplified example in
+which all the [eq]’s are equal.
+
+Equation ( 13.10 ) would still work as a solution for all
+of the equations except the one for atom “zero”—it isn’t right for
+that one equation. We need a different solution which we can cook up
+in the following way. Equation ( 13.10 ) represents a wave
+going in the positive [eq]-direction. A wave going in the negative
+[eq]-direction would have been an equally good solution. It would be
+written
+\begin{equation*}
+a(x_n)=e^{-ikx_n}.
+\end{equation*}
+
+The most general solution we could have taken for
+Eq. ( 13.6 ) would be a combination of a forward and a
+backward wave, namely
+\begin{equation}
+\label{Eq:III:13:29}
+a_n=\alpha e^{ikx_n}+\beta e^{-ikx_n}.
+\end{equation}
+
+This solution represents a complex wave of amplitude [eq] moving
+in the [eq]-direction and a wave of amplitude [eq] moving in the
+[eq]-direction.
+
+Now take a look at the set of equations for our new problem—the ones
+in ( 13.28 ) together with those for all the other
+atoms. The equations involving [eq]’s with [eq] are all
+satisfied by Eq. ( 13.29 ), with the condition that [eq]
+is related to [eq] and the lattice spacing [eq] by
+\begin{equation}
+\label{Eq:III:13:30}
+E=E_0-2A\cos kb.
+\end{equation}
+
+The physical meaning is an “incident” wave of amplitude [eq]
+approaching atom “zero” (the “scatterer”) from the left, and a
+“scattered” or “reflected” wave of amplitude [eq] going back
+toward the left. We do not lose any generality if we set the
+amplitude [eq] of the incident wave equal to [eq]. Then the
+amplitude [eq] is, in general, a complex number.
+
+We can say all the same things about the solutions of [eq]
+for [eq]. The coefficients could be different, so we would have for
+them
+\begin{equation}
+\label{Eq:III:13:31}
+a_n=\gamma e^{ikx_n}+\delta e^{-ikx_n},\quad
+\text{for}\quad
+n\geq1.
+\end{equation}
+
+Here, [eq] is the amplitude of a wave going to the right and
+[eq] a wave coming from the right. We want to consider the
+ physical situation in which a wave is originally started only
+from the left, and there is only a “transmitted” wave that comes out
+beyond the scatterer—or impurity atom. We will try for a solution in
+which [eq]. We can, certainly, satisfy all of the equations for
+the [eq] except for the middle three in Eq. ( 13.28 ) by
+the following trial solutions.
+\begin{align}
+a_n\:(\text{for [eq]}) &=e^{ikx_n}+\beta e^{-ikx_n},\notag\\[1ex]
+\label{Eq:III:13:32}
+a_n\:(\text{for [eq]}) &=\gamma e^{ikx_n}.
+\end{align}
+The situation we are talking about is illustrated in Fig.  13–6 .
+
+By using the formulas in Eq. ( 13.32 ) for [eq]
+and [eq], the three middle equations of Eq. ( 13.28 )
+will allow us to solve for [eq] and also for the two coefficients
+[eq] and [eq]. So we have found a complete solution.
+Setting [eq], we have to solve the three equations
+ 
+\begin{equation}
+\begin{gathered}
+(E-E_0)\{e^{ik(-b)}+\beta e^{-ik(-b)}\}=
+-A\{a_0+e^{ik(-2b)}+\beta e^{-ik(-2b)}\},\\[1ex]
+(E-E_0-F)a_0=
+-A\{\gamma e^{ikb}+e^{ik(-b)}+\beta e^{-ik(-b)}\},\\[1ex]
+(E-E_0)\gamma e^{ikb}=
+-A\{\gamma e^{ik(2b)}+a_0\}.
+\end{gathered}
+\label{Eq:III:13:33}
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+(E\!-\!E_0)\{e^{ik(-b)}\!&+\beta e^{-ik(-b)}\}=\\
+&-A\{a_0\!+e^{ik(-2b)}\!+\beta e^{-ik(-2b)}\},\\[1ex]
+(E\!-\!E_0\!-\!F)a_0=\!&-\!A\{\gamma e^{ikb}\!+e^{ik(-b)}\!+\beta e^{-ik(-b)}\},\\[1ex]
+(E\!-\!E_0)\gamma e^{ikb}=\!&-\!A\{\gamma e^{ik(2b)}\!+a_0\}.
+\end{aligned}
+\label{Eq:III:13:33}
+\end{equation}
+
+Remember that [eq] is given in terms of [eq] by Eq. ( 13.30 ).
+If you substitute this value for [eq] into the equations, and remember
+that [eq], you get from the first
+equation that
+\begin{equation}
+\label{Eq:III:13:34}
+a_0=1+\beta,
+\end{equation}
+
+and from the third equation that
+\begin{equation}
+\label{Eq:III:13:35}
+a_0=\gamma.
+\end{equation}
+
+These are consistent only if
+\begin{equation}
+\label{Eq:III:13:36}
+\gamma=1+\beta.
+\end{equation}
+This equation says that the transmitted wave ([eq]) is just the
+original incident wave ([eq]) with an added wave ([eq]) equal to the
+reflected wave. This is not always true, but happens to be so for a
+scattering at one atom only. If there were a clump of impurity atoms,
+the amount added to the forward wave would not necessarily be the same
+as the reflected wave.
+
+We can get the amplitude [eq] of the reflected wave from the middle
+equation of Eq. ( 13.33 ); we find that
+\begin{equation}
+\label{Eq:III:13:37}
+\beta=\frac{-F}{F-2iA\sin kb}.
+\end{equation}
+
+We have the complete solution for the lattice with one unusual atom.
+
+You may be wondering how the transmitted wave can be “more” than the
+incident wave as it appears in Eq. ( 13.34 ). Remember,
+though, that [eq] and [eq] are complex numbers and that the
+number of particles (or rather, the probability of finding a particle)
+in a wave is proportional to the absolute square of the amplitude. In
+fact, there will be “conservation of electrons” only if
+\begin{equation}
+\label{Eq:III:13:38}
+\abs{\beta}^2+\abs{\gamma}^2=1.
+\end{equation}
+
+You can show that this is true for our solution.
+
+There is another interesting situation that can arise if [eq] is a
+negative number. If the energy of the electron is lower at the
+impurity atom (at [eq]) than it is anywhere else, then the electron
+can get caught on this atom. That is, if [eq] is below the bottom
+of the band at [eq], then the electron can get “trapped” in a
+state with [eq]. Such a solution cannot come out of what we have
+done so far. We can get this solution, however, if we permit the trial
+solution we took in Eq. ( 13.10 ) to have an imaginary
+number for [eq]. Let’s set [eq]. Again, we can have
+different solutions for [eq] and for [eq]. A possible solution
+for [eq] might be
+\begin{equation}
+\label{Eq:III:13:39}
+a_n\:(\text{for [eq]})=ce^{+\kappa x_n}.
+\end{equation}
+
+We have to take a plus sign in the exponent; otherwise the amplitude
+would get indefinitely large for large negative values of [eq].
+Similarly, a possible solution for [eq] would be
+\begin{equation}
+\label{Eq:III:13:40}
+a_n\:(\text{for [eq]})=c'e^{-\kappa x_n}.
+\end{equation}
+
+If we put these trial solutions into Eq. ( 13.28 ) all
+but the middle three are satisfied provided that
+\begin{equation}
+\label{Eq:III:13:41}
+E=E_0-A(e^{\kappa b}+e^{-\kappa b}).
+\end{equation}
+
+Since the sum of the two exponential terms is always greater than [eq],
+this energy is below the regular band, and is what we are looking
+for. The remaining three equations in Eq. ( 13.28 ) are
+satisfied if [eq] and if [eq] is chosen so that
+\begin{equation}
+\label{Eq:III:13:42}
+A(e^{\kappa b}-e^{-\kappa b})=-F.
+\end{equation}
+
+Combining this equation with Eq. ( 13.41 ) we can find
+the energy of the trapped electron; we get
+\begin{equation}
+\label{Eq:III:13:43}
+E=E_0-\sqrt{4A^2+F^2}.
+\end{equation}
+
+The trapped electron has a unique energy—located somewhat below the
+conduction band.
+
+Notice that the amplitudes we have in Eq. ( 13.39 )
+and ( 13.40 ) do not say that the trapped electron
+sits right on the impurity atom. The probability of finding the electron
+at nearby atoms is given by the square of these amplitudes. For one
+particular choice of the parameters it might vary as shown in the bar
+graph of Fig.  13–7 . The probability is greatest for
+finding the electron on the impurity atom. For nearby atoms the
+probability drops off exponentially with the distance from the impurity
+atom. This is another example of “barrier penetration.” From the
+point-of-view of classical physics the electron doesn’t have enough
+energy to get away from the energy “hole” at the trapping center. But
+quantum mechanically it can leak out a little way.
+
+Finally, our example can be used to illustrate a point which is very
+useful these days in the physics of high-energy particles. It has to
+do with a relationship between scattering amplitudes and bound
+states. Suppose we have discovered—through experiment and
+theoretical analysis—the way that pions scatter from protons. Then a
+new particle is discovered and someone wonders whether maybe it is
+just a combination of a pion and a proton held together in some bound
+state (in an analogy to the way an electron is bound to a proton to
+make a hydrogen atom). By a bound state we mean a combination which
+has a lower energy than the two free-particles.
+
+There is a general theory which says that a bound state will exist at
+that energy at which the scattering amplitude becomes infinite if
+extrapolated algebraically (the mathematical term is “analytically
+continued”) to energy regions outside of the permitted band.
+
+The physical reason for this is as follows. A bound state is a
+situation in which there are only waves tied on to a point and there’s
+no wave coming in to get it started, it just exists there by
+itself. The relative proportion between the so-called “scattered” or
+created wave and the wave being “sent in” is infinite. We can test
+this idea in our example. Let’s write our expression
+Eq. ( 13.37 ) for the scattered amplitude directly in terms
+of the energy [eq] of the particle being scattered (instead of in terms
+of [eq]). Since Equation ( 13.30 ) can be rewritten as
+\begin{equation*}
+2A\sin kb=\sqrt{4A^2-(E-E_0)^2},
+\end{equation*}
+
+the scattered amplitude is
+\begin{equation}
+\label{Eq:III:13:44}
+\beta=\frac{-F}{F-i\sqrt{4A^2-(E-E_0)^2}}.
+\end{equation}
+
+From our derivation, this equation should be used only for real states—those
+with energies in the energy band, [eq]. But suppose we forget that fact
+and extend the formula into the “unphysical” energy regions
+where [eq]. For these unphysical regions we can write 2 
+\begin{equation*}
+\sqrt{4A^2-(E-E_0)^2}=i\sqrt{(E-E_0)^2-4A^2}.
+\end{equation*}
+
+Then the “scattering amplitude,” whatever it may mean, is
+\begin{equation}
+\label{Eq:III:13:45}
+\beta=\frac{-F}{F+\sqrt{(E-E_0)^2-4A^2}}.
+\end{equation}
+
+Now we ask: Is there any energy [eq] for which [eq] becomes infinite
+(i.e., for which the expression for [eq] has a “pole”)? Yes, so
+long as [eq] is negative, the denominator of Eq. ( 13.45 )
+will be zero when
+\begin{equation*}
+(E-E_0)^2-4A^2=F^2,
+\end{equation*}
+
+or when
+\begin{equation*}
+E=E_0\pm\sqrt{4A^2+F^2}.
+\end{equation*}
+The minus sign gives just the energy we found in Eq. ( 13.43 )
+for the trapped energy.
+
+What about the plus sign? This gives an energy above the
+allowed energy band. And indeed there is another bound state there
+which we missed when we solved the equations of
+Eq. ( 13.28 ). We leave it as a puzzle for you to find the
+energy and amplitudes [eq] for this bound state.
+
+The relation between scattering and bound states provides one of the
+most useful clues in the current search for an understanding of the
+experimental observations about the new strange particles.

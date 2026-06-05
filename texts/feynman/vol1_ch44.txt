@@ -1,0 +1,889 @@
+The Feynman Lectures on Physics Vol. I Ch. 44: The Laws of Thermodynamics
+=========================================================================
+
+Sections: 44–1 Heat engines; the first law | 44–2 The second law | 44–3 Reversible engines | 44–4 The efficiency of an ideal engine | 44–5 The thermodynamic temperature | 44–6 Entropy
+
+
+
+So far we have been discussing the properties of matter from the
+atomic point of view, trying to understand roughly what will happen if
+we suppose that things are made of atoms obeying certain
+laws. However, there are a number of relationships among the
+properties of substances which can be worked out without consideration
+of the detailed structure of the materials. The determination of the
+relationships among the various properties of materials, without
+knowing their internal structure, is the subject of
+ thermodynamics . Historically, thermodynamics was developed
+before an understanding of the internal structure of matter was
+achieved.
+
+To give an example: we know from the kinetic theory that the pressure
+of a gas is caused by molecular bombardment, and we know that if we
+heat a gas, so that the bombardment increases, the pressure must
+increase. Conversely, if the piston in a container of the gas is moved
+inward against the force of bombardment, the energy of the molecules
+bombarding the piston will increase, and consequently the temperature
+will increase. So, on the one hand, if we increase the temperature at
+a given volume, we increase the pressure. On the other hand, if we
+compress the gas, we will find that the temperature will rise. From
+the kinetic theory, one can derive a quantitative relationship between
+these two effects, but instinctively one might guess that they are
+related in some necessary fashion which is independent of the details
+of the collisions.
+
+Let us consider another example. Many people are familiar with this
+interesting property of rubber: If we take a rubber band and pull it,
+it gets warm. If one puts it between his lips, for example, and pulls
+it out, he can feel a distinct warming, and this warming is reversible
+in the sense that if he relaxes the rubber band quickly while it is
+between his lips, it is distinctly cooled. That means that when we
+stretch a rubber band it heats, and when we release the tension of the
+band it cools. Now our instincts might suggest that if we heated a
+band, it might pull: that the fact that pulling a band heats it might
+imply that heating a band should cause it to contract. And, in fact,
+if we apply a gas flame to a rubber band holding a weight, we will see
+that the band contracts abruptly (Fig.  44–1 ). So it is
+true that when we heat a rubber band it pulls, and this fact is
+definitely related to the fact that when we release the tension of it,
+it cools.
+
+The internal machinery of rubber that causes these effects is quite
+complicated. We will describe it from a molecular point of view to
+some extent, although our main purpose in this chapter is to
+understand the relationship of these effects independently of the
+molecular model. Nevertheless, we can show from the molecular model
+that the effects are closely related. One way to understand the
+behavior of rubber is to recognize that this substance consists of an
+enormous tangle of long chains of molecules, a kind of “molecular
+spaghetti,” with one extra complication: between the chains there are
+cross-links—like spaghetti that is sometimes welded together where
+it crosses another piece of spaghetti—a grand tangle. When we pull
+out such a tangle, some of the chains tend to line up along the
+direction of the pull. At the same time, the chains are in thermal
+motion, so they hit each other continually. It follows that such a
+chain, if stretched, would not by itself remain stretched, because it
+would be hit from the sides by the other chains and other molecules,
+and would tend to kink up again. So the real reason why a rubber band
+tends to contract is this: when one pulls it out, the chains are
+lengthwise, and the thermal agitations of the molecules on the sides
+of the chains tend to kink the chains up, and make them shorten. One
+can then appreciate that if the chains are held stretched and the
+temperature is increased, so that the vigor of the bombardment on the
+sides of the chains is also increased, the chains tend to pull in, and
+they are able to pull a stronger weight when heated. If, after being
+stretched for a time, a rubber band is allowed to relax, each chain
+becomes soft, and the molecules striking it lose energy as they pound
+into the relaxing chain. So the temperature falls.
+
+We have seen how these two processes, contraction when heated and
+cooling during relaxation, can be related by the kinetic theory, but it
+would be a tremendous challenge to determine from the theory the precise
+relationship between the two. We would have to know how many collisions
+there were each second and what the chains look like, and we would have
+to take account of all kinds of other complications. The detailed
+mechanism is so complex that we cannot, by kinetic theory, really
+determine exactly what happens; still, a definite relation between the
+two effects we observe can be worked out without knowing anything about
+the internal machinery!
+
+The whole subject of thermodynamics depends essentially upon the
+following kind of consideration: because a rubber band is “stronger”
+at higher temperatures than it is at lower temperatures, it ought to
+be possible to lift weights, and to move them around, and thus to do
+work with heat. In fact, we have already seen experimentally that a
+heated rubber band can lift a weight. The study of the way that one
+does work with heat is the beginning of the science of
+thermodynamics. Can we make an engine which uses the heating effect on
+a rubber band to do work? One can make a silly looking engine that
+does just this. It consists of a bicycle wheel in which all the spokes
+are rubber bands (Fig.  44–2 ). If one heats the rubber
+bands on one side of the wheel with a pair of heat lamps, they become
+“stronger” than the rubber bands on the other side. The center of
+gravity of the wheel will be pulled to one side, away from the
+bearing, so that the wheel turns. As it turns, cool rubber bands move
+toward the heat, and the heated bands move away from the heat and
+cool, so that the wheel turns slowly so long as the heat is
+applied. The efficiency of this engine is extremely low. Four hundred
+watts of power pour into the two lamps, but it is just possible to
+lift a fly with such an engine! An interesting question, however, is
+whether we can get heat to do the work in more efficient ways.
+
+In fact, the science of thermodynamics began with an analysis, by the
+great engineer Sadi Carnot, of the problem of how to build the best and
+most efficient engine, and this constitutes one of the few famous cases
+in which engineering has contributed fundamentally to physical theory.
+Another example that comes to mind is the more recent analysis of
+information theory by Claude
+Shannon.
+These two analyses, incidentally, turn out to be closely
+related.
+
+Now the way a steam engine ordinarily operates is that heat from a
+fire boils some water, and the steam so formed expands and pushes on a
+piston which makes a wheel go around. So the steam pushes the
+piston—what then? One has to finish the job: a stupid way to
+complete the cycle would be to let the steam escape into the air, for
+then one has to keep supplying water. It is cheaper—more
+efficient—to let the steam go into another box, where it is
+condensed by cool water, and then pump the water back into the boiler,
+so that it circulates continuously. Heat is thus supplied to the
+engine and converted into work. Now would it be better to use alcohol?
+What property should a substance have so that it makes the best possible
+engine? That was the question to which Carnot addressed himself, and one
+of the by-products was the discovery of the type of relationship that we
+have just explained above.
+
+The results of thermodynamics are all contained implicitly in certain
+apparently simple statements called the laws of thermodynamics .
+At the time when Carnot lived, the first law of thermodynamics, the
+conservation of energy, was not known. Carnot’s arguments were so
+carefully drawn, however, that they are valid even though the first law
+was not known in his time! Some time afterwards,
+Clapeyron made a
+simpler derivation that could be understood more easily than Carnot’s
+very subtle reasoning. But it turned out that
+Clapeyron
+assumed, not the conservation of energy in general, but that heat 
+was conserved according to the caloric theory, which was later shown to
+be false. So it has often been said that Carnot’s logic was wrong. But
+his logic was quite correct. Only
+Clapeyron’s
+simplified version, that everybody read, was incorrect.
+
+The so-called second law of thermodynamics was thus discovered by Carnot
+before the first law! It would be interesting to give Carnot’s argument
+that did not use the first law, but we shall not do so because we want
+to learn physics, not history. We shall use the first law from the
+start, in spite of the fact that a great deal can be done without it.
+
+Let us begin by stating the first law, the conservation of energy: if
+one has a system and puts heat into it, and does work on it, then its
+energy is increased by the heat put in and the work done. We can write
+this as follows: The heat [eq] put into the system, plus the work [eq]
+done on the system, is the increase in the energy [eq] of the system;
+the latter energy is sometimes called the internal energy:
+\begin{equation}
+\label{Eq:I:44:1}
+\text{Change in [eq]} = Q + W.
+\end{equation}
+The change in [eq] can be represented as adding a little heat $\Delta
+Q[eq]\Delta W$:
+\begin{equation}
+\label{Eq:I:44:2}
+\Delta U = \Delta Q + \Delta W,
+\end{equation}
+which is a differential form of the same law. We know that very well,
+from an earlier chapter.
+
+Now, what about the second law of thermodynamics? We know that if we
+do work against friction, say, the work lost to us is equal to the
+heat produced. If we do work in a room at temperature [eq], and we do
+the work slowly enough, the room temperature does not change much, and
+we have converted work into heat at a given temperature. What about
+the reverse possibility? Is it possible to convert the heat back into
+work at a given temperature? The second law of thermodynamics asserts
+that it is not. It would be very convenient to be able to convert heat
+into work merely by reversing a process like friction. If we consider
+only the conservation of energy, we might think that heat energy, such
+as that in the vibrational motions of molecules, might provide a goodly
+supply of useful energy. But Carnot assumed that it is impossible to
+extract the energy of heat at a single temperature. In other words, if
+the whole world were at the same temperature, one could not convert any
+of its heat energy into work: while the process of making work go into
+heat can take place at a given temperature, one cannot reverse it to get
+the work back again. Specifically, Carnot assumed that heat cannot be
+taken in at a certain temperature and converted into work with no
+other change in the system or the surroundings.
+
+That last phrase is very important. Suppose we have a can of compressed
+air at a certain temperature, and we let the air expand. It can do work;
+it can make hammers go, for example. It cools off a little in the
+expansion, but if we had a big sea, like the ocean, at a given
+temperature—a heat reservoir—we could warm it up again. So we have
+taken the heat out of the sea, and we have done work with the compressed
+air. But Carnot was not wrong, because we did not leave everything
+as it was . If we recompress the air that we let expand, we will find we
+are doing extra work, and when we are finished we will discover that we
+not only got no work out of the system at temperature [eq], but we
+actually put some in. We must talk only about situations in which the
+ net result of the whole process is to take heat away and convert
+it into work, just as the net result of the process of doing work
+against friction is to take work and convert it into heat. If we move in
+a circle, we can bring the system back precisely to its starting point,
+with the net result that we did work against friction and produced heat.
+Can we reverse the process? Turn a switch, so that everything goes
+backwards, so the friction does work against us, and cools the sea?
+According to Carnot: no! So let us suppose that this is impossible.
+
+If it were possible it would mean, among other things, that we could
+take heat out of a cold body and put it into a hot body at no cost, as
+it were. Now we know it is natural that a hot thing can warm up a cool
+thing; if we simply put a hot body and a cold one together, and change
+nothing else, our experience assures us that it is not going to happen
+that the hot one gets hotter, and the cold one gets colder! But if we
+could obtain work by extracting the heat out of the ocean, say, or from
+anything else at a single temperature, then that work could be converted
+back into heat by friction at some other temperature. For instance, the
+other arm of a working machine could be rubbing something that is
+already hot. The net result would be to take heat from a “cold” body,
+the ocean, and to put it into a hot body. Now, the hypothesis of Carnot,
+the second law of thermodynamics, is sometimes stated as follows: heat
+cannot, of itself, flow from a cold to a hot object. But, as we have
+just seen, these two statements are equivalent: first, that one cannot
+devise a process whose only result is to convert heat to work at a
+single temperature, and second, that one cannot make heat flow by itself
+from a cold to a hot place. We shall mostly use the first form.
+
+Carnot’s analysis of heat engines is quite similar to the argument that
+we gave about weight-lifting engines in our discussion of the
+conservation of energy in Chapter  4 . In fact, that argument
+was patterned after Carnot’s argument about heat engines, and so the
+present treatment will sound very much the same.
+
+Suppose we build a heat engine that has a “boiler” somewhere at a
+temperature [eq]. A certain heat [eq] is taken from the boiler, the
+steam engine does some work [eq], and it then delivers some heat [eq]
+into a “condenser” at another temperature [eq]
+(Fig.  44–3 ). Carnot did not say how much heat, because he
+did not know the first law, and he did not use the law that [eq] was
+equal to [eq] because he did not believe it. Although everybody thought
+that, according to the caloric theory, the heats [eq] and [eq] would
+have to be the same, Carnot did not say they were the same—that is
+part of the cleverness of his argument. If we do use the first law, we
+find that the heat delivered, [eq], is the heat [eq] that was put in
+minus the work [eq] that was done:
+\begin{equation}
+\label{Eq:I:44:3}
+Q_2 = Q_1 - W.
+\end{equation}
+(If we have some kind of cyclic process where water is pumped back
+into the boiler after it is condensed, we will say that we have
+heat [eq] absorbed and work [eq] done, during each cycle, for a certain
+amount of water that goes around the cycle.)
+
+Now we shall build another engine, and see if we cannot get more work
+from the same amount of heat being delivered at the temperature [eq],
+with the condenser still at the temperature [eq]. We shall use the
+same amount of heat [eq] from the boiler, and we shall try to get
+more work than we did out of the steam engine, perhaps by using
+another fluid, such as alcohol.
+
+Now we must analyze our engines. One thing is clear: we will lose
+something if the engines contain devices in which there is
+friction. The best engine will be a frictionless engine. We assume,
+then, the same idealization that we did when we studied the
+conservation of energy; that is, a perfectly frictionless engine.
+
+We must also consider the analog of frictionless motion,
+“frictionless” heat transfer. If we put a hot object at a high
+temperature against a cold object, so that the heat flows, then it is
+not possible to make that heat flow in a reverse direction by a very
+small change in the temperature of either object. But when we have a
+practically frictionless machine, if we push it with a little force
+one way, it goes that way, and if we push it with a little force the
+other way, it goes the other way. We need to find the analog of
+frictionless motion: heat transfer whose direction we can reverse with
+only a tiny change. If the difference in temperature is finite, that
+is impossible, but if one makes sure that heat flows always between
+two things at essentially the same temperature, with just an
+infinitesimal difference to make it flow in the desired direction, the
+flow is said to be reversible (Fig.  44–4 ). If we heat
+the object on the left a little, heat will flow to the right; if we
+cool it a little, heat will flow to the left. So we find that the
+ideal engine is a so-called reversible engine, in which every
+process is reversible in the sense that, by minor changes,
+infinitesimal changes, we can make the engine go in the opposite
+direction. That means that nowhere in the machine must there be any
+appreciable friction, and nowhere in the machine must there be any
+place where the heat of the reservoirs, or the flame of the boiler, is
+in direct contact with something definitely cooler or warmer.
+
+Let us now consider an idealized engine in which all the processes are
+reversible. To show that such a thing is possible in principle, we
+will give an example of an engine cycle which may or may not be
+practical, but which is at least reversible, in the sense of Carnot’s
+idea. Suppose that we have a gas in a cylinder equipped with a
+frictionless piston. The gas is not necessarily a perfect gas. The
+fluid does not even have to be a gas, but to be specific let us say we
+do have a perfect gas. Also, suppose that we have two heat pads, [eq]
+and [eq]—great big things that have definite temperatures, [eq]
+and [eq]. We will suppose in this case that [eq] is higher
+than [eq]. Let us first heat the gas and at the same time expand it, while
+it is in contact with the heat pad at [eq]. As we do this, pulling
+the piston out very slowly as the heat flows into the gas, we will
+make sure that the temperature of the gas never gets very far
+from [eq]. If we pull the piston out too fast, the temperature of the gas
+will fall too much below [eq] and then the process will not be quite
+reversible, but if we pull it out slowly enough, the temperature of
+the gas will never depart much from [eq]. On the other hand, if we
+push the piston back slowly, the temperature would be only
+infinitesimally higher than [eq], and the heat would pour back. We
+see that such an isothermal (constant-temperature)
+expansion, done
+slowly and gently enough, is a reversible process.
+
+To understand what we are doing, we shall use a plot
+(Fig.  44–6 ) of the pressure of the gas against its volume.
+As the gas expands, the pressure falls. The curve marked (1) tells us
+how the pressure and volume change if the temperature is kept fixed at
+the value [eq]. For an ideal gas this curve would be [eq].
+During an isothermal expansion the pressure falls as the volume
+increases until we stop at the point [eq]. At the same time, a certain
+heat [eq] must flow into the gas from the reservoir, for if the gas
+were expanded without being in contact with the reservoir it would cool
+off, as we already know. Having completed the isothermal expansion,
+stopping at the point [eq], let us take the cylinder away from the
+reservoir and continue the expansion. This time we permit no heat to
+enter the cylinder. Again we perform the expansion slowly, so there is
+no reason why we cannot reverse it, and we again assume there is no
+friction. The gas continues to expand and the temperature falls, since
+there is no longer any heat entering the cylinder.
+
+We let the gas expand, following the curve marked (2), until the
+temperature falls to [eq], at the point marked [eq]. This kind of
+expansion, made without adding heat, is called an adiabatic 
+expansion.
+For an ideal gas, we already know that curve (2) has the
+form [eq], where [eq] is a constant
+greater than [eq], so that the adiabatic curve has a more negative
+slope than the isothermal curve. The gas cylinder has now reached the
+temperature [eq], so that if we put it on the heat pad at
+temperature [eq] there will be no irreversible changes. Now we slowly compress
+the gas while it is in contact with the reservoir at [eq], following
+the curve marked (3) (Fig.  44–5 , Step 3). Because the
+cylinder is in contact with the reservoir, the temperature does not
+rise, but heat [eq] flows from the cylinder into the reservoir at the
+temperature [eq]. Having compressed the gas isothermally along
+curve (3) to the point [eq], we remove the cylinder from the heat pad at
+temperature [eq] and compress it still further, without letting any
+heat flow out. The temperature will rise, and the pressure will follow
+the curve marked (4). If we carry out each step properly, we can
+return to the point [eq] at temperature [eq] where we started, and
+repeat the cycle.
+
+We see that on this diagram we have carried the gas around a complete
+cycle, and during one cycle we have put [eq] in at temperature [eq],
+and have removed [eq] at temperature [eq]. Now the point is that
+this cycle is reversible, so that we could represent all the steps the
+other way around. We could have gone backwards instead of forwards: we
+could have started at point [eq], at temperature [eq], expanded along
+the curve (4), expanded further at the temperature [eq], absorbing
+heat [eq], and so on, going around the cycle backward. If we go
+around the cycle in one direction, we must do work on the gas; if we
+go in the other direction, the gas does work on us.
+
+Incidentally, it is easy to find out what the total amount of work is,
+because the work during any expansion is the pressure times the change
+in volume, [eq]. On this particular diagram, we have
+plotted [eq] vertically and [eq] horizontally. So if we call the vertical
+distance [eq] and the horizontal distance [eq], this is $\int
+y\,dx$—in other words, the area under the curve. So the area under
+each of the numbered curves is a measure of the work done by or on the
+gas in the corresponding step. It is easy to see that the net work
+done is the shaded area of the picture.
+
+Now that we have given a single example of a reversible machine, we
+shall suppose that other such engines are also possible. Let us assume
+that we have a reversible engine [eq] which takes [eq] at [eq], does
+work [eq], and delivers some heat at [eq]. Now let us assume we have
+any other engine [eq], made by man, already designed or not yet
+invented, made of rubber bands, steam, or whatever, reversible or not,
+which is designed so that it takes in the same amount of heat [eq]
+at [eq], and rejects the heat at the lower temperature [eq]
+(Fig.  44–7 ). Assume that engine [eq] does some work, [eq].
+Now we shall show that [eq] is not greater than [eq]—that no engine can
+do more work than a reversible one. Why? Suppose that, indeed, [eq]
+were bigger than [eq]. Then we could take the heat [eq] out of the
+reservoir at [eq], and with engine [eq] we could do work [eq] and
+deliver some heat to the reservoir at [eq]; we do not care how much.
+That done, we could save some of the work [eq], which is supposed to be
+greater than [eq]; we could use a part of it, [eq], and save the
+remainder, [eq], for useful work. With the work [eq] we could run
+engine [eq] backwards because it is a reversible engine . It will
+absorb some heat from the reservoir at [eq] and deliver [eq] back to
+the reservoir at [eq]. After this double cycle, the net result would be
+that we would have put everything back the way it was before, and we
+would have done some excess work, namely [eq], and all we
+would have done would be to extract energy from the reservoir at [eq]!
+We were careful to restore the heat [eq] to the reservoir at [eq]. So
+that reservoir can be small and “inside” our combined machine [eq],
+whose net effect is therefore to extract a net heat [eq] from the
+reservoir at [eq] and convert it into work. But to obtain useful work
+from a reservoir at a single temperature with no other changes is
+impossible according to Carnot’s postulate; it cannot be done. Therefore
+no engine which absorbs a given amount of heat from a higher
+temperature [eq] and delivers it at the temperature [eq] can do more work than a
+reversible engine operating under the same temperature conditions.
+
+Now suppose that engine [eq] is also reversible. Then, of course, not
+only must [eq] be not greater than [eq], but now we can reverse the
+argument and show that [eq] cannot be greater than [eq]. So, if both
+engines are reversible they must both do the same amount of work, and
+we thus come to Carnot’s brilliant conclusion: that if an engine is
+reversible, it makes no difference how it is designed, because the
+amount of work one will obtain if the engine absorbs a given amount of
+heat at temperature [eq] and delivers heat at some other
+temperature [eq] does not depend on the design of the engine . It is a
+property of the world, not a property of a particular engine.
+
+If we could find out what the law is that determines how much work we
+obtain when we absorb the heat [eq] at [eq] and deliver heat
+at [eq], this quantity would be a universal thing, independent of the
+substance. Of course if we knew the properties of a particular
+substance, we could work it out and then say that all other substances
+must give the same amount of work in a reversible engine. That is the
+key idea, the clue by which we can find the relationship between how
+much, for instance, a rubber band contracts when we heat it, and how
+much it cools when we let it contract. Imagine that we put that rubber
+band in a reversible machine, and that we make it go around a
+reversible cycle. The net result, the total amount of work done, is
+that universal function, that great function which is independent of
+substance. So we see that a substance’s properties must be limited in
+a certain way; one cannot make up anything he wants, or he would be
+able to invent a substance which he could use to produce more than the
+maximum allowable work when he carried it around a reversible
+cycle. This principle, this limitation, is the only real rule that
+comes out of the thermodynamics.
+
+Now we shall try to find the law which determines the work [eq] as a
+function of [eq], [eq], and [eq]. It is clear that [eq] is
+proportional to [eq], for if we consider two reversible engines in
+parallel, both working together and both double engines, the
+combination is also a reversible engine. If each one absorbed
+heat [eq], the two together absorb [eq] and the work done is [eq], and
+so on. So it is not unreasonable that [eq] is proportional to [eq].
+
+Now the next important step is to find this universal law. We can, and
+will, do so by studying a reversible engine with the one particular
+substance whose laws we know, a perfect gas. It is also possible to
+obtain the rule by a purely logical argument, using no particular
+substance at all. This is one of the very beautiful pieces of
+reasoning in physics and we are reluctant not to show it to you, so
+for those who would like to see it we shall discuss it in just a
+moment. But first we shall use the much less abstract and simpler
+method of direct calculation for a perfect gas.
+
+We need only obtain formulas for [eq] and [eq] (for [eq] is just $Q_1
+- Q_2$), the heats exchanged with the reservoirs during the isothermal
+expansion or contraction. For example, how much heat [eq] is absorbed
+from the reservoir at temperature [eq] during the isothermal
+expansion [marked (1) in Fig.  44–6 ] from point [eq], at
+pressure [eq], volume [eq], temperature [eq], to point [eq] with
+pressure [eq], volume [eq], and the same temperature [eq]? For a
+perfect gas each molecule has an energy that depends only on the
+temperature, and since the temperature and the number of molecules are
+the same at [eq] and at [eq], the internal energy is the
+same. There is no change in [eq]; all the work done by the gas,
+\begin{equation*}
+W = \int_a^bp\,dV,
+\end{equation*}
+during the expansion is energy [eq] taken from the reservoir. During
+the expansion, [eq], or
+\begin{equation}
+p = \frac{NkT_1}{V}\notag
+\end{equation}
+or
+\begin{equation}
+\label{Eq:I:44:4}
+Q_1 = \int_a^bp\,dV = \int_a^bNkT_1\,\frac{dV}{V}
+\end{equation}
+or
+\begin{equation}
+Q_1 = NkT_1\ln\frac{V_b}{V_a}\notag
+\end{equation}
+
+is the heat taken from the reservoir at [eq]. In the same way, for
+the compression at [eq] [curve (3) of Fig.  44–6 ] the
+heat delivered to the reservoir at [eq] is
+\begin{equation}
+\label{Eq:I:44:5}
+Q_2 = NkT_2\ln\frac{V_c}{V_d}.
+\end{equation}
+To finish our analysis we need only find a relation between [eq]
+and [eq]. This we do by noting that (2) is an adiabatic expansion
+from [eq] to [eq], during which [eq] is a constant. Since $pV =
+NkT[eq](pV)V^{\gamma - 1} = \text{const}$ or, in
+terms of [eq] and [eq], as [eq], or
+\begin{equation}
+\label{Eq:I:44:6}
+T_1V_b^{\gamma - 1} = T_2V_c^{\gamma - 1}.
+\end{equation}
+Likewise, since (4), the compression from [eq] to [eq], is also adiabatic,
+we find
+\begin{equation*}
+T_1V_a^{\gamma - 1} = T_2V_d^{\gamma - 1}.
+\tag{44.6a}
+\label{Eq:I:44:6a}
+\end{equation*}
+If we divide this equation by the previous one, we find that [eq]
+must equal [eq], so the [eq]’s in ( 44.4 )
+and ( 44.5 ) are equal, and that
+\begin{equation}
+\label{Eq:I:44:7}
+\frac{Q_1}{T_1} = \frac{Q_2}{T_2}.
+\end{equation}
+This is the relation we were seeking. Although proved for a perfect
+gas engine, we know it must be true for any reversible engine at
+all .
+
+Now we shall see how this universal law could also be obtained by
+logical argument, without knowing the properties of any specific
+substances, as follows. Suppose that we have three engines and three
+temperatures, let us say [eq], [eq], and [eq]. Let one engine
+absorb heat [eq] from the temperature [eq] and do a certain amount
+of work [eq], and let it deliver heat [eq] to the
+temperature [eq] (Fig.  44–8 ). Let another engine run backwards
+between [eq] and [eq]. Suppose that we let the second engine be of
+such a size that it will absorb the same heat [eq], and deliver the
+heat [eq]. We will have to put a certain amount of work, [eq],
+into it—negative because the engine is running backwards. When the
+first machine goes through a cycle, it absorbs heat [eq] and delivers
+[eq] at the temperature [eq]; then the second machine takes the same
+heat [eq] out of the reservoir at the temperature [eq] and delivers
+it into the reservoir at temperature [eq]. Therefore the net result
+of the two machines in tandem is to take the heat [eq] from [eq],
+and deliver [eq] at [eq]. The two machines are thus equivalent to a
+third one, which absorbs [eq] at [eq], does work [eq], and
+delivers heat [eq] at [eq], because [eq], as
+one can immediately show from the first law, as follows:
+ 
+\begin{equation}
+\label{Eq:I:44:8}
+W_{13} - W_{32} = (Q_1 - Q_3) - (Q_2 - Q_3) =
+Q_1 - Q_2 = W_{12}.
+\end{equation}
+ 
+ 
+\begin{align}
+W_{13} - W_{32} &= (Q_1 - Q_3) - (Q_2 - Q_3)\notag\\[1ex]
+\label{Eq:I:44:8}
+&= Q_1 - Q_2 = W_{12}.
+\end{align}
+ 
+We can now obtain the laws which relate the efficiencies of the
+engines, because there clearly must be some kind of relationship
+between the efficiencies of engines running between the temperatures
+[eq] and [eq], and between [eq] and [eq], and between [eq]
+and [eq].
+
+We can make the argument very clear in the following way: We have just
+seen that we can always relate the heat absorbed at [eq] to the heat
+delivered at [eq] by finding the heat delivered at some other
+temperature [eq]. Therefore we can get all the engines’ properties if
+we introduce a standard temperature, analyzing everything with that
+standard temperature. In other words, if we knew the efficiency of an
+engine running between a certain temperature [eq] and a certain
+arbitrary standard temperature, then we could work out the efficiency
+for any other difference in temperature. Because we assume we are
+using only reversible engines, we can work from the initial
+temperature down to the standard temperature and back up to the final
+temperature again. We shall define the standard temperature
+arbitrarily as one degree . We shall also adopt a special symbol
+for the heat which is delivered at this standard temperature: we shall
+call it [eq]. In other words, when a reversible engine absorbs the
+heat [eq] at temperature [eq], it will deliver, at the unit temperature,
+a heat [eq]. If one engine, absorbing heat [eq] at [eq],
+delivers the heat [eq] at one degree, and if an engine absorbing
+heat [eq] at temperature [eq] will also deliver the same heat [eq] at
+one degree, then it follows that an engine which absorbs heat [eq] at
+the temperature [eq] will deliver heat [eq] if it runs between [eq]
+and [eq] , as we have already proved by considering engines running
+between three temperatures. So all we really have to do is to find how
+much heat [eq] we need to put in at the temperature [eq] in order to
+deliver a certain amount of heat [eq] at the unit temperature. If we
+discover that, we have everything. The heat [eq], of course, is a
+function of the temperature [eq]. It is easy to see that the heat must
+increase as the temperature increases, for we know that it takes work
+to run an engine backwards and deliver heat at a higher
+temperature. It is also easy to see that the heat [eq] must be
+proportional to [eq]. So the great law is something like this: for a
+given amount of heat [eq] delivered at one degree from an engine
+running at temperature [eq] degrees, the heat [eq] absorbed must be that
+amount [eq] times some increasing function of the temperature:
+\begin{equation}
+\label{Eq:I:44:9}
+Q = Q_Sf(T).
+\end{equation}
+
+At this stage we are not going to try to find the formula for the
+above increasing function of the temperature in terms of our familiar
+mercury temperature scale, but instead we shall define
+temperature by a new scale . At one time “the temperature” was
+defined arbitrarily by dividing the expansion of water into even
+degrees of a certain size. But when one then measures temperature with
+a mercury thermometer, one finds that the degrees are no longer
+even. But now we can make a definition of temperature which is
+independent of any particular substance . We can use that function [eq],
+which does not depend on what device we use, because the
+efficiency of these reversible engines is independent of their working
+substances. Since the function we found is rising with temperature, we
+will define the function itself as the temperature, measured in
+units of the standard one-degree temperature, as follows:
+\begin{equation}
+\label{Eq:I:44:10}
+Q = ST,
+\end{equation}
+where
+\begin{equation}
+\label{Eq:I:44:11}
+Q_S = S\cdot 1^\circ.
+\end{equation}
+This means that we can tell how hot an object is by finding out how
+much heat is absorbed by a reversible engine working between the
+temperature of the object and the unit temperature
+(Fig.  44–9 ). If seven times more heat is taken out of a
+boiler than is delivered at a one-degree condenser, the temperature of
+the boiler will be called seven degrees, and so forth. So, by measuring
+how much heat is absorbed at different temperatures, we determine the
+temperature. The temperature defined in this way is called the
+ absolute thermodynamic temperature , and it is independent of the
+substance. We shall use this definition exclusively from now
+on. 1
+
+Now we see that when we have two engines, one working between [eq]
+and one degree, the other working between [eq] and one degree,
+delivering the same heat at unit temperature, then the heats absorbed
+must be related by
+\begin{equation}
+\label{Eq:I:44:12}
+\frac{Q_1}{T_1} = S = \frac{Q_2}{T_2}.
+\end{equation}
+But that means that if we have a single engine running between [eq]
+and [eq], then the result of the whole analysis, the grand finale, is
+that [eq] is to [eq] as [eq] is to [eq], if the engine absorbs
+energy [eq] at temperature [eq] and delivers heat [eq] at
+temperature [eq]. Whenever the engine is reversible, this
+relationship between the heats must follow. That is all there is to
+it: that is the center of the universe of thermodynamics.
+
+If this is all there is to thermodynamics, why is it considered such a
+difficult subject? In doing a problem involving a given mass of some
+substance, the condition of the substance at any moment can be
+described by telling what its temperature is and what its volume
+is. If we know the temperature and volume of a substance, and that the
+pressure is some function of the temperature and volume, then we know
+the internal energy. One could say, “I do not want to do it that
+way. Tell me the temperature and the pressure, and I will tell you the
+volume. I can think of the volume as a function of temperature and
+pressure, and the internal energy as a function of temperature and
+pressure, and so on.” That is why thermodynamics is hard, because
+everyone uses a different approach. If we could only sit down once and
+decide on our variables, and stick to them, it would be fairly easy.
+
+Now we start to make deductions. Just as [eq] is the center of the
+universe in mechanics, and it goes on and on and on after that, in the
+same way the principle just found is all there is to
+thermodynamics. But can one make conclusions out of it?
+
+We begin. To obtain our first conclusion, we shall combine both laws,
+the law of conservation of energy and this law which relates the heats
+[eq] and [eq], and we can easily obtain the efficiency of a
+reversible engine . From the first law, we have $W = Q_1 -
+Q_2$. According to our new principle,
+\begin{equation}
+Q_2 = \frac{T_2}{T_1}\,Q_1,\notag
+\end{equation}
+so the work becomes
+\begin{equation}
+\label{Eq:I:44:13}
+W = Q_1\biggl(1 - \frac{T_2}{T_1}\biggr) = Q_1\,
+\frac{T_1 - T_2}{T_1},
+\end{equation}
+which tells us the efficiency of the engine—how much work we get out
+of so much heat. The efficiency of an engine is proportional to the
+difference in the temperatures between which the engine runs, divided
+by the higher temperature:
+\begin{equation}
+\label{Eq:I:44:14}
+\text{Efficiency} = \frac{W}{Q_1} = \frac{T_1 - T_2}{T_1}.
+\end{equation}
+The efficiency cannot be greater than unity and the absolute
+temperature cannot be less than zero, absolute zero. So, since [eq] must be positive, the efficiency is always less
+than unity. That is our first conclusion.
+
+Equation ( 44.7 ) or ( 44.12 ) can be interpreted in
+a special way. Working always with reversible engines, a heat [eq] at
+temperature [eq] is “equivalent” to [eq] at [eq] if $Q_1/T_1 =
+Q_2/T_2$, in the sense that as one is absorbed the other is
+delivered. This suggests that if we call [eq] something, we can say:
+in a reversible process as much [eq] is absorbed as is liberated;
+there is no gain or loss of [eq]. This [eq] is called
+ entropy , and we say “there is no net change in entropy in a
+reversible cycle.” If [eq] is [eq], then the entropy
+is [eq] or, as we symbolized it, [eq]. Actually,
+[eq] is the letter usually used for entropy, and it is numerically
+equal to the heat (which we have called [eq]) delivered to
+a [eq]-reservoir (entropy is not itself a heat, it is heat divided
+by a temperature, hence it is measured in joules per degree ).
+
+Now it is interesting that besides the pressure, which is a function
+of the temperature and the volume, and the internal energy, which is a
+function of temperature and volume, we have found another quantity
+which is a function of the condition, i.e., the entropy of the
+substance. Let us try to explain how we compute it, and what we mean
+when we call it a “function of the condition.” Consider the system
+in two different conditions, much as we had in the experiment where we
+did the adiabatic and isothermal expansions. (Incidentally, there is
+no need that a heat engine have only two reservoirs, it could have
+three or four different temperatures at which it takes in and delivers
+heats, and so on.) We can move around on a [eq] diagram all over the
+place, and go from one condition to another. In other words, we could
+say the gas is in a certain condition [eq], and then it goes over to
+some other condition, [eq], and we will require that this transition,
+made from [eq] to [eq], be reversible. Now suppose that all along the
+path from [eq] to [eq] we have little reservoirs at different
+temperatures, so that the heat [eq] removed from the substance at each
+little step is delivered to each reservoir at the temperature
+corresponding to that point on the path. Then let us connect all these
+reservoirs, by reversible heat engines, to a single reservoir at the
+unit temperature. When we are finished carrying the substance from [eq]
+to [eq], we shall bring all the reservoirs back to their original
+condition. Any heat [eq] that has been absorbed from the substance at
+temperature [eq] has now been converted by a reversible machine, and a
+certain amount of entropy [eq] has been delivered at the unit
+temperature as follows:
+\begin{equation}
+\label{Eq:I:44:15}
+dS = dQ/T.
+\end{equation}
+
+Let us compute the total amount of entropy which has been
+delivered. The entropy difference, or the entropy needed to go from
+[eq] to [eq] by this particular reversible transformation, is the total
+entropy, the total of the entropy taken out of the little reservoirs,
+and delivered at the unit temperature:
+\begin{equation}
+\label{Eq:I:44:16}
+S_b - S_a = \int_a^b\frac{dQ}{T}.
+\end{equation}
+The question is, does the entropy difference depend upon the path
+taken? There is more than one way to go from [eq] to [eq]. Remember that
+in the Carnot cycle we could go from [eq] to [eq] in Fig.  44–6 
+by first expanding isothermally and then adiabatically; or we could
+first expand adiabatically and then isothermally. So the question is
+whether the entropy change which occurs when we go from [eq] to [eq] in
+Fig.  44–10 is the same on one route as it is on another.
+ It must be the same , because if we went all the way around the
+cycle, going forward on one path and backward on another, we would have
+a reversible engine, and there would be no loss of heat to the reservoir
+at unit temperature. In a totally reversible cycle, no heat must be
+taken from the reservoir at the unit temperature, so the entropy needed
+to go from [eq] to [eq] is the same over one path as it is over another.
+It is independent of path , and depends only on the endpoints. We
+can, therefore, say that there is a certain function, which we call the
+entropy of the substance, that depends only on the condition, i.e., only
+on the volume and temperature.
+
+We can find a function [eq] which has the property that if we
+compute the change in entropy, as the substance is moved along any
+reversible path, in terms of the heat rejected at unit temperature,
+then
+\begin{equation}
+\label{Eq:I:44:17}
+\Delta S = \int\frac{dQ}{T},
+\end{equation}
+where [eq] is the heat removed from the substance at temperature [eq].
+This total entropy change is the difference between the entropy
+calculated at the initial and final points:
+\begin{equation}
+\label{Eq:I:44:18}
+\Delta S = S(V_b,T_b) - S(V_a,T_a) = \int_a^b\frac{dQ}{T}.
+\end{equation}
+This expression does not completely define the entropy, but rather
+only the difference of entropy between two different
+conditions. Only if we can evaluate the entropy for one special
+condition can we really define [eq] absolutely.
+
+For a long time it was believed that absolute entropy meant
+nothing—that only differences could be defined—but finally
+Nernst proposed what he called
+the heat theorem , which is also called
+the third law of thermodynamics. It is very simple. We will say what it
+is, but we will not explain why it is true. Nernst’s postulate states
+simply that the entropy of any object at absolute zero is zero. We know of one case of [eq] and [eq], namely [eq], where
+[eq] is zero; and so we can get the entropy at any other point.
+
+To give an illustration of these ideas, let us calculate the entropy
+of a perfect gas. In an isothermal (and therefore reversible)
+expansion, [eq] is [eq], since [eq] is constant. Therefore
+(from  44.4 ) the change in entropy is
+\begin{equation*}
+S(V_a,T) - S(V_b,T) = Nk\ln\frac{V_a}{V_b},
+\end{equation*}
+so [eq] plus some function of [eq] only. How does [eq]
+depend on [eq]? We know that for a reversible adiabatic expansion,
+ no heat is exchanged . Thus the entropy does not change even
+though [eq] changes, provided that [eq] changes also, such that
+[eq]. Can you see that this implies
+that
+\begin{equation*}
+S(V,T) = Nk\biggl[\ln V + \frac{1}{\gamma - 1}\ln T\biggr] + a,
+\end{equation*}
+where [eq] is some constant independent of both [eq] and [eq]? [[eq]
+is called the chemical constant. It depends on the gas in question, and
+may be determined experimentally from the Nernst theorem by measuring the heat liberated in cooling and condensing
+the gas until it is brought to a solid (or for helium, a liquid)
+at [eq], by integrating [eq]. It can also be determined
+theoretically by means of Planck’s constant and quantum mechanics, but
+we shall not study it in this course.]
+
+Now we shall remark on some of the properties of the entropy of
+things. We first remember that if we go along a reversible cycle from
+[eq] to [eq], then the entropy of the substance will change by $S_b -
+S_a$. And we remember that as we go along the path, the entropy—the
+heat delivered at unit temperature—increases according to the
+rule [eq], where [eq] is the heat we remove from the substance when
+its temperature is [eq].
+
+We already know that if we have a reversible cycle , the total
+entropy of everything is not changed, because the heat [eq] absorbed
+at [eq] and the heat [eq] delivered at [eq] correspond to equal and
+opposite changes in entropy, so that the net change in the entropy is
+zero. So for a reversible cycle there is no change in the entropy of
+anything, including the reservoirs. This rule may look like the
+conservation of energy again, but it is not; it applies only to
+reversible cycles. If we include irreversible cycles there is no law
+of conservation of entropy.
+
+We shall give two examples. First, suppose that we do irreversible
+work on an object by friction, generating a heat [eq] on some object at
+temperature [eq]. The entropy is increased by [eq]. The heat [eq] is
+equal to the work, and thus when we do a certain amount of work by
+friction against an object whose temperature is [eq], the entropy of
+the whole world increases by [eq].
+
+Another example of irreversibility is this: If we put together two
+objects that are at different temperatures, say [eq] and [eq], a
+certain amount of heat will flow from one to the other by
+itself. Suppose, for instance, we put a hot stone in cold water. Then
+when a certain heat [eq] is transferred from [eq] to [eq], how
+much does the entropy of the hot stone change? It decreases by $\Delta
+Q/T_1$. How much does the water entropy change? It increases
+by [eq]. The heat will, of course, flow only from the higher
+temperature [eq] to the lower temperature [eq], so that [eq]
+is positive if [eq] is greater than [eq]. So the change in entropy
+of the whole world is positive, and it is the difference of the two
+fractions:
+\begin{equation}
+\label{Eq:I:44:19}
+\Delta S = \frac{\Delta Q}{T_2} - \frac{\Delta Q}{T_1}.
+\end{equation}
+
+So the following proposition is true: in any process that is
+irreversible, the entropy of the whole world is increased. Only in
+reversible processes does the entropy remain constant. Since no
+process is absolutely reversible, there is always at least a small
+gain in the entropy; a reversible process is an idealization in which
+we have made the gain of entropy minimal.
+
+Unfortunately, we are not going to enter into the field of
+thermodynamics very far. Our purpose is only to illustrate the principal
+ideas involved and the reasons why it is possible to make such
+arguments, but we will not use thermodynamics very much in this course.
+Thermodynamics is used very often by engineers and, particularly, by
+chemists. So we must learn our thermodynamics in practice in chemistry
+or engineering. Because it is not worthwhile duplicating everything, we
+shall just give some discussion of the origin of the theory, rather than
+much detail for special applications.
+
+The two laws of thermodynamics are often stated this way:

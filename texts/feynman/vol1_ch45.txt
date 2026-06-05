@@ -1,0 +1,656 @@
+The Feynman Lectures on Physics Vol. I Ch. 45: Illustrations of Thermodynamics
+==============================================================================
+
+Sections: 45–1 Internal energy | 45–2 Applications | 45–3 The Clausius-Clapeyron equation
+
+
+
+Thermodynamics is a rather difficult and complex subject
+when we come to apply it, and it is not appropriate for us to go very
+far into the applications in this course. The subject is of very great
+importance, of course, to engineers and chemists, and those who are
+interested in the subject can learn about the applications in physical
+chemistry or in engineering thermodynamics. There are also good equation
+reference books, such as Zemansky’s Heat and Thermodynamics ,
+where one can learn more about the subject. In the Encyclopedia
+Britannica, fourteenth edition, one can find excellent articles on
+thermodynamics and thermochemistry, and in the article on chemistry, the
+sections on physical chemistry, vaporization, liquefication of gases,
+and so on.
+
+The subject of thermodynamics is complicated because there are so many
+different ways of describing the same thing. If we wish to describe
+the behavior of a gas, we can say that the pressure depends on the
+temperature and on the volume, or we can say that the volume depends
+on the temperature and the pressure. Or with respect to the internal
+energy [eq], we might say that it depends on the temperature and
+volume, if those are the variables we have chosen—but we might also
+say that it depends on the temperature and the pressure, or the
+pressure and the volume, and so on. In the last chapter we discussed
+another function of temperature and volume, called the entropy [eq],
+and we can of course construct as many other functions of these
+variables as we like: [eq] is a function of temperature and
+volume. So we have a large number of different quantities which can be
+functions of many different combinations of variables.
+
+To keep the subject simple in this chapter, we shall decide at the
+start to use temperature and volume as the independent
+variables. Chemists use temperature and pressure, because they are
+easier to measure and control in chemical experiments, but we shall
+use temperature and volume throughout this chapter, except in one
+place where we shall see how to make the transformation into the
+chemists’ system of variables.
+
+We shall first, then, consider only one system of independent
+variables: temperature and volume. Secondly, we shall discuss only two
+dependent functions: the internal energy and the pressure. All the
+other functions can be derived from these, so it is not necessary to
+discuss them. With these limitations, thermodynamics is still a fairly
+difficult subject, but it is not quite so impossible!
+
+First we shall review some mathematics. If a quantity is a function of
+two variables, the idea of the derivative of the quantity requires a
+little more careful thought than for the case where there is only one
+variable. What do we mean by the derivative of the pressure with
+respect to the temperature? The pressure change accompanying a change
+in the temperature depends partly, of course, on what happens to the
+ volume while [eq] is changing. We must specify the change in [eq]
+before the concept of a derivative with respect to [eq] has a precise
+meaning. We might ask, for example, for the rate of change of [eq] with
+respect to [eq] if [eq] is held constant. This ratio is just the
+ordinary derivative that we usually write as [eq]. We customarily
+use a special symbol, [eq], to remind us that [eq] depends on
+another variable [eq] as well as on [eq], and that this other variable
+is held constant. We shall not only use the symbol [eq] to call
+attention to the fact that the other variable is held constant, but we
+shall also write the variable that is held constant as a subscript,
+[eq]. Since we have only two independent variables, this
+notation is redundant, but it will help us keep our wits about us in
+the thermodynamic jungle of partial derivatives.
+
+Let us suppose that the function [eq] depends on the two
+independent variables [eq] and [eq]. By [eq] we mean simply
+the ordinary derivative, obtained in the usual way, if we treat [eq] as
+a constant:
+\begin{equation*}
+\biggl(\ddp{f}{x}\biggr)_y =
+\operatorname*{limit}_{\Delta x \to 0}
+\frac{f(x + \Delta x,y) - f(x,y)}{\Delta x}.
+\end{equation*}
+Similarly, we define
+\begin{equation*}
+\biggl(\ddp{f}{y}\biggr)_x =
+\operatorname*{limit}_{\Delta y \to 0}
+\frac{f(x, y + \Delta y) - f(x,y)}{\Delta y}.
+\end{equation*}
+For example, if [eq], then [eq],
+and [eq]. We can extend this idea to higher
+derivatives: [eq] or $\partial^2f/\partial
+y\partial x$. The latter symbol indicates that we first differentiate
+[eq] with respect to [eq], treating [eq] as a constant, then
+differentiate the result with respect to [eq], treating [eq] as a
+constant. The actual order of differentiation is immaterial:
+[eq].
+
+We will need to compute the change [eq] in [eq] when [eq]
+changes to [eq] and [eq] changes to [eq]. We
+assume throughout the following that [eq] and [eq] are
+infinitesimally small:
+ 
+\begin{align}
+\Delta f &= f(x + \Delta x, y + \Delta y) - f(x,y)\notag\\[2.5ex]
+&= \underbrace{f(x + \Delta x, y + \Delta y) - f(x,y + \Delta y)}
++
+\underbrace{f(x,y + \Delta y) -
+f(x,y)}\notag\\[.5ex]
+\label{Eq:I:45:1}
+&= 
+\kern{5em}\displaystyle{\Delta x\biggl(\ddp{f}{x}\biggr)_y}
+\kern{5em}+
+\kern{2.2em}\displaystyle{\Delta y\biggl(\ddp{f}{y}\biggr)_x}
+\end{align}
+ 
+ 
+\begin{alignat}{2}
+\Delta f &=\phantom{+}f(x + \Delta x, y + \Delta y) &-& \;\; f(x,y)&&\notag\\[2.5ex]
+&=\phantom{+}f(x + \Delta x, y + \Delta y) &-& \;\; f(x,y + \Delta y)&&\notag\\[1ex]
+&\phantom{=}+ f(x,y + \Delta y) &-& \;\; f(x,y)&&\notag\\[2.5ex]
+\label{Eq:I:45:1}
+&=\Delta x\biggl(\ddp{f}{x}\biggr)_y\!+\Delta y\biggl(\ddp{f}{y}&\biggr)_x&
+\end{alignat}
+ 
+The last equation is the fundamental relation that expresses $\Delta
+f[eq]\Delta x[eq]\Delta y$.
+
+As an example of the use of this relation, let us calculate the change
+in the internal energy [eq] when the temperature changes from [eq]
+to [eq] and the volume changes from [eq] to $V + \Delta
+V$. Using Eq. ( 45.1 ), we write
+\begin{equation}
+\label{Eq:I:45:2}
+\Delta U = \Delta T\biggl(\ddp{U}{T}\biggr)_V +
+\Delta V\biggl(\ddp{U}{V}\biggr)_T.
+\end{equation}
+In our last chapter we found another expression for the change $\Delta
+U[eq]\Delta Q$ was added
+to the gas:
+\begin{equation}
+\label{Eq:I:45:3}
+\Delta U = \Delta Q - P\,\Delta V.
+\end{equation}
+In comparing Eqs. ( 45.2 ) and ( 45.3 ) one might at
+first be inclined to think that [eq], but this is not correct.
+To obtain the correct relation, let us first suppose that we add a quantity of
+heat [eq] to the gas while keeping the volume constant, so that $\Delta V
+= 0[eq]\Delta V = 0[eq]\Delta U =
+\Delta Q[eq]\Delta U
+=(\ddpl{U}{T})_V\,\Delta T[eq](\ddpl{U}{T})_V = \Delta Q/\Delta T$. The
+ratio [eq], the amount of heat one must put into a substance in
+order to change its temperature by one degree with the volume held constant, is
+called the specific heat at constant volume and is
+designated by the symbol [eq]. By this argument we have shown that
+\begin{equation}
+\label{Eq:I:45:4}
+\biggl(\ddp{U}{T}\biggr)_V = C_V.
+\end{equation}
+
+Now let us again add a quantity of heat [eq] to the gas, but this
+time we will hold [eq] constant and allow the volume to change by $\Delta
+V$. The analysis in this case is more complex, but we can calculate
+[eq] by the argument of Carnot, making use of the
+Carnot cycle we introduced in the last chapter.
+
+The pressure-volume diagram for the Carnot cycle is shown in
+Fig.  45–1 . As we have already shown, the total amount of
+work done by the gas in a reversible cycle is [eq],
+where [eq] is the amount of heat energy added to the gas as it
+expands isothermally at temperature [eq] from volume [eq] to $V + \Delta
+V[eq]T - \Delta T$ is the final temperature reached by the gas as it
+expands adiabatically on the second leg of the cycle. Now we will show
+that this work done is also given by the shaded area in
+Fig.  45–1 . In any circumstances, the work done by the gas
+is [eq], and is positive when the gas expands and negative when the
+gas is compressed. If we plot [eq] vs. [eq], the variation of [eq]
+and [eq] is represented by a curve which gives the value of [eq] corresponding
+to a particular value of [eq]. As the volume changes from one value to
+another, the work done by the gas, the integral [eq], is the
+area under the curve connecting the initial and final values of [eq].
+When we apply this idea to the Carnot cycle, we see that as we go around
+the cycle, paying attention to the sign of the work done by the gas, the
+net work done by the gas is just the shaded area in
+Fig.  45–1 .
+
+Now we want to evaluate the shaded area geometrically. The cycle we
+have used in Fig.  45–1 differs from that used in the
+previous chapter in that we now suppose that [eq] and [eq]
+are infinitesimally small. We are working between adiabatic lines and
+isothermal lines that are very close together, and the figure
+described by the heavy lines in Fig.  45–1 will approach
+a parallelogram as the increments [eq] and [eq] approach
+zero. The area of this parallelogram is just [eq],
+where [eq] is the change in volume as energy [eq] is added
+to the gas at constant temperature, and [eq] is the change in
+pressure as the temperature changes by [eq] at constant
+volume. One can easily show that the shaded area in
+Fig.  45–1 is given by [eq] by recognizing
+that the shaded area is equal to the area enclosed by the dotted lines
+in Fig.  45–2 , which in turn differs from the rectangle
+bounded by [eq] and [eq] only by the addition and
+subtraction of the equal triangular areas in Fig.  45–2 .
+
+Now let us summarize the results of the arguments we have developed so
+far:
+ 
+\begin{equation}
+\left.\!
+\begin{array}{l}
+\displaystyle\qquad\text{Work done by the gas} = \text{shaded area} = \Delta V\,\Delta P = \Delta Q\biggl(\frac{\Delta T}{T}\biggr)\\
+\text{or}\\[1ex]
+\displaystyle\qquad\frac{\Delta T}{T}\cdot(\text{heat needed to change [eq] by [eq]})_{\text{constant [eq]}}\\[1.5ex]
+\displaystyle\quad = \Delta V\cdot(\text{change in [eq] when [eq] changes by [eq]})_{\text{constant [eq]}}\\[2ex]
+\text{or}\\[.5ex]
+\displaystyle\qquad\frac{1}{\Delta V}\cdot(\text{heat needed to change [eq] by [eq]})_T = T(\ddpl{P}{T})_V.
+\end{array}\!\right\}
+\label{Eq:I:45:5}
+\end{equation}
+ 
+ 
+\begin{equation}
+\left.\!
+\begin{array}{l}
+\quad\begin{gathered}
+\displaystyle\text{Work done by the gas} = \text{shaded area}\\[1ex]
+= \Delta V\,\Delta P = \Delta Q\biggl(\frac{\Delta T}{T}\biggr)
+\end{gathered}\\[-2ex]
+\text{or}\\[1ex]
+\displaystyle\quad\frac{\Delta T}{T}\cdot
+\begin{pmatrix}
+\text{heat needed}\\[-.5ex]
+\text{to change [eq]}\\[-.5ex]
+\text{by [eq]}
+\end{pmatrix}_{\text{constant [eq]}}\\[2ex] % ebook remove
+% ebook insert: \end{pmatrix}_{\text{constant [eq]}}\\[5ex]
+\displaystyle\quad = \Delta V\cdot
+\begin{pmatrix}
+\text{change in [eq]}\\[-.5ex]
+\text{when [eq] changes}\\[-.5ex]
+\text{by [eq]}
+\end{pmatrix}_{\text{constant [eq]}}\\[.5ex]
+\text{or}\\[.5ex]
+\displaystyle\quad\frac{1}{\Delta V}\cdot
+\begin{pmatrix}
+\text{heat needed}\\[-.5ex]
+\text{to change [eq]}\\[-.5ex]
+\text{by [eq]}
+\end{pmatrix}_T \kern{-1.5ex}= T\biggl(\ddp{P}{T}\biggr)_V.
+\end{array}\!\right\}
+\label{Eq:I:45:5}
+\end{equation}
+ 
+Equation ( 45.5 ) expresses the essential result of
+Carnot’s argument. The whole of
+thermodynamics can be deduced from Eq. ( 45.5 ) and the First
+Law, which is stated in Eq. ( 45.3 ).
+Equation ( 45.5 ) is essentially the Second Law, although it
+was originally deduced by
+Carnot
+in a slightly different form, since he did not use our
+definition of temperature.
+
+Now we can proceed to calculate [eq]. By how much would
+the internal energy [eq] change if we changed the volume by [eq]?
+First, [eq] changes because heat is put in, and second, [eq] changes
+because work is done. The heat put in is
+\begin{equation*}
+\Delta Q = T\biggl(\ddp{P}{T}\biggr)_V\Delta V,
+\end{equation*}
+according to Eq. ( 45.5 ), and the work done on the
+substance is [eq]. Therefore the change [eq] in
+internal energy has two pieces:
+\begin{equation}
+\label{Eq:I:45:6}
+\Delta U = T\biggl(\ddp{P}{T}\biggr)_V\Delta V - P\,\Delta V.
+\end{equation}
+Dividing both sides by [eq], we find for the rate of change
+of [eq] with [eq] at constant [eq]
+\begin{equation}
+\label{Eq:I:45:7}
+\biggl(\ddp{U}{V}\biggr)_T = T\biggl(\ddp{P}{T}\biggr)_V - P.
+\end{equation}
+In our thermodynamics, in which [eq] and [eq] are the only variables and [eq]
+and [eq] are the only functions, Eqs. ( 45.3 )
+and ( 45.7 ) are the basic equations from which all the results of the
+subject can be deduced.
+
+Now let us discuss the meaning of Eq. ( 45.7 ) and see why it
+answers the questions which we proposed in our last chapter. We
+considered the following problem: in kinetic theory it is obvious that
+an increase in temperature leads to an increase in pressure, because of
+the bombardments of the atoms on a piston. For the same physical reason,
+when we let the piston move back, heat is taken out of the gas and, in
+order to keep the temperature constant, heat will have to be put back
+in. The gas cools when it expands, and the pressure rises when it is
+heated. There must be some connection between these two phenomena, and
+this connection is given explicitly in Eq. ( 45.7 ). If we
+hold the volume fixed and increase the temperature, the pressure rises
+at a rate [eq]. Related to that fact is this: if we
+increase the volume, the gas will cool unless we pour some heat in to
+maintain the temperature constant, and [eq] tells us the
+amount of heat needed to maintain the temperature.
+Equation ( 45.7 ) expresses the fundamental interrelationship
+between these two effects. That is what we promised we would find when
+we came to the laws of thermodynamics. Without knowing the internal
+mechanism of the gas, and knowing only that we cannot make perpetual
+motion of the second type, we can deduce the relationship between the
+amount of heat needed to maintain a constant temperature when the gas
+expands, and the pressure change when the gas is heated at constant
+volume!
+
+Now that we have the result we wanted for a gas, let us consider the
+rubber band. When we stretch a rubber band, we find that its
+temperature rises, and when we heat a rubber band, we find that it
+pulls itself in. What is the equation that gives the same relation for
+a rubber band as Eq. ( 45.3 ) gives for gas? For a rubber
+band the situation will be something like this: when heat [eq]
+is put in, the internal energy is changed by [eq] and some work
+is done. The only difference will be that the work done by the rubber
+band is [eq] instead of [eq], where [eq] is the
+force on the band, and [eq] is the length of the band. The force [eq] is
+a function of temperature and of length of the band. Replacing
+[eq] in Eq. ( 45.3 ) by [eq], we get
+\begin{equation}
+\label{Eq:I:45:8}
+\Delta U = \Delta Q + F\,\Delta L.
+\end{equation}
+Comparing Eqs. ( 45.3 ) and ( 45.8 ), we see that the
+rubber band equation is obtained by a mere substitution of one letter for
+another. Furthermore, if we substitute [eq] for [eq], and [eq] for [eq], all of our
+discussion of the Carnot cycle applies to the rubber band. We can
+immediately deduce, for instance, that the heat [eq] needed to change the
+length by [eq] is given by the analog to Eq. ( 45.5 ): $\Delta Q
+= -T(\ddpl{F}{T})_L\,\Delta L$. This equation tells us that if we keep the
+length of a rubber band fixed and heat the band, we can calculate how much the
+force will increase in terms of the heat needed to keep the temperature constant
+when the band is relaxed a little bit. So we see that the same equation applies
+to both gas and a rubber band. In fact, if one can write $\Delta U = \Delta Q +
+A\,\Delta B[eq]A[eq]B$ represent different quantities, force and
+length, pressure and volume, etc., one can apply the results obtained for a gas
+by substituting [eq] and [eq] for [eq] and [eq]. For example, consider the electric
+potential difference, or “voltage,” [eq] in a battery and the charge [eq]
+that moves through the battery. We know that the work done in a reversible
+electric cell, like a storage battery, is [eq]. (Since we include no
+[eq] term in the work, we require that our battery maintain a constant
+volume.) Let us see what thermodynamics can tell us about the performance of a
+battery. If we substitute [eq] for [eq] and [eq] for [eq] in Eq. ( 45.6 ),
+we obtain
+\begin{equation}
+\label{Eq:I:45:9}
+\frac{\Delta U}{\Delta Z} = T\biggl(\ddp{E}{T}\biggr)_Z - E.
+\end{equation}
+Equation ( 45.9 ) says that the internal energy [eq] is
+changed when a charge [eq] moves through the cell. Why
+is [eq] not simply the voltage [eq] of the battery? (The
+answer is that a real battery gets warm when charge moves through the
+cell. The internal energy of the battery is changed, first, because
+the battery did some work on the outside circuit, and second, because
+the battery is heated.) The remarkable thing is that the second part
+can again be expressed in terms of the way in which the battery
+voltage changes with temperature. Incidentally, when the charge moves
+through the cell, chemical reactions occur, and Eq. ( 45.9 )
+suggests a nifty way of measuring the amount of energy required to
+produce a chemical reaction. All we need to do is construct a cell that
+works on the reaction, measure the voltage, and measure how much the
+voltage changes with temperature when we draw no charge from the
+battery!
+
+Now we have assumed that the volume of the battery can be maintained
+constant, since we have omitted the [eq] term when we set the
+work done by the battery equal to [eq]. It turns out that it
+is technically quite difficult to keep the volume constant. It is much
+easier to keep the cell at constant atmospheric pressure. For that
+reason, the chemists do not like any of the equations we have written
+above: they prefer equations which describe performance under constant
+ pressure . We chose at the beginning of this chapter to use [eq]
+and [eq] as independent variables. The chemists prefer [eq] and [eq], and
+we will now consider how the results we have obtained so far can be
+transformed into the chemists’ system of variables. Remember that in
+the following treatment confusion can easily set in because we are
+shifting gears from [eq] and [eq] to [eq] and [eq].
+
+We started in Eq. ( 45.3 ) with $\Delta U = \Delta Q -
+P\,\Delta V[eq]P\,\Delta V[eq]E\,\Delta Z$
+or [eq]. If we could somehow replace the last term, $P\,\Delta
+V[eq]V\,\Delta P[eq]V[eq]P$, and
+the chemists would be happy. Well, a clever man noticed that the
+differential of the product [eq] is [eq], and if he
+added this equality to Eq. ( 45.3 ), he obtained
+\begin{alignat*}{2}
+\Delta(PV) &\,= P\,\Delta V &&+ V\,\Delta P\\[.65ex]
+\Delta U &\,= \Delta Q &&- P\,\Delta V\\
+\hline
+\Delta(U + PV) &\,= \Delta Q &&+ V\,\Delta P
+\end{alignat*}
+In order that the result look like Eq. ( 45.3 ), we define
+[eq] to be something new, called the
+ enthalpy , [eq], and we write $\Delta H = \Delta Q
++ V\,\Delta P$.
+
+Now we are ready to transform our results into chemists’ language with
+the following rules: [eq], [eq], [eq]. For example, the
+fundamental relationship that chemists would use instead of
+Eq. ( 45.7 ) is
+\begin{equation*}
+\biggl(\ddp{H}{P}\biggr)_T = -T\biggl(\ddp{V}{T}\biggr)_P + V.
+\end{equation*}
+It should now be clear how one transforms to the chemists’ variables
+[eq] and [eq]. We now go back to our original variables: for the
+remainder of this chapter, [eq] and [eq] are the independent variables.
+
+Now let us apply the results we have obtained to a number of physical
+situations. Consider first the ideal gas. From kinetic theory we know
+that the internal energy of a gas depends only on the motion of the
+molecules and the number of molecules. The internal energy depends
+on [eq], but not on [eq]. If we change [eq], but keep [eq] constant, [eq] is
+not changed. Therefore [eq], and Eq. ( 45.7 )
+tells us that for an ideal gas
+\begin{equation}
+\label{Eq:I:45:10}
+T\biggl(\ddp{P}{T}\biggr)_V - P = 0.
+\end{equation}
+Equation ( 45.10 ) is a differential equation that can tell
+us something about [eq]. We take account of the partial derivatives in
+the following way: Since the partial derivative is at constant [eq], we
+will replace the partial derivative by an ordinary derivative and
+write explicitly, to remind us, “constant [eq].”
+Equation ( 45.10 ) then becomes
+\begin{equation}
+\label{Eq:I:45:11}
+T\,\frac{\Delta P}{\Delta T} - P = 0;\quad
+\text{const [eq]},
+\end{equation}
+which we can integrate to get
+\begin{alignat}{2}
+\ln P &\;= \ln T + \text{const};\quad
+&&\text{const [eq]},\notag\\[1ex]
+\label{Eq:I:45:12}
+P &\;= \text{const}\times T;\quad
+&&\text{const [eq]}.
+\end{alignat}
+We know that for an ideal gas the pressure per mole is equal to
+\begin{equation}
+\label{Eq:I:45:13}
+P = \frac{RT}{V},
+\end{equation}
+which is consistent with ( 45.12 ), since [eq] and [eq] are
+constants. Why did we bother to go through this calculation if we
+already knew the results? Because we have been using two
+independent definitions of temperature! At one stage we assumed that
+the kinetic energy of the molecules was proportional to the
+temperature, an assumption that defines one scale of temperature which
+we will call the ideal gas scale. The [eq] in Eq. ( 45.13 )
+is based on the gas scale. We also call temperatures measured on the
+gas scale kinetic temperatures. Later, we defined the
+temperature in a second way which was completely independent of any
+substance. From arguments based on the Second Law we defined what we
+might call the “grand thermodynamic absolute temperature” [eq],
+the [eq] that appears in Eq. ( 45.12 ). What we proved here is
+that the pressure of an ideal gas (defined as one for which the
+internal energy does not depend on the volume) is proportional to the
+grand thermodynamic absolute temperature. We also know that the
+pressure is proportional to the temperature measured on the gas
+scale. Therefore we can deduce that the kinetic temperature is
+proportional to the “grand thermodynamic absolute temperature.” That
+means, of course, that if we were sensible we could make two scales
+agree. In this instance, at least, the two scales have been
+chosen so that they coincide; the proportionality constant has been
+chosen to be [eq]. Most of the time man chooses trouble for himself,
+but in this case he made them equal!
+
+The vaporization of a liquid is another application of the results we
+have derived. Suppose we have some liquid in a cylinder, such that we
+can compress it by pushing on the piston, and we ask ourselves, “If
+we keep the temperature constant, how does the pressure vary with
+volume?” In other words, we want to draw an isothermal line on the
+[eq]-[eq] diagram. The substance in the cylinder is not the ideal gas
+that we considered earlier; now it may be in the liquid or the vapor
+phase, or both may be present. If we apply sufficient pressure, the
+substance will condense to a liquid. Now if we squeeze still harder,
+the volume changes very little, and our isothermal line rises rapidly
+with decreasing volume, as shown at the left in Fig.  45–3 .
+
+If we increase the volume by pulling the piston out, the pressure
+drops until we reach the point at which the liquid starts to boil, and
+then vapor starts to form. If we pull the piston out farther, all that
+happens is that more liquid vaporizes. When there is part liquid and
+part vapor in the cylinder, the two phases are in equilibrium—liquid
+is evaporating and vapor is condensing at the same rate. If we make
+more room for the vapor, more vapor is needed to maintain the
+pressure, so a little more liquid evaporates, but the pressure remains
+constant. On the flat part of the curve in Fig.  45–3 the
+pressure does not change, and the value of the pressure here is called
+the vapor pressure at temperature [eq] . As we continue to
+increase the volume, there comes a time when there is no more liquid
+to evaporate. At this juncture, if we expand the volume further, the
+pressure will fall as for an ordinary gas, as shown at the right of
+the [eq]-[eq] diagram. The lower curve in Fig.  45–3 is the
+isothermal line at a slightly lower temperature [eq]. The
+pressure in the liquid phase is slightly reduced because liquid
+expands with an increase in temperature (for most substances, but not
+for water near the freezing point) and, of course, the vapor pressure
+is lower at the lower temperature.
+
+We will now make a cycle out of the two isothermal lines by connecting
+them (say by adiabatic lines) at both ends of the upper flat section, as
+shown in Fig.  45–4 . We are going to use the argument of
+Carnot, which tells us that the
+heat added to the substance in changing it from a liquid to a vapor is
+related to the work done by the substance as it goes around the cycle.
+Let us call [eq] the heat needed to vaporize the substance in the
+cylinder. As in the argument immediately preceding
+Eq. ( 45.5 ), we know that [eq]work done by the
+substance. As before, the work done by the substance is the shaded area,
+which is approximately [eq], where [eq] is the
+difference in vapor pressure at the two temperatures [eq] and $T - \Delta
+T[eq]V_G[eq]V_L$ is the volume of the
+liquid, both volumes measured at the vapor pressure at temperature [eq].
+Setting these two expressions for the area equal, we get $L\,\Delta T/T
+= \Delta P(V_G - V_L)$, or
+\begin{equation}
+\label{Eq:I:45:14}
+\frac{L}{T(V_G - V_L)} = (\ddpl{P_{\text{vap}}}{T}).
+\end{equation}
+Equation ( 45.14 ) gives the relationship between the rate of
+change of vapor pressure with temperature and the amount of heat
+required to evaporate the liquid. This relationship was deduced by
+Carnot, but it is called the
+Clausius-Clapeyron equation.
+
+Now let us compare Eq. ( 45.14 ) with the results deduced
+from kinetic theory. Usually [eq] is very much larger than [eq]. So
+[eq] per mole. If we further assume that [eq]
+is a constant, independent of temperature—not a very good
+approximation—then we would have [eq]. The
+solution of this differential equation is
+\begin{equation}
+\label{Eq:I:45:15}
+P = \text{const}\,e^{-L/RT}.
+\end{equation}
+Let us compare this with the pressure variation with temperature that
+we deduced earlier from kinetic theory. Kinetic theory indicated the
+possibility, at least roughly, that the number of molecules per unit volume of vapor
+above a liquid would be
+\begin{equation}
+\label{Eq:I:45:16}
+n = \biggl(\frac{1}{V_a}\biggr)e^{-(U_G - U_L)/RT},
+\end{equation}
+where [eq] is the internal energy per mole in the gas minus the
+internal energy per mole in the liquid, i.e., the energy needed to
+vaporize a mole of liquid. Equation ( 45.15 ) from
+thermodynamics and Eq. ( 45.16 ) from kinetic theory are very
+closely related because the pressure is [eq], but they are not exactly
+the same. However, they will turn out to be exactly the same if we
+assume [eq], instead of [eq]. If we
+assume [eq], independent of temperature, then the
+argument leading to Eq. ( 45.15 ) will produce
+Eq. ( 45.16 ). Since the pressure is constant while the volume
+is changing, the change in internal energy [eq] is equal to the
+heat [eq] put in minus the work done [eq],
+so [eq].
+
+This comparison shows the advantages and disadvantages of thermodynamics over
+kinetic theory: First of all, Eq. ( 45.14 ) obtained by thermodynamics
+is exact, while Eq. ( 45.16 ) can only be approximated, for instance,
+if [eq] is nearly constant, and if the model is right. Second, we may not
+understand correctly how the gas goes into the liquid; nevertheless,
+Eq. ( 45.14 ) is right, while ( 45.16 ) is only approximate.
+Third, although our treatment applies to a gas condensing into a liquid, the
+argument is true for any other change of state. For instance, the
+solid-to-liquid transition has the same kind of curve as that shown in
+Figs. 45–3 and  45–4 . Introducing the latent heat
+for melting, [eq]/mole, the formula analogous to Eq. ( 45.14 ) then
+is [eq].
+Although we may not understand the kinetic theory of the melting process, we
+nevertheless have a correct equation. However, when we can understand the
+kinetic theory, we have another advantage. Equation ( 45.14 ) is only a
+differential relationship, and we have no way of obtaining the constants of
+integration. In the kinetic theory we can obtain the constants also if we have a
+good model that describes the phenomenon completely. So there are advantages and
+disadvantages to each. When knowledge is weak and the situation is complicated,
+thermodynamic relations are really the most powerful. When the situation is very
+simple and a theoretical analysis can be made, then it is better to try to get
+more information from theoretical analysis.
+
+One more example: blackbody radiation. We have discussed a box
+containing radiation and nothing else. We have talked about the
+equilibrium between the oscillator and the radiation. We also found
+that the photons hitting the wall of the box would exert the
+pressure [eq], and we found [eq], where [eq] is the total energy of all the
+photons and [eq] is the volume of the box. If we substitute [eq]
+in the basic Eq. ( 45.7 ), we find 1 
+\begin{equation}
+\label{Eq:I:45:17}
+\biggl(\ddp{U}{V}\biggr)_T = 3P =
+T\biggl(\ddp{P}{T}\biggr)_V - P.
+\end{equation}
+Since the volume of our box is constant, we can replace
+[eq] by [eq] to obtain an ordinary differential equation
+we can integrate: [eq], or $P =
+\text{const}\times T^4$. The pressure of radiation varies as the fourth
+power of the temperature, and the total energy density of the radiation,
+[eq], also varies as [eq]. It is usual to write $U/V =
+(4\sigma/c)T^4[eq]c[eq]\sigma$ is called
+the Stefan-Boltzmann constant .
+It is not possible to get [eq] from thermodynamics alone. Here is a
+good example of its power, and its limitations. To know that [eq] goes
+as [eq] is a great deal, but to know how big [eq] actually is at any
+temperature requires that we go into the kind of detail that only a
+complete theory can supply. For blackbody radiation we have such a
+theory and we can derive an expression for the constant [eq] in the
+following manner.
+
+Let [eq] be the intensity distribution, the energy
+flow through [eq] m² in one second with frequency between [eq]
+and [eq]. The energy density
+distribution[eq]energy/volume[eq] is
+\begin{align*}
+\frac{U}{V} &= \text{total energy density}\\
+ &= \int_{\omega = 0}^\infty\text{energy density between [eq] and
+[eq]}\\[1.5ex]
+ &= \int_0^\infty \frac{I(\omega)\,d\omega}{c}.
+\end{align*}
+From our earlier discussions, we know that
+\begin{equation*}
+I(\omega) = \frac{\hbar\omega^3}{\pi^2c^2(e^{\hbar\omega/kT} - 1)}.
+\end{equation*}
+Substituting this expression for [eq] in our equation for [eq], we get
+\begin{equation*}
+\frac{U}{V} = \frac{1}{\pi^2c^3}\int_0^\infty
+\frac{\hbar\omega^3\,d\omega}{e^{\hbar\omega/kT} - 1}.
+\end{equation*}
+If we substitute [eq], the expression becomes
+\begin{equation*}
+\frac{U}{V} = \frac{(kT)^4}{\hbar^3\pi^2c^3}\int_0^\infty
+\frac{x^3\,dx}{e^x - 1}.
+\end{equation*}
+This integral is just some number that we can get, approximately, by
+drawing a curve and taking the area by counting squares. It is
+roughly [eq]. The mathematicians among us can show that the integral is
+exactly [eq]. 2 
+Comparing this expression with [eq], we find
+\begin{equation*}
+\sigma = \frac{k^4\pi^2}{60\hbar^3c^2} =
+5.67\times10^{-8}\,\frac{\text{watts}}
+{(\text{meter})^2(\text{degree})^4}.
+\end{equation*}
+
+If we make a small hole in our box, how much energy will flow per
+second through the hole of unit area? To go from energy density to
+energy flow, we multiply the energy density [eq] by [eq]. We also
+multiply by [eq], which arises as follows: first, a factor
+of [eq], because only the energy which is flowing out 
+escapes; and second, another factor [eq], because energy
+which approaches the hole at an angle to the normal is less effective
+in getting through the hole by a cosine factor. The average value of
+the cosine factor is [eq]. It is clear now why we write $U/V
+=(4\sigma/c)T^4$: so that we can ultimately say that the flux from a
+small hole is [eq] per unit area.

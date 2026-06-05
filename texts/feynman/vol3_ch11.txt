@@ -1,0 +1,1895 @@
+The Feynman Lectures on Physics Vol. III Ch. 11: More Two-State Systems
+=======================================================================
+
+Sections: 11–1 The Pauli spin matrices | 11–2 The spin matrices as operators | 11–3 The solution of the two-state equations | 11–4 The polarization states of the photon | 11–5 The neutral K-meson 2 | 11–6 Generalization to [eq]-state systems
+
+
+
+We continue our discussion of two-state systems. At the end
+of the last chapter we were talking about a spin one-half particle in a
+magnetic field. We described the spin state by giving the
+amplitude [eq] that the [eq]-component of spin angular momentum
+is [eq] and the amplitude [eq] that it is [eq]. In earlier
+chapters we have called these base states [eq] and [eq]. We
+will now go back to that notation, although we may occasionally find it
+convenient to use [eq] or [eq], and [eq]
+or [eq], interchangeably.
+
+We saw in the last chapter that when a spin one-half particle with a
+magnetic moment [eq] is in a magnetic field [eq],
+the amplitudes [eq] ([eq]) and [eq] ([eq]) are connected by the
+following differential equations:
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{C_+}{t}&=-\mu[B_zC_+\!+(B_x\!-iB_y)C_-],\\[2ex]
+i\hbar\,\ddt{C_-}{t}&=-\mu[(B_x\!+iB_y)C_+\!-\!B_zC_-].
+\end{aligned}
+\label{Eq:III:11:1}
+\end{equation}
+In other words, the Hamiltonian matrix [eq] is
+\begin{equation}
+\begin{alignedat}{2}
+H_{11}&=\!-\mu B_z,&\quad
+H_{12}&=\!-\mu(B_x\!-iB_y),\\[1ex]
+H_{21}&=\!-\mu(B_x\!+iB_y),&\quad
+H_{22}&=\!+\mu B_z.
+\end{alignedat}
+\label{Eq:III:11:2}
+\end{equation}
+And Eqs. ( 11.1 ) are, of course, the same as
+\begin{equation}
+\label{Eq:III:11:3}
+i\hbar\,\ddt{C_i}{t}=\sum_jH_{ij}C_{j},
+\end{equation}
+where [eq] and [eq] take on the values [eq] and [eq] (or [eq] and [eq]).
+
+The two-state system of the electron spin is so important that it is
+very useful to have a neater way of writing things. We will now make a
+little mathematical digression to show you how people usually write
+the equations of a two-state system. It is done this way: First, note
+that each term in the Hamiltonian is proportional to [eq] and to some
+component of [eq]; we can then— purely formally —write
+that
+\begin{equation}
+\label{Eq:III:11:4}
+H_{ij}=-\mu[\sigma_{ij}^xB_x+\sigma_{ij}^yB_y+\sigma_{ij}^zB_z].
+\end{equation}
+There is no new physics here; this equation just means that the
+coefficients [eq], [eq],
+and [eq]—there are [eq] of them—can be figured out
+so that ( 11.4 ) is identical with ( 11.2 ).
+
+Let’s see what they have to be. We start with [eq]. Since [eq] appears
+only in [eq] and [eq], everything will be O.K. if
+\begin{alignat*}{2}
+\sigma_{11}^z&=1,&\quad
+\sigma_{12}^z&=0,\\[2ex]
+\sigma_{21}^z&=0,&\quad
+\sigma_{22}^z&=-1.
+\end{alignat*}
+We often write the matrix [eq] as a little table like this:
+\begin{equation*}
+H_{ij}=
+\!\!\!\raise 10 pt {\scriptstyle i\downarrow \,\raise 10 pt \scriptstyle j\rightarrow}\kern -13pt % ebook remove
+% ebook insert: \raise{12pt}{\scriptstyle i\downarrow \,\raise{16pt}{\scriptstyle j\rightarrow}\kern -20pt}}
+\begin{pmatrix}
+H_{11} & H_{12}\\[1ex]
+H_{21} & H_{22}
+\end{pmatrix}.
+\end{equation*}
+
+For the Hamiltonian of a spin one-half particle in the magnetic
+field [eq], this is the same as
+\begin{equation*}
+H_{ij}=
+\!\!\!\raise 12 pt {\scriptstyle i\downarrow \,\raise 7 pt \scriptstyle j\rightarrow}\kern -13pt % ebook remove
+% ebook insert: \raise{12pt}{\scriptstyle i\downarrow \,\raise{16pt}{\scriptstyle j\rightarrow}\kern -20pt}
+\begin{pmatrix}
+-\mu B_z & -\mu(B_x-iB_y)\\[1ex]
+-\mu(B_x+iB_y) & +\mu B_z
+\end{pmatrix}.
+\end{equation*}
+In the same way, we can write the coefficients [eq] as the matrix
+\begin{equation}
+\label{Eq:III:11:5}
+\sigma_{ij}^z=
+\raise 10 pt {\scriptstyle i\downarrow \,\raise 7 pt \scriptstyle j\rightarrow}\kern -13pt % ebook remove
+% ebook insert: \raise{12pt}{\scriptstyle i\downarrow \,\raise{12pt}{\scriptstyle j\rightarrow}\kern -20pt}
+\begin{pmatrix}
+1 & \phantom{-}0\\
+0 & -1
+\end{pmatrix}.
+\end{equation}
+
+Working with the coefficients of [eq], we get that the terms
+of [eq] have to be
+\begin{equation*}
+\begin{alignedat}{2}
+\sigma_{11}^x&=0,&\quad
+\sigma_{12}^x&=1,\\[2ex]
+\sigma_{21}^x&=1,&\quad
+\sigma_{22}^x&=0.
+\end{alignedat}
+\end{equation*}
+Or, in shorthand,
+\begin{equation}
+\label{Eq:III:11:6}
+\sigma_{ij}^x=
+\begin{pmatrix}
+0 & 1\\
+1 & 0
+\end{pmatrix}.
+\end{equation}
+
+Finally, looking at [eq], we get
+\begin{equation*}
+\begin{alignedat}{2}
+\sigma_{11}^y&=0,&\quad
+\sigma_{12}^y&=-i,\\[2ex]
+\sigma_{21}^y&=i,&\quad
+\sigma_{22}^y&=0;
+\end{alignedat}
+\end{equation*}
+or
+\begin{equation}
+\label{Eq:III:11:7}
+\sigma_{ij}^y=
+\begin{pmatrix}
+0 & -i\\
+i & \phantom{-}0
+\end{pmatrix}.
+\end{equation}
+With these three sigma matrices, Eqs.
+( 11.2 ) and ( 11.4 ) are identical. To leave room
+for the subscripts [eq] and [eq], we have shown which [eq] goes with
+which component of [eq] by putting [eq], [eq], and [eq] as superscripts.
+Usually, however, the [eq] and [eq] are omitted—it’s easy to imagine
+they are there—and the [eq], [eq], [eq] are written as subscripts. Then
+Eq. ( 11.4 ) is written
+\begin{equation}
+\label{Eq:III:11:8}
+H=-\mu[\sigma_xB_x+\sigma_yB_y+\sigma_zB_z].
+\end{equation}
+Because the sigma matrices are so important—they are used all the
+time by the professionals—we have gathered them together in
+Table 11–1 . (Anyone who is going to work in quantum
+physics really has to memorize them.) They are also called the
+ Pauli spin matrices 
+after the physicist who invented them.
+
+In the table we have included one more two-by-two matrix which is
+needed if we want to be able to take care of a system which has two
+spin states of the same energy, or if we want to choose a different
+zero energy. For such situations we must add [eq] to the first
+equation in ( 11.1 ) and [eq] to the second
+equation. We can include this in the new notation if we define the
+ unit matrix “[eq]” as [eq],
+\begin{equation}
+\label{Eq:III:11:9}
+1=\delta_{ij}=
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix},
+\end{equation}
+and rewrite Eq. ( 11.8 ) as
+\begin{equation}
+\label{Eq:III:11:10}
+H=E_0\delta_{ij}-\mu(\sigma_xB_x+\sigma_yB_y+\sigma_zB_z).
+\end{equation}
+Usually, it is understood that any constant like [eq] is
+automatically to be multiplied by the unit matrix; then one writes
+simply
+\begin{equation}
+\label{Eq:III:11:11}
+H=E_0-\mu(\sigma_xB_x+\sigma_yB_y+\sigma_zB_z).
+\end{equation}
+
+One reason the spin matrices are useful is that any two-by-two
+matrix at all can be written in terms of them. Any matrix you can
+write has four numbers in it, say,
+\begin{equation*}
+M=
+\begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}.
+\end{equation*}
+It can always be written as a linear combination of four matrices. For
+example,
+\begin{equation*}
+M=a\!
+\begin{pmatrix}
+1&0\\
+0&0
+\end{pmatrix}
+\!+b\!
+\begin{pmatrix}
+0&1\\
+0&0
+\end{pmatrix}
+\!+c\!
+\begin{pmatrix}
+0&0\\
+1&0
+\end{pmatrix}
+\!+d\!
+\begin{pmatrix}
+0&0\\
+0&1
+\end{pmatrix}\!.
+\end{equation*}
+There are many ways of doing it, but one special way is to say that
+[eq] is a certain amount of [eq], plus a certain amount
+of [eq], and so on, like this:
+\begin{equation*}
+M=\alpha1+\beta\sigma_x+\gamma\sigma_y+\delta\sigma_z,
+\end{equation*}
+where the “amounts” [eq], [eq], [eq], and [eq] may,
+in general, be complex numbers.
+
+Since any two-by-two matrix can be represented in terms of the unit
+matrix and the sigma matrices, we have all that we ever need for
+ any two-state system. No matter what the two-state system—the
+ammonia molecule, the magenta dye, anything—the Hamiltonian equation
+can be written in terms of the sigmas. Although the sigmas seem to
+have a geometrical significance in the physical situation of an
+electron in a magnetic field, they can also be thought of as just
+useful matrices, which can be used for any two-state problem.
+
+For instance, in one way of looking at things a proton and a neutron can
+be thought of as the same particle in either of two states. We say the
+ nucleon (proton or neutron) is a two-state
+system—in this case, two states with respect to its charge. When
+looked at that way, the [eq] state can represent the proton
+and the [eq] state can represent the neutron. People say that
+the nucleon has two “isotopic-spin” states.
+
+Since we will be using the sigma matrices as the “arithmetic” of the
+quantum mechanics of two-state systems, let’s review quickly the
+conventions of matrix algebra. By the “sum” of any two or more matrices we mean just what
+was obvious in Eq. ( 11.4 ). In general, if we “add” two
+matrices [eq] and [eq], the “sum” [eq] means that each term [eq] is
+given by
+\begin{equation*}
+C_{ij}=A_{ij}+B_{ij}.
+\end{equation*}
+Each term of [eq] is the sum of the terms in the same slots of [eq]
+and [eq].
+
+In Section 5–6 we have already encountered the idea of
+a matrix “product.” The same idea will be useful in dealing with the
+sigma matrices. In general, the “product” of two matrices [eq]
+and [eq] (in that order) is defined to be a matrix [eq] whose elements are
+\begin{equation}
+\label{Eq:III:11:12}
+C_{ij}=\sum_kA_{ik}B_{kj}.
+\end{equation}
+It is the sum of products of terms taken in pairs from the [eq]th row
+of [eq] and the [eq]th column of [eq]. If the matrices are written out in
+tabular form as in Fig. 11-1 , there is a good “system”
+for getting the terms of the product matrix. Suppose you are
+calculating [eq]. You run your left index finger along the
+ second row of [eq] and your right index finger down the
+ third column of [eq], multiplying each pair and adding as you go.
+We have tried to indicate how to do it in the figure.
+
+It is, of course, particularly simple for two-by-two matrices. For
+instance, if we multiply [eq] times [eq], we get
+\begin{equation*}
+\sigma_x^2=\sigma_x\cdot\sigma_x=
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&0\\
+0&1
+\end{pmatrix},
+\end{equation*}
+which is just the unit matrix [eq]. Or, for another example, let’s work
+out [eq]:
+\begin{equation*}
+\sigma_x\sigma_y=
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+0&-i\\
+i&\phantom{-}0
+\end{pmatrix}
+=
+\begin{pmatrix}
+i&\phantom{-}0\\
+0&-i
+\end{pmatrix}.
+\end{equation*}
+Referring to Table 11–1 , you see that the product is
+just [eq] times the matrix [eq]. (Remember that a number times a
+matrix just multiplies each term of the matrix.) Since the products of
+the sigmas taken two at a time are important—as well as rather
+amusing—we have listed them all in Table 11–2 . You can
+work them out as we have done for [eq] and [eq].
+
+There’s another very important and interesting point about these
+[eq] matrices. We can imagine, if we wish, that the three matrices
+[eq], [eq], and [eq] are analogous to the three
+components of a vector—it is sometimes called the “sigma
+vector” and is written [eq]. It is really a
+“matrix vector” or a “vector matrix.” It is three different
+matrices—one matrix associated with each axis, [eq], [eq], and [eq]. With
+it, we can write the Hamiltonian of the system in a nice form which
+works in any coordinate system:
+\begin{equation}
+\label{Eq:III:11:13}
+H=-\mu\FLPsigma\cdot\FLPB.
+\end{equation}
+
+Although we have written our three matrices in the representation in
+which “up” and “down” are in the [eq]-direction—so that [eq]
+has a particular simplicity—we could figure out what the matrices
+would look like in some other representation. Although it takes a lot
+of algebra, you can show that they change among themselves like the
+components of a vector. (We won’t, however, worry about proving it right
+now. You can check it if you want.) You can use [eq] in different
+coordinate systems as though it is a vector.
+
+You remember that the [eq] is related to energy in quantum
+mechanics. It is, in fact, just equal to the energy in the simple
+situation where there is only one state. Even for two-state systems of
+the electron spin, when we write the Hamiltonian as in
+Eq. ( 11.13 ), it looks very much like the classical 
+formula for the energy of a little magnet with magnetic
+moment [eq] in a magnetic field [eq].
+Classically, we would say
+\begin{equation}
+\label{Eq:III:11:14}
+U=-\FLPmu\cdot\FLPB,
+\end{equation}
+where [eq] is the property of the object and [eq] is an
+external field. We can imagine that Eq. ( 11.14 ) can be
+converted to ( 11.13 ) if we replace the classical energy
+by the Hamiltonian and the classical [eq] by the
+matrix [eq]. Then, after this purely formal substitution, we
+interpret the result as a matrix equation. It is sometimes said that
+to each quantity in classical physics there corresponds a matrix in
+quantum mechanics. It is really more correct to say that the
+Hamiltonian matrix corresponds to the energy, and any quantity that
+can be defined via energy has a corresponding matrix.
+
+For example, the magnetic moment can be defined via energy by saying
+that the energy in an external field [eq] is [eq].
+This defines the magnetic moment vector [eq]. Then we look at
+the formula for the Hamiltonian of a real (quantum) object in a magnetic
+field and try to identify whatever the matrices are that correspond to
+the various quantities in the classical formula. That’s the trick by
+which sometimes classical quantities have their quantum
+counterparts.
+
+You may try, if you want, to understand how a classical vector is
+equal to a matrix [eq], and maybe you will discover
+something—but don’t break your head on it. That’s not the
+idea—they are not equal . Quantum mechanics is a different
+kind of a theory to represent the world. It just happens that there
+are certain correspondences which are hardly more than mnemonic
+devices—things to remember with. That is, you remember
+Eq. ( 11.14 ) when you learn classical physics; then if you
+remember the correspondence [eq], you have a handle
+for remembering Eq. ( 11.13 ). Of course, nature knows the
+quantum mechanics, and the classical mechanics is only an approximation;
+so there is no mystery in the fact that in classical mechanics there is
+some shadow of quantum mechanical laws—which are truly the ones
+underneath. To reconstruct the original object from the shadow is not
+possible in any direct way, but the shadow does help you to remember
+what the object looks like. Equation ( 11.13 ) is the truth,
+and Eq. ( 11.14 ) is the shadow. Because we learn classical
+mechanics first, we would like to be able to get the quantum formula
+from it, but there is no sure-fire scheme for doing that. We must always
+go back to the real world and discover the correct quantum mechanical
+equations. When they come out looking like something in classical
+physics, we are in luck.
+
+If the warnings above seem repetitious and appear to you to be
+belaboring self-evident truths about the relation of classical physics
+to quantum physics, please excuse the conditioned reflexes of a
+professor who has usually taught quantum mechanics to students who
+hadn’t heard about Pauli spin matrices until they were in graduate
+school. Then they always seemed to be hoping that, somehow, quantum
+mechanics could be seen to follow as a logical consequence of
+classical mechanics which they had learned thoroughly years
+before. (Perhaps they wanted to avoid having to learn something new.)
+You have learned the classical formula, Eq. ( 11.14 ),
+only a few months ago—and then with warnings that it was
+inadequate—so maybe you will not be so unwilling to take the quantum
+formula, Eq. ( 11.13 ), as the basic truth.
+
+While we are on the subject of mathematical notation, we would like to
+describe still another way of writing things—a way which is
+used very often because it is so compact. It follows directly from the
+notation introduced in Chapter 8 . If we have a system
+in a state [eq], which varies with time, we can—as we did
+in Eq. ( 8.34 )—write the amplitude that the system
+would be in the state [eq] at [eq] as
+\begin{equation*}
+\braket{i}{\psi(t+\Delta t)}=\sum_j
+\bracket{i}{U(t+\Delta t,t)}{j}
+\braket{j}{\psi(t)}
+\end{equation*}
+The matrix element [eq] is the amplitude
+that the base state [eq] will be converted into the base
+state [eq] in the time interval [eq]. We then
+ defined [eq] by writing
+\begin{equation*}
+\bracket{i}{U(t+\Delta t,t)}{j}=\delta_{ij}-\frac{i}{\hbar}\,
+H_{ij}(t)\,\Delta t,
+\end{equation*}
+and we showed that the amplitudes [eq] were
+related by the differential equations
+\begin{equation}
+\label{Eq:III:11:15}
+i\hbar\,\ddt{C_i}{t}=\sum_jH_{ij}C_j.
+\end{equation}
+If we write out the amplitudes [eq] explicitly, the same equation
+appears as
+\begin{equation}
+\label{Eq:III:11:16}
+i\hbar\,\ddt{}{t}\,\braket{i}{\psi}=\sum_jH_{ij}\braket{j}{\psi}.
+\end{equation}
+Now the matrix elements [eq] are also amplitudes which we can
+write as [eq]; our differential equation looks like
+this:
+\begin{equation}
+\label{Eq:III:11:17}
+i\hbar\,\ddt{}{t}\,\braket{i}{\psi}=
+\sum_j\bracket{i}{H}{j}\braket{j}{\psi}.
+\end{equation}
+We see that [eq] is the amplitude
+that—under the physical conditions described by [eq]—a
+state [eq] will, during the time [eq], “generate” the
+state [eq]. (All of this is implicit in the discussion of
+Section 8–4 .)
+
+Now following the ideas of Section 8–2 , we can drop
+out the common term [eq] in Eq. ( 11.17 )—since it
+is true for any state [eq]—and write that equation simply as
+\begin{equation}
+\label{Eq:III:11:18}
+i\hbar\,\ddt{}{t}\,\ket{\psi}=
+\sum_jH\,\ket{j}\braket{j}{\psi}.
+\end{equation}
+Or, going one step further, we can also remove the [eq] and write
+\begin{equation}
+\label{Eq:III:11:19}
+i\hbar\,\ddt{}{t}\,\ket{\psi}=H\,\ket{\psi}.
+\end{equation}
+In Chapter 8 we pointed out that when things are written
+this way, the [eq] in [eq] or [eq] is called an
+ operator . From now on we will put the little
+hat ([eq]) over an operator to remind you that it is 
+an operator and not just a number. We will write [eq].
+Although the two equations ( 11.18 ) and ( 11.19 )
+ mean exactly the same thing as Eq. ( 11.17 ) or
+Eq. ( 11.15 ), we can think about them in a different
+way. For instance, we would describe Eq. ( 11.18 ) in this
+way: “The time derivative of the state vector [eq]
+times [eq] is equal to what you get by operating with the
+Hamiltonian operator [eq] on each base state, multiplying by
+the amplitude [eq] that [eq] is in the state [eq], and
+summing over all [eq].” Or Eq. ( 11.19 ) is described this
+way. “The time derivative (times [eq]) of a state [eq] is
+equal to what you get if you operate with the Hamiltonian [eq] on the
+state vector [eq].” It’s just a shorthand way of saying what is
+in Eq. ( 11.17 ), but, as you will see, it can be a great
+convenience.
+
+If we wish, we can carry the “abstraction” idea one more step.
+Equation ( 11.19 ) is true for any state [eq].
+Also the left-hand side, [eq], is also an operator—it’s the
+operation “differentiate by [eq] and multiply by [eq].” Therefore,
+Eq. ( 11.19 ) can also be thought of as an equation between
+operators—the operator equation
+\begin{equation*}
+i\hbar\,\ddt{}{t}=\Hop.
+\end{equation*}
+The Hamiltonian operator (within a constant) produces the same result
+as does [eq] when acting on any state. Remember that this
+equation—as well as Eq. ( 11.19 )—is not a
+statement that the [eq] operator is just the identical
+ operation as [eq]. The equations are the dynamical
+law of nature—the law of motion—for a quantum system.
+
+Just to get some practice with these ideas, we will show you another
+way we could get to Eq. ( 11.18 ). You know that we can
+write any state [eq] in terms of its projections into some
+base set [see Eq. ( 8.8 )],
+\begin{equation}
+\label{Eq:III:11:20}
+\ket{\psi}=\sum_i\ket{i}\braket{i}{\psi}.
+\end{equation}
+How does [eq] change with time? Well, just take its
+derivative:
+\begin{equation}
+\label{Eq:III:11:21}
+\ddt{}{t}\,\ket{\psi}=\ddt{}{t}\sum_i\ket{i}\braket{i}{\psi}.
+\end{equation}
+Now the base states [eq] do not change with time (at least
+ we are always taking them as definite fixed states), but the
+amplitudes [eq] are numbers which may vary. So
+Eq. ( 11.21 ) becomes
+\begin{equation}
+\label{Eq:III:11:22}
+\ddt{}{t}\,\ket{\psi}=\sum_i\ket{i}\,\ddt{}{t}\,\braket{i}{\psi}.
+\end{equation}
+Since we know [eq] from Eq. ( 11.16 ),
+we get
+ 
+\begin{align*}
+\ddt{}{t}\,\ket{\psi}&=-\frac{i}{\hbar}
+\sum_i\ket{i}\sum_jH_{ij}\braket{j}{\psi}\\[1ex]
+&=-\frac{i}{\hbar}\sum_{ij}\ket{i}\bracket{i}{H}{j}\braket{j}{\psi}=
+-\frac{i}{\hbar}\sum_jH\,\ket{j}\braket{j}{\psi}.
+\end{align*}
+ 
+ 
+\begin{align*}
+\ddt{}{t}\,\ket{\psi}&=-\frac{i}{\hbar}
+\sum_i\ket{i}\sum_jH_{ij}\braket{j}{\psi}\\[1ex]
+&=-\frac{i}{\hbar}\sum_{ij}\ket{i}\bracket{i}{H}{j}\braket{j}{\psi}\\[1ex]
+&=-\frac{i}{\hbar}\sum_jH\,\ket{j}\braket{j}{\psi}.
+\end{align*}
+ 
+This is Eq. ( 11.18 ) all over again.
+
+So we have many ways of looking at the Hamiltonian. We can think of the
+set of coefficients [eq] as just a bunch of numbers, or we can think
+of the “amplitudes” [eq], or we can think of the
+“matrix” [eq], or we can think of the “operator” [eq]. It all
+means the same thing.
+
+Now let’s go back to our two-state systems. If we write the Hamiltonian
+in terms of the sigma matrices (with suitable numerical coefficients
+like [eq], etc.), we can clearly also think of [eq] as an
+amplitude [eq] or, for short, as the
+operator [eq]. If we use the operator idea, we can write the
+equation of motion of a state [eq] in a magnetic field as
+\begin{equation}
+\label{Eq:III:11:23}
+i\hbar\,\ddt{}{t}\,\ket{\psi}=
+-\mu(B_x\sigmaop_x+B_y\sigmaop_y+B_z\sigmaop_z)\,\ket{\psi}.
+\end{equation}
+When we want to “use” such an equation we will normally have to
+express [eq] in terms of base vectors (just as we have to find
+the components of space vectors when we want specific numbers). So we
+will usually want to put Eq. ( 11.23 ) in the somewhat
+expanded form:
+\begin{equation}
+\label{Eq:III:11:24}
+i\hbar\ddt{}{t}\ket{\psi}\!=\!-\mu\!
+\sum_i(B_x\sigmaop_x\!+\!B_y\sigmaop_y\!+\!B_z\sigmaop_z)\ket{i}
+\braket{i}{\psi}.
+\end{equation}
+
+Now you will see why the operator idea is so neat. To use
+Eq. ( 11.24 ) we need to know what happens when the
+[eq] operators work on each of the base states. Let’s find out.
+Suppose we have [eq]; it is some vector [eq], but
+what? Well, let’s multiply it on the left by [eq]; we have
+\begin{equation*}
+\bracket{+}{\sigmaop_z}{+}=\sigma_{11}^z=1
+\end{equation*}
+(using Table 11–1 ). So we know that
+\begin{equation}
+\label{Eq:III:11:25}
+\braket{+}{?}=1.
+\end{equation}
+Now let’s multiply [eq] on the left by [eq]. We
+get
+\begin{equation*}
+\bracket{-}{\sigmaop_z}{+}=\sigma_{21}^z=0;
+\end{equation*}
+so
+\begin{equation}
+\label{Eq:III:11:26}
+\braket{-}{?}=0.
+\end{equation}
+There is only one state vector that satisfies both
+( 11.25 ) and ( 11.26 ); it is [eq]. We
+discover then that
+\begin{equation}
+\label{Eq:III:11:27}
+\sigmaop_z\,\ket{+}=\ket{+}.
+\end{equation}
+By this kind of argument you can easily show that all of the
+properties of the sigma matrices can be described in the operator
+notation by the set of rules given in Table 11–3 .
+
+If we have products of sigma matrices, they go over into products of
+operators. When two operators appear together as a product, you carry
+out first the operation with the operator which is farthest to the
+right. For instance, by [eq] we are to
+understand [eq]. From
+Table 11–3 , we get [eq], so
+\begin{equation}
+\label{Eq:III:11:28}
+\sigmaop_x\sigmaop_y\,\ket{+}=\sigmaop_x(i\,\ket{-}).
+\end{equation}
+Now any number—like [eq]—just moves through an operator (operators
+work only on state vectors); so Eq. ( 11.28 ) is the same
+as
+\begin{equation*}
+\sigmaop_x\sigmaop_y\,\ket{+}=i\sigmaop_x\,\ket{-}=i\,\ket{+}.
+\end{equation*}
+If you do the same thing for [eq], you will
+find that
+\begin{equation*}
+\sigmaop_x\sigmaop_y\,\ket{-}=-i\,\ket{-}.
+\end{equation*}
+Looking at Table 11–3 , you see that
+[eq] operating on [eq] or [eq] gives just
+what you get if you operate with [eq] and multiply by [eq]. We
+can, therefore, say that the operation [eq] is
+identical with the operation [eq] and write this statement as
+an operator equation:
+\begin{equation}
+\label{Eq:III:11:29}
+\sigmaop_x\sigmaop_y=i\sigmaop_z.
+\end{equation}
+Notice that this equation is identical with one of our matrix
+equations of Table 11–2 . So again we see the
+correspondence between the matrix and operator points of view. Each of
+the equations in Table 11–2 can, therefore, also be
+considered as equations about the sigma operators. You can check that
+they do indeed follow from Table 11–3 . It is best, when
+working with these things, not to keep track of whether a
+quantity like [eq] or [eq] is an operator or a matrix. All the
+equations are the same either way, so Table 11–2 is for
+sigma operators, or for sigma matrices, as you wish.
+
+We can now write our two-state equation in various forms, for example,
+either as
+\begin{equation*}
+i\hbar\,\ddt{C_i}{t}=\sum_jH_{ij}C_j
+\end{equation*}
+or
+\begin{equation}
+\label{Eq:III:11:30}
+i\hbar\,\ddt{\,\ket{\psi}}{t}=\Hop\,\ket{\psi}.
+\end{equation}
+They both mean the same thing. For a spin one-half particle in a
+magnetic field, the Hamiltonian [eq] is given by Eq. ( 11.8 )
+or by Eq. ( 11.13 ).
+
+If the field is in the [eq]-direction, then—as we have seen several
+times by now—the solution is that the state [eq], whatever it
+is, precesses around the [eq]-axis (just as if you were to take the
+physical object and rotate it bodily around the [eq]-axis) at an angular
+velocity equal to twice the magnetic field times [eq]. The same
+is true, of course, for a magnetic field along any other direction,
+because the physics is independent of the coordinate system. If we have
+a situation where the magnetic field varies from time to time in a
+complicated way, then we can analyze the situation in the following way.
+Suppose you start with the spin in the [eq]-direction and you have an
+[eq]-magnetic field. The spin starts to turn. Then if the [eq]-field is
+turned off, the spin stops turning. Now if a [eq]-field is turned on, the
+spin precesses about [eq], and so on. So depending on how the fields vary
+in time, you can figure out what the final state is—along what axis it
+will point. Then you can refer that state back to the original [eq]
+and [eq] with respect to [eq] by using the projection formulas we
+had in Chapter 10 (or Chapter 6 ). If the
+state ends up with its spin in the direction [eq], it will
+have an up-amplitude [eq] and a
+down-amplitude [eq]. That solves any problem.
+It is a word description of the solution of the differential equations.
+
+The solution just described is sufficiently general to take care of
+ any two-state system . Let’s take our example of the ammonia
+molecule—including the effects of an electric field. If we describe
+the system in terms of the states [eq] and [eq], the
+equations ( 9.38 ) and ( 9.39 ) look like this:
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{C_{\slI}}{t}&=
++AC_{\slI}+\mu\Efield C_{\slII},\\[2ex]
+i\hbar\,\ddt{C_{\slII}}{t}&=
+-AC_{\slII}+\mu\Efield C_{\slI}.
+\end{aligned}
+\label{Eq:III:11:31}
+\end{equation}
+You say, “No, I remember there was an [eq] in there.” Well, we have
+shifted the origin of energy to make the [eq] zero. (You can always do
+that by changing both amplitudes by the same
+factor—[eq]—and get rid of any constant energy.) Now if
+corresponding equations always have the same solutions, then we really
+don’t have to do it twice. If we look at these equations and look at
+Eq. ( 11.1 ), then we can make the following identification.
+Let’s call [eq] the state [eq] and [eq] the
+state [eq]. That does not mean that we are lining-up the
+ammonia in space, or that [eq] and [eq] has anything to do
+with the [eq]-axis. It is purely artificial. We have an artificial space
+that we might call the “ammonia molecule representative space,” or
+something—a three-dimensional “diagram” in which being “up”
+corresponds to having the molecule in the state [eq] and being
+“down” along this false [eq]-axis represents having a molecule in the
+state [eq]. Then, the equations will be identified as follows.
+First of all, you see that the Hamiltonian can be written in terms of
+the sigma matrices as
+\begin{equation}
+\label{Eq:III:11:32}
+H=+A\sigma_z+\mu\Efield\sigma_x.
+\end{equation}
+Or, putting it another way, [eq] in Eq. ( 11.1 )
+corresponds to [eq] in Eq. ( 11.32 ), and [eq]
+corresponds to [eq]. In our “model” space, then, we have a
+constant [eq] field along the [eq]-direction. If we have an electric
+field [eq] which is changing with time, then we have a [eq] field
+along the [eq]-direction which varies in proportion. So the
+behavior of an electron in a magnetic field with a constant component in
+the [eq]-direction and an oscillating component in the [eq]-direction is
+mathematically analogous and corresponds exactly to the behavior of an
+ammonia molecule in an oscillating electric field . Unfortunately, we do
+not have the time to go any further into the details of this
+correspondence, or to work out any of the technical details. We only
+wished to make the point that all systems of two states can be
+made analogous to a spin one-half object precessing in a magnetic field.
+
+There are a number of other two-state systems which are interesting to
+study, and the first new one we would like to talk about is the
+photon. To describe a photon we must first give its vector
+momentum. For a free photon, the frequency is determined by the
+momentum, so we don’t have to say also what the frequency is. After
+that, though, we still have a property called the
+polarization. Imagine that there is a photon coming at you with a
+definite monochromatic frequency (which will be kept the same
+throughout all this discussion so that we don’t have a variety of
+momentum states). Then there are two directions of polarization. In
+the classical theory, light can be described as having an electric
+field which oscillates horizontally or an electric field which
+oscillates vertically (for instance); these two kinds of light are
+called [eq]-polarized and [eq]-polarized light. The light can also be
+polarized in some other direction, which can be made up from the
+superposition of a field in the [eq]-direction and one in the
+[eq]-direction. Or if you take the [eq]- and the [eq]-components out of
+phase by [eq], you get an electric field that rotates—the
+light is elliptically polarized. (This is just a quick reminder of the
+classical theory of polarized light that we studied in
+Chapter 33 , Vol. I.)
+
+Now, however, suppose we have a single photon—just one. There
+is no electric field that we can discuss in the same way. All we have
+is one photon . But a photon has to have the analog of the
+classical phenomena of polarization. There must be at least two
+different kinds of photons. At first, you might think there should be
+an infinite variety—after all, the electric vector can point in all
+sorts of directions. We can, however, describe the polarization of a
+photon as a two-state system. A photon can be in the state [eq]
+or in the state [eq]. By [eq] we mean the polarization state
+of each one of the photons in a beam of light which classically 
+is [eq]-polarized light. On the other hand, by [eq] we mean the
+polarization state of each of the photons in a [eq]-polarized beam. And
+we can take [eq] and [eq] as our base states of a photon of
+given momentum pointing at you—in what we will call the
+[eq]-direction. So there are two base states [eq] and [eq],
+and they are all that are needed to describe any photon at all.
+
+For example, if we have a piece of polaroid set with its axis to pass
+light polarized in what we call the [eq]-direction, and we send in a
+photon which we know is in the state [eq], it will be absorbed by
+the polaroid. If we send in a photon which we know is in the
+state [eq], it will come right through as [eq]. If we take a
+piece of calcite which takes a beam of polarized light and splits it
+into an [eq] beam and a [eq] beam, that piece of calcite is
+the complete analog of a Stern-Gerlach apparatus which splits a beam of
+silver atoms into the two states [eq] and [eq]. So everything
+we did before with particles and Stern-Gerlach apparatuses, we can do
+again with light and pieces of calcite. And what about light filtered
+through a piece of polaroid set at an angle [eq]? Is that another
+state? Yes, indeed, it is another state. Let’s call the axis of
+the polaroid [eq] to distinguish it from the axes of our base states.
+See Fig. 11-2 . A photon that comes out will be in the
+state [eq]. However, any state can be represented as a linear
+combination of base states, and the formula for the combination is,
+here,
+\begin{equation}
+\label{Eq:III:11:33}
+\ket{x'}=\cos\theta\,\ket{x}+\sin\theta\,\ket{y}.
+\end{equation}
+That is, if a photon comes through a piece of polaroid set at the
+angle [eq] (with respect to [eq]), it can still be resolved into
+[eq] and [eq] beams—by a piece of calcite, for example. Or
+you can, if you wish, just analyze it into [eq]- and [eq]-components in
+your imagination. Either way, you will find the amplitude [eq]
+to be in the [eq] state and the amplitude [eq] to be in
+the [eq] state.
+
+Now we ask this question: Suppose a photon is polarized in the
+[eq]-direction by a piece of polaroid set at the angle [eq] and
+arrives at a polaroid at the angle zero—as in Fig. 11-3 ;
+what will happen? With what probability will it get through? The answer
+is the following. After it gets through the first polaroid, it is
+definitely in the state [eq]. The second polaroid will let the
+photon through if it is in the state [eq] (but absorb it if it is
+the state [eq]). So we are asking with what probability does the
+photon appear to be in the state [eq]? We get that probability from
+the absolute square of amplitude [eq] that a photon in the
+state [eq] is also in the state [eq]. What
+is [eq]? Just multiply Eq. ( 11.33 ) by [eq]
+to get
+\begin{equation*}
+\braket{x}{x'}=\cos\theta\,\braket{x}{x}+\sin\theta\,\braket{x}{y}.
+\end{equation*}
+Now [eq], from the physics—as they must be if
+[eq] and [eq] are base states—and [eq]. So we
+get
+\begin{equation*}
+\braket{x}{x'}=\cos\theta,
+\end{equation*}
+and the probability is [eq]. For example, if the first
+polaroid is set at [eq], a photon will get through [eq] of the
+time, and [eq] of the time it will heat the polaroid by being
+absorbed therein.
+
+Now let us see what happens classically in the same situation. We
+would have a beam of light with an electric field which is varying in
+some way or another—say “unpolarized.” After it gets through the
+first polaroid, the electric field is oscillating in the
+[eq]-direction with a size [eq]; we would draw the field as an
+oscillating vector with a peak value [eq] in a diagram like
+Fig. 11-4 . Now when the light arrives at the second
+polaroid, only the [eq]-component, [eq], of the electric
+field gets through. The intensity is proportional to the square
+of the field and, therefore, to [eq]. So the energy
+coming through is [eq] weaker than the energy which was
+entering the last polaroid.
+
+The classical picture and the quantum picture give similar results. If
+you were to throw [eq] billion photons at the second polaroid, and the
+average probability of each one going through is, say, [eq], you
+would expect [eq] of [eq] billion would get through. Likewise, the
+energy that they would carry would be [eq] of the energy that you
+attempted to put through. The classical theory says nothing about the
+statistics of the thing—it simply says that the energy that comes
+through will be precisely [eq] of the energy which you were sending
+in. That is, of course, impossible if there is only one photon. There
+is no such thing as [eq] of a photon. It is either all there,
+or it isn’t there at all. Quantum mechanics tells us it is all 
+there [eq] of the time . The relation of the two theories is
+clear.
+
+What about the other kinds of polarization? For example, right-hand
+circular polarization? In the classical theory, right-hand circular
+polarization has equal components in [eq] and [eq] which are
+[eq] out of phase. In the quantum theory, a right-hand circularly
+polarized (RHC) photon has equal amplitudes to be polarized [eq]
+or [eq], and the amplitudes are [eq] out of phase.
+Calling a RHC photon a state [eq] and a LHC photon a
+state [eq], we can write (see Vol. I, Section 33-1 )
+\begin{equation}
+\begin{aligned}
+\ket{R}&=\frac{1}{\sqrt{2}}\,(\ket{x}+i\,\ket{y}),\\[4ex]
+\ket{L}&=\frac{1}{\sqrt{2}}\,(\ket{x}-i\,\ket{y}).
+\end{aligned}
+\label{Eq:III:11:34}
+\end{equation}
+—the [eq] is put in to get normalized states. With these
+states you can calculate any filtering or interference effects you
+want, using the laws of quantum theory. If you want, you can also
+choose [eq] and [eq] as base states and represent
+everything in terms of them. You only need to show first
+that [eq]—which you can do by taking the conjugate
+form of the first equation above [see Eq. ( 8.13 )] and
+multiplying it by the other. You can resolve light into [eq]- and
+[eq]-polarizations, or into [eq]- and [eq]-polarizations, or into right
+and left polarizations as a basis.
+
+Just as an example, let’s try to turn our formulas around. Can we
+represent the state [eq] as a linear combination of right and
+left? Yes, here it is:
+\begin{equation}
+\begin{aligned}
+\ket{x}&=\frac{1}{\sqrt{2}}\,
+(\ket{R}+\ket{L}),\\[4ex]
+\ket{y}&=-\frac{i}{\sqrt{2}}\,
+(\ket{R}-\ket{L}).
+\end{aligned}
+\label{Eq:III:11:35}
+\end{equation}
+
+Proof: Add and subtract the two equations
+in ( 11.34 ). It is easy to go from one base to the other.
+
+One curious point has to be made, though. If a photon is right
+circularly polarized, it shouldn’t have anything to do with the [eq]- and
+[eq]-axes. If we were to look at the same thing from a coordinate system
+turned at some angle about the direction of flight, the light would
+still be right circularly polarized—and similarly for left. The right
+and left circularly polarized light are the same for any such rotation;
+the definition is independent of any choice of the [eq]-direction (except
+that the photon direction is given). Isn’t that nice—it doesn’t take
+any axes to define it. Much better than [eq] and [eq]. On the other hand,
+isn’t it rather a miracle that when you add the right and left
+together you can find out which direction [eq] was? If “right” and
+“left” do not depend on [eq] in any way, how is it that we can put them
+back together again and get [eq]? We can answer that question in part by
+writing out the state [eq], which represents a photon RHC
+polarized in the frame [eq]. In that frame, you would write
+\begin{equation*}
+\ket{R'}=\frac{1}{\sqrt{2}}\,(\ket{x'}+i\,\ket{y'}).
+\end{equation*}
+How does such a state look in the frame [eq]? Just
+substitute [eq] from Eq. ( 11.33 ) and the
+corresponding [eq]—we didn’t write it down, but it
+is [eq]. Then
+
+\begin{align*}
+\ket{R'}\!&=\!\frac{1}{\sqrt{2}}[
+\cos\theta\,\ket{x}\!+\sin\theta\,\ket{y}\!-
+i\sin\theta\,\ket{x}\!+i\cos\theta\,\ket{y}]\\[2ex]
+&=\frac{1}{\sqrt{2}}[
+(\cos\theta-i\sin\theta)\ket{x}\!+
+i(\cos\theta-i\sin\theta)\ket{y}]\\[2ex]
+&=\frac{1}{\sqrt{2}}(\ket{x}\!+i\ket{y})
+(\cos\theta-i\sin\theta).
+\end{align*}
+
+The first term is just [eq], and the second is [eq];
+our result is that
+\begin{equation}
+\label{Eq:III:11:36}
+\ket{R'}=e^{-i\theta}\,\ket{R}.
+\end{equation}
+The states [eq] and [eq] are the same except for the
+phase factor [eq]. If you work out the same thing
+for [eq], you get that 1 
+\begin{equation}
+\label{Eq:III:11:37}
+\ket{L'}=e^{+i\theta}\,\ket{L}.
+\end{equation}
+
+Now you see what happens. If we add [eq] and [eq], we get
+something different from what we get when we add [eq]
+and [eq]. For instance, an [eq]-polarized photon is
+[Eq. ( 11.35 )] the sum of [eq] and [eq], but a
+[eq]-polarized photon is the sum with the phase of one shifted
+[eq] backward and the other [eq] forward. That is just what
+we would get from the sum of [eq] and [eq] for the special
+angle [eq], and that’s right. An [eq]-polarization in the
+ prime frame is the same as a [eq]-polarization in the original
+frame. So it is not exactly true that a circularly polarized photon
+looks the same for any set of axes. Its phase (the phase relation
+of the right and left circularly polarized states) keeps track of the
+[eq]-direction.
+
+We will now describe a two-state system in the world of the strange
+particles—a system for which quantum mechanics gives a most
+remarkable prediction. To describe it completely would involve us in a
+lot of stuff about strange particles, so we will, unfortunately, have
+to cut some corners. We can only give an outline of how a certain
+discovery was made—to show you the kind of reasoning that was
+involved. It begins with the discovery by Gell-Mann and Nishijima of
+the concept of strangeness and of a new law of
+ conservation of strangeness . It was when
+Gell-Mann and Pais were analyzing the consequences of these
+new ideas that they came across the prediction of a most remarkable
+phenomenon we are going to describe. First, though, we have to tell you
+a little about “strangeness.”
+
+We must begin with what are called the strong interactions of
+nuclear particles. These are the interactions which are responsible
+for the strong nuclear forces—as distinct, for instance, from the
+relatively weaker electromagnetic interactions. The interactions are
+“strong” in the sense that if two particles get close enough to
+interact at all, they interact in a big way and produce other
+particles very easily. The nuclear particles have also what is called
+a “weak interaction” by which certain things can happen, such as
+beta decay, but always very slowly on a nuclear time scale—the weak
+interactions are many, many orders of magnitude weaker than the strong
+interactions and even much weaker than electromagnetic interactions.
+
+When the strong interactions were being studied with the big
+accelerators, people were surprised to find that certain things that
+“should” happen—that were expected to happen—did not occur. For
+instance, in some interactions a particle of a certain type did not
+appear when it was expected.
+Gell-Mann
+and Nishijima noticed that many
+of these peculiar happenings could be explained at once by inventing a
+new conservation law: the conservation of strangeness . They
+proposed that there was a new kind of attribute associated with each
+particle—which they called its “strangeness” number—and that in
+any strong interaction the “quantity of strangeness” is conserved.
+
+Suppose, for instance, that a high-energy negative K-meson—with, say,
+an energy of many GeV—collides with a proton. Out of the interaction
+may come many other particles: [eq]-mesons, K-mesons, lambda particles,
+sigma particles—any of the mesons or baryons listed in
+Table 2–2 of Vol. I. It is observed, however, that
+only certain combinations appear, and never others. Now certain
+conservation laws were already known to apply. First, energy and
+momentum are always conserved. The total energy and momentum after an
+event must be the same as before the event. Second, there is the
+conservation of electric charge which says that the total charge of the
+outgoing particles must be equal to the total charge carried by the
+original particles. In our example of a K-meson and a proton coming
+together, the following reactions do occur:
+\begin{align}
+&\Kminus+\text{p}\to\text{p}+\Kminus+\pi^++\pi^-+\pi^0\notag \\
+\label{Eq:III:11:38}
+\kern{-3em}\text{or}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-5em}\text{or}}\\
+&\Kminus+\text{p}\to\Sigma^-+\pi^+.\notag
+\end{align}
+We would never get:
+ 
+\begin{equation}
+\label{Eq:III:11:39}
+\Kminus+\text{p}\to\text{p}+\Kminus+\pi^+
+\quad\text{or}\quad
+\Kminus+\text{p}\to\Lambda^0+\pi^+,
+\end{equation}
+ 
+ 
+\begin{align}
+&\Kminus+\text{p}\to\text{p}+\Kminus+\pi^+\notag\\
+\label{Eq:III:11:39}
+\kern{-3em}\text{or}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-5em}\text{or}}\\
+&\Kminus+\text{p}\to\Lambda^0+\pi^+,\notag
+\end{align}
+ 
+because of the conservation of charge. It was also known that the
+ number of baryons is
+conserved. The number of baryons
+ out must be equal to the number of baryons in . For this
+law, an antiparticle of a baryon is counted
+as minus one baryon. This means that we can—and do —see
+\begin{align}
+&\Kminus+\text{p}\to\Lambda^0+\pi^0\notag \\
+\label{Eq:III:11:40}
+\kern{-3em}\text{or}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-5em}\text{or}}\\
+&\Kminus+\text{p}\to\text{p}+\Kminus+\text{p}+\overline{\text{p}}\notag
+\end{align}
+(where [eq] is the antiproton, which
+carries a negative charge). But we never see
+\begin{align}
+&\Kminus+\text{p}\to\Kminus+\pi^++\pi^0\notag \\
+\label{Eq:III:11:41}
+\kern{-3em}\text{or}\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-5em}\text{or}}\\
+&\Kminus+\text{p}\to\text{p}+\Kminus+\text{n}\notag
+\end{align}
+(even when there is plenty of energy), because baryons would not be
+conserved.
+
+These laws, however, do not explain the strange fact that the
+following reactions—which do not immediately appear to be especially
+different from some of those in ( 11.38 )
+or ( 11.40 )—are also never observed:
+\begin{align}
+&\Kminus+\text{p}\to\text{p}+\Kminus+\Kzero\notag \\
+\kern{-3em}\text{or}\notag\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-5em}\text{or}}\notag\\
+\label{Eq:III:11:42}
+&\Kminus+\text{p}\to\text{p}+\pi^-\\
+\kern{-3em}\text{or}\notag\\ % ebook remove
+% ebook insert: \makebox[0em]{\kern{-5em}\text{or}}\notag\\
+&\Kminus+\text{p}\to\Lambda^0+\Kzero.\notag
+\end{align}
+The explanation is the conservation of strangeness. With each particle
+goes a number—its strangeness [eq]—and there is a law that in
+any strong interaction, the total strangeness out must
+equal the total strangeness that went in . The proton and
+antiproton ([eq], [eq]), the neutron and
+antineutron ([eq], [eq]), and the [eq]-mesons
+([eq], [eq], [eq]) all have the strangeness number zero ;
+the [eq] and [eq] mesons have strangeness [eq]; the
+[eq] and [eq] (the anti-[eq]), 3 the [eq] and the
+[eq]-particles ([eq], [eq], [eq]) have strangeness [eq]. There is also
+a particle with strangeness [eq]—the [eq]-particle (capital
+“ksi”)—and perhaps others as yet unknown. We have made a list of
+these strangenesses in Table 11–4 .
+
+Let’s see how the strangeness conservation works in some of the
+reactions we have written down. If we start with a [eq] and a
+proton, we have a total strangeness of [eq]. The conservation
+of strangeness says that the strangeness of products after the
+reaction must also add up to [eq]. You see that that is so for the
+reactions of ( 11.38 ) and ( 11.40 ). But in the
+reactions of ( 11.42 ) the strangeness of the right-hand
+side is zero in each case. Such reactions do not conserve
+strangeness, and do not occur. Why? Nobody knows. Nobody knows any
+more than what we have just told you about this. Nature just works
+that way.
+
+Now let’s look at the following reaction: a [eq] hits a proton. You
+might, for instance, get a [eq] particle plus a neutral
+K-particle—two neutral particles. Now which neutral K do you get?
+Since the [eq]-particle has a strangeness [eq] and the [eq]
+and [eq] have a strangeness zero, and since this is a fast
+production reaction, the strangeness must not change. The K-particle
+must have strangeness [eq]—it must therefore be the [eq]. The
+reaction is
+\begin{equation*}
+\pi^-+\text{p}\to\Lambda^0+\Kzero,
+\end{equation*}
+with
+\begin{equation*}
+S=0+0=-1++1\quad(\text{conserved}).
+\end{equation*}
+If the [eq] were there instead of the [eq], the strangeness
+on the right would be [eq]—which nature does not permit, since the
+strangeness on the left side is zero. On the other hand, a [eq]
+can be produced in other reactions, such as
+\begin{gather*}
+\text{n}+\text{p}\to\text{n}+\text{n}+\Kzerobar+\Kplus,\\
+\\
+S=0+0=0+0+-1++1
+\end{gather*}
+or
+\begin{gather*}
+\Kminus+\text{p}\to\text{n}+\Kzerobar,\\
+\\
+S=-1+0=0+-1.
+\end{gather*}
+
+You may be thinking, “That’s all a lot of stuff, because how do you
+ know whether it is a [eq] or a [eq]? They look
+exactly the same. They are antiparticles of each other, so they have
+exactly the same mass, and both have zero electric charge. How do you
+distinguish them?” By the reactions they produce. For example,
+a [eq] can interact with matter to produce a
+[eq]-particle, like this:
+\begin{equation*}
+\Kzerobar+\text{p}\to\Lambda^0+\pi^+,
+\end{equation*}
+but a [eq] cannot. There is no way a [eq] can produce a
+[eq]-particle when it interacts with ordinary matter (protons and
+neutrons). 4 So the
+experimental distinction between the [eq] and the [eq]
+would be that one of them will and one of them will not
+produce [eq]'s.
+
+One of the predictions of the strangeness theory is then this—if, in
+an experiment with high-energy pions, a [eq]-particle is produced
+with a neutral K-meson, then that neutral K-meson going into
+other pieces of matter will never produce a [eq]. The experiment
+might run something like this. You send a beam of [eq]-mesons into a
+large hydrogen bubble chamber. A [eq] track disappears, but somewhere
+else a pair of tracks appear (a proton and a [eq]) indicating that a
+[eq]-particle has disintegrated 5 
+—see Fig. 11-5 . Then you
+know that there is a [eq] somewhere which you cannot see.
+
+You can, however, figure out where it is going by using the
+conservation of momentum and energy. [It could reveal itself later by
+disintegrating into two charged particles, as shown in
+Fig. 11-5 (a).] As the [eq] goes flying along, it may
+interact with one of the hydrogen nuclei (protons), producing perhaps
+some other particles. The prediction of the strangeness theory is that
+it will never produce a [eq]-particle in a simple reaction
+like, say,
+\begin{equation*}
+\Kzero+\text{p}\to\Lambda^0+\pi^+,
+\end{equation*}
+although a [eq] can do just that. That is, in a bubble chamber
+a [eq] might produce the event sketched in
+Fig. 11-5 (b)—in which the [eq] is seen because it
+decays—but a [eq] will not. That’s the first part of our story.
+That’s the conservation of strangeness.
+
+The conservation of strangeness is, however, not perfect . There
+are very slow disintegrations of the strange particles—decays taking
+a long 6 
+time like [eq] second in which the strangeness
+is not conserved. These are called the “weak” decays. For
+example, the [eq] disintegrates into a pair of [eq]-mesons ([eq]
+and [eq]) with a lifetime of [eq] second. That was, in fact, the
+way K-particles were first seen. Notice that the decay reaction
+\begin{equation*}
+\Kzero\to\pi^++\pi^-
+\end{equation*}
+does not conserve strangeness, so it cannot go “fast” by the strong
+interaction; it can only go through the weak decay process.
+
+Now the [eq] also disintegrates in the same way —into
+a [eq] and a [eq]—and also with the same lifetime
+\begin{equation*}
+\Kzerobar\to\pi^-+\pi^+.
+\end{equation*}
+Again we have a weak decay because it does not conserve strangeness.
+There is a principle that for any reaction there is the corresponding
+reaction with “matter” replaced by “antimatter”
+and vice versa . Since the [eq] is the antiparticle of
+the [eq], it should decay into the antiparticles of the [eq]
+and [eq], but the antiparticle of a [eq] is the [eq]. (Or, if you
+prefer, vice versa . It turns out that for the [eq]-mesons it
+doesn’t matter which one you call “matter.”) So as a consequence of
+the weak decays, the [eq] and [eq] can go into the same final
+products. When “seen” through their decays—as in a bubble
+chamber—they look like the same particle. Only their strong
+interactions are different.
+
+At last we are ready to describe the work of
+Gell-Mann and
+Pais. They
+first noticed that since the [eq] and the [eq] can both
+turn into states of two [eq]-mesons there must be some amplitude that
+a [eq] can turn into a [eq], and also that a [eq]
+can turn into a [eq]. Writing the reactions as one does in
+chemistry, we would have
+\begin{equation}
+\label{Eq:III:11:43}
+\Kzero\rightleftharpoons\pi^-+\pi^+\rightleftharpoons\Kzerobar.
+\end{equation}
+These reactions imply that there is some amplitude per unit time, say
+[eq] times [eq], that
+a [eq] will turn into a [eq] through the weak interaction
+responsible for the decay into two [eq]-mesons. And there is the
+corresponding amplitude [eq] for
+the reverse process. Because matter and antimatter behave in exactly
+the same way, these two amplitudes are numerically equal; we’ll call
+them both [eq]:
+\begin{equation}
+\label{Eq:III:11:44}
+\bracket{\Kzerobar}{\text{W}}{\Kzero}=
+\bracket{\Kzero}{\text{W}}{\Kzerobar}=A.
+\end{equation}
+
+Now—said Gell-Mann and Pais—here is an
+interesting situation. What people have been calling two distinct states
+of the world—the [eq] and the [eq]—should really be
+considered as one two-state system , because there is an
+amplitude to go from one state to the other. For a complete treatment,
+one would, of course, have to deal with more than two states, because
+there are also the states of [eq]'s, and so on; but since they were
+mainly interested in the relation of [eq] and [eq], they did
+not have to complicate things and could make the approximation of a
+two-state system. The other states were taken into account to the
+extent that their effects appeared implicitly in the amplitudes of
+Eq. ( 11.44 ).
+
+Accordingly, Gell-Mann and Pais analyzed the neutral
+particle as a two-state system. They began by choosing as their two base
+states the states [eq] and [eq]. (From here on,
+the story goes very much as it did for the ammonia molecule.) Any
+state [eq] of the neutral K-particle could then be described by
+giving the amplitudes that it was in either base state. We’ll call these
+amplitudes
+\begin{equation}
+\label{Eq:III:11:45}
+C_+=\braket{\Kzero}{\psi},\quad
+C_-=\braket{\Kzerobar}{\psi}.
+\end{equation}
+
+The next step was to write the Hamiltonian equations for this
+two-state system. If there were no coupling between the [eq] and
+the [eq], the equations would be simply
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{C_+}{t}&=E_0C_+,\\[2ex]
+i\hbar\,\ddt{C_-}{t}&=E_0C_-.
+\end{aligned}
+\label{Eq:III:11:46}
+\end{equation}
+But since there is the amplitude [eq]
+for the [eq] to turn into a [eq] there should be the
+additional term
+\begin{equation*}
+\bracket{\Kzero}{\text{W}}{\Kzerobar}C_-=AC_-
+\end{equation*}
+added to the right-hand side of the first equation. And similarly, the
+term [eq] should be inserted in the equation for the rate of change
+of [eq].
+
+But that’s not all. When the two-pion effect is taken into account
+there is an additional amplitude for the [eq] to turn into
+ itself through the process
+\begin{equation*}
+\Kzero\to\pi^-+\pi^+\to\Kzero.
+\end{equation*}
+The additional amplitude, which we would
+write [eq], is just equal to the
+amplitude [eq], since the amplitudes
+to go to and from a pair of [eq]-mesons are identical for the [eq]
+and the [eq]. If you wish, the argument can be written out in
+detail like this. First write 7 
+\begin{equation*}
+\bracket{\Kzerobar}{\text{W}}{\Kzero}=
+\bracket{\Kzerobar}{\text{W}}{2\pi}
+\bracket{2\pi}{\text{W}}{\Kzero}
+\end{equation*}
+and
+\begin{equation*}
+\bracket{\Kzero}{\text{W}}{\Kzero}=
+\bracket{\Kzero}{\text{W}}{2\pi}
+\bracket{2\pi}{\text{W}}{\Kzero}.
+\end{equation*}
+Because of the symmetry of matter and antimatter
+\begin{equation*}
+\bracket{2\pi}{\text{W}}{\Kzero}=
+\bracket{2\pi}{\text{W}}{\Kzerobar},
+\end{equation*}
+and also
+\begin{equation*}
+\bracket{\Kzero}{\text{W}}{2\pi}=
+\bracket{\Kzerobar}{\text{W}}{2\pi}.
+\end{equation*}
+It then follows that $\bracket{\Kzero}{\text{W}}{\Kzero}=
+\bracket{\Kzerobar}{\text{W}}{\Kzero}$, and also that
+$\bracket{\Kzerobar}{\text{W}}{\Kzero}=
+\bracket{\Kzero}{\text{W}}{\Kzerobar}$, as we said earlier. Anyway,
+there are the two additional amplitudes
+[eq]
+and [eq], both equal to [eq], which
+should be included in the Hamiltonian equations. The first gives a
+term [eq] on the right-hand side of the equation for [eq], and the
+second gives a new term [eq] in the equation for [eq]. Reasoning
+this way, Gell-Mann and
+Pais concluded that the
+Hamiltonian equations for the [eq] system should be
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{C_+}{t}&=E_0C_++AC_-+AC_+,\\[2ex]
+i\hbar\,\ddt{C_-}{t}&=E_0C_-+AC_++AC_-.
+\end{aligned}
+\label{Eq:III:11:47}
+\end{equation}
+
+We must now correct something we have said in earlier chapters: that two
+amplitudes like [eq]
+and [eq] which are the reverse of
+each other, are always complex conjugates. That was true when we were
+talking about particles that did not decay. But if particles can
+decay—and can, therefore, become “lost”—the two amplitudes are not
+necessarily complex conjugates. So the equality of ( 11.44 )
+does not mean that the amplitudes are real numbers; they are in fact
+complex numbers. The coefficient [eq] is, therefore, complex; and we
+can’t just incorporate it into the energy [eq].
+
+Having played often with electron spins and such, our heroes knew that
+the Hamiltonian equations of ( 11.47 ) meant that there was
+ another pair of base states which could also be used to
+represent the K-particle system and which would have especially simple
+behaviors. They said, “Let’s take the sum and difference of these two
+equations. Also, let’s measure all our energies from [eq], and use
+units for energy and time that make [eq].” (That’s what modern
+theoretical physicists always do. It doesn’t change the physics but
+makes the equations take on a simple form.) Their result:
+ 
+\begin{equation}
+\label{Eq:III:11:48}
+i\,\ddt{}{t}\,(C_++C_-)=2A(C_++C_-),\quad
+i\,\ddt{}{t}\,(C_+-C_-)=0.
+\end{equation}
+ 
+ 
+
+\begin{equation}
+\begin{aligned}
+i\,\ddt{}{t}\,(C_++C_-)&=2A(C_++C_-),\\[2ex]
+i\,\ddt{}{t}\,(C_+-C_-)&=0.
+\end{aligned}
+\label{Eq:III:11:48}
+\end{equation}
+
+It is apparent that the combinations of amplitudes [eq]
+and [eq] act independently from each other (corresponding, of
+course, to the stationary states we have been studying earlier). So
+they concluded that it would be more convenient to use a different
+representation for the K-particle. They defined the two states
+ 
+\begin{equation}
+\label{Eq:III:11:49}
+\ket{\text{K}_1}=\frac{1}{\sqrt{2}}\,
+(\ket{\Kzero}+\ket{\Kzerobar}),\quad
+\ket{\text{K}_2}=\frac{1}{\sqrt{2}}\,
+(\ket{\Kzero}-\ket{\Kzerobar}).
+\end{equation}
+ 
+ 
+
+\begin{equation}
+\begin{aligned}
+\ket{\text{K}_1}&=\frac{1}{\sqrt{2}}\,
+(\ket{\Kzero}+\ket{\Kzerobar}),\\[2ex]
+\ket{\text{K}_2}&=\frac{1}{\sqrt{2}}\,
+(\ket{\Kzero}-\ket{\Kzerobar}).
+\end{aligned}
+\label{Eq:III:11:49}
+\end{equation}
+
+ 
+They said that instead of thinking of the [eq] and [eq]
+mesons, we can equally well think in terms of the two “particles”
+(that is, “states”) K[eq] and K[eq]. (These correspond, of course,
+to the states we have usually called [eq]
+and [eq]. We are not using our old notation because we want now
+to follow the notation of the original authors—and the one you will
+see in physics seminars.)
+
+Now Gell-Mann and Pais didn’t do all this just to get different names
+for the particles—there is also some strange new physics in
+it. Suppose that [eq] and [eq] are the amplitudes that some
+state [eq] will be either a K[eq] or a K[eq] meson:
+\begin{equation*}
+C_1=\braket{\text{K}_1}{\psi},\quad
+C_2=\braket{\text{K}_2}{\psi}.
+\end{equation*}
+From the equations of ( 11.49 ),
+ 
+\begin{equation}
+\label{Eq:III:11:50}
+C_1=\frac{1}{\sqrt{2}}\,(C_++C_-),\quad
+C_2=\frac{1}{\sqrt{2}}\,(C_+-C_-).
+\end{equation}
+ 
+ 
+\begin{equation}
+\begin{aligned}
+C_1&=\frac{1}{\sqrt{2}}\,(C_++C_-),\\[2ex]
+C_2&=\frac{1}{\sqrt{2}}\,(C_+-C_-).
+\end{aligned}
+\label{Eq:III:11:50}
+\end{equation}
+ 
+Then the Eqs. ( 11.48 ) become
+\begin{equation}
+\label{Eq:III:11:51}
+i\,\ddt{C_1}{t}=2AC_1,\quad
+i\,\ddt{C_2}{t}=0.
+\end{equation}
+The solutions are
+\begin{equation}
+\label{Eq:III:11:52}
+C_1(t)=C_1(0)e^{-i2At},\quad
+C_2(t)=C_2(0),
+\end{equation}
+where, of course, [eq] and [eq] are the amplitudes at [eq].
+
+These equations say that if a neutral K-particle starts out in the
+state [eq] at [eq] [then [eq] and [eq]],
+the amplitudes at the time [eq] are
+\begin{equation*}
+C_1(t)=e^{-i2At},\quad
+C_2(t)=0.
+\end{equation*}
+
+Remembering that [eq] is a complex number, it is convenient to
+take [eq]. (Since the imaginary part of [eq] turns out to
+be negative, we write it as minus [eq].) With this
+substitution, [eq] reads
+\begin{equation}
+\label{Eq:III:11:53}
+C_1(t)=C_1(0)e^{-\beta t}e^{-i\alpha t}.
+\end{equation}
+The probability of finding a K[eq] particle at [eq] is the absolute
+square of this amplitude, which is [eq]. And, from
+Eqs. ( 11.52 ), the probability of finding the K[eq] state at
+any time is zero. That means that if you make a K-particle in the
+state [eq], the probability of finding it in the same
+state decreases exponentially with time—but you will never find it in
+state [eq]. Where does it go? It disintegrates into two
+[eq]-mesons with the mean life [eq] which is,
+experimentally, [eq] sec. We made provisions for that when we said
+that [eq] was complex.
+
+On the other hand, Eq. ( 11.52 ) says that if we make a
+K-particle completely in the K[eq] state, it stays that way
+forever. Well, that’s not really true. It is observed experimentally
+to disintegrate into three [eq]-mesons, but [eq] times slower
+than the two-pion decay we have described. So there are some other
+small terms we have left out in our approximation. But so long as we
+are considering only the two-pion decay, the K[eq] lasts “forever.”
+
+Now to finish the story of Gell-Mann
+and Pais. They went on to
+consider what happens when a K-particle is produced with a
+[eq] particle in a strong interaction. Since it must
+then have a strangeness of [eq], it must be produced in the
+[eq] state. So at [eq] it is neither a K[eq] nor a K[eq] but a
+ mixture . The initial conditions are
+\begin{equation*}
+C_+(0)=1,\quad
+C_-(0)=0.
+\end{equation*}
+But that means—from Eq. ( 11.50 )—that
+\begin{equation*}
+C_1(0)=\frac{1}{\sqrt{2}},\quad
+C_2(0)=\frac{1}{\sqrt{2}},
+\end{equation*}
+and—from Eqs. ( 11.52 ) and ( 11.53 )—that
+\begin{equation}
+\label{Eq:III:11:54}
+C_1(t)=\frac{1}{\sqrt{2}}\,
+e^{-\beta t}e^{-i\alpha t},\quad
+C_2(t)=\frac{1}{\sqrt{2}}.
+\end{equation}
+Now remember that [eq] and [eq] are each linear combinations
+of K[eq] and K[eq]. In Eqs. ( 11.54 ) the amplitudes have
+been chosen so that at [eq] the [eq] parts cancel each other out
+by interference, leaving only a [eq] state. But the
+[eq] state changes with time , and the
+[eq] state does not . After [eq] the interference
+of [eq] and [eq] will give finite amplitudes for both [eq]
+and [eq].
+
+What does all this mean? Let’s go back and think of the experiment we
+sketched in Fig. 11-5 . A [eq] meson has produced a
+[eq] particle and a [eq] meson which is tooting along through
+the hydrogen in the chamber. As it goes along, there is some small but
+uniform chance that it will collide with a hydrogen nucleus. At first,
+we thought that strangeness conservation would prevent the K-particle
+from making a [eq] in such an interaction. Now, however, we see
+that that is not right. For although our K-particle starts out as
+a [eq]—which cannot make a [eq]—it does not stay 
+this way. After a while, there is some amplitude that it will
+have flipped to the [eq] state. We can, therefore, sometimes
+expect to see a [eq] produced along the K-particle track. The
+chance of this happening is given by the amplitude [eq], which we can
+[by using Eq. ( 11.50 ) backwards] relate to [eq]
+and [eq]. The relation is
+\begin{equation}
+\label{Eq:III:11:55}
+C_-=\frac{1}{\sqrt{2}}\,(C_1-C_2)=
+\tfrac{1}{2}(e^{-\beta t}e^{-i\alpha t}-1).
+\end{equation}
+As our K-particle goes along, the probability that it will “act
+like” a [eq] is equal to [eq], which is
+\begin{equation}
+\label{Eq:III:11:56}
+\abs{C_-}^2=\tfrac{1}{4}
+(1+e^{-2\beta t}-2e^{-\beta t}\cos\alpha t).
+\end{equation}
+A complicated and strange result!
+
+This, then, is the remarkable prediction of
+Gell-Mann and Pais: when a [eq] is produced, the chance
+that it will turn into a [eq]—as it can demonstrate by being
+able to produce a [eq]—varies with time according to
+Eq. ( 11.56 ). This prediction came from using only sheer
+logic and the basic principles of the quantum mechanics—with no
+knowledge at all of the inner workings of the K-particle. Since nobody
+knows anything about the inner machinery, that is as far as
+Gell-Mann and Pais could go. They could not give any
+theoretical values for [eq] and [eq]. And nobody has been able to
+do so to this date. They were able to give a value of [eq] obtained
+from the experimentally observed rate of decay into two [eq]'s
+([eq] sec[eq]), but they could say nothing
+about [eq].
+
+We have plotted the function of Eq. ( 11.56 ) for two
+values of [eq] in Fig. 11-6 . You can see that the
+form depends very much on the ratio of [eq] to [eq]. There is no
+[eq] probability at first; then it builds up. If [eq] is
+large, the probability would have large oscillations. If [eq] is
+small, there will be little or no oscillation—the probability will
+just rise smoothly to [eq].
+
+Now, typically, the K-particle will be travelling at a constant speed
+near the speed of light. The curves of Fig. 11-6 then
+also represent the probability along the track of observing
+a [eq]—with typical distances of several centimeters. You can see
+why this prediction is so remarkably peculiar. You produce a single
+particle and instead of just disintegrating, it does something else.
+Sometimes it disintegrates, and other times it turns into a different
+kind of a particle. Its characteristic probability of producing an
+effect varies in a strange way as it goes along. There is nothing else
+quite like it in nature. And this most remarkable prediction was made
+solely by arguments about the interference of amplitudes.
+
+If there is any place where we have a chance to test the main
+principles of quantum mechanics in the purest way—does the
+superposition of amplitudes work or doesn’t it?—this is it. In spite
+of the fact that this effect has been predicted now for several years,
+there is no experimental determination that is very clear. There are
+some rough results which indicate that the [eq] is not zero, and
+that the effect really occurs—they indicate that [eq] is between
+[eq] and [eq]. That’s all there is, experimentally. It would
+be very beautiful to check out the curve exactly to see if the
+principle of superposition really still works in such a mysterious
+world as that of the strange particles—with unknown reasons for the
+decays, and unknown reasons for the strangeness.
+
+The analysis we have just described is very characteristic of the way
+quantum mechanics is being used today in the search for an
+understanding of the strange particles. All the complicated theories
+that you may hear about are no more and no less than this kind of
+elementary hocus-pocus using the principles of superposition and other
+principles of quantum mechanics of that level. Some people claim that
+they have theories by which it is possible to calculate the [eq]
+and [eq], or at least the [eq] given the [eq], but these
+theories are completely useless. For instance, the theory that
+predicts the value of [eq], given the [eq], tells us that the
+value of [eq] should be infinite. The set of equations with which
+they originally start involves two [eq]-mesons and then goes from the
+two [eq]’s back to a [eq], and so on. When it’s all worked out,
+it does indeed produce a pair of equations like the ones we have here;
+but because there are an infinite number of states of two [eq]'s,
+depending on their momenta, integrating over all the possibilities
+gives an [eq] which is infinite. But nature’s [eq] is
+ not infinite. So the dynamical theories are wrong. It is really
+quite remarkable that the phenomena which can be predicted at
+all in the world of the strange particles come from the principles of
+quantum mechanics at the level at which you are learning them now.
+
+We have finished with all the two-state systems we wanted to talk
+about. In the following chapters we will go on to study systems with
+more states. The extension to [eq]-state systems of the ideas we have
+worked out for two states is pretty straightforward. It goes like
+this.
+
+If a system has [eq] distinct states, we can represent any
+state [eq] as a linear combination of any set of base
+states [eq], where [eq], [eq], [eq], [eq], [eq];
+\begin{equation}
+\label{Eq:III:11:57}
+\ket{\psi(t)}=\sum_{\text{all [eq]}}\ket{i}C_i(t).
+\end{equation}
+The coefficients [eq] are the amplitudes [eq]. The
+behavior of the amplitudes [eq] with time is governed by the equations
+\begin{equation}
+\label{Eq:III:11:58}
+i\hbar\,\ddt{C_i(t)}{t}=\sum_jH_{ij}C_j,
+\end{equation}
+where the energy matrix [eq] describes the physics of the problem.
+It looks the same as for two states. Only now, both [eq] and [eq] must
+range over all [eq] base states, and the energy matrix [eq]—or, if
+you prefer, the Hamiltonian—is an [eq] by [eq] matrix with
+[eq] numbers. As before, [eq]—so long as particles
+are conserved—and the diagonal elements [eq] are real numbers.
+
+We have found a general solution for the [eq]’s of a two-state system
+when the energy matrix is constant (doesn’t depend on [eq]). It is also
+not difficult to solve Eq. ( 11.58 ) for an [eq]-state
+system when [eq] is not time dependent. Again, we begin by looking for
+a possible solution in which the amplitudes all have the same 
+time dependence. We try
+\begin{equation}
+\label{Eq:III:11:59}
+C_i=a_ie^{-(i/\hbar)Et}.
+\end{equation}
+When these [eq]’s are substituted into ( 11.58 ), the
+derivatives [eq] become just [eq]. Canceling the
+common exponential factor from all terms, we get
+\begin{equation}
+\label{Eq:III:11:60}
+Ea_i=\sum_jH_{ij}a_j.
+\end{equation}
+This is a set of [eq] linear algebraic equations for the [eq] unknowns
+[eq], [eq], [eq], [eq], and there is a solution only if you are
+lucky—only if the determinant of the coefficients of all the [eq]'s
+is zero. But it’s not necessary to be that sophisticated; you can just
+start to solve the equations any way you want, and you will find that
+they can be solved only for certain values of [eq]. (Remember that [eq]
+is the only adjustable thing we have in the equations.)
+
+If you want to be formal, however, you can write
+Eq. ( 11.60 ) as
+\begin{equation}
+\label{Eq:III:11:61}
+\sum_j(H_{ij}-\delta_{ij}E)a_j=0.
+\end{equation}
+Then you can use the rule—if you know it—that these equations will
+have a solution only for those values of [eq] for which
+\begin{equation}
+\label{Eq:III:11:62}
+\Det\,(H_{ij}-\delta_{ij}E)=0.
+\end{equation}
+Each term of the determinant is just [eq], except that [eq] is
+subtracted from every diagonal element. That is, ( 11.62 )
+means just
+\begin{equation}
+\label{Eq:III:11:63}
+\Det
+\!\! % ebook remove
+\begin{pmatrix}
+H_{11}\!-\!E & H_{12} & H_{13} & \dots\\[1ex]
+H_{21} & H_{22}\!-\!E & H_{23} & \dots\\[1ex]
+H_{31} & H_{32} & H_{33}\!-\!E & \dots\\[1ex]
+\dots & \dots & \dots & \dots
+\end{pmatrix}
+\!\!=0.% ebook remove
+% ebook insert: =0.
+\end{equation}
+This is, of course, just a special way of writing an algebraic
+equation for [eq] which is the sum of a bunch of products of all the
+terms taken a certain way. These products will give all the powers
+of [eq] up to [eq].
+
+So we have an [eq]th order polynomial equal to zero, and there are, in
+general, [eq] roots. (We must remember, however, that some of them may
+be multiple roots—meaning that two or more roots are equal.) Let’s
+call the [eq] roots
+\begin{equation}
+\label{Eq:III:11:64}
+E_{\slI},E_{\slII},E_{\slIII},\dotsc,E_{\bldn},\dotsc,
+E_{\bldN}.
+\end{equation}
+(We will use [eq] to represent the [eq]th Roman numeral, so that
+[eq] takes on the values [eq], [eq], [eq], [eq].) It may
+be that some of these energies are
+equal—say [eq]—but we will still choose to call
+them by different names.
+
+The equations ( 11.60 )—or ( 11.61 )—have one
+solution for each value of [eq]. If you put any one of
+the [eq]'s—say [eq]—into ( 11.60 ) and solve for
+the [eq], you get a set which belongs to the energy [eq]. We
+will call this set [eq].
+
+Using these [eq] in Eq. ( 11.59 ), we have the
+amplitudes [eq] that the definite energy states are in the
+base state [eq]. Letting [eq] stand for the state vector
+of the definite energy state at [eq], we can write
+\begin{equation*}
+C_i(\bldn)=\braket{i}{\bldn}e^{-(i/\hbar)E_{\bldn}t},
+\end{equation*}
+with
+\begin{equation}
+\label{Eq:III:11:65}
+\braket{i}{\bldn}=a_i(\bldn).
+\end{equation}
+The complete definite energy state [eq] can then be written as
+\begin{equation*}
+\ket{\psi_{\bldn}(t)}=\sum_i\ket{i}a_i(\bldn)e^{-(i/\hbar)E_{\bldn}t},
+\end{equation*}
+or
+\begin{equation}
+\label{Eq:III:11:66}
+\ket{\psi_{\bldn}(t)}=\ket{\bldn}e^{-(i/\hbar)E_{\bldn}t}.
+\end{equation}
+The state vectors [eq] describe the configuration of the
+definite energy states, but have the time dependence factored
+out. Then they are constant vectors which can be used as a new base
+set if we wish.
+
+Each of the states [eq] has the property—as you can easily
+show—that when operated on by the Hamiltonian operator [eq] it
+gives just [eq] times the same state:
+\begin{equation}
+\label{Eq:III:11:67}
+\Hop\,\ket{\bldn}=E_{\bldn}\,\ket{\bldn}.
+\end{equation}
+
+The energy [eq] is, then, a number which is a characteristic of
+the Hamiltonian operator [eq]. As we have seen, a Hamiltonian will, in
+general, have several characteristic energies. In the mathematician’s
+world these would be called the “characteristic values” of the
+matrix [eq]. Physicists usually call them the
+“eigenvalues” of [eq]. (“Eigen” is the German
+word for “characteristic” or “proper.”) With each eigenvalue
+of [eq]—in other words, for each energy—there is the state of
+definite energy, which we have called the “stationary
+state.”
+Physicists usually call the states [eq] “the
+eigenstates of [eq].”
+Each eigenstate corresponds to a particular eigenvalue [eq].
+
+Now, generally, the states [eq]—of which there are [eq]—can
+also be used as a base set. For this to be true, all of the states must
+be orthogonal, meaning that for any two of them, say [eq]
+and [eq],
+\begin{equation}
+\label{Eq:III:11:68}
+\braket{\bldn}{\bldm}=0.
+\end{equation}
+This will be true automatically if all the energies are
+different. Also, we can multiply all the [eq] by a suitable
+factor so that all the states are normalized—by which we mean that
+\begin{equation}
+\label{Eq:III:11:69}
+\braket{\bldn}{\bldn}=1
+\end{equation}
+for all [eq].
+
+When it happens that Eq. ( 11.63 ) accidentally has two
+(or more) roots with the same energy, there are some minor
+complications. First, there are still two different sets of [eq]'s
+which go with the two equal energies, but the states they give may
+ not be orthogonal. Suppose you go through the normal procedure
+and find two stationary states with equal energies—let’s call them
+[eq] and [eq]. Then it will not necessarily be so that
+they are orthogonal—if you are unlucky,
+\begin{equation*}
+\braket{\mu}{\nu}\neq0.
+\end{equation*}
+It is, however, always true that you can cook up two new states, which
+we will call [eq] and [eq], that have the same
+energies and are also orthogonal, so that
+\begin{equation}
+\label{Eq:III:11:70}
+\braket{\mu'}{\nu'}=0.
+\end{equation}
+You can do this by making [eq] and [eq] a suitable
+linear combination of [eq] and [eq], with the
+coefficients chosen to make it come out so that Eq. ( 11.70 )
+is true. It is always convenient to do this. We will generally assume
+that this has been done so that we can always assume that our proper
+energy states [eq] are all orthogonal.
+
+We would like, for fun, to prove that when two of the stationary
+states have different energies they are indeed orthogonal. For the
+state [eq] with the energy [eq], we have that
+\begin{equation}
+\label{Eq:III:11:71}
+\Hop\,\ket{\bldn}=E_{\bldn}\,\ket{\bldn}.
+\end{equation}
+This operator equation really means that there is an equation between
+numbers. Filling the missing parts, it means the same as
+\begin{equation}
+\label{Eq:III:11:72}
+\sum_j\bracket{i}{\Hop}{j}\braket{j}{\bldn}=
+E_{\bldn}\braket{i}{\bldn}.
+\end{equation}
+If we take the complex conjugate of this equation, we get
+\begin{equation}
+\label{Eq:III:11:73}
+\sum_j\bracket{i}{\Hop}{j}\cconj\braket{j}{\bldn}\cconj=
+E_{\bldn}\cconj\braket{i}{\bldn}\cconj.
+\end{equation}
+Remember now that the complex conjugate of an amplitude is the reverse
+amplitude, so ( 11.73 ) can be rewritten as
+\begin{equation}
+\label{Eq:III:11:74}
+\sum_j\braket{\bldn}{j}\bracket{j}{\Hop}{i}=
+E_{\bldn}\cconj\braket{\bldn}{i}.
+\end{equation}
+Since this equation is valid for any [eq], its “short form” is
+\begin{equation}
+\label{Eq:III:11:75}
+\bra{\bldn}\,\Hop=E_{\bldn}\cconj\bra{\bldn},
+\end{equation}
+which is called the adjoint to Eq. ( 11.71 ).
+
+Now we can easily prove that [eq] is a real number. We multiply
+Eq. ( 11.71 ) by [eq] to get
+\begin{equation}
+\label{Eq:III:11:76}
+\bracket{\bldn}{\Hop}{\bldn}=E_{\bldn},
+\end{equation}
+since [eq]. Then we multiply
+Eq. ( 11.75 ) on the right by [eq] to get
+\begin{equation}
+\label{Eq:III:11:77}
+\bracket{\bldn}{\Hop}{\bldn}=E_{\bldn}\cconj.
+\end{equation}
+Comparing ( 11.76 ) with ( 11.77 ) it is clear
+that
+\begin{equation}
+\label{Eq:III:11:78}
+E_{\bldn}=E_{\bldn}\cconj,
+\end{equation}
+which means that [eq] is real. We can erase the star
+on [eq] in Eq. ( 11.75 ).
+
+Finally we are ready to show that the different energy states are
+orthogonal. Let [eq] and [eq] be any two of the
+definite energy base states. Using Eq. ( 11.75 ) for the
+state [eq], and multiplying it by [eq], we get that
+\begin{equation*}
+\bracket{\bldm}{\Hop}{\bldn}=E_{\bldm}\braket{\bldm}{\bldn}.
+\end{equation*}
+But if we multiply ( 11.71 ) by [eq], we get
+\begin{equation*}
+\bracket{\bldm}{\Hop}{\bldn}=E_{\bldn}\braket{\bldm}{\bldn}.
+\end{equation*}
+Since the left sides of these two equations are equal, the right sides
+are, also:
+\begin{equation}
+\label{Eq:III:11:79}
+E_{\bldm}\braket{\bldm}{\bldn}=E_{\bldn}\braket{\bldm}{\bldn}.
+\end{equation}
+If [eq] the equation does not tell us anything. But
+if the energies of the two states [eq] and [eq]
+ are different ([eq]),
+Eq. ( 11.79 ) says that [eq] must be zero,
+as we wanted to prove. The two states are necessarily orthogonal so long
+as [eq] and [eq] are numerically different.

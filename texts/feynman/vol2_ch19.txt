@@ -1,0 +1,987 @@
+The Feynman Lectures on Physics Vol. II Ch. 19: The Principle of Least Action
+=============================================================================
+
+Sections: 19–1 A special lecture—almost verbatim 1 | 19–2 A note added after the lecture
+
+
+
+“When I was in high school, my physics teacher—whose name
+was Mr. Bader—called me down one day after physics class and said,
+‘You look bored; I want to tell you something interesting.’ Then he told
+me something which I found absolutely fascinating, and have, since then,
+always found fascinating. Every time the subject comes up, I work on it.
+In fact, when I began to prepare this lecture I found myself making more
+analyses on the thing. Instead of worrying about the lecture, I got
+involved in a new problem. The subject is this—the principle of least
+action.
+
+“Mr. Bader told me the following: Suppose you have a particle (in a
+gravitational field, for instance) which starts somewhere and moves to
+some other point by free motion—you throw it, and it goes up and comes
+down (Fig.  19–1 ). It goes from the original place to the
+final place in a certain amount of time. Now, you try a different
+motion. Suppose that to get from here to there, it went as shown in
+Fig.  19–2 but got there in just the same amount of time.
+Then he said this: If you calculate the kinetic energy at every moment
+on the path, take away the potential energy, and integrate it over the
+time during the whole path, you’ll find that the number you’ll get is
+ bigger than that for the actual motion.
+
+“In other words, the laws of Newton could be stated not in the form [eq]
+but in the form: the average kinetic energy less the average potential
+energy is as little as possible for the path of an object going from one
+point to another.
+
+“Let me illustrate a little bit better what it means. If you take the
+case of the gravitational field, then if the particle has the
+path [eq] (let’s just take one dimension for a moment; we take a
+trajectory that goes up and down and not sideways), where [eq] is the
+height above the ground, the kinetic energy
+is [eq], and the potential energy at any time
+is [eq]. Now I take the kinetic energy minus the potential energy at
+every moment along the path and integrate that with respect to time from
+the initial time to the final time. Let’s suppose that at the original
+time [eq] we started at some height and at the end of the time [eq] we
+are definitely ending at some other place (Fig.  19–3 ).
+
+“Then the integral is
+\begin{equation*}
+\int_{t_1}^{t_2}\biggl[
+\frac{1}{2}m\biggl(\ddt{x}{t}\biggr)^2-mgx\biggr]dt.
+\end{equation*}
+The actual motion is some kind of a curve—it’s a parabola if we plot
+against the time—and gives a certain value for the integral. But we
+could imagine some other motion that went very high and came up
+and down in some peculiar way (Fig.  19–4 ). We can
+calculate the kinetic energy minus the potential energy and integrate
+for such a path … or for any other path we want. The miracle is
+that the true path is the one for which that integral is least.
+
+“Let’s try it out. First, suppose we take the case of a free particle
+for which there is no potential energy at all. Then the rule says that
+in going from one point to another in a given amount of time, the
+kinetic energy integral is least, so it must go at a uniform
+speed. (We know that’s the right answer—to go at a uniform speed.)
+Why is that? Because if the particle were to go any other way, the
+velocities would be sometimes higher and sometimes lower than the
+average. The average velocity is the same for every case because it
+has to get from ‘here’ to ‘there’ in a given amount of time.
+
+“As an example, say your job is to start from home and get to school
+in a given length of time with the car. You can do it several ways:
+You can accelerate like mad at the beginning and slow down with the
+brakes near the end, or you can go at a uniform speed, or you can go
+backwards for a while and then go forward, and so on. The thing is
+that the average speed has got to be, of course, the total distance
+that you have gone over the time. But if you do anything but go at a
+uniform speed, then sometimes you are going too fast and sometimes you
+are going too slow. Now the mean square of something that
+deviates around an average, as you know, is always greater than the
+square of the mean; so the kinetic energy integral would always be
+higher if you wobbled your velocity than if you went at a uniform
+velocity. So we see that the integral is a minimum if the velocity is
+a constant (when there are no forces). The correct path is shown in 
+Fig.  19–5 .
+
+“Now, an object thrown up in a gravitational field does rise faster
+first and then slow down. That is because there is also the potential
+energy, and we must have the least difference of kinetic and
+potential energy on the average. Because the potential energy rises as
+we go up in space, we will get a lower difference if we can get
+as soon as possible up to where there is a high potential energy. Then
+we can take that potential away from the kinetic energy and get a
+lower average. So it is better to take a path which goes up and gets a
+lot of negative stuff from the potential energy (Fig.  19–6 ).
+
+“On the other hand, you can’t go up too fast, or too far, because you
+will then have too much kinetic energy involved—you have to go very
+fast to get way up and come down again in the fixed amount of time
+available. So you don’t want to go too far up, but you want to go up
+some. So it turns out that the solution is some kind of balance
+between trying to get more potential energy with the least amount of
+extra kinetic energy—trying to get the difference, kinetic minus the
+potential, as small as possible.
+
+“That is all my teacher told me, because he was a very good teacher
+and knew when to stop talking. But I don’t know when to stop
+talking. So instead of leaving it as an interesting remark, I am going
+to horrify and disgust you with the complexities of life by proving
+that it is so. The kind of mathematical problem we will have is very
+difficult and a new kind. We have a certain quantity which is called
+the action , [eq]. It is the kinetic energy, minus the potential
+energy, integrated over time.
+\begin{equation*}
+\text{Action}=S=\int_{t_1}^{t_2}
+(\text{KE}-\text{PE})\,dt.
+\end{equation*}
+Remember that the PE and KE are both functions of time. For each
+different possible path you get a different number for this
+action. Our mathematical problem is to find out for what curve that
+number is the least.
+
+“You say—Oh, that’s just the ordinary calculus of maxima and
+minima. You calculate the action and just differentiate to find the
+minimum.
+
+“But watch out. Ordinarily we just have a function of some variable,
+and we have to find the value of that variable where the
+function is least or most. For instance, we have a rod which has been
+heated in the middle and the heat is spread around. For each point on
+the rod we have a temperature, and we must find the point at which
+that temperature is largest. But now for each path in space we
+have a number—quite a different thing—and we have to find the
+ path in space for which the number is the minimum. That is a
+completely different branch of mathematics. It is not the ordinary
+calculus. In fact, it is called the calculus of
+variations .
+
+“There are many problems in this kind of mathematics. For example,
+the circle is usually defined as the locus of all points at a constant
+distance from a fixed point, but another way of defining a circle is
+this: a circle is that curve of given length which encloses the
+biggest area. Any other curve encloses less area for a given perimeter
+than the circle does. So if we give the problem: find that curve which
+encloses the greatest area for a given perimeter, we would have a
+problem of the calculus of variations—a different kind of calculus than you’re used to.
+
+“So we make the calculation for the path of an object. Here is the
+way we are going to do it. The idea is that we imagine that there is a
+true path and that any other curve we draw is a false path, so that if
+we calculate the action for the false path we will get a value that is
+bigger than if we calculate the action for the true path
+(Fig.  19–7 ).
+
+“Problem: Find the true path. Where is it? One way, of course, is to
+calculate the action for millions and millions of paths and look at
+which one is lowest. When you find the lowest one, that’s the true
+path.
+
+“That’s a possible way. But we can do it better than that. When we
+have a quantity which has a minimum—for instance, in an ordinary
+function like the temperature—one of the properties of the minimum
+is that if we go away from the minimum in the first order, the
+deviation of the function from its minimum value is only second 
+order. At any place else on the curve, if we move a small distance the
+value of the function changes also in the first order. But at a
+minimum, a tiny motion away makes, in the first approximation, no
+difference (Fig.  19–8 ).
+
+“That is what we are going to use to calculate the true path. If we
+have the true path, a curve which differs only a little bit from it
+will, in the first approximation, make no difference in the
+action. Any difference will be in the second approximation, if we
+really have a minimum.
+
+“That is easy to prove. If there is a change in the first order when
+I deviate the curve a certain way, there is a change in the action
+that is proportional to the deviation. The change presumably
+makes the action greater; otherwise we haven’t got a minimum. But then
+if the change is proportional to the deviation, reversing the
+sign of the deviation will make the action less. We would get the
+action to increase one way and to decrease the other way. The only way
+that it could really be a minimum is that in the first 
+approximation it doesn’t make any change, that the changes are
+proportional to the square of the deviations from the true path.
+
+“So we work it this way: We call [eq] (with an
+underline) the true path—the one we are trying to find. We take some
+trial path [eq] that differs from the true path by a small amount
+which we will call [eq] (eta of [eq]; Fig.  19–9 ).
+
+“Now the idea is that if we calculate the action [eq] for the
+path [eq], then the difference between that [eq] and the action that we
+calculated for the path [eq]—to simplify the writing we
+can call it [eq]—the difference of [eq] and [eq]
+must be zero in the first-order approximation of small [eq]. It can
+differ in the second order, but in the first order the difference must
+be zero.
+
+“And that must be true for any [eq] at all. Well, not quite. The
+method doesn’t mean anything unless you consider paths which all begin
+and end at the same two points—each path begins at a certain point
+at [eq] and ends at a certain other point at [eq], and those points
+and times are kept fixed. So the deviations in our [eq] have to be
+zero at each end, [eq] and [eq]. With that
+condition, we have specified our mathematical problem.
+
+“If you didn’t know any calculus, you might do the same kind of thing
+to find the minimum of an ordinary function [eq]. You could discuss
+what happens if you take [eq] and add a small amount [eq] to [eq] and
+argue that the correction to [eq] in the first order in [eq] must be
+zero at the minimum. You would substitute [eq] for [eq] and expand out
+to the first order in [eq] … just as we are going to do
+with [eq].
+
+“The idea is then that we substitute [eq]
+in the formula for the action:
+\begin{equation*}
+S=\int\biggl[
+\frac{m}{2}\biggl(\ddt{x}{t}\biggr)^2-V(x)
+\biggr]dt,
+\end{equation*}
+where I call the potential energy [eq]. The derivative [eq] is,
+of course, the derivative of [eq] plus the derivative
+of [eq], so for the action I get this expression:
+\begin{equation*}
+S=\int_{t_1}^{t_2}\biggl[
+\frac{m}{2}\biggl(
+\ddt{\underline{x}}{t}+\ddt{\eta}{t}
+\biggr)^2-V(\underline{x}+\eta)
+\biggr]dt.
+\end{equation*}
+
+“Now I must write this out in more detail. For the squared term I get
+\begin{equation*}
+\biggl(\ddt{\underline{x}}{t}\biggr)^2+
+2\,\ddt{\underline{x}}{t}\,\ddt{\eta}{t}+
+\biggl(\ddt{\eta}{t}\biggr)^2.
+\end{equation*}
+But wait. I’m not worrying about higher than the first order, so I
+will take all the terms which involve [eq] and higher powers and
+put them in a little box called ‘second and higher order.’ From this
+term I get only second order, but there will be more from something
+else. So the kinetic energy part is
+\begin{equation*}
+\frac{m}{2}\biggl(\ddt{\underline{x}}{t}\biggr)^2+
+m\,\ddt{\underline{x}}{t}\,\ddt{\eta}{t}+
+(\text{second and higher order}).
+\end{equation*}
+
+“Now we need the potential [eq] at [eq]. I consider
+[eq] small, so I can write [eq] as a Taylor series. It is
+approximately [eq]; in the next approximation (from the
+ordinary nature of derivatives) the correction is [eq] times the
+rate of change of [eq] with respect to [eq], and so on:
+\begin{equation*}
+V(\underline{x}+\eta)=V(\underline{x})+
+\eta V'(\underline{x})+\frac{\eta^2}{2}\,V''(\underline{x})+\dotsb
+\end{equation*}
+I have written [eq] for the derivative of [eq] with respect to [eq] in
+order to save writing. The term in [eq] and the ones beyond fall
+into the ‘second and higher order’ category and we don’t have to worry
+about them. Putting it all together, 
+\begin{aligned}
+S=\int_{t_1}^{t_2}\biggl[
+&\frac{m}{2}\biggl(\ddt{\underline{x}}{t}\biggr)^2-V(\underline{x})+
+m\,\ddt{\underline{x}}{t}\,\ddt{\eta}{t}\notag\\
+&-\eta V'(\underline{x})+(\text{second and higher order})\biggr]dt.\notag
+\end{aligned}
+Now if we look carefully at the thing, we see that the first two terms
+which I have arranged here correspond to the action [eq]
+that I would have calculated with the true path [eq]. The
+thing I want to concentrate on is the change in [eq]—the difference
+between the [eq] and the [eq] that we would get for the
+right path. This difference we will write as [eq], called the
+variation in [eq]. Leaving out the ‘second and higher order’ terms, I
+have for [eq]
+\begin{equation*}
+\delta S=\int_{t_1}^{t_2}\biggl[
+m\,\ddt{\underline{x}}{t}\,\ddt{\eta}{t}-\eta V'(\underline{x})
+\biggr]dt.
+\end{equation*}
+
+“Now the problem is this: Here is a certain integral. I don’t know
+what the [eq] is yet, but I do know that no matter
+what  [eq] is, this integral must be zero. Well, you think, the only
+way that that can happen is that what multiplies [eq] must be zero.
+But what about the first term with [eq]? Well, after all,
+if [eq] can be anything at all, its derivative is anything also, so you
+conclude that the coefficient of [eq] must also be zero. That
+isn’t quite right. It isn’t quite right because there is a connection
+between [eq] and its derivative; they are not absolutely
+independent, because [eq] must be zero at both [eq] and [eq].
+
+“The method of solving all problems in the calculus of variations
+always uses the same general principle. You make the shift in the
+thing you want to vary (as we did by adding [eq]); you look at the
+first-order terms; then you always arrange things in such a
+form that you get an integral of the form ‘some kind of stuff times
+the shift [eq],’ but with no other derivatives (no [eq]). It
+must be rearranged so it is always ‘something’ times [eq]. You will
+see the great value of that in a minute. (There are formulas that tell
+you how to do this in some cases without actually calculating, but
+they are not general enough to be worth bothering about; the best way
+is to calculate it out this way.)
+
+“How can I rearrange the term in [eq] to make it have an [eq]?
+I can do that by integrating by parts. It turns out that the whole trick
+of the calculus of variations consists of writing down the variation
+of [eq] and then integrating by parts so that the derivatives of [eq]
+disappear. It is always the same in every problem in which derivatives
+appear.
+
+“You remember the general principle for integrating by parts. If you
+have any function [eq] times [eq] integrated with respect to [eq],
+you write down the derivative of [eq]:
+\begin{equation*}
+\ddt{}{t}(\eta f)=\eta\,\ddt{f}{t}+f\,\ddt{\eta}{t}.
+\end{equation*}
+The integral you want is over the last term, so 
+\begin{equation*}
+\int f\,\ddt{\eta}{t}\,dt=\eta f-\int\eta\,\ddt{f}{t}\,dt.
+\end{equation*}
+
+“In our formula for [eq], the function [eq] is [eq]
+times [eq]; therefore, I have the following formula
+for [eq].
+ 
+\begin{equation*}
+\delta S=\left.m\,\ddt{\underline{x}}{t}\,\eta(t)\right|_{t_1}^{t_2}-
+\int_{t_1}^{t_2}\ddt{}{t}\biggl(m\,\ddt{\underline{x}}{t}\biggr)\eta(t)\,dt-
+\int_{t_1}^{t_2}V'(\underline{x})\,\eta(t)\,dt.
+\end{equation*}
+ 
+ 
+\begin{align*}
+\delta S=\left.m\,\ddt{\underline{x}}{t}\,\eta(t)\right|_{t_1}^{t_2}-
+\int_{t_1}^{t_2}\ddt{}{t}\biggl(m\,\ddt{\underline{x}}{t}\biggr)\eta(t)\,&dt\\[1ex]
+-\int_{t_1}^{t_2}V'(\underline{x})\,\eta(t)\,&dt.
+\end{align*}
+
+
+ 
+The first term must be evaluated at the two limits [eq] and [eq]. Then
+I must have the integral from the rest of the integration by parts. The
+last term is brought down without change.
+
+“Now comes something which always happens—the integrated part
+disappears. (In fact, if the integrated part does not disappear, you
+restate the principle, adding conditions to make sure it does!) We
+have already said that [eq] must be zero at both ends of the path,
+because the principle is that the action is a minimum provided that
+the varied curve begins and ends at the chosen points. The condition
+is that [eq], and [eq]. So the integrated term is
+zero. We collect the other terms together and obtain this:
+\begin{equation*}
+\delta S=\int_{t_1}^{t_2}\biggl[
+-m\,\frac{d^2\underline{x}}{dt^2}-V'(\underline{x})
+\biggr]\eta(t)\,dt.
+\end{equation*}
+The variation in [eq] is now the way we wanted it—there is the stuff
+in brackets, say [eq], all multiplied by [eq] and integrated from
+[eq] to [eq].
+
+“We have that an integral of something or other times [eq] is
+always zero:
+\begin{equation*}
+\int F(t)\,\eta(t)\,dt=0.
+\end{equation*}
+I have some function of [eq]; I multiply it by [eq]; and I
+integrate it from one end to the other. And no matter what the [eq]
+is, I get zero. That means that the function [eq] is zero. That’s
+obvious, but anyway I’ll show you one kind of proof.
+
+“Suppose that for [eq] I took something which was zero for all [eq]
+except right near one particular value. It stays zero until it gets to
+this [eq], then it blips up for a moment and blips right back down
+(Fig.  19–10 ). When we do the integral of this [eq] times
+any function [eq], the only place that you get anything other than zero
+was where [eq] was blipping, and then you get the value of [eq] at
+that place times the integral over the blip. The integral over the blip
+alone isn’t zero, but when multiplied by [eq] it has to be; so the
+function [eq] has to be zero where the blip was. But the blip was
+anywhere I wanted to put it, so [eq] must be zero everywhere.
+
+“We see that if our integral is zero for any [eq], then the
+coefficient of [eq] must be zero. The action integral will be a
+minimum for the path that satisfies this complicated differential
+equation:
+\begin{equation*}
+\biggl[-m\,\frac{d^2\underline{x}}{dt^2}-V'(\underline{x})\biggr]=0.
+\end{equation*}
+It’s not really so complicated; you have seen it before. It is
+just [eq]. The first term is the mass times acceleration, and the
+second is the derivative of the potential energy, which is the force.
+
+“So, for a conservative system at least, we have demonstrated that
+the principle of least action gives the right answer; it says that the
+path that has the minimum action is the one satisfying Newton’s law.
+
+“One remark: I did not prove it was a minimum —maybe it’s a
+maximum. In fact, it doesn’t really have to be a minimum. It is quite
+analogous to what we found for the ‘principle of least time’ which we
+discussed in optics. There also, we said at first it was ‘least’
+time. It turned out, however, that there were situations in which it
+wasn’t the least time. The fundamental principle was that for
+any first-order variation away from the optical path, the
+ change in time was zero; it is the same story. What we really
+mean by ‘least’ is that the first-order change in the value of [eq],
+when you change the path, is zero. It is not necessarily a ‘minimum.’
+
+“Next, I remark on some generalizations. In the first place, the thing
+can be done in three dimensions. Instead of just [eq], I would have
+[eq], [eq], and [eq] as functions of [eq]; the action is more complicated.
+For three-dimensional motion, you have to use the complete kinetic
+energy—[eq] times the whole velocity squared. That is,
+\begin{equation*}
+\text{KE}=\frac{m}{2}\biggl[
+\biggl(\ddt{x}{t}\biggr)^2\!\!+\biggl(\ddt{y}{t}\biggr)^2\!\!+
+\biggl(\ddt{z}{t}\biggr)^2\,\biggr].
+\end{equation*}
+Also, the potential energy is a function of [eq], [eq], and [eq]. And
+what about the path? The path is some general curve in space, which is
+not so easily drawn, but the idea is the same. And what about
+the [eq]? Well, [eq] can have three components. You could shift the
+paths in [eq], or in [eq], or in [eq]—or you could shift in all three
+directions simultaneously. So [eq] would be a vector. This doesn’t
+really complicate things too much, though. Since only the
+ first-order variation has to be zero, we can do the calculation
+by three successive shifts. We can shift [eq] only in the
+[eq]-direction and say that coefficient must be zero. We get one
+equation. Then we shift it in the [eq]-direction and get another. And
+in the [eq]-direction and get another. Or, of course, in any order that
+you want. Anyway, you get three equations. And, of course, Newton’s
+law is really three equations in the three dimensions—one for each
+component. I think that you can practically see that it is bound to
+work, but we will leave you to show for yourself that it will work for
+three dimensions. Incidentally, you could use any coordinate system
+you want, polar or otherwise, and get Newton’s laws appropriate to
+that system right off by seeing what happens if you have the
+shift [eq] in radius, or in angle, etc.
+
+“Similarly, the method can be generalized to any number of particles.
+If you have, say, two particles with a force between them, so that there
+is a mutual potential energy, then you just add the kinetic energy of
+both particles and take the potential energy of the mutual interaction.
+And what do you vary? You vary the paths of both particles. Then,
+for two particles moving in three dimensions, there are six equations.
+You can vary the position of particle [eq] in the [eq]-direction, in the
+[eq]-direction, and in the [eq]-direction, and similarly for particle [eq];
+so there are six equations. And that’s as it should be. There are the
+three equations that determine the acceleration of particle [eq] in terms
+of the force on it and three for the acceleration of particle [eq], from
+the force on it. You follow the same game through, and you get Newton’s
+law in three dimensions for any number of particles.
+
+“I have been saying that we get Newton’s law. That is not quite true,
+because Newton’s law includes nonconservative forces like friction.
+Newton said that [eq] is equal to
+any [eq]. But the principle of least action only works for
+ conservative systems—where all forces can be gotten from a
+potential function. You know, however, that on a microscopic level—on
+the deepest level of physics—there are no nonconservative forces.
+Nonconservative forces, like friction, appear only because we neglect
+microscopic complications—there are just too many particles to
+analyze. But the fundamental laws can be put in the form
+of a principle of least action.
+
+“Let me generalize still further. Suppose we ask what happens if the
+particle moves relativistically. We did not get the right relativistic
+equation of motion; [eq] is only right nonrelativistically. The
+question is: Is there a corresponding principle of least action for
+the relativistic case? There is. The formula in the case of relativity
+is the following:
+ 
+\begin{equation*}
+S=-m_0c^2\int_{t_1}^{t_2}\sqrt{1-v^2/c^2}\,dt-
+q\int_{t_1}^{t_2}[\phi(x,y,z,t)-\FLPv\cdot
+\FLPA(x,y,z,t)]\,dt.
+\end{equation*}
+ 
+ 
+\begin{align*}
+S=-m_0c^2&\int_{t_1}^{t_2}\sqrt{1-v^2/c^2}\,dt\\[1.25ex]
+-q&\int_{t_1}^{t_2}[\phi(x,y,z,t)-\FLPv\cdot
+\FLPA(x,y,z,t)]\,dt.
+\end{align*}
+
+ 
+The first part of the action integral is the rest mass [eq]
+times [eq] times the integral of a function of velocity,
+[eq]. Then instead of just the potential energy, we have
+an integral over the scalar potential [eq] and over [eq] times
+the vector potential [eq]. Of course, we are then including only
+electromagnetic forces. All electric and magnetic fields are given in
+terms of [eq] and [eq]. This action function gives the complete
+theory of relativistic motion of a single particle in an
+electromagnetic field.
+
+“Of course, wherever I have written [eq], you understand that
+before you try to figure anything out, you must substitute [eq]
+for [eq] and so on for the other components. Also, you put the point
+along the path at time [eq], [eq], [eq], [eq] where I wrote
+simply [eq], [eq], [eq]. Properly, it is only after you have made those
+replacements for the [eq]’s that you have the formula for the
+action for a relativistic particle. I will leave to the more ingenious
+of you the problem to demonstrate that this action formula does, in
+fact, give the correct equations of motion for relativity. May I
+suggest you do it first without the [eq], that is, for no magnetic
+field? Then you should get the components of the equation of motion,
+[eq], where, you remember,
+[eq].
+
+“It is much more difficult to include also the case with a vector
+potential. The variations get much more complicated. But in the end,
+the force term does come out equal to [eq], as
+it should. But I will leave that for you to play with.
+
+“I would like to emphasize that in the general case, for instance in
+the relativistic formula, the action integrand no longer has the form of
+the kinetic energy minus the potential energy. That’s only true in the
+nonrelativistic approximation. For example, the
+term [eq] is not what we have called the kinetic
+energy. The question of what the action should be for any particular
+case must be determined by some kind of trial and error. It is just the
+same problem as determining what are the laws of motion in the first
+place. You just have to fiddle around with the equations that you know
+and see if you can get them into the form of the principle of least
+action.
+
+“One other point on terminology. The function that is integrated over
+time to get the action [eq] is called the Lagrangian ,
+[eq],
+which is a function only of the velocities and positions of particles.
+So the principle of least action is also written
+\begin{equation*}
+S=\int_{t_1}^{t_2}\Lagrangian(x_i,v_i)\,dt,
+\end{equation*}
+where by [eq] and [eq] are meant all the components of the positions
+and velocities. So if you hear someone talking about the ‘Lagrangian,’
+you know they are talking about the function that is used to
+find [eq]. For relativistic motion in an electromagnetic field
+\begin{equation*}
+\Lagrangian=-m_0c^2\sqrt{1-v^2/c^2}-q(\phi-\FLPv\cdot\FLPA).
+\end{equation*}
+
+“Also, I should say that [eq] is not really called the ‘action’ by the
+most precise and pedantic people. It is called ‘Hamilton’s first
+principal function.’ Now I hate to give a lecture on
+‘the-principle-of-least-Hamilton’s-first-principal-function.’ So I call
+it ‘the action.’ Also, more and more people are calling it the action.
+You see, historically something else which is not quite as useful was
+called the action, but I think it’s more sensible to change to a newer
+definition. So now you too will call the new function the action, and
+pretty soon everybody will call it by that simple name.
+
+“Now I want to say some things on this subject which are similar to the
+discussions I gave about the principle of least time. There is quite a
+difference in the characteristic of a law which says a certain integral
+from one place to another is a minimum—which tells something about the
+whole path—and of a law which says that as you go along, there is a
+force that makes it accelerate. The second way tells how you inch your
+way along the path, and the other is a grand statement about the whole
+path. In the case of light, we talked about the connection of these two.
+Now, I would like to explain why it is true that there are differential
+laws when there is a least action principle of this kind. The reason is
+the following: Consider the actual path in space and time. As before,
+let’s take only one dimension, so we can plot the graph of [eq] as a
+function of [eq]. Along the true path, [eq] is a minimum. Let’s suppose
+that we have the true path and that it goes through some point [eq] in
+space and time, and also through another nearby point [eq]
+(Fig.  19–11 ). Now if the entire integral from [eq] to [eq]
+is a minimum, it is also necessary that the integral along the little
+section from [eq] to [eq] is also a minimum. It can’t be that the part
+from [eq] to [eq] is a little bit more. Otherwise you could just fiddle
+with just that piece of the path and make the whole integral a little
+lower.
+
+“So every subsection of the path must also be a minimum. And this is
+true no matter how short the subsection. Therefore, the principle that
+the whole path gives a minimum can be stated also by saying that an
+infinitesimal section of path also has a curve such that it has a
+minimum action. Now if we take a short enough section of
+path—between two points [eq] and [eq] very close together—how the
+potential varies from one place to another far away is not the
+important thing, because you are staying almost in the same place over
+the whole little piece of the path. The only thing that you have to
+discuss is the first-order change in the potential. The answer can
+only depend on the derivative of the potential and not on the
+potential everywhere. So the statement about the gross property of the
+whole path becomes a statement of what happens for a short section of
+the path—a differential statement. And this differential statement
+only involves the derivatives of the potential, that is, the force at
+a point. That’s the qualitative explanation of the relation between
+the gross law and the differential law.
+
+“In the case of light we also discussed the question: How does the
+particle find the right path? From the differential point of view, it
+is easy to understand. Every moment it gets an acceleration and knows
+only what to do at that instant. But all your instincts on cause and
+effect go haywire when you say that the particle decides to take the
+path that is going to give the minimum action. Does it ‘smell’ the
+neighboring paths to find out whether or not they have more action? In
+the case of light, when we put blocks in the way so that the photons
+could not test all the paths, we found that they couldn’t figure out
+which way to go, and we had the phenomenon of diffraction.
+
+“Is the same thing true in mechanics? Is it true that the particle
+doesn’t just ‘take the right path’ but that it looks at all the other
+possible trajectories? And if by having things in the way, we don’t
+let it look, that we will get an analog of diffraction? The miracle of
+it all is, of course, that it does just that. That’s what the laws of
+quantum mechanics say. So our principle of least action is
+incompletely stated. It isn’t that a particle takes the path of least
+action but that it smells all the paths in the neighborhood and
+chooses the one that has the least action by a method analogous to the
+one by which light chose the shortest time. You remember that the way
+light chose the shortest time was this: If it went on a path that took
+a different amount of time, it would arrive at a different phase. And
+the total amplitude at some point is the sum of contributions of
+amplitude for all the different ways the light can arrive. All the
+paths that give wildly different phases don’t add up to anything. But
+if you can find a whole sequence of paths which have phases almost all
+the same, then the little contributions will add up and you get a
+reasonable total amplitude to arrive. The important path becomes the
+one for which there are many nearby paths which give the same phase.
+
+“It is just exactly the same thing for quantum mechanics. The
+complete quantum mechanics (for the nonrelativistic case and
+neglecting electron spin) works as follows: The probability that a
+particle starting at point [eq] at the time [eq] will arrive at
+point [eq] at the time [eq] is the square of a probability amplitude. The
+total amplitude can be written as the sum of the amplitudes for each
+possible path—for each way of arrival. For every [eq] that we
+could have—for every possible imaginary trajectory—we have to
+calculate an amplitude. Then we add them all together. What do we take
+for the amplitude for each path? Our action integral tells us what the
+amplitude for a single path ought to be. The amplitude is proportional
+to some constant times [eq], where [eq] is the action for
+that path. That is, if we represent the phase of the amplitude by a
+complex number, the phase angle is [eq]. The action [eq] has
+dimensions of energy times time, and 
+Planck’s constant [eq] has the
+same dimensions. It is the constant that determines when quantum
+mechanics is important.
+
+“Here is how it works: Suppose that for all paths, [eq] is very large
+compared to [eq]. One path contributes a certain amplitude. For a
+nearby path, the phase is quite different, because with an enormous [eq]
+even a small change in [eq] means a completely different phase—because
+[eq] is so tiny. So nearby paths will normally cancel their effects
+out in taking the sum—except for one region, and that is when a path
+and a nearby path all give the same phase in the first approximation
+(more precisely, the same action within [eq]). Only those paths will
+be the important ones. So in the limiting case in which Planck’s
+constant [eq] goes to zero, the
+correct quantum-mechanical laws can be summarized by simply saying:
+‘Forget about all these probability amplitudes. The particle does go on
+a special path, namely, that one for which [eq] does not vary in the
+first approximation.’ That’s the relation between the principle of least
+action and quantum mechanics. The fact that quantum mechanics can be
+formulated in this way was discovered in 1942 by a student of that same
+teacher, Bader, I spoke of at the beginning of this lecture. [Quantum
+mechanics was originally formulated by giving a differential equation
+for the amplitude (Schrödinger) and also by some other matrix mathematics
+(Heisenberg).]
+
+“Now I want to talk about other minimum principles in physics. There
+are many very interesting ones. I will not try to list them all now
+but will only describe one more. Later on, when we come to a physical
+phenomenon which has a nice minimum principle, I will tell about it
+then. I want now to show that we can describe electrostatics, not by
+giving a differential equation for the field, but by saying that a
+certain integral is a maximum or a minimum. First, let’s take the case
+where the charge density is known everywhere, and the problem is to
+find the potential [eq] everywhere in space. You know that the
+answer should be
+\begin{equation*}
+\nabla^2\phi=-\rho/\epsO.
+\end{equation*}
+But another way of stating the same thing is this: Calculate the
+integral [eq], where
+\begin{equation*}
+U\stared=\frac{\epsO}{2}\int(\FLPgrad{\phi})^2\,dV-
+\int\rho\phi\,dV,
+\end{equation*}
+which is a volume integral to be taken over all space. This thing is a
+minimum for the correct potential distribution [eq].
+
+“We can show that the two statements about electrostatics are
+equivalent. Let’s suppose that we pick any function [eq]. We want to
+show that when we take for [eq] the correct
+potential [eq], plus a small deviation [eq], then in the first
+order, the change in [eq] is zero. So we write
+\begin{equation*}
+\phi=\underline{\phi}+f.
+\end{equation*}
+The [eq] is what we are looking for, but we are making a
+variation of it to find what it has to be so that the variation
+of [eq] is zero to first order. For the first part of [eq],
+we need
+\begin{equation*}
+(\FLPgrad{\phi})^2=(\FLPgrad{\underline{\phi}})^2+
+2\,\FLPgrad{\underline{\phi}}\cdot\FLPgrad{f}+
+(\FLPgrad{f})^2.
+\end{equation*}
+The only first-order term that will vary is
+\begin{equation*}
+2\,\FLPgrad{\underline{\phi}}\cdot\FLPgrad{f}.
+\end{equation*}
+In the second term of the quantity [eq], the integrand is
+\begin{equation*}
+\rho\phi=\rho\underline{\phi}+\rho f,
+\end{equation*}
+whose variable part is [eq]. So, keeping only the variable parts,
+we need the integral
+\begin{equation*}
+\Delta U\stared=\int(\epsO\FLPgrad{\underline{\phi}}\cdot\FLPgrad{f}-
+\rho f)\,dV.
+\end{equation*}
+
+“Now, following the old general rule, we have to get the darn thing
+all clear of derivatives of [eq]. Let’s look at what the derivatives
+are. The dot product is
+\begin{equation*}
+\ddp{\underline{\phi}}{x}\,\ddp{f}{x}+
+\ddp{\underline{\phi}}{y}\,\ddp{f}{y}+
+\ddp{\underline{\phi}}{z}\,\ddp{f}{z},
+\end{equation*}
+which we have to integrate with respect to [eq], to [eq], and to [eq]. Now
+here is the trick: to get rid of [eq] we integrate by parts
+with respect to [eq]. That will carry the derivative over onto
+the [eq]. It’s the same general idea we used to get rid of
+derivatives with respect to [eq]. We use the equality
+\begin{equation*}
+\int\ddp{\underline{\phi}}{x}\,\ddp{f}{x}\,dx=
+f\,\ddp{\underline{\phi}}{x}-
+\int f\,\frac{\partial^2\underline{\phi}}{\partial x^2}\,dx.
+\end{equation*}
+The integrated term is zero, since we have to make [eq] zero at infinity.
+(That corresponds to making [eq] zero at [eq] and [eq]. So our
+principle should be more accurately stated: [eq] is less for the
+true [eq] than for any other [eq] having the same values at
+infinity.) Then we do the same thing for [eq] and [eq]. So our
+integral [eq] is
+\begin{equation*}
+\Delta U\stared=\int(-\epsO\nabla^2\underline{\phi}-\rho)f\,dV.
+\end{equation*}
+In order for this variation to be zero for any [eq], no matter what,
+the coefficient of [eq] must be zero and, therefore,
+\begin{equation*}
+\nabla^2\underline{\phi}=-\rho/\epsO.
+\end{equation*}
+We get back our old equation. So our ‘minimum’ proposition is correct.
+
+“We can generalize our proposition if we do our algebra in a little
+different way. Let’s go back and do our integration by parts without
+taking components. We start by looking at the following equality:
+\begin{equation*}
+\FLPdiv{(f\,\FLPgrad{\underline{\phi}})}=
+\FLPgrad{f}\cdot\FLPgrad{\underline{\phi}}+f\,\nabla^2\underline{\phi}.
+\end{equation*}
+If I differentiate out the left-hand side, I can show that it is just
+equal to the right-hand side. Now we can use this equation to integrate
+by parts. In our integral [eq], we replace
+[eq]
+by [eq],
+which gets integrated over volume. The divergence term integrated over
+volume can be replaced by a surface integral:
+\begin{equation*}
+\int\FLPdiv{(f\,\FLPgrad{\underline{\phi}})}\,dV=
+\int f\,\FLPgrad{\underline{\phi}}\cdot\FLPn\,da.
+\end{equation*}
+Since we are integrating over all space, the surface over which we are
+integrating is at infinity. There, [eq] is zero and we get the same
+answer as before.
+
+“Only now we see how to solve a problem when we don’t know
+where all the charges are. Suppose that we have conductors with
+charges spread out on them in some way. We can still use our minimum
+principle if the potentials of all the conductors are fixed. We carry
+out the integral for [eq] only in the space outside of all
+conductors. Then, since we can’t vary [eq] on the
+conductor, [eq] is zero on all those surfaces, and the surface integral
+\begin{equation*}
+\int f\,\FLPgrad{\underline{\phi}}\cdot\FLPn\,da
+\end{equation*}
+is still zero. The remaining volume integral
+\begin{equation*}
+\Delta U\stared=\int(-\epsO\,\nabla^2\underline{\phi}-\rho)f\,dV
+\end{equation*}
+is only to be carried out in the spaces between conductors. Of course,
+we get Poisson’s equation again,
+\begin{equation*}
+\nabla^2\underline{\phi}=-\rho/\epsO.
+\end{equation*}
+So we have shown that our original integral [eq] is also a minimum if
+we evaluate it over the space outside of conductors all at fixed
+potentials (that is, such that any trial [eq] must equal the
+given potential of the conductors when [eq] is a point on the
+surface of a conductor).
+
+“There is an interesting case when the only charges are on
+conductors. Then
+\begin{equation*}
+U\stared=\frac{\epsO}{2}\int(\FLPgrad{\phi})^2\,dV.
+\end{equation*}
+Our minimum principle says that in the case where there are conductors
+set at certain given potentials, the potential between them adjusts
+itself so that integral [eq] is least. What is this integral? The
+term [eq] is the electric field, so the integral is the
+electrostatic energy. The true field is the one, of all those coming
+from the gradient of a potential, with the minimum total energy.
+
+“I would like to use this result to calculate something particular to
+show you that these things are really quite practical. Suppose I take
+two conductors in the form of a cylindrical condenser
+(Fig.  19–12 ). The inside conductor has the potential [eq],
+and the outside is at the potential zero. Let the radius of the inside
+conductor be [eq] and that of the outside, [eq]. Now we can suppose
+ any distribution of potential between the two. If we use the
+ correct  [eq], and
+calculate [eq], it should be
+the energy of the system, [eq]. So we can also
+calculate [eq] by our principle. But if we use a wrong distribution of
+potential and try to calculate the capacity [eq] by this method, we will
+get a capacity that is too big, since [eq] is specified. Any assumed
+potential [eq] that is not the exactly correct one will give a
+fake [eq] that is larger than the correct value. But if my false [eq]
+is any rough approximation, the [eq] will be a good approximation,
+because the error in [eq] is second order in the error in [eq].
+
+“Suppose I don’t know the capacity of a cylindrical condenser. I can
+use this principle to find it. I just guess at the potential
+function [eq] until I get the lowest [eq]. Suppose, for instance, I pick a
+potential that corresponds to a constant field. (You know, of course,
+that the field isn’t really constant here; it varies as [eq].) A
+field which is constant means a potential which goes linearly with
+distance. To fit the conditions at the two conductors, it must be
+\begin{equation*}
+\phi=V\biggl(1-\frac{r-a}{b-a}\biggr).
+\end{equation*}
+This function is [eq] at [eq], zero at [eq], and in between has a
+constant slope equal to [eq]. So what one does to find the
+integral [eq] is multiply the square of this gradient by [eq]
+and integrate over all volume. Let’s do this calculation for a
+cylinder of unit length. A volume element at the radius [eq] is $2\pi
+r\,dr$. Doing the integral, I find that my first try at the capacity
+gives
+\begin{equation*}
+\frac{1}{2}\,CV^2(\text{first try})=\frac{\epsO}{2}
+\int_a^b\frac{V^2}{(b-a)^2}\,2\pi r\,dr.
+\end{equation*}
+The integral is easy; it is just
+\begin{equation*}
+\pi V^2\biggl(\frac{b+a}{b-a}\biggr).
+\end{equation*}
+So I have a formula for the capacity which is not the true one but is
+an approximate job:
+\begin{equation*}
+\frac{C}{2\pi\epsO}=\frac{b+a}{2(b-a)}.
+\end{equation*}
+It is, naturally, different from the correct
+answer [eq], but it’s not too bad. Let’s compare it
+with the right answer for several values of [eq]. I have computed out
+the answers in Table  19–1 . Even when [eq] is as big
+as [eq]—which gives a pretty big variation in the field compared with a
+linearly varying field—I get a pretty fair approximation. The answer
+is, of course, a little too high, as expected. The thing gets much worse
+if you have a tiny wire inside a big cylinder. Then the field has
+enormous variations and if you represent it by a constant, you’re not
+doing very well. With [eq], we’re off by nearly a factor of two.
+Things are much better for small [eq]. To take the opposite extreme,
+when the conductors are not very far apart—say [eq]—then the
+constant field is a pretty good approximation, and we get the correct
+value for [eq] to within a tenth of a percent.
+
+“Now I would like to tell you how to improve such a calculation. (Of
+course, you know the right answer for the cylinder, but the
+method is the same for some other odd shapes, where you may not know
+the right answer.) The next step is to try a better approximation to
+the unknown true [eq]. For example, we might try a constant plus an
+exponential [eq], etc. But how do you know when you have a better
+approximation unless you know the true [eq]? Answer: You
+calculate [eq]; the lowest [eq] is the value nearest the truth. Let us try this
+idea out. Suppose that the potential is not linear but say quadratic
+in [eq]—that the electric field is not constant but linear. The most
+ general quadratic form that fits [eq] at [eq] and [eq]
+at [eq] is
+\begin{equation*}
+\phi=V\biggl[1+\alpha\biggl(\frac{r-a}{b-a}\biggr)-
+(1+\alpha)\biggl(\frac{r-a}{b-a}\biggr)^2
+\biggr],
+\end{equation*}
+where [eq] is any constant number. This formula is a little more
+complicated. It involves a quadratic term in the potential as well as
+a linear term. It is very easy to get the field out of it. The field
+is just
+\begin{equation*}
+E=-\ddt{\phi}{r}=-\frac{\alpha V}{b-a}+
+2(1+\alpha)\,\frac{(r-a)V}{(b-a)^2}.
+\end{equation*}
+Now we have to square this and integrate over volume. But wait a moment.
+What should I take for [eq]? I can take a parabola for the [eq];
+but what parabola? Here’s what I do: Calculate the capacity with
+ an arbitrary  [eq]. What I get is
+\begin{equation*}
+\frac{C}{2\pi\epsO}=\frac{a}{b-a}
+\biggl[\frac{b}{a}\biggl(\frac{\alpha^2}{6}+
+\frac{2\alpha}{3}+1\biggr)+
+\frac{1}{6}\,\alpha^2+\frac{1}{3}\biggr].
+\end{equation*}
+It looks a little complicated, but it comes out of integrating the
+square of the field. Now I can pick my [eq]. I know that the truth
+lies lower than anything that I am going to calculate, so whatever I put
+in for [eq] is going to give me an answer too big. But if I keep
+playing with [eq] and get the lowest possible value I can, that
+lowest value is nearer to the truth than any other value. So what I do
+next is to pick the [eq] that gives the minimum value for [eq].
+Working it out by ordinary calculus, I get that the minimum [eq] occurs
+for [eq]. Substituting that value into the formula, I
+obtain for the minimum capacity
+\begin{equation*}
+\frac{C}{2\pi\epsO}=\frac{b^2+4ab+a^2}{3(b^2-a^2)}.
+\end{equation*}
+
+“I’ve worked out what this formula gives for [eq] for various values
+of [eq]. I call these numbers [eq].
+Table  19–2 compares [eq] with the
+true [eq].
+
+“For example, when the ratio of the radii is [eq] to [eq], I
+have [eq], which is a very good approximation to the true answer,
+[eq]. Even for larger [eq], it stays pretty good—it is much,
+much better than the first approximation. It is even fairly
+good—only off by [eq] percent—when [eq] is [eq] to [eq]. But when
+it gets to be [eq] to [eq]—well, things begin to go wild. I get that
+[eq] is [eq] instead of [eq]. On the other hand, for a ratio of
+radii of [eq], the answer is excellent; and for a [eq] of [eq], the
+answer comes out [eq] instead of [eq]. Where the answer
+should be good, it is very, very good.
+
+“I have given these examples, first, to show the theoretical value of
+the principles of minimum action and minimum principles in general
+and, second, to show their practical utility—not just to calculate a
+capacity when we already know the answer. For any other shape, you can
+guess an approximate field with some unknown parameters like [eq]
+and adjust them to get a minimum. You will get excellent numerical
+results for otherwise intractable problems.”
+
+“I should like to add something that I didn’t have time for in the
+lecture. (I always seem to prepare more than I have time to tell about.)
+As I mentioned earlier, I got interested in a problem while working on
+this lecture. I want to tell you what that problem is. Among the minimum
+principles that I could mention, I noticed that most of them sprang in
+one way or another from the least action principle of mechanics and
+electrodynamics. But there is also a class that does not. As an example,
+if currents are made to go through a piece of material obeying
+Ohm’s law, the currents distribute
+themselves inside the piece so that the rate at which heat is generated
+is as little as possible. Also we can say (if things are kept
+isothermal) that the rate at which energy is generated is a minimum.
+Now, this principle also holds, according to classical theory, in
+determining even the distribution of velocities of the electrons inside
+a metal which is carrying a current. The distribution of velocities is
+not exactly the equilibrium distribution [Chapter  40 ,
+Vol. I, Eq. ( 40.6 )] because they are drifting sideways. The
+new distribution can be found from the principle that it is the
+distribution for a given current for which the entropy developed per
+second by collisions is as small as possible. The true description of
+the electrons’ behavior ought to be by quantum mechanics, however. The
+question is: Does the same principle of minimum entropy generation also
+hold when the situation is described quantum-mechanically? I haven’t
+found out yet.
+
+“The question is interesting academically, of course. Such principles
+are fascinating, and it is always worthwhile to try to see how general
+they are. But also from a more practical point of view, I want to
+know. I, with some colleagues, have published a paper in which we
+calculated by quantum mechanics approximately the electrical resistance
+felt by an electron moving through an ionic crystal like NaCl.
+[Feynman, Hellwarth, Iddings,
+and Platzman, “Mobility of Slow Electrons in a Polar Crystal,”
+ Phys. Rev. 127 , 1004 (1962).] But if a minimum
+principle existed, we could use it to make the results much more
+accurate, just as the minimum principle for the capacity of a condenser
+permitted us to get such accuracy for that capacity even though we had
+only a rough knowledge of the electric field.”

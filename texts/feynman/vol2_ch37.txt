@@ -1,0 +1,864 @@
+The Feynman Lectures on Physics Vol. II Ch. 37: Magnetic Materials
+==================================================================
+
+Sections: 37–1 Understanding ferromagnetism | 37–2 Thermodynamic properties | 37–3 The hysteresis curve | 37–4 Ferromagnetic materials | 37–5 Extraordinary magnetic materials
+
+
+
+In this chapter we will discuss the behavior and peculiarities of
+ferromagnetic materials and of other strange magnetic
+materials. Before proceeding to study magnetic materials, however, we
+will review very quickly some of the things about the general theory
+of magnets that we learned in the last chapter.
+
+First, we imagine the atomic currents inside the material that are
+responsible for the magnetism, and then describe them in terms of a
+volume current density [eq]. We
+emphasize that this is not supposed to represent the actual 
+currents. When the magnetization is uniform the currents do not
+ really cancel out precisely; that is, the whirling currents of
+one electron in one atom and the whirling currents of an electron in
+another atom do not overlap in such a way that the sum is exactly
+zero. Even within a single atom the distribution of magnetism is
+ not smooth. For instance, in an iron atom the magnetization is
+distributed in a more or less spherical shell, not too close to the
+nucleus and not too far away. Thus, magnetism in matter is quite a
+complicated thing in its details; it is very irregular. However, we
+are obliged now to ignore this detailed complexity and discuss
+phenomena from a gross, average point of view. Then it is true that
+the average current in the interior region, over any finite
+area that is big compared with an atom, is zero when
+[eq] is uniform. So, what we mean by magnetization per unit volume
+and [eq] and so on, at the level we are now
+considering, is an average over regions that are large compared with
+the space occupied by a single atom.
+
+In the last chapter, we also discovered that a ferromagnetic material
+has the following interesting property: above a certain temperature it
+is not strongly magnetic, whereas below this temperature it becomes
+magnetic. This fact is easily demonstrated. A piece of nickel wire at
+room temperature is attracted by a magnet. However, if we heat it
+above its Curie temperature with a gas flame, it becomes nonmagnetic
+and is not attracted toward the magnet—even when brought quite close
+to the magnet. If we let it lie near the magnet while it cools off, at
+the instant its temperature falls below the critical temperature it is
+suddenly attracted again by the magnet!
+
+The general theory of ferromagnetism that we will use supposes that the
+spin of the electron is responsible for the magnetization. The electron
+has spin one-half and carries one Bohr magneton of magnetic
+moment [eq] [eq] [eq]. The electron spin can be pointed either
+“up” or “down.” Because the electron has a negative charge, when its
+spin is “up” it has a negative moment, and when its spin is
+“down” it has a positive moment. With our usual conventions,
+the moment [eq] of the electron is opposite its spin. We have found
+that the energy of orientation of a magnetic dipole in a given applied
+field [eq] is [eq], but the energy of the spinning
+electrons depends on the neighboring spin alignments as well. In iron,
+if the moment of a nearby atom is “up,” there is a very strong
+tendency that the moment of the one next to it will also be “up.” That
+is what makes iron, cobalt, and nickel so strongly magnetic—the
+moments all want to be parallel. The first question we have to discuss
+is why .
+
+Soon after the development of quantum mechanics, it was noticed that
+there is a very strong apparent force—not a magnetic force or
+any other kind of actual force, but only an apparent force—trying to
+line the spins of nearby electrons opposite to one another. These
+forces are closely related to chemical valence forces. There is a
+principle in quantum mechanics—called the exclusion
+principle —that two electrons cannot occupy exactly the same state,
+that they cannot be in exactly the same condition as to location and
+spin orientation. 1 For example, if they are at the same
+point, the only alternative is to have their spins opposite. So, if
+there is a region of space between atoms where electrons like to
+congregate (as in a chemical bond) and we want to put another electron
+on top of one already there, the only way to do it is to have the spin
+of the second one pointed opposite to the spin of the first one. To have
+the spins parallel is against the law, unless the electrons stay away
+from each other. This has the effect that a pair of parallel-spin
+electrons near to each other have much more energy than a pair of
+opposite-spin electrons; the net effect is as though there were a force
+trying to turn the spin over. Sometimes this spin-turning force is
+called the exchange force , but that only makes it more
+mysterious—it is not a very good term. It is just because of the
+exclusion principle that electrons have a tendency to make their spins
+opposite. In fact, that is the explanation of the lack of
+magnetism in almost all substances! The spins of the free electrons on
+the outside of the atoms have tremendous tendency to balance in opposite
+directions. The problem is to explain why for materials like iron it is
+just the reverse of what we should expect.
+
+We have summarized the supposed alignment effect by adding a suitable
+term in the energy equation, by saying that if the electron magnets in
+the neighborhood have a mean magnetization [eq], then the moment of an
+electron has a strong tendency to be in the same direction as the
+average magnetization of the atoms in the neighborhood. Thus, we may
+write for the two possible spin orientations, 2 
+\begin{equation}
+\begin{aligned}
+\text{Spin “up” energy}
+&=+\mu\biggl(H+\frac{\lambda M}{\epsO c^2}\biggr),\\[1ex]
+\text{Spin “down” energy}
+&=-\mu\biggl(H+\frac{\lambda M}{\epsO c^2}\biggr).
+\end{aligned}
+\label{Eq:II:37:1}
+\end{equation}
+
+When it was clear that quantum mechanics could supply a tremendous
+spin-orientating force—even if, apparently, of the wrong sign—it
+was suggested that ferromagnetism might have its origin in this same
+force, that due to the complexities of iron and the large number of
+electrons involved, the sign of the interaction energy would come out
+the other way around. Since the time this was thought of—in about
+1927 when quantum mechanics was first being understood—many people
+have been making various estimates and semicalculations, trying to get
+a theoretical prediction for [eq]. The most recent calculations
+of the energy between the two electron spins in iron—assuming that
+the interaction is a direct one between the two electrons in
+neighboring atoms—still give the wrong sign . The present
+understanding of this is again to assume that the complexity of the
+situation is somehow responsible and to hope that the next man who
+makes the calculation with a more complicated situation will get the
+right answer!
+
+It is believed that the up-spin of one of the electrons in the inside
+shell, which is making the magnetism, tends to make the conduction
+electrons which fly around the outside have the opposite spin. One
+might expect this to happen because the conduction electrons come into
+the same region as the “magnetic” electrons. Since they move around,
+they can carry their prejudice for being upside down over to the next
+atom; that is, one “magnetic” electron tries to force the conduction
+electrons to be opposite, and the conduction electron then makes the
+next “magnetic” electron opposite to it . The double
+interaction is equivalent to an interaction which tries to line up the
+two “magnetic” electrons. In other words, the tendency to make
+parallel spins is the result of an intermediary that tends to some
+extent to be opposite to both. This mechanism does not require that
+the conduction electrons be completely “upside down.” They could
+just have a slight prejudice to be down, just enough to load the
+“magnetic” odds the other way. This is the mechanism that the people
+who have calculated such things now believe is responsible for
+ferromagnetism. But we must emphasize that to this day nobody can
+calculate the magnitude of [eq] simply by knowing that the
+material is number [eq] in the periodic table. In short, we don’t
+thoroughly understand it.
+
+Now let us continue with the theory, and then come back later to
+discuss a certain error involved in the way we have set it up. If the
+magnetic moment of a certain electron is “up,” energy comes both
+from the external field and also from the tendency of the spins to be
+parallel. Since the energy is lower when the spins are parallel, the
+effect is sometimes thought of as due to an “effective internal
+field.” But remember, it is not due to a true magnetic 
+force; it is an interaction that is more complicated. In any case, we
+take Eqs. ( 37.1 ) as the formulas for the energies of the
+two spin states of a “magnetic” electron. At a temperature [eq], the
+relative probability of these two states is proportional
+to [eq], which we can write as [eq], with
+[eq]. Then, if we calculate the mean
+value of the magnetic moment, we find (as in the last chapter) that it
+is
+\begin{equation}
+\label{Eq:II:37:2}
+M=N\mu\tanh x.
+\end{equation}
+
+Now we would like to calculate the internal energy of the material. We
+note that the energy of an electron is exactly proportional to the
+magnetic moment, so that the calculation of the mean moment and the
+calculation of the mean energy are the same—except that in place
+of [eq] in Eq. ( 37.2 ) we would write [eq], which
+is [eq]. The mean energy is then
+\begin{equation*}
+\av{U} = -N\mu\biggl(H+
+\frac{\lambda M}{\epsO c^2}\biggr)\tanh x.
+\end{equation*}
+
+Now this is not quite correct. The term [eq]
+represents interactions of all possible pairs of atoms, and we
+must remember to count each pair only once . (When we consider
+the energy of one electron in the field of the rest and then the
+energy of a second electron in the field of the rest, we have counted
+part of the first energy once more.) Thus, we must divide the
+ mutual interaction term by two, and our formula for the energy
+then turns out to be
+\begin{equation}
+\label{Eq:II:37:3}
+\av{U} = -N\mu\biggl(H+
+\frac{\lambda M}{2\epsO c^2}\biggr)\tanh x.
+\end{equation}
+
+In the last chapter we discovered an interesting thing—that below a
+certain temperature the material finds a solution to the equations in
+which the magnetic moment is not zero , even with no external
+magnetizing field. When we set [eq] in Eq. ( 37.2 ), we
+found that
+\begin{equation}
+\label{Eq:II:37:4}
+\frac{M}{M_{\text{sat}}}=\tanh\biggl(\frac{T_c}{T}\,
+\frac{M}{M_{\text{sat}}}\biggr),
+\end{equation}
+
+where [eq], and $T_c=\mu\lambda M_{\text{sat}}/k\epsO
+c^2$. When we solve this equation (graphically or otherwise), we find
+that the ratio [eq] as a function of [eq] is a curve
+like that labeled “quantum theory” in Fig.  37–1 . The dashed curve
+marked “cobalt, nickel” shows the experimental results for crystals
+of these elements. The theory and experiment are in reasonably good
+agreement. The figure also shows the result of the classical theory in
+which the calculation is carried out assuming that the atomic magnets
+can have all possible orientations in space. You can see that this
+assumption gives a prediction that is not even close to the
+experimental facts.
+
+Even the quantum theory deviates from the observed behavior at both
+high and low temperatures. The reason for the deviations is that we
+have made a rather sloppy approximation in the theory: We have assumed
+that the energy of an atom depends upon the mean magnetization
+of its neighboring atoms. In other words, for each one that is “up”
+in the neighborhood of a given atom, there will be a contribution of
+energy due to that quantum mechanical alignment effect. But how many
+are there pointed “up”? On the average, that is measured by the
+magnetization [eq]—but only on the average . A particular atom
+somewhere might find all its neighbors “up.” Then its energy
+will be larger than the average. Another one might find some up and
+some down, perhaps averaging to zero, and it would have no 
+energy from that term, and so on. What we ought to do is to use some
+more complicated kind of average, because the atoms in different
+places have different environments, and the numbers up and down are
+different for different ones. Instead of just taking one atom
+subjected to the average influence, we should take each one in its
+actual situation, compute its energy, and find the average
+energy . But how do we find out how many are “up” and how many are
+“down” in the neighborhood? That is, of course, just what we are
+trying to calculate—the number “up” and “down”—so we have a
+very complicated interconnected problem of correlations, a problem
+which has never been solved. It is an intriguing and exciting one
+which has existed for years and on which some of the greatest names in
+physics have written papers, but even they have not completely solved
+it.
+
+It turns out that at low temperatures, when almost all the atomic
+magnets are “up” and only a few are “down,” it is easy to solve;
+and at high temperatures, far above the Curie temperature [eq] when
+they are almost all random, it is again easy. It is often easy to
+calculate small departures from some simple, idealized situation, so
+it is fairly well understood why there are deviations from the simple
+theory at low temperature. It is also understood physically that for
+statistical reasons the magnetization should deviate at high
+temperatures. But the exact behavior near the Curie point has never
+been thoroughly figured out. That’s an interesting problem to work out
+some day if you want a problem that has never been solved.
+
+In the last chapter we laid the groundwork necessary for calculating the
+thermodynamic properties of ferromagnetic materials. These are,
+naturally, related to the internal energy of the crystal, which includes
+interactions of the various spins, given by Eq. ( 37.3 ). For
+the energy of the spontaneous magnetization below the Curie point, we
+can set [eq] in Eq. ( 37.3 ), and—noticing that $\tanh
+x=M/M_{\text{sat}}[eq]M^2$:
+\begin{equation}
+\label{Eq:II:37:5}
+\av{U} = -\frac{N\mu\lambda M^2}
+{2\epsO c^2M_{\text{sat}}}.
+\end{equation}
+
+If we now plot the energy due to the magnetism as a function of
+temperature, we get a curve which is the negative of the square of the
+curve of Fig.  37–1 , as drawn in Fig.  37–2 (a).
+If we were to measure then the specific heat of such a material we would obtain a
+curve which is the derivative of  37–2 (a). It is shown in
+Fig.  37–2 (b). It rises slowly with increasing temperature,
+but falls suddenly to zero at [eq]. The sharp drop is due to the
+change in slope of the magnetic energy and is reached right at the
+Curie point. So without any magnetic measurements at all we
+could have discovered that something was going on inside of iron or
+nickel by measuring this thermodynamic property. However, both
+experiment and improved theory (with fluctuations included) suggest that
+this simple curve is wrong and that the true situation is really more
+complicated. The curve goes higher at the peak and falls to zero
+somewhat slowly. Even if the temperature is high enough to randomize the
+spins on the average , there are still local regions where there
+is a certain amount of polarization, and in these regions the spins
+still have a little extra energy of interaction—which only dies out
+slowly as things get more and more random with further increases in
+temperature. So the actual curve looks like Fig.  37–2 (c).
+One of the challenges of theoretical physics today is to find an exact
+theoretical description of the character of the specific heat near the
+Curie transition—an intriguing problem which has not yet been solved.
+Naturally, this problem is very closely related to the shape of the
+magnetization curve in the same region.
+
+Now we want to describe some experiments, other than thermodynamic
+ones, which show that there is something right about our
+interpretation of magnetism. When the material is magnetized to
+saturation at low enough temperatures, [eq] is very nearly equal
+to [eq]—nearly all the spins are parallel, as well as their
+magnetic moments. We can check this by an experiment. Suppose we
+suspend a bar magnet by a thin fiber and then surround it by a coil so
+that we can reverse the magnetic field without touching the magnet or
+putting any torque on it. This is a very difficult experiment because
+the magnetic forces are so enormous that any irregularities, any
+lopsidedness, or any lack of perfection in the iron will produce
+accidental torques. However, the experiment has been done under
+careful conditions in which such accidental torques are minimized. By
+means of the magnetic field from a coil that surrounds the bar, we
+turn all the atomic magnets over at once. When we do this we also
+change the angular momenta of all the spins from “up” to “down”
+(see Fig.  37–3 ). If angular momentum is to be conserved when the
+spins all turn over, the rest of the bar must have an opposite change
+in angular momentum. The whole magnet will start to spin. And sure
+enough, when we do the experiment, we find a slight turning of the
+magnet. We can measure the total angular momentum given to the whole
+magnet, and this is simply [eq] times [eq], the change in the
+angular momentum of each spin. The ratio of angular momentum to
+magnetic moment measured this way comes out to within about
+[eq] percent of what we calculate. Actually, our calculations assume that
+the atomic magnets are due purely to the electron spin, but there is,
+in addition, some orbital motion also in most materials. The orbital
+motion is not completely free of the lattice and does not contribute
+much more than a few percent to the magnetism. As a matter of fact,
+the saturation magnetic field that one gets taking
+[eq] and using the density of iron of [eq] and the
+moment [eq] of the spinning electron is about [eq] gauss. But
+according to experiment, it is actually in the neighborhood
+of [eq] gauss. This is a typical magnitude of error—[eq] or
+[eq] percent—due to neglecting the contributions of the orbital moments
+that have not been included in making the analysis. Thus, a slight
+discrepancy with the gyromagnetic measurements is quite
+understandable.
+
+We have concluded from our theoretical analysis that a ferromagnetic
+material should spontaneously become magnetized below a certain
+temperature so that all the magnetism would be in the same
+direction. But we know that this is not true for an ordinary piece of
+ unmagnetized iron. Why isn’t all iron magnetized? We can
+explain it with the help of Fig.  37–4 . Suppose the iron were all a
+big single crystal of the shape shown in Fig.  37–4 (a) and
+spontaneously magnetized all in one direction. Then there would be a
+considerable external magnetic field, which would have a lot of
+energy. We can reduce that field energy if we arrange that one side of
+the block is magnetized “up” and the other side magnetized “down,”
+as in Fig.  37–4 (b). Then, of course, the fields outside the iron
+would extend over less volume, so there would be less energy there.
+
+Ah, but wait! In the layer between the two regions we have up-spinning
+electrons adjacent to down-spinning electrons. But ferromagnetism
+appears only in those materials for which the energy is reduced 
+if the electrons are parallel rather than opposite. So, we have
+added some extra energy along the dotted line in
+Fig.  37–4 (b); this energy is sometimes called wall
+energy . A region having
+only one direction of magnetization is called a
+ domain . At the interface—the “wall”—between
+two domains, where we have atoms on opposite sides which are spinning in
+different directions, there is an energy per unit area of the wall. We
+have described it as though two adjacent atoms were spinning exactly
+opposite, but it turns out that nature adjusts things so that the
+transition is more gradual. But we don’t need to worry about such fine
+details at this point.
+
+Now the question is: When is it better or worse to make a wall? The
+answer is that it depends on the size of the domains. Suppose
+that we were to scale up a block so that the whole thing was twice as
+big. The volume in the space outside filled with a given magnetic field
+strength would be eight times bigger, and the energy in the
+magnetic field, which is proportional to the volume, would also be eight
+times greater. But the surface area between two domains, which
+will give the wall energy,
+would be only four times as big. Therefore, if the piece of iron
+is big enough, it will pay to split it into more domains. This is why
+only the very tiny crystals can have but a single domain. Any large
+object—one more than about a hundredth of a millimeter in size—will
+have at least one domain wall; and any ordinary, “centimeter-size”
+object will be split into many domains, as shown in the figure.
+Splitting into domains goes on until the energy needed to put in
+one extra wall is as large as the energy decrease in the magnetic field
+outside the crystal .
+
+Actually nature has discovered still another way to lower the energy: It
+is not necessary to have the field go outside at all, if a little
+triangular region is magnetized sideways , as in
+Fig.  37–4 (d). 3 Then
+with the arrangement of Fig.  37–4 (d) we see that there is
+ no external field, but instead only a little more domain wall.
+
+But that introduces a new kind of problem. It turns out that when a
+single crystal of iron is magnetized, it changes its length in the
+direction of magnetization, so an “ideal” cube with its magnetization,
+say, “up,” is no longer a perfect cube. The “vertical” dimension
+will be different from the “horizontal” dimension. This effect is
+called magnetostriction . Because of such
+geometric changes, the little triangular pieces of
+Fig.  37–4 (d) do not, so to speak, “fit” into the
+available space anymore—the crystal has got too long one way and too
+short the other way. Of course, it does fit, really, but only by
+being squashed in; and this involves some mechanical stresses. So, this
+arrangement also introduces an extra energy. It is the balance of
+all these various energies which determines how the domains finally
+arrange themselves in their complicated fashion in a piece of
+unmagnetized iron.
+
+Now, what happens when we put on an external magnetic field? To take a
+simple case, consider a crystal whose domains are as shown in
+Fig.  37–4 (d). If we apply an external magnetic field in the
+upward direction, in what manner does the crystal become magnetized?
+First, the middle domain wall can move over sideways (to the
+right) and reduce the energy. It moves over so that the region which is
+“up” becomes bigger than the region which is “down.” There are more
+elementary magnets lined up with the field, and this gives a lower
+energy. So, for a piece of iron in weak fields—at the very beginning
+of magnetization—the domain walls begin to move and eat into the
+regions which are magnetized opposite to the field. As the field
+continues to increase, a whole crystal shifts gradually into a single
+large domain which the external field helps to keep lined up. In a
+strong field the crystal “likes” to be all one way just because 
+its energy in the applied field is reduced—it is no longer merely the
+crystal’s own external field which matters.
+
+What if the geometry is not so simple? What if the axes of the crystal
+and its spontaneous magnetization are in one direction, but we apply
+the magnetic field in some other direction —say at [eq]?
+We might think that domains would reform themselves with their
+magnetization parallel to the field, and then as before, they could
+all grow into one domain. But this is not easy for the iron to do,
+ for the energy needed to magnetize a crystal depends on the
+direction of magnetization relative to the crystal axis . It is
+relatively easy to magnetize iron in a direction parallel to the
+crystal axes, but it takes more energy to magnetize it in some
+other direction—like [eq] with respect to one of the
+axes. Therefore, if we apply a magnetic field in such a direction,
+what happens first is that the domains which point along one of the
+preferred directions which is near to the applied field grow
+until the magnetization is all along one of these directions. Then
+ with much stronger fields , the magnetization is gradually
+pulled around parallel to the field, as sketched in Fig.  37–5 .
+
+In Fig.  37–6 are shown some observations of the
+magnetization curves of single crystals of iron. To understand them, we
+must first explain something about the notation that is used in
+describing directions in a crystal. There are many ways in which a
+crystal can be sliced so as to produce a face which is a plane of atoms.
+Everyone who has driven past an orchard or vineyard knows this—it is
+fascinating to watch. If you look one way, you see lines of trees—if
+you look another way, you see different lines of trees, and so on. In a
+similar way, a crystal has definite families of planes that hold many
+atoms, and the planes have this important characteristic (we consider a
+cubic crystal to make it easier): If we observe where the planes
+intersect the three coordinate axes—we find that the
+ reciprocals of the three distances from the origin are in the
+ratio of simple whole numbers. These three whole numbers are taken as
+the definition of the planes. For example, in Fig.  37–7 (a),
+a plane parallel to the [eq]-plane is shown. This is called a
+[eq] plane; the reciprocals of its intersection of the [eq]- and [eq]-axes are
+both zero. The direction perpendicular to such a plane (in a cubic
+crystal) is given the same set of numbers. It is easy to understand the
+idea in a cubic crystal, for then the indices [eq] mean a vector
+which has a unit component in the [eq]-direction and none in the [eq]-
+or [eq]-directions. The [eq] direction is in a direction [eq] from
+the [eq]- and [eq]-axes, as in Fig.  37–7 (b); and the
+[eq] direction is in the direction of the cube diagonal, as in
+Fig.  37–7 (c).
+
+Returning now to Fig.  37–6 , we see the magnetization curves
+of a single crystal of iron for various directions. First, note that for
+very tiny fields—so weak that it is hard to see them on the scale at
+all—the magnetization increases extremely rapidly to quite large
+values. If the field is in the [eq] direction—namely along one of
+those nice, easy directions of magnetization—the curve goes up to a
+high value, curves around a little, and then is saturated. What happened
+is that the domains which were already there are very easily removed.
+Only a small field is required to make the domain walls move and eat up
+all of the “wrong-way” domains. Single crystals of iron are enormously
+permeable (magnetic sense), much more so than ordinary polycrystalline
+iron. A perfect crystal magnetizes extremely easily. Why is it curved at
+all? Why doesn’t it just go right up to saturation? We are not sure. You
+might study that some day. We do understand why it is flat for high
+fields. When the whole block is a single domain, the extra magnetic
+field cannot make any more magnetization—it is already
+at [eq], with all the electrons lined up.
+
+Now, if we try to do the same thing in the [eq] direction—which
+is at [eq] to the crystal axes—what will happen? We turn on a
+little bit of field and the magnetization leaps up as the domains
+grow. Then as we increase the field some more, we find that it takes
+quite a lot of field to get up to saturation, because now the
+magnetization is turning away from an “easy” direction. If
+this explanation is correct, the point at which the [eq] curve
+extrapolates back to the vertical axis should be at [eq] of
+the saturation value. It turns out, in fact, to be very, very close
+to [eq]. Similarly, in the [eq] direction—which is along the
+cube diagonal—we find, as we would expect, that the curve
+extrapolates back to nearly [eq] of saturation.
+
+Figure  37–8 shows the corresponding situation for two other
+materials, nickel and cobalt. Nickel is different from iron. In nickel,
+it turns out that the [eq] direction is the easy direction of
+magnetization. Cobalt has a hexagonal crystal form, and people have
+botched up the system of nomenclature for this case. They want to have
+three axes on the bottom of the hexagon and one perpendicular to these,
+so they have used four indices. The [eq] direction is the direction
+of the axis of the hexagon, and [eq] is perpendicular to that axis.
+We see that crystals of different metals behave in different ways.
+
+Now we must discuss a polycrystalline material, such as an ordinary
+piece of iron. Inside such materials there are many, many little
+crystals with their crystalline axes pointing every which way.
+ These are not the same as domains . Remember that the domains were
+all part of a single crystal , but in a piece of iron there are
+many different crystals with axes at different orientations, as
+shown in Fig.  37–9 . Within each of these crystals, there
+will also generally be some domains. When we apply a small 
+magnetic field to a piece of polycrystalline material, what happens is
+that the domain walls begin to move, and the domains which have a
+favorable direction of easy magnetization grow larger. This growth is
+reversible so long as the field stays very small—if we turn the field
+off, the magnetization will return to zero. This part of the
+magnetization curve is marked [eq] in Fig.  37–10 .
+
+For larger fields—in the region [eq] of the magnetization curve
+shown—things get much more complicated. In every small crystal of
+the material, there are strains and dislocations; there are
+impurities, dirt, and imperfections. And at all but the smallest
+fields, the domain wall, in moving, gets stuck on these. There is an
+interaction energy between the domain wall and a dislocation, or a
+grain boundary, or an impurity. So when the wall gets to one of them,
+it gets stuck; it sticks there at a certain field. But then if the
+field is raised some more, the wall suddenly snaps past. So the motion
+of the domain wall is not smooth the way it is in a perfect
+crystal—it gets hung up every once in a while and moves in jerks. If
+we were to look at the magnetization on a microscopic scale, we would
+see something like the insert of Fig.  37–10 .
+
+Now the important thing is that these jerks in the magnetization can
+cause an energy loss. In the first place, when a boundary finally
+slips past an impediment, it moves very quickly to the next one, since
+the field is already above what would be required for the unimpeded
+motion. The rapid motion means that there are rapidly changing
+magnetic fields which produce eddy currents in the crystal. These
+currents lose energy in heating the metal. A second effect is that
+when a domain suddenly changes, part of the crystal changes its
+dimensions from the magnetostriction. Each sudden shift of a domain
+wall sets up a little sound wave that carries away energy. Because of
+such effects, the second part of magnetization curve is
+ irreversible , and there is energy being lost . This is
+the origin of the hysteresis effect, because to move a boundary wall
+forward—snap—and then to move it backward—snap—produces a
+different result. It’s like “jerky” friction, and it takes energy.
+
+Eventually, for high enough fields, when we have moved all the domain
+walls and magnetized each crystal in its best direction, there are
+still some crystallites which happen to have their easy directions of
+magnetization not in the direction of our external magnetic
+field. Then it takes a lot of extra field to turn those magnetic
+moments around. So the magnetization increases slowly, but smoothly,
+for high fields—namely in the region marked [eq] in the figure. The
+magnetization does not come sharply to its saturation value, because
+in the last part of the curve the atomic magnets are turning in
+the strong field. So we see why the magnetization curve of ordinary
+polycrystalline materials, such as the one shown in Fig.  37–10 ,
+rises a little bit and reversibly at first, then rises
+irreversibly, and then curves over slowly. Of course, there is no
+sharp break-point between the three regions—they blend smoothly, one
+into the other.
+
+It is not hard to show that the magnetization process in the middle
+part of the magnetization curve is jerky—that the domain walls jerk
+and snap as they shift. All you need is a coil of wire—with many
+thousands of turns—connected to an amplifier and a loudspeaker, as
+shown in Fig.  37–11 . If you put a few silicon steel sheets (of the
+type used in transformers) at the center of the coil and bring a bar
+magnet slowly near the stack, the sudden changes in magnetization will
+produce impulses of emf in the coil, which are heard as distinct
+clicks in the loudspeaker. As you move the magnet nearer to the iron
+you will hear a whole rush of clicks that sound something like the
+noise of sand grains falling over each other as a can of sand is tilted.
+The domain walls are jumping, snapping, and jiggling as the field is
+increased. This phenomenon is called the
+ Barkhausen effect .
+
+As you move the magnet even closer to the iron sheets, the noise grows
+louder and louder for a while but then there is relatively little
+noise when the magnet gets very close. Why? Because nearly all the
+domain walls have moved as far as they can go. Any greater field is
+merely turning the magnetization in each domain, which is a
+smooth process.
+
+If you now withdraw the magnet, so as to come back on the downward
+branch of the hysteresis loop, the domains all try to get back to low
+energy again, and you hear another rush of backward-going jerks. You
+can also note that if you bring the magnet to a given place and move
+it back and forth a little bit, there is relatively little noise. It
+is again like tilting a can of sand—once the grains shift into
+place, small movements of the can don’t disturb them. In the iron the
+small variations in the magnetic field aren’t enough to move any
+boundaries over any of the “humps.”
+
+Now we would like to talk about the various kinds of magnetic
+materials that there are in the technical world and to consider some
+of the problems involved in designing magnetic materials for different
+purposes. First, the term “the magnetic properties of iron,” which
+one often hears, is a misnomer—there is no such thing. “Iron” is
+not a well-defined material—the properties of iron depend critically
+on the amount of impurities and also on how the iron is
+formed. You can appreciate that the magnetic properties will depend on
+how easily the domain walls move and that this is a gross 
+property, not a property of the individual atoms. So practical
+ferromagnetism is not really a property of an iron atom —it is
+a property of solid iron in a certain form . For example,
+iron can take on two different crystalline forms. The common form has
+a body-centered cubic lattice, but it can also have a face-centered
+cubic lattice, which is, however, stable only at temperatures
+above [eq]C. Of course, at that temperature the body-centered cubic
+structure is already past the Curie point. However, by alloying
+chromium and nickel with the iron (one possible mixture is
+[eq] percent chromium and [eq] percent nickel) we can get what is called
+stainless steel, which, although it is mainly iron, retains the
+face-centered lattice even at low temperatures. Because its crystal
+structure is different, it has completely different magnetic
+properties. Most kinds of stainless steel are not magnetic to any
+appreciable degree, although there are some kinds which are somewhat
+magnetic—it depends on the composition of the alloy. Even when such
+an alloy is magnetic, it is not ferro magnetic like ordinary
+iron—even though it is mostly just iron.
+
+We would like now to describe a few of the special materials which
+have been developed for their particular magnetic properties. First,
+if we want to make a permanent magnet, we would like material
+with an enormously wide hysteresis loop so that, when we turn
+the current off and come down to zero magnetizing field, the
+magnetization will remain large. For such materials the domain
+boundaries should be “frozen” in place as much as possible. One such
+material is the remarkable alloy “Alnico V” ([eq] Fe, [eq] Al,
+[eq] Ni, [eq] Co, [eq] Cu). (The rather complex composition of
+this alloy is indicative of the kind of detailed effort that has gone
+into making good magnets. What patience it takes to mix five things
+together and test them until you find the most ideal substance!) When
+Alnico solidifies, there is a “second phase” which precipitates out,
+making many tiny grains and very high internal strains. In this
+material, the domain boundaries have a hard time moving at all. In
+addition to having a precise composition, Alnico is mechanically
+“worked” in a way that makes the crystals appear in the form of long
+grains along the direction in which the magnetization is going to
+be. Then the magnetization will have a natural tendency to be lined up
+in these directions and will be held there from the anisotropic
+effects. Furthermore, the material is even cooled in an external
+magnetic field when it is manufactured, so that the grains will grow
+with the right crystal orientation. The hysteresis loop of
+Alnico V is shown in Fig.  37–12 . You see that it is
+about [eq] times wider than the hysteresis curve for soft iron that we
+showed in the last chapter in Fig.  36–8 .
+
+Let’s turn now to a different kind of material. For building
+transformers and motors, we want a material which is magnetically
+“soft”—one in which the magnetism is easily changed so that an
+enormous amount of magnetization results from a very small applied
+field. To arrange this, we need pure, well-annealed material which
+will have very few dislocations and impurities so that the domain
+walls can move easily. It would also be nice if we could make the
+anisotropy small. Then, even if a grain of the material sits at the
+wrong angle with respect to the field, it will still magnetize
+easily. Now we have said that iron prefers to magnetize along the
+[eq] direction, whereas nickel prefers the [eq] direction; so if
+we mix iron and nickel in various proportions, we might hope to find
+that with just the right proportions the alloy wouldn’t prefer
+ any direction—the [eq] and [eq] directions would be
+equivalent. It turns out that this happens with a mixture of
+[eq] percent nickel and [eq] percent iron. In addition—possibly by luck
+or maybe because of some physical relationship between the anisotropy
+and the magnetostriction effects—it turns out
+that the magnetostriction of iron and nickel has the opposite
+sign. And in an alloy of the two metals, this property goes through zero
+at about [eq] percent nickel. So somewhere between [eq] and [eq] percent
+nickel we get very “soft” magnetic materials—alloys that are very
+easy to magnetize. They are called the
+ permalloys . Permalloys are
+useful for high-quality transformers (at low signal levels), but they
+would be no good at all for permanent magnets.
+Permalloys must be very carefully made and handled. The
+magnetic properties of a piece of permalloy are
+drastically changed if it is stressed beyond its elastic limit—it
+mustn’t be bent. Then, its permeability is reduced because of the
+dislocations, slip bands, and so on, which are produced by the
+mechanical deformations. The domain boundaries are no longer easy to
+move. The high permeability can, however, be restored by annealing at
+high temperatures.
+
+It is often convenient to have some numbers to characterize the various
+magnetic materials. Two useful numbers are the intercepts of the
+hysteresis loop with the [eq]- and [eq]-axes, as indicated in
+Fig.  37–12 . These intercepts are called the remanent
+magnetic field  [eq] and the coercive force  [eq]. In
+Table  37–1 we list these numbers for a few magnetic
+materials.
+
+We would now like to discuss some of the more exotic magnetic materials.
+There are many elements in the periodic table which have incomplete
+inner electron shells and hence have atomic magnetic moments. For
+instance, right next to the ferromagnetic elements iron, nickel, and
+cobalt you will find chromium and manganese. Why aren’t they 
+ferromagnetic? The answer is that the [eq] term in
+Eq. ( 37.1 ) has the opposite sign for these elements.
+In the chromium lattice, for example, the spins of the chromium atoms
+alternate atom by atom , as shown in Fig.  37–13 (b).
+So chromium is “magnetic” from its own point of view, but it is
+not technically interesting because there are no external 
+magnetic effects. Chromium, then, is an example of a material in which
+quantum mechanical effects make the spins alternate. Such a material is
+called antiferromagnetic . The
+alignment in antiferromagnetic materials is also temperature dependent.
+Below a critical temperature, all the spins are lined up in the
+alternating array, but when the material is heated above a certain
+temperature—which is again called the Curie temperature—the
+spins suddenly become random. There is, internally, a sudden transition.
+This transition can be seen in the specific heat curve. Also it shows up
+in some special “magnetic” effects. For instance, the existence of the
+alternating spins can be verified by scattering neutrons from a crystal
+of chromium. Because a neutron itself has a spin (and a magnetic
+moment), it has a different amplitude to be scattered, depending on
+whether its spin is parallel or opposite to the spin of the scatterer.
+Thus, we get a different interference pattern when the spins in a
+crystal are alternating than we do when they have a random distribution.
+
+There is another kind of substance in which quantum mechanical effects
+make the electron spins alternate, but which is nevertheless
+ ferromagnetic —that is, the crystal has a permanent net
+magnetization. The idea behind such materials is shown in
+Fig.  37–14 . The figure shows the crystal structure of
+ spinel , a magnesium-aluminum oxide,
+which—as it is shown—is not magnetic. The oxide has two kinds
+of metal atoms: magnesium and aluminum. Now if we replace the magnesium
+and the aluminum by two magnetic elements like iron and zinc, or by zinc
+and manganese—in other words, if we put in magnetic atoms
+instead of the nonmagnetic ones—an interesting thing happens. Let’s
+call one kind of metal atom [eq] and the other kind of metal atom [eq];
+then the following combination of forces must be considered. There is an
+[eq]-[eq] interaction which tries to make the [eq] atoms and the [eq] atoms
+have opposite spins—because quantum mechanics always gives the
+opposite sign (except for the mysterious crystals of iron, nickel, and
+cobalt). Then, there is a direct [eq]-[eq] interaction which tries to make
+the [eq]’s opposite, and also a [eq]-[eq] interaction which tries to make
+the [eq]’s opposite. Now, of course we cannot have everything opposite
+everything else—[eq] opposite [eq], [eq] opposite [eq], and [eq]
+opposite [eq]. Presumably because of the distances between the [eq]’s and the
+presence of the oxygen (although we really don’t know why), it turns out
+that the [eq]-[eq] interaction is stronger than the [eq]-[eq] or
+the [eq]-[eq]. So the solution that nature uses in this case is to make all
+the [eq]’s parallel to each other , and all the [eq]’s
+ parallel to each other , but the two systems opposite . That
+gives the lowest energy because of the stronger [eq]-[eq] interaction. The
+result: all the [eq]’s are spinning up and all the [eq]’s are spinning
+down—or vice versa, of course. But if the magnetic moments of
+the [eq]-type atom and the [eq]-type atom are not equal , we can get
+the situation shown in Fig.  37–13 (c), and there can be a
+net magnetization in the material. The material will then be
+ferromagnetic—although somewhat weak. Such materials are called
+ ferrites . They do not have as high a saturation magnetization as
+iron—for obvious reasons—so they are only useful for smaller fields.
+But they have a very important difference—they are insulators; the
+ferrites are ferromagnetic
+insulators . In high-frequency fields,
+they will have very small eddy currents and so can be used, for example,
+in microwave systems. The microwave fields will be able to get inside
+such an insulating material, whereas they would be kept out by the eddy
+currents in a conductor like iron.
+
+There is another class of magnetic materials which has only recently
+been discovered—members of the family of the orthosilicates called
+ garnets . They are again crystals in which the lattice contains
+two kinds of metallic atoms, and we have again a situation in which two
+kinds of atoms can be substituted almost at will. Among the many
+compounds of interest there is one which is completely ferromagnetic. It
+has yttrium and iron in the garnet structure, and the reason it is
+ferromagnetic is very curious. Here again quantum mechanics is making
+the neighboring spins opposite, so that there is a locked-in system of
+spins with the electron spins of the iron one way and the electron spins
+of the yttrium the opposite way. But the yttrium atom is complicated. It
+is a rare-earth element and gets a large contribution to its magnetic
+moment from orbital motion of the electrons. For yttrium, the
+orbital motion contribution is opposite that of the spin and also
+is bigger. Thus, although quantum mechanics, working through the
+exclusion principle, makes the spins of the yttrium opposite
+those of the iron, it makes the total magnetic moment of the
+yttrium atom parallel to the iron because of the orbital
+effect—as sketched in Fig.  37–13 (d). The compound is
+therefore a regular ferromagnet.
+
+Another interesting example of ferromagnetism occurs in some of the
+rare-earth elements. It has to do with a still more peculiar
+arrangement of the spins. The material is not ferromagnetic in the
+sense that the spins are all parallel, nor is it antiferromagnetic in
+the sense that every atom is opposite. In these crystals all of the
+spins in one layer are parallel and lie in the plane of the
+layer. In the next layer all spins are again parallel to each other,
+but point in a somewhat different direction. In the following layer
+they are in still another direction, and so on. The result is that the
+local magnetization vector varies in the form of a spiral—the
+magnetic moments of the successive layers rotate as we proceed along a
+line perpendicular to the layers. It is interesting to try to analyze
+what happens when a field is applied to such a spiral—all the
+twistings and turnings that must go on in all those atomic
+magnets. (Some people like to amuse themselves with the theory
+of these things!) Not only are there cases of “flat” spirals, but
+there are also cases in which the directions the magnetic moments of
+successive layers map out a cone, so that it has a spiral component
+and also a uniform ferromagnetic component in one direction!
+
+The magnetic properties of materials, worked out on a more advanced
+level than we have been able to do here, have fascinated physicists of
+all kinds. In the first place, there are those practical people who love
+to work out ways of making things in a better way—they love to design
+better and more interesting magnetic materials. The discovery of things
+like ferrites, or their application, immediately
+delights people who like to see clever new ways of doing things. Besides
+this, there are those who find a fascination in the terrible complexity
+that nature can produce using a few basic laws. Starting with one and
+the same general idea, nature goes from the ferromagnetism of iron and
+its domains, to the antiferromagnetism of chromium, to the magnetism of
+ferrites and garnets, to the spiral
+structure of the rare earth elements, and on, and on. It is fascinating
+to discover experimentally all the strange things that go on in these
+special substances. Then, to the theoretical physicists, ferromagnetism
+presents a number of very interesting, unsolved, and beautiful
+challenges. One challenge is to understand why it exists at all. Another
+is to predict the statistics of the interacting spins in an ideal
+lattice. Even neglecting any possible extraneous complications, this
+problem has, so far, defied full understanding. The reason that it is so
+interesting is that it is such an easily stated problem: Given a lot of
+electron spins in a regular lattice, interacting with such-and-such a
+law, what do they do? It is simply stated, but it has defied complete
+analysis for years. Although it has been analyzed rather carefully for
+temperatures not too close to the Curie point, the theory of the
+sudden transition at the Curie point still needs to be
+completed.
+
+Finally, the whole subject of the system of spinning atomic
+magnets—in ferromagnetic, or in paramagnetic materials and in
+nuclear magnetism, has also been a fascinating thing to advanced
+students in physics. The system of spins can be pushed on and pulled
+on with external magnetic fields, so one can do many tricks with
+resonances, with relaxation effects, with spin-echoes, and with other
+effects. It serves as a prototype of many complicated thermodynamic
+systems. But in paramagnetic materials the situation is often fairly
+simple, and people have been delighted both to do experiments and to
+explain the phenomena theoretically.
+
+We now close our study of electricity and magnetism. In the first
+chapter, we spoke of the great strides that have been made since the
+early Greek observation of the strange behaviors of amber
+and of lodestone. Yet in all our long and involved
+discussion we have never explained why it is that when we rub a
+piece of amber we get a charge on it , nor have we
+explained why a lodestone is magnetized! You
+may say, “Oh, we just didn’t get the right sign.” No, it is worse
+than that. Even if we did get the right sign, we would still have
+the question: Why is the piece of lodestone in the
+ground magnetized? There is the earth’s magnetic field, of course, but
+ where does the earth’s field come from ? Nobody really
+knows—there have only been some good guesses. So you see, this physics
+of ours is a lot of fakery—we start out with the phenomena of
+lodestone and amber, and we end up not
+understanding either of them very well. But we have learned a
+tremendous amount of very exciting and very practical information in the
+process!

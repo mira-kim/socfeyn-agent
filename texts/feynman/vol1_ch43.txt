@@ -1,0 +1,772 @@
+The Feynman Lectures on Physics Vol. I Ch. 43: Diffusion
+========================================================
+
+Sections: 43–1 Collisions between molecules | 43–2 The mean free path | 43–3 The drift speed | 43–4 Ionic conductivity | 43–5 Molecular diffusion | 43–6 Thermal conductivity
+
+
+
+We have considered so far only the molecular motions in a gas which is
+in thermal equilibrium. We want now to discuss what happens when
+things are near, but not exactly in, equilibrium. In a situation far
+from equilibrium, things are extremely complicated, but in a situation
+very close to equilibrium we can easily work out what happens. To see
+what happens, we must, however, return to the kinetic
+theory. Statistical mechanics and thermodynamics deal with the
+equilibrium situation, but away from equilibrium we can only analyze
+what occurs atom by atom, so to speak.
+
+As a simple example of a nonequilibrium circumstance, we shall
+consider the diffusion of ions in a gas. Suppose that in a gas there
+is a relatively small concentration of ions—electrically charged
+molecules. If we put an electric field on the gas, then each ion will
+have a force on it which is different from the forces on the neutral
+molecules of the gas. If there were no other molecules present, an ion
+would have a constant acceleration until it reached the wall of the
+container. But because of the presence of the other molecules, it
+cannot do that; its velocity increases only until it collides with a
+molecule and loses its momentum. It starts again to pick up more
+speed, but then it loses its momentum again. The net effect is that an
+ion works its way along an erratic path, but with a net motion in the
+direction of the electric force. We shall see that the ion has an
+average “drift” with a mean speed which is proportional to the
+electric field—the stronger the field, the faster it goes. While the
+field is on, and while the ion is moving along, it is, of course,
+ not in thermal equilibrium, it is trying to get to equilibrium,
+which is to be sitting at the end of the container. By means of the
+kinetic theory we can compute the drift velocity.
+
+It turns out that with our present mathematical abilities we cannot
+really compute precisely what will happen, but we can obtain
+approximate results which exhibit all the essential features. We can
+find out how things will vary with pressure, with temperature, and so
+on, but it will not be possible to get precisely the correct numerical
+factors in front of all the terms. We shall, therefore, in our
+derivations, not worry about the precise value of numerical
+factors. They can be obtained only by a very much more sophisticated
+mathematical treatment.
+
+Before we consider what happens in nonequilibrium situations, we shall
+need to look a little closer at what goes on in a gas in thermal
+equilibrium. We shall need to know, for example, what the average time
+between successive collisions of a molecule is.
+
+Any molecule experiences a sequence of collisions with other
+molecules—in a random way, of course. A particular molecule will, in
+a long period of time [eq], have a certain number, [eq], of hits. If we
+double the length of time, there will be twice as many hits. So the
+number of collisions is proportional to the time [eq]. We would like to
+write it this way:
+\begin{equation}
+\label{Eq:I:43:1}
+N = T/\tau.
+\end{equation}
+We have written the constant of proportionality as [eq], where
+[eq] will have the dimensions of a time. The constant [eq] is the
+average time between collisions. Suppose, for example, that in an hour
+there are [eq] collisions; then [eq] is one minute. We would say
+that [eq] (one minute) is the average time between the
+collisions.
+
+We may often wish to ask the following question: “What is the
+ chance that a molecule will experience a collision during the
+next small interval of time [eq]?” The answer, we may
+intuitively understand, is [eq]. But let us try to make a more
+convincing argument. Suppose that there were a very large number [eq]
+of molecules. How many will have collisions in the next interval of
+time [eq]? If there is equilibrium, nothing is changing on the
+average with time. So [eq] molecules waiting the time [eq] will have
+the same number of collisions as one molecule waiting for the
+time [eq]. That number we know is [eq]. So the number of
+hits of [eq] molecules is [eq] in a time [eq], and the chance,
+or probability, of a hit for any one molecule is just [eq] as large,
+or [eq], as we guessed above. That is to say,
+the fraction of the molecules which will suffer a collision in the
+time [eq] is [eq]. To take an example, if [eq] is one minute,
+then in one second the fraction of particles which will suffer
+collisions is [eq]. What this means, of course, is that [eq] of
+the molecules happen to be close enough to what they are going to hit
+next that their collisions will occur in the next second.
+
+When we say that [eq], the mean time between collisions, is one
+minute, we do not mean that all the collisions will occur at times
+separated by exactly one minute. A particular particle does not have a
+collision, wait one minute, and then have another collision. The times
+between successive collisions are quite variable. We will not need it
+for our later work here, but we may make a small diversion to answer
+the question: “What are the times between collisions?” We
+know that for the case above, the average time is one minute,
+but we might like to know, for example, what is the chance that we get
+no collision for two minutes?
+
+We shall find the answer to the general question: “What is the
+probability that a molecule will go for a time [eq] without having a
+collision?” At some arbitrary instant—that we call [eq]—we
+begin to watch a particular molecule. What is the chance that it gets
+by until [eq] without colliding with another molecule? To compute the
+probability, we observe what is happening to all [eq] molecules in a
+container. After we have waited a time [eq], some of them will have had
+collisions. We let [eq] be the number that have not had
+collisions up to the time [eq]. [eq] is, of course, less than
+[eq]. We can find [eq] because we know how it changes with time. If
+we know that [eq] molecules have got by until [eq], then [eq],
+the number which get by until [eq], is less than [eq] by
+the number that have collisions in [eq]. The number that collide
+in [eq] we have written above in terms of the mean time [eq] as $dN =
+N(t)\,dt/\tau$. We have the equation
+\begin{equation}
+\label{Eq:I:43:2}
+N(t + dt) = N(t) - N(t)\,\frac{dt}{\tau}.
+\end{equation}
+The quantity on the left-hand side, [eq], can be written,
+according to the definitions of calculus, as $N(t) +
+(dN/dt)\,dt$. Making this substitution, Eq. ( 43.2 ) yields
+\begin{equation}
+\label{Eq:I:43:3}
+\ddt{N(t)}{t} = -\frac{N(t)}{\tau}.
+\end{equation}
+The number that are being lost in the interval [eq] is proportional to
+the number that are present, and inversely proportional to the mean
+life [eq]. Equation ( 43.3 ) is easily integrated if we
+rewrite it as
+\begin{equation}
+\label{Eq:I:43:4}
+\frac{dN(t)}{N(t)} = -\frac{dt}{\tau}.
+\end{equation}
+Each side is a perfect differential, so the integral is
+\begin{equation}
+\label{Eq:I:43:5}
+\ln N(t) = -t/\tau + (\text{a constant}),
+\end{equation}
+which says the same thing as
+\begin{equation}
+\label{Eq:I:43:6}
+N(t) = (\text{constant})e^{-t/\tau}.
+\end{equation}
+We know that the constant must be just [eq], the total number of
+molecules present, since all of them start at [eq] to wait for
+their “next” collision. We can write our result as
+\begin{equation}
+\label{Eq:I:43:7}
+N(t) = N_0e^{-t/\tau}.
+\end{equation}
+If we wish the probability of no collision, [eq], we can get
+it by dividing [eq] by [eq], so
+\begin{equation}
+\label{Eq:I:43:8}
+P(t) = e^{-t/\tau}.
+\end{equation}
+Our result is: the probability that a particular molecule survives a
+time [eq] without a collision is [eq], where [eq] is the
+mean time between collisions. The probability starts out at [eq] (or
+certainty) for [eq], and gets less as [eq] gets bigger and
+bigger. The probability that the molecule avoids a collision for a
+time equal to [eq] is [eq]. The chance is less than
+one-half that it will have a greater than average time between
+collisions. That is all right, because there are enough molecules
+which go collision-free for times much longer than the mean
+time before colliding, so that the average time can still be [eq].
+
+We originally defined [eq] as the average time between 
+collisions. The result we have obtained in Eq. ( 43.7 )
+also says that the mean time from an arbitrary starting instant
+to the next collision is also  [eq]. We can demonstrate
+this somewhat surprising fact in the following way. The number of
+molecules which experience their next collision in the
+interval [eq] at the time [eq] after an arbitrarily chosen starting time
+is [eq]. Their “time until the next collision” is, of
+course, just [eq]. The “average time until the next collision” is
+obtained in the usual way:
+\begin{equation*}
+\text{Average time until the next collision} =
+\frac{1}{N_0}\int_0^\infty t\,\frac{N(t)\,dt}{\tau}.
+\end{equation*}
+Using [eq] obtained in ( 43.7 ) and evaluating the
+integral, we find indeed that [eq] is the average time from
+ any instant until the next collision.
+
+Another way of describing the molecular collisions is to talk not
+about the time between collisions, but about how far the
+particle moves between collisions. If we say that the average time
+between collisions is [eq], and that the molecules have a mean
+velocity [eq], we can expect that the average distance between
+collisions, which we shall call [eq], is just the product of [eq]
+and [eq]. This distance between collisions is usually called the mean
+free path: 
+\begin{equation}
+\label{Eq:I:43:9}
+\text{Mean free path [eq]} = \tau v.
+\end{equation}
+
+In this chapter we shall be a little careless about what kind of
+average we mean in any particular case. The various possible
+averages—the mean, the root-mean-square, etc.—are all nearly equal
+and differ by factors which are near to one. Since a detailed analysis
+is required to obtain the correct numerical factors anyway, we need
+not worry about which average is required at any particular point. We
+may also warn the reader that the algebraic symbols we are using for
+some of the physical quantities (e.g., [eq] for the mean free path) do
+not follow a generally accepted convention, mainly because there is no
+general agreement.
+
+Just as the chance that a molecule will have a collision in a short
+time [eq] is equal to [eq], the chance that it will have a
+collision in going a distance [eq] is [eq]. Following the same line
+of argument used above, the reader can show that the probability that
+a molecule will go at least the distance [eq] before having its next
+collision is [eq].
+
+The average distance a molecule goes before colliding with another
+molecule—the mean free path [eq]—will depend on how many molecules
+there are around and on the “size” of the molecules, i.e., how big a
+target they represent. The effective “size” of a target in a
+collision we usually describe by a “collision cross
+section,” the same idea that is used in nuclear physics, or in
+light-scattering problems.
+
+Consider a moving particle which travels a distance [eq] through a gas
+which has [eq] scatterers (molecules) per unit volume
+(Fig.  43–1 ). If we look at each unit of area perpendicular
+to the direction of motion of our selected particle, we will find there
+[eq] molecules. If each one presents an effective collision area
+or, as it is usually called, “collision cross
+section,” [eq], then the total area covered by the scatterers
+is [eq].
+
+By “collision cross section” we mean the area within
+which the center of our particle must be located if it is to collide
+with a particular molecule. If molecules were little spheres (a
+classical picture) we would expect that [eq],
+where [eq] and [eq] are the radii of the two colliding objects. The
+chance that our particle will have a collision is the ratio of the area
+covered by scattering molecules to the total area, which we have taken
+to be one. So the probability of a collision in going a distance [eq] is
+just [eq]:
+\begin{equation}
+\label{Eq:I:43:10}
+\text{Chance of a collision in [eq]} = \sigma_cn_0\,dx.
+\end{equation}
+
+We have seen above that the chance of a collision in [eq] can also be
+written in terms of the mean free path [eq] as [eq]. Comparing this
+with ( 43.10 ), we can relate the mean free path to the
+collision cross section:
+\begin{equation}
+\label{Eq:I:43:11}
+\frac{1}{l} = \sigma_cn_0,
+\end{equation}
+which is easier to remember if we write it as
+\begin{equation}
+\label{Eq:I:43:12}
+\sigma_cn_0l = 1.
+\end{equation}
+
+This formula can be thought of as saying that there should be one
+collision, on the average, when the particle goes through a
+distance [eq] in which the scattering molecules could just cover the
+total area. In a cylindrical volume of length [eq] and a base of unit
+area, there are [eq] scatterers; if each one has an area [eq]
+the total area covered is [eq], which is just one unit of
+area. The whole area is not covered, of course, because some
+molecules are partly hidden behind others. That is why some molecules
+go farther than [eq] before having a collision. It is only on the
+average that the molecules have a collision by the time they go the
+distance [eq]. From measurements of the mean free path [eq] we can
+determine the scattering cross section [eq], and compare the
+result with calculations based on a detailed theory of atomic
+structure. But that is a different subject! So we return to the
+problem of nonequilibrium states.
+
+We want to describe what happens to a molecule, or several molecules,
+which are different in some way from the large majority of the
+molecules in a gas. We shall refer to the “majority” molecules as
+the “background” molecules, and we shall call the molecules which
+are different from the background molecules “special” molecules or,
+for short, the [eq]-molecules. A molecule could be special for any
+number of reasons: It might be heavier than the background
+molecules. It might be a different chemical. It might have an electric
+charge—i.e., be an ion in a background of uncharged
+molecules. Because of their different masses or charges the
+[eq]-molecules may have forces on them which are different from the
+forces on the background molecules. By considering what happens to
+these [eq]-molecules we can understand the basic effects which come
+into play in a similar way in many different phenomena. To list a few:
+the diffusion of gases, electric currents in batteries, sedimentation,
+centrifugal separation, etc.
+
+We begin by concentrating on the basic process: an [eq]-molecule in a
+background gas is acted on by some specific force [eq] (which might
+be, e.g., gravitational or electrical) and in addition by the
+not-so-specific forces due to collisions with the background
+molecules. We would like to describe the general behavior of
+the [eq]-molecule. What happens to it, in detail , is that it
+darts around hither and yon as it collides over and over again with
+other molecules. But if we watch it carefully we see that it does make
+some net progress in the direction of the force [eq]. We say that
+there is a drift , superposed on its random motion. We would
+like to know what the speed of its drift is—its drift
+velocity —due to the force [eq].
+
+If we start to observe an [eq]-molecule at some instant we may expect
+that it is somewhere between two collisions. In addition to the
+velocity it was left with after its last collision it is picking up
+some velocity component due to the force [eq]. In a short time (on
+the average, in a time [eq]) it will experience a collision and
+start out on a new piece of its trajectory. It will have a new
+starting velocity, but the same acceleration from [eq].
+
+To keep things simple for the moment, we shall suppose that after each
+collision our [eq]-molecule gets a completely “fresh” start. That is,
+that it keeps no remembrance of its past acceleration by [eq]. This
+might be a reasonable assumption if our [eq]-molecule were much lighter
+than the background molecules, but it is certainly not valid in
+general. We shall discuss later an improved assumption.
+
+For the moment, then, our assumption is that the [eq]-molecule leaves
+each collision with a velocity which may be in any direction with
+equal likelihood. The starting velocity will take it equally in all
+directions and will not contribute to any net motion, so we shall not
+worry further about its initial velocity after a collision. In
+addition to its random motion, each [eq]-molecule will have, at any
+moment, an additional velocity in the direction of the force [eq],
+which it has picked up since its last collision. What is the
+ average value of this part of the velocity? It is just
+the acceleration [eq] (where [eq] is the mass of the [eq]-molecule)
+times the average time since the last collision. Now the
+average time since the last collision must be the same
+as the average time until the next collision, which we
+have called [eq], above. The average velocity from [eq],
+of course, is just what is called the drift velocity, so we have the
+relation
+\begin{equation}
+\label{Eq:I:43:13}
+v_{\text{drift}} = \frac{F\tau}{m}.
+\end{equation}
+This basic relation is the heart of our subject. There may be some
+complication in determining what [eq] is, but the basic process is
+defined by Eq. ( 43.13 ).
+
+You will notice that the drift velocity is proportional to the
+force. There is, unfortunately, no generally used name for the
+constant of proportionality. Different names have been used for each
+different kind of force. If in an electrical problem the force is
+written as the charge times the electric field, [eq], then
+the constant of proportionality between the velocity and the electric
+field [eq] is usually called the “mobility.” In spite of the
+possibility of some confusion, we shall use the term
+ mobility for the ratio of the drift velocity to the force for
+ any force. We write
+\begin{equation}
+\label{Eq:I:43:14}
+v_{\text{drift}} = \mu F
+\end{equation}
+in general, and we shall call [eq] the mobility. We have from
+Eq. ( 43.13 ) that
+\begin{equation}
+\label{Eq:I:43:15}
+\mu = \tau/m.
+\end{equation}
+The mobility is proportional to the mean time between collisions
+(there are fewer collisions to slow it down) and inversely
+proportional to the mass (more inertia means less speed picked up
+between collisions).
+
+To get the correct numerical coefficient in Eq. ( 43.13 ),
+which is correct as given, takes some care. Without intending to
+confuse, we should still point out that the arguments have a subtlety
+which can be appreciated only by a careful and detailed study. To
+illustrate that there are difficulties, in spite of appearances, we
+shall make over again the argument which led to Eq. ( 43.13 )
+in a reasonable but erroneous way (and the way one will find in
+many textbooks!).
+
+We might have said: The mean time between collisions is [eq]. After
+a collision the particle starts out with a random velocity, but it
+picks up an additional velocity between collisions, which is equal to
+the acceleration times the time. Since it takes the time [eq] to
+arrive at the next collision it gets there with the
+velocity [eq]. At the beginning of the collision it had zero
+velocity. So between the two collisions it has, on the average, a
+velocity one-half of the final velocity, so the mean drift velocity
+is [eq]. (Wrong!) This result is wrong and the result
+in Eq. ( 43.13 ) is right, although the arguments may sound
+equally satisfactory. The reason the second result is wrong is
+somewhat subtle, and has to do with the following: The argument is
+made as though all collisions were separated by the mean
+time [eq]. The fact is that some times are shorter and others are longer
+than the mean. Short times occur more often but make
+ less contribution to the drift velocity because they have less
+chance “to really get going.” If one takes proper account of the
+ distribution of free times between collisions, one can show
+that there should not be the factor [eq] that was obtained
+from the second argument. The error was made in trying to relate by a
+simple argument the average final velocity to the average
+velocity itself. This relationship is not simple, so it is best to
+concentrate on what is wanted: the average velocity itself. The first
+argument we gave determines the average velocity directly—and
+correctly! But we can perhaps see now why we shall not in general try
+to get all of the correct numerical coefficients in our elementary
+derivations!
+
+We return now to our simplifying assumption that each collision knocks
+out all memory of the past motion—that a fresh start is made after
+each collision. Suppose our [eq]-molecule is a heavy object in a
+background of lighter molecules. Then our [eq]-molecule will not lose
+its “forward” momentum in each collision. It would take several
+collisions before its motion was “randomized” again. We should
+assume, instead, that at each collision—in each time [eq] on the
+average—it loses a certain fraction of its momentum. We shall not
+work out the details, but just state that the result is equivalent to
+replacing [eq], the average collision time, by a new—and
+longer—[eq] which corresponds to the average “forgetting time,”
+i.e., the average time to forget its forward momentum. With such an
+interpretation of [eq] we can use our formula ( 43.15 ) for
+situations which are not quite as simple as we first assumed.
+
+We now apply our results to a special case. Suppose we have a gas in a
+vessel in which there are also some ions—atoms or molecules with a
+net electric charge. We show the situation schematically in
+Fig.  43–2 . If two opposite walls of the container are
+metallic plates, we can connect them to the terminals of a battery and
+thereby produce an electric field in the gas. The electric field will
+result in a force on the ions, so they will begin to drift toward one or
+the other of the plates. An electric current will be induced, and the
+gas with its ions will behave like a resistor. By computing the ion flow
+from the drift velocity we can compute the resistance. We ask,
+specifically: How does the flow of electric current depend on the
+voltage difference [eq] that we apply across the two plates?
+
+We consider the case that our container is a rectangular box of
+length [eq] and cross-sectional area [eq] (Fig.  43–2 ). If the
+potential difference, or voltage, from one plate to the other is [eq],
+the electric field [eq] between the plates is [eq]. (The electric
+potential is the work done in carrying a unit charge from one plate to
+the other. The force on a unit charge is [eq]. If [eq] is the
+same everywhere between the plates, which is a good enough
+approximation for now, the work done on a unit charge is just [eq],
+so [eq].) The special force on an ion of the gas is [eq], where
+[eq] is the charge on the ion. The drift velocity of the ion is then
+[eq] times this force, or
+\begin{equation}
+\label{Eq:I:43:16}
+v_{\text{drift}} = \mu F = \mu qE = \mu q\,\frac{V}{b}.
+\end{equation}
+An electric current [eq] is the flow of charge in a unit time. The
+electric current to one of the plates is given by the total charge of
+the ions which arrive at the plate in a unit of time. If the ions
+drift toward the plate with the velocity [eq], then
+those which are within a distance ([eq]) will
+arrive at the plate in the time [eq]. If there are [eq] ions per unit
+volume, the number which reach the plate in the time [eq] is ($n_i\cdot
+A\cdot v_{\text{drift}}\cdot T[eq]q$, so
+we have that
+\begin{equation}
+\label{Eq:I:43:17}
+\text{Charge collected in [eq]} = qn_iAv_{\text{drift}}T.
+\end{equation}
+The current [eq] is the charge collected in [eq] divided by [eq], so
+\begin{equation}
+\label{Eq:I:43:18}
+I = qn_iAv_{\text{drift}}.
+\end{equation}
+Substituting [eq] from ( 43.16 ), we have
+\begin{equation}
+\label{Eq:I:43:19}
+I = \mu q^2n_i\,\frac{A}{b}\,V.
+\end{equation}
+We find that the current is proportional to the voltage, which is just
+the form of Ohm’s law, and the
+resistance [eq] is the inverse of
+the proportionality constant:
+\begin{equation}
+\label{Eq:I:43:20}
+\frac{1}{R} = \mu q^2n_i\,\frac{A}{b}.
+\end{equation}
+We have a relation between the resistance and the molecular properties
+[eq], [eq], and [eq], which depends in turn on [eq] and [eq]. If we
+know [eq] and [eq] from atomic measurements, a measurement of [eq]
+could be used to determine [eq], and from [eq] also [eq].
+
+We turn now to a different kind of problem, and a different kind of
+analysis: the theory of diffusion. Suppose that we have a container of
+gas in thermal equilibrium, and that we introduce a small amount of a
+different kind of gas at some place in the container. We shall call
+the original gas the “background” gas and the new one the
+“special” gas. The special gas will start to spread out through the
+whole container, but it will spread slowly because of the presence of
+the background gas. This slow spreading-out process is called
+ diffusion . The diffusion is controlled mainly by the molecules
+of the special gas getting knocked about by the molecules of the
+background gas. After a large number of collisions, the special
+molecules end up spread out more or less evenly throughout the whole
+volume. We must be careful not to confuse diffusion of a gas
+with the gross transport that may occur due to convection
+currents. Most commonly, the mixing of two gases occurs by a
+combination of convection and diffusion. We are interested now only in
+the case that there are no “wind” currents . The gas is
+spreading only by molecular motions, by diffusion. We wish to compute
+how fast diffusion takes place.
+
+We now compute the net flow of molecules of the “special” gas
+due to the molecular motions. There will be a net flow only when there
+is some nonuniform distribution of the molecules, otherwise all of the
+molecular motions would average to give no net flow. Let us consider
+first the flow in the [eq]-direction. To find the flow, we consider an
+imaginary plane surface perpendicular to the [eq]-axis and count the
+number of special molecules that cross this plane. To obtain the net
+flow, we must count as positive those molecules which cross in the
+direction of positive [eq] and subtract from this number the
+number which cross in the negative [eq]-direction. As we have seen many
+times, the number which cross a surface area in a time [eq] is
+given by the number which start the interval [eq] in a volume
+which extends the distance [eq] from the plane. (Note that
+[eq], here, is the actual molecular velocity, not the drift velocity.)
+
+We shall simplify our algebra by giving our surface one unit of
+area. Then the number of special molecules which pass from left to
+right (taking the [eq]-direction to the right) is [eq],
+where [eq] is the number of special molecules per unit volume to the
+left (within a factor of [eq] or so, but we are ignoring such
+factors!). The number which cross from right to left is, similarly,
+[eq], where [eq] is the number density of special
+molecules on the right-hand side of the plane. If we call the
+molecular current [eq], by which we mean the net flow of molecules per
+unit area per unit time, we have
+\begin{equation}
+\label{Eq:I:43:21}
+J = \frac{n_-v\,\Delta T - n_+v\,\Delta T}{\Delta T},
+\end{equation}
+or
+\begin{equation}
+\label{Eq:I:43:22}
+J = (n_- - n_+)v.
+\end{equation}
+
+What shall we use for [eq] and [eq]? When we say “the density on the
+left,” how far to the left do we mean? We should choose the
+density at the place from which the molecules started their “flight,”
+because the number which start such trips is determined by the
+number present at that place. So by [eq] we should mean the density a
+distance to the left equal to the mean free path [eq], and by [eq], the
+density at the distance [eq] to the right of our imaginary surface.
+
+It is convenient to consider that the distribution of our special
+molecules in space is described by a continuous function of [eq], [eq],
+and [eq] which we shall call [eq]. By [eq] we mean the number
+density of special molecules in a small volume element centered
+on [eq]. In terms of [eq] we can express the difference $(n_+ -
+n_-)$ as
+\begin{equation}
+\label{Eq:I:43:23}
+(n_+ - n_-) = \ddt{n_a}{x}\,\Delta x = \ddt{n_a}{x}\cdot 2l.
+\end{equation}
+Substituting this result in Eq. ( 43.22 ) and neglecting
+the factor of [eq], we get
+\begin{equation}
+\label{Eq:I:43:24}
+J_x = -lv\,\ddt{n_a}{x}.
+\end{equation}
+We have found that the flow of special molecules is proportional to
+the derivative of the density, or to what is sometimes called the
+“gradient” of the density.
+
+It is clear that we have made several rough approximations. Besides
+various factors of two we have left out, we have used [eq] where we
+should have used [eq], and we have assumed that [eq] and [eq] refer
+to places at the perpendicular distance [eq] from our surface, whereas
+for those molecules which do not travel perpendicular to the surface
+element, [eq] should correspond to the slant distance from the
+surface. All of these refinements can be made; the result of a more
+careful analysis shows that the right-hand side of
+Eq. ( 43.24 ) should be multiplied by [eq]. So a better answer
+is
+\begin{equation}
+\label{Eq:I:43:25}
+J_x = -\frac{lv}{3}\,\ddt{n_a}{x}.
+\end{equation}
+Similar equations can be written for the currents in the [eq]-
+and [eq]-directions.
+
+The current [eq] and the density gradient [eq] can be measured
+by macroscopic observations. Their experimentally determined ratio is
+called the “diffusion coefficient,” [eq]. That is,
+\begin{equation}
+\label{Eq:I:43:26}
+J_x = -D\,\ddt{n_a}{x}.
+\end{equation}
+We have been able to show that for a gas we expect
+\begin{equation}
+\label{Eq:I:43:27}
+D = \tfrac{1}{3}lv.
+\end{equation}
+
+So far in this chapter we have considered two distinct processes:
+ mobility , the drift of molecules due to “outside” forces; and
+ diffusion , the spreading determined only by the internal
+forces, the random collisions. There is, however, a relation between
+them, since they both depend basically on the thermal motions, and the
+mean free path [eq] appears in both calculations.
+
+If, in Eq. ( 43.25 ), we substitute [eq] and $\tau =
+\mu m$, we have
+\begin{equation}
+\label{Eq:I:43:28}
+J_x = -\tfrac{1}{3}mv^2\mu\,\ddt{n_a}{x}.
+\end{equation}
+But [eq] depends only on the temperature. We recall that
+\begin{equation}
+\label{Eq:I:43:29}
+\tfrac{1}{2}mv^2 = \tfrac{3}{2}kT,
+\end{equation}
+so
+\begin{equation}
+\label{Eq:I:43:30}
+J_x = -\mu kT\,\ddt{n_a}{x}.
+\end{equation}
+We find that [eq], the diffusion coefficient, is just [eq]
+times [eq], the mobility coefficient:
+\begin{equation}
+\label{Eq:I:43:31}
+D = \mu kT.
+\end{equation}
+And it turns out that the numerical coefficient in ( 43.31 )
+is exactly right—no extra factors have to be thrown in to adjust for
+our rough assumptions. We can show, in fact, that ( 43.31 )
+must always be correct—even in complicated situations (for
+example, the case of a suspension in a liquid) where the details of
+our simple calculations would not apply at all.
+
+To show that ( 43.31 ) must be correct in general, we shall
+derive it in a different way, using only our basic principles of
+statistical mechanics. Imagine a situation in which there is a
+gradient of “special” molecules, and we have a diffusion current
+proportional to the density gradient, according to
+Eq. ( 43.26 ). We now apply a force field in the [eq]-direction,
+so that each special molecule feels the force [eq]. According to the
+ definition of the mobility [eq] there will be a drift velocity
+given by
+\begin{equation}
+\label{Eq:I:43:32}
+v_{\text{drift}} = \mu F.
+\end{equation}
+By our usual arguments, the drift current (the net 
+number of molecules which pass a unit of area in a unit of time) will
+be
+\begin{equation}
+\label{Eq:I:43:33}
+J_{\text{drift}} = n_av_{\text{drift}},
+\end{equation}
+or
+\begin{equation}
+\label{Eq:I:43:34}
+J_{\text{drift}} = n_a\mu F.
+\end{equation}
+We now adjust the force [eq] so that the drift current due
+to [eq] just balances the diffusion, so that there is no net
+flow of our special molecules. We have [eq],
+or
+\begin{equation}
+\label{Eq:I:43:35}
+D\,\ddt{n_a}{x} = n_a\mu F.
+\end{equation}
+
+Under the “balance” conditions we find a steady (with time) gradient
+of density given by
+\begin{equation}
+\label{Eq:I:43:36}
+\ddt{n_a}{x} = \frac{n_a\mu F}{D}.
+\end{equation}
+
+But notice! We are describing an equilibrium condition, so our
+ equilibrium laws of statistical mechanics apply. According to
+these laws the probability of finding a molecule at the coordinate [eq]
+is proportional to [eq], where [eq] is the potential energy. In
+terms of the number density [eq], this means that
+\begin{equation}
+\label{Eq:I:43:37}
+n_a = n_0e^{-U/kT}.
+\end{equation}
+If we differentiate ( 43.37 ) with respect to [eq], we find
+\begin{equation}
+\label{Eq:I:43:38}
+\ddt{n_a}{x} = -n_0e^{-U/kT}\cdot\frac{1}{kT}\,\ddt{U}{x},
+\end{equation}
+or
+\begin{equation}
+\label{Eq:I:43:39}
+\ddt{n_a}{x} = -\frac{n_a}{kT}\,\ddt{U}{x}.
+\end{equation}
+In our situation, since the force [eq] is in the [eq]-direction, the
+potential energy [eq] is just [eq], and [eq].
+Equation ( 43.39 ) then gives
+\begin{equation}
+\label{Eq:I:43:40}
+\ddt{n_a}{x} = \frac{n_aF}{kT}.
+\end{equation}
+[This is just exactly Eq. ( 40.2 ), from which we
+deduced [eq] in the first place, so we have come in a
+circle]. Comparing ( 43.40 ) with ( 43.36 ), we get
+exactly Eq. ( 43.31 ). We have shown that
+Eq. ( 43.31 ), which gives the diffusion current in terms of
+the mobility, has the correct coefficient and is very generally true.
+Mobility and diffusion are intimately connected. This relation was first
+deduced by Einstein.
+
+The methods of the kinetic theory that we have been using above can be
+used also to compute the thermal conductivity of a gas. If the
+gas at the top of a container is hotter than the gas at the bottom,
+heat will flow from the top to the bottom. (We think of the top being
+hotter because otherwise convection currents would be set up and the
+problem would no longer be one of heat conduction .) The
+transfer of heat from the hotter gas to the colder gas is by the
+diffusion of the “hot” molecules—those with more energy—downward
+and the diffusion of the “cold” molecules upward. To compute the
+flow of thermal energy we can ask about the energy carried downward
+across an element of area by the downward-moving molecules, and about
+the energy carried upward across the surface by the upward-moving
+molecules. The difference will give us the net downward flow of
+energy.
+
+The thermal conductivity [eq] is defined as the ratio of the rate
+at which thermal energy is carried across a unit surface area, to the
+temperature gradient:
+\begin{equation}
+\label{Eq:I:43:41}
+\frac{1}{A}\,\ddt{Q}{t} = -\kappa\,\ddt{T}{z}.
+\end{equation}
+Since the details of the calculations are quite similar to those we have
+done above in considering molecular diffusion, we shall leave it as an
+exercise for the reader to show that
+\begin{equation}
+\label{Eq:I:43:42}
+\kappa = \frac{knlv}{\gamma - 1},
+\end{equation}
+where [eq] is the average energy of a molecule at the
+temperature [eq].
+
+If we use our relation [eq], the heat conductivity can be
+written as
+\begin{equation}
+\label{Eq:I:43:43}
+\kappa = \frac{1}{\gamma - 1}\,\frac{kv}{\sigma_c}.
+\end{equation}
+
+We have a rather surprising result. We know that the average velocity
+of gas molecules depends on the temperature but not on the
+density . We expect [eq] to depend only on the size of
+the molecules. So our simple result says that the thermal
+conductivity [eq] (and therefore the rate of flow of heat in any
+particular circumstance) is independent of the density of the
+gas! The change in the number of “carriers” of energy with a change
+in density is just compensated by the larger distance the “carriers”
+can go between collisions.
+
+One may ask: “Is the heat flow independent of the gas density in the
+limit as the density goes to zero? When there is no gas at all?”
+Certainly not! The formula ( 43.43 ) was derived, as were all
+the others in this chapter, under the assumption that the mean free
+path between collisions is much smaller than any of the dimensions of
+the container. Whenever the gas density is so low that a molecule has
+a fair chance of crossing from one wall of its container to the other
+without having a collision, none of the calculations of this chapter
+apply. We must in such cases go back to kinetic theory and calculate
+again the details of what will occur.

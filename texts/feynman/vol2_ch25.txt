@@ -1,0 +1,846 @@
+The Feynman Lectures on Physics Vol. II Ch. 25: Electrodynamics in Relativistic Notation
+========================================================================================
+
+Sections: 25–1 Four-vectors | 25–2 The scalar product | 25–3 The four-dimensional gradient | 25–4 Electrodynamics in four-dimensional notation | 25–5 The four-potential of a moving charge | 25–6 The invariance of the equations of electrodynamics
+
+
+
+We now discuss the application of the special theory of relativity to
+electrodynamics. Since we have already studied the special theory of
+relativity in Chapters 15 through  17 of
+Vol. I, we will just review quickly the basic ideas.
+
+It is found experimentally that the laws of physics are unchanged if
+we move with uniform velocity. You can’t tell if you are inside a
+spaceship moving with uniform velocity in a straight line, unless you
+look outside the spaceship, or at least make an observation having to
+do with the world outside. Any true law of physics we write down must
+be arranged so that this fact of nature is built in.
+
+The relationship between the space and time of two systems of
+coordinates, one, [eq], in uniform motion in the [eq]-direction with
+speed [eq] relative to the other, [eq], is given by the Lorentz transformation: 
+\begin{equation}
+\begin{alignedat}{2}
+t'&=\frac{t-vx}{\sqrt{1-v^2}},&\quad y'&=y,\\[1ex]
+x'&=\frac{x-vt}{\sqrt{1-v^2}},&\quad z'&=z.
+\end{alignedat}
+\label{Eq:II:25:1}
+\end{equation}
+The laws of physics must be such that after a Lorentz transformation,
+the new form of the laws looks just like the old form. This is just
+like the principle that the laws of physics don’t depend on the
+ orientation of our coordinate system. In Chapter  11 
+of Vol. I, we saw that the way to describe mathematically the
+invariance of physics with respect to rotations was to write our
+equations in terms of vectors .
+
+For example, if we have two vectors
+\begin{equation*}
+\FLPA=(A_x,A_y,A_z)\quad\text{and}\quad
+\FLPB=(B_x,B_y,B_z),
+\end{equation*}
+we found that the combination
+\begin{equation*}
+\FLPA\cdot\FLPB=A_xB_x+A_yB_y+A_zB_z
+\end{equation*}
+was not changed if we transformed to a rotated coordinate system. So
+we know that if we have a scalar product like [eq] on
+both sides of an equation, the equation will have exactly the same
+form in all rotated coordinate systems. We also discovered an operator
+(see Chapter  2 ),
+\begin{equation*}
+\FLPnabla=\biggl(\ddp{}{x},\ddp{}{y},\ddp{}{z}\biggr),
+\end{equation*}
+which, when applied to a scalar function, gave three quantities which
+transform just like a vector. With this operator we defined the
+gradient, and in combination with other vectors, the divergence and
+the Laplacian. Finally we discovered that by taking sums of certain
+products of pairs of the components of two vectors we could get three
+new quantities which behaved like a new vector. We called it the
+ cross product of two vectors. Using the cross product with our
+operator [eq] we then defined the curl of a vector.
+
+Since we will be referring back to what we have done in vector
+analysis, we have put in Table  25–1 a summary of all the
+important vector operations in three dimensions that we have used in
+the past. The point is that it must be possible to write the equations
+of physics so that both sides transform the same way under
+rotations. If one side is a vector, the other side must also be a
+vector, and both sides will change together in exactly the same way if
+we rotate our coordinate system. Similarly, if one side is a scalar,
+the other side must also be a scalar, so that neither side changes
+when we rotate coordinates, and so on.
+
+Now in the case of special relativity, time and space are inextricably
+mixed, and we must do the analogous things for four dimensions. We
+want our equations to remain the same not only for rotations, but also
+for any inertial frame. That means that our equations should be
+invariant under the Lorentz transformation of
+equations ( 25.1 ). The purpose of this chapter is to show you
+how that can be done. Before we get started, however, we want to do
+something that makes our work a lot easier (and saves some confusion).
+And that is to choose our units of length and time so that the speed of
+light [eq] is equal to [eq]. You can think of it as taking our unit of
+time to be the time that it takes light to go one meter (which is
+about [eq] sec). We can even call this time unit “one
+meter.” Using this unit, all of our equations will show more clearly
+the space-time symmetry. Also, all the [eq]’s will disappear from our
+relativistic equations. (If this bothers you, you can always put
+the [eq]’s back into any equation by replacing every [eq] by [eq], or, in
+general, by sticking in a [eq] wherever it is needed to make the
+dimensions of the equations come out right.) With this groundwork we are
+ready to begin. Our program is to do in the four dimensions of
+space-time all of the things we did with vectors for three dimensions.
+It is really quite a simple game; we just work by analogy. The only real
+complication is the notation (we’ve already used up the vector symbol
+for three dimensions) and one slight twist of signs.
+
+First, by analogy with vectors in three dimensions, we define a
+ four-vector as a set of the four quantities [eq], [eq],
+[eq], and [eq], which transform like [eq], [eq], [eq], and [eq] when we
+change to a moving coordinate system. There are several different
+notations people use for a four-vector; we will write [eq], by
+which we mean the group of four numbers [eq]—in other
+words, the subscript [eq] can take on the four “values” [eq], [eq],
+[eq], [eq]. It will also be convenient, at times, to indicate the three
+space components by a three-vector, like this: [eq].
+
+We have already encountered one four-vector, which consists of the
+energy and momentum of a particle (Chapter  17 , Vol. I): In
+our new notation we write
+\begin{equation}
+\label{Eq:II:25:2}
+p_\mu=(E,\FLPp),
+\end{equation}
+which means that the four-vector [eq] is made up of the energy [eq]
+and the three components of the three-vector [eq] of a particle.
+
+It looks as though the game is really very simple—for each
+three-vector in physics all we have to do is find what the remaining
+component should be, and we have a four-vector. To see that this is
+not the case, consider the velocity vector with components
+\begin{equation*}
+v_x=\ddt{x}{t},\quad
+v_y=\ddt{y}{t},\quad
+v_z=\ddt{z}{t}.
+\end{equation*}
+The question is: What is the time component? Instinct should give the
+right answer. Since four-vectors are like [eq], [eq], [eq], [eq], we would
+guess that the time component is
+\begin{equation*}
+v_t=\ddt{t}{t}=1.
+\end{equation*}
+ This is wrong . The reason is that the [eq] in each denominator
+is not an invariant when we make a Lorentz transformation. The
+numerators have the right behavior to make a four-vector, but the [eq]
+in the denominator spoils things; it is unsymmetric and is not the
+same in two different systems.
+
+It turns out that the four “velocity” components which we have
+written down will become the components of a four-vector if we just
+divide by [eq]. We can see that that is true because if we
+start with the momentum four-vector
+\begin{equation}
+\label{Eq:II:25:3}
+p_\mu=(E,\FLPp)=\biggl(
+\frac{m_0}{\sqrt{1-v^2}},
+\frac{m_0\FLPv}{\sqrt{1-v^2}}
+\biggr),
+\end{equation}
+and divide it by the rest mass [eq], which is an invariant scalar in
+ four dimensions , we have
+\begin{equation}
+\label{Eq:II:25:4}
+\frac{p_\mu}{m_0}=\biggl(
+\frac{1}{\sqrt{1-v^2}},
+\frac{\FLPv}{\sqrt{1-v^2}}
+\biggr),
+\end{equation}
+which must still be a four-vector. (Dividing by an invariant scalar 
+doesn’t change the transformation properties.) So we can
+ define the “ velocity four-vector ” [eq] by
+\begin{equation}
+\begin{alignedat}{2}
+u_t&=\frac{1}{\sqrt{1-v^2}},&\quad
+u_y&=\frac{v_y}{\sqrt{1-v^2}},\\[1ex]
+u_x&=\frac{v_x}{\sqrt{1-v^2}},&\quad
+u_z&=\frac{v_z}{\sqrt{1-v^2}},
+\end{alignedat}
+\label{Eq:II:25:5}
+\end{equation}
+The four-velocity is a useful quantity; we can, for instance, write
+\begin{equation}
+\label{Eq:II:25:6}
+p_\mu=m_0u_\mu.
+\end{equation}
+This is the typical sort of form an equation which is relativistically
+correct must have; each side is a four-vector. (The right-hand side is
+an invariant times a four-vector, which is still a four-vector.)
+
+It is an accident of life, if you wish, that under coordinate
+rotations the distance of a point from the origin does not
+change. This means mathematically that [eq] is an
+invariant. In other words, after a rotation [eq], or
+\begin{equation*}
+x'^2+y'^2+z'^2=x^2+y^2+z^2.
+\end{equation*}
+Now the question is: Is there a similar quantity which is invariant
+under the Lorentz transformation? There is. From Eq. ( 25.1 )
+you can see that
+\begin{equation*}
+t'^2-x'^2=t^2-x^2.
+\end{equation*}
+That is pretty nice, except that it depends on a particular choice of
+the [eq]-direction. We can fix that up by subtracting [eq]
+and [eq]. Then any Lorentz transformation plus a rotation will
+leave the quantity unchanged. So the quantity which is analogous
+to [eq] for three dimensions, in four dimensions is
+\begin{equation*}
+t^2-x^2-y^2-z^2.
+\end{equation*}
+It is an invariant under what is called the “complete Lorentz
+group”—which means for transformation of both translations at
+constant velocity and rotations.
+
+Now since this invariance is an algebraic matter depending only on the
+transformation rules of Eq. ( 25.1 )—plus rotations—it
+is true for any four-vector (by definition they all transform the
+same). So for a four-vector [eq] we have that
+\begin{equation*}
+a_t'^2-a_x'^2-a_y'^2-a_z'^2=a_t^2-a_x^2-a_y^2-a_z^2.
+\end{equation*}
+We will call this quantity the square of “the length” of the
+four-vector [eq]. (Sometimes people change the sign of all the
+terms and call the length [eq], so you’ll have to
+watch out.)
+
+Now if we have two vectors [eq] and [eq] their
+corresponding components transform in the same way, so the combination
+\begin{equation*}
+a_tb_t-a_xb_x-a_yb_y-a_zb_z
+\end{equation*}
+is also an invariant (scalar) quantity. (We have in fact already proved
+this in Chapter  17 of Vol. I.) Clearly this expression is
+quite analogous to the dot product for vectors. We will, in fact, call
+it the dot product or
+ scalar product of two four-vectors. It would seem logical to
+write it as [eq], so it would look like a dot product.
+But, unhappily, it’s not done that way; it is usually written without
+the dot. So we will follow the convention and write the dot product
+simply as [eq]. So, by definition ,
+\begin{equation}
+\label{Eq:II:25:7}
+a_\mu b_\mu=a_tb_t-a_xb_x-a_yb_y-a_zb_z.
+\end{equation}
+Whenever you see two identical subscripts together (we will
+occasionally have to use [eq] or some other letter instead of [eq])
+it means that you are to take the four products and sum,
+ remembering the minus sign for the products of the space
+components. With this convention the invariance of the scalar product
+under a Lorentz transformation can be written as
+\begin{equation*}
+a_\mu'b_\mu'=a_\mu b_\mu.
+\end{equation*}
+
+Since the last three terms in ( 25.7 ) are just the scalar
+dot product in three dimensions, it is often more convenient to write
+\begin{equation*}
+a_\mu b_\mu=a_tb_t-\FLPa\cdot\FLPb.
+\end{equation*}
+It is also obvious that the four-dimensional length we described above
+can be written as [eq]:
+\begin{equation}
+\label{Eq:II:25:8}
+a_\mu a_\mu=a_t^2-a_x^2-a_y^2-a_z^2=
+a_t^2-\FLPa\cdot\FLPa.
+\end{equation}
+It will also be convenient to sometimes write this quantity
+as [eq]:
+\begin{equation*}
+a_\mu^2\equiv a_\mu a_\mu.
+\end{equation*}
+
+We will now give you an illustration of the usefulness of four-vector
+dot products. Antiprotons ([eq]) are produced in
+large accelerators by the reaction
+\begin{equation*}
+\text{P}+\text{P}\to
+\text{P}+\text{P}+\text{P}+\overline{\text{P}}.
+\end{equation*}
+That is, an energetic proton collides with a proton at rest (for
+example, in a hydrogen target placed in the beam), and if the incident
+proton has enough energy, a proton-antiproton pair may be produced, in
+addition to the two original protons. 1 The question is: How much energy must be given to the
+incident proton to make this reaction energetically possible?
+
+The easiest way to get the answer is to consider what the reaction looks
+like in the center-of-mass (CM) system (see Fig.  25–1 ).
+We’ll call the incident proton [eq] and its four-momentum [eq].
+Similarly, we’ll call the target proton [eq] and its
+four-momentum [eq]. If the incident proton has just barely 
+enough energy to make the reaction go, the final state—the situation
+after the collision—will consist of a glob containing three protons
+and an antiproton at rest in the CM system. If the incident energy were
+slightly higher, the final state particles would have some kinetic
+energy and be moving apart; if the incident energy were slightly lower,
+there would not be enough energy to make the four particles.
+
+If we call [eq] the total four-momentum of the whole glob in the
+final state, conservation of energy and momentum tells us that
+\begin{equation*}
+\FLPp^a+\FLPp^b=\FLPp^c,
+\end{equation*}
+and
+\begin{equation*}
+E^a+E^b=E^c.
+\end{equation*}
+Combining these two equations, we can write that
+\begin{equation}
+\label{Eq:II:25:9}
+p_\mu^a+p_\mu^b=p_\mu^c.
+\end{equation}
+
+Now the important thing is that this is an equation among
+four-vectors, and is, therefore, true in any inertial frame. We can
+use this fact to simplify our calculations. We start by taking the
+“length” of each side of Eq. ( 25.9 ); they are, of
+course, also equal. We get
+\begin{equation}
+\label{Eq:II:25:10}
+(p_\mu^a+p_\mu^b)(p_\mu^a+p_\mu^b)=
+p_\mu^cp_\mu^c.
+\end{equation}
+Since [eq] is invariant, we can evaluate it in any
+coordinate system. In the CM system, the time component of [eq]
+is the rest energy of four protons, namely [eq], and the space
+part [eq] is zero; so [eq]. We have used the fact
+that the rest mass of an antiproton equals the rest mass of a proton,
+and we have called this common mass [eq].
+
+Thus, Eq. ( 25.10 ) becomes
+\begin{equation}
+\label{Eq:II:25:11}
+p_\mu^ap_\mu^a+2p_\mu^ap_\mu^b+p_\mu^bp_\mu^b=16M^2.
+\end{equation}
+Now [eq] and [eq] are very easy, since the
+“length” of the momentum four-vector of any particle is just the
+mass of the particle squared:
+\begin{equation*}
+p_\mu p_\mu=E^2-\FLPp^2=M^2.
+\end{equation*}
+This can be shown by direct calculation or, more cleverly, by noting
+that for a particle at rest  [eq], so $p_\mu
+p_\mu=M^2[eq]M^2$ in
+ any frame. Using these results in Eq. ( 25.11 ), we
+have
+\begin{equation*}
+2p_\mu^ap_\mu^b=14M^2
+\end{equation*}
+or
+\begin{equation}
+\label{Eq:II:25:12}
+p_\mu^ap_\mu^b=7M^2.
+\end{equation}
+
+Now we can also evaluate [eq] in the
+laboratory system. The four-vector [eq] can be
+written [eq], while [eq], since it
+describes a proton at rest. Thus, [eq] must also be
+equal to [eq]; and since we know the scalar product is an
+invariant this must be numerically the same as what we found
+in ( 25.12 ). So we have that
+\begin{equation*}
+{E^a}'=7M,
+\end{equation*}
+which is the result we were after. The total energy of the
+initial proton must be at least [eq] (about [eq] GeV since
+[eq] MeV) or, subtracting the rest mass [eq], the kinetic energy must
+be at least [eq] (about [eq] GeV). The Bevatron accelerator at
+Berkeley was designed to give about [eq] GeV of kinetic energy to the
+protons it accelerates, in order to be able to make antiprotons.
+
+Since scalar products are invariant, they are always interesting to
+evaluate. What about the “length” of the four-velocity $u_\mu
+u_\mu$?
+\begin{equation*}
+u_\mu u_\mu=u_t^2-\FLPu^2=\frac{1}{1-v^2}-\frac{v^2}{1-v^2}=1.
+\end{equation*}
+Thus, [eq] is the unit four-vector .
+
+The next thing that we have to discuss is the four-dimensional analog
+of the gradient. We recall (Chapter  14 , Vol. I) that
+the three differential operators [eq], [eq], [eq]
+transform like a three-vector and are called the
+gradient. The same scheme ought to work in four dimensions; that is,
+we might guess that the four-dimensional gradient should
+be [eq]. This is wrong .
+
+To see the error, consider a scalar function [eq] which depends only
+on [eq] and [eq]. The change in [eq], if we make a small
+change [eq] in [eq] while holding [eq] constant, is
+\begin{equation}
+\label{Eq:II:25:13}
+\Delta\phi=\ddp{\phi}{t}\,\Delta t.
+\end{equation}
+On the other hand, according to a moving observer,
+\begin{equation*}
+\Delta\phi=\ddp{\phi}{x'}\,\Delta x'+\ddp{\phi}{t'}\,\Delta t'.
+\end{equation*}
+We can express [eq] and [eq] in terms of [eq] by
+using Eq. ( 25.1 ). Remembering that we are holding [eq]
+constant, so that [eq], we write
+\begin{equation*}
+\Delta x'=-\frac{v}{\sqrt{1-v^2}}\,\Delta t;\quad
+\Delta t'=\frac{\Delta t}{\sqrt{1-v^2}}.
+\end{equation*}
+Thus,
+\begin{align*}
+\Delta\phi&=\ddp{\phi}{x'}\Biggl(
+-\frac{v}{\sqrt{1-v^2}}\,\Delta t
+\Biggr)+\ddp{\phi}{t'}\Biggl(
+\frac{\Delta t}{\sqrt{1-v^2}}
+\Biggr)\\[1.5ex]
+&=\biggl(
+\ddp{\phi}{t'}-v\,\ddp{\phi}{x'}
+\biggr)\frac{\Delta t}{\sqrt{1-v^2}}.
+\end{align*}
+Comparing this result with Eq. ( 25.13 ), we learn that
+\begin{equation}
+\label{Eq:II:25:14}
+\ddp{\phi}{t}=\frac{1}{\sqrt{1-v^2}}\biggl(
+\ddp{\phi}{t'}-v\,\ddp{\phi}{x'}
+\biggr).
+\end{equation}
+A similar calculation gives
+\begin{equation}
+\label{Eq:II:25:15}
+\ddp{\phi}{x}=\frac{1}{\sqrt{1-v^2}}\biggl(
+\ddp{\phi}{x'}-v\,\ddp{\phi}{t'}
+\biggr).
+\end{equation}
+
+Now we can see that the gradient is rather strange. The formulas for
+[eq] and [eq] in terms of [eq] and [eq] [obtained by solving
+Eq. ( 25.1 )] are:
+\begin{equation*}
+t=\frac{t'+vx'}{\sqrt{1-v^2}},\quad
+x=\frac{x'+vt'}{\sqrt{1-v^2}}.
+\end{equation*}
+This is the way a four-vector must transform. But Eqs. ( 25.14 ) and ( 25.15 ) have a couple of signs wrong!
+
+The answer is that instead of the incorrect 
+[eq], we must define the
+ four-dimensional gradient operator, which we will
+call [eq], by
+ 
+\begin{equation}
+\label{Eq:II:25:16}
+\fournabla=\biggl(\ddp{}{t},-\FLPnabla\biggr)=
+\biggl(
+\ddp{}{t},-\ddp{}{x},-\ddp{}{y},-\ddp{}{z}
+\biggr).
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:II:25:16}
+\fournabla&=\biggl(\ddp{}{t},-\FLPnabla\biggr)\\[1ex]
+&=\biggl(\ddp{}{t},-\ddp{}{x},-\ddp{}{y},-\ddp{}{z}\biggr).\notag
+\end{align}
+ 
+With this definition, the sign difficulties encountered above go away,
+and [eq] behaves as a four-vector should. (It’s rather awkward
+to have those minus signs, but that’s the way the world is.) Of
+course, what it means to say that [eq] “behaves like a
+four-vector” is simply that the four-gradient of a scalar is a
+four-vector. If [eq] is a true scalar invariant field (Lorentz
+invariant) then [eq] is a four-vector field.
+
+All right, now that we have vectors, gradients, and dot products, the
+next thing is to look for an invariant which is analogous to the
+divergence of three-dimensional vector analysis. Clearly, the analog
+is to form the expression [eq], where [eq] is a
+four-vector field whose components are functions of space and time.
+We define the divergence 
+of the four-vector [eq] as the dot product of
+[eq] and [eq]:
+ 
+\begin{equation}
+\begin{aligned}
+\fournabla b_\mu&=\ddp{}{t}\,b_t-
+\biggl(-\ddp{}{x}\biggr)b_x-
+\biggl(-\ddp{}{y}\biggr)b_y-
+\biggl(-\ddp{}{z}\biggr)b_z\\[1ex]
+&=\ddp{}{t}\,b_t+\FLPdiv{\FLPb},
+\end{aligned}
+\label{Eq:II:25:17}
+\end{equation}
+ 
+ 
+\begin{gather}
+\fournabla b_\mu=\notag\\[1.5ex]
+\ddp{}{t}b_t\!-\!
+\biggl(\!-\ddp{}{x}\!\biggr)b_x\!-\!
+\biggl(\!-\ddp{}{y}\!\biggr)b_y\!-\!
+\biggl(\!-\ddp{}{z}\!\biggr)b_z=\notag\\[1.25ex]
+\label{Eq:II:25:17}
+\ddp{}{t}\,b_t+\FLPdiv{\FLPb},
+\end{gather}
+ 
+where [eq] is the ordinary three-divergence of the
+three-vector [eq]. Note that one has to be careful with the signs.
+Some of the minus signs come from the definition of the scalar product,
+Eq. ( 25.7 ); the others are required because the space
+components of [eq] are [eq], etc., as in
+Eq. ( 25.16 ). The divergence as defined
+by ( 25.17 ) is an invariant and gives the same answer in all
+coordinate systems which differ by a Lorentz transformation.
+
+Let’s look at a physical example in which the four-divergence shows
+up. We can use it to solve the problem of the fields around a moving
+wire. We have already seen (Section  13-7 ) that the
+electric charge density [eq] and the current density [eq] form a
+four-vector [eq]. If an uncharged wire carries the
+current [eq], then in a frame moving past it with velocity [eq]
+(along [eq]), the wire will have the charge and current density [obtained from
+the Lorentz transformation Eqs. ( 25.1 )] as follows:
+\begin{equation*}
+\rho'=\frac{-vj_x}{\sqrt{1-v^2}},\quad
+j_x'=\frac{j_x}{\sqrt{1-v^2}}.
+\end{equation*}
+
+These are just what we found in Chapter  13 . We can then use
+these sources in Maxwell’s equations in the moving system to find the fields.
+
+The charge conservation law, Section  13-2 , also takes on
+a simple form in the four-vector notation. Consider the four
+divergence of [eq]:
+\begin{equation}
+\label{Eq:II:25:18}
+\fournabla j_\mu=\ddp{\rho}{t}+\FLPdiv{\FLPj}.
+\end{equation}
+The law of the conservation of charge says that the outflow of current
+per unit volume must equal the negative rate of increase of charge
+density. In other words, that
+\begin{equation*}
+\FLPdiv{\FLPj}=-\ddp{\rho}{t}.
+\end{equation*}
+Putting this into Eq. ( 25.18 ), the law of conservation
+of charge takes on the simple form
+\begin{equation}
+\label{Eq:II:25:19}
+\fournabla j_\mu=0.
+\end{equation}
+Since [eq] is an invariant scalar, if it is zero in one
+frame it is zero in all frames. We have the result that if charge is
+conserved in one coordinate system, it is conserved in all coordinate
+systems moving with uniform velocity.
+
+As our last example we want to consider the scalar product of the
+gradient operator [eq] with itself. In three dimensions, such
+a product gives the Laplacian
+\begin{equation*}
+\nabla^2=\FLPdiv{\FLPnabla}=
+\frac{\partial^2}{\partial x^2}+
+\frac{\partial^2}{\partial y^2}+
+\frac{\partial^2}{\partial z^2}.
+\end{equation*}
+What do we get in four dimensions? That’s easy. Following our rules
+for dot products and gradients, we get
+ 
+\begin{align*}
+\fournabla\fournabla&=\ddp{}{t}\,\ddp{}{t}-
+\biggl(-\ddp{}{x}\biggr)\biggl(-\ddp{}{x}\biggr)-
+\biggl(-\ddp{}{y}\biggr)\biggl(-\ddp{}{y}\biggr)-
+\biggl(-\ddp{}{z}\biggr)\biggl(-\ddp{}{z}\biggr)\\[1ex]
+&=\frac{\partial^2}{\partial t^2}-\nabla^2.
+\end{align*}
+ 
+ 
+\begin{align*}
+\fournabla\fournabla=\ddp{}{t}\,\ddp{}{t}&-\biggl(-\ddp{}{x}\biggr)\biggl(-\ddp{}{x}\biggr)\\
+&-\biggl(-\ddp{}{y}\biggr)\biggl(-\ddp{}{y}\biggr)\\
+&-\biggl(-\ddp{}{z}\biggr)\biggl(-\ddp{}{z}\biggr)\\
+=\,\frac{\partial^2}{\partial t^2}\;\;&-\;\;\nabla^2.
+\end{align*}
+ 
+This operator, which is the analog of the three-dimensional Laplacian,
+is called the d’Alembertian and has a special
+notation:
+\begin{equation}
+\label{Eq:II:25:20}
+\Box^2=\fournabla\fournabla=\frac{\partial^2}{\partial t^2}-\nabla^2.
+\end{equation}
+From its definition it is an invariant scalar operator; if it operates
+on a four-vector field, it produces a new four-vector field. (Some
+people define the d’Alembertian with the opposite sign to
+Eq. ( 25.20 ), so you will have to be careful when reading the
+literature.)
+
+We have now found four-dimensional equivalents of most of the
+three-dimensional quantities we had listed in
+Table  25–1 . (We do not yet have the equivalents of the
+cross product and the curl operation; we won’t get to them until the
+next chapter.) It may help you remember how they go if we put all the
+important definitions and results together in one place, so we have made
+such a summary in Table  25–2 .
+
+We have already encountered the d’Alembertian operator, without giving
+it that name, in Section  18-6 ; the differential
+equations we found there for the potentials can be written in the new
+notations as:
+\begin{equation}
+\label{Eq:II:25:21}
+\Box^2\phi=\frac{\rho}{\epsO},\quad
+\Box^2\FLPA=\frac{\FLPj}{\epsO}.
+\end{equation}
+The four quantities on the right-hand side of the two equations
+in ( 25.21 ) are [eq], [eq], [eq], [eq] divided
+by [eq], which is a universal constant which will be the same in all
+coordinate systems if the same unit of charge is used in all frames. So
+the four quantities [eq], [eq], [eq], [eq]
+also transform as a four-vector. We can write them as [eq]. The
+d’Alembertian doesn’t change when the coordinate system is changed, so
+the quantities [eq], [eq], [eq], [eq] must also transform 
+like a four-vector—which means that they are the components of
+a four-vector. In short,
+\begin{equation*}
+A_\mu=(\phi,\FLPA)
+\end{equation*}
+is a four-vector. What we call the scalar and vector potentials are
+really different aspects of the same physical thing. They belong
+together. And if they are kept together the relativistic invariance of
+the world is obvious. We call [eq] the
+ four-potential .
+
+In the four-vector notation Eqs. ( 25.21 ) become simply
+\begin{equation}
+\label{Eq:II:25:22}
+\Box^2A_\mu=\frac{j_\mu}{\epsO},
+\end{equation}
+The physics of this equation is just the same as Maxwell’s
+equations. But there is some pleasure
+in being able to rewrite them in an elegant form. The pretty form is
+also meaningful; it shows directly the invariance of electrodynamics
+under the Lorentz transformation.
+
+Remember that Eqs. ( 25.21 ) could be deduced from
+Maxwell’s equations only if we
+imposed the gauge condition
+\begin{equation}
+\label{Eq:II:25:23}
+\ddp{\phi}{t}+\FLPdiv{\FLPA}=0,
+\end{equation}
+which just says [eq]; the gauge condition says that the
+divergence of the four-vector [eq] is zero. This condition is called
+the Lorenz condition . It is very
+convenient because it is an invariant condition and therefore
+Maxwell’s equations stay in
+the form of Eq. ( 25.22 ) for all frames.
+
+Although it is implicit in what we have already said, let us write
+down the transformation laws which give [eq] and [eq] in a moving
+system in terms of [eq] and [eq] in a stationary system. Since
+[eq] is a four-vector, the equations must look just
+like Eqs. ( 25.1 ), except that [eq] is replaced
+by [eq], and [eq] is replaced by [eq]. Thus,
+\begin{equation}
+\begin{alignedat}{2}
+\phi'&=\frac{\phi-vA_x}{\sqrt{1-v^2}},&\quad
+A_y'&=A_y,\\[1ex]
+A_x'&=\frac{A_x-v\phi}{\sqrt{1-v^2}},&\quad
+A_z'&=A_z.
+\end{alignedat}
+\label{Eq:II:25:24}
+\end{equation}
+This assumes that the primed coordinate system is moving with
+speed [eq] in the positive [eq]-direction, as measured in the unprimed
+coordinate system.
+
+We will consider one example of the usefulness of the idea of the
+four-potential. What are the vector and scalar potentials of a
+charge [eq] moving with speed [eq] along the [eq]-axis? The problem is easy in a
+coordinate system moving with the charge, since in this system the
+charge is standing still. Let’s say that the charge is at the origin
+of the [eq]-frame, as shown in Fig.  25–2 . The scalar
+potential in the moving system is then given by
+\begin{equation}
+\label{Eq:II:25:25}
+\phi'=\frac{q}{4\pi\epsO r'},
+\end{equation}
+[eq] being the distance from [eq] to the field point, as measured in
+the moving system. The vector potential [eq] is, of course, zero.
+
+Now it is straightforward to find [eq] and [eq], the potentials
+as measured in the stationary coordinates. The inverse relations to
+Eqs. ( 25.24 ) are
+\begin{equation}
+\label{Eq:II:25:26}
+\begin{alignedat}{2}
+\phi&=\frac{\phi'+vA_x'}{\sqrt{1-v^2}},&\quad
+A_y&=A_y',\\[1.5ex]
+A_x&=\frac{A_x'+v\phi'}{\sqrt{1-v^2}},&\quad
+A_z&=A_z'.
+\end{alignedat}
+\end{equation}
+Using the [eq] given by Eq. ( 25.25 ), and
+[eq], we get
+\begin{align*}
+\phi&=\frac{q}{4\pi\epsO}\,\frac{1}{r'\sqrt{1-v^2}}\\[.5ex]
+&=\frac{q}{4\pi\epsO}\,
+\frac{1}{\sqrt{1-v^2}\sqrt{x'^2+y'^2+z'^2}}.
+\end{align*}
+This gives us the scalar potential [eq] we would see in [eq], but,
+unfortunately, expressed in terms of the [eq] coordinates. We can get
+things in terms of [eq], [eq], [eq], [eq] by substituting for [eq], [eq],
+[eq], and [eq], using ( 25.1 ). We get
+ 
+\begin{equation}
+\label{Eq:II:25:27}
+\phi=\frac{q}{4\pi\epsO}\,
+\frac{1}{\sqrt{1-v^2}}\,
+\frac{1}{\sqrt{[(x-vt)/\sqrt{1-v^2}]^2+y^2+z^2}}.
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:II:25:27}
+\phi=\frac{q}{4\pi\epsO}\,
+&\frac{1}{\sqrt{1-v^2}}\;\times\\[-1ex]
+&\frac{1}{\sqrt{[(x-vt)/\sqrt{1-v^2}]^2+y^2+z^2}}.\notag
+\end{align}
+ 
+Following the same procedure for the components of [eq], you can
+show that
+\begin{equation}
+\label{Eq:II:25:28}
+\FLPA=\FLPv\phi.
+\end{equation}
+These are the same formulas we derived by a different method in
+Chapter  21 .
+
+We have found that the potentials [eq] and [eq] taken together
+form a four-vector which we call [eq], and that the wave
+equations—the full equations which determine the [eq] in terms of
+the [eq]—can be written as in Eq. ( 25.22 ). This
+equation, together with the conservation of charge,
+Eq. ( 25.19 ), gives us the fundamental law of the
+electromagnetic field:
+\begin{equation}
+\label{Eq:II:25:29}
+\Box^2A_\mu=\frac{1}{\epsO}\,j_\mu,\quad
+\fournabla j_\mu=0.
+\end{equation}
+There, in one tiny space on the page, are all of the Maxwell
+equations—beautiful and simple. Did we learn anything from writing
+the equations this way, besides that they are beautiful and simple? In
+the first place, is it anything different from what we had before when
+we wrote everything out in all the various components? Can we from this
+equation deduce something that could not be deduced from the wave
+equations for the potentials in terms of the charges and currents? The
+answer is definitely no. The only thing we have been doing is changing
+the names of things—using a new notation. We have written a square
+symbol to represent the derivatives, but it still means nothing more nor
+less than the second derivative with respect to [eq], minus the second
+derivative with respect to [eq], minus the second derivative with respect
+to [eq], minus the second derivative with respect to [eq]. And the [eq]
+means that we have four equations, one each for [eq], [eq], [eq],
+or [eq]. What then is the significance of the fact that the equations can
+be written in this simple form? From the point of view of deducing
+anything directly, it doesn’t mean anything. Perhaps, though, the
+simplicity of the equations means that nature also has a certain
+simplicity.
+
+Let us show you something interesting that we have recently
+discovered: All of the laws of physics can be contained in one
+equation . That equation is
+\begin{equation}
+\label{Eq:II:25:30}
+\mathsf{U}=0.
+\end{equation}
+What a simple equation! Of course, it is necessary to know what the
+symbol means. [eq] is a physical quantity which we will call the
+“unworldliness” of the situation. And we have a
+formula for it. Here is how you calculate the
+unworldliness. You take all of the known physical
+laws and write them in a special form. For example, suppose you take the
+law of mechanics, [eq], and rewrite it
+as [eq]. Then you can call [eq]—which
+should, of course, be zero—the “mismatch” of mechanics. Next, you
+take the square of this mismatch and call it [eq],
+which can be called the “unworldliness of
+mechanical effects.” In other words, you take
+\begin{equation}
+\label{Eq:II:25:31}
+\mathsf{U}_1=(\FLPF-m\FLPa)^2.
+\end{equation}
+Now you write another physical law, say, [eq]
+and define
+\begin{equation*}
+\mathsf{U}_2=\biggl(\FLPdiv{\FLPE}-\frac{\rho}{\epsO}\biggr)^2,
+\end{equation*}
+which you might call “the Gaussian unworldliness of electricity.”
+You continue to write [eq], [eq], and so on—one
+for every physical law there is.
+
+Finally you call the total unworldliness [eq] of the
+world the sum of the various unworldlinesses [eq] from all
+the subphenomena that are involved; that is,
+[eq]. Then the great “law of nature” is
+\begin{equation}
+\label{Eq:II:25:32}
+\boxed{\mathsf{U}=0.}
+\end{equation}
+This “law” means, of course, that the sum of the squares of all the
+individual mismatches is zero, and the only way the sum of a lot of
+squares can be zero is for each one of the terms to be zero.
+
+So the “beautifully simple” law in Eq. ( 25.32 ) is
+equivalent to the whole series of equations that you originally wrote
+down. It is therefore absolutely obvious that a simple notation that
+just hides the complexity in the definitions of symbols is not real
+simplicity. It is just a trick . The beauty that appears in
+Eq. ( 25.32 )—just from the fact that several equations
+are hidden within it—is no more than a trick. When you unwrap the
+whole thing, you get back where you were before.
+
+However, there is more to the simplicity of the laws of
+electromagnetism written in the form of Eq. ( 25.29 ). It
+means more, just as a theory of vector analysis means more. The fact
+that the electromagnetic equations can be written in a very particular
+notation which was designed for the four-dimensional geometry
+of the Lorentz transformations—in other words, as a vector equation
+in the four-space—means that it is invariant under the Lorentz
+transformations. It is because the Maxwell equations are invariant under those
+transformations that they can be written in a beautiful form.
+
+It is no accident that the equations of electrodynamics can be written
+in the beautifully elegant form of Eq. ( 25.29 ). The theory
+of relativity was developed because it was found experimentally 
+that the phenomena predicted by Maxwell’s
+equations were the same in all
+inertial systems. And it was precisely by studying the transformation
+properties of Maxwell’s equations that Lorentz
+discovered his transformation as the one which left the equations
+invariant.
+
+There is, however, another reason for writing our equations this way. It
+has been discovered—after Einstein guessed that it might be so—that all of the laws
+of physics are invariant under the Lorentz transformation. That is the
+principle of relativity. Therefore, if we invent a notation which shows
+immediately when a law is written down whether it is invariant or not,
+we can be sure that in trying to make new theories we will write only
+equations which are consistent with the principle of relativity.
+
+The fact that the Maxwell equations are simple in this
+particular notation is not a miracle, because the notation was invented
+with them in mind. But the interesting physical thing is that
+ every law of physics—the propagation of meson waves or the
+behavior of neutrinos in beta decay, and so forth—must have this same
+invariance under the same transformation. Then when you are moving at a
+uniform velocity in a spaceship, all of the laws of nature transform
+together in such a way that no new phenomenon will show up. It is
+because the principle of relativity is a fact of nature that in the
+notation of four-dimensional vectors the equations of the world will
+look simple.

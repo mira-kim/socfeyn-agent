@@ -1,0 +1,623 @@
+The Feynman Lectures on Physics Vol. I Ch. 19: Center of Mass; Moment of Inertia
+================================================================================
+
+Sections: 19–1 Properties of the center of mass | 19–2 Locating the center of mass | 19–3 Finding the moment of inertia | 19–4 Rotational kinetic energy
+
+
+
+In the previous chapter we found that if a great many forces are
+acting on a complicated mass of particles, whether the particles
+comprise a rigid or a nonrigid body, or a cloud of stars, or anything
+else, and we find the sum of all the forces (that is, of course, the
+external forces, because the internal forces balance out), then if we
+consider the body as a whole, and say it has a total mass [eq], there
+is a certain point “inside” the body, called the center of
+mass , such that the net resulting external force produces an
+acceleration of this point, just as though the whole mass were
+concentrated there. Let us now discuss the center of mass in a little
+more detail.
+
+The location of the center of mass (abbreviated CM) is given by the
+equation
+\begin{equation}
+\label{Eq:I:19:1}
+\FLPR_{\text{CM}}=\frac{\sum m_i\FLPr_i}{\sum m_i}.
+\end{equation}
+This is, of course, a vector equation which is really three equations,
+one for each of the three directions. We shall consider only the
+[eq]-direction, because if we can understand that one, we can
+understand the other two. What does [eq]
+mean? Suppose for a moment that the object is divided into little
+pieces, all of which have the same mass [eq]; then the total mass is
+simply the number [eq] of pieces times the mass of one piece, say one
+gram, or any unit. Then this equation simply says that we add all
+the [eq]’s, and then divide by the number of things that we have added:
+[eq] [eq] [eq]. In other words,
+[eq] is the average of all the [eq]’s, if the masses are
+equal. But suppose one of them were twice as heavy as the others. Then
+in the sum, that [eq] would come in twice. This is easy to understand,
+for we can think of this double mass as being split into two equal
+ones, just like the others; then in taking the average, of course, we
+have to count that [eq] twice because there are two masses there. Thus
+[eq] is the average position, in the [eq]-direction, of all the masses,
+every mass being counted a number of times proportional to the mass,
+as though it were divided into “little grams.” From this it is easy
+to prove that [eq] must be somewhere between the largest and the
+smallest [eq], and, therefore lies inside the envelope including the
+entire body. It does not have to be in the material of the
+body, for the body could be a circle, like a hoop, and the center of
+mass is in the center of the hoop, not in the hoop itself.
+
+Of course, if an object is symmetrical in some way, for instance, a
+rectangle, so that it has a plane of symmetry, the center of mass lies
+somewhere on the plane of symmetry. In the case of a rectangle there
+are two planes, and that locates it uniquely. But if it is just any
+symmetrical object, then the center of gravity lies somewhere on the
+axis of symmetry, because in those circumstances there are as many
+positive as negative [eq]’s.
+
+Another interesting proposition is the following very curious
+one. Suppose that we imagine an object to be made of two pieces, [eq]
+and [eq] (Fig.  19–1 ). Then the center of mass of the
+whole object can be calculated as follows. First, find the center of
+mass of piece [eq], and then of piece [eq]. Also, find the total mass of
+each piece, [eq] and [eq]. Then consider a new problem, in which a
+ point mass [eq] is at the center of mass of object [eq], and
+another point mass [eq] is at the center of mass of
+object [eq]. The center of mass of these two point masses is then the center
+of mass of the whole object. In other words, if the centers of mass of
+various parts of an object have been worked out, we do not have to
+start all over again to find the center of mass of the whole object;
+we just have to put the pieces together, treating each one as a point
+mass situated at the center of mass of that piece. Let us see why that
+is. Suppose that we wanted to calculate the center of mass of a
+complete object, some of whose particles are considered to be members
+of object [eq] and some members of object [eq]. The total sum $\sum
+m_ix_i[eq]\sum_A m_ix_i$
+for the [eq] object only, and the sum [eq] for object [eq]
+only. Now if we were computing the center of mass of object [eq] alone,
+we would have exactly the first of these sums, and we know that this
+by itself is [eq], the total mass of all the particles in [eq]
+times the position of the center of mass of [eq], because that is the
+theorem of the center of mass, applied to object [eq]. In the same
+manner, just by looking at object [eq], we get [eq], and of course,
+adding the two yields [eq]:
+\begin{align}
+MX_{\text{CM}} &=\sum_A m_ix_i+\sum_B m_ix_i\notag\\[.5ex]
+\label{Eq:I:19:2}
+&=M_AX_A+M_BX_B.
+\end{align}
+Now since [eq] is evidently the sum of [eq] and [eq], we see that
+Eq. ( 19.2 ) can be interpreted as a special example of the
+center of mass formula for two point objects, one of mass [eq]
+located at [eq] and the other of mass [eq] located at [eq].
+
+The theorem concerning the motion of the center of mass is very
+interesting, and has played an important part in the development of
+our understanding of physics. Suppose we assume that Newton’s law is
+right for the small component parts of a much larger object. Then this
+theorem shows that Newton’s law is also correct for the larger object,
+even if we do not study the details of the object, but only the total
+force acting on it and its mass. In other words, Newton’s law has the
+peculiar property that if it is right on a certain small scale, then
+it will be right on a larger scale. If we do not consider a baseball
+as a tremendously complex thing, made of myriads of interacting
+particles, but study only the motion of the center of mass and the
+external forces on the ball, we find [eq], where [eq] is
+the external force on the baseball, [eq] is its mass, and [eq] is
+the acceleration of its center of mass. So [eq] is a law
+which reproduces itself on a larger scale. (There ought to be a good
+word, out of the Greek, perhaps, to describe a law which reproduces
+the same law on a larger scale.)
+
+Of course, one might suspect that the first laws that would be
+discovered by human beings would be those that would reproduce
+themselves on a larger scale. Why? Because the actual scale of the
+fundamental gears and wheels of the universe are of atomic dimensions,
+which are so much finer than our observations that we are nowhere near
+that scale in our ordinary observations. So the first things that we
+would discover must be true for objects of no special size relative to
+an atomic scale. If the laws for small particles did not reproduce
+themselves on a larger scale, we would not discover those laws very
+easily. What about the reverse problem? Must the laws on a small scale
+be the same as those on a larger scale? Of course it is not necessarily
+so in nature, that at an atomic level the laws have to be the same as on
+a large scale. Suppose that the true laws of motion of atoms were given
+by some strange equation which does not have the property that
+when we go to a larger scale we reproduce the same law, but instead has
+the property that if we go to a larger scale, we can approximate
+it by a certain expression such that, if we extend that expression up
+and up, it keeps reproducing itself on a larger and larger scale.
+That is possible, and in fact that is the way it works. Newton’s
+laws are the “tail end” of the atomic
+laws, extrapolated to a very large size. The actual laws of motion of
+particles on a fine scale are very peculiar, but if we take large
+numbers of them and compound them, they approximate, but only 
+approximate, Newton’s laws.
+Newton’s laws then permit us to go
+on to a higher and higher scale, and it still seems to be the same law.
+In fact, it becomes more and more accurate as the scale gets larger and
+larger. This self-reproducing factor of Newton’s
+laws is thus really not a fundamental
+feature of nature, but is an important historical feature. We would
+never discover the fundamental laws of the atomic particles at first
+observation because the first observations are much too crude. In fact,
+it turns out that the fundamental atomic laws, which we call quantum
+mechanics, are quite different from Newton’s
+laws, and are difficult to understand
+because all our direct experiences are with large-scale objects and the
+small-scale atoms behave like nothing we see on a large scale. So we
+cannot say, “An atom is just like a planet going around the sun,” or
+anything like that. It is like nothing we are familiar with
+because there is nothing like it . As we apply quantum mechanics
+to larger and larger things, the laws about the behavior of many atoms
+together do not reproduce themselves, but produce new
+laws , which are Newton’s laws,
+which then continue to reproduce themselves from, say, micro-microgram
+size, which still is billions and billions of atoms, on up to the size
+of the earth, and above.
+
+Let us now return to the center of mass. The center of mass is sometimes called
+the center of gravity, for the reason that, in many cases, gravity may be
+considered uniform. Let us suppose that we have small enough dimensions that the
+gravitational force is not only proportional to the mass, but is everywhere
+parallel to some fixed line. Then consider an object in which there are
+gravitational forces on each of its constituent masses. Let [eq] be the mass of
+one part. Then the gravitational force on that part is [eq] times [eq]. Now the
+question is, where can we apply a single force to balance the gravitational
+force on the whole thing, so that the entire object, if it is a rigid body, will
+not turn? The answer is that this force must go through the center of mass, and
+we show this in the following way. In order that the body will not turn, the
+torque produced by all the forces must add up to zero, because if there is a
+torque, there is a change of angular momentum, and thus a rotation. So we must
+calculate the total of all the torques on all the particles, and see how much
+torque there is about any given axis; it should be zero if this axis is at the
+center of mass. Now, measuring [eq] horizontally and [eq] vertically, we know that
+the torques are the forces in the [eq]-direction, times the lever arm [eq] (that
+is to say, the force times the lever arm around which we want to measure the
+torque). Now the total torque is the sum
+\begin{equation}
+\label{Eq:I:19:3}
+\tau=\sum m_igx_i=g\sum m_ix_i,
+\end{equation}
+so if the total torque is to be zero, the sum [eq] must be zero. But
+[eq], the total mass times the distance of the center
+of mass from the axis. Thus the [eq]-distance of the center of mass from the axis
+is zero.
+
+Of course, we have checked the result only for the [eq]-distance, but
+if we use the true center of mass the object will balance in any
+position, because if we turned it [eq] degrees, we would have [eq]’s
+instead of [eq]’s. In other words, when an object is supported at its
+center of mass, there is no torque on it because of a parallel
+gravitational field. In case the object is so large that the
+nonparallelism of the gravitational forces is significant, then the
+center where one must apply the balancing force is not simple to
+describe, and it departs slightly from the center of mass. That is why
+one must distinguish between the center of mass and the center of
+gravity. The fact that an object supported exactly at the center of
+mass will balance in all positions has another interesting
+consequence. If, instead of gravitation, we have a pseudo force due to
+acceleration, we may use exactly the same mathematical procedure to
+find the position to support it so that there are no torques produced
+by the inertial force of acceleration. Suppose that the object is held
+in some manner inside a box, and that the box, and everything
+contained in it, is accelerating. We know that, from the point of view
+of someone at rest relative to this accelerating box, there will be an
+effective force due to inertia. That is, to make the object go along
+with the box, we have to push on it to accelerate it, and this force
+is “balanced” by the “force of inertia,” which is a pseudo force
+equal to the mass times the acceleration of the box. To the man in the
+box, this is the same situation as if the object were in a uniform
+gravitational field whose “[eq]” value is equal to the
+acceleration [eq]. Thus the inertial force due to accelerating an object has no
+torque about the center of mass.
+
+This fact has a very interesting consequence. In an inertial frame that
+is not accelerating, the torque is always equal to the rate of change of
+the angular momentum. However, about an axis through the center of mass
+of an object which is accelerating, it is still true that
+the torque is equal to the rate of change of the angular momentum. Even
+if the center of mass is accelerating, we may still choose one special
+axis, namely, one passing through the center of mass, such that it will
+still be true that the torque is equal to the rate of change of angular
+momentum around that axis. Thus the theorem that torque equals the rate
+of change of angular momentum is true in two general cases: (1) a fixed
+axis in inertial space, (2) an axis through the center of mass, even
+though the object may be accelerating.
+
+The mathematical techniques for the calculation of centers of mass are
+in the province of a mathematics course, and such problems provide good
+exercise in integral calculus. After one has learned calculus, however,
+and wants to know how to locate centers of mass, it is nice to know
+certain tricks which can be used to do so. One such trick makes use of
+what is called the theorem of Pappus. It works
+like this: if we take any closed area in a plane and generate a solid by
+moving it through space such that each point is always moved
+perpendicular to the plane of the area, the resulting solid has a total
+volume equal to the area of the cross section times the distance that
+the center of mass moved! Certainly this is true if we move the area in
+a straight line perpendicular to itself, but if we move it in a circle
+or in some other curve, then it generates a rather peculiar volume. For
+a curved path, the outside goes around farther, and the inside goes
+around less, and these effects balance out. So if we want to locate the
+center of mass of a plane sheet of uniform density, we can remember that
+the volume generated by spinning it about an axis is the distance that
+the center of mass goes around, times the area of the sheet.
+
+For example, if we wish to find the center of mass of a right triangle of
+base [eq] and height [eq] (Fig.  19–2 ), we might solve the problem in
+the following way. Imagine an axis along [eq], and rotate the triangle about that
+axis through a full [eq] degrees. This generates a cone. The distance that the
+[eq]-coordinate of the center of mass has moved is [eq]. The area which is
+being moved is the area of the triangle, [eq]. So the [eq]-distance
+of the center of mass times the area of the triangle is the volume swept out,
+which is of course [eq]. Thus [eq],
+or [eq]. In a similar manner, by rotating about the other axis, or by
+symmetry, we find [eq]. In fact, the center of mass of any uniform
+triangular area is where the three medians, the lines from the vertices through
+the centers of the opposite sides, all meet. That point is [eq] of the way
+along each median. Clue: Slice the triangle up into a lot of little
+pieces, each parallel to a base. Note that the median line bisects every piece,
+and therefore the center of mass must lie on this line.
+
+Now let us try a more complicated figure. Suppose that it is desired
+to find the position of the center of mass of a uniform semicircular
+disc—a disc sliced in half. Where is the center of mass? For a full
+disc, it is at the center, of course, but a half-disc is more
+difficult. Let [eq] be the radius and [eq] be the distance of the center
+of mass from the straight edge of the disc. Spin it around this edge
+as axis to generate a sphere. Then the center of mass has gone around
+[eq], the area is [eq] (because it is only half a
+circle). The volume generated is, of course, [eq], from which
+we find that
+\begin{equation*}
+(2\pi x)(\tfrac{1}{2}\pi r^2) = 4\pi r^3/3,
+\end{equation*}
+or
+\begin{equation*}
+x=4r/3\pi.
+\end{equation*}
+
+There is another theorem of Pappus which is a
+special case of the above one, and therefore equally true. Suppose that,
+instead of the solid semicircular disc, we have a semicircular piece of
+wire with uniform mass density along the wire, and we want to find its
+center of mass. In this case there is no mass in the interior, only on
+the wire. Then it turns out that the area which is swept by a
+plane curved line, when it moves as before, is the distance that the
+center of mass moves times the length of the line. (The line can
+be thought of as a very narrow area, and the previous theorem can be
+applied to it.)
+
+Now let us discuss the problem of finding the moments of
+inertia of various objects. The formula for the moment of inertia
+about the [eq]-axis of an object is
+\begin{equation}
+I =\sum m_i(x_i^2+y_i^2)\notag
+\end{equation}
+or
+\begin{equation}
+\label{Eq:I:19:4}
+I =\int(x^2+y^2)\,dm=\int(x^2+y^2)\rho\,dV.
+\end{equation}
+That is, we must sum the masses, each one multiplied by the square of
+its distance [eq] from the axis. Note that it is not the
+three-dimensional distance, only the two-dimensional distance squared,
+even for a three-dimensional object. For the most part, we shall
+restrict ourselves to two-dimensional objects, but the formula for
+rotation about the [eq]-axis is just the same in three dimensions.
+
+As a simple example, consider a rod rotating about a perpendicular
+axis through one end (Fig.  19–3 ). Now we must sum all
+the masses times the [eq]-distances squared (the [eq]’s being all zero
+in this case). What we mean by “the sum,” of course, is the integral
+of [eq] times the little elements of mass. If we divide the rod into
+small elements of length [eq], the corresponding elements of mass are
+proportional to [eq], and if [eq] were the length of the whole rod the
+mass would be [eq]. Therefore
+\begin{equation}
+dm = M\,dx/L\notag
+\end{equation}
+and so
+\begin{equation}
+\label{Eq:I:19:5}
+I=\int_0^Lx^2\,\frac{M\,dx}{L} = \frac{M}{L}\int_0^L
+x^2\,dx = \frac{ML^2}{3}.
+\end{equation}
+The dimensions of moment of inertia are always mass times length
+squared, so all we really had to work out was the factor [eq].
+
+Now what is [eq] if the rotation axis is at the center of the rod? We
+could just do the integral over again, letting [eq] range from
+[eq] to [eq]. But let us notice a few things
+about the moment of inertia. We can imagine the rod as two rods, each
+of mass [eq] and length [eq]; the moments of inertia of the two
+small rods are equal, and are both given by the
+formula ( 19.5 ). Therefore the moment of inertia is
+\begin{equation}
+\label{Eq:I:19:6}
+I=\frac{2(M/2)(L/2)^2}{3}=\frac{ML^2}{12}.
+\end{equation}
+Thus it is much easier to turn a rod about its center, than to swing
+it around an end.
+
+Of course, we could go on to compute the moments of inertia of various
+other bodies of interest. However, while such computations provide a
+certain amount of important exercise in the calculus, they are not
+basically of interest to us as such. There is, however, an interesting
+theorem which is very useful. Suppose we have an object, and we want
+to find its moment of inertia around some axis. That means we want the
+inertia needed to carry it by rotation about that axis. Now if we
+support the object on pivots at the center of mass, so that the object
+does not turn as it rotates about the axis (because there is no torque
+on it from inertial effects, and therefore it will not turn when we
+start moving it), then the forces needed to swing it around are the
+same as though all the mass were concentrated at the center of mass,
+and the moment of inertia would be simply [eq],
+where [eq] is the distance from the axis to the center of
+mass. But of course that is not the right formula for the moment of
+inertia of an object which is really being rotated as it revolves,
+because not only is the center of it moving in a circle, which would
+contribute an amount [eq] to the moment of inertia, but also we must
+turn it about its center of mass. So it is not unreasonable that we
+must add to [eq] the moment of inertia [eq] about the center of
+mass. So it is a good guess that the total moment of inertia about any
+axis will be
+\begin{equation}
+\label{Eq:I:19:7}
+I=I_c+MR_{\text{CM}}^2.
+\end{equation}
+
+This theorem is called the parallel-axis
+theorem , and may be easily proved. The
+moment of inertia about any axis is the mass times the sum of
+the [eq]’s and the [eq]’s, each squared: [eq].
+We shall concentrate on the [eq]’s, but of course the [eq]’s work the same
+way. Now [eq] is the distance of a particular point mass from the origin,
+but let us consider how it would look if we measured [eq] from the CM,
+instead of [eq] from the origin. To get ready for this analysis, we write
+\begin{equation*}
+x_i=x_i'+X_{\text{CM}}.
+\end{equation*}
+Then we just square this to find
+\begin{equation*}
+x_i^2=x_i'^2+2X_{\text{CM}}x_i'+X_{\text{CM}}^2.
+\end{equation*}
+So, when this is multiplied by [eq] and summed over all [eq], what
+happens? Taking the constants outside the summation sign, we get
+\begin{equation*}
+I_x=\sum m_ix_i'^2+2X_{\text{CM}}\sum m_ix_i'+
+X_{\text{CM}}^2\sum m_i.
+\end{equation*}
+The third sum is easy; it is just [eq]. In the second
+sum there are two pieces, one of them is [eq], which is the
+total mass times the [eq]-coordinate of the center of mass. But this
+contributes nothing, because [eq] is measured from the center
+of mass, and in these axes the average position of all the particles,
+weighted by the masses, is zero. The first sum, of course, is the
+[eq] part of [eq]. Thus we arrive at Eq. ( 19.7 ), just as we
+guessed.
+
+Let us check ( 19.7 ) for one example. Let us just see
+whether it works for the rod. For an axis through one end, the moment
+of inertia should be [eq], for we calculated that. The center of
+mass of a rod, of course, is in the center of the rod, at a
+distance [eq]. Therefore we should find that $ML^2/3 = ML^2/12 +
+M(L/2)^2$. Since one-quarter plus one-twelfth is one-third, we have
+made no fundamental error.
+
+Incidentally, we did not really need to use an integral to find the
+moment of inertia ( 19.5 ). If we simply assume that it is
+[eq] times [eq], an unknown coefficient, and then use the
+argument about the two halves to get [eq]
+for ( 19.6 ), then from our argument about transferring the
+axes we could prove that [eq],
+so [eq] must be [eq]. There is always another way to do it!
+
+In applying the parallel-axis theorem, it is of course important to
+remember that the axis for [eq] must be parallel to the axis
+about which the moment of inertia is wanted.
+
+One further property of the moment of inertia is worth mentioning
+because it is often helpful in finding the moment of inertia of
+certain kinds of objects. This property is that if one has a
+ plane figure and a set of coordinate axes with origin in the
+plane and [eq]-axis perpendicular to the plane, then the moment of
+inertia of this figure about the [eq]-axis is equal to the sum of the
+moments of inertia about the [eq]- and [eq]-axes. This is easily proved
+by noting that
+\begin{equation*}
+I_x=\sum m_i(y_i^2+z_i^2)=\sum m_iy_i^2
+\end{equation*}
+(since [eq]). Similarly,
+\begin{equation*}
+I_y = \sum m_i(x_i^2 +z_i^2)=\sum m_ix_i^2,
+\end{equation*}
+but
+\begin{align*}
+I_z=\sum m_i(x_i^2+y_i^2)&=\sum m_ix_i^2 + \sum m_iy_i^2\\[1ex]
+&=I_x+I_y.
+\end{align*}
+
+As an example, the moment of inertia of a uniform rectangular plate of
+mass [eq], width [eq], and length [eq], about an axis perpendicular to
+the plate and through
+its center is simply
+\begin{equation*}
+I = M(w^2 + L^2)/12,
+\end{equation*}
+because its moment of inertia about an axis in its plane and parallel
+to its length is [eq], i.e., just as for a rod of length [eq], and
+the moment of inertia about the other axis in its plane is [eq],
+just as for a rod of length [eq].
+
+To summarize, the moment of inertia of an object about a given axis,
+which we shall call the [eq]-axis, has the following properties:
+
+The moments of inertia of a number of elementary shapes having uniform
+mass densities are given in Table  19–1 , and the moments of
+inertia of some other objects, which may be deduced from
+Table  19–1 , using the above properties, are given in
+Table  19–2 .
+
+Now let us go on to discuss dynamics further. In the analogy between
+linear motion and angular motion that we discussed in
+Chapter  18 , we used the work theorem, but we did not talk
+about kinetic energy. What is the kinetic energy of a rigid body,
+rotating about a certain axis with an angular velocity [eq]? We can
+immediately guess the correct answer by using our analogies. The moment
+of inertia corresponds to the mass, angular velocity corresponds to
+velocity, and so the kinetic energy ought to be [eq],
+and indeed it is, as will now be demonstrated. Suppose the object is
+rotating about some axis so that each point has a velocity whose
+magnitude is [eq], where [eq] is the radius from the particular
+point to the axis. Then if [eq] is the mass of that point, the total
+kinetic energy of the whole thing is just the sum of the kinetic
+energies of all of the little pieces:
+\begin{equation*}
+T=\tfrac{1}{2}\sum m_iv_i^2=
+\tfrac{1}{2}\sum m_i(r_i\omega)^2.
+\end{equation*}
+Now [eq] is a constant, the same for all points. Thus
+\begin{equation}
+\label{Eq:I:19:8}
+T=\tfrac{1}{2}\omega^2\sum m_ir_i^2=\tfrac{1}{2}I\omega^2.
+\end{equation}
+
+At the end of Chapter  18 we pointed out that there are
+some interesting phenomena associated with an object which is not
+rigid, but which changes from one rigid condition with a definite
+moment of inertia, to another rigid condition. Namely, in our example
+of the turntable, we had a certain moment of inertia [eq] with our
+arms stretched out, and a certain angular velocity [eq]. When we
+pulled our arms in, we had a different moment of inertia, [eq], and a
+different angular velocity, [eq], but again we were “rigid.”
+The angular momentum remained constant, since there was no torque
+about the vertical axis of the turntable. This means that $I_1\omega_1
+= I_2\omega_2$. Now what about the energy? That is an interesting
+question. With our arms pulled in, we turn faster, but our moment of
+inertia is less, and it looks as though the energies might be
+equal. But they are not, because what does balance is
+[eq], not [eq]. So if we compare the kinetic energy before
+and after, the kinetic energy before is $\tfrac{1}{2}I_1\omega_1^2 =
+\tfrac{1}{2}L\omega_1[eq]L=[eq]I_1\omega_1=[eq]I_2\omega_2$ is the
+angular momentum. Afterward, by the same argument, we have $T =
+\tfrac{1}{2}L\omega_2[eq]\omega_2 > \omega_1$ the kinetic
+energy of rotation is greater than it was before. So we had a certain
+energy when our arms were out, and when we pulled them in, we were
+turning faster and had more kinetic energy. What happened to the
+theorem of the conservation of energy? Somebody must have done some
+work. We did work! When did we do any work? When we move a weight
+horizontally, we do not do any work. If we hold a thing out and pull
+it in, we do not do any work. But that is when we are not rotating!
+When we are rotating, there is centrifugal
+force on the
+weights. They are trying to fly out, so when we are going around we
+have to pull the weights in against the centrifugal
+force. So, the
+work we do against the centrifugal
+force ought to
+agree with the
+difference in rotational energy, and of course it does. That is where
+the extra kinetic energy comes from.
+
+There is still another interesting feature which we can treat only
+descriptively, as a matter of general interest. This feature is a
+little more advanced, but is worth pointing out because it is quite
+curious and produces many interesting effects.
+
+Consider that turntable experiment again. Consider the body and the
+arms separately, from the point of view of the man who is
+rotating. After the weights are pulled in, the whole object is
+spinning faster, but observe, the central part of the body is
+not changed , yet it is turning faster after the event than
+before. So, if we were to draw a circle around the inner body, and
+consider only objects inside the circle, their angular momentum
+would change ; they are going faster. Therefore there must be a
+torque exerted on the body while we pull in our arms. No torque can be
+exerted by the centrifugal
+force, because that is
+radial. So that
+means that among the forces that are developed in a rotating system,
+centrifugal force
+is not the entire story, there is another
+force . This other force is called Coriolis force , and it has
+the very strange property that when we move something in a rotating
+system, it seems to be pushed sidewise. Like the centrifugal
+force, it
+is an apparent force. But if we live in a system that is rotating, and
+move something radially, we find that we must also push it sidewise to
+move it radially. This sidewise push which we have to exert is what
+turned our body around.
+
+Now let us develop a formula to show how this Coriolis force really
+works. Suppose Moe is sitting on a carousel that appears to him to be
+stationary. But from the point of view of Joe, who is standing on the
+ground and who knows the right laws of mechanics, the carousel is
+going around. Suppose that we have drawn a radial line on the
+carousel, and that Moe is moving some mass radially along this
+line. We would like to demonstrate that a sidewise force is required
+to do that. We can do this by paying attention to the angular momentum
+of the mass. It is always going around with the same angular velocity
+[eq], so that the angular momentum is
+\begin{equation*}
+L=mv_{\text{tang}}r=m\omega r\cdot r=m\omega r^2.
+\end{equation*}
+So when the mass is close to the center, it has relatively little
+angular momentum, but if we move it to a new position farther out, if
+we increase [eq], [eq] has more angular momentum, so a torque must
+be exerted in order to move it along the radius. (To walk along the
+radius in a carousel, one has to lean over and push sidewise. Try it
+sometime.) The torque that is required is the rate of change of [eq]
+with time as [eq] moves along the radius. If [eq] moves only along the
+radius, omega stays constant, so that the torque is
+\begin{equation*}
+\tau=F_cr=\ddt{L}{t}=\ddt{(m\omega r^2)}{t}=2m\omega r\,\ddt{r}{t},
+\end{equation*}
+where [eq] is the Coriolis force. What we really want to know is what
+sidewise force has to be exerted by Moe in order to move [eq]
+out at speed [eq]. This is [eq] [eq] [eq].
+
+Now that we have a formula for the Coriolis force, let us look at the
+situation a little more carefully, to see whether we can understand
+the origin of this force from a more elementary point of view. We note
+that the Coriolis force is the same at every radius, and is evidently
+present even at the origin! But it is especially easy to understand it
+at the origin, just by looking at what happens from the inertial
+system of Joe, who is standing on the ground. Figure  19–4 
+shows three successive views of [eq] just as it passes the origin at $t
+= 0[eq]m$ does
+not move in a straight line, but in a curved path tangent to a
+diameter of the carousel where [eq]. In order for [eq] to go in a
+curve, there must be a force to accelerate it in absolute space. This
+is the Coriolis force.
+
+This is not the only case in which the Coriolis force occurs. We can
+also show that if an object is moving with constant speed around the
+circumference of a circle, there is also a Coriolis force. Why? Moe sees
+a velocity [eq] around the circle. On the other hand, Joe sees [eq]
+going around the circle with the velocity [eq],
+because [eq] is also carried by the carousel. Therefore we know what the
+force really is, namely, the total centripetal force due to the velocity [eq], or
+[eq]; that is the actual force. Now from Moe’s point of view, this
+centripetal force has three pieces. We may write it all out as follows:
+\begin{equation*}
+F_r=-\frac{mv_J^2}{r}=-\frac{mv_M^2}{r}-
+2mv_M\omega-m\omega^2r.
+\end{equation*}
+Now, [eq] is the force that Moe would see. Let us try to understand it.
+Would Moe appreciate the first term? “Yes,” he would say, “even if I
+were not turning, there would be a centripetal force if I were to run around a circle
+with velocity [eq].” This is simply the centripetal
+force that Moe
+would expect, having nothing to do with rotation. In addition, Moe is
+quite aware that there is another centripetal force that would act even on objects
+which are standing still on his carousel. This is the third term. But
+there is another term in addition to these, namely the second term,
+which is again [eq]. The Coriolis force [eq] was tangential
+when the velocity was radial, and now it is radial when the velocity is
+tangential. In fact, one expression has a minus sign relative to the
+other. The force is always in the same direction, relative to the
+velocity, no matter in which direction the velocity is. The force is at
+right angles to the velocity, and of magnitude [eq].

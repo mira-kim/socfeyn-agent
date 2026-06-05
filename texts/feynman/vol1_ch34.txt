@@ -1,0 +1,830 @@
+The Feynman Lectures on Physics Vol. I Ch. 34: Relativistic Effects in Radiation
+================================================================================
+
+Sections: 34–1 Moving sources | 34–2 Finding the “apparent” motion | 34–3 Synchrotron radiation | 34–4 Cosmic synchrotron radiation | 34–5 Bremsstrahlung | 34–6 The Doppler effect | 34–7 The [eq] four-vector | 34–8 Aberration | 34–9 The momentum of light
+
+
+
+In the present chapter we shall describe a number of miscellaneous
+effects in connection with radiation, and then we shall be finished
+with the classical theory of light propagation. In our analysis of
+light, we have gone rather far and into considerable detail. The only
+phenomena of any consequence associated with electromagnetic radiation
+that we have not discussed is what happens if radiowaves are contained
+in a box with reflecting walls, the size of the box being comparable
+to a wavelength, or are transmitted down a long tube. The phenomena of
+so-called cavity resonators and waveguides we shall
+discuss later; we shall first use another physical
+example—sound—and then we shall return to this subject. Except for
+this, the present chapter is our last consideration of the classical
+theory of light.
+
+We can summarize all the effects that we shall now discuss by
+remarking that they have to do with the effects of moving
+sources . We no longer assume that the source is localized, with all
+its motion being at a relatively low speed near a fixed point.
+
+We recall that the fundamental laws of electrodynamics say that, at
+large distances from a moving charge, the electric field is given by
+the formula
+\begin{equation}
+\label{Eq:I:34:1}
+\FLPE=-\frac{q}{4\pi\epsO c^2}\,
+\frac{d^2\FLPe_{R'}}{dt^2}.
+\end{equation}
+The second derivative of the unit vector [eq] which points in
+the apparent direction of the charge, is the determining feature of
+the electric field. This unit vector does not point toward the
+ present position of the charge, of course, but rather in the
+direction that the charge would seem to be, if the information travels
+only at the finite speed [eq] from the charge to the observer.
+
+Associated with the electric field is a magnetic field, always at
+right angles to the electric field and at right angles to the apparent
+direction of the source, given by the formula
+\begin{equation}
+\label{Eq:I:34:2}
+\FLPB=-\FLPe_{R'}\times\FLPE/c.
+\end{equation}
+
+Until now we have considered only the case in which motions are
+nonrelativistic in speed, so that there is no appreciable motion in
+the direction of the source to be considered. Now we shall be more
+general and study the case where the motion is at an arbitrary
+velocity, and see what different effects may be expected in those
+circumstances. We shall let the motion be at an arbitrary speed, but
+of course we shall still assume that the detector is very far from the
+source.
+
+We already know from our discussion in Chapter  28 that the
+only things that count in [eq] are the changes in the
+ direction of [eq]. Let the coordinates of the charge
+be [eq], with [eq] measured along the direction of observation
+(Fig.  34–1 ). At a given moment in time, say the
+moment [eq], the three components of the position are [eq], [eq],
+and [eq]. The distance [eq] is very nearly equal to $R(\tau) = R_0
++ z(\tau)[eq]\FLPe_{R'}$ depends
+mainly on [eq] and [eq], but hardly at all upon [eq]: the transverse
+components of the unit vector are [eq] and [eq], and when we
+differentiate these components we get things like [eq] in the
+denominator:
+\begin{equation*}
+\ddt{(x/R)}{t}=\frac{dx/dt}{R}-\ddt{z}{t}\,\frac{x}{R^2}.
+\end{equation*}
+So, when we are far enough away the only terms we have to worry about
+are the variations of [eq] and [eq]. Thus we take out the factor [eq]
+and get
+\begin{align}
+E_x&=-\frac{q}{4\pi\epsO c^2R_0}\,\frac{d^2x'}{dt^2},\notag\\[1ex]
+\label{Eq:I:34:3}
+E_y&=-\frac{q}{4\pi\epsO c^2R_0}\,\frac{d^2y'}{dt^2},
+\end{align}
+where [eq] is the distance, more or less, to [eq]; let us take it as
+the distance [eq] to the origin of the coordinates [eq]. Thus the
+electric field is a constant multiplied by a very simple thing, the
+second derivatives of the [eq]- and [eq]-coordinates. (We could put it
+more mathematically by calling [eq] and [eq] the transverse 
+components of the position vector [eq] of the charge, but this
+would not add to the clarity.)
+
+Of course, we realize that the coordinates must be measured at the
+retarded time. Here we find that [eq] does affect the
+retardation. What time is the retarded time? If the time of
+observation is called [eq] (the time at [eq]) then the time [eq] to
+which this corresponds at [eq] is not the time [eq], but is delayed by
+the total distance that the light has to go, divided by the speed of
+light. In the first approximation, this delay is [eq], a constant
+(an uninteresting feature), but in the next approximation we must
+include the effects of the position in the [eq]-direction at the
+time [eq], because if [eq] is a little farther back, there is a little
+more retardation. This is an effect that we have neglected before, and
+it is the only change needed in order to make our results valid for
+all speeds.
+
+What we must now do is to choose a certain value of [eq] and calculate
+the value of [eq] from it, and thus find out where [eq] and [eq] are
+at that [eq]. These are then the retarded [eq] and [eq], which we call
+[eq] and [eq], whose second derivatives determine the field. Thus
+[eq] is determined by
+\begin{equation}
+t=\tau+\frac{R_0}{c}+\frac{z(\tau)}{c}\notag
+\end{equation}
+and
+\begin{equation}
+\label{Eq:I:34:4}
+x'(t)=x(\tau),\quad
+y'(t)=y(\tau).
+\end{equation}
+Now these are complicated equations, but it is easy enough to make a
+geometrical picture to describe their solution. This picture will give
+us a good qualitative feeling for how things work, but it still takes
+a lot of detailed mathematics to deduce the precise results of a
+complicated problem.
+
+The above equation has an interesting simplification. If we disregard
+the uninteresting constant delay [eq], which just means that we
+must change the origin of [eq] by a constant, then it says that
+\begin{equation}
+\label{Eq:I:34:5}
+ct=c\tau+z(\tau),\quad
+x'=x(\tau),\quad
+y'=y(\tau).
+\end{equation}
+Now we need to find [eq] and [eq] as functions of [eq], not [eq], and
+we can do this in the following way: Eq. ( 34.5 ) says that
+we should take the actual motion and add a constant (the speed of
+light) times [eq]. What that turns out to mean is shown in
+Fig.  34–2 . We take the actual motion of the charge (shown at
+left) and imagine that as it is going around it is being swept away from
+the point [eq] at the speed [eq] (there are no contractions from
+relativity or anything like that; this is just a mathematical addition
+of the [eq]). In this way we get a new motion, in which the
+line-of-sight coordinate is [eq], as shown at the right. (The figure
+shows the result for a rather complicated motion in a plane, but of
+course the motion may not be in one plane—it may be even more
+complicated than motion in a plane.) The point is that the horizontal
+(i.e., line-of-sight) distance now is no longer the old [eq], but is $z +
+c\tau[eq]ct$. Thus we have found a picture of the
+curve, [eq] (and [eq]) against [eq]! All we have to do to find the field
+is to look at the acceleration of this curve, i.e., to differentiate it
+twice. So the final answer is: in order to find the electric field for a
+moving charge, take the motion of the charge and translate it back at
+the speed [eq] to “open it out”; then the curve, so drawn, is a curve
+of the [eq] and [eq] positions of the function of [eq]. The acceleration
+of this curve gives the electric field as a function of [eq]. Or, if we
+wish, we can now imagine that this whole “rigid” curve moves forward
+at the speed [eq] through the plane of sight, so that the point of
+intersection with the plane of sight has the coordinates [eq] and [eq].
+The acceleration of this point makes the electric field. This solution
+is just as exact as the formula we started with—it is simply a
+geometrical representation.
+
+If the motion is relatively slow, for instance if we have an
+oscillator just going up and down slowly, then when we shoot that
+motion away at the speed of light, we would get, of course, a simple
+cosine curve, and that gives a formula we have been looking at for a
+long time: it gives the field produced by an oscillating charge. A
+more interesting example is an electron moving rapidly, very nearly at
+the speed of light, in a circle. If we look in the plane of the
+circle, the retarded [eq] appears as shown in Fig.  34–3 .
+What is this curve? If we imagine a radius vector from the center of the
+circle to the charge, and if we extend this radial line a little bit
+past the charge, just a shade if it is going fast, then we come to a
+point on the line that goes at the speed of light. Therefore, when we
+translate the motion back at the speed of light, that corresponds to
+having a wheel with a charge on it rolling backward (without slipping)
+at the speed [eq]; thus we find a curve which is very close to a
+cycloid—it is called a curtate cycloid .
+If the charge is going very nearly at the speed of light, the “cusps”
+are very sharp indeed; if it went at exactly the speed of light, they
+would be actual cusps, infinitely sharp. “Infinitely sharp” is
+interesting; it means that near a cusp the second derivative is
+enormous. Once in each cycle we get a sharp pulse of electric field.
+This is not at all what we would get from a nonrelativistic motion,
+where each time the charge goes around there is an oscillation which is
+of about the same “strength” all the time. Instead, there are very
+sharp pulses of electric field spaced at time intervals [eq] apart,
+where [eq] is the period of revolution. These strong electric fields
+are emitted in a narrow cone in the direction of motion of the charge.
+When the charge is moving away from [eq], there is very little curvature
+and there is very little radiated field in the direction of [eq].
+
+We have very fast electrons moving in circular paths in the
+synchrotron; they are travelling at very nearly the speed [eq], and it
+is possible to see the above radiation as actual light ! Let us
+discuss this in more detail.
+
+In the synchrotron we have electrons which go around in circles in a
+uniform magnetic field. First, let us see why they go in circles. From
+Eq. ( 28.2 ), we know that the force on a particle in a
+magnetic field is given by
+\begin{equation}
+\label{Eq:I:34:6}
+\FLPF=q\FLPv\times\FLPB,
+\end{equation}
+and it is at right angles both to the field and to the velocity. As
+usual, the force is equal to the rate of change of momentum with
+time. If the field is directed upward out of the paper, the momentum
+of the particle and the force on it are as shown in
+Fig.  34–4 . Since the force is at right angles to the
+velocity, the kinetic energy, and therefore the speed, remains
+ constant . All the magnetic field does is to change the
+ direction of motion . In a short time [eq], the momentum
+vector changes at right angles to itself by an amount $\Delta\FLPp =
+\FLPF\,\Delta t[eq]\FLPp$ turns through an
+angle [eq] [eq] [eq], since [eq].
+But in this same time the particle has gone a distance $\Delta s =
+v\,\Delta t[eq]AB[eq]CD$ will intersect at a
+point [eq] such that [eq] [eq] [eq], where [eq].
+Combining this with the previous expressions, we find
+[eq] [eq] [eq] [eq], from which we find
+\begin{equation}
+\label{Eq:I:34:7}
+p=qBR
+\end{equation}
+and
+\begin{equation}
+\label{Eq:I:34:8}
+\omega=qvB/p.
+\end{equation}
+Since this same argument can be applied during the next instant, the
+next, and so on, we conclude that the particle must be moving in a
+ circle of radius [eq], with angular velocity [eq].
+
+The result that the momentum of the particle is equal to a charge
+times the radius times the magnetic field is a very important law that
+is used a great deal. It is important for practical purposes because
+if we have elementary particles which all have the same charge and we
+observe them in a magnetic field, we can measure the radii of
+curvature of their orbits and, knowing the magnetic field, thus
+determine the momenta of the particles. If we multiply both sides of
+Eq. ( 34.7 ) by [eq], and express [eq] in terms of the
+electronic charge, we can measure the momentum in units of the
+ electron volt . In those units our
+formula is
+\begin{equation}
+\label{Eq:I:34:9}
+pc(\text{eV})=3\times10^8(q/q_e)BR,
+\end{equation}
+where [eq], [eq], and the speed of light are all expressed in the mks
+system, the latter being [eq], numerically.
+
+The mks unit of magnetic field is called a weber per square
+meter . There is an older unit which is still in common use, called a
+ gauss . One weber/m² is equal to
+[eq] gauss. To give an idea of how big magnetic fields are, the
+strongest magnetic field that one can usually make in iron is about
+[eq] gauss; beyond that, the advantage of using iron
+disappears. Today, electromagnets wound with superconducting wire are
+able to produce steady fields of over [eq] gauss strength—that is,
+[eq] mks units. The field of the earth is a few tenths of a gauss at
+the equator.
+
+Returning to Eq. ( 34.9 ), we could imagine the synchrotron
+running at a billion electron volts, so [eq] would be [eq] for a
+billion electron volts. (We shall come back to the energy in just a
+moment.) Then, if we had a [eq] corresponding to, say,
+[eq] gauss, which is a good substantial field, one mks unit, then we see
+that [eq] would have to be [eq] meters. The actual radius of the
+Caltech synchrotron is [eq] meters, the field is a little bigger, and
+the energy is [eq] billion, but it is the same idea. So now we have a
+feeling for why the synchrotron has the size it has.
+
+We have calculated the momentum, but we know that the total energy,
+including the rest energy, is given by [eq], and
+for an electron the rest energy corresponding to [eq] is
+[eq] eV, so when [eq] is [eq] eV we can neglect [eq],
+and so for all practical purposes [eq] when the speeds are
+relativistic. It is practically the same to say the energy of an
+electron is a billion electron volts as to say the momentum times [eq]
+is a billion electron volts. If [eq] eV, it is easy to show that
+the speed differs from the speed of light by but one part in eight
+million!
+
+We turn now to the radiation emitted by such a particle. A particle
+moving on a circle of radius [eq] meters, or [eq] meters
+circumference, goes around once in roughly the time it takes light to
+go [eq] meters. So the wavelength that should be emitted by such a
+particle would be [eq] meters—in the shortwave radio region. But
+because of the piling up effect that we have been discussing
+(Fig.  34–3 ), and because the distance by which we must
+extend the radius to reach the speed [eq] is only one part in eight
+million of the radius, the cusps of the
+curtate cycloid
+are enormously sharp compared with the distance between them. The
+acceleration, which involves a second derivative with respect to time,
+gets twice the “compression factor” of [eq] because the time
+scale is reduced by eight million twice in the neighborhood of the cusp.
+Thus we might expect the effective wavelength to be much shorter, to the
+extent of [eq] times [eq] smaller than [eq] meters, and that
+corresponds to the x-ray region.
+(Actually, the cusp itself is not the entire determining factor; one
+must also include a certain region about the cusp. This changes the
+factor to the [eq] power instead of the square, but still leaves us
+above the optical region.) Thus, even though a slowly moving electron
+would have radiated [eq]-meter radiowaves, the relativistic effect cuts
+down the wavelength so much that we can see it! Clearly, the
+light should be polarized , with the electric field perpendicular
+to the uniform magnetic field.
+
+To further appreciate what we would observe, suppose that we were to
+take such light (to simplify things, because these pulses are so far
+apart in time, we shall just take one pulse) and direct it onto a
+diffraction grating, which is a lot of scattering wires. After this
+pulse comes away from the grating, what do we see? (We should see red
+light, blue light, and so on, if we see any light at all.) What
+ do we see? The pulse strikes the grating head-on, and all the
+oscillators in the grating, together, are violently moved up and then
+back down again, just once. They then produce effects in various
+directions, as shown in Fig.  34–5 . But the point [eq] is
+closer to one end of the grating than to the other, so at this point
+the electric field arrives first from wire [eq], next from [eq], and so
+on; finally, the pulse from the last wire arrives. In short, the sum
+of the reflections from all the successive wires is as shown in
+Fig.  34–6 (a); it is an electric field which is a series of
+pulses, and it is very like a sine wave whose wavelength is the distance
+between the pulses, just as it would be for monochromatic light striking
+the grating! So, we get colored light all right. But, by the same
+argument, will we not get light from any kind of a “pulse”? No.
+Suppose that the curve were much smoother; then we would add all the
+scattered waves together, separated by a small time between them
+(Fig.  34–6 b). Then we see that the field would not shake at
+all, it would be a very smooth curve, because each pulse does not vary
+much in the time interval between pulses.
+
+The electromagnetic radiation emitted by relativistic charged
+particles circulating in a magnetic field is called synchrotron
+radiation . It is so named for obvious reasons, but it is not limited
+specifically to synchrotrons, or even to earthbound laboratories. It
+is exciting and interesting that it also occurs in nature!
+
+In the year 1054 the Chinese and Japanese civilizations were among the
+most advanced in the world; they were conscious of the external
+universe, and they recorded, most remarkably, an explosive bright star
+in that year. (It is amazing that none of the European monks, writing
+all the books of the middle ages, even bothered to write that a star
+exploded in the sky, but they did not.) Today we may take a picture of
+that star, and what we see is shown in Fig.  34–7 . On the
+outside is a big mass of red filaments, which is produced by the atoms
+of the thin gas “ringing” at their natural frequencies; this makes a
+bright line spectrum with different frequencies in it. The red happens
+in this case to be due to nitrogen. On the other hand, in the central
+region is a mysterious, fuzzy patch of light in a continuous 
+distribution of frequency, i.e., there are no special frequencies
+associated with particular atoms. Yet this is not dust “lit up” by
+nearby stars, which is one way by which one can get a continuous
+spectrum. We can see stars through it, so it is transparent, but it is
+ emitting light.
+
+In Fig.  34–8 we look at the same object, using light in
+a region of the spectrum which has no bright spectral line, so that we
+see only the central region. But in this case, also, polarizers have
+been put on the telescope, and the two views correspond to two
+orientations [eq] apart. We see that the pictures are different!
+That is to say, the light is polarized. The reason, presumably, is
+that there is a local magnetic field, and many very energetic
+electrons are going around in that magnetic field.
+
+We have just illustrated how the electrons could go around the field
+in a circle. We can add to this, of course, any uniform motion in the
+direction of the field, since the force, [eq], has no
+component in this direction and, as we have already remarked, the
+synchrotron radiation is evidently polarized in a direction at right
+angles to the projection of the magnetic field onto the plane of
+sight.
+
+Putting these two facts together, we see that in a region where one
+picture is bright and the other one is black, the light must have its
+electric field completely polarized in one direction. This means that
+there is a magnetic field at right angles to this direction, while in
+other regions, where there is a strong emission in the other picture,
+the magnetic field must be the other way. If we look carefully at
+Fig.  34–8 , we may notice that there is, roughly
+speaking, a general set of “lines” that go one way in one picture
+and at right angles to this in the other. The pictures show a kind of
+fibrous structure. Presumably, the magnetic field lines will tend to
+extend relatively long distances in their own direction, and so,
+presumably, there are long regions of magnetic field with all the
+electrons spiralling one way, while in another region the field is the
+other way and the electrons are also spiralling that way.
+
+What keeps the electron energy so high for so long a time? After all,
+it is [eq] years since the explosion—how can they keep going so
+fast? How they maintain their energy and how this whole thing keeps
+going is still not thoroughly understood.
+
+We shall next remark briefly on one other interesting effect of a very
+fast-moving particle that radiates energy. The idea is very similar to
+the one we have just discussed. Suppose that there are charged
+particles in a piece of matter and a very fast electron, say, comes by
+(Fig.  34–9 ). Then, because of the electric field around
+the atomic nucleus the electron is pulled, accelerated, so that the
+curve of its motion has a slight kink or bend in it. If the electron
+is travelling at very nearly the speed of light, what is the electric
+field produced in the direction [eq]? Remember our rule: we take the
+actual motion, translate it backwards at speed [eq], and that gives us
+a curve whose curvature measures the electric field. It was coming
+toward us at the speed [eq], so we get a backward motion, with the
+whole picture compressed into a smaller distance in proportion as $c -
+v[eq]c[eq]1- v/c \ll 1$, there is a very sharp
+and rapid curvature at [eq], and when we take the second derivative of
+that we get a very high field in the direction of the motion. So when
+very energetic electrons move through matter they spit radiation in a
+forward direction. This is called bremsstrahlung . As a matter of
+fact, the synchrotron is used, not so much to make high-energy electrons
+(actually if we could get them out of the machine more conveniently we
+would not say this) as to make very energetic photons—gamma rays—by
+passing the energetic electrons through a solid tungsten “target,” and
+letting them radiate photons from this bremsstrahlung effect.
+
+Now we go on to consider some other examples of the effects of moving
+sources. Let us suppose that the source is a stationary atom which is
+oscillating at one of its natural frequencies, [eq]. Then we
+know that the frequency of the light we would observe is [eq].
+But now let us take another example, in which we have a
+similar oscillator oscillating with a frequency [eq], and at the
+same time the whole atom, the whole oscillator, is moving along in a
+direction toward the observer at velocity [eq]. Then the actual motion
+in space, of course, is as shown in Fig.  34–10 (a). Now
+we play our usual game, we add [eq]; that is to say, we translate
+the whole curve backward and we find then that it oscillates as in
+Fig.  34–10 (b). In a given amount of time [eq], when
+the oscillator would have gone a distance [eq], on the [eq]
+vs. [eq] diagram it goes a distance [eq]. So all the oscillations
+of frequency [eq] in the time [eq] are now found in the
+interval [eq]; they are squashed together,
+and as this curve comes by us at speed [eq], we will see light of a
+ higher frequency , higher by just the compression factor $(1 -
+v/c)$. Thus we observe
+\begin{equation}
+\label{Eq:I:34:10}
+\omega=\frac{\omega_1}{1-v/c}.
+\end{equation}
+
+We can, of course, analyze this situation in various other
+ways. Suppose that the atom were emitting, instead of sine waves, a
+series of pulses, pip, pip, pip, pip, at a certain frequency [eq].
+At what frequency would they be received by us? The first
+one that arrives has a certain delay, but the next one is delayed less
+because in the meantime the atom moves closer to the
+receiver. Therefore, the time between the “pips” is decreased by the
+motion. If we analyze the geometry of the situation, we find that the
+frequency of the pips is increased by the factor [eq].
+
+Is [eq], then, the frequency that would be
+observed if we took an ordinary atom, which had a natural frequency
+[eq], and moved it toward the receiver at speed [eq]? No; as we
+well know, the natural frequency [eq] of a moving atom is not
+the same as that measured when it is standing still, because of the
+relativistic dilation in the rate of passage of time. Thus if
+[eq] were the true natural frequency, then the modified natural
+frequency [eq] would be
+\begin{equation}
+\label{Eq:I:34:11}
+\omega_1=\omega_0\sqrt{1-v^2/c^2}.
+\end{equation}
+Therefore the observed frequency [eq] is
+\begin{equation}
+\label{Eq:I:34:12}
+\omega=\frac{\omega_0\sqrt{1-v^2/c^2}}{1-v/c}.
+\end{equation}
+
+The shift in frequency observed in the above situation is called the
+ Doppler effect : if something moves toward us the light it emits
+appears more violet, and if it moves away it appears more red.
+
+We shall now give two more derivations of this same interesting and
+important result. Suppose, now, that the source is standing
+still and is emitting waves at frequency [eq], while the
+ observer is moving with speed [eq] toward the source. After a
+certain period of time [eq] the observer will have moved to a new
+position, a distance [eq] from where he was at [eq]. How many
+radians of phase will he have seen go by? A certain number,
+[eq], went past any fixed point, and in addition the observer
+has swept past some more by his own motion, namely a number [eq]
+(the number of radians per meter times the distance). So the total
+number of radians in the time [eq], or the observed frequency, would
+be [eq]. We have made this analysis from the
+point of view of a man at rest; we would like to know how it would
+look to the man who is moving. Here we have to worry again about the
+difference in clock rate for the two observers, and this time that
+means that we have to divide by [eq]. So if
+[eq] is the wave number, the number of radians per meter in the
+direction of motion, and [eq] is the frequency, then the
+observed frequency for a moving man is
+\begin{equation}
+\label{Eq:I:34:13}
+\omega=\frac{\omega_0+k_0v}{\sqrt{1-v^2/c^2}}.
+\end{equation}
+
+For the case of light, we know that [eq]. So, in this
+particular problem, the equation would read
+\begin{equation}
+\label{Eq:I:34:14}
+\omega=\frac{\omega_0(1+v/c)}{\sqrt{1-v^2/c^2}},
+\end{equation}
+which looks completely unlike formula ( 34.12 )! Is the
+frequency that we would observe if we move toward a source different
+than the frequency that we would see if the source moved toward us? Of
+course not! The theory of relativity says that these two must be
+ exactly equal . If we were expert enough mathematicians we would
+probably recognize that these two mathematical expressions are 
+exactly equal! In fact, the necessary equality of the two
+expressions is one of the ways by which some people like to
+demonstrate that relativity requires a time dilation, because if we
+did not put those square-root factors in, they would no longer be
+equal.
+
+Since we know about relativity, let us analyze it in still a third way,
+which may appear a little more general. (It is really the same thing,
+since it makes no difference how we do it!) According to the
+relativity theory there is a relationship between position and time as
+observed by one man and position and time as seen by another who is
+moving relative to him. We wrote down those relationships long ago
+(Chapter  16 ). This is the Lorentz
+transformation and its inverse:
+\begin{equation}
+\begin{alignedat}{3}
+x'&=\frac{x+vt}{\sqrt{1-v^2/c^2}},&&\quad
+x&&=\frac{x'-vt'}{\sqrt{1-v^2/c^2}},\\[1ex]
+t'&=\frac{t+vx/c^2}{\sqrt{1-v^2/c^2}},&&\quad
+t&&=\frac{t'-vx'/c^2}{\sqrt{1-v^2/c^2}}.
+\end{alignedat}
+\label{Eq:I:34:15}
+\end{equation}
+If we were standing still on the ground, the form of a wave would
+be [eq]; all the nodes and maxima and minima would
+follow this form. But what would a man in motion, observing the same
+physical wave, see? Where the field is zero, the positions of all the
+nodes are the same (when the field is zero , everyone 
+measures the field as zero); that is a relativistic invariant. So the
+form is the same for the other man too, except that we must transform
+it into his frame of reference:
+\begin{equation*}
+\cos\,(\omega t - kx)=\cos\biggl[
+\omega\,\frac{t'-vx'/c^2}{\sqrt{1-v^2/c^2}}-k\,
+\frac{x'-vt'}{\sqrt{1-v^2/c^2}}\biggr].
+\end{equation*}
+If we regroup the terms inside the brackets, we get
+ 
+\begin{alignat}{4}
+\cos\,(\omega t - kx)
+&=\cos
+\biggl[
+\displaystyle\underbrace{\frac{\omega+kv}{\sqrt{1-v^2/c^2}}}
+\,&t'&-&
+\displaystyle\underbrace{\frac{k+v\omega/c^2}{\sqrt{1-v^2/c^2}}}
+\,&x'&
+\biggr]\notag\\
+\label{Eq:I:34:16}
+&=\cos
+[
+\kern{2.5em}\omega'
+\,&t'&-&
+k'\kern{2.3em}
+\,&x'&
+].
+\end{alignat}
+ 
+ 
+\begin{alignat}{2}
+\cos\,(\omega t - kx)
+&=\cos
+\biggl[
+\displaystyle\underbrace{\frac{\omega+kv}{\sqrt{1-v^2/c^2}}\,t'}
+&-&
+\displaystyle\underbrace{\frac{k+v\omega/c^2}{\sqrt{1-v^2/c^2}}\,x'}
+\biggr]\notag\\[1ex]
+\label{Eq:I:34:16}
+&=\kern{2.5em}\cos\,[\omega't'&-&\kern{2.3em}k'x'].
+\end{alignat}
+ 
+This is again a wave, a cosine wave, in which there is a certain
+frequency [eq], a constant multiplying [eq], and some other
+constant, [eq], multiplying [eq]. We call [eq] the wave number, or the
+number of waves per meter, for the other man. Therefore the other man
+will see a new frequency and a new wave number given by
+\begin{align}
+\label{Eq:I:34:17}
+\omega'&=\frac{\omega+kv}{\sqrt{1-v^2/c^2}},\\[1ex]
+\label{Eq:I:34:18}
+k'&=\frac{k+\omega v/c^2}{\sqrt{1-v^2/c^2}}.
+\end{align}
+If we look at ( 34.17 ), we see that it is the same
+formula ( 34.13 ), that we obtained by a more physical
+argument.
+
+The relationships indicated in Eqs. ( 34.17 )
+and ( 34.18 ) are very interesting, because these say that the new
+frequency [eq] is a combination of the old frequency [eq] and the old
+wave number [eq], and that the new wave number is a combination of the old wave
+number and frequency. Now the wave number is the rate of change of phase with
+distance, and the frequency is the rate of change of phase with time, and in
+these expressions we see a close analogy with the Lorentz transformation of the
+position and time: if [eq] is thought of as being like [eq], and [eq] is
+thought of as being like [eq] divided by [eq], then the new [eq] will be
+like [eq], and the new [eq] will be like [eq]. That is to say, under
+the Lorentz transformation [eq] and [eq] transform the same way as do [eq]
+and [eq] . They constitute what we call a four-vector ; when a quantity has
+four components transforming like time and space, it is a four-vector.
+Everything seems all right, then, except for one little thing: we said that a
+four-vector has to have four components ; where are the other two
+components? We have seen that [eq] and [eq] are like time and space in one
+space direction, but not in all directions, and so we must next study the
+problem of the propagation of light in three space dimensions, not just in one
+direction, as we have been doing up until now.
+
+Suppose that we have a coordinate system, [eq], [eq], [eq], and a wave which
+is travelling along and whose wavefronts are as shown in
+Fig.  34–11 . The wavelength of the wave is [eq], but the
+direction of motion of the wave does not happen to be in the direction
+of one of the axes. What is the formula for such a wave? The answer is
+clearly [eq], where [eq] and [eq] is the
+distance along the direction of motion of the wave—the component of
+the spatial position in the direction of motion. Let us put it this way:
+if [eq] is the vector position of a point in space, then [eq]
+is [eq], where [eq] is a unit vector in the direction
+of motion. That is, [eq] is just [eq], the component
+of distance in the direction of motion. Therefore our wave
+is [eq].
+
+Now it turns out to be very convenient to define a vector [eq],
+which is called the wave vector , which has a magnitude equal to
+the wave number, [eq], and is pointed in the direction of
+propagation of the waves:
+\begin{equation}
+\label{Eq:I:34:19}
+\FLPk=2\pi\FLPe_k/\lambda=k\FLPe_k.
+\end{equation}
+Using this vector, our wave can be written as $\cos\,(\omega t -
+\FLPk\cdot\FLPr)[eq]\cos\,(\omega t - k_xx - k_yy - k_zz)$. What
+is the significance of a component of [eq], say [eq]? Clearly,
+[eq] is the rate of change of phase with respect to [eq]. Referring to
+Fig.  34–11 , we see that the phase changes as we
+change [eq], just as if there were a wave along [eq], but of a longer
+wavelength . The “wavelength in the [eq]-direction” is longer than a
+natural, true wavelength by the secant of the angle [eq] between
+the actual direction of propagation and the [eq]-axis:
+\begin{equation}
+\label{Eq:I:34:20}
+\lambda_x=\lambda/\cos\alpha.
+\end{equation}
+Therefore the rate of change of phase, which is proportional to the
+ reciprocal of [eq], is smaller by the
+factor [eq]; that is just how [eq] would vary—it would be the
+magnitude of [eq], times the cosine of the angle between [eq]
+and the [eq]-axis!
+
+That, then, is the nature of the wave vector that we use to represent a
+wave in three dimensions. The four quantities [eq], [eq],
+[eq], [eq] transform in relativity as a four-vector, where [eq]
+corresponds to the time, and [eq], [eq], [eq] correspond to the [eq]-,
+[eq]-, and [eq]-components of the four-vector.
+
+In our previous discussion of special relativity
+(Chapter  17 ), we learned that there are ways of making
+relativistic dot products with four-vectors. If we use the position
+vector [eq], where [eq] stands for the four components (time and
+three space ones), and if we call the wave vector [eq], where the
+index [eq] again has four values, time and three space ones, then the
+dot product of [eq] and [eq] is written [eq] (see
+Chapter  17 ). This dot product is an invariant, independent
+of the coordinate system; what is it equal to? By the definition of
+this dot product in four dimensions, it is
+\begin{equation}
+\label{Eq:I:34:21}
+\sideset{}{'}\sum k_\mu x_\mu = \omega t-k_xx-k_yy-k_zz.
+\end{equation}
+We know from our study of vectors that [eq] is invariant
+under the Lorentz transformation, since [eq] is a four-vector. But
+this quantity is precisely what appears inside the cosine for a plane
+wave, and it ought to be invariant under a Lorentz
+transformation. We cannot have a formula with something that changes
+inside the cosine, since we know that the phase of the wave cannot
+change when we change the coordinate system.
+
+In deriving Eqs. ( 34.17 ) and ( 34.18 ), we have taken a simple example where [eq] happened to be in a direction
+of motion, but of course we can generalize it to other cases also. For
+example, suppose there is a source sending out light in a certain
+direction from the point of view of a man at rest, but we are moving
+along on the earth, say (Fig.  34–12 ). From which direction
+does the light appear to come? To find out, we will have to write down
+the four components of [eq] and apply the Lorentz transformation. The
+answer, however, can be found by the following argument: we have to
+point our telescope at an angle to see the light. Why? Because light is
+coming down at the speed [eq], and we are moving sidewise at the
+speed [eq], so the telescope has to be tilted forward so that as the
+light comes down it goes “straight” down the tube. It is very easy to
+see that the horizontal distance is [eq] when the vertical distance
+is [eq], and therefore, if [eq] is the angle of tilt, $\tan\theta'
+= v/c$. How nice! How nice, indeed—except for one little thing:
+[eq] is not the angle at which we would have to set the
+telescope relative to the earth , because we made our analysis
+from the point of view of a “fixed” observer. When we said the
+horizontal distance is [eq], the man on the earth would have found a
+different distance, since he measured with a “squashed” ruler. It
+turns out that, because of that contraction effect,
+\begin{equation}
+\label{Eq:I:34:22}
+\tan\theta=\frac{v/c}{\sqrt{1-v^2/c^2}},
+\end{equation}
+which is equivalent to
+\begin{equation}
+\label{Eq:I:34:23}
+\sin\theta=v/c.
+\end{equation}
+It will be instructive for the student to derive this result, using
+the Lorentz transformation.
+
+This effect, that a telescope has to be tilted, is called
+ aberration , and it has been observed. How can we observe
+it? Who can say where a given star should be? Suppose we
+ do have to look in the wrong direction to see a star; how do we
+know it is the wrong direction? Because the earth goes around the
+sun. Today we have to point the telescope one way; six months later we
+have to tilt the telescope the other way. That is how we can tell that
+there is such an effect.
+
+Now we turn to a different topic. We have never, in all our discussion
+of the past few chapters, said anything about the effects of the
+ magnetic field that is associated with light. Ordinarily, the
+effects of the magnetic field are very small, but there is one
+interesting and important effect which is a consequence of the
+magnetic field. Suppose that light is coming from a source and is
+acting on a charge and driving that charge up and down. We will
+suppose that the electric field is in the [eq]-direction, so the motion
+of the charge is also in the [eq]-direction: it has a position [eq] and
+a velocity [eq], as shown in Fig.  34–13 . The magnetic
+field is at right angles to the electric field. Now as the electric
+field acts on the charge and moves it up and down, what does the
+magnetic field do? The magnetic field acts on the charge (say an
+electron) only when it is moving; but the electron is moving,
+it is driven by the electric field, so the two of them work together:
+While the thing is going up and down it has a velocity and there is a
+force on it, [eq] times [eq] times [eq]; but in which direction is
+this force? It is in the direction of the propagation of
+light . Therefore, when light is shining on a charge and it is
+oscillating in response to that light, there is a driving force in the
+direction of the light beam. This is called radiation
+pressure or
+light pressure.
+
+Let us determine how strong the radiation pressure is. Evidently it
+is [eq] or, since everything is oscillating, it is the time
+average of this, [eq]. From ( 34.2 ) the strength of
+the magnetic field is the same as the strength of the electric field
+divided by [eq], so we need to find the average of the electric field,
+times the velocity, times the charge, times [eq]: $\avg{F} =
+q\avg{vE}/c[eq]q[eq]E$ is the electric
+force on a charge, and the force on the charge times the velocity is
+the work [eq] being done on the charge! Therefore the force, the
+“pushing momentum,” that is delivered per second by the light, is
+equal to [eq] times the energy absorbed from the light per
+second! That is a general rule, since we did not say how strong the
+oscillator was, or whether some of the charges cancel out. In
+any circumstance where light is being absorbed, there is a
+pressure . The momentum that the light delivers is always equal to the
+energy that is absorbed, divided by [eq]:
+\begin{equation}
+\label{Eq:I:34:24}
+\avg{F} = \frac{dW/dt}{c}.
+\end{equation}
+
+That light carries energy we already know. We now understand that it
+also carries momentum , and further, that the momentum carried
+is always [eq] times the energy.
+
+When light is emitted from a source there is a recoil effect: the same
+thing in reverse. If an atom is emitting an energy [eq] in some
+direction, then there is a recoil momentum [eq]. If light is
+ reflected normally from a mirror, we get twice the force.
+
+That is as far as we shall go using the classical theory of light. Of
+course we know that there is a quantum theory, and that in many
+respects light acts like a particle. The energy of a light-particle is
+a constant times the frequency:
+\begin{equation}
+\label{Eq:I:34:25}
+W=h\nu=\hbar\omega.
+\end{equation}
+We now appreciate that light also carries a momentum equal to the
+energy divided by [eq], so it is also true that these effective
+particles, these photons , carry a momentum
+\begin{equation}
+\label{Eq:I:34:26}
+p=W/c=\hbar\omega/c=\hbar k.
+\end{equation}
+The direction of the momentum is, of course, the direction of
+propagation of the light. So, to put it in vector form,
+\begin{equation}
+\label{Eq:I:34:27}
+W=\hbar\omega,\quad
+\FLPp=\hbar\FLPk.
+\end{equation}
+We also know, of course, that the energy and momentum of a particle
+should form a four-vector. We have just discovered that [eq]
+and [eq] form a four-vector. Therefore it is a good thing
+that ( 34.27 ) has the same constant in both cases; it means
+that the quantum theory and the theory of relativity are mutually
+consistent.
+
+Equation ( 34.27 ) can be written more elegantly as $p_\mu =
+\hbar k_\mu$, a relativistic equation, for a particle associated with
+a wave. Although we have discussed this only for photons, for which
+[eq] (the magnitude of [eq]) equals [eq] and [eq], the
+relation is much more general. In quantum mechanics all 
+particles, not only photons, exhibit wavelike properties, but the
+frequency and wave number of the waves is related to the energy and
+momentum of particles by ( 34.27 ) (called the de Broglie
+relations) even when [eq] is not equal to [eq].
+
+In the last chapter we saw that a beam of right or left circularly
+polarized light also carries angular momentum in an amount
+proportional to the energy [eq] of the wave. In the quantum
+picture, a beam of circularly polarized light is regarded as a stream
+of photons, each carrying an angular momentum [eq], along the
+direction of propagation. That is what becomes of polarization in the
+corpuscular point of view—the photons carry angular momentum like
+spinning rifle bullets. But this “bullet” picture is really as
+incomplete as the “wave” picture, and we shall have to discuss these
+ideas more fully in a later chapter on Quantum Behavior.

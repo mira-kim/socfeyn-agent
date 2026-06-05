@@ -1,0 +1,989 @@
+The Feynman Lectures on Physics Vol. III Ch. 15: The Independent Particle Approximation
+=======================================================================================
+
+Sections: 15–1 Spin waves | 15–2 Two spin waves | 15–3 Independent particles | 15–4 The benzene molecule | 15–5 More organic chemistry | 15–6 Other uses of the approximation
+
+
+
+In Chapter  13 we worked out the theory for the
+propagation of an electron or of some other “particle,” such as an
+atomic excitation, through a crystal lattice. In the last chapter we
+applied the theory to semiconductors. But when we talked about
+situations in which there are many electrons we disregarded any
+interactions between them. To do this is of course only an
+approximation. In this chapter we will discuss further the idea that
+you can disregard the interaction between the electrons. We will also
+use the opportunity to show you some more applications of the theory
+of the propagation of particles. Since we will generally continue to
+disregard the interactions between particles, there is very little
+really new in this chapter except for the new applications. The first
+example to be considered is, however, one in which it is possible to
+write down quite exactly the correct equations when there is more than
+one “particle” present. From them we will be able to see how the
+approximation of disregarding the interactions is made. We will not,
+though, analyze the problem very carefully.
+
+As our first example we will consider a “spin wave” in a ferromagnetic
+crystal. We have discussed the theory of ferromagnetism in
+Chapter  36 of Volume II. At zero temperature all the
+electron spins that contribute to the magnetism in the body of a
+ferromagnetic crystal are parallel. There is an interaction energy
+between the spins, which is lowest when all the spins are down. At any
+nonzero temperature, however, there is some chance that some of the
+spins are turned over. We calculated the probability in an approximate
+manner in Chapter  36 . This time we will describe the
+quantum mechanical theory—so you will see what you would have to do if
+you wanted to solve the problem more exactly. (We will still make some
+idealizations by assuming that the electrons are localized at the atoms
+and that the spins interact only with neighboring spins.)
+
+We consider a model in which the electrons at each atom are all paired
+except one, so that all of the magnetic effects come from one
+spin-[eq] electron per atom. Further, we imagine that these
+electrons are localized at the atomic sites in the lattice. The model
+corresponds roughly to metallic nickel.
+
+We also assume that there is an interaction between any two adjacent
+spinning electrons which gives a term in the energy of the system
+\begin{equation}
+\label{Eq:III:15:1}
+E=-\sum_{i,j}K\FLPsigma_i\cdot\FLPsigma_j,
+\end{equation}
+
+where [eq]’s represent the spins and the summation is over all
+adjacent pairs of electrons. We have already discussed this kind of
+interaction energy when we considered the hyperfine splitting of
+hydrogen due to the interaction of the magnetic moments of the
+electron and proton in a hydrogen atom. We expressed it then
+as [eq]. Now, for a given
+pair, say the electrons at atom [eq] and at atom [eq], the Hamiltonian
+would be [eq]. We have a term for each such
+pair, and the Hamiltonian is (as you would expect for classical
+energies) the sum of these terms for each interacting pair. The energy
+is written with the factor [eq] so that a positive [eq] will correspond
+to ferromagnetism—that is, the lowest energy results when adjacent
+spins are parallel. In a real crystal, there may be other terms which
+are the interactions of next nearest neighbors, and so on, but
+we don’t need to consider such complications at this stage.
+
+With the Hamiltonian of Eq. ( 15.1 ) we have a complete
+description of the ferromagnet—within our approximation—and the
+properties of the magnetization should come out. We should also be
+able to calculate the thermodynamic properties due to the
+magnetization. If we can find all the energy levels, the properties of
+the crystal at a temperature [eq] can be found from the principle that
+the probability that a system will be found in a given state of
+energy [eq] is proportional to [eq]. This problem has never been
+completely solved.
+
+We will show some of the problems by taking a simple example in which
+all the atoms are in a line—a one-dimensional lattice. You can
+easily extend the ideas to three dimensions. At each atomic location
+there is an electron which has two possible states, either spin up or
+spin down, and the whole system is described by telling how all of the
+spins are arranged. We take the Hamiltonian of the system to be the
+operator of the interaction energy. Interpreting the spin vectors of
+Eq. ( 15.1 ) as the sigma-operators—or the
+sigma-matrices—we write for the linear lattice
+\begin{equation}
+\label{Eq:III:15:2}
+\Hop=\sum_n-\frac{A}{2}\,\FLPsigmaop_n\cdot\FLPsigmaop_{n+1}.
+\end{equation}
+
+In this equation we have written the constant as [eq] for convenience
+(so that some of the later equations will be exactly the same as the
+ones in Chapter  13 ).
+
+Now what is the lowest state of this system? The state of lowest
+energy is the one in which all the spins are parallel—let’s say, all
+up. 1 We can write
+this state as [eq], or [eq]
+for the “ground,” or lowest, state. It’s easy to figure out the
+energy for this state. One way is to write out all the vector sigmas
+in terms of [eq], [eq], and [eq], and work
+through carefully what each term of the Hamiltonian does to the ground
+state, and then add the results. We can, however, also use a good
+short cut. We saw in Section  12–2 , that
+[eq] could be written in terms of the
+Pauli spin exchange operator
+like this:
+\begin{equation}
+\label{Eq:III:15:3}
+\FLPsigmaop_i\cdot\FLPsigmaop_j=(2\Pop^{\text{spin ex}}_{ij}-1),
+\end{equation}
+
+where the operator [eq] interchanges the spins
+of the [eq]th and [eq]th electrons. With this substitution the
+Hamiltonian becomes
+\begin{equation}
+\label{Eq:III:15:4}
+\Hop=-A\sum_n(\Pop^{\text{spin ex}}_{n,n+1}-\tfrac{1}{2}).
+\end{equation}
+
+It is now easy to work out what happens to different states. For
+instance if [eq] and [eq] are both up, then exchanging the spins leaves
+everything unchanged, so [eq] acting on the state just gives
+the same state back, and is equivalent to multiplying by [eq]. The
+expression [eq] is just equal to one-half. (From
+now on we will leave off the descriptive superscript on the [eq].)
+
+For the ground state all spins are up; so if you exchange a particular
+pair of spins, you get back the original state. The ground state is a
+stationary state. If you operate on it with the Hamiltonian you get
+the same state again multiplied by a sum of terms, [eq] for each
+pair of spins. That is, the energy of the system in the ground state
+is [eq] per atom.
+
+Next we would like to look at the energies of some of the excited
+states. It will be convenient to measure the energies with respect to
+the ground state—that is, to choose the ground state as our zero of
+energy. We can do that by adding the energy [eq] to each term in the
+Hamiltonian. That just changes the “[eq]” in
+Eq. ( 15.4 ) to “[eq].” Our new Hamiltonian is
+\begin{equation}
+\label{Eq:III:15:5}
+\Hop=-A\sum_n(\Pop_{n,n+1}-1).
+\end{equation}
+
+With this Hamiltonian the energy of the lowest state is zero; the spin
+exchange operator is equivalent to multiplying by unity (for the
+ground state) which is cancelled by the “[eq]” in each term.
+
+For describing states other than the ground state we will need a
+suitable set of base states. One convenient approach is to group the
+states according to whether one electron has spin down, or two
+electrons have spin down, and so on. There are, of course, many states
+with one spin down. The down spin could be at atom “4,” or at
+atom “5,” or at atom “6,” … We can, in fact, choose just such
+states for our base states. We could write them this way:
+[eq], [eq], [eq], … It will, however, be more convenient
+later if we label the “odd atom”—the one with the down-spinning
+electron—by its coordinate [eq]. That is, we’ll define the
+state [eq] to be one with all the electrons spinning up except for
+the one on the atom at [eq], which has a down-spinning electron (see
+Fig.  15–1 ). In general, [eq] is the state with one down
+spin
+that is located at the coordinate [eq] of the [eq]th atom.
+
+What is the action of the Hamiltonian ( 15.5 ) on the
+state [eq]? One term of the Hamiltonian is
+say [eq]. The operator [eq] exchanges the two spins
+of the adjacent atoms [eq], [eq]. But in the state [eq] these are
+both up, and nothing happens; [eq] is equivalent to
+multiplying by [eq]:
+\begin{equation*}
+\Pop_{7,8}\,\ket{x_5}=\ket{x_5}.
+\end{equation*}
+It follows that
+\begin{equation*}
+(\Pop_{7,8}-1)\,\ket{x_5}=0.
+\end{equation*}
+Thus all the terms of the Hamiltonian give zero—except those
+involving atom [eq], of course. On the state [eq], the
+operation [eq] exchanges the spin of atom [eq] (up) and atom [eq]
+(down). The result is the state with all spins up except the atom
+at [eq]. That is
+\begin{equation*}
+\Pop_{4,5}\,\ket{x_5}=\ket{x_4}.
+\end{equation*}
+In the same way
+\begin{equation*}
+\Pop_{5,6}\,\ket{x_5}=\ket{x_6}.
+\end{equation*}
+
+Hence, the only terms of the Hamiltonian which survive are
+[eq] and [eq]. Acting on [eq] they
+produce [eq] and [eq],
+respectively. The result is
+ 
+\begin{equation}
+\label{Eq:III:15:6}
+\Hop\,\ket{x_5}=-A\sum_n(\Pop_{n,n+1}-1)\,\ket{x_5}=
+-A\{\ket{x_6}+\ket{x_4}-2\,\ket{x_5}\}.
+\end{equation}
+ 
+ 
+\begin{align}
+\Hop\,\ket{x_5}&=-A\sum_n(\Pop_{n,n+1}-1)\,\ket{x_5}\notag\\[.5ex]
+\label{Eq:III:15:6}
+&=-A\{\ket{x_6}+\ket{x_4}-2\,\ket{x_5}\}.
+\end{align}
+
+When the Hamiltonian acts on state [eq] it gives rise to some
+amplitude to be in states [eq] and [eq]. That just means
+that there is a certain amplitude to have the down spin jump over to
+the next atom. So because of the interaction between the spins, if we
+begin with one spin down, then there is some probability that at a
+later time another one will be down instead. Operating on the general
+state [eq], the Hamiltonian gives
+\begin{equation}
+\label{Eq:III:15:7}
+\Hop\,\ket{x_n}=-A\{\ket{x_{n+1}}+\ket{x_{n-1}}-2\,\ket{x_n}\}.
+\end{equation}
+Notice particularly that if we take a complete set of states with only
+one spin down, they will only be mixed among themselves. The
+Hamiltonian will never mix these states with others that have more
+spins down. So long as you only exchange spins you never change the
+total number of down spins.
+
+It will be convenient to use the matrix notation for the Hamiltonian,
+say [eq]; Eq. ( 15.7 )
+is equivalent to
+\begin{equation}
+\begin{aligned}
+H_{n,n}&=2A;\\[1ex]
+H_{n,n+1}&=H_{n,n-1}=-A;\\[1ex]
+H_{n,m}&=0,\text{ for }\abs{n-m}>1.
+\end{aligned}
+\label{Eq:III:15:8}
+\end{equation}
+
+Now what are the energy levels for states with one spin down? As usual
+we let [eq] be the amplitude that some state [eq] is in the
+state [eq]. If [eq] is to be a definite energy state,
+all the [eq]’s must vary with time in the same way, namely,
+\begin{equation}
+\label{Eq:III:15:9}
+C_n=a_ne^{-iEt/\hbar}.
+\end{equation}
+We can put this trial solution into our usual Hamiltonian equation
+\begin{equation}
+\label{Eq:III:15:10}
+i\hbar\,\ddt{C_n}{t}=\sum_mH_{nm}C_m,
+\end{equation}
+using Eq. ( 15.8 ) for the matrix elements. Of course we
+get an infinite number of equations, but they can all be written as
+\begin{equation}
+\label{Eq:III:15:11}
+Ea_n=2Aa_n-Aa_{n-1}-Aa_{n+1}.
+\end{equation}
+We have again exactly the same problem we worked out in
+Chapter 13 , except that where we had [eq] we now
+have [eq]. The solutions correspond to amplitudes [eq] (the down-spin
+amplitude) which propagate along the lattice with a propagation
+constant [eq] and an energy
+\begin{equation}
+\label{Eq:III:15:12}
+E=2A(1-\cos kb),
+\end{equation}
+where [eq] is the lattice constant.
+
+The definite energy solutions correspond to “waves” of down
+spin—called “spin waves.” And for each wavelength there is a
+corresponding energy. For large wavelengths (small [eq]) this energy
+varies as
+\begin{equation}
+\label{Eq:III:15:13}
+E=Ab^2k^2.
+\end{equation}
+Just as before, we can consider a localized wave packet (containing,
+however, only long wavelengths) which corresponds to a spin-down
+electron in one part of the lattice. This down spin will behave like a
+“particle.” Because its energy is related to [eq]
+by ( 15.13 ) the “particle” will have an effective mass:
+\begin{equation}
+\label{Eq:III:15:14}
+m_{\text{eff}}=\frac{\hbar^2}{2Ab^2}.
+\end{equation}
+These “particles” are sometimes called “magnons.”
+
+Now we would like to discuss what happens if there are two down
+spins. Again we pick a set of base states. We’ll choose states in
+which there are down spins at two atomic locations, such as the state
+shown in Fig. 15–2 . We can label such a state by the
+[eq]-coordinates
+of the two sites with down spins. The one shown can be
+called [eq]. In general the base states are [eq]—a
+doubly infinite set! In this system of description, the
+state [eq] and the state [eq] are exactly the same
+state, because each simply says that there is a down spin at [eq] and
+one at [eq]; there is no meaning to the order. Furthermore, the
+state [eq] has no meaning, there isn’t such a thing. We can
+describe any state [eq] by giving the amplitudes to be in each
+of the base states. Thus [eq] now means
+the amplitude for a system in the state [eq] to be in a state
+in which both the [eq]th and [eq]th atoms have a down spin. The
+complications which now arise are not complications of ideas—they
+are merely complexities in bookkeeping. (One of the complexities of
+quantum mechanics is just the bookkeeping. With more and more down
+spins, the notation becomes more and more elaborate with lots of
+indices and the equations always look very horrifying; but the ideas
+are not necessarily more complicated than in the simplest case.)
+
+The equations of motion of the spin system are the differential
+equations for the [eq]. They are
+\begin{equation}
+\label{Eq:III:15:15}
+i\hbar\,\ddt{C_{n,m}}{t}=\sum_{i,j}(H_{nm,ij})C_{ij}.
+\end{equation}
+Suppose we want to find the stationary states. As usual, the
+derivatives with respect to time become [eq] times the amplitudes and
+the [eq] can be replaced by the coefficients [eq]. Next we
+have to work out carefully the effect of [eq] on a state with spins [eq]
+and [eq] down. It is not hard to figure out. Suppose for a moment that
+[eq] and [eq] are far enough apart so that we don’t have to worry about
+the obvious trouble. The operation of exchange at the location [eq]
+will move the down spin either to the [eq] or [eq] atom, and so
+there’s an amplitude that the present state has come from the
+state [eq] and also an amplitude that it has come from the
+state [eq]. Or it may have been the other spin that
+moved; so there’s a certain amplitude that [eq] is fed
+from [eq] or from [eq]. These effects should all be
+equal. The final result for the Hamiltonian equation on [eq] is
+ 
+\begin{equation}
+\label{Eq:III:15:16}
+Ea_{m,n}=-A(a_{m+1,n}+a_{m-1,n}+a_{m,n+1}+a_{m,n-1})+4Aa_{m,n}.
+\end{equation}
+ 
+ 
+
+\begin{gather}
+\label{Eq:III:15:16}
+Ea_{m,n}=\\
+-A(a_{m+1,n}\!+a_{m-1,n}\!+a_{m,n+1}\!+a_{m,n-1})\!+\!4Aa_{m,n}.\notag
+\end{gather}
+
+This equation is correct except in two situations. If [eq] there is
+no equation at all, and if [eq], then two of the terms in
+Eq. ( 15.16 ) should be missing. We are going to
+disregard these exceptions . We simply ignore the fact that some few of
+these equations are slightly altered. After all, the crystal is supposed
+to be infinite, and we have an infinite number of terms; neglecting a
+few might not matter much. So for a first rough approximation let’s
+forget about the altered equations. In other words, we assume that
+Eq. ( 15.16 ) is true for all [eq] and [eq], even for [eq]
+and [eq] next to each other. This is the essential part of our
+approximation .
+
+Then the solution is not hard to find. We get immediately
+\begin{equation}
+\label{Eq:III:15:17}
+C_{m,n}=a_{m,n}e^{-iEt/\hbar},
+\end{equation}
+with
+\begin{equation}
+\label{Eq:III:15:18}
+a_{m,n}=(\text{const.})\,e^{ik_1x_m}e^{ik_2x_n},
+\end{equation}
+where
+\begin{equation}
+\label{Eq:III:15:19}
+E=4A-2A\cos k_1b-2A\cos k_2b.
+\end{equation}
+
+Think for a moment what would happen if we had two independent,
+single spin waves (as in the previous section) corresponding to
+[eq] and [eq]; they would have energies, from
+Eq. ( 15.12 ), of
+\begin{equation*}
+E_1 =(2A-2A\cos k_1b)
+\end{equation*}
+and
+\begin{equation*}
+E_2 =(2A-2A\cos k_2b).
+\end{equation*}
+Notice that the energy [eq] in Eq. ( 15.19 ) is just their sum,
+\begin{equation}
+\label{Eq:III:15:20}
+E=E_1+E_2.
+\end{equation}
+In other words we can think of our solution in this way. There are two
+particles—that is, two spin waves. One of them has a momentum
+described by [eq], the other by [eq], and the energy of the system
+is the sum of the energies of the two objects. The two particles act
+completely independently. That’s all there is to it.
+
+Of course we have made some approximations, but we do not wish to
+discuss the precision of our answer at this point. However, you might
+guess that in a reasonable size crystal with billions of atoms—and,
+therefore, billions of terms in the Hamiltonian—leaving out a few
+terms wouldn’t make much of an error. If we had so many down spins
+that there was an appreciable density, then we would certainly have to
+worry about the corrections.
+
+[Interestingly enough, an exact solution can be written down if there
+are just the two down spins. The result is not particularly
+important. But it is interesting that the equations can be solved
+exactly for this case. The solution is:
+\begin{equation}
+\label{Eq:III:15:21}
+a_{m,n}=\exp[ik_c(x_m+x_n)]\sin(k\abs{x_m-x_n}),
+\end{equation}
+with the energy
+\begin{equation}
+E=4A-2A\cos k_1b-2A\cos k_2b,\notag
+\end{equation}
+and with the wave numbers [eq] and [eq] related to [eq] and [eq] by
+\begin{equation}
+\label{Eq:III:15:22}
+k_1=k_c-k,\quad
+k_2=k_c+k.
+\end{equation}
+This solution includes the “interaction” of the two spins. It
+describes the fact that when the spins come together there is a
+certain chance of scattering. The spins act very much like particles
+with an interaction. But the detailed theory of their scattering goes
+beyond what we want to talk about here.]
+
+In the last section we wrote down a Hamiltonian, Eq. ( 15.15 ), for a
+two-particle system. Then using an approximation which is equivalent to
+neglecting any “interaction” of the two particles, we found the stationary
+states described by Eqs. ( 15.17 ) and ( 15.18 ).
+This state is just the product of two single-particle states. The solution we
+have given for [eq] in Eq. ( 15.18 ) is, however, really not
+satisfactory. We have very carefully pointed out earlier that the
+state [eq] is not a different state from [eq]—the
+ order of [eq] and [eq] has no significance. In general, the algebraic
+expression for the amplitude [eq] must be unchanged if we interchange the
+values of [eq] and [eq], since that doesn’t change the state. Either way, it
+should represent the amplitude to find a down spin at [eq] and a down spin
+at [eq]. But notice that ( 15.18 ) is not symmetric in [eq]
+and [eq]—since [eq] and [eq] can in general be different.
+
+The trouble is that we have not forced our solution of
+Eq. ( 15.15 ) to satisfy this additional condition.
+Fortunately it is easy to fix things up. Notice first that a solution of
+the Hamiltonian equation just as good as ( 15.18 ) is
+\begin{equation}
+\label{Eq:III:15:23}
+a_{m,n}=Ke^{ik_2x_m}e^{ik_1x_n}.
+\end{equation}
+
+It even has the same energy we got for ( 15.18 ). Any
+linear combination of ( 15.18 ) and ( 15.23 ) is
+also a good solution, and has an energy still given by
+Eq. ( 15.19 ). The solution we should have chosen—because
+of our symmetry requirement—is just the sum of ( 15.18 )
+and ( 15.23 ):
+\begin{equation}
+\label{Eq:III:15:24}
+a_{m,n}=K[e^{ik_1x_m}e^{ik_2x_n}+e^{ik_2x_m}e^{ik_1x_n}].
+\end{equation}
+
+Now, given any [eq] and [eq] the amplitude [eq] is independent
+of which way we put [eq] and [eq]—if we should happen to define
+[eq] and [eq] reversed we get the same amplitude. Our interpretation
+of Eq. ( 15.24 ) in terms of “magnons” must also be
+different. We can no longer say that the equation represents
+ one particle with wave number [eq] and a second particle
+with wave number [eq]. The amplitude ( 15.24 ) represents
+ one state with two particles (magnons). The state is
+characterized by the two wave numbers [eq] and [eq]. Our solution
+looks like a compound state of one particle with the
+momentum [eq] and another particle with the momentum $p_2=\hbar
+k_2$, but in our state we can’t say which particle is which.
+
+By now, this discussion should remind you of Chapter  4 
+and our story of identical particles. We have just been showing that the
+particles of the spin waves—the magnons—behave like identical
+Bose particles. All amplitudes must
+be symmetric in the coordinates of the two particles—which is the same
+as saying that if we “interchange the two particles,” we get back the
+same amplitude and with the same sign. But, you may be thinking, why did
+we choose to add the two terms in making
+Eq. ( 15.24 ). Why not subtract? With a minus sign,
+interchanging [eq] and [eq] would just change the sign of [eq]
+which doesn’t matter. But interchanging [eq] and [eq] doesn’t
+change anything —all the electrons of the crystal are exactly where
+they were before, so there is no reason for even the sign of the
+amplitude to change. The magnons will behave like Bose
+particles. 2
+
+The main points of this discussion have been twofold: First, to show
+you something about spin waves, and, second, to demonstrate a state
+whose amplitude is a product of two amplitudes, and whose
+energy is the sum of the energies corresponding to the two
+amplitudes. For independent particles the amplitude is the
+product and the energy is the sum. You can easily see why the energy
+is the sum. The energy is the coefficient of [eq] in an imaginary
+exponential—it is proportional to the frequency. If two objects are
+doing something, one of them with the amplitude [eq] and
+the other with the amplitude [eq], and if the amplitude
+for the two things to happen together is the product of the amplitudes
+for each, then there is a single frequency in the product which is the
+sum of the two frequencies. The energy corresponding to the amplitude
+product is the sum of the two energies.
+
+We have gone through a rather long-winded argument to tell you a
+simple thing. When you don’t take into account any interaction between
+particles, you can think of each particle independently. They can
+individually exist in the various different states they would have
+alone, and they will each contribute the energy they would have had if
+they were alone. However, you must remember that if they are identical
+particles, they may behave either as Bose or as Fermi
+particles depending upon the problem. Two
+extra electrons added to a crystal, for instance, would have to behave
+like Fermi particles. When the
+positions of two electrons are interchanged, the amplitude must reverse
+sign. In the equation corresponding to Eq. ( 15.24 ) there
+would have to be a minus sign between the two terms on the right. As a
+consequence, two Fermi particles
+cannot be in exactly the same condition—with equal spins and
+equal [eq]’s. The amplitude for this state is zero.
+
+Although quantum mechanics provides the basic laws that determine the
+structures of molecules, these laws can be applied exactly only to the
+most simple compounds. The chemists have, therefore, worked out
+various approximate methods for calculating some of the properties of
+complicated molecules. We would now like to show you how the
+independent particle approximation is used by the organic chemists. We
+begin with the benzene molecule.
+
+We discussed the benzene molecule from another point of view in
+Chapter  10 . There we took an approximate picture of the
+molecule as a two-state system, with the two base states shown in
+Fig.  15–3 . There is a ring of six carbons with a hydrogen bonded
+to
+the carbon at each location. With the conventional picture of valence
+bonds it is necessary to assume double bonds between half of the
+carbon atoms, and in the lowest energy condition there are the two
+possibilities shown in the figure. There are also other, higher-energy
+states. When we discussed benzene in Chapter  10 , we just
+took the two states and forgot all the rest. We found that the
+ground-state energy of the molecule was not the energy of one of the
+states in the figure, but was lower than that by an amount
+proportional to the amplitude to flip from one of these states to the
+other.
+
+Now we’re going to look at the same molecule from a completely different
+point of view—using a different kind of approximation. The two points
+of view will give us different answers, but if we improve either
+approximation it should lead to the truth, a valid description of
+benzene. However, if we don’t bother to improve them, which is of course
+the usual situation, then you should not be surprised if the two
+descriptions do not agree exactly. We shall at least show that also with
+the new point-of-view the lowest energy of the benzene molecule is lower
+than either of the three-bond structures of Fig.  15–3 .
+
+Now we want to use the following picture. Suppose we imagine the six
+carbon atoms of a benzene molecule connected only by single bonds as
+in Fig.  15–4 . We have removed six electrons—since a bond stands
+for a pair of electrons—so we have a six-times ionized benzene
+molecule. Now we will consider what happens when we put back the six
+electrons one at a time, imagining that each one can run freely around
+the ring. We assume also that all the bonds shown in Fig.  15–4 are
+satisfied, and don’t need to be considered further.
+
+What happens when we put one electron back into the molecular ion? It
+might, of course, be located in any one of the six positions around
+the ring—corresponding to six base states. It would also have a
+certain amplitude, say [eq], to go from one position to the next. If we
+analyze the stationary states, there would be certain possible energy
+levels. That’s only for one electron.
+
+Next put a second electron in. And now we make the most ridiculous
+approximation that you can think of— that what one electron
+does is not affected by what the other is doing . Of course they
+really will interact; they repel each other through the Coulomb force,
+and furthermore when they are both at the same site, they must have
+considerably different energy than twice the energy for one being
+there. Certainly the approximation of independent particles is not
+legitimate when there are only six sites—particularly when we want
+to put in six electrons. Nevertheless the organic chemists have
+been able to learn a lot by making this kind of an approximation.
+
+Before we work out the benzene molecule in detail, let’s consider a
+simpler example—the ethylene molecule which
+contains just two carbon atoms with two hydrogen atoms on either side as
+shown in Fig.  15–5 . This molecule has one “extra” bond
+involving two electrons between the two carbon atoms. Now remove one of
+these electrons; what do we have? We can look at it as a two-state
+system—the remaining electron can be at one carbon or the other. We
+can analyze it as a two-state system. The possible energies for the
+single electron are either [eq] or [eq], as shown in
+Fig.  15–6 .
+
+Now add the second electron. Good, if we have two electrons, we can
+put the first one in the lower state and the second one in the
+upper. Not quite; we forgot something. Each one of the states is
+really double. When we say there’s a possible state with the
+energy [eq], there are really two. Two electrons can go into the same
+state if one has its spin up and the other, its spin down. (No more
+can be put in because of the exclusion principle.) So there really are
+two possible states of energy [eq]. We can draw a diagram, as in
+Fig.  15–7 , which indicates both the energy levels and their
+occupancy. In the condition of lowest energy both electrons will be in
+the lowest state with their spins opposite. The energy of the extra
+bond in the ethylene molecule therefore is [eq] if we neglect
+the interaction between the two electrons.
+
+Let’s go back to the benzene. Each of the two states of Fig.  15–3 
+has three double bonds. Each of these is just like the bond in
+ethylene, and contributes [eq] to the energy if [eq] is now the
+energy to put an electron on a site in benzene and [eq] is the
+amplitude to flip to the next site. So the energy should be
+roughly [eq]. But when we studied benzene before, we got that the energy
+was lower than the energy of the structure with three extra
+bonds. Let’s see if the energy for benzene comes out lower than three
+bonds from our new point of view.
+
+We start with the six-times ionized benzene ring and add one
+electron. Now we have a six-state system. We haven’t solved such a
+system yet, but we know what to do. We can write six equations in the
+six amplitudes, and so on. But let’s save some work—by noticing that
+we’ve already solved the problem, when we worked out the problem of an
+electron on an infinite line of atoms. Of course, the benzene is not
+an infinite line, it has [eq] atomic sites in a circle. But imagine
+that we open out the circle to a line, and number the atoms along the
+line from [eq] to [eq]. In an infinite line the next location would
+be [eq], but if we insist that this location be identical with number [eq]
+and so on, the situation will be just like the benzene ring. In other
+words we can take the solution for an infinite line with an
+added requirement that the solution must be periodic with a cycle six
+atoms long. From Chapter  13 the electron on a line has
+states of definite energy when the amplitude at each site
+is [eq]. For each [eq] the energy is
+\begin{equation}
+\label{Eq:III:15:25}
+E=E_0-2A\cos kb.
+\end{equation}
+
+We want to use now only those solutions which repeat every
+[eq] atoms. Let’s do first the general case for a ring of [eq] atoms. If the
+solution is to have a period of [eq] atomic spacing, [eq] must be
+unity; or [eq] must be a multiple of [eq]. Taking [eq] to represent
+any integer, our condition is that
+\begin{equation}
+\label{Eq:III:15:26}
+kbN=2\pi s.
+\end{equation}
+
+We have seen before that there is no meaning to taking [eq]’s outside
+the range [eq]. This means that we get all possible states by
+taking values of [eq] in the range [eq].
+
+We find then that for an [eq]-atom ring there are [eq] definite energy
+states 3 
+and they have wave numbers [eq] given by
+\begin{equation}
+\label{Eq:III:15:27}
+k_s=\frac{2\pi}{Nb}\,s.
+\end{equation}
+
+Each state has the energy ( 15.25 ). We have a line
+spectrum of possible energy levels. The spectrum for benzene ([eq])
+is shown in Fig.  15–8 (b). (The numbers in parentheses indicate the
+number of different states with the same energy.)
+
+There’s a nice way to visualize the six energy levels, as we have
+shown in part (a) of the figure. Imagine a circle centered on a level
+with [eq], and with a radius of [eq]. If we start at the bottom and
+mark off six equal arcs (at angles from the bottom point of $k_sb=2\pi
+s/N[eq]2\pi s/6$ for benzene), then the vertical heights of the
+points on the circle are the solutions of Eq. ( 15.25 ). The
+six points represent the six possible states. The lowest energy level is
+at [eq]; there are two states with the same energy [eq], and
+so on. 4 These are possible states for one electron. If we
+have more than one electron, two—with opposite spins—can go into
+each state.
+
+For the benzene molecule we have to put in six electrons. For the
+ground state they will go into the lowest possible energy states—two
+at [eq], two at [eq], and two at [eq]. According to the
+independent particle approximation the energy of the ground state is
+\begin{align}
+E_{\text{ground}} &=2(E_0-2A)+4(E_0-A)\notag\\[1ex]
+\label{Eq:III:15:28}
+ &=6E_0-8A.
+\end{align}
+The energy is indeed less than that of three separate double
+bonds—by the amount [eq].
+
+By comparing the energy of benzene to the energy of ethylene it is
+possible to determine [eq]. It comes out to be [eq] electron volt, or,
+in the units the chemists like, [eq] kilocalories per mole.
+
+We can use this description to calculate or understand other
+properties of benzene. For example, using Fig.  15–8 we can discuss
+the excitation of benzene by light. What would happen if we tried to
+excite one of the electrons? It could move up to one of the empty
+higher states. The lowest energy of excitation would be a transition
+from the highest filled level to the lowest empty level. That takes
+the energy [eq]. Benzene will absorb light of frequency [eq]
+when [eq]. There will also be absorption of photons with the energies
+[eq] and [eq]. Needless to say, the absorption spectrum of benzene has
+been measured and the pattern of spectral lines is more or less
+correct except that the lowest transition occurs in the ultraviolet;
+and to fit the data one would have to choose a value of [eq] between
+[eq] and [eq] electron volts. That is, the numerical value of [eq] is
+two or three times larger than is predicted from the chemical binding
+energy.
+
+What the chemist does in situations like this is to analyze many
+molecules of a similar kind and get some empirical rules. He learns,
+for example: For calculating binding energy use such and such a value
+of [eq], but for getting the absorption spectrum approximately right
+use another value of [eq]. You may feel that this sounds a little
+absurd. It is not very satisfactory from the point of view of a
+physicist who is trying to understand nature from first
+principles. But the problem of the chemist is different. He must try
+to guess ahead of time what is going to happen with molecules that
+haven’t been made yet, or which aren’t understood completely. What he
+needs is a series of empirical rules; it doesn’t make much difference
+where they come from. So he uses the theory in quite a different way
+than the physicist. He takes equations that have some shadow of the
+truth in them, but then he must alter the constants in them—making
+empirical corrections.
+
+In the case of benzene, the principal reason for the inconsistency is
+our assumption that the electrons are independent—the theory we
+started with is really not legitimate. Nevertheless, it has some
+shadow of the truth because its results seem to be going in the right
+direction. With such equations plus some empirical rules—including
+various exceptions—the organic chemist makes his way through the
+morass of complicated things he chooses to study. (Don’t forget that
+the reason a physicist can really calculate from first principles is
+that he chooses only simple problems. He never solves a problem with
+[eq] or even [eq] electrons in it. So far, he has been able to
+calculate reasonably accurately only the hydrogen atom and the helium
+atom.)
+
+Let’s see how the same ideas can be used to study other
+molecules. Consider a molecule like butadiene [eq]—it is drawn in
+Fig.  15–9 according to the usual valence bond picture.
+
+We can play the same game with the extra four electrons corresponding
+to the two double bonds. If we remove four electrons, we have four
+carbon atoms in a line. You already know how to solve a line. You
+say, “Oh no, I only know how to solve an infinite line.” But
+the solutions for the infinite line also include the ones for a finite
+line. Watch. Let [eq] be the number of atoms on the line and number
+them from [eq] to [eq] as shown in Fig.  15–10 . In writing the
+equations for the amplitude at position [eq] you would not have a term
+feeding from position [eq]. Similarly, the equation for position [eq]
+would differ from the one that we used for an infinite line because
+there would be nothing feeding from position [eq]. But suppose that
+we can obtain a solution for the infinite line which has the following
+property: the amplitude to be at atom [eq] is zero and the amplitude to
+be at atom [eq] is also zero. Then the set of equations for all the
+locations from [eq] to [eq] on the finite line are also satisfied. You
+might think no such solution exists for the infinite line because our
+solutions all looked like [eq] which has the same absolute
+value of the amplitude everywhere. But you will remember that the
+energy depends only on the absolute value of [eq], so that another
+solution, which is equally legitimate for the same energy, would
+be [eq]. And the same is true of any superposition of these two
+solutions. By subtracting them we can get the solution [eq],
+which satisfies the requirement that the amplitude be zero
+at [eq]. It still corresponds to the energy [eq]. Now by a
+suitable choice for the value of [eq] we can also make the amplitude
+zero at [eq]. This requires that [eq] be a multiple
+of [eq], or that
+\begin{equation}
+\label{Eq:III:15:29}
+kb=\frac{\pi}{(N+1)}\,s,
+\end{equation}
+
+where [eq] is an integer from [eq] to [eq]. (We take only positive [eq]’s
+because each solution contains [eq] and [eq]; changing the sign of [eq]
+gives the same state all over again.) For the butadiene molecule,
+[eq], so there are four states with
+\begin{equation}
+\label{Eq:III:15:30}
+kb=\pi/5,\quad
+2\pi/5,\quad
+3\pi/5,\quad
+\text{and}\quad
+4\pi/5.
+\end{equation}
+
+We can represent the energy levels using a circle diagram similar to
+the one for benzene. This time we use a semicircle divided into five
+equal parts as shown in Fig.  15–11 . The point at the bottom
+corresponds to [eq], which gives no state at all. The same is true of
+the point at the top, which corresponds to [eq]. The remaining
+[eq] points give us four allowed energies. There are four stationary
+states, which is what we expect having started with four base
+states. In the circle diagram, the angular intervals are [eq] or
+[eq] degrees. The lowest energy comes out [eq]. (Ah, what
+wonders mathematics holds; the golden mean of the Greeks 5 gives us the lowest energy state of the
+butadiene molecule according to this theory!)
+
+Now we can calculate the energy of the butadiene molecule when we put
+in four electrons. With four electrons, we fill up the lowest two
+levels, each with two electrons of opposite spin. The total energy is
+ 
+\begin{equation}
+\label{Eq:III:15:31}
+E=2(E_0-1.618A)+2(E_0-0.618A)=
+4(E_0-A)-0.472A.
+\end{equation}
+ 
+ 
+\begin{align}
+E&=2(E_0-1.618A)+2(E_0-0.618A)\notag\\[1ex]
+\label{Eq:III:15:31}
+&=4(E_0-A)-0.472A.
+\end{align}
+ 
+This result seems reasonable. The energy is a little lower than for
+two simple double bonds, but the binding is not so strong as in
+benzene. Anyway this is the way the chemist analyzes some organic
+molecules.
+
+The chemist can use not only the energies but the probability
+amplitudes as well. Knowing the amplitudes for each state, and which
+states are occupied, he can tell the probability of finding an
+electron anywhere in the molecule. Those places where the electrons
+are more likely to be are apt to be reactive in chemical substitutions
+which require that an electron be shared with some other group of
+atoms. The other sites are more likely to be reactive in those
+substitutions which have a tendency to yield an extra electron to the
+system.
+
+The same ideas we have been using can give us some understanding of a
+molecule even as complicated as chlorophyll,
+one version of which is shown in Fig.  15–12 . Notice that
+the double and single bonds we have drawn with heavy lines form a long
+closed ring with twenty intervals. The extra electrons of the double
+bonds can run around this ring. Using the independent particle method we
+can get a whole set of energy levels. There are strong absorption lines
+from transitions between these levels which lie in the visible part of
+the spectrum, and give this molecule its strong color. Similar
+complicated molecules such as the xanthophylls, which make leaves turn
+red, can be studied in the same way.
+
+There is one more idea which emerges from the application of this kind
+of theory in organic chemistry. It is probably the most successful or,
+at least in a certain sense, the most accurate. This idea has to do
+with the question: In what situations does one get a particularly
+strong chemical binding? The answer is very interesting. Take the
+example, first, of benzene, and imagine the sequence of events that
+occurs as we start with the six-times ionized molecule and add more
+and more electrons. We would then be thinking of various benzene
+ions—negative or positive. Suppose we plot the energy of the ion (or
+neutral molecule) as a function of the number of electrons. If we
+take [eq] (since we don’t know what it is), we get the curve shown in
+Fig.  15–13 . For the first two electrons the slope of the function
+is
+a straight line. For each successive group the slope increases, and
+there is a discontinuity in slope between the groups of electrons. The
+slope changes when one has just finished filling a set of levels which
+all have the same energy and must move up to the next higher set of
+levels for the next electron.
+
+The actual energy of the benzene ion is really quite different from
+the curve of Fig.  15–13 because of the interactions of the
+electrons
+and because of electrostatic energies we have been neglecting. These
+corrections will, however, vary with [eq] in a rather smooth way. Even
+if we were to make all these corrections, the resulting energy curve
+would still have kinks at those values of [eq] which just fill up a
+particular energy level.
+
+Now consider a very smooth curve that fits the points on the average
+like the one drawn in Fig.  15–14 . We can say that the points
+ above this curve have “higher-than-normal” energies, and the
+points below the curve have “lower-than-normal” energies. We
+would, in general, expect that those configurations with a
+lower-than-normal energy would have an above average
+stability—chemically speaking. Notice that the configurations
+farther below the curve always occur at the end of one of the straight
+line segments—namely when there are enough electrons to fill up an
+“energy shell,” as it is called. This is the very accurate
+prediction of the theory. Molecules—or ions—are particularly
+stable (in comparison with other similar configurations) when the
+available electrons just fill up an energy shell.
+
+This theory has explained and predicted some very peculiar chemical
+facts. To take a very simple example, consider a ring of three. It’s
+almost unbelievable that the chemist can make a ring of three and have
+it stable, but it has been done. The energy circle for three electrons
+is shown in Fig.  15–15 . Now if you put two electrons in the lower
+state, you have only two of the three electrons that you require. The
+third electron must be put in at a much higher level. By our argument
+this molecule should not be particularly stable, whereas the
+two-electron structure should be stable. It does turn out, in fact,
+that the neutral molecule of triphenyl cyclopropenyl is very hard to make, but that the positive ion
+shown in Fig.  15–16 is relatively easy to make. The ring
+of three is never really easy because there is always a large stress
+when the bonds in an organic molecule make an equilateral triangle. To
+make a stable compound at all, the structure must be stabilized in some
+way. Anyway if you add three benzene rings on the corners, the positive
+ion can be made. (The reason for this requirement of added benzene rings
+is not really understood.)
+
+In a similar way the five-sided ring can also be analyzed. If you draw
+the energy diagram, you can see in a qualitative way that the
+six-electron structure should be an especially stable structure, so
+that such a molecule should be most stable as a negative ion. Now the
+five-ring is well known and easy to make and always acts as a negative
+ion. Similarly, you can easily verify that a ring of [eq] or [eq] is not
+very interesting, but that a ring of [eq] or [eq]—like a ring
+of [eq]—should be especially stable as a neutral object.
+
+There are two other similar situations which we will describe only
+briefly. In considering the structure of an atom, we can consider that
+the electrons fill successive shells. The Schrödinger theory of
+electron motion can be worked out easily only for a single 
+electron moving in a “central” field—one which varies only with
+the distance from a point. How can we then understand what goes on in
+an atom which has [eq] electrons?! One way is to use a kind of
+independent particle approximation. First you calculate what happens
+with one electron. You get a number of energy levels. You put an
+electron into the lowest energy state. You can, for a rough model,
+continue to ignore the electron interactions and go on filling
+successive shells, but there is a way to get better answers by taking
+into account—in an approximate way at least—the effect of the
+electric charge carried by the electron. Each time you add an electron
+you compute its amplitude to be at various places, and then use this
+amplitude to estimate a kind of spherically symmetric charge
+distribution. You use the field of this distribution—together with
+the field of the positive nucleus and all the previous electrons—to
+calculate the states available for the next electron. In this way you
+can get reasonably correct estimates for the energies for the neutral
+atom and for various ionized states. You find that there are energy
+shells, just as we saw for the electrons in a ring molecule. With a
+partially filled shell, the atom will show a preference for taking on
+one or more extra electrons, or for losing some electrons so as to get
+into the most stable state of a filled shell.
+
+This theory explains the machinery behind the fundamental chemical
+properties which show up in the periodic table of the elements. The
+inert gases are those elements in which a shell has just been
+completed, and it is especially difficult to make them react. (Some of
+them do react of course—with fluorine and oxygen, for example; but
+such compounds are very weakly bound; the so-called inert gases are
+nearly inert.) An atom which has one electron more or one electron
+less than an inert gas will easily lose or gain an electron to get
+into the especially stable (low-energy) condition which comes from
+having a completely filled shell—they are the very active chemical
+elements of valence [eq] or [eq].
+
+The other situation is found in nuclear physics. In atomic nuclei the
+protons and neutrons interact with each other quite strongly. Even so,
+the independent particle model can again be used to analyze nuclear
+structure. It was first discovered experimentally that nuclei were
+especially stable if they contained certain particular numbers of
+neutrons—namely [eq], [eq], [eq], [eq], [eq], [eq]. Nuclei containing
+protons in these numbers are also especially stable. Since there was
+initially no explanation for these numbers they were called the
+“magic numbers” of nuclear physics. It is well known that neutrons
+and protons interact strongly with each other; people were, therefore,
+quite surprised when it was discovered that an independent particle
+model predicted a shell structure which came out with the first few
+magic numbers. The model assumed that each nucleon (proton or neutron)
+moved in a central potential which was created by the average effects
+of all the other nucleons. This model failed, however, to give the
+correct values for the higher magic numbers. Then it was discovered by
+Maria Mayer,
+and independently by Jensen
+and his collaborators, that by taking the independent particle model and
+adding only a correction for what is called the “spin-orbit
+interaction,” one could make an improved
+model which gave all of the magic numbers. (The spin-orbit interaction
+causes the energy of a nucleon to be lower if its spin has the same
+direction as its orbital angular momentum from motion in the nucleus.)
+The theory gives even more—its picture of the so-called “shell
+structure” of the nuclei enables us to predict certain characteristics
+of nuclei and of nuclear reactions.
+
+The independent particle approximation has been found useful in a wide
+range of subjects—from solid-state physics, to chemistry, to
+biology, to nuclear physics. It is often only a crude approximation,
+but is able to give an understanding of why there are especially
+stable conditions—in shells. Since it omits all of the complexity of
+the interactions between the individual particles, we should not be
+surprised that it often fails completely to give correctly many
+important details.

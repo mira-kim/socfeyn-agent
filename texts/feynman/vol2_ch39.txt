@@ -1,0 +1,947 @@
+The Feynman Lectures on Physics Vol. II Ch. 39: Elastic Materials
+=================================================================
+
+Sections: 39–1 The tensor of strain | 39–2 The tensor of elasticity | 39–3 The motions in an elastic body | 39–4 Nonelastic behavior | 39–5 Calculating the elastic constants
+
+
+
+In the last chapter we talked about the distortions of particular
+elastic objects. In this chapter we want to look at what can happen
+ in general inside an elastic material. We would like to be able
+to describe the conditions of stress and strain inside some big glob
+of jello which is twisted and squashed in some complicated way. To do
+this, we need to be able to describe the local strain at every
+point in an elastic body; we can do it by giving a set of six
+numbers—which are the components of a symmetric tensor—for each
+point. Earlier, we spoke of the stress tensor (Chapter  31 );
+now we need the tensor of strain.
+
+Imagine that we start with the material initially unstrained and watch
+the motion of a small speck of “dirt” embedded in the material when
+the strain is applied. A speck that was at the point [eq] located at [eq] moves to a
+new position [eq] at [eq] as shown in
+Fig.  39–1 . We will call [eq] the vector displacements
+from [eq] to [eq]. Then
+\begin{equation}
+\label{Eq:II:39:1}
+\FLPu=\FLPr'-\FLPr.
+\end{equation}
+
+The displacement [eq] depends, of course, on which point [eq] we
+start with, so [eq] is a vector function of [eq]—or, if you
+prefer, of [eq].
+
+Let’s look first at a simple situation in which the strain is constant
+over the material—so we have what is called a homogeneous
+strain . Suppose, for instance, that we have a block of material and we
+stretch it uniformly. We just change its dimensions uniformly in one
+direction—say, in the [eq]-direction, as shown in
+Fig.  39–2 . The motion [eq] of a speck at [eq] is
+proportional to [eq]. In fact,
+\begin{equation*}
+\frac{u_x}{x}=\frac{\Delta l}{l}.
+\end{equation*}
+
+We will write [eq] this way:
+\begin{equation*}
+u_x=e_{xx}x.
+\end{equation*}
+
+The proportionality constant [eq] is, of course, the same thing
+as [eq]. (You will see shortly why we use a double subscript.)
+
+If the strain is not uniform, the relation between [eq] and [eq] will
+vary from place to place in the material. For the general situation,
+we define the [eq] by a kind of local [eq], namely by
+\begin{equation}
+\label{Eq:II:39:2}
+e_{xx}=\ddpl{u_x}{x}.
+\end{equation}
+
+This number—which is now a function of [eq], [eq], and [eq]—describes
+the amount of stretching in the [eq]-direction throughout the hunk of
+jello. There may, of course, also be stretching in the [eq]-
+and [eq]-directions. We describe them by the numbers
+\begin{equation}
+\label{Eq:II:39:3}
+e_{yy}=\ddp{u_y}{y},\quad
+e_{zz}=\ddp{u_z}{z}.
+\end{equation}
+
+We need to be able to describe also the shear-type strains. Suppose we
+imagine a little cube marked out in the initially undisturbed
+jello. When the jello is pushed out of shape, this cube may get
+changed into a parallelogram, as sketched in Fig.  39–3 . 1 In this kind of a strain, the [eq]-motion of each particle is
+proportional to its [eq]-coordinate,
+\begin{equation}
+\label{Eq:II:39:4}
+u_x=\frac{\theta}{2}\,y.
+\end{equation}
+
+And there is also a [eq]-motion proportional to [eq],
+\begin{equation}
+\label{Eq:II:39:5}
+u_y=\frac{\theta}{2}\,x.
+\end{equation}
+
+So we can describe such a shear-type strain by writing
+\begin{equation*}
+u_x=e_{xy}y,\quad
+u_y=e_{yx}x
+\end{equation*}
+
+with
+\begin{equation*}
+e_{xy}=e_{yx}=\frac{\theta}{2}.
+\end{equation*}
+
+Now you might think that when the strains are not homogeneous we could
+describe the generalized shear strains by defining the quantities
+[eq] and [eq] by
+\begin{equation}
+\label{Eq:II:39:6}
+e_{xy}=\ddp{u_x}{y},\quad
+e_{yx}=\ddp{u_y}{x}.
+\end{equation}
+But there is one difficulty. Suppose that the displacements [eq]
+and [eq] were given by
+\begin{equation*}
+u_x=\frac{\theta}{2}\,y,\quad
+u_y=-\frac{\theta}{2}\,x
+\end{equation*}
+They are like Eqs. ( 39.4 ) and ( 39.5 ) except that the sign of [eq] is reversed. With these displacements a little cube in the jello simply gets shifted by the angle [eq], as shown in Fig.  39–4 . There is no strain at all—just a rotation in space. There is no distortion of the material; the relative positions of all the atoms are not changed at all. We must somehow make our definitions so that pure rotations are not included in our definitions of a shear strain. The key point is that if [eq] and [eq] are equal and opposite, there is no strain; so we can fix things up by defining 
+\begin{equation*}
+e_{xy}=e_{yx}=\tfrac{1}{2}(\ddpl{u_y}{x}+\ddpl{u_x}{y}).
+\end{equation*}
+For a pure rotation they are both zero, but for a pure shear we get
+that [eq] is equal to [eq], as we would like.
+
+In the most general distortion—which may include stretching or
+compression as well as shear—we define the state of strain by
+giving the nine numbers
+\begin{equation}
+\begin{aligned}
+e_{xx}&=\ddp{u_x}{x},\\[2pt]
+e_{yy}&=\ddp{u_y}{y},\\[-2pt]
+&\qquad\vdots\\
+e_{xy}&=\tfrac{1}{2}(\ddpl{u_y}{x}+\ddpl{u_x}{y}),\\[-4pt]
+&\qquad\vdots
+\end{aligned}
+\label{Eq:II:39:7}
+\end{equation}
+
+These are the terms of a tensor of strain . Because it is a
+ symmetric tensor —our definitions make [eq],
+always—there are really only six different numbers. You remember
+(see Chapter  31 ) that the general characteristic of a
+tensor is that the terms transform like the products of the components
+of two vectors. (If [eq] and [eq] are vectors, [eq]
+is a tensor.) Each term of [eq] is a product (or the sum of such
+products) of the components of the vector [eq], and
+of the operator [eq], which
+we know transforms like a vector. Let’s let [eq], [eq], and [eq]
+stand for [eq], [eq], and [eq] and [eq], [eq], and [eq] stand for
+[eq], [eq], and [eq]; then we can write the general term [eq]
+of the strain tensor as
+\begin{equation}
+\label{Eq:II:39:8}
+e_{ij}=\tfrac{1}{2}(\ddpl{u_j}{x_i}+\ddpl{u_i}{x_j}),
+\end{equation}
+
+where [eq] and [eq] can be [eq], [eq], or [eq].
+
+When we have a homogeneous strain—which may include both stretching
+and shear—all of the [eq] are constants, and we can write
+\begin{equation}
+\label{Eq:II:39:9}
+u_x=e_{xx}x+e_{xy}y+e_{xz}z.
+\end{equation}
+
+(We choose our origin of [eq], [eq], [eq] at the point where [eq] is
+zero.) In this case, the strain tensor [eq] gives the relationship
+between two vectors: the coordinate vector [eq] and the
+displacement vector [eq].
+
+When the strains are not homogeneous, any piece of the jello may also
+get somewhat twisted—there will be a local rotation. If the
+distortions are all small, we would have
+\begin{equation}
+\label{Eq:II:39:10}
+\Delta u_i=\sum_j(e_{ij}-\omega_{ij})\,\Delta x_j,
+\end{equation}
+
+where [eq] is an antisymmetric tensor,
+\begin{equation}
+\label{Eq:II:39:11}
+\omega_{ij}=\tfrac{1}{2}(\ddpl{u_j}{x_i}-\ddpl{u_i}{x_j}),
+\end{equation}
+
+which describes the rotation. We will, however, not worry any more
+about rotations, but only about the strains described by the symmetric
+tensor [eq].
+
+Now that we have described the strains, we want to relate them to the
+internal forces—the stresses in the material. For each small piece of
+the material, we assume Hooke’s law
+holds and write that the stresses are proportional to the strains. In
+Chapter  31 we defined the stress tensor [eq] as the
+[eq]th component of the force across a unit-area perpendicular to the
+[eq]-axis. Hooke’s law says that each
+component of [eq] is linearly related to each of the
+components of strain. Since [eq] and [eq] each have nine components, there
+are [eq] possible coefficients which describe the elastic
+properties of the material. They are constants if the material itself is
+homogeneous. We write these coefficients as [eq] and define them
+by the equation
+\begin{equation}
+\label{Eq:II:39:12}
+S_{ij}=\sum_{k,l}C_{ijkl}e_{kl},
+\end{equation}
+
+where [eq], [eq], [eq], [eq] all take on the values [eq], [eq], or [eq].
+Since the coefficients [eq] relate one tensor to another,
+they also form a tensor—a tensor of the fourth rank . We can
+call it the tensor of elasticity .
+
+Suppose that all the [eq]’s are known and that you put a complicated
+force on an object of some peculiar shape. There will be all kinds of
+distortion, and the thing will settle down with some twisted
+shape. What are the displacements? You can see that it is a
+complicated problem. If you knew the strains, you could find the
+stresses from Eq. ( 39.12 )—or vice versa. But the
+stresses and strains you end up with at any point depend on what
+happens in all the rest of the material.
+
+The easiest way to get at the problem is by thinking of the
+energy. When there is a force [eq] proportional to a displacement [eq],
+say [eq], the work required for any displacement [eq] is [eq]. In
+a similar way, the work [eq] that goes into each unit volume of
+a distorted material turns out to be
+\begin{equation}
+\label{Eq:II:39:13}
+w=\tfrac{1}{2}\sum_{ijkl}C_{ijkl}e_{ij}e_{kl}.
+\end{equation}
+
+The total work [eq] done in distorting the body is the integral of [eq]
+over its volume:
+\begin{equation}
+\label{Eq:II:39:14}
+W=\int\tfrac{1}{2}\sum_{ijkl}C_{ijkl}e_{ij}e_{kl}\,dV.
+\end{equation}
+
+This is then the potential energy stored in the internal stresses of
+the material. Now when a body is in equilibrium, this internal energy
+must be at a minimum . So the problem of finding the strains in
+a body can be solved by finding the set of displacements [eq]
+throughout the body which will make [eq] a minimum. In
+Chapter  19 we gave some of the general ideas of the
+calculus of variations that are used in tackling minimization problems
+like this. We cannot go into the problem in any more detail here.
+
+What we are mainly interested in now is what we can say about the
+general properties of the tensor of elasticity. First, it is clear
+that there are not really [eq]  different terms
+in [eq]. Since both [eq] and [eq] are symmetric tensors,
+each with only six different terms, there can be at most
+[eq] different terms in [eq]. There are, however, usually many fewer
+than this.
+
+Let’s look at the special case of a cubic crystal. In it, the energy
+density [eq] starts out like this:
+\begin{align}
+w=\tfrac{1}{2}\{&C_{xxxx}e_{xx}^2\!+C_{xxxy}e_{xx}e_{xy}\!+C_{xxxz}e_{xx}e_{xz}\notag\\[.5ex]
++\;&C_{xxyx}e_{xx}e_{xy}\!+C_{xxyy}e_{xx}e_{yy}\ldots\text{etc}\ldots\notag\\[.5ex]
+\label{Eq:II:39:15}
++\;&C_{yyyy}e_{yy}^2\!+\ldots\text{etc}\ldots\text{etc}\ldots\},
+\end{align}
+
+with [eq] terms in all! Now a cubic crystal has certain symmetries. In
+particular, if the crystal is rotated [eq], it has the same
+physical properties. It has the same stiffness for stretching in the
+[eq]-direction as for stretching in the [eq]-direction. Therefore, if we
+change our definition of the coordinate directions [eq] and [eq] in
+Eq. ( 39.15 ), the energy wouldn’t change. It must be that
+for a cubic crystal
+\begin{equation}
+\label{Eq:II:39:16}
+C_{xxxx}=C_{yyyy}=C_{zzzz}.
+\end{equation}
+
+Next we can show that the terms like [eq] must be zero. A cubic
+crystal has the property that it is symmetric under a
+ reflection about any plane perpendicular to one of the axes. If
+we replace [eq] by [eq], nothing is different. But changing [eq] to [eq]
+changes [eq] to [eq]—a displacement which was toward [eq]
+is now toward [eq]. If the energy is not to change, [eq] must go
+into [eq] when we make a reflection. But a reflected crystal is
+the same as before, so [eq] must be the same as [eq].
+This can happen only if both are zero.
+
+You say, “But the same argument will make [eq]!” No, because
+there are four  [eq]’s. The sign changes once for each [eq], and
+four minuses make a plus. If there are two or four  [eq]’s,
+the term does not have to be zero. It is zero only when there
+is one , or three . So, for a cubic crystal, any nonzero
+term of [eq] will have only an even number of identical
+subscripts. (The arguments we have made for [eq] obviously hold also
+for [eq] and [eq].) We might then have terms like [eq],
+[eq], [eq], and so on. We have already shown, however,
+that if we change all [eq]’s to [eq]’s and vice versa (or all
+[eq]’s and [eq]’s, and so on) we must get—for a cubic crystal—the
+same number. This means that there are only three different 
+nonzero possibilities:
+\begin{equation}
+\begin{aligned}
+&C_{xxxx}\:(=C_{yyyy}=C_{zzzz}),\\[.5ex]
+&C_{xxyy}\:(=C_{yyxx}=C_{xxzz},\:\text{etc.}),\\[.5ex]
+&C_{xyxy}\:(=C_{yxyx}=C_{xzxz},\:\text{etc.}).
+\end{aligned}
+\label{Eq:II:39:17}
+\end{equation}
+
+For a cubic crystal, then, the energy density will look like this:
+\begin{equation}
+\begin{aligned}
+w&=\tfrac{1}{2}\{C_{xxxx}(e_{xx}^2+e_{yy}^2+e_{zz}^2)\\[.5ex]
+&\quad+\,2C_{xxyy}(e_{xx}e_{yy}+e_{yy}e_{zz}+e_{zz}e_{xx})\\[.5ex]
+&\quad+\,4C_{xyxy}(e_{xy}^2+e_{yz}^2+e_{zx}^2)\}.
+\end{aligned}
+\label{Eq:II:39:18}
+\end{equation}
+
+For an isotropic—that is, noncrystalline—material, the symmetry is
+still higher. The [eq]’s must be the same for any choice of the
+coordinate system. Then it turns out that there is another relation
+among the [eq]’s, namely, that
+\begin{equation}
+\label{Eq:II:39:19}
+C_{xxxx}=C_{xxyy}+2C_{xyxy}.
+\end{equation}
+
+We can see that this is so by the following general argument. The
+stress tensor [eq] has to be related to [eq] in a way that
+doesn’t depend at all on the coordinate directions—it must be
+related only by scalar quantities. “That’s easy,” you
+say. “The only way to obtain [eq] from [eq] is by
+multiplication by a scalar constant. It’s just Hooke’s law. It must be
+that [eq].” But that’s not quite right;
+there could also be the unit tensor  [eq] multiplied by
+some scalar, linearly related to [eq]. The only invariant you can
+make that is linear in the [eq]’s is [eq]. (It transforms
+like [eq], which is a scalar.) So the most general form for the
+equation relating [eq] to [eq]—for isotropic materials—is
+\begin{equation}
+\label{Eq:II:39:20}
+S_{ij}=2\mu e_{ij}+\lambda\Bigl(\sum_ke_{kk}\Bigr)\delta_{ij}.
+\end{equation}
+
+(The first constant is usually written as two times [eq]; then
+the coefficient [eq] is equal to the shear modulus we defined in the
+last chapter.) The constants [eq] and [eq] are called the
+Lamé elastic constants. Comparing
+Eq. ( 39.20 ) with Eq. ( 39.12 ), you see that
+\begin{equation}
+\begin{aligned}
+C_{xxyy}&=\lambda,\\[.5ex]
+C_{xyxy}&=\mu,\\[.5ex]
+C_{xxxx}&=2\mu+\lambda.
+\end{aligned}
+\label{Eq:II:39:21}
+\end{equation}
+
+So we have proved that Eq. ( 39.19 ) is indeed true. You
+also see that the elastic properties of an isotropic material are
+completely given by two constants, as we said in the last chapter.
+
+The [eq]’s can be put in terms of any two of the elastic constants we
+have used earlier—for instance, in terms of Young’s modulus [eq] and
+Poisson’s ratio [eq]. We will leave it for you to show that
+\begin{equation}
+\begin{aligned}
+C_{xxxx}&=\frac{Y}{1+\sigma}
+\biggl(1+\frac{\sigma}{1-2\sigma}\biggr),\\[.5ex]
+C_{xxyy}&=\frac{Y}{1+\sigma}
+\biggl(\frac{\sigma}{1-2\sigma}\biggr),\\[.5ex]
+C_{xyxy}&=\frac{Y}{2(1+\sigma)}.
+\end{aligned}
+\label{Eq:II:39:22}
+\end{equation}
+
+We have pointed out that for an elastic body in equilibrium the
+internal stresses adjust themselves to make the energy a minimum. Now
+we take a look at what happens when the internal forces are not 
+in equilibrium. Let’s say we have a small piece of the material inside
+some surface [eq]. See Fig.  39–5 . If the piece is in equilibrium, the
+total force [eq] acting on it must be zero. We can think of this
+force as being made up of two parts. There could be one part due to
+“external” forces like gravity, which act from a distance on the
+matter in the piece to produce a force per unit 
+volume [eq]. The total external force [eq] is
+the integral of [eq] over the volume of the piece:
+\begin{equation}
+\label{Eq:II:39:23}
+\FLPF_{\text{ext}}=\int\FLPf_{\text{ext}}\,dV.
+\end{equation}
+
+In equilibrium, this force would be balanced by the total
+force [eq] from the neighboring material which acts across
+the surface [eq]. When the piece is not in equilibrium—if it
+is moving—the sum of the internal and external forces is equal to
+the mass times the acceleration. We would have
+\begin{equation}
+\label{Eq:II:39:24}
+\FLPF_{\text{ext}}+\FLPF_{\text{int}}=
+\int\rho\ddot{\FLPr}\,dV,
+\end{equation}
+
+where [eq] is the density of the material, and [eq] is its acceleration. We can now combine Eqs. ( 39.23 ) and ( 39.24 ), writing
+\begin{equation}
+\label{Eq:II:39:25}
+\FLPF_{\text{int}}=\int_v(-\FLPf_{\text{ext}}+\rho\ddot{\FLPr})\,dV.
+\end{equation}
+
+We will simplify our writing by defining
+\begin{equation}
+\label{Eq:II:39:26}
+\FLPf=-\FLPf_{\text{ext}}+\rho\ddot{\FLPr}.
+\end{equation}
+
+Then Eq. ( 39.25 ) is written
+\begin{equation}
+\label{Eq:II:39:27}
+\FLPF_{\text{int}}=\int_v\FLPf\,dV.
+\end{equation}
+
+What we have called [eq] is related to the stresses in
+the material. The stress tensor [eq] was defined
+(Chapter  31 ) so that the [eq]-component of the force [eq]
+across a surface element [eq], whose unit normal is [eq], is given by
+\begin{equation}
+\label{Eq:II:39:28}
+dF_x=(S_{xx}n_x+S_{xy}n_y+S_{xz}n_z)\,da.
+\end{equation}
+
+The [eq]-component of [eq] on our little piece is then
+the integral of [eq] over the surface. Substituting this into the
+[eq]-component of Eq. ( 39.27 ), we get
+\begin{equation}
+\label{Eq:II:39:29}
+\int_A(S_{xx}n_x+S_{xy}n_y+S_{xz}n_z)\,da=\int_vf_x\,dV.
+\end{equation}
+
+We have a surface integral related to a volume integral—and that
+reminds us of something we learned in electricity. Note that if you
+ignore the first subscript [eq] on each of the [eq]’s in the left-hand
+side of Eq. ( 39.29 ), it looks just like the integral of
+a quantity [eq]—that is, the normal
+component of a vector—over the surface. It would be the flux
+of [eq] out of the volume. And this could be written, using Gauss
+law, as the volume integral of the divergence of [eq]. It is,
+in fact, true whether the [eq]-subscript is there or not—it is just a
+mathematical theorem you get by integrating by parts. In other words,
+we can change Eq. ( 39.29 ) into
+\begin{equation}
+\label{Eq:II:39:30}
+\int_v\biggl(
+\ddp{S_{xx}}{x}+\ddp{S_{xy}}{y}+\ddp{S_{xz}}{z}
+\biggr)dV=\int_vf_x\,dV.
+\end{equation}
+
+Now we can leave off the volume integrals and write the differential
+equation for the general component of [eq] as
+\begin{equation}
+\label{Eq:II:39:31}
+f_i=\sum_j\ddp{S_{ij}}{x_j}.
+\end{equation}
+
+This tells us how the force per unit volume is related to the stress
+tensor [eq].
+
+The theory of the motions inside a solid works this way. If we start out
+knowing the initial displacements—given by, say, [eq]—we can work
+out the strains [eq]. From the strains we can get the stresses from
+Eq. ( 39.12 ). From the stresses we can get the force
+density [eq] in Eq. ( 39.31 ). Knowing [eq], we can get, from
+Eq. ( 39.26 ), the acceleration [eq] of the
+material, which tells us how the displacements will be changing. Putting
+everything together, we get the horrible equation of motion for an
+elastic solid. We will just write down the results that come out for an
+isotropic material. If you use ( 39.20 ) for [eq], and
+write the [eq] as [eq],
+you end up with the vector equation
+\begin{equation}
+\label{Eq:II:39:32}
+\FLPf=(\lambda+\mu)\,\FLPgrad{(\FLPdiv{\FLPu})}+\mu\,\nabla^2\FLPu.
+\end{equation}
+
+You can, in fact, see that the equation relating [eq] and [eq]
+ must have this form. The force must depend on the second
+derivatives of the displacements [eq]. What second derivatives
+of [eq] are there that are vectors? One
+is [eq]; that’s a true vector. The only other one
+is [eq]. So the most general form is
+\begin{equation*}
+\FLPf=a\,\FLPgrad{(\FLPdiv{\FLPu})}+b\,\nabla^2\FLPu,
+\end{equation*}
+
+which is just ( 39.32 ) with a different definition of the
+constants. You may be wondering why we don’t have a third term using
+[eq], which is also a vector. But remember that
+[eq] is the same thing
+as [eq], so it is a linear
+combination of the two terms we have. Adding it would add nothing
+new. We have proved once more that isotropic material has only two
+elastic constants.
+
+For the equation of motion of the material, we can
+set ( 39.32 ) equal to $\rho\,\partial^2\FLPu/\partial
+t^2$—neglecting for now any body forces like gravity—and get
+\begin{equation}
+\label{Eq:II:39:33}
+\rho\,\frac{\partial^2\FLPu}{\partial t^2}=
+(\lambda+\mu)\,\FLPgrad{(\FLPdiv{\FLPu})}+\mu\,\nabla^2\FLPu.
+\end{equation}
+
+It looks something like the wave equation we had in electromagnetism,
+except that there is an additional complicating term. For materials
+whose elastic properties are everywhere the same we can see what the
+general solutions look like in the following way. You will remember
+that any vector field can be written as the sum of two vectors: one
+whose divergence is zero, and the other whose curl is zero. In other
+words, we can put
+\begin{equation}
+\label{Eq:II:39:34}
+\FLPu=\FLPu_1+\FLPu_2,
+\end{equation}
+
+where
+\begin{equation}
+\label{Eq:II:39:35}
+\FLPdiv{\FLPu_1}=0,\quad
+\FLPcurl{\FLPu_2}=\FLPzero.
+\end{equation}
+
+Substituting [eq] for [eq] in ( 39.33 ), we
+get
+ 
+\begin{equation}
+\label{Eq:II:39:36}
+\rho\,\partial^2/\partial t^2[\FLPu_1+\FLPu_2]=
+(\lambda+\mu)\,\FLPgrad{(\FLPdiv{\FLPu_2})}+
+\mu\,\nabla^2(\FLPu_1+\FLPu_2).
+\end{equation}
+ 
+ 
+\begin{align}
+\rho\,\partial^2/&\partial t^2[\FLPu_1+\FLPu_2]=\notag\\[1ex]
+\label{Eq:II:39:36}
+&(\lambda+\mu)\,\FLPgrad{(\FLPdiv{\FLPu_2})}+
+\mu\,\nabla^2(\FLPu_1+\FLPu_2).
+\end{align}
+ 
+
+
+We can eliminate [eq] by taking the divergence of this equation,
+ 
+\begin{equation*}
+\rho\,\partial^2/\partial t^2(\FLPdiv{\FLPu_2})=
+(\lambda+\mu)\,\nabla^2(\FLPdiv{\FLPu_2})+
+\mu\,\FLPdiv{\nabla^2(\FLPu_2)}.
+\end{equation*}
+ 
+ 
+
+\begin{align*}
+\rho\,\partial^2/&\partial t^2(\FLPdiv{\FLPu_2})=\notag\\[1ex]
+&(\lambda+\mu)\,\nabla^2(\FLPdiv{\FLPu_2})+
+\mu\,\FLPdiv{\nabla^2(\FLPu_2)}.
+\end{align*}
+
+ 
+Since the operators ([eq]) and ([eq]) can be
+interchanged, we can factor out the divergence to get
+\begin{equation}
+\label{Eq:II:39:37}
+\FLPdiv{\{\rho\,\partial^2\FLPu_2/\partial t^2-
+(\lambda+2\mu)\,\nabla^2\FLPu_2\}}=0.
+\end{equation}
+
+Since [eq] is zero by definition, the curl of the
+bracket [eq] is also zero; so the bracket itself is identically
+zero, and
+\begin{equation}
+\label{Eq:II:39:38}
+\rho\,\partial^2\FLPu_2/\partial t^2=
+(\lambda+2\mu)\,\nabla^2\FLPu_2.
+\end{equation}
+
+This is the vector wave equation for waves which move at the
+speed [eq]. Since the curl of [eq] is zero,
+there is no shearing associated with this wave; this wave is just the
+compressional—sound-type—wave we discussed in the last chapter,
+and the velocity is just what we found for [eq].
+
+In a similar way—by taking the curl of Eq. ( 39.36 )—we
+can show that [eq] satisfies the
+equation
+\begin{equation}
+\label{Eq:II:39:39}
+\rho\,\partial^2\FLPu_1/\partial t^2=\mu\,\nabla^2\FLPu_1.
+\end{equation}
+
+This is again a vector wave equation for waves with the
+speed [eq]. Since [eq] is zero, [eq]
+produces no changes in density; the vector [eq] corresponds to
+the transverse, or shear-type, wave we saw in the last chapter,
+and [eq].
+
+If we wished to know the static stresses in an isotropic material, we
+could, in principle, find them by solving Eq. ( 39.32 )
+with [eq] equal to zero—or equal to the static body forces from
+gravity such as [eq]—under certain conditions which are
+related to the forces acting on the surfaces of our large block of
+material. This is somewhat more difficult to do than the corresponding
+problems in electromagnetism. It is more difficult, first, because the
+equations are a little more difficult to handle, and second, because
+the shape of the elastic bodies we are likely to be interested in are
+usually much more complicated. In electromagnetism, we are often
+interested in solving Maxwell’s
+equations around relatively simple
+geometric shapes such as cylinders, spheres, and so on, since these are
+convenient shapes for electrical devices. In elasticity, the objects we
+would like to analyze may have quite complicated shapes—like a crane
+hook, or an automobile crankshaft, or the rotor of a gas turbine. Such
+problems can sometimes be worked out approximately by numerical methods,
+using the minimum energy principle we mentioned earlier. Another way is
+to use a model of the object and measure the internal strains
+experimentally, using polarized light.
+
+It works this way: When a transparent isotropic material—for example,
+a clear plastic like lucite—is put under stress, it becomes
+birefringent. If you put polarized light through it, the plane of
+polarization will be rotated by an amount related to the stress: by
+measuring the rotation, you can measure the stress.
+Figure  39–6 shows how such a setup might look.
+Figure  39–7 is a photograph of a photoelastic model of a
+complicated shape under stress.
+
+In all that has been said so far, we have assumed that stress is
+proportional to strain; in general, that is not true.
+Figure  39–8 shows a typical stress-strain curve for a
+ductile material. For small strains, the stress is proportional to the
+strain. Eventually, however, after a certain point, the relationship
+between stress and strain begins to deviate from a straight line. For
+many materials—the ones we would call “brittle”—the object breaks
+for strains only a little above the point where the curve starts to bend
+over. In general, there are other complications in the stress-strain
+relationship. For example, if you strain an object, the stresses may be
+high at first, but decrease slowly with time. Also if you go to high
+stresses, but still not to the “breaking” point, when you lower the
+strain the stress will return along a different curve. There is a small
+hysteresis effect (like the one we saw between [eq] and [eq] in magnetic
+materials).
+
+The stress at which a material will break varies widely from one
+material to another. Some materials will break when the maximum
+ tensile stress reaches a certain value. Other materials will fail
+when the maximum shear stress reaches a certain value. Chalk is
+an example of a material which is much weaker in tension than in shear.
+If you pull on the ends of a piece of blackboard chalk, the chalk will
+break perpendicular to the direction of the applied stress, as shown in
+Fig.  39–9 (a). It breaks perpendicular to the applied force
+because it is only a bunch of particles packed together which are easily
+pulled apart. The material is, however, much harder to shear, because
+the particles get in each other’s way. Now you will remember that when
+we had a rod in torsion there was a shear all around it. Also, we showed
+that a shear was equivalent to a combination of a tension and
+compression at [eq]. For these reasons, if you twist a
+piece of blackboard chalk, it will break along a complicated surface
+which starts out at [eq] to the axis. A photograph of a piece of
+chalk broken in this way is shown in Fig.  39–9 (b). The
+chalk breaks where the material is in maximum tension.
+
+Other materials behave in strange and complicated ways. The more
+complicated the materials are, the more interesting their behavior. If
+we take a sheet of “Saran-Wrap” and crumple it up into a ball and
+throw it on the table, it slowly unfolds itself and returns toward its
+original flat form. At first sight, we might be tempted to think that
+it is inertia which prevents it from returning to its original
+form. However, a simple calculation shows that the inertia is several
+orders of magnitude too small to account for the effect. There appear
+to be two important competing effects: “something” inside the
+material “remembers” the shape it had initially and “tries” to get
+back there, but something else “prefers” the new shape and
+“resists” the return to the old shape.
+
+We will not attempt to describe the mechanism at play in the Saran
+plastic, but you can get an idea of how such an effect might come
+about from the following model . Suppose you imagine a material
+made of long, flexible, but strong, fibers mixed together with some
+hollow cells filled with a viscous liquid. Imagine also that there are
+narrow pathways from one cell to the next so the liquid can leak
+slowly from a cell to its neighbor. When we crumple a sheet of this
+stuff, we distort the long fibers, squeezing the liquid out of the
+cells in one place and forcing it into other cells which are being
+stretched. When we let go, the long fibers try to return to their
+original shape. But to do this, they have to force the liquid back to
+its original location—which will happen relatively slowly because of
+the viscosity. The forces we apply in crumpling the sheet are much
+larger than the forces exerted by the fibers. We can crumple the sheet
+quickly, but it will return more slowly. It is undoubtedly a
+combination of large stiff molecules and smaller, movable ones in the
+Saran-Wrap that is responsible for its behavior. This idea also fits
+with the fact that the material returns more quickly to its original
+shape when it’s warmed up than when it’s cold—the heat increases the
+mobility (decreases the viscosity) of the smaller molecules.
+
+Although we have been discussing how Hooke’s law breaks down, the
+remarkable thing is perhaps not that Hooke’s law breaks down for large
+strains but that it should be so generally true. We can get some idea
+of why this might be by looking at the strain energy in a material. To
+say that the stress is proportional to the strain is the same thing as
+saying that the strain energy varies as the square of the
+strain. Suppose we have a rod and we twist it through a small angle [eq].
+If Hooke’s law holds, the strain energy should be
+proportional to the square of [eq]. Suppose we were to assume that
+the energy were some arbitrary function of the angle; we could write
+it as a Taylor expansion about zero angle
+ 
+\begin{equation}
+\label{Eq:II:39:40}
+U(\theta)=U(0)+U'(0)\,\theta+\tfrac{1}{2}U''(0)\,\theta^2+
+\tfrac{1}{6}U'''(0)\,\theta^3+\dotsb
+\end{equation}
+ 
+ 
+\begin{align}
+U(\theta)=U(0)&+U'(0)\,\theta+\!\tfrac{1}{2}U''(0)\,\theta^2\notag\\[.5ex]
+\label{Eq:II:39:40}
+&+\tfrac{1}{6}U'''(0)\,\theta^3\!+\dotsb
+\end{align}
+ 
+The torque [eq] is the derivative of [eq] with respect to angle; we
+would have
+\begin{equation}
+\label{Eq:II:39:41}
+\tau(\theta)=U'(0)+U''(0)\,\theta+\!\tfrac{1}{2}U'''(0)\,\theta^2\!+\dotsb
+\end{equation}
+
+Now if we measure our angles from the equilibrium position, the
+first term is zero. So the first remaining term is proportional
+to [eq]; and for small enough angles, it will dominate the term
+in [eq]. [Actually, materials are sufficiently symmetric internally
+so that [eq]; the term in [eq] will be
+zero, and the departures from linearity would come only from the
+[eq] term. There is, however, no reason why this should be true
+for compressions and tensions.] The thing we have not explained is why
+materials usually break soon after the higher-order terms become
+significant.
+
+As our last topic on elasticity we would like to show how one could
+try to calculate the elastic constants of a material, starting with
+some knowledge of the properties of the atoms which make up the
+material. We will take only the simple case of an ionic cubic
+crystal like sodium chloride. When a crystal is strained, its volume
+or its shape is changed. Such changes result in an increase in the
+potential energy of the crystal. To calculate the change in strain
+energy, we have to know where each atom goes. In complicated crystals,
+the atoms will rearrange themselves in the lattice in very complicated
+ways to make the total energy as small as possible. This makes the
+computation of the strain energy rather difficult. In the case of a
+simple cubic crystal, however, it is easy to see what will happen. The
+distortions inside the crystal will be geometrically similar to the
+distortions of the outside boundaries of the crystal.
+
+We can calculate the elastic constants for a cubic crystal in the
+following way. First, we assume some force law between each pair of
+atoms in the crystal. Then, we calculate the change in the internal
+energy of the crystal when it is distorted from its equilibrium
+shape. This gives us a relation between the energy and the strains
+which is quadratic in all the strains. Comparing the energy obtained
+this way with Eq. ( 39.13 ), we can identify the
+coefficient of each term with the elastic constants [eq].
+
+For our example we will assume a simple force law: that the force
+between neighboring atoms is a central force, by which we mean
+that it acts along the line between the two atoms. We would expect the
+forces in ionic crystals to be like this, since they are just
+primarily Coulomb forces. (The forces of covalent bonds are usually
+more complicated, since they can exert a sideways push on a nearby
+atom; we will leave out this complication.) We are also going to
+include only the forces between each atom and its nearest and
+ next-nearest neighbors. In other words, we will make an
+approximation which neglects all forces beyond the next-nearest
+neighbor. The forces we will include are shown for the [eq]-plane in
+Fig.  39–10 (a). The corresponding forces in the [eq]- and [eq]-planes
+also have to be included.
+
+Since we are only interested in the elastic coefficients which apply
+to small strains, and therefore only want the terms in the energy
+which vary quadratically with the strains, we can imagine that the
+force between each atom pair varies linearly with the
+displacements. We can then imagine that each pair of atoms is joined
+by a linear spring, as drawn in Fig.  39–10 (b). All of the springs
+between a sodium atom and a chlorine atom should have the same spring
+constant, say [eq]. The springs between two sodiums and between two
+chlorines could have different constants, but we will make our
+discussion simpler by taking them equal; we call them [eq]. (We could
+come back later and make them different after we have seen how the
+calculations go.)
+
+Now we assume that the crystal is distorted by a homogeneous strain
+described by the strain tensor [eq]. In general, it will have
+components involving [eq], [eq], and [eq]; but we will consider now only a
+strain with the three components [eq], [eq], and [eq] so
+that it will be easy to visualize. If we pick one atom as our origin,
+the displacement of every other atom is given by equations like
+Eq. ( 39.9 ):
+\begin{equation}
+\begin{aligned}
+u_x&=e_{xx}x+e_{xy}y,\\
+u_y&=e_{xy}x+e_{yy}y.
+\end{aligned}
+\label{Eq:II:39:42}
+\end{equation}
+
+Suppose we call the atom at [eq] “atom [eq]” and number its
+neighbors in the [eq]-plane as shown in Fig.  39–11 . Calling
+the lattice constant [eq], we get the [eq] and [eq] displacements
+[eq] and [eq] listed in Table  39–1 .
+
+Now we can calculate the energy stored in the springs, which is [eq]
+times the square of the extension for each spring. For example, the
+energy in the horizontal spring between atom [eq] and atom [eq] is
+\begin{equation}
+\label{Eq:II:39:43}
+\frac{k_1(e_{xx}a)^2}{2}.
+\end{equation}
+
+Note that to first order, the [eq]-displacement of atom [eq] does not
+change the length of the spring between atom [eq] and atom [eq]. To get
+the strain energy in a diagonal spring, such as that to atom [eq],
+however, we need to calculate the change in length due to both the
+horizontal and vertical displacements. For small displacements from
+the original cube, we can write the change in the distance to atom [eq]
+as the sum of the components of [eq] and [eq] in the diagonal
+direction, namely as
+\begin{equation*}
+\frac{1}{\sqrt{2}}\,(u_x+u_y).
+\end{equation*}
+
+Using the values of [eq] and [eq] from the table, we get the energy
+\begin{equation}
+\label{Eq:II:39:44}
+\frac{k_2}{2}\!\biggl(\!\frac{u_x\!+u_y}{\sqrt{2}}\!\biggr)^2\!\!\!=\!
+\frac{k_2a^2}{4}(e_{xx}\!+e_{yx}\!+e_{xy}\!+e_{yy})^2.
+\end{equation}
+
+For the total energy for all the springs in the [eq]-plane, we need the
+sum of eight terms like ( 39.43 ) and ( 39.44 ).
+Calling this energy [eq], we get
+\begin{align}
+U_0=\,&\frac{a^2}{2}\bigg\{\!k_1e_{xx}^2\!+\!
+\frac{k_2}{2}(e_{xx}\!+e_{yx}\!+e_{xy}\!+e_{yy})^2\notag\\[-2pt]
+&+k_1e_{yy}^2\!+\!
+\frac{k_2}{2}(e_{xx}\!-e_{yx}\!-e_{xy}\!+e_{yy})^2\notag\\
+&+k_1e_{xx}^2\!+\!
+\frac{k_2}{2}(e_{xx}\!+e_{yx}\!+e_{xy}\!+e_{yy})^2\notag\\
+\label{Eq:II:39:45}
+&+k_1e_{yy}^2\!+\!
+\frac{k_2}{2}(e_{xx}\!-e_{yx}\!-e_{xy}\!+e_{yy})^2\!\biggr\}.
+\end{align}
+
+To get the total energy of all the springs connected to atom [eq], we
+must make one addition to the energy in Eq. ( 39.45 ). Even
+though we have only [eq]- and [eq]-components of the strain, there are
+still some energies associated with the next-nearest neighbors off the
+[eq]-plane. This additional energy is
+\begin{equation}
+\label{Eq:II:39:46}
+k_2(e_{xx}^2a^2+e_{yy}^2a^2).
+\end{equation}
+
+The elastic constants are related to the energy density [eq] by
+Eq. ( 39.13 ). The energy we have calculated is the energy
+associated with one atom, or rather, it is twice the energy per
+atom, since one-half of the energy of each spring should be assigned to
+each of the two atoms it joins. Since there are [eq] atoms per unit
+volume, [eq] and [eq] are related by
+\begin{equation*}
+w=\frac{U_0}{2a^3}.
+\end{equation*}
+
+To find the elastic constants [eq], we need only to expand out the
+squares in Eq. ( 39.45 )—adding the terms
+of ( 39.46 )—and compare the coefficients of [eq]
+with the corresponding coefficient in Eq. ( 39.13 ). For
+example, collecting the terms in [eq] and in [eq], we get
+the factor
+\begin{equation*}
+(k_1+2k_2)a^2,
+\end{equation*}
+
+so
+\begin{equation*}
+C_{xxxx}=C_{yyyy}=\frac{k_1+2k_2}{a}.
+\end{equation*}
+
+For the remaining terms, there is a slight complication. Since we
+cannot distinguish the product of two terms like [eq], from
+[eq], the coefficient of such terms in our energy is equal
+to the sum of two terms in Eq. ( 39.13 ). The coefficient
+of [eq] in Eq. ( 39.45 ) is [eq], so we have
+that
+\begin{equation*}
+(C_{xxyy}+C_{yyxx})=\frac{2k_2}{a}.
+\end{equation*}
+
+But because of the symmetry in our crystal, [eq], so we
+have that
+\begin{equation*}
+C_{xxyy}=C_{yyxx}=\frac{k_2}{a}.
+\end{equation*}
+
+By a similar process, we can also get
+\begin{equation*}
+C_{xyxy}=C_{yxyx}=\frac{k_2}{a}.
+\end{equation*}
+
+Finally, you will notice that any term which involves either [eq] or [eq]
+only once is zero—as we concluded earlier from symmetry arguments.
+Summarizing our results:
+\begin{equation}
+\begin{aligned}
+C_{xxxx}&=C_{yyyy}=\frac{k_1+2k_2}{a},\\[-.5ex]
+C_{xyxy}&=C_{yxyx}=\frac{k_2}{a},\\[-.5ex]
+C_{xxyy}&=C_{yyxx}=C_{xyyx}=C_{yxxy}=\frac{k_2}{a},\\[.5ex]
+C_{xxxy}&=C_{xyyy}=\text{etc.}=0.
+\end{aligned}
+\label{Eq:II:39:47}
+\end{equation}
+
+We have been able to relate the bulk elastic constants to the atomic
+properties which appear in the constants [eq] and [eq]. In our
+particular case, [eq]. It turns out—as you can
+perhaps see from the way the calculations went—that these terms are
+ always equal for a cubic crystal, no matter how many force
+terms are taken into account, provided only that the forces act
+along the line joining each pair of atoms—that is, so long as the
+forces between atoms are like springs and don’t have a sideways part
+such as you might get from a cantilevered beam (and you do get in
+covalent bonds).
+
+We can check this conclusion with the experimental measurements of the
+elastic constants. In Table  39–2 we give the observed
+values of the three elastic coefficients for several cubic
+crystals. 2 You will
+notice that [eq] and [eq] are, in general, not equal. The
+reason is that in metals like sodium and potassium the interatomic
+forces are not along the line joining the atoms, as we assumed in our
+model. Diamond does not obey the law either, because the forces in
+diamond are covalent forces and have some directional properties—the
+bonds would prefer to be at the tetrahedral angle. The ionic crystals
+like lithium fluoride, sodium chloride, and so on, do have nearly all
+the physical properties assumed in our model, and the table shows that
+the constants [eq] and [eq] are almost equal. It is not
+clear why silver chloride should not satisfy the condition
+that [eq].

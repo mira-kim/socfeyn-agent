@@ -1,0 +1,1285 @@
+The Feynman Lectures on Physics Vol. III Ch. 5: Spin One
+========================================================
+
+Sections: 5–1 Filtering atoms with a Stern-Gerlach apparatus | 5–2 Experiments with filtered atoms | 5–3 Stern-Gerlach filters in series | 5–4 Base states | 5–5 Interfering amplitudes | 5–6 The machinery of quantum mechanics | 5–7 Transforming to a different base | 5–8 Other situations
+
+
+
+In this chapter we really begin the quantum mechanics proper—in the
+sense that we are going to describe a quantum mechanical phenomenon in
+a completely quantum mechanical way. We will make no apologies and no
+attempt to find connections to classical mechanics. We want to talk
+about something new in a new language. The particular situation which
+we are going to describe is the behavior of the so-called quantization
+of the angular momentum, for a particle of spin one . But we
+won’t use words like “angular momentum” or other concepts of
+classical mechanics until later. We have chosen this particular
+example because it is relatively simple, although not the simplest
+possible example. It is sufficiently complicated that it can stand as
+a prototype which can be generalized for the description of all
+quantum mechanical phenomena. Thus, although we are dealing with a
+particular example, all the laws which we mention are immediately
+generalizable, and we will give the generalizations so that you will
+see the general characteristics of a quantum mechanical
+description. We begin with the phenomenon of the splitting of a beam
+of atoms into three separate beams in a Stern-Gerlach experiment.
+
+You remember that if we have an inhomogeneous magnetic field made by a
+magnet with a pointed pole tip and we send a beam through the
+apparatus, the beam of particles may be split into a number of
+beams—the number depending on the particular kind of atom and its
+state. We are going to take the case of an atom which gives three
+beams, and we are going to call that a particle of spin
+one . You can do for yourself the case of five beams, seven beams, two
+beams, etc.—you just copy everything down and where we have three
+terms, you will have five terms, seven terms, and so on.
+
+Imagine the apparatus drawn schematically in Fig.  5–1 . A
+beam of atoms (or particles of any kind) is collimated by some slits and
+passes through a nonuniform field. Let’s say that the beam moves in the
+[eq]-direction and that the magnetic field and its gradient are both in
+the [eq]-direction. Then, looking from the side, we will see the beam
+split vertically into three beams, as shown in the figure. Now at the
+output end of the magnet we could put small counters which count the
+rate of arrival of particles in any one of the three beams. Or we can
+block off two of the beams and let the third one go on.
+
+Suppose we block off the lower two beams and let the top-most beam go
+on and enter a second Stern-Gerlach apparatus of the same kind, as
+shown in Fig.  5–2 . What happens? There are not 
+three beams in the second apparatus; there is only the top
+beam. 1 This is what you would expect if you think of the second
+apparatus as simply an extension of the first. Those atoms which are
+being pushed upward continue to be pushed upward in the second magnet.
+
+You can see then that the first apparatus has produced a beam of
+“purified” objects—atoms that get bent upward in the particular
+inhomogeneous field. The atoms, as they enter the original
+Stern-Gerlach apparatus, are of three “varieties,” and the three
+kinds take different trajectories. By filtering out all but one of the
+varieties, we can make a beam whose future behavior in the same kind
+of apparatus is determined and predictable. We will call this a
+ filtered beam, or a polarized beam, or a beam in which
+the atoms all are known to be in a definite state .
+
+For the rest of our discussion, it will be more convenient if we
+consider a somewhat modified apparatus of the Stern-Gerlach type. The
+apparatus looks more complicated at first, but it will make all the
+arguments simpler. Anyway, since they are only “thought
+experiments,” it doesn’t cost anything to complicate the
+equipment. (Incidentally, no one has ever done all of the experiments
+we will describe in just this way, but we know what would 
+happen from the laws of quantum mechanics, which are, of course, based
+on other similar experiments. These other experiments are harder to
+understand at the beginning, so we want to describe some
+idealized—but possible—experiments.)
+
+Figure  5–3 (a) shows a drawing of the “modified
+Stern-Gerlach apparatus” we would like to use. It consists of a
+sequence of three high-gradient magnets. The first one (on the left) is
+just the usual Stern-Gerlach magnet and splits the incoming beam of
+spin-one particles into three separate beams. The second magnet has the
+same cross section as the first, but is twice as long and the
+polarity of its magnetic field is opposite the field in magnet [eq]. The
+second magnet pushes in the opposite direction on the atomic magnets and
+bends their paths back toward the axis, as shown in the trajectories
+drawn in the lower part of the figure. The third magnet is just like the
+first, and brings the three beams back together again, so that leaves
+the exit hole along the axis. Finally, we would like to imagine that in
+front of the hole at [eq] there is some mechanism which can get the atoms
+started from rest and that after the exit hole at [eq] there is a
+decelerating mechanism that brings the atoms back to rest at [eq]. That
+is not essential, but it will mean that in our analysis we won’t have to
+worry about including any effects of the motion as the atoms come out,
+and can concentrate on those matters having only to do with the spin.
+The whole purpose of the “improved” apparatus is just to bring all the
+particles to the same place, and with zero speed.
+
+Now if we want to do an experiment like the one in
+Fig.  5–2 , we can first make a filtered beam by putting a
+plate in the middle of the apparatus that blocks two of the beams, as
+shown in Fig.  5–4 . If we now put the polarized atoms
+through a second identical apparatus, all the atoms will take the upper
+path, as can be verified by putting similar plates in the way of the
+various beams of the second [eq] filter and seeing whether particles get
+through.
+
+Suppose we call the first apparatus by the name [eq]. (We are going to
+consider all sorts of combinations, and we will need labels to keep
+things straight.) We will say that the atoms which take the top path
+in [eq] are in the “plus state with respect to [eq]”; the ones which
+take the middle path are in the “zero state with respect to [eq]”;
+and the ones which take the lowest path are in the “minus state with
+respect to [eq].” (In the more usual language we would say that the
+[eq]-component of the angular momentum was [eq], [eq],
+and [eq], but we are not using that language now.) Now in
+Fig.  5–4 the second apparatus is oriented just like the
+first, so the filtered atoms will all go on the upper path. Or if we had
+blocked off the upper and lower beams in the first apparatus and let
+only the zero state through, all the filtered atoms would go through the
+middle path of the second apparatus. And if we had blocked off all but
+the lowest beam in the first, there would be only a low beam in the
+second. We can say that in each case our first apparatus has produced a
+filtered beam in a pure state with respect to [eq] ([eq], [eq],
+or [eq]), and we can test which state is present by putting the atoms
+through a second, identical apparatus.
+
+We can make our second apparatus so that it transmits only atoms of a
+particular state—by putting masks inside it as we did for the first
+one—and then we can test the state of the incoming beam just by
+seeing whether anything comes out the far end. For instance, if we
+block off the two lower paths in the second apparatus, [eq] percent
+of the atoms will still come through; but if we block off the upper
+path, nothing will get through.
+
+To make this kind of discussion easier, we are going to invent a
+shorthand symbol to represent one of our improved Stern-Gerlach
+apparatuses. We will let the symbol
+\begin{equation}
+\label{Eq:III:5:1}
+\SG{S}
+\end{equation}
+
+stand for one complete apparatus. (This is not a symbol you
+will ever find used in quantum mechanics; we’ve just invented it for
+this chapter. It is simply meant to be a shorthand picture of the
+apparatus of Fig.  5–3 .) Since we are going to want to
+use several apparatuses at once, and with various orientations, we will
+identify each with a letter underneath. So the symbol
+in ( 5.1 ) stands for the apparatus [eq]. When we block off
+one or more of the beams inside, we will show that by some vertical bars
+indicating which beam is blocked, like this:
+\begin{equation}
+\label{Eq:III:5:2}
+\SGP{S}\!\!\!\cdotp
+\end{equation}
+
+The various possible combinations we will be using are shown in
+Fig.  5–5 .
+
+If we have two filters in succession (as in Fig.  5–4 ), we
+will put the two symbols next to each other, like this:
+\begin{equation}
+\label{Eq:III:5:3}
+\SGP{S} \!\! \SG{S} \!\!\!\cdotp
+\end{equation}
+
+For this setup, everything that comes through the first also gets
+through the second. In fact, even if we block off the “zero” and
+“minus” channels of the second apparatus, so that we have
+
+\begin{equation}
+\label{Eq:III:5:4}
+\SGP{S} \!\! \SGP{S} \!\!\!,
+\end{equation}
+
+we still get [eq] percent transmission through the second
+apparatus. On the other hand, if we have
+
+\begin{equation}
+\label{Eq:III:5:5}
+\SGP{S} \!\! \SGM{S} \!\!\!,
+\end{equation}
+
+nothing at all comes out of the far end. Similarly,
+
+\begin{equation}
+\label{Eq:III:5:6}
+\SGM{S} \!\! \SGP{S}
+\end{equation}
+
+would give nothing out. On the other hand,
+
+\begin{equation}
+\label{Eq:III:5:7}
+\begin{array}{cc}
+\SGM{S} \!\! \SGM{S}
+\end{array}
+\end{equation}
+
+would be just equivalent to
+
+\begin{equation*}
+\SGM{S}
+\end{equation*}
+
+by itself.
+
+Now we want to describe these experiments quantum mechanically. We
+will say that an atom is in the [eq] state if it has gone through
+the apparatus of Fig.  5–5 (b), that it is in a
+[eq] state if it has gone through (c), and in a [eq] state if it has gone
+through (d). 2 Then we let [eq] be the
+ amplitude that an atom which is in state [eq] will get through an
+apparatus into the [eq] state. We can say: [eq] is the
+amplitude for an atom in the state [eq] to get into the
+state [eq]. The experiment ( 5.4 ) gives us that
+\begin{equation*}
+\braket{+S}{+S}=1,
+\end{equation*}
+
+whereas ( 5.5 ) gives us
+\begin{equation*}
+\braket{-S}{+S}=0.
+\end{equation*}
+
+Similarly, the result of ( 5.6 ) is
+\begin{equation*}
+\braket{+S}{-S}=0,
+\end{equation*}
+
+and of ( 5.7 ) is
+\begin{equation*}
+\braket{-S}{-S}=1.
+\end{equation*}
+
+As long as we deal only with “pure” states—that is, we have only
+one channel open—there are nine such amplitudes, and we can write
+them in a table:
+\begin{equation}
+\label{Eq:III:5:8}
+\text{to}\,
+\begin{array}{c}
+\begin{array}{c}
+ \text{from}
+\end{array} \\[-.5ex]
+\begin{array}{c|ccc}
+&+S & 0S & -S \\
+ \hline
++S&1 & 0 & 0\\
+0S&0 & 1 & 0\\
+-S&0 & 0 & 1
+\end{array}
+\end{array}
+\end{equation}
+
+This array of nine numbers—called a
+ matrix —summarizes the phenomena we’ve been
+describing.
+
+Now comes the big question: What happens if the second apparatus is
+tipped to a different angle, so that its field axis is no longer
+parallel to the first? It could be not only tipped, but also pointed
+in a different direction—for instance, it could take the beam off
+at [eq] with respect to the original direction. To take it easy at
+first, let’s first think about an arrangement in which the second
+Stern-Gerlach experiment is tilted by some angle [eq] about the
+[eq]-axis, as shown in Fig.  5–6 . We’ll call the second
+apparatus [eq]. Suppose that we now set up the following experiment:
+\begin{equation*}
+\SGP{S} \!\! \SGP{T} \!\!\!\!,
+\end{equation*}
+
+or the experiment:
+
+\begin{equation*}
+\SGP{S} \!\! \SGZ{T} \!\!\!\!\cdotp
+\end{equation*}
+
+What comes out at the far end in these cases?
+
+The answer is this: If the atoms are in a definite state with respect
+to [eq], they are not in the same state with respect to [eq]—a
+[eq] state is not also a [eq] state. There is ,
+however, a certain amplitude to find the atom in a
+[eq] state—or a [eq] state or a [eq] state.
+
+In other words, as careful as we have been to make sure that we have
+the atoms in a definite condition, the fact of the matter is that if
+it goes through an apparatus which is tilted at a different angle it
+has, so to speak, to “reorient” itself—which it does, don’t
+forget, by luck. We can put only one particle through at a time, and
+then we can only ask the question: What is the probability that it
+gets through? Some of the atoms that have gone through [eq] will end in
+a [eq] state, some of them will end in a [eq], and some in a
+[eq] state—all with different odds. These odds can be calculated
+by the absolute squares of complex amplitudes; what we want is some
+mathematical method, or quantum mechanical description, for these
+amplitudes. What we need to know are various quantities like
+\begin{equation*}
+\braket{-T}{+S},
+\end{equation*}
+
+by which we mean the amplitude that an atom initially in the
+[eq] state can get into the [eq] condition (which is not zero
+unless [eq] and [eq] are lined up parallel to each other). There are
+other amplitudes like
+\begin{equation*}
+\braket{+T}{\OS},\quad
+\text{or}\quad
+\braket{\OT}{-S},\quad
+\text{etc}.
+\end{equation*}
+
+There are, in fact, nine such amplitudes—another matrix—that a
+theory of particles should tell us how to calculate. Just as [eq]
+tells us how to calculate what happens to a classical particle in any
+circumstance, the laws of quantum mechanics permit us to determine the
+amplitude that a particle will get through a particular apparatus. The
+central problem, then, is to be able to calculate—for any given tilt
+angle [eq], or in fact for any orientation whatever—the nine
+amplitudes:
+\begin{equation}
+\begin{alignedat}{3}
+\braket{+T}{+S}&,&\quad
+\braket{+T}{\OS}&,&\quad
+\braket{+T}{-S}&,\\
+\braket{\OT}{+S}&,&\quad
+\braket{\OT}{\OS}&,&\quad
+\braket{\OT}{-S}&,\\
+\braket{-T}{+S}&,&\quad
+\braket{-T}{\OS}&,&\quad
+\braket{-T}{-S}&.
+\end{alignedat}
+\label{Eq:III:5:9}
+\end{equation}
+
+We can already figure out some relations among these
+amplitudes. First, according to our definitions, the absolute square
+\begin{equation*}
+\abs{\braket{+T}{+S}}^2
+\end{equation*}
+
+is the probability that an atom in a [eq] state will enter a
+[eq] state. We will often find it more convenient to write such
+squares in the equivalent form
+\begin{equation*}
+\braket{+T}{+S}\braket{+T}{+S}\cconj.
+\end{equation*}
+
+In the same notation the number
+\begin{equation*}
+\braket{\OT}{+S}\braket{\OT}{+S}\cconj
+\end{equation*}
+
+is the probability that a particle in the [eq] state will enter the
+[eq] state, and
+\begin{equation*}
+\braket{-T}{+S}\braket{-T}{+S}\cconj
+\end{equation*}
+
+is the probability that it will enter the [eq] state. But the way
+our apparatuses are made, every atom which enters the [eq] apparatus
+must be found in some one of the three states of the
+[eq] apparatus—there’s nowhere else for a given kind of atom to go. So
+the sum of the three probabilities we’ve just written must be equal to
+[eq] percent. We have the relation
+\begin{equation}
+\begin{alignedat}{3}
+&\braket{+T}{+S}&\braket{+T}{+S}&\cconj\;&+&\\[.2ex]
+&\braket{\OT}{+S}&\,\braket{\OT}{+S}&\cconj&+&\\[.2ex]
+&\braket{-T}{+S}&\braket{-T}{+S}&\cconj&=&\;1.
+\end{alignedat}
+\label{Eq:III:5:10}
+\end{equation}
+
+There are, of course, two other such equations that we get if we start
+with a [eq] or a [eq] state. But they are all we can easily get,
+so we’ll go on to some other general questions.
+
+Here is an interesting question: Suppose we had atoms filtered into
+the [eq] state, then we put them through a second filter, say into a
+[eq] state, and then through another [eq] filter.
+(We’ll call the last filter [eq] just so we can distinguish it
+from the first [eq]-filter.) Do the atoms remember that they were once
+in a [eq] state? In other words, we have the following experiment:
+\begin{equation}
+\label{Eq:III:5:11}
+\SGP{S} \!\! \SGZ{T} \!\! \SGP{S'}\!\!\!\!\cdotp
+\end{equation}
+
+We want to know whether all those that get through [eq] also get
+through [eq]. They do not . Once they have been filtered by [eq],
+they do not remember in any way that they were in a
+[eq] state when they entered [eq]. Note that the second [eq] apparatus
+in ( 5.11 ) is oriented exactly the same as the first, so it
+is still an [eq]-type filter. The states filtered by [eq] are, of course,
+still [eq], [eq], and [eq].
+
+The important point is this: If the [eq] filter passes only one
+beam , the fraction that gets through the second [eq] filter
+depends only on the setup of the [eq] filter, and is completely
+independent of what precedes it. The fact that the same atoms were
+once sorted by an [eq] filter has no influence whatever on what they
+will do once they have been sorted again into a pure beam by a
+[eq] apparatus. From then on, the probability for getting into different
+states is the same no matter what happened before they got into the
+[eq] apparatus.
+
+As an example, let’s compare the experiment of ( 5.11 )
+with the following experiment:
+\begin{equation}
+\label{Eq:III:5:12}
+\SGZ{S} \!\! \SGZ{T} \!\! \SGP{S'}
+\end{equation}
+
+in which only the first [eq] is changed. Let’s say that the
+angle [eq] (between [eq] and [eq]) is such that in
+experiment ( 5.11 ) one-third of the atoms that get
+through [eq] also get through [eq]. In experiment ( 5.12 ), although
+there will, in general, be a different number of atoms coming through [eq],
+the same fraction of these —one-third—will also get through [eq].
+
+We can, in fact, show from what you have learned earlier that the
+fraction of the atoms that come out of [eq] and get through any
+particular [eq] depends only on [eq] and [eq], not on anything that
+happened earlier. Let’s compare experiment ( 5.12 ) with
+\begin{equation}
+\label{Eq:III:5:13}
+\SGZ{S} \!\! \SGZ{T} \!\! \SGZ{S'}\!\!\!\!.
+\end{equation}
+
+The amplitude that an atom that comes out of [eq] will also get through
+both [eq] and [eq] is, for the experiments of ( 5.12 ),
+\begin{equation*}
+\braket{+S}{\OT}\braket{\OT}{\OS}.
+\end{equation*}
+
+The corresponding probability is
+\begin{equation*}
+\abs{\braket{+S}{\OT}\braket{\OT}{\OS}}^2
+=\abs{\braket{+S}{\OT}}^2\abs{\braket{\OT}{\OS}}^2.
+\end{equation*}
+
+The probability for experiment ( 5.13 ) is
+\begin{equation*}
+\abs{\braket{\OS}{\OT}\braket{\OT}{\OS}}^2
+=\abs{\braket{\OS}{\OT}}^2\abs{\braket{\OT}{\OS}}^2.
+\end{equation*}
+
+The ratio is
+\begin{equation*}
+\frac{\abs{\braket{\OS}{\OT}}^2}
+{\abs{\braket{+S}{\OT}}^2}.
+\end{equation*}
+
+and depends only on [eq] and [eq], and not at all on which beam [eq], [eq],
+or [eq] is selected by [eq]. (The absolute numbers may go
+up and down together depending on how much gets through [eq].) We
+would, of course, find the same result if we compared the
+probabilities that the atoms would go into the plus or the minus
+states with respect to [eq], or the ratio of the probabilities to go
+into the zero or minus states.
+
+In fact, since these ratios depend only on which beam is allowed to
+pass through [eq], and not on the selection made by the first [eq] filter,
+it is clear that we would get the same result even if the last
+apparatus were not an [eq] filter. If we use for the third
+apparatus—which we will now call [eq]—one rotated by some arbitrary
+angle with respect to [eq], we would find that a ratio such
+as [eq] was
+independent of which beam was passed by the first filter [eq].
+
+These results illustrate one of the basic principles of quantum
+mechanics: Any atomic system can be separated by a filtering process
+into a certain set of what we will call base states , and the
+future behavior of the atoms in any single given base state depends
+only on the nature of the base state—it is independent of any
+previous history. 3 The base
+states depend, of course, on the filter used; for instance, the three
+states [eq], [eq], and [eq] are one set of base states; the
+three states [eq], [eq], and [eq] are another. There are any
+number of possibilities each as good as any other.
+
+We should be careful to say that we are considering good 
+filters which do indeed produce “pure” beams. If, for instance, our
+Stern-Gerlach apparatus didn’t produce a good separation of the three
+beams so that we could not separate them cleanly by our masks, then we
+could not make a complete separation into base states. We can tell if
+we have pure base states by seeing whether or not the beams can be
+split again in another filter of the same kind. If we have a pure
+[eq] state, for instance, all the atoms will go through
+
+\begin{equation*}
+\SGP{T}\!\!\!\!,
+\end{equation*}
+
+and none will go through
+
+\begin{equation*}
+\SGZ{T}\!\!\!\!,
+\end{equation*}
+
+or through
+
+\begin{equation*}
+\SGM{T}\!\!\!\!\cdotp
+\end{equation*}
+
+Our statement about base states means that it is possible to
+filter to some pure state, so that no further filtering by an
+identical apparatus is possible.
+
+We must also point out that what we are saying is exactly true only in
+rather idealized situations. In any real Stern-Gerlach apparatus, we
+would have to worry about diffraction by the slits that could cause
+some atoms to go into states corresponding to different angles, or
+about whether the beams might contain atoms with different excitations
+of their internal states, and so on. We have idealized the situation
+so that we are talking only about the states that are split in a
+magnetic field; we are ignoring things having to do with position,
+momentum, internal excitations, and the like. In general, one would
+need to consider also base states which are sorted out with respect to
+such things also. But to keep the concepts simple, we are considering
+only our set of three states, which is sufficient for the exact
+treatment of the idealized situation in which the atoms don’t get torn
+up in going through the apparatus, or otherwise badly treated, and
+come to rest when they leave the apparatus.
+
+You will note that we always begin our thought experiments by taking a
+filter with only one channel open, so that we start with some definite
+base state. We do this because atoms come out of a furnace in various
+states determined at random by the accidental happenings inside the
+furnace. (It gives what is called an “unpolarized” beam.) This
+randomness involves probabilities of the “classical” kind—as in
+coin tossing—which are different from the quantum mechanical
+probabilities we are worrying about now. Dealing with an unpolarized
+beam would get us into additional complications that are better to
+avoid until after we understand the behavior of polarized beams. So
+don’t try to consider at this point what happens if the first 
+apparatus lets more than one beam through. (We will tell you how you
+can handle such cases at the end of the chapter.)
+
+Let’s now go back and see what happens when we go from a base state
+for one filter to a base state for a different filter. Suppose we
+start again with
+\begin{equation*}
+\SGP{S} \!\! \SGZ{T}\!\!\!\!\cdotp
+\end{equation*}
+
+The atoms which come out of [eq] are in the base state [eq] and
+have no memory that they were once in the state [eq]. Some people
+would say that in the filtering by [eq] we have “lost the
+information” about the previous state [eq] because we have
+“disturbed” the atoms when we separated them into three beams in the
+apparatus [eq]. But that is not true. The past information is not lost
+by the separation into three beams, but by the blocking
+masks that are put in—as we can see by the following set of
+experiments.
+
+We start with a [eq] filter and will call [eq] the number of atoms that
+come through it. If we follow this by a [eq] filter, the number of
+atoms that come out is some fraction of the original number,
+say [eq]. If we then put another [eq] filter, only some
+fraction [eq] of these atoms will get to the far end. We can indicate this
+in the following way:
+
+\begin{equation}
+\label{Eq:III:5:14}
+\SGP{S} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow}}\!
+\SGZ{T} 
+\kern{-12pt} \raise{7pt} {\overset{\alpha N}{\longrightarrow}}\!
+\SGP{S'} 
+\kern{-12pt} \raise{7pt} {\overset{\beta \alpha N}{\longrightarrow .}}
+\end{equation}
+
+If our third apparatus [eq] selected a different state, say the
+[eq] state, a different fraction, say [eq], would get
+through. 4 We would have
+\begin{equation}
+\label{Eq:III:5:15}
+\SGP{S} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow}}\!
+\SGZ{T} 
+\kern{-12pt} \raise{7pt} {\overset{\alpha N}{\longrightarrow}}\!
+\SGZ{S'} 
+\kern{-12pt} \raise{7pt} {\overset{\gamma \alpha N}{\longrightarrow .}}
+\end{equation}
+
+Now suppose we repeat these two experiments but remove all the masks
+from [eq]. We would then find the remarkable results as follows:
+\begin{equation}
+\label{Eq:III:5:16}
+\SGP{S} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow}}\!
+\SG{T} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow}}\!
+\SGP{S'} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow ,}}
+\end{equation}
+
+\begin{equation}
+\label{Eq:III:5:17}
+\SGP{S} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow}}\!
+\SG{T} 
+\kern{-12pt} \raise{7pt} {\overset{N}{\longrightarrow}}\!
+\SGZ{S'} 
+\kern{-12pt} \raise{7pt} {\overset{0}{\longrightarrow .}}
+\end{equation}
+
+ All the atoms get through [eq] in the first case, but
+ none in the second case! This is one of the great laws of
+quantum mechanics. That nature works this way is not self-evident, but
+the results we have given correspond for our idealized situation to
+the quantum mechanical behavior observed in innumerable experiments.
+
+How can it be that in going from ( 5.15 )
+to ( 5.17 )—by opening more channels —we let
+ fewer atoms through? This is the old, deep mystery of quantum
+mechanics—the interference of amplitudes. It’s the same kind of thing
+we first saw in the two-slit interference experiment with electrons. We
+saw that we could get fewer electrons at some places with both slits
+open than we got with one slit open. It works quantitatively this way.
+We can write the amplitude that an atom will get through [eq] and [eq] in
+the apparatus of ( 5.17 ) as the sum of three amplitudes, one
+for each of the three beams in [eq]; the sum is equal to zero:
+\begin{equation}
+\begin{alignedat}{3}
+&\braket{\OS}{+T}&\braket{+T}{+S}&\;&+&\\[.2ex]
+&\braket{\OS}{\OT}&\,\braket{\OT}{+S}&&+&\\[.2ex]
+&\braket{\OS}{-T}&\braket{-T}{+S}&&=&\;0.
+\end{alignedat}
+\label{Eq:III:5:18}
+\end{equation}
+None of the three individual amplitudes is zero—for example, the
+absolute square of the second amplitude is [eq],
+see ( 5.15 )—but the sum is zero . We would have also
+the same answer if [eq] were set to select the [eq] state. However, in
+the setup of ( 5.16 ), the answer is different. If we call
+[eq] the amplitude to get through [eq] and [eq], in this case we
+have 5 
+\begin{equation}
+\begin{alignedat}{3}
+a\;=\;&\braket{+S}{+T}&\braket{+T}{+S}&\;&+&\\[.2ex]
+&\braket{+S}{\OT}&\,\braket{\OT}{+S}&&+&\\[.2ex]
+&\braket{+S}{-T}&\braket{-T}{+S}&&=&\;1.
+\end{alignedat}
+\label{Eq:III:5:19}
+\end{equation}
+
+In the experiment ( 5.16 ) the beam has been split and
+recombined. Humpty Dumpty has been put back together again. The
+information about the original [eq] state is retained—it is just
+as though the [eq] apparatus were not there at all. This is true
+whatever is put after the “wide-open” [eq] apparatus. We could follow
+it with an [eq] filter—a filter at some odd angle—or anything we
+want. The answer will always be the same as if the atoms were taken
+directly from the first [eq] filter.
+
+So this is the important principle: A [eq] filter—or any
+filter—with wide-open masks produces no change at all. We should
+make one additional condition. The wide-open filter must not only
+transmit all three beams, but it must also not produce unequal
+disturbances on the three beams. For instance, it should not have a
+strong electric field near one beam and not the others. The reason is
+that even if this extra disturbance would still let all the atoms
+through the filter, it could change the phases of some of the
+amplitudes. Then the interference would be changed, and the amplitudes
+in Eqs. ( 5.18 ) and ( 5.19 ) would be
+different. We will always assume that there are no such extra
+disturbances.
+
+Let’s rewrite Eqs. ( 5.18 ) and ( 5.19 ) in an
+improved notation. We will let [eq] stand for any one of the three
+states [eq], [eq], or [eq]; then the equations can be written:
+\begin{equation}
+\label{Eq:III:5:20}
+\sum_{\text{all [eq]}}\braket{\OS}{i}\braket{i}{+S}=0
+\end{equation}
+
+and
+\begin{equation}
+\label{Eq:III:5:21}
+\sum_{\text{all [eq]}}\braket{+S}{i}\braket{i}{+S}=1.
+\end{equation}
+
+Similarly, for an experiment where [eq] is replaced by a completely
+arbitrary filter [eq], we have
+\begin{equation}
+\label{Eq:III:5:22}
+\SGP{S} \!\! \SG{T} \!\! \SGP{R} \!\!\!\!\cdotp
+\end{equation}
+
+The results will always be the same as if the [eq] apparatus were left
+out and we had only
+\begin{equation*}
+\SGP{S} \!\! \SGP{R} \!\!\!\!\cdotp
+\end{equation*}
+
+Or, expressed mathematically,
+\begin{equation}
+\label{Eq:III:5:23}
+\sum_{\text{all [eq]}}\braket{+R}{i}\braket{i}{+S}=
+\braket{+R}{+S}.
+\end{equation}
+
+This is our fundamental law, and it is generally true so long as [eq]
+stands for the three base states of any filter.
+
+You will notice that in the experiment ( 5.22 ) there is no
+special relation of [eq] and [eq] to [eq]. Furthermore, the arguments
+would be the same no matter what states they selected. To write the
+equation in a general way, without having to refer to the specific
+states selected by [eq] and [eq], let’s call [eq] (“phi”) the state
+prepared by the first filter (in our special example, [eq]) and [eq]
+(“khi”) the state tested by the final filter (in our example,
+[eq]). Then we can state our fundamental law of Eq. ( 5.23 )
+in the form
+\begin{equation}
+\label{Eq:III:5:24}
+\braket{\chi}{\phi}=
+\sum_{\text{all [eq]}}\braket{\chi}{i}\braket{i}{\phi},
+\end{equation}
+
+where [eq] is to range over the three base states of some particular
+filter.
+
+We want to emphasize again what we mean by base states. They are like
+the three states which can be selected by one of our Stern-Gerlach
+apparatuses. One condition is that if you have a base state, then the
+future is independent of the past. Another condition is that if you
+have a complete set of base states, Eq. ( 5.24 ) is true
+for any set of beginning and ending states [eq] and [eq]. There
+is, however, no unique set of base states. We began by
+considering base states with respect to a particular
+apparatus [eq]. We could equally well consider a different set of base
+states with respect to an apparatus [eq], or with respect to [eq],
+etc. 6 We usually speak of the base states “in a certain
+representation.”
+
+Another condition on a set of base states in any particular
+representation is that they are all completely different. By that we
+mean that if we have a [eq] state, there is no amplitude for it to
+go into a [eq] or a [eq] state. If we let [eq] and [eq] stand for
+any two base states of a particular set, the general rules discussed
+in connection with ( 5.8 ) are that
+\begin{equation*}
+\braket{j}{i}=0
+\end{equation*}
+
+for all [eq] and [eq] that are not equal. Of course, we know that
+\begin{equation*}
+\braket{i}{i}=1.
+\end{equation*}
+
+These two equations are usually written as
+\begin{equation}
+\label{Eq:III:5:25}
+\braket{j}{i}=\delta_{ji},
+\end{equation}
+
+where [eq] (the “Kronecker delta”) is a symbol that is
+defined to be zero for [eq], and to be one for [eq].
+
+Equation ( 5.25 ) is not independent of the other laws we
+have mentioned. It happens that we are not particularly interested in
+the mathematical problem of finding the minimum set of independent
+axioms that will give all the laws as consequences. 7 We are satisfied if we have a set that
+is complete and not apparently inconsistent. We can, however, show that
+Eqs. ( 5.25 ) and ( 5.24 ) are not
+independent. Suppose we let [eq] in Eq. ( 5.24 )
+represent one of the base states of the same set as [eq], say the
+[eq]th state; then we have
+\begin{equation*}
+\braket{\chi}{j}=
+\sum_i\braket{\chi}{i}\braket{i}{j}.
+\end{equation*}
+
+But Eq. ( 5.25 ) says that [eq] is zero
+unless [eq], so the sum becomes just [eq] and we have an
+identity, which shows that the two laws are not independent.
+
+We can see that there must be another relation among the amplitudes if
+both Eqs. ( 5.10 ) and ( 5.24 ) are true.
+Equation ( 5.10 ) is
+\begin{alignat*}{3}
+&\braket{+T}{+S}&\braket{+T}{+S}&\cconj\;&+&\\[.2ex]
+&\braket{\OT}{+S}&\,\braket{\OT}{+S}&\cconj&+&\\[.2ex]
+&\braket{-T}{+S}&\braket{-T}{+S}&\cconj&=&\;1.
+\end{alignat*}
+
+If we write Eq. ( 5.24 ), letting both [eq] and [eq]
+be the state [eq], the left-hand side is [eq], which is
+clearly[eq]; so we get once more Eq. ( 5.19 ),
+\begin{alignat*}{3}
+&\braket{+S}{+T}&\braket{+T}{+S}&\;&+&\\[.2ex]
+&\braket{+S}{\OT}&\,\braket{\OT}{+S}&&+&\\[.2ex]
+&\braket{+S}{-T}&\braket{-T}{+S}&&=&\;1.
+\end{alignat*}
+
+
+
+These two equations are consistent (for all relative orientations of
+the [eq] and [eq] apparatuses) only if
+\begin{align*}
+\braket{+S}{+T}&=\braket{+T}{+S}\cconj,\\[1ex]
+\braket{+S}{\OT}&=\braket{\OT}{+S}\cconj,\\[1ex]
+\braket{+S}{-T}&=\braket{-T}{+S}\cconj.
+\end{align*}
+
+And it follows that for any states [eq] and [eq],
+\begin{equation}
+\label{Eq:III:5:26}
+\braket{\phi}{\chi}=\braket{\chi}{\phi}\cconj.
+\end{equation}
+
+If this were not true, probability wouldn’t be “conserved,” and
+particles would get “lost.”
+
+Before going on, we want to summarize the three important general laws
+about amplitudes. They are Eqs.
+( 5.24 ), ( 5.25 ), and ( 5.26 ):
+\begin{equation}
+\begin{alignedat}{2}
+&\text{[eq]I}&\quad
+\braket{j}{i}&=\delta_{ji},\\[1ex]
+&\text{[eq]II}&\quad
+\braket{\chi}{\phi}&=
+\sum_{\text{all [eq]}}
+\braket{\chi}{i}\braket{i}{\phi},\\[1ex]
+&\text{III}&\quad
+\braket{\phi}{\chi}&=
+\braket{\chi}{\phi}\cconj.
+\end{alignedat}
+\label{Eq:III:5:27}
+\end{equation}
+
+In these equations the [eq] and [eq] refer to all the base states
+of some one representation, while [eq] and [eq] represent
+any possible states of the atom. It is important to note that II is
+valid only if the sum is carried out over all the base states
+of the system (in our case, three: [eq], [eq], [eq]). These laws say
+nothing about what we should choose for a base for our set of base
+states. We began by using a [eq] apparatus, which is a Stern-Gerlach
+experiment with some arbitrary orientation; but any other orientation,
+say [eq], would be just as good. We would have a different set of
+states to use for [eq] and [eq], but all the laws would still be
+good—there is no unique set. One of the great games of quantum
+mechanics is to make use of the fact that things can be calculated in
+more than one way.
+
+We want to show you why these laws are useful. Suppose we have an atom
+in a given condition (by which we mean that it was prepared in a
+certain way), and we want to know what will happen to it in some
+experiment. In other words, we start with our atom in the state [eq]
+and want to know what are the odds that it will go through some
+apparatus which accepts atoms only in the condition [eq]. The laws
+say that we can describe the apparatus completely in terms of three
+complex numbers [eq], the amplitudes for each base state
+to be in the condition [eq]; and that we can tell what will happen
+if an atom is put into the apparatus if we describe the state of the
+atom by giving three numbers [eq], the amplitudes for
+the atom in its original condition to be found in each of the three
+base states. This is an important idea.
+
+Let’s consider another illustration. Think of the following problem:
+We start with an [eq] apparatus; then we have a complicated mess of
+junk, which we can call [eq], and then an [eq] apparatus—like this:
+\begin{equation}
+\label{Eq:III:5:28}
+\SGP{S} \!\! \APPARAT{A} \!\! \SGZ{R} \!\!\!\!\cdot
+\end{equation}
+
+By [eq] we mean any complicated arrangement of Stern-Gerlach
+apparatuses with masks or half-masks, oriented at peculiar angles,
+with odd electric and magnetic fields … almost anything you
+want to put. (It’s nice to do thought experiments—you don’t have to
+go to all the trouble of actually building the apparatus!) The
+problem then is: With what amplitude does a particle that enters the
+section [eq] in a [eq] state come out of [eq] in the [eq] state, so
+that it will get through the last [eq] filter? There is a regular
+notation for such an amplitude; it is
+\begin{equation*}
+\bracket{\OR}{A}{+S}.
+\end{equation*}
+
+As usual, it is to be read from right to left (like Hebrew):
+\begin{equation*}
+\bracket{\text{finish}}{\text{through}}{\text{start}}.
+\end{equation*}
+
+If by chance [eq] doesn’t do anything—but is just an open
+channel—then we write
+\begin{equation}
+\label{Eq:III:5:29}
+\bracket{\OR}{1}{+S}=\braket{\OR}{+S};
+\end{equation}
+
+the two symbols are equivalent. For a more general problem, we might
+replace [eq] by a general starting state [eq] and [eq] by a
+general finishing state [eq], and we would want to know the
+amplitude
+\begin{equation*}
+\bracket{\chi}{A}{\phi}.
+\end{equation*}
+
+A complete analysis of the apparatus [eq] would have to give the
+amplitude [eq] for every possible pair of states
+[eq] and [eq]—an infinite number of combinations! How then can
+we give a concise description of the behavior of the apparatus [eq]? We
+can do it in the following way. Imagine that the apparatus
+of ( 5.28 ) is modified to be
+\begin{equation}
+\label{Eq:III:5:30}
+\SGP{S} \!\! \SG{T} \!\! \APPARAT{A} \!\! \SG{T} \!\! \SGZ{R} \!\!\!\!\cdotp
+\end{equation}
+
+This is really no modification at all since the wide-open
+[eq] apparatuses don’t do anything. But they do suggest how we can analyze
+the problem. There is a certain set of amplitudes [eq]
+that the atoms from [eq] will get into the [eq] state of [eq]. Then there
+is another set of amplitudes that an [eq] state (with respect to [eq])
+entering [eq] will come out as a [eq] state (with respect to [eq]). And
+finally there is an amplitude that each [eq] state will get through the
+last filter as a [eq] state. For each possible alternative path,
+there is an amplitude of the form
+\begin{equation*}
+\braket{\OR}{j}
+\bracket{j}{A}{i}
+\braket{i}{+S},
+\end{equation*}
+
+and the total amplitude is the sum of the terms we can get with all
+possible combinations of [eq] and [eq]. The amplitude we want is
+\begin{equation}
+\label{Eq:III:5:31}
+\sum_{ij}
+\braket{\OR}{j}
+\bracket{j}{A}{i}
+\braket{i}{+S}.
+\end{equation}
+
+If [eq] and [eq] are replaced by general states [eq]
+and [eq], we would have the same kind of expression; so we have the
+general result
+\begin{equation}
+\label{Eq:III:5:32}
+\bracket{\chi}{A}{\phi}=
+\sum_{ij}
+\braket{\chi}{j}
+\bracket{j}{A}{i}
+\braket{i}{\phi}.
+\end{equation}
+
+Now notice that the right-hand side of Eq. ( 5.32 ) is
+really “simpler” than the left-hand side. The apparatus [eq] is
+completely described by the nine numbers [eq]
+which tell the response of [eq] with respect to the three base states
+of the apparatus [eq]. Once we know these nine numbers, we can handle
+any two incoming and outgoing states [eq] and [eq] if we define
+each in terms of the three amplitudes for going into, or from, each of
+the three base states. The result of an experiment is predicted using
+Eq. ( 5.32 ).
+
+This then is the machinery of quantum mechanics for a spin-one
+particle. Every state is described by three numbers which are
+the amplitudes to be in each of some selected set of base
+states. Every apparatus is described by nine numbers which are the
+amplitudes to go from one base state to another in the apparatus. From
+these numbers anything can be calculated.
+
+The nine amplitudes which describe the apparatus are often written as
+a square matrix—called the matrix [eq]:
+\begin{equation}
+\raise{1.2ex}{\text{to}}\,
+\label{Eq:III:5:33}
+\begin{array}{l}
+\kern{22ex} \text{from} \\ % ebook remove
+% ebook insert: \kern 17ex \text{from} \\
+\kern{9.5ex}+\kern{11ex}0\kern{10ex}-\\ % ebook remove
+% ebook insert: \kern 7.5ex +\kern 10ex 0\kern 9ex -\\
+ \begin{array}{c|ccc|}
+ + & \bracket{+}{A}{+} & \bracket{+}{A}{\OO} & \bracket{+}{A}{-}\\[1ex]
+ 0 & \bracket{\OO}{A}{+} & \bracket{\OO}{A}{\OO} & \bracket{\OO}{A}{-}\\[1ex]
+ - & \bracket{-}{A}{+} & \bracket{-}{A}{\OO} & \bracket{-}{A}{-}
+ \end{array}
+\end{array}
+\end{equation}
+
+The mathematics of quantum mechanics is just an extension of this
+idea. We will give you a simple illustration. Suppose we have an
+apparatus [eq] that we wish to analyze—that is, we want to calculate
+the various [eq]. For instance, we might want to know
+what happens in an experiment like
+\begin{equation}
+\label{Eq:III:5:34}
+\SGP{S} \!\! \APPARAT{C} \!\! \SGZ{R} \!\!\!\!\cdotp
+\end{equation}
+
+But then we notice that [eq] is just built of two pieces of apparatus
+[eq] and [eq] in series—the particles go through [eq] and then
+through [eq]—so we can write symbolically
+\begin{equation}
+\label{Eq:III:5:35}
+\APPARAT{C} \kern{-10pt} \raise{7pt}{=} \APPARAT{A} \kern{-12pt} \raise{7pt}{\cdot} \APPARAT{B} \!\!\!\!\cdotp
+\end{equation}
+
+
+We can call the [eq] apparatus the “product” of [eq] and [eq]. Suppose
+also that we already know how to analyze the two parts; so we can get
+the matrices (with respect to [eq]) of [eq] and [eq]. Our problem is then
+solved. We can easily find
+\begin{equation*}
+\bracket{\chi}{C}{\phi}
+\end{equation*}
+
+for any input and output states. First we write that
+\begin{equation*}
+\bracket{\chi}{C}{\phi}=\sum_k
+\bracket{\chi}{B}{k}\bracket{k}{A}{\phi}.
+\end{equation*}
+
+Do you see why? ( Hint: Imagine putting a [eq] apparatus between
+[eq] and [eq].) Then if we consider the special case in which [eq]
+and [eq] are also base states (of [eq]), say [eq] and [eq], we have
+\begin{equation}
+\label{Eq:III:5:36}
+\bracket{j}{C}{i}=\sum_k
+\bracket{j}{B}{k}\bracket{k}{A}{i}.
+\end{equation}
+
+This equation gives the matrix for the “product” apparatus [eq] in
+terms of the two matrices of the apparatuses [eq] and [eq].
+Mathematicians call the new matrix [eq]—formed
+from two matrices [eq] and [eq]
+according to the sum specified in Eq. ( 5.36 )—the
+“product” matrix [eq] of the two matrices [eq] and [eq]. (Note that
+the order is important, [eq].) Thus, we can say that the
+matrix for a succession of two pieces of apparatus is the matrix
+product of the matrices for the two apparatuses (putting the
+ first apparatus on the right in the product). Anyone who
+knows matrix algebra
+then understands that we mean just Eq. ( 5.36 ).
+
+We want to make one final point about the base states used in the
+calculations. Suppose we have chosen to work with some particular
+base—say the [eq] base—and another fellow decides to do the same
+calculations with a different base—say the [eq] base. To keep things
+straight let’s call our base states the [eq] states, where [eq],
+[eq], [eq]. Similarly, we can call his base states [eq]. How can we
+compare our work with his? The final answers for the result of any
+measurement should come out the same, but in the calculations the
+various amplitudes and matrices used will be different. How are they
+related? For instance, if we both start with the same [eq], we will
+describe it in terms of the three amplitudes [eq] that
+[eq] goes into our base states in the [eq] representation, whereas he
+will describe it by the amplitudes [eq] that the
+state [eq] goes into the base states in his [eq] representation. How can we
+check that we are really both describing the same state [eq]? We can
+do it with the general rule II in ( 5.27 ). Replacing
+[eq] by any one of his states [eq], we have
+\begin{equation}
+\label{Eq:III:5:37}
+\braket{jT}{\phi}=\sum_i
+\braket{jT}{iS}\braket{iS}{\phi}.
+\end{equation}
+
+To relate the two representations, we need only give the nine complex
+numbers of the matrix [eq]. This matrix can then be used
+to convert all of our equations to his form. It tells us how to
+ transform from one set of base states to another. (For this
+reason [eq] is sometimes called “the transformation
+matrix from representation [eq] to representation [eq].” Big words!)
+
+For the case of spin-one particles for which we have only three base
+states (for higher spins, there are more) the mathematical situation
+is analogous to what we have seen in vector
+algebra. Every vector can
+be represented by giving three numbers—the components along the axes
+[eq], [eq], and [eq]. That is, every vector can be resolved into three
+“base” vectors which are vectors along the three axes. But suppose
+someone else chooses to use a different set of axes—[eq], [eq],
+and [eq]. He will be using different numbers to represent any particular
+vector. His calculations will look different, but the final results
+will be the same. We have considered this before and know the rules
+for transforming vectors from one set of axes to another.
+
+You may want to see how the quantum mechanical transformations work by
+trying some out; so we will give here, without proof, the
+transformation matrices for converting the spin-one amplitudes in one
+representation [eq] to another representation [eq], for various special
+relative orientations of the [eq] and [eq] filters. (We will show you in
+a later chapter how to derive these same results.)
+
+First case: The [eq] apparatus has the same [eq]-axis (along
+which the particles move) as the [eq] apparatus, but is rotated about
+the common [eq]-axis by the angle [eq] (as in
+Fig.  5–6 ). (To be specific, a set of coordinates [eq],
+[eq], [eq] is fixed in the [eq] apparatus, related to the [eq], [eq], [eq]
+coordinates of the [eq] apparatus by: [eq],
+[eq], [eq].) Then the transformation
+amplitudes are:
+\begin{equation}
+\begin{aligned}
+\braket{+T}{+S}&=
+\tfrac{1}{2}(1+\cos\alpha),\\[.5ex]
+\braket{\OT}{+S}&=
+-\frac{1}{\sqrt{2}}\,\sin\alpha,\\[.5ex]
+\braket{-T}{+S}&=
+\tfrac{1}{2}(1-\cos\alpha),\\[.5ex]
+\braket{+T}{\OS}&=
++\frac{1}{\sqrt{2}}\,\sin\alpha,\\[.5ex]
+\braket{\OT}{\OS}&=
+\cos\alpha,\\[.5ex]
+\braket{-T}{\OS}&=
+-\frac{1}{\sqrt{2}}\,\sin\alpha,\\[.5ex]
+\braket{+T}{-S}&=
+\tfrac{1}{2}(1-\cos\alpha),\\[.5ex]
+\braket{\OT}{-S}&=
++\frac{1}{\sqrt{2}}\,\sin\alpha,\\[.5ex]
+\braket{-T}{-S}&=
+\tfrac{1}{2}(1+\cos\alpha).
+\end{aligned}
+\label{Eq:III:5:38}
+\end{equation}
+
+Second case: The [eq] apparatus has the same [eq]-axis as [eq],
+but is rotated around the [eq]-axis by the angle [eq]. (The
+coordinate transformation is [eq], [eq],
+[eq].) Then the transformation amplitudes are:
+\begin{equation}
+\begin{aligned}
+\braket{+T}{+S}&=e^{+i\beta},\\[1ex]
+\braket{\OT}{\OS}&=1,\\[1ex]
+\braket{-T}{-S}&=e^{-i\beta},\\[1ex]
+\text{all others}&=0.
+\end{aligned}
+\label{Eq:III:5:39}
+\end{equation}
+
+Note that any rotations of [eq] whatever can be made up of the two
+rotations described.
+
+If a state [eq] is defined by the three numbers
+ 
+\begin{equation}
+\label{Eq:III:5:40}
+C_+=\braket{+S}{\phi},\quad
+C_0=\braket{\OS}{\phi},\quad
+C_-=\braket{-S}{\phi},
+\end{equation}
+ 
+ 
+
+\begin{equation}
+\begin{aligned}
+C_+&=\braket{+S}{\phi},\\[1ex]
+C_0\,&=\braket{\OS}{\phi},\\[1ex]
+C_-&=\braket{-S}{\phi},
+\end{aligned}
+\label{Eq:III:5:40}
+\end{equation}
+ 
+
+and the same state is described from the point of view of [eq] by the
+three numbers
+ 
+\begin{equation}
+\label{Eq:III:5:41}
+C_+'=\braket{+T}{\phi},\quad
+C_0'=\braket{\OT}{\phi},\quad
+C_-'=\braket{-T}{\phi},
+\end{equation}
+ 
+ 
+
+\begin{equation}
+\begin{aligned}
+C_+'&=\braket{+T}{\phi},\\[1ex]
+C_0'\,&=\braket{\OT}{\phi},\\[1ex]
+C_-'&=\braket{-T}{\phi},
+\end{aligned}
+\label{Eq:III:5:41}
+\end{equation}
+
+ 
+
+then the coefficients [eq] of ( 5.38 )
+or ( 5.39 ) give the transformation connecting [eq]
+and [eq]. In other words, the [eq] are very much like the components of a
+vector that appear different from the point of view of [eq] and [eq].
+
+For a spin-one particle only —because it requires three 
+amplitudes—the correspondence with a vector is very close. In each
+case, there are three numbers that must transform with coordinate
+changes in a certain definite way. In fact, there is a set of base
+states which transform just like the three components of a
+vector . The three combinations
+ 
+\begin{equation}
+\label{Eq:III:5:42}
+C_x=-\frac{1}{\sqrt{2}}\,(C_+-C_-),\quad
+C_y=-\frac{i}{\sqrt{2}}\,(C_++C_-),\quad
+C_z=C_0
+\end{equation}
+ 
+ 
+
+\begin{equation}
+\begin{aligned}
+C_x&=-\frac{1}{\sqrt{2}}\,(C_+-C_-),\\[.7ex]
+C_y&=-\frac{i}{\sqrt{2}}\,(C_++C_-),\\[1.5ex]
+C_z&=C_0
+\end{aligned}
+\label{Eq:III:5:42}
+\end{equation}
+
+ 
+
+transform to [eq], [eq], and [eq] just the way that [eq], [eq],
+[eq] transform to [eq], [eq], [eq]. [You can check that this is so by
+using the transformation laws ( 5.38 )
+and ( 5.39 ).] Now you see why a spin-one particle is often
+called a “vector particle.”
+
+We began by pointing out that our discussion of spin-one particles
+would be a prototype for any quantum mechanical problem. The
+generalization has only to do with the numbers of states. Instead of
+only three base states, any particular situation may involve [eq] base
+states. 8 Our basic laws in Eq. ( 5.27 ) have
+exactly the same form—with the understanding that [eq] and [eq] must
+range over all [eq] base states. Any phenomenon can be analyzed by
+giving the amplitudes that it starts in each one of the base states
+and ends in any other one of the base states, and then summing over
+the complete set of base states. Any proper set of base states can be
+used, and if someone wishes to use a different set, it is just as
+good; the two can be connected by using an [eq] by [eq] transformation
+matrix. We will have more to say later about such transformations.
+
+Finally, we promised to remark on what to do if atoms come directly
+from a furnace, go through some apparatus, say [eq], and are then
+analyzed by a filter which selects the state [eq]. You do not know
+what the state [eq] is that they start out in. It is perhaps best if
+you don’t worry about this problem just yet, but instead concentrate
+on problems that always start out with pure states. But if you insist,
+here is how the problem can be handled.
+
+First, you have to be able to make some reasonable guess about the way
+the states are distributed in the atoms that come from the
+furnace. For example, if there were nothing “special” about the
+furnace, you might reasonably guess that atoms would leave the furnace
+with random “orientations.” Quantum mechanically, that corresponds
+to saying that you don’t know anything about the states, but that
+one-third are in the [eq] state, one-third are in the
+[eq] state, and one-third are in the [eq] state. For those that are in
+the [eq] state the amplitude to get through
+is [eq] and the probability
+is [eq], and similarly for the others. The
+overall probability is then
+\begin{equation*}
+\tfrac{1}{3}\abs{\bracket{\chi}{A}{+S}}^2\!+\!
+\tfrac{1}{3}\abs{\bracket{\chi}{A}{\OS}}^2\!+\!
+\tfrac{1}{3}\abs{\bracket{\chi}{A}{-S}}^2\!.
+\end{equation*}
+
+Why did we use [eq] rather than, say, [eq]? The answer is, surprisingly,
+the same no matter what we choose for our initial resolution—so long
+as we are dealing with completely random orientations. It comes about
+in the same way that
+\begin{equation*}
+\sum_i\abs{\braket{\chi}{iS}}^2=
+\sum_j\abs{\braket{\chi}{jT}}^2
+\end{equation*}
+
+for any [eq]. (We leave it for you to prove.)
+
+Note that it is not correct to say that the input state has the
+amplitudes [eq] to be in [eq], [eq] to be
+in [eq], and [eq] to be in [eq]; that would imply that
+certain interferences might be possible. It is simply that you do not
+ know what the initial state is; you have to think in terms of
+the probability that the system starts out in the various possible
+initial states, and then you have to take a weighted average over the
+various possibilities.

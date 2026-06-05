@@ -1,0 +1,1285 @@
+The Feynman Lectures on Physics Vol. III Ch. 19: The Hydrogen Atom and The Periodic Table
+=========================================================================================
+
+Sections: 19–1 Schrödinger’s equation for the hydrogen atom | 19–2 Spherically symmetric solutions | 19–3 States with an angular dependence | 19–4 The general solution for hydrogen | 19–5 The hydrogen wave functions | 19–6 The periodic table
+
+
+
+The most dramatic success in the history of the quantum
+mechanics was the understanding of the details of the spectra of some
+simple atoms and the understanding of the periodicities which are found
+in the table of chemical elements. In this chapter we will at last bring
+our quantum mechanics to the point of this important achievement,
+specifically to an understanding of the spectrum of the hydrogen atom.
+We will at the same time arrive at a qualitative explanation of the
+mysterious properties of the chemical elements. We will do this by
+studying in detail the behavior of the electron in a hydrogen atom—for
+the first time making a detailed calculation of a distribution-in-space
+according to the ideas we developed in Chapter  16 .
+
+For a complete description of the hydrogen atom we should describe the
+motions of both the proton and the electron. It is possible to do this
+in quantum mechanics in a way that is analogous to the classical idea of
+describing the motion of each particle relative to the center of
+gravity, but we will not do so. We will just discuss an approximation in
+which we consider the proton to be very heavy, so we can think of it as
+fixed at the center of the atom.
+
+We will make another approximation by forgetting that the electron has a
+spin and should be described by relativistic laws of mechanics. Some
+small corrections to our treatment will be required since we will be
+using the nonrelativistic Schrödinger equation and will disregard
+magnetic effects. Small magnetic effects occur because from the
+electron’s point-of-view the proton is a circulating charge which
+produces a magnetic field. In this field the electron will have a
+different energy with its spin up than with it down. The energy of the
+atom will be shifted a little bit from what we will calculate. We will
+ignore this small energy shift. Also we will imagine that the electron
+is just like a gyroscope moving around in space always keeping the same
+direction of spin. Since we will be considering a free atom in space the
+total angular momentum will be conserved. In our approximation we will
+assume that the angular momentum of the electron spin stays constant, so
+all the rest of the angular momentum of the atom—what is usually
+called “orbital” angular momentum—will also be
+conserved. To an excellent approximation the electron moves in the
+hydrogen atom like a particle without spin—the angular momentum of the
+motion is a constant.
+
+With these approximations the amplitude to find the electron at
+different places in space can be represented by a function of position
+in space and time. We let [eq] be the amplitude to find the
+electron somewhere at the time [eq]. According to the quantum mechanics
+the rate of change of this amplitude with time is given by the
+Hamiltonian operator working on the same function. From
+Chapter  16 ,
+\begin{equation}
+\label{Eq:III:19:1}
+i\hbar\,\ddp{\psi}{t}=\Hcalop\psi,
+\end{equation}
+with
+\begin{equation}
+\label{Eq:III:19:2}
+\Hcalop=-\frac{\hbar^2}{2m}\,\nabla^2+V(\FLPr).
+\end{equation}
+Here, [eq] is the electron mass, and [eq] is the potential energy
+of the electron in the electrostatic field of the proton. Taking [eq]
+at large distances from the proton we can write 1 
+\begin{equation*}
+V=-\frac{e^2}{r}.
+\end{equation*}
+The wave function [eq] must then satisfy the equation
+\begin{equation}
+\label{Eq:III:19:3}
+i\hbar\,\ddp{\psi}{t}=-\frac{\hbar^2}{2m}\,\nabla^2\psi
+-\frac{e^2}{r}\,\psi.
+\end{equation}
+
+We want to look for definite energy states, so we try to find
+solutions which have the form
+\begin{equation}
+\label{Eq:III:19:4}
+\psi(\FLPr,t)=e^{-(i/\hbar)Et}\psi(\FLPr).
+\end{equation}
+The function [eq] must then be a solution of
+\begin{equation}
+\label{Eq:III:19:5}
+-\frac{\hbar^2}{2m}\,\nabla^2\psi=
+\biggl(E+\frac{e^2}{r}\biggr)\psi,
+\end{equation}
+where [eq] is some constant—the energy of the atom.
+
+Since the potential energy term depends only on the radius, it turns
+out to be much more convenient to solve this equation in polar
+coordinates rather than rectangular coordinates. The Laplacian is
+defined in rectangular coordinates by
+\begin{equation*}
+\nabla^2=\frac{\partial^2}{\partial x^2}+
+\frac{\partial^2}{\partial y^2}+
+\frac{\partial^2}{\partial z^2}.
+\end{equation*}
+We want to use instead the coordinates [eq], [eq], [eq] shown in
+Fig.  19–1 . These coordinates are related to [eq], [eq],
+[eq] by
+\begin{equation*}
+x=r\sin\theta\cos\phi;\quad
+y=r\sin\theta\sin\phi;\quad
+z=r\cos\theta.
+\end{equation*}
+It’s a rather tedious mess to work through the algebra, but you can
+eventually show that for any function [eq],
+ 
+\begin{equation}
+\label{Eq:III:19:6}
+\nabla^2f(r,\theta,\phi)=\frac{1}{r}\,\frac{\partial^2}{\partial r^2}\,
+(rf)+\frac{1}{r^2}\biggl\{
+\frac{1}{\sin\theta}\,\ddp{}{\theta}\biggl(
+\sin\theta\,\ddp{f}{\theta}\biggr)+\frac{1}{\sin^2\theta}\,
+\frac{\partial^2f}{\partial\phi^2}\biggr\}.
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:III:19:6}
+&\nabla^2f(r,\theta,\phi)=\\[1ex]
+&\frac{1}{r}\,\frac{\partial^2}{\partial r^2}\,(rf)\;+\notag\\[1ex]
+&\frac{1}{r^2}\biggl\{
+\frac{1}{\sin\theta}\,\ddp{}{\theta}\biggl(
+\sin\theta\,\ddp{f}{\theta}\biggr)+\frac{1}{\sin^2\theta}\,
+\frac{\partial^2f}{\partial\phi^2}\biggr\}.\notag
+\end{align}
+ 
+So in terms of the polar coordinates, the equation which is to be
+satisfied by [eq] is
+ 
+\begin{equation}
+\label{Eq:III:19:7}
+\frac{1}{r}\,\frac{\partial^2}{\partial r^2}\,
+(r\psi)+\frac{1}{r^2}\biggl\{
+\frac{1}{\sin\theta}\,\ddp{}{\theta}\biggl(
+\sin\theta\,\ddp{\psi}{\theta}\biggr)+\frac{1}{\sin^2\theta}\,
+\frac{\partial^2\psi}{\partial \phi^2}\biggr\}=
+-\frac{2m}{\hbar^2}\biggl(E+\frac{e^2}{r}\biggr)\psi.
+\end{equation}
+ 
+ 
+\begin{align}
+\label{Eq:III:19:7}
+&\frac{1}{r}\,\frac{\partial^2}{\partial r^2}\,
+(r\psi)\;+\\[1ex]
+&\frac{1}{r^2}\biggl\{
+\frac{1}{\sin\theta}\,\ddp{}{\theta}\biggl(
+\sin\theta\,\ddp{\psi}{\theta}\biggr)+\frac{1}{\sin^2\theta}\,
+\frac{\partial^2\psi}{\partial \phi^2}\biggr\}\notag\\[1.5ex]
+&=-\frac{2m}{\hbar^2}\biggl(E+\frac{e^2}{r}\biggr)\psi.\notag
+\end{align}
+
+Let’s first try to find some very simple function that satisfies the
+horrible equation in ( 19.7 ). Although the wave
+function [eq] will, in general, depend on the angles [eq] and [eq] as
+well as on the radius [eq], we can see whether there might be a special
+situation in which [eq] does not depend on the angles. For a
+wave function that doesn’t depend on the angles, none of the
+amplitudes will change in any way if you rotate the coordinate
+system. That means that all of the components of the angular momentum
+are zero. Such a [eq] must correspond to a state whose total angular
+momentum is zero. (Actually, it is only the orbital angular momentum
+which is zero because we still have the spin of the electron, but we
+are ignoring that part.) A state with zero orbital angular momentum is
+called by a special name. It is called an “[eq]-state”—you can
+remember “[eq] for spherically symmetric.” 2
+
+Now if [eq] is not going to depend on [eq] and [eq] then the
+entire Laplacian contains only the first term and
+Eq. ( 19.7 ) becomes much simpler:
+\begin{equation}
+\label{Eq:III:19:8}
+\frac{1}{r}\,\frac{d^2}{dr^2}\,(r\psi)=
+-\frac{2m}{\hbar^2}\biggl(E+\frac{e^2}{r}\biggr)\psi.
+\end{equation}
+Before you start to work on solving an equation like this, it’s a good
+idea to get rid of all excess constants like [eq], [eq], and [eq],
+by making some scale changes. Then the algebra will be easier. If we
+make the following substitutions:
+\begin{equation}
+\label{Eq:III:19:9}
+r=\frac{\hbar^2}{me^2}\,\rho,
+\end{equation}
+and
+\begin{equation}
+\label{Eq:III:19:10}
+E=\frac{me^4}{2\hbar^2}\,\epsilon,
+\end{equation}
+then Eq. ( 19.8 ) becomes (after multiplying through by [eq])
+\begin{equation}
+\label{Eq:III:19:11}
+\frac{d^2(\rho\psi)}{d\rho^2}=
+-\biggl(\epsilon+\frac{2}{\rho}\biggr)\rho\psi.
+\end{equation}
+These scale changes mean that we are measuring the distance [eq] and
+energy [eq] as multiples of “natural” atomic units. That is,
+[eq], where [eq], is called the “Bohr
+radius” and is about [eq] angstroms.
+Similarly, [eq], with [eq]. This energy is
+called the “Rydberg” and is about [eq] electron volts.
+
+Since the product [eq] appears on both sides, it is convenient
+to work with it rather than with [eq] itself. Letting
+\begin{equation}
+\label{Eq:III:19:12}
+\rho\psi=f,
+\end{equation}
+we have the more simple-looking equation
+\begin{equation}
+\label{Eq:III:19:13}
+\frac{d^2f}{d\rho^2}=-\biggl(\epsilon+\frac{2}{\rho}\biggr)f.
+\end{equation}
+
+Now we have to find some function [eq] which satisfies
+Eq. ( 19.13 )—in other words, we just have to solve a
+differential equation. Unfortunately, there is no very useful, general
+method for solving any given differential equation. You just have to
+fiddle around. Our equation is not easy, but people have found that it
+can be solved by the following procedure. First, you replace [eq], which
+is some function of [eq], by a product of two functions
+\begin{equation}
+\label{Eq:III:19:14}
+f(\rho)=e^{-\alpha\rho}g(\rho).
+\end{equation}
+This just means that you are factoring [eq] out
+of [eq]. You can certainly do that for any [eq] at all. This
+just shifts our problem to finding the right function [eq].
+
+Sticking ( 19.14 ) into ( 19.13 ), we get the
+following equation for [eq]:
+\begin{equation}
+\label{Eq:III:19:15}
+\frac{d^2g}{d\rho^2}-2\alpha\,\ddt{g}{\rho}+\biggl(
+\frac{2}{\rho}+\epsilon+\alpha^2\biggr)g=0.
+\end{equation}
+Since we are free to choose [eq], let’s make
+\begin{equation}
+\label{Eq:III:19:16}
+\alpha^2=-\epsilon,
+\end{equation}
+and get
+\begin{equation}
+\label{Eq:III:19:17}
+\frac{d^2g}{d\rho^2}-2\alpha\,\ddt{g}{\rho}+
+\frac{2}{\rho}\,g=0.
+\end{equation}
+
+You may think we are no better off than we were at
+Eq. ( 19.13 ), but the happy thing about our new equation is
+that it can be solved easily in terms of a power series in [eq]. (It
+is possible, in principle, to solve ( 19.13 ) that way too,
+but it is much harder.) We are saying that Eq. ( 19.17 )
+can be satisfied by some [eq] which can be written as a series,
+\begin{equation}
+\label{Eq:III:19:18}
+g(\rho)=\sum_{k=1}^\infty a_k\rho^k,
+\end{equation}
+in which the [eq] are constant coefficients. Now all we have to do is
+find a suitable infinite set of coefficients! Let’s check to see that
+such a solution will work. The first derivative of this [eq] is
+\begin{equation*}
+\ddt{g}{\rho}=\sum_{k=1}^\infty a_kk\rho^{k-1},
+\end{equation*}
+and the second derivative is
+\begin{equation*}
+\frac{d^2g}{d\rho^2}=\sum_{k=1}^\infty a_kk(k-1)\rho^{k-2}.
+\end{equation*}
+Using these expressions in ( 19.17 ) we have
+\begin{equation}
+\label{Eq:III:19:19}
+\sum_{k=1}^\infty \!k(k\!-\!1)a_k\rho^{k\!-\!2}\!-\!\!
+\sum_{k=1}^\infty \!2\alpha ka_k\rho^{k\!-\!1}\!+\!\!
+\sum_{k=1}^\infty \!2a_k\rho^{k\!-\!1}\!= 0.
+\end{equation}
+It’s not obvious that we have succeeded; but we forge onward. It will
+all look better if we replace the first sum by an equivalent. Since
+the first term of the sum is zero, we can replace each [eq] by [eq]
+without changing anything in the infinite series; with this change the
+first sum can equally well be written as
+\begin{equation*}
+\sum_{k=1}^\infty(k+1)ka_{k+1}\rho^{k-1}.
+\end{equation*}
+Now we can put all the sums together to get
+\begin{equation}
+\label{Eq:III:19:20}
+\sum_{k=1}^\infty[(k+1)ka_{k+1}-2\alpha ka_k+2a_k]\rho^{k-1}=0.
+\end{equation}
+
+This power series must vanish for all possible values of [eq]. It
+can do that only if the coefficient of each power of [eq] is
+separately zero. We will have a solution for the hydrogen atom if we
+can find a set [eq] for which
+\begin{equation}
+\label{Eq:III:19:21}
+(k+1)ka_{k+1}-2(\alpha k-1)a_k=0
+\end{equation}
+for all [eq]. That is certainly easy to arrange. Pick any [eq]
+you like. Then generate all of the other coefficients from
+\begin{equation}
+\label{Eq:III:19:22}
+a_{k+1}=\frac{2(\alpha k-1)}{k(k+1)}\,a_k.
+\end{equation}
+With this you will get [eq], [eq], [eq], and so on, and
+each pair will certainly satisfy ( 19.21 ). We get a series
+for [eq] which satisfies ( 19.17 ). With it we can make
+a [eq], that satisfies Schrödinger’s equation. Notice that the
+solutions depend on the assumed energy (through [eq]), but for each
+value of [eq], there is a corresponding series.
+
+We have a solution, but what does it represent physically? We can get
+an idea by seeing what happens far from the proton—for large values
+of [eq]. Out there, the high-order terms of the series are the most
+important, so we should look at what happens for large [eq]. When
+[eq], Eq. ( 19.22 ) is approximately the same as
+\begin{equation*}
+a_{k+1}=\frac{2\alpha}{k}\,a_k,
+\end{equation*}
+which means that
+\begin{equation}
+\label{Eq:III:19:23}
+a_{k+1}\approx\frac{(2\alpha)^k}{k!}.
+\end{equation}
+But these are just the coefficients of the series
+for [eq]. The function of [eq] is a rapidly increasing
+exponential. Even coupled with [eq] to
+produce [eq]—see Eq. ( 19.14 )—it still gives a solution
+for [eq] which goes like [eq] for large [eq]. We
+have found a mathematical solution but not a physical one. It
+represents a situation in which the electron is least likely to
+be near the proton! It is always more likely to be found at a very
+large radius [eq]. A wave function for a bound electron must
+go to zero for large [eq].
+
+We have to think whether there is some way to beat the game, and there
+is. Observe! If it just happened by luck that [eq] were equal
+to [eq], where [eq] is any positive integer, then Eq. ( 19.22 )
+would make [eq]. All higher terms would also be zero. We wouldn’t
+have an infinite series but a finite polynomial. Any polynomial
+increases more slowly than [eq], so the
+term [eq] will eventually beat it down, and the function [eq]
+will go to zero for large [eq]. The only bound-state solutions
+are those for which [eq], with [eq], [eq], [eq], [eq], and so on.
+
+Looking back to Eq. ( 19.16 ), we see that the
+bound-state solutions to the spherically symmetric wave equation can
+exist only when
+\begin{equation*}
+-\epsilon=1,\,\frac{1}{4},\,\frac{1}{9},\,\frac{1}{16},\dotsc,
+\frac{1}{n^2},\dotsc
+\end{equation*}
+The allowed energies are just these fractions times the Rydberg,
+[eq], or the energy of the [eq]th energy level is
+\begin{equation}
+\label{Eq:III:19:24}
+E_n=-E_R\,\frac{1}{n^2}.
+\end{equation}
+There is, incidentally, nothing mysterious about negative numbers for
+the energy. The energies are negative because when we chose to
+write [eq], we picked our zero point as the energy of an electron
+located far from the proton. When it is close to the proton, its
+energy is less, so somewhat below zero. The energy is lowest (most
+negative) for [eq], and increases toward zero with increasing [eq].
+
+Before the discovery of quantum mechanics, it was known from
+experimental studies of the spectrum of hydrogen that the energy
+levels could be described by Eq. ( 19.24 ), where [eq]
+was found from the observations to be about [eq] electron volts.
+Bohr then devised a model which gave
+the same equation and predicted that [eq] should be [eq].
+But it was the first great success of the Schrödinger theory that it
+could reproduce this result from a basic equation of motion for the
+electron.
+
+Now that we have solved our first atom, let’s look at the nature of
+the solution we got. Pulling all the pieces together, each solution
+looks like this:
+\begin{equation}
+\label{Eq:III:19:25}
+\psi_n=\frac{f_n(\rho)}{\rho}=\frac{e^{-\rho/n}}{\rho}\,g_n(\rho),
+\end{equation}
+where
+\begin{equation}
+\label{Eq:III:19:26}
+g_n(\rho)=\sum_{k=1}^na_k\rho^k
+\end{equation}
+and
+\begin{equation}
+\label{Eq:III:19:27}
+a_{k+1}=\frac{2(k/n-1)}{k(k+1)}\,a_k.
+\end{equation}
+So long as we are mainly interested in the relative probabilities of
+finding the electron at various places we can pick any number we wish
+for [eq]. We may as well set [eq]. (People often choose [eq] so
+that the wave function is “normalized,” that is, so that the
+integrated probability of finding the electron anywhere in the atom is
+equal to [eq]. We have no need to do that just now.)
+
+For the lowest energy state, [eq], and
+\begin{equation}
+\label{Eq:III:19:28}
+\psi_1(\rho)=e^{-\rho}.
+\end{equation}
+For a hydrogen atom in its ground (lowest-energy) state, the amplitude
+to find the electron at any point drops off exponentially with the
+distance from the proton. It is most likely to be found right at the
+proton, and the characteristic spreading distance is about one unit
+in [eq], or about one Bohr radius, [eq].
+
+Putting [eq] gives the next higher level. The wave function for this
+state will have two terms. It is
+\begin{equation}
+\label{Eq:III:19:29}
+\psi_2(\rho)=\biggl(1-\frac{\rho}{2}\biggr)e^{-\rho/2}.
+\end{equation}
+The wave function for the next level is
+\begin{equation}
+\label{Eq:III:19:30}
+\psi_3(\rho)=\biggl(1-\frac{2\rho}{3}+\frac{2}{27}\,\rho^2\biggr)
+e^{-\rho/3}.
+\end{equation}
+The wave functions for these first three levels are plotted in
+Fig.  19–2 . You can see the general trend. All of the wave
+functions approach zero rapidly for large [eq] after oscillating a few
+times. In fact, the number of “bumps” is just equal to [eq]—or, if
+you prefer, the number of zero-crossings of [eq] is [eq].
+
+In the states described by the [eq] we have found that the
+probability amplitude for finding the electron is spherically
+symmetric—depending only on [eq], the distance from the proton. Such
+states have zero orbital angular momentum. We should now inquire about
+states which may have some angular dependences.
+
+We could, if we wished, just investigate the strictly mathematical
+problem of finding the functions of [eq], [eq], and [eq] which
+satisfy the differential equation ( 19.7 )—putting in the
+additional physical conditions that the only acceptable functions are
+ones which go to zero for large [eq]. You will find this done in many
+books. We are going to take a short cut by using the knowledge we
+already have about how amplitudes depend on angles in space.
+
+The hydrogen atom in any particular state is a particle with a certain
+“spin” [eq]—the quantum number of the total angular momentum. Part
+of this spin comes from the electron’s intrinsic spin, and part from
+the electron’s motion. Since each of these two components acts
+independently (to an excellent approximation) we will again ignore the
+spin part and think only about the “orbital” angular momentum. This
+orbital motion behaves, however, just like a spin. For example, if the
+orbital quantum number is [eq], the [eq]-component of angular momentum
+can be [eq], [eq], [eq], …, [eq]. (We are, as usual, measuring
+in units of [eq].) Also, all the rotation matrices and other
+properties we have worked out still apply. (From now on we will
+ really ignore the electron’s spin; when we speak of “angular
+momentum” we will mean only the orbital part.)
+
+Since the potential [eq] in which the electron moves depends only
+on [eq] and not on [eq] or [eq], the Hamiltonian is symmetric under
+all rotations. It follows that the angular momentum and all its
+components are conserved. (This is true for motion in any 
+“central field”—one which depends only on [eq]—so is not a
+special feature of the Coulomb [eq] potential.)
+
+Now let’s think of some possible state of the electron; its internal
+angular structure will be characterized by the quantum
+number [eq]. Depending on the “orientation” of the total angular momentum
+with respect to the [eq]-axis, the [eq]-component of angular momentum
+will be [eq], which is one of the [eq] possibilities between [eq]
+and [eq]. Let’s say [eq]. With what amplitude will the electron be found
+on the [eq]-axis at some distance [eq]? Zero. An electron on the
+[eq]-axis cannot have any orbital angular momentum around that
+axis. Alright, suppose [eq] is zero, then there can be some nonzero
+amplitude to find the electron at each distance from the proton. We’ll
+call this amplitude [eq]. It is the amplitude to find the electron
+at the distance [eq] up along the [eq]-axis, when the atom is in the
+state [eq], by which we mean orbital spin [eq] and
+[eq]-component [eq].
+
+If we know [eq] everything is known. For any state [eq], we
+know the amplitude [eq] to find the electron
+ anywhere in the atom. How? Watch. Suppose we have the atom in the
+state [eq], what is the amplitude to find the electron at the
+angle [eq] and the distance [eq] from the origin? Put a new
+[eq]-axis, say [eq], at that angle (see Fig.  19–3 ), and ask
+what is the amplitude that the electron will be at the distance [eq]
+along the new axis [eq]? We know that it cannot be found along [eq]
+unless its [eq]-component of angular momentum, say [eq], is zero. When
+[eq] is zero, however, the amplitude to find the electron along [eq]
+is [eq]. Therefore, the result is the product of two factors. The
+first is the amplitude that an atom in the state [eq] along the
+[eq]-axis will be in the state [eq] with respect to the 
+[eq]-axis. Multiply that amplitude by [eq] and you have the
+amplitude [eq] to find the electron at [eq]
+with respect to the original axes.
+
+Let’s write it out. We have worked out earlier the transformation
+matrices for rotations. To go from the frame [eq] to the
+frame [eq] of Fig.  19–3 , we can rotate first around the
+[eq]-axis by the angle [eq], and then rotate about the new 
+[eq]-axis ([eq]) by the angle [eq]. This combined rotation is the
+product
+\begin{equation*}
+R_y(\theta)R_z(\phi).
+\end{equation*}
+The amplitude to find the state [eq] after the rotation is
+\begin{equation}
+\label{Eq:III:19:31}
+\bracket{l,0}{R_y(\theta)R_z(\phi)}{l,m}.
+\end{equation}
+Our result, then, is
+\begin{equation}
+\label{Eq:III:19:32}
+\psi_{l,m}(\FLPr)=\bracket{l,0}{R_y(\theta)R_z(\phi)}{l,m}F_l(r).
+\end{equation}
+
+The orbital motion can have only integral values of [eq]. (If the
+electron can be found anywhere at [eq], there is some amplitude to
+have [eq] in that direction. And [eq] states exist only for integral
+spins.) The rotation matrices for [eq] are given in
+Table  17–2 . For larger [eq] you can use the general
+formulas we worked out in Chapter  18 . The matrices for
+[eq] and [eq] appear separately, but you know how to
+combine them. For the general case you would start with the
+state [eq] and operate with [eq] to get the new
+state [eq] (which is just [eq]). Then you
+operate on this state with [eq] to get the
+state [eq]. Multiplying by [eq] gives the
+matrix element ( 19.31 ).
+
+The matrix elements of the rotation operation are functions of
+[eq] and [eq]. The particular functions which appear
+in ( 19.31 ) also show up in many kinds of problems which
+involve waves in spherical geometries and so has been given a special
+name. Not everyone uses the same convention; but one of the most common
+ones is
+\begin{equation}
+\label{Eq:III:19:33}
+\bracket{l,0}{R_y(\theta)R_z(\phi)}{l,m}\equiv a\,Y_{l,m}(\theta,\phi).
+\end{equation}
+
+The functions [eq] are called the spherical
+harmonics , and [eq] is just a numerical
+factor which depends on the definition chosen for [eq]. For the
+usual definition,
+\begin{equation}
+\label{Eq:III:19:34}
+a=\sqrt{\frac{4\pi}{2l+1}}.
+\end{equation}
+With this notation, the hydrogen wave functions can be written
+\begin{equation}
+\label{Eq:III:19:35}
+\psi_{l,m}(\FLPr)=a\,Y_{l,m}(\theta,\phi)F_l(r).
+\end{equation}
+
+The angle functions [eq] are important not only in
+many quantum-mechanical problems, but also in many areas of classical
+physics in which the [eq] operator appears, such as
+electromagnetism. As another example of their use in quantum
+mechanics, consider the disintegration of an excited state of
+Ne[eq] (such as we discussed in the last chapter) which decays by
+emitting an [eq]-particle and going into O[eq]:
+\begin{equation*}
+\text{Ne}^{20*}\to\text{O}^{16}+\text{He}^4.
+\end{equation*}
+Suppose that the excited state has some spin [eq] (necessarily an
+integer) and that the [eq]-component of angular momentum is [eq]. We
+might now ask the following: given [eq] and [eq], what is the amplitude
+that we will find the [eq]-particle going off in a direction which
+makes the angle [eq] with respect to the [eq]-axis and the
+angle [eq] with respect to the [eq]-plane—as shown in
+Fig.  19–4 .
+
+To solve this problem we make, first, the following observation. A
+decay in which the [eq]-particle goes straight up along [eq] must
+come from a state with [eq]. This is so because both O[eq] and the
+[eq]-particle have spin zero, and because their motion cannot have
+any angular momentum about the [eq]-axis. Let’s call this amplitude [eq]
+(per unit solid angle). Then, to find the amplitude for a decay at the
+arbitrary angle of Fig.  19–4 , all we need to know is
+what amplitude the given initial state has zero angular momentum about
+the decay direction. The amplitude for the decay at [eq] and [eq]
+is then [eq] times the amplitude that a state [eq] with respect to
+the [eq]-axis will be in the state [eq] with respect to [eq]—the
+decay direction. This latter amplitude is just what we have written
+in ( 19.31 ). The probability to see the [eq]-particle
+at [eq] is
+\begin{equation*}
+P(\theta,\phi)=a^2\abs{\bracket{l,0}{R_y(\theta)R_z(\phi)}{l,m}}^2.
+\end{equation*}
+
+As an example, consider an initial state with [eq] and various values
+of [eq]. From Table  17–2 we know the necessary
+amplitudes. They are
+\begin{equation}
+\begin{aligned}
+\bracket{1,0}{R_y(\theta)R_z(\phi)}{1,+1}&=
+-\frac{1}{\sqrt{2}}\sin\theta e^{i\phi},\\[1ex]
+\bracket{1,0}{R_y(\theta)R_z(\phi)}{1,0}&=\cos\theta,\\[1ex]
+\bracket{1,0}{R_y(\theta)R_z(\phi)}{1,-1}&=
+\frac{1}{\sqrt{2}}\sin\theta e^{-i\phi}.
+\end{aligned}
+\label{Eq:III:19:36}
+\end{equation}
+These are the three possible angular distribution
+amplitudes—depending on the [eq]-value of the initial nucleus.
+
+Amplitudes such as the ones in ( 19.36 ) appear so often
+and are sufficiently important that they are given several 
+names. If the angular distribution amplitude is proportional to any
+one of the three functions or any linear combination of them, we say,
+“The system has an orbital angular momentum of one.” Or we may say,
+“The Ne[eq] emits a [eq]-wave [eq]-particle.” Or we say,
+“The [eq]-particle is emitted in an [eq] state.” Because there
+are so many ways of saying the same thing it is useful to have a
+dictionary. If you are going to understand what other physicists are
+talking about, you will just have to memorize the language. In
+Table  19–1 we give a dictionary of orbital angular
+momentum.
+
+If the orbital angular momentum is zero, then there is no change when
+you rotate the coordinate system and there is no variation with
+angle—the “dependence” on angle is as a constant, say [eq]. This is
+also called an “[eq]-state”, and there is only one such state—as
+far as angular dependence is concerned. If the orbital angular
+momentum is [eq], then the amplitude of the angular variation may be
+any one of the three functions given—depending on the value
+of [eq]—or it may be a linear combination. These are called
+“[eq]-states,” and there are three of them. If the orbital angular
+momentum is [eq] then there are the five functions shown. Any linear
+combination is called an “[eq],” or a “[eq]-wave” amplitude. Now
+you can immediately guess what the next letter is—what should come
+after [eq], [eq], [eq]? Well, of course, [eq], [eq], [eq], and so on down
+the alphabet! The letters don’t mean anything. (They did once mean
+something—they meant “sharp” lines, “principal” lines,
+“diffuse” lines and “fundamental” lines of the optical spectra of
+atoms. But those were in the days when people did not know where the
+lines came from. After [eq] there were no special names, so we now just
+continue with [eq], [eq], and so on.)
+
+The angular functions in the table go by several names—and are
+sometimes defined with slightly different conventions about the
+numerical factors that appear out in front. Sometimes they are called
+“spherical harmonics,” and written
+as [eq]. Sometimes they are
+written [eq], and if [eq], simply
+as [eq]. The functions [eq] are called the
+“Legendre polynomials” in [eq], and the
+functions [eq] are called the “associated Legendre
+functions.” You will find tables of these functions in many books.
+
+Notice, incidentally, that all the functions for a given [eq] have the
+property that they have the same parity—for odd [eq] they change sign
+under an inversion and for even [eq] they don’t change. So we can write
+that the parity of a state of orbital angular momentum [eq] is [eq].
+
+As we have seen, these angular distributions may refer to a nuclear
+disintegration or some other process, or to the distribution of the
+amplitude to find an electron at some place in the hydrogen atom. For
+instance, if an electron is in a [eq]-state ([eq]) the amplitude to
+find it can depend on the angle in many possible ways—but all are
+linear combinations of the three functions for [eq] in
+Table  19–1 . Let’s take the case [eq]. That’s
+interesting. That means that the amplitude is positive, say, in the
+upper part ([eq]), is negative in the lower
+part ([eq]), and is zero when [eq] is [eq]. Squaring this
+amplitude we see that the probability of finding the electron varies
+with [eq] as shown in Fig.  19–5 —and is independent
+of [eq]. This angular distribution is responsible for the fact that in
+molecular binding the attraction of an electron in an [eq] state for
+another atom depends on direction—it is the origin of the directed
+valences of chemical attraction.
+
+In Eq. ( 19.35 ) we have written the wave functions for
+the hydrogen atom as
+\begin{equation}
+\label{Eq:III:19:37}
+\psi_{l,m}(\FLPr)=a\,Y_{l,m}(\theta,\phi)F_l(r).
+\end{equation}
+These wave functions must be solutions of the differential
+equation ( 19.7 ). Let’s see what that means. Put
+( 19.37 ) into ( 19.7 ); you get
+ 
+\begin{align}
+\frac{Y_{l,m}}{r}\,\frac{\partial^2}{\partial r^2}\,
+(rF_l)+\frac{F_l}{r^2\sin\theta}\,\ddp{}{\theta}&\biggl(
+\sin\theta\,\ddp{Y_{l,m}}{\theta}\biggr)+
+\frac{F_l}{r^2\sin^2\theta}\,\frac{\partial^2Y_{l,m}}
+{\partial\phi^2}\notag\\[1ex]
+\label{Eq:III:19:38}
+&=\;-\frac{2m}{\hbar^2}\biggl(E+\frac{e^2}{r}\biggr)
+Y_{l,m}F_l.
+\end{align}
+ 
+ 
+\begin{align}
+\frac{Y_{l,m}}{r}\frac{\partial^2}{\partial r^2}
+(rF_l)\!&+\!\frac{F_l}{r^2\sin\theta}\ddp{}{\theta}\biggl(\!
+\sin\theta\ddp{Y_{l,m}}{\theta}\!\biggr)\notag\\[1ex]
+\label{Eq:III:19:38}
+&+\!\frac{F_l}{r^2\sin^2\theta}\frac{\partial^2Y_{l,m}}
+{\partial\phi^2}\\[1.5ex]
+&=-\frac{2m}{\hbar^2}\biggl(\!E+\!\frac{e^2}{r}\!\biggr)
+Y_{l,m}F_l.\notag
+\end{align}
+ 
+Now multiply through by [eq] and rearrange terms. The result is
+ 
+\begin{align}
+\frac{1}{\sin\theta}\,\ddp{}{\theta}&\biggl(
+\sin\theta\,\ddp{Y_{l,m}}{\theta}\biggr)+
+\frac{1}{\sin^2\theta}\,\frac{\partial^2Y_{l,m}}
+{\partial\phi^2}\notag\\[1ex]
+\label{Eq:III:19:39}
+&=\;-\biggl[
+\frac{r^2}{F_l}\biggl\{
+\frac{1}{r}\,\frac{d^2}{dr^2}\,(rF_l)+\frac{2m}{\hbar^2}
+\biggl(E+\frac{e^2}{r}\biggr)F_l\biggr\}\biggr]Y_{l,m}.
+\end{align}
+ 
+ 
+\begin{equation}
+\begin{gathered}
+\frac{1}{\sin\theta}\ddp{}{\theta}\biggl(\!
+\sin\theta\ddp{Y_{l,m}}{\theta}\!\biggr)\!+\!
+\frac{1}{\sin^2\theta}\frac{\partial^2Y_{l,m}}
+{\partial\phi^2}\\[2ex]
+=-\biggl[
+\frac{r^2}{F_l}\biggl\{\!
+\frac{1}{r}\frac{d^2}{dr^2}(rF_l)\!+\!\frac{2m}{\hbar^2}
+\biggl(\!E+\frac{e^2}{r}\!\biggr)F_l\!\biggr\}\biggr]Y_{l,m}.
+\end{gathered}
+\label{Eq:III:19:39}
+\end{equation}
+ 
+The left-hand side of this equation depends on [eq] and [eq],
+ but not on  [eq]. No matter what value we choose for [eq], the
+left side doesn’t change. This must also be true for the
+right-hand side . Although the quantity in the square brackets has
+[eq]’s all over the place, the whole quantity cannot depend on [eq],
+otherwise we wouldn’t have an equation good for all [eq]. As you can
+see, the bracket also does not depend on [eq] or [eq]. It must
+be some constant. Its value may well depend on the [eq]-value of the
+state we are studying, since the function [eq] must be the one
+appropriate to that state; we’ll call the constant [eq].
+Equation ( 19.39 ) is therefore equivalent to two 
+equations:
+ 
+\begin{gather}
+\label{Eq:III:19:40}
+\frac{1}{\sin\theta}\,\ddp{}{\theta}\biggl(
+\sin\theta\,\ddp{Y_{l,m}}{\theta}\biggr)+
+\frac{1}{\sin^2\theta}\,\frac{\partial^2Y_{l,m}}
+{\partial\phi^2}=-K_lY_{l,m},\\
+\notag\\[2pt]
+\label{Eq:III:19:41}
+\frac{1}{r}\,\frac{d^2}{dr^2}\,(rF_l)+
+\frac{2m}{\hbar^2}\biggl(E+\frac{e^2}{r}\biggr)F_l=
+K_l\,\frac{F_l}{r^2}.
+\end{gather}
+ 
+ 
+
+\begin{align}
+\frac{1}{\sin\theta}\ddp{}{\theta}\biggl(\!
+\sin\theta\ddp{Y_{l,m}}{\theta}\!\biggr)\!+\!
+\frac{1}{\sin^2\theta}\frac{\partial^2Y_{l,m}}
+{\partial\phi^2}&\notag\\[1.5ex]
+\label{Eq:III:19:40}
+=-K_lY_{l,m},&\\[2.5ex]
+\frac{1}{r}\frac{d^2}{dr^2}(rF_l)+
+\frac{2m}{\hbar^2}\biggl(\!E+\!\frac{e^2}{r}\!\biggr)F_l&\notag\\[.5ex]
+\label{Eq:III:19:41}
+=K_l\frac{F_l}{r^2}.&
+\end{align}
+
+Now look at what we’ve done. For any state described by [eq] and [eq],
+we know the functions [eq]; we can use Eq. ( 19.40 )
+to determine the constant [eq]. Putting [eq] into
+Eq. ( 19.41 ) we have a differential equation for the
+function [eq]. If we can solve that equation for [eq], we have
+all of the pieces to put into ( 19.37 ) to give [eq].
+
+What is [eq]? First, notice that it must be the same for all [eq]
+(which go with a particular [eq]), so we can pick any [eq] we want
+for [eq] and plug it into ( 19.40 ) to solve
+for [eq]. Perhaps the easiest one to use is [eq]. From
+Eq. ( 18.24 ),
+\begin{equation}
+\label{Eq:III:19:42}
+R_z(\phi)\,\ket{l,l}=e^{il\phi}\,\ket{l,l}.
+\end{equation}
+The matrix element for [eq] is also quite simple:
+\begin{equation}
+\label{Eq:III:19:43}
+\bracket{l,0}{R_y(\theta)}{l,l}=b\,(\sin\theta)^l,
+\end{equation}
+where [eq] is some number. 3 Combining the two, we obtain
+\begin{equation}
+\label{Eq:III:19:44}
+Y_{l,l}\propto e^{il\phi}\sin^l\theta.
+\end{equation}
+Putting this function into ( 19.40 ) gives
+\begin{equation}
+\label{Eq:III:19:45}
+K_l=l(l+1).
+\end{equation}
+
+Now that we have determined [eq], Eq. ( 19.41 ) tells us
+about the radial function [eq]. It is, of course, just the
+Schrödinger equation with the angular part replaced by its
+equivalent [eq]. Let’s rewrite ( 19.41 ) in the form
+we had in Eq. ( 19.8 ), as follows:
+\begin{equation}
+\label{Eq:III:19:46}
+\frac{1}{r}\frac{d^2}{dr^2}(rF_l)=
+-\frac{2m}{\hbar^2}\biggl\{\!
+E\!+\!\frac{e^2}{r}\!-\!\frac{l(l\!+\!1)\hbar^2}{2mr^2}
+\!\biggr\}F_l.
+\end{equation}
+A mysterious term has been added to the potential energy. Although we
+got this term by some mathematical shenanigan, it has a simple
+physical origin. We can give you an idea about where it comes from in
+terms of a semi-classical argument. Then perhaps you will not find it
+quite so mysterious.
+
+Think of a classical particle moving around some center of force. The
+total energy is conserved and is the sum of the potential and kinetic
+energies
+\begin{equation*}
+U = V(r) + \tfrac{1}{2}mv^2 = \text{constant}.
+\end{equation*}
+In general, [eq] can be resolved into a radial component [eq] and a
+tangential component [eq]; then
+\begin{equation*}
+v^2=v_r^2+(r\dot{\theta})^2.
+\end{equation*}
+Now the angular momentum [eq] is also conserved; say it
+is equal to [eq]. We can then write
+\begin{equation*}
+mr^2\dot{\theta}=L,\quad
+\text{or}\quad
+r\dot{\theta}=\frac{L}{mr},
+\end{equation*}
+and the energy is
+\begin{equation*}
+U = \tfrac{1}{2}mv_r^2+V(r)+\frac{L^2}{2mr^2}.
+\end{equation*}
+If there were no angular momentum we would have just the first two
+terms. Adding the angular momentum [eq] does to the energy just what
+adding a term [eq] to the potential energy would do. But this
+is almost exactly the extra term in ( 19.46 ). The only
+difference is that [eq] appears for the angular momentum
+instead of [eq] as we might expect. But we have seen before
+(for example, Volume II, Section  34-7 ) that this is just the substitution that is
+usually required to make a quasi-classical argument agree with a correct
+quantum-mechanical calculation. We can, then, understand the new term as
+a “pseudo-potential” which gives the “centrifugal
+force” term that
+appears in the equations of radial motion for a rotating system. (See
+the discussion of “pseudo-forces” in Volume I,
+Section  12-5 .)
+
+We are now ready to solve Eq. ( 19.46 ) for [eq]. It
+is very much like Eq. ( 19.8 ), so the same technique
+will work again. Everything goes as before until you get to
+Eq. ( 19.19 ) which will have the additional term
+\begin{equation}
+\label{Eq:III:19:47}
+-l(l+1)\sum_{k=1}^\infty a_k\rho^{k-2}.
+\end{equation}
+This term can also be written as
+\begin{equation}
+\label{Eq:III:19:48}
+-l(l+1)\biggl\{\frac{a_1}{\rho}+
+\sum_{k=1}^\infty a_{k+1}\rho^{k-1}\biggr\}.
+\end{equation}
+(We have taken out the first term and then shifted the running
+index [eq] down by [eq].) Instead of Eq. ( 19.20 ) we have
+
+\begin{equation}
+\begin{aligned}
+\sum_{k=1}^\infty&[\{k(k+1)-l(l+1)\}a_{k+1}-2(\alpha k-1)a_k]\rho^{k-1}\\
+&-\frac{l(l+1)a_1}{\rho}=0.
+\end{aligned}
+\label{Eq:III:19:49}
+\end{equation}
+
+
+There is only one term in [eq], so it must be zero. The
+coefficient [eq] must be zero (unless [eq] and we have our previous
+solution). Each of the other terms is made zero by having the square
+bracket come out zero for every [eq]. This condition replaces
+Eq. ( 19.22 ) by
+\begin{equation}
+\label{Eq:III:19:50}
+a_{k+1}=\frac{2(\alpha k-1)}{k(k+1)-l(l+1)}\,a_k.
+\end{equation}
+This is the only significant change from the spherically symmetric
+case.
+
+As before the series must terminate if we are to have solutions which
+can represent bound electrons. The series will end at [eq] if $\alpha
+n=1[eq]\alpha$, that it must be
+equal to [eq], where [eq] is some positive integer. However,
+Eq. ( 19.50 ) also gives a new restriction. The index [eq]
+cannot be equal to [eq], the denominator becomes zero and [eq] is
+infinite. That is, since [eq], Eq. ( 19.50 ) implies
+that all successive [eq] are zero until we get to [eq], which can
+be nonzero. This means that [eq] must start at [eq] and end at [eq].
+
+Our final result is that for any [eq] there are many possible solutions
+which we can call [eq] where [eq]. Each solution has the
+energy
+\begin{equation}
+\label{Eq:III:19:51}
+E_n=-\frac{me^4}{2\hbar^2}\biggl(\frac{1}{n^2}\biggr).
+\end{equation}
+The wave function for the state of this energy with the angular
+quantum numbers [eq] and [eq] is
+\begin{equation}
+\label{Eq:III:19:52}
+\psi_{n,l,m}=a\,Y_{l,m}(\theta,\phi)F_{n,l}(\rho),
+\end{equation}
+with
+\begin{equation}
+\label{Eq:III:19:53}
+\rho F_{n,l}(\rho)=e^{-\alpha\rho}\sum_{k=l+1}^na_k\rho^k.
+\end{equation}
+The coefficients [eq] are obtained from ( 19.50 ). We
+have, finally, a complete description of the states of a hydrogen
+atom.
+
+Let’s review what we have discovered. The states which satisfy
+Schrödinger’s equation for an electron in a Coulomb field are
+characterized by three quantum numbers [eq], [eq], [eq], all integers. The
+angular distribution of the electron amplitude can have only certain
+forms which we call [eq]. They are labeled by [eq], the
+quantum number of total angular momentum , and [eq], the
+“magnetic” quantum number , which can range from [eq] to [eq]. For
+each angular configuration, various possible radial
+distributions [eq] of the electron amplitude are possible; they
+are labeled by the principal quantum number  [eq]—which can range from [eq] to [eq]. The energy of the state depends only on [eq], and increases with
+increasing [eq].
+
+The lowest energy, or ground, state is an [eq]-state. It has
+[eq], [eq], and [eq]. It is a “nondegenerate” state—there is only one
+with this energy, and its wave function is spherically symmetric. The
+amplitude to find the electron is a maximum at the center, and falls
+off monotonically with increasing distance from the center. We can
+visualize the electron amplitude as a blob as shown in
+Fig.  19–6 (a).
+
+There are other [eq]-states with higher energies, for [eq], [eq],
+[eq], … For each energy there is only one version ([eq]), and they
+are all spherically symmetric. These states have amplitudes which
+alternate in sign one or more times with increasing [eq]. There are
+[eq] spherical nodal surfaces—the places where [eq] goes through
+zero. The [eq]-state ([eq], [eq]), for example, will look as
+sketched in Fig.  19–6 (b). (The dark areas indicate
+regions where the amplitude is large, and the plus and minus signs
+indicate the relative phases of the amplitude.) The energy levels of the
+[eq]-states are shown in the first column of Fig.  19–7 .
+
+Then there are the [eq]-states—with [eq]. For each [eq], which must
+be [eq] or greater, there are three states of the same energy, one each
+for [eq], [eq], and [eq]. The energy levels are as shown in
+Fig.  19–7 . The angular dependences of these states are
+given in Table  19–1 . For instance, for [eq], if the
+amplitude is positive for [eq] near zero, it will be negative
+for [eq] near [eq]. There is a nodal plane coincident with the
+[eq]-plane. For [eq] there are also spherical nodes. The [eq],
+[eq] amplitude is sketched in Fig.  19–6 (c), and the [eq],
+[eq] wave function is sketched in Fig.  19–6 (d).
+
+You might think that since [eq] represents a kind of “orientation” in
+space, there should be similar distributions with the peaks of
+amplitude along the [eq]-axis or along the [eq]-axis. Are these perhaps
+the [eq] and [eq] states? No. But since we have three states with
+equal energies, any linear combinations of the three will also be
+stationary states of the same energy. It turns out that the
+“[eq]”-state—which corresponds to the “[eq]”-state, or
+[eq] state, of Fig.  19–6 (c)—is a linear combination of the
+[eq] and [eq] states. The corresponding “[eq]”-state is another
+combination. Specifically, we mean that
+\begin{align*}
+\text{“[eq]”}&=\ket{1,0},\\[1ex]
+\text{“[eq]”}&=-\frac{\ket{1,+1}-\ket{1,-1}}{\sqrt{2}},\\[1ex]
+\text{“[eq]”}&=-\frac{\ket{1,+1}+\ket{1,-1}}{i\sqrt{2}}.
+\end{align*}
+These states all look the same when referred to their particular axes.
+
+The [eq]-states ([eq]) have five possible values of [eq] for each
+energy, the lowest energy has [eq]. The levels go as shown in
+Fig.  19–7 . The angular dependences get more complicated.
+For instance the [eq] states have two conical nodes, so the wave
+function reverses phase from [eq], to [eq], to [eq] as you go around from
+the north pole to the south pole. The rough form of the amplitude is
+sketched in (e) and (f) of Fig.  19–6 for the
+[eq] states with [eq] and [eq]. Again, the larger [eq]’s have spherical
+nodes.
+
+We will not try to describe any more of the possible states. You will
+find the hydrogen wave functions described in more detail in many books.
+Two good references are L. Pauling and E. B. Wilson,
+ Introduction to Quantum Mechanics , McGraw-Hill (1935); and
+R. B. Leighton, Principles of Modern Physics ,
+McGraw-Hill (1959). You will find in them graphs of some of the
+functions and pictorial representations of many states.
+
+We would like to mention one particular feature of the wave functions
+for higher [eq]: for [eq] the amplitudes are zero at the center. That
+is not surprising, since it’s hard for an electron to have angular
+momentum when its radius arm is very small. For this reason, the
+higher the [eq], the more the amplitudes are “pushed away” from the
+center. If you look at the way the radial functions [eq] vary
+for small [eq], you find from ( 19.53 ) that
+\begin{equation*}
+F_{n,l}(r)\approx r^l.
+\end{equation*}
+Such a dependence on [eq] means that for larger [eq]’s you have to go
+farther from [eq] before you get an appreciable amplitude. This
+behavior is, incidentally, determined by the centrifugal
+force term in
+the radial equation, so the same thing will apply for any potential
+that varies slower than [eq] for small [eq]—which most atomic
+potentials do.
+
+We would like now to apply the theory of the hydrogen atom in an
+approximate way to get some understanding of the chemist’s periodic
+table of the elements. For an element with atomic number [eq] there are
+[eq] electrons held together by the electric attraction of the nucleus
+but with mutual repulsion of the electrons. To get an exact solution we
+would have to solve Schrödinger’s equation for [eq] electrons in a
+Coulomb field. For helium the equation is
+
+\begin{equation*}
+-\frac{\hbar}{i}\ddp{\psi}{t}=-\frac{\hbar^2}{2m}
+(\nabla_1^2\psi\!+\!\nabla_2^2\psi)\!+\!\biggl(\!
+-\!\frac{2e^2}{r_1}\!-\!\frac{2e^2}{r_2}\!+\!\frac{e^2}{r_{12}}\!\biggr)\psi,
+\end{equation*}
+
+
+where [eq] is a Laplacian which operates on [eq], the
+coordinate of one electron; [eq] operates on [eq];
+and [eq]. (We are again neglecting the spin of
+the electrons.) To find the stationary states and energy levels we
+would have to find solutions of the form
+\begin{equation*}
+\psi=f(\FLPr_1,\FLPr_2)e^{-(i/\hbar)Et}.
+\end{equation*}
+The geometrical dependence is contained in [eq], which is a function of
+six variables—the simultaneous positions of the two electrons. No
+one has found an analytic solution, although solutions for the lowest
+energy states have been obtained by numerical methods.
+
+With [eq], [eq], or [eq] electrons it is hopeless to try to obtain exact
+solutions, and it is going too far to say that quantum mechanics has
+given a precise understanding of the periodic table. It is possible,
+however, even with a sloppy approximation—and some fixing—to
+understand, at least qualitatively, many chemical properties which
+show up in the periodic table.
+
+The chemical properties of atoms are determined primarily by their
+lowest energy states. We can use the following approximate theory to
+find these states and their energies. First, we neglect the electron
+spin, except that we adopt the exclusion principle and say that
+any particular electronic state can be occupied by only one electron.
+This means that any particular orbital configuration can have up to
+ two electrons—one with spin up, the other with spin down. Next
+we disregard the details of the interactions between the
+electrons in our first approximation, and say that each electron moves
+in a central field which is the combined field of the nucleus and
+all the other electrons. For neon, which has [eq] electrons, we say that
+one electron sees an average potential due to the nucleus plus the other
+nine electrons. We imagine then that in the Schrödinger equation for
+each electron we put a [eq] which is a [eq] field modified by a
+spherically symmetric charge density coming from the other electrons.
+
+In this model each electron acts like an independent particle. The
+angular dependence of its wave function will be just the same as the
+ones we had for the hydrogen atom. There will be [eq]-states,
+[eq]-states, and so on; and they will have the various possible
+[eq]-values. Since [eq] no longer goes as [eq], the radial part of
+the wave functions will be somewhat different, but it will be
+qualitatively the same, so we will have the same radial quantum
+numbers, [eq]. The energies of the states will also be somewhat
+different.
+
+With these ideas, let’s see what we get. The ground state of hydrogen
+has [eq] and [eq]; we say the electron configuration is [eq]. The
+energy is [eq] eV. This means that it takes [eq] electron volts
+to pull the electron off the atom. We call this the “ionization
+energy”, [eq]. A large ionization energy means that it is harder to
+pull the electron off and, in general, that the material is chemically
+less active.
+
+Now take helium. Both electrons can be in the same lowest state (one
+spin up and the other spin down). In this lowest state the electron
+moves in a potential which is for small [eq] like a Coulomb field
+for [eq] and for large [eq] like a Coulomb field for [eq]. The result is
+a “hydrogen-like” [eq] state with a somewhat lower energy. Both
+electrons occupy identical [eq] states ([eq], [eq]). The observed
+ionization energy (to remove one electron) is [eq] electron
+volts. Since the [eq] “shell” is now filled—we allow only two
+electrons—there is practically no tendency for an electron to be
+attracted from another atom. Helium is chemically inert.
+
+The lithium nucleus has a charge of [eq]. The electron states will
+again be hydrogen-like, and the three electrons will occupy the lowest
+three energy levels. Two will go into [eq] states and the third will
+go into an [eq] state. But with [eq] or [eq]? In hydrogen these
+states have the same energy, but in other atoms they don’t, for the
+following reason. Remember that a [eq] state has some amplitude to be
+near the nucleus while the [eq] state does not. That means that a
+[eq] electron will feel some of the triple electric charge of the Li
+nucleus, but that a [eq] electron will stay out where the field looks
+like the Coulomb field of a single charge. The extra attraction lowers
+the energy of the [eq] state relative to the [eq] state. The energy
+levels will be roughly as shown in Fig.  19–8 —which you
+should compare with the corresponding diagram for hydrogen in
+Fig.  19–7 . So the lithium atom will have two electrons in
+[eq] states and one in a [eq]. Since the [eq] electron has a higher
+energy than a [eq] electron it is relatively easily removed. The
+ionization energy of lithium is only [eq] electron volts, and it is
+quite active chemically.
+
+So you can see the patterns which develop; we have given in
+Table  19–2 a list of the first [eq] elements, showing the
+states occupied by the electrons in the ground state of each atom. The
+Table gives the ionization energy for the most loosely bound electron,
+and the number of electrons occupying each “shell”—by which we mean
+states with the same [eq]. Since the different [eq]-states have different
+energies, each [eq]-value corresponds to a sub-shell of
+[eq] possible states (of different [eq] and electron spin). These
+all have the same energy—except for some very small effects we are
+neglecting.
+
+Beryllium is like lithium except that it has two electrons in the
+[eq] state as well as two in the filled [eq] shell.
+
+Boron has [eq] electrons. The fifth must go into a [eq] state. There
+are [eq] different [eq] states, so we can keep adding
+electrons until we get to a total of [eq]. This takes us to neon. As we
+add these electrons we are also increasing [eq], so the whole electron
+distribution gets pulled in closer and closer to the nucleus and the
+energy of the [eq] states goes down. By the time we get to neon the
+ionization energy is up to [eq] electron volts. Neon does not easily give up
+an electron. Also there are no more low-energy slots to be filled, so
+it won’t try to grab an extra electron. Neon is chemically
+inert. Fluorine, on the other hand, does have an empty position
+where an electron can drop into a state of low energy, so it is quite
+active in chemical reactions.
+
+With sodium the eleventh electron must start a new shell—going into
+a [eq] state. The energy level of this state is much higher; the
+ionization energy jumps down; and sodium is an active chemical. From
+sodium to argon the [eq] and [eq] states with [eq] are occupied in
+exactly the same sequence as for lithium to neon. Angular
+configurations of the electrons in the outer unfilled shell have the
+same sequence, and the progression of ionization energies is quite
+similar. You can see why the chemical properties repeat with
+increasing atomic number. Magnesium acts chemically much like
+beryllium, silicon like carbon, and chlorine like fluorine. Argon is
+inert like neon.
+
+You may have noticed that there is a slight peculiarity in the
+sequence of ionization energies between lithium and neon, and a
+similar one between sodium and argon. The last electron is bound to
+the oxygen atom somewhat less than we might expect. And sulfur is
+similar. Why should that be? We can understand it if we put in just a
+little bit of the effects of the interactions between individual
+electrons. Think of what happens when we put the first [eq] electron
+onto the boron atom. It has six possibilities—three possible
+[eq]-states, each with two spins. Imagine that the electron goes with
+spin up into the [eq] state, which we have also called the
+“[eq]” state because it hugs the [eq]-axis. Now what will happen in carbon?
+There are now two [eq] electrons. If one of them goes into the
+“[eq]” state, where will the second one go? It will have lower energy if it
+stays away from the first electron, which it can do by going into,
+say, the “[eq]” state of the [eq] shell. (This state is, remember,
+just a linear combination of the [eq] and [eq] states.) Next, when
+we go to nitrogen, the three [eq] electrons will have the lowest
+energy of mutual repulsion if they go one each into the “[eq],” “[eq],”
+and “[eq]” configurations. For oxygen, however, the jig is
+up. The fourth electron must go into one of the filled states—with
+opposite spin. It is strongly repelled by the electron already in that
+state, so its energy will not be as low as it might otherwise be, and
+it is more easily removed. That explains the break in the sequence of
+binding energies which appears between nitrogen and oxygen, and
+between phosphorus and sulfur.
+
+After argon, you would, at first, think that the new electrons would
+start to fill up the [eq] states. But they don’t. As we described
+earlier—and illustrated in Fig.  19–8 —the higher
+angular momentum states get pushed up in energy. By the time we get to
+the [eq] states they are pushed to an energy a little bit above the
+energy of the [eq] state. So in potassium the last electron goes into
+the [eq] state. After this shell is filled (with two electrons) at
+calcium, the [eq] states begin to be filled for scandium, titanium, and
+vanadium.
+
+The energies of the [eq] and [eq] states are so close together that
+small effects can shift the balance either way. By the time we get to
+put four electrons into the [eq] states, their repulsion raises the
+energy of the [eq] state just enough that its energy is slightly above
+the [eq] energy, so one electron shifts over. For chromium we don’t
+get a [eq], [eq] combination as we would have expected, but instead a
+[eq], [eq] combination. The new electron added to get manganese fills up
+the [eq] shell again, and the states of the [eq] shell are then
+occupied one by one until we reach copper.
+
+Since the outermost shell of manganese, iron, cobalt, and nickel have
+the same configurations, however, they all tend to have similar
+chemical properties. (This effect is much more pronounced in the
+rare-earth elements which all have the same outer shell but a
+progressively filling inner shell which has much less influence on
+their chemical properties.)
+
+In copper an electron is robbed from the [eq] shell, finally
+completing the [eq] shell. The energy of the [eq], [eq] combination is,
+however, so close to the [eq], [eq] configuration for copper that just
+the presence of another atom nearby can shift the balance. For this
+reason the two last electrons of copper are nearly equivalent, and
+copper can have a valence of either [eq] or [eq]. (It sometimes acts as
+though its electrons were in the [eq], [eq] combination.) Similar things
+happen at other places and account for the fact that other metals,
+such as iron, combine chemically with either of two valences. By zinc,
+both the [eq] and [eq] shells are filled once and for all.
+
+From gallium to krypton the sequence proceeds normally again, filling
+the [eq] shell. The outer shells, the energies, and the chemical
+properties repeat the pattern of boron to neon and aluminum to argon.
+
+Krypton, like argon and neon, is known as “noble” gas. All three are
+chemically “inert.” This means only that, having filled shells of
+relatively low energy, there are few situations in which there is an
+energy advantage for them to join in a simple combination with other
+elements. Having a filled shell is not enough. Beryllium and magnesium
+have filled [eq]-shells, but the energy of these shells is too high to
+lead to stability. Similarly, one would have expected another
+“noble” element at nickel, if the energy of the [eq] shell had been
+lower (or the [eq] higher). On the other hand, krypton is not
+completely inert; it will form a weakly-bound compound with chlorine.
+
+Since our sample has turned up most of the main features of the
+periodic table, we stop our examination at element number [eq]—there
+are still seventy or so more!
+
+We would like to bring up only one more point—that we not only can
+understand the valences to some extent but also can say something
+about the directional properties of the chemical bonds. Take an atom
+like oxygen which has four [eq] electrons. The first three go into
+“[eq],” “[eq],” and “[eq]” states and the fourth will double one of
+these states, leaving two—say “[eq]” and “[eq]”—vacant. Consider
+then what happens in H[eq]O. Each of the two hydrogens are willing to
+share an electron with the oxygen, helping the oxygen to fill a
+shell. These electrons will tend to go into the “[eq]” and “[eq]”
+vacancies. So the water molecule should have the two hydrogen atoms
+making a right angle with respect to the center of the oxygen. The
+angle is actually [eq]. We can even understand why the angle is
+larger than [eq]. In sharing their electrons the hydrogens end
+up with a net positive charge. The electric repulsion “strains” the
+wave functions and pushes the angle out to [eq]. The same
+situation occurs in H[eq]S. But because the sulfur atom is larger,
+the two hydrogen atoms are farther apart, there is less repulsion, and
+the angle is only pushed out to about [eq]. Selenium is even
+larger, so in H[eq]Se the angle is very nearly [eq].
+
+We can use the same arguments to understand the geometry of ammonia,
+H[eq]N. Nitrogen has room for three more [eq] electrons, one each for
+the “[eq],” “[eq],” and “[eq]” type states. The three hydrogens
+should join on at right angles to each other. The angles come out a
+little larger than [eq]—again from the electric
+repulsion—but at least we see why the molecule of H[eq]N is not
+flat. The angles in phosphene, H[eq]P, are close to [eq], and in
+H[eq]As are still closer. We assumed that NH[eq] was not flat when we
+described it as a two-state system. And the nonflatness is what makes
+the ammonia maser possible. Now we see that also that shape can be
+understood from our quantum mechanics.
+
+The Schrödinger equation has been one of the great triumphs of
+physics. By providing the key to the underlying machinery of atomic
+structure it has given an explanation for atomic spectra, for
+chemistry, and for the nature of matter.

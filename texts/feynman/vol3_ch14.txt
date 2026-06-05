@@ -1,0 +1,905 @@
+The Feynman Lectures on Physics Vol. III Ch. 14: Semiconductors
+===============================================================
+
+Sections: 14–1 Electrons and holes in semiconductors | 14–2 Impure semiconductors | 14–3 The Hall effect | 14–4 Semiconductor junctions | 14–5 Rectification at a semiconductor junction | 14–6 The transistor
+
+
+
+One of the remarkable and dramatic developments in recent
+years has been the application of solid state science to technical
+developments in electrical devices such as transistors. The study of
+semiconductors led to the discovery of their useful properties and to a
+large number of practical applications. The field is changing so rapidly
+that what we tell you today may be incorrect next year. It will
+certainly be incomplete. And it is perfectly clear that with the
+continuing study of these materials many new and more wonderful things
+will be possible as time goes on. You will not need to understand this
+chapter for what comes later in this volume, but you may find it
+interesting to see that at least something of what you are learning has
+some relation to the practical world.
+
+There are large numbers of semiconductors known, but we’ll concentrate
+on those which now have the greatest technical application. They are
+also the ones that are best understood, and in understanding them we
+will obtain a degree of understanding of many of the others. The
+semiconductor substances in most common use today are silicon and
+germanium. These elements crystallize in the diamond
+lattice, a kind of cubic structure in which the
+atoms have tetrahedral bonding with their four nearest neighbors. They
+are insulators at very low temperatures—near absolute zero—although
+they do conduct electricity somewhat at room temperature. They are not
+metals; they are called semiconductors .
+
+If we somehow put an extra electron into a crystal of silicon or
+germanium which is at a low temperature, we will have just the
+situation we described in the last chapter. The electron will be able
+to wander around in the crystal jumping from one atomic site to the
+next. Actually, we have looked only at the behavior of electrons in a
+rectangular lattice, and the equations would be somewhat different for
+the real lattice of silicon or germanium. All of the essential points
+are, however, illustrated by the results for the rectangular lattice.
+
+As we saw in Chapter  13 , these electrons can have
+energies only in a certain energy band—called the conduction
+band . Within this band the energy is related to the
+wave-number [eq] of the probability amplitude [eq]
+(see Eq. ( 13.24 )) by
+\begin{equation}
+\label{Eq:III:14:1}
+E=\!E_0\!-\!2A_x\!\cos k_xa\!-\!2A_y\!\cos k_yb\!-\!2A_z\!\cos k_zc.
+\end{equation}
+
+The [eq]’s are the amplitudes for jumping in the [eq]-, [eq]-,
+and [eq]-directions, and [eq], [eq], and [eq] are the lattice spacings in
+these directions.
+
+For energies near the bottom of the band, we can approximate
+Eq. ( 14.1 ) by
+\begin{equation}
+\label{Eq:III:14:2}
+E=E_{\text{min}}+A_xa^2k_x^2+A_yb^2k_y^2+A_zc^2k_z^2
+\end{equation}
+
+(see Section  13–4 ).
+
+If we think of electron motion in some particular direction, so that
+the components of [eq] are always in the same ratio, the energy is
+a quadratic function of the wave number—and as we have seen of the
+momentum of the electron. We can write
+\begin{equation}
+\label{Eq:III:14:3}
+E=E_{\text{min}}+\alpha k^2,
+\end{equation}
+
+where [eq] is some constant, and we can make a graph of [eq]
+versus [eq] as in Fig.  14–1 . We’ll call such a graph an
+“energy diagram.” An electron in a particular
+state of energy and momentum can be indicated by a point such as [eq] in
+the figure.
+
+As we also mentioned in Chapter  13 , we can have a similar
+situation if we remove an electron from a neutral insulator.
+Then, an electron can jump over from a nearby atom and fill the
+“hole,” but leaving another “hole” at the atom it started from. We
+can describe this behavior by writing an amplitude to find the
+ hole at any particular atom, and by saying that the hole 
+can jump from one atom to the next. (Clearly, the amplitudes [eq] that
+the hole jumps from atom [eq] to atom [eq] is just the same as the
+amplitude that an electron on atom [eq] jumps into the hole at atom [eq].)
+The mathematics is just the same for the hole as it was for the
+extra electron, and we get again that the energy of the hole is related
+to its wave number by an equation just like Eq.
+( 14.1 ) or ( 14.2 ), except, of course, with
+different numerical values for the amplitudes [eq], [eq], and [eq].
+The hole has an energy related to the wave number of its probability
+amplitudes. Its energy lies in a restricted band, and near the bottom of
+the band its energy varies quadratically with the wave number—or
+momentum—just as in Fig.  14–1 . Following the arguments
+of Section  13–3 , we would find that the hole also
+behaves like a classical particle with a certain effective
+mass—except that in noncubic crystals the mass depends on the
+direction of motion. So the hole behaves like a positive particle 
+moving through the crystal. The charge of the hole-particle is positive,
+because it is located at the site of a missing electron; and when it
+moves in one direction there are actually electrons moving in the
+opposite direction.
+
+If we put several electrons into a neutral crystal, they will move
+around much like the atoms of a low-pressure gas. If there are not too
+many, their interactions will not be very important. If we then put an
+electric field across the crystal, the electrons will start to move
+and an electric current will flow. Eventually they would all be drawn
+to one edge of the crystal, and, if there is a metal electrode there,
+they would be collected, leaving the crystal neutral.
+
+Similarly we could put many holes into a crystal. They would roam
+around at random unless there is an electric field. With a field they
+would flow toward the negative terminal, and would be
+“collected”—what actually happens is that they are neutralized by
+electrons from the metal terminal.
+
+One can also have both holes and electrons together. If there are not
+too many, they will all go their way independently. With an electric
+field, they will all contribute to the current. For obvious reasons,
+electrons are called the negative carriers and the holes are called the
+ positive carriers .
+
+We have so far considered that electrons are put into the crystal from
+the outside, or are removed to make a hole. It is also possible to
+“create” an electron-hole pair by taking a bound electron away from
+one neutral atom and putting it some distance away in the same
+crystal. We then have a free electron and a free hole, and the two can
+move about as we have described.
+
+The energy required to put an electron into a state [eq]—we
+say to “create” the state [eq]—is the energy [eq] shown in
+Fig.  14–2 . It is some energy above [eq]. The
+energy required to “create” a hole in some state [eq] is the
+energy [eq] of Fig.  14–3 , which is some energy greater
+than [eq]. Now if we create a pair in the states [eq] and [eq],
+the energy required is just [eq].
+
+The creation of pairs is a common process (as we will see later), so
+many people like to put Fig.  14–2 and
+Fig.  14–3 together on the same graph—with the
+ hole energy plotted downward , although it is, of course a
+ positive energy. We have combined our two graphs in this way in
+Fig.  14–4 . The advantage of such a graph is that the
+energy [eq] required to create a pair with the
+electron in [eq] and the hole in [eq] is just the vertical distance
+between [eq] and [eq] as shown in Fig.  14–4 . The minimum
+energy required to create a pair is called the “gap” energy and is
+equal to [eq].
+
+Sometimes you will see a simpler diagram called an energy level
+diagram which is drawn when people are not
+interested in the [eq] variable. Such a diagram—shown in
+Fig.  14–5 —just shows the possible energies for the
+electrons and holes. 1
+
+How can electron-hole pairs be created? There are several ways. For
+example, photons of light (or x-rays) can be absorbed and create a
+pair if the photon energy is above the energy of the gap. The rate at
+which pairs are produced is proportional to the light intensity. If
+two electrodes are plated on a wafer of the crystal and a “bias”
+voltage is applied, the electrons and holes will be drawn to the
+electrodes. The circuit current will be proportional to the intensity
+of the light. This mechanism is responsible for the phenomenon of
+photoconductivity and the operation of photoconductive cells.
+
+Electron hole pairs can also be produced by high-energy
+particles. When a fast-moving charged particle—for instance, a
+proton or a pion with an energy of tens or hundreds of MeV—goes
+through a crystal, its electric field will knock electrons out of
+their bound states creating electron-hole pairs. Such events occur
+hundreds of thousands of times per millimeter of track. After the
+passage of the particle, the carriers can be collected and in doing so
+will give an electrical pulse. This is the mechanism at play in the
+semiconductor counters recently put to use for experiments in nuclear
+physics. Such counters do not require semiconductors, they can also be
+made with crystalline insulators. In fact, the first of such counters
+was made using a diamond crystal which is an insulator at room
+temperature. Very pure crystals are required if the holes and
+electrons are to be able to move freely to the electrodes without
+being trapped. The semiconductors silicon and germanium are used
+because they can be produced with high purity in reasonable large
+sizes (centimeter dimensions).
+
+So far we have been concerned with semiconductor crystals at
+temperatures near absolute zero. At any finite temperature there is
+still another mechanism by which electron-hole pairs can be
+created. The pair energy can be provided from the thermal energy of
+the crystal. The thermal vibrations of the crystal can transfer their
+energy to a pair—giving rise to “spontaneous” creation.
+
+The probability per unit time that the energy as large as the gap
+energy [eq] will be concentrated at one atomic site is
+proportional to [eq], where [eq] is the
+temperature and [eq] is Boltzmann’s
+constant (see
+Chapter  40 , Vol. I). Near absolute zero there is no
+appreciable probability, but as the temperature rises there is an
+increasing probability of producing such pairs. At any finite
+temperature the production should continue forever at a constant rate
+giving more and more negative and positive carriers. Of course that does
+not happen because after a while the electrons and holes accidentally
+find each other—the electron drops into the hole and the excess energy
+is given to the lattice. We say that the electron and hole
+“annihilate.” There is a certain probability per second that a hole
+meets an electron and the two things annihilate each other.
+
+If the number of electrons per unit volume is [eq] ([eq] for negative
+carriers) and the density of positive carriers is [eq], the chance
+per unit time that an electron and a hole will find each other and
+annihilate is proportional to the product [eq]. In equilibrium
+this rate must equal the rate that pairs are created. You see that in
+equilibrium the product of [eq] and [eq] should be given by some
+constant times the Boltzmann factor:
+\begin{equation}
+\label{Eq:III:14:4}
+N_nN_p=\text{const}\,e^{-E_{\text{gap}}/\kappa T}.
+\end{equation}
+
+When we say constant, we mean nearly constant. A more complete
+theory—which includes more details about how holes and electrons
+“find” each other—shows that the “constant” is slightly
+dependent upon temperature, but the major dependence on temperature is
+in the exponential.
+
+Let’s consider, as an example, a pure material which is originally
+neutral. At a finite temperature you would expect the number of
+positive and negative carriers to be equal, [eq]. Then each of
+them should vary with temperature as $e^{-E_{\text{gap}}/2\kappa
+T}$. The variation of many of the properties of a semiconductor—the
+conductivity for example—is mainly determined by the exponential
+factor because all the other factors vary much more slowly with
+temperature. The gap energy for germanium is about [eq] eV and for
+silicon [eq] eV.
+
+At room temperature [eq] is about [eq] of an electron volt. At
+these temperatures there are enough holes and electrons to give a
+significant conductivity, while at, say, [eq]K—one-tenth of
+room temperature—the conductivity is imperceptible. The gap energy
+of diamond is [eq] or [eq] eV and diamond is a good insulator at room
+temperature.
+
+So far we have talked about two ways that extra electrons can be put
+into an otherwise ideally perfect crystal lattice. One way was to
+inject the electron from an outside source; the other way, was to
+knock a bound electron off a neutral atom creating simultaneously an
+electron and a hole. It is possible to put electrons into the
+conduction band of a crystal in still another way. Suppose we imagine
+a crystal of germanium in which one of the germanium atoms is replaced
+by an arsenic atom. The germanium atoms have a valence of [eq] and the
+crystal structure is controlled by the four valence
+electrons. Arsenic, on the other hand, has a valence of [eq]. It turns
+out that a single arsenic atom can sit in the germanium lattice
+(because it has approximately the correct size), but in doing so it
+must act as a valence [eq] atom—using four of its valence electrons
+to form the crystal bonds and having one electron left over. This
+extra electron is very loosely attached—the binding energy is only
+about [eq] of
+an electron
+volt. At room temperature the electron easily picks
+up that much energy from the thermal energy of the crystal, and then
+takes off on its own—moving about in the lattice as a free
+electron. An impurity atom such as the arsenic is called a donor
+site because it can give up a negative carrier to the
+crystal. If a crystal of germanium is grown from a melt to which a very
+small amount of arsenic has been added, the arsenic donor sites will be
+distributed throughout the crystal and the crystal will have a certain
+density of negative carriers built in.
+
+You might think that these carriers would get swept away as soon as
+any small electric field was put across the crystal. This will not
+happen, however, because the arsenic atoms in the body of the crystal
+each have a positive charge. If the body of the crystal is to remain
+neutral, the average density of negative carrier electrons must be
+equal to the density of donor sites. If you put two electrodes on the
+edges of such a crystal and connect them to a battery, a current will
+flow; but as the carrier electrons are swept out at one end, new
+conduction electrons must be introduced from the electrode on the
+other end so that the average density of conduction electrons is left
+very nearly equal to the density of donor sites.
+
+Since the donor sites are positively charged, there will be some
+tendency for them to capture some of the conduction electrons as they
+diffuse around inside the crystal. A donor site can, therefore, act as
+a trap such as those we discussed in the last section. But if the
+trapping energy is sufficiently small—as it is for arsenic—the
+number of carriers which are trapped at any one time is a small
+fraction of the total. For a complete understanding of the behavior of
+semiconductors one must take into account this trapping. For the rest
+of our discussion, however, we will assume that the trapping energy is
+sufficiently low and the temperature is sufficiently high, that all of
+the donor sites have given up their electrons. This is, of course,
+just an approximation.
+
+It is also possible to build into a germanium crystal some impurity
+atom whose valence is [eq], such as aluminum. The aluminum atom tries
+to act as a valence [eq] object by stealing an extra electron. It can
+steal an electron from some nearby germanium atom and end up as a
+negatively charged atom with an effective valence of [eq]. Of course,
+when it steals the electron from a germanium atom, it leaves a hole
+there; and this hole can wander around in the crystal as a positive
+carrier. An impurity atom which can produce a hole in this way is
+called an acceptor because it “accepts” an
+electron. If a germanium or a silicon crystal is grown from a melt to
+which a small amount of aluminum impurity has been added, the crystal
+will have built-in a certain density of holes which can act as positive
+carriers.
+
+When a donor or an acceptor impurity is added to a semiconductor, we
+say that the material has been “doped.”
+
+When a germanium crystal with some built-in donor impurities is at
+room temperature, some conduction electrons are contributed by the
+thermally induced electron-hole pair creation as well as by the donor
+sites. The electrons from both sources are, naturally, equivalent, and
+it is the total number [eq] which comes into play in the statistical
+processes that lead to equilibrium. If the temperature is not too low,
+the number of negative carriers contributed by the donor impurity
+atoms is roughly equal to the number of impurity atoms present. In
+equilibrium Eq. ( 14.4 ) must still be valid; at a given
+temperature the product [eq] is determined. This means that if we
+add some donor impurity which increases [eq], the number [eq] of
+positive carriers will have to decrease by such an amount that
+[eq] is unchanged. If the impurity concentration is high enough,
+the number [eq] of negative carriers is determined by the number of
+donor sites and is nearly independent of temperature—all of the
+variation in the exponential factor is supplied by [eq], even though
+it is much less than [eq]. An otherwise pure crystal with a small
+concentration of donor impurity will have a majority of negative
+carriers; such a material is called an “[eq]-type”
+semiconductor.
+
+If an acceptor-type impurity is added to the crystal lattice, some of
+the new holes will drift around and annihilate some of the free
+electrons produced by thermal fluctuation. This process will go on until
+Eq. ( 14.4 ) is satisfied. Under equilibrium conditions the
+number of positive carriers will be increased and the number of negative
+carriers will be decreased, leaving the product a constant. A material
+with an excess of positive carriers is called a “[eq]-type”
+semiconductor.
+
+If we put two electrodes on a piece of semiconductor crystal and
+connect them to a source of potential difference, there will be an
+electric field inside the crystal. The electric field will cause the
+positive and the negative carriers to move, and an electric current
+will flow. Let’s consider first what will happen in an [eq]-type
+material in which there is a large majority of negative carriers. For
+such material we can disregard the holes; they will contribute very
+little to the current because there are so few of them. In an ideal
+crystal the carriers would move across without any impediment. In a
+real crystal at a finite temperature, however,—especially in a
+crystal with some impurities—the electrons do not move completely
+freely. They are continually making collisions which knock them out of
+their original trajectories, that is, changing their momentum. These
+collisions are just exactly the scatterings we talked about in the
+last chapter and occur at any irregularity in the crystal lattice. In
+an [eq]-type material the main causes of scattering are the very donor
+sites that are producing the carriers. Since the conduction electrons
+have a very slightly different energy at the donor sites, the
+probability waves are scattered from that point. Even in a perfectly
+pure crystal, however, there are (at any finite temperature)
+irregularities in the lattice due to thermal vibrations. From the
+classical point of view we can say that the atoms aren’t lined up
+exactly on a regular lattice, but are, at any instant, slightly out of
+place due to their thermal vibrations. The energy [eq] associated
+with each lattice point in the theory we described in
+Chapter  13 varies a little bit from place to place so that
+the waves of probability amplitude are not transmitted perfectly but are
+scattered in an irregular fashion. At very high temperatures or for very
+pure materials this scattering may become important, but in most doped
+materials used in practical devices the impurity atoms contribute most
+of the scattering. We would like now to make an estimate of the
+electrical conductivity of such a material.
+
+When an electric field is applied to an [eq]-type semiconductor, each
+negative carrier will be accelerated in this field, picking up
+velocity until it is scattered from one of the donor sites. This means
+that the carriers which are ordinarily moving about in a random
+fashion with their thermal energies will pick up an average drift
+velocity along the lines of the electric field and give rise to a
+current through the crystal. The drift velocity is in general rather
+small compared with the typical thermal velocities so that we can
+estimate the current by assuming that the average time that the
+carrier travels between scatterings is a constant. Let’s say that the
+negative carrier has an effective electric charge [eq]. In an
+electric field [eq], the force on the carrier will
+be [eq]. In Section  43–3 of Volume I we
+calculated the average drift velocity under such circumstances and found
+that it is given by [eq], where [eq] is the force on the charge,
+[eq] is the mean free time between collisions, and [eq] is the mass. We
+should use the effective mass we calculated in the last chapter but
+since we want to make a rough calculation we will suppose that this
+effective mass is the same in all directions. Here we will call
+it [eq]. With this approximation the average drift velocity will be
+\begin{equation}
+\label{Eq:III:14:5}
+\FLPv_{\text{drift}}=\frac{q_n\Efieldvec\tau_n}{m_n}.
+\end{equation}
+
+Knowing the drift velocity we can find the current. Electric current
+density [eq] is just the number of carriers per unit volume, [eq],
+multiplied by the average drift velocity, and by the charge on each
+carrier. The current density is therefore
+\begin{equation}
+\label{Eq:III:14:6}
+\FLPj=N_n\FLPv_{\text{drift}}q_n=
+\frac{N_nq_n^2\tau_n}{m_n}\,\Efieldvec.
+\end{equation}
+
+We see that the current density is proportional to the electric field;
+such a semiconductor material obeys Ohm’s law. The coefficient of
+proportionality between [eq] and [eq], the
+conductivity [eq], is
+\begin{equation}
+\label{Eq:III:14:7}
+\sigma=\frac{N_nq_n^2\tau_n}{m_n}.
+\end{equation}
+
+For an [eq]-type material the conductivity is relatively independent of
+temperature. First, the number of majority carriers [eq] is
+determined primarily by the density of donors in the crystal (so long
+as the temperature is not so low that too many of the carriers are
+trapped). Second, the mean time between collisions [eq] is mainly
+controlled by the density of impurity atoms, which is, of course,
+independent of the temperature.
+
+We can apply all the same arguments to a [eq]-type material, changing
+only the values of the parameters which appear in
+Eq. ( 14.7 ). If there are comparable numbers of both
+negative and positive carriers present at the same time, we must add the
+contributions from each kind of carrier. The total conductivity will be
+given by
+\begin{equation}
+\label{Eq:III:14:8}
+\sigma=\frac{N_nq_n^2\tau_n}{m_n}+\frac{N_pq_p^2\tau_p}{m_p}.
+\end{equation}
+
+For very pure materials, [eq] and [eq] will be nearly equal. They
+will be smaller than in a doped material, so the conductivity will be
+less. Also they will vary rapidly with temperature
+(like [eq], as we have seen), so the conductivity
+may change extremely fast with temperature.
+
+It is certainly a peculiar thing that in a substance where the only
+relatively free objects are electrons, there should be an electrical
+current carried by holes that behave like positive particles. We would
+like, therefore, to describe an experiment that shows in a rather
+clear way that the sign of the carrier of electric current is quite
+definitely positive. Suppose we have a block made of semiconductor
+material—it could also be a metal—and we put an electric field on
+it so as to draw a current in some direction, say the horizontal
+direction as drawn in Fig.  14–6 . Now suppose we put a magnetic field
+on the block pointing at a right angle to the current, say into 
+the plane of the figure. The moving carriers will feel a magnetic
+force [eq]. And since the average drift velocity is
+either right or left—depending on the sign of the charge on the
+carrier—the average magnetic force on the carriers will be either up
+or down. No, that is not right! For the directions we have assumed for
+the current and the magnetic field the magnetic force on the moving
+charges will always be up . Positive charges moving in the
+direction of [eq] (to the right) will feel an upward force. If the
+current is carried by negative charges, they will be moving left (for
+the same sign of the conduction current) and they will also feel an
+upward force. Under steady conditions, however, there is no upward
+motion of the carriers because the current can flow only from left to
+right. What happens is that a few of the charges initially flow
+upward, producing a surface charge density along the upper surface of
+semiconductor—leaving an equal and opposite surface charge density
+along the bottom surface of the crystal. The charges pile up on the
+top and bottom surfaces until the electric forces they produce on the
+moving charges just exactly cancel the magnetic force (on the average)
+so that the steady current flows horizontally. The charges on the top
+and bottom surfaces will produce a potential difference vertically
+across the crystal which can be measured with a high-resistance
+voltmeter, as shown in Fig.  14–7 . The sign of the potential
+difference registered by the voltmeter will depend on the sign of the
+carrier charges responsible for the current.
+
+When such experiments were first done it was expected that the sign of
+the potential difference would be negative as one would expect for
+negative conduction electrons. People were, therefore, quite surprised
+to find that for some materials the sign of the potential difference
+was in the opposite direction. It appeared that the current carrier
+was a particle with a positive charge. From our discussion of doped
+semiconductors it is understandable that an [eq]-type semiconductor
+should produce the sign of potential difference appropriate to
+negative carriers, and that a [eq]-type semiconductor should give an
+opposite potential difference, since the current is carried by the
+positively charged holes.
+
+The original discovery of the anomalous sign of the potential
+difference in the Hall effect was made in a metal rather than a
+semiconductor. It had been assumed that in metals the conduction was
+always by electron; however, it was found out that for beryllium the
+potential difference had the wrong sign. It is now understood that in
+metals as well as in semiconductors it is possible, in certain
+circumstances, that the “objects” responsible for the conduction are
+holes. Although it is ultimately the electrons in the crystal which do
+the moving, nevertheless, the relationship of the momentum and the
+energy, and the response to external fields is exactly what one would
+expect for an electric current carried by positive particles.
+
+Let’s see if we can make a quantitative estimate of the magnitude of
+the voltage difference expected from the Hall effect. If the voltmeter
+in Fig.  14–7 draws a negligible current, then the charges inside the
+semiconductor must be moving from left to right and the vertical
+magnetic force must be precisely cancelled by a vertical electric
+field which we will call [eq] (the “tr” is for
+“transverse”). If this electric field is to cancel the magnetic
+forces, we must have
+\begin{equation}
+\label{Eq:III:14:9}
+\Efieldvec_{\text{tr}}=-\FLPv_{\text{drift}}\times\FLPB.
+\end{equation}
+
+Using the relation between the drift velocity and the electric current
+density given in Eq. ( 14.6 ), we get
+\begin{equation*}
+\Efield_{\text{tr}}=-\frac{1}{qN}\,jB.
+\end{equation*}
+
+The potential difference between the top and the bottom of the crystal
+is, of course, this electric field strength multiplied by the height
+of the crystal. The electric field strength [eq] in
+the crystal is proportional to the current density and to the magnetic
+field strength. The constant of proportionality [eq] is called the
+Hall coefficient and is usually represented by the
+symbol [eq]. The Hall coefficient depends just on the density of
+carriers—provided that carriers of one sign are in a large
+majority. Measurement of the Hall effect is, therefore, one convenient
+way of determining experimentally the density of carriers in a
+semiconductor.
+
+We would like to discuss now what happens if we take two pieces of
+germanium or silicon with different internal characteristics—say
+different kinds or amounts of doping—and put them together to make a
+“junction.” Let’s start out with what is called a [eq]-[eq] junction
+in which we have [eq]-type germanium on one side of the boundary and
+[eq]-type germanium on the other side of the boundary—as sketched in
+Fig.  14–8 . Actually, it is not practical to put together two
+separate pieces of crystal and have them in uniform contact on an
+atomic scale. Instead, junctions are made out of a single crystal
+which has been modified in the two separate regions. One way is to add
+some suitable doping impurity to the “melt” after only half of the
+crystal has grown. Another way is to paint a little of the impurity
+element on the surface and then heat the crystal causing some impurity
+atoms to diffuse into the body of the crystal. Junctions made in these
+ways do not have a sharp boundary, although the boundaries can be made
+as thin as [eq] centimeters or so. For our discussions we will
+imagine an ideal situation in which these two regions of the crystal
+with different properties meet at a sharp boundary.
+
+On the [eq]-type side of the [eq]-[eq] junction there are free electrons
+which can move about, as well as the fixed donor sites which balance
+the overall electric charge. On the [eq]-type side there are free holes
+moving about and an equal number of negative acceptor sites keeping
+the charge balanced. Actually, that describes the situation before we
+put the two materials in contact. Once they are connected together the
+situation will change near the boundary. When the electrons in the
+[eq]-type material arrive at the boundary they will not be reflected
+back as they would at a free surface, but are able to go right on into
+the [eq]-type material. Some of the electrons of the [eq]-type material
+will, therefore, tend to diffuse over into the [eq]-type material where
+there are fewer electrons. This cannot go on forever because as we
+lose electrons from the [eq]-side the net positive charge there
+increases until finally an electric voltage is built up which retards
+the diffusion of electrons into the [eq]-side. In a similar way, the
+positive carriers of the [eq]-type material can diffuse across the
+junction into the [eq]-type material. When they do this they leave
+behind an excess of negative charge. Under equilibrium conditions the
+net diffusion current must be zero. This is brought about by the
+electric fields, which are established in such a way as to draw the
+positive carriers back toward the [eq]-type material.
+
+The two diffusion processes we have been describing go on
+simultaneously and, you will notice, both act in the direction which
+will charge up the [eq]-type material in a positive sense and the
+[eq]-type material in a negative sense. Because of the finite
+conductivity of the semiconductor material, the change in potential
+from the [eq]-side to the [eq]-side will occur in a relatively narrow
+region near the boundary; the main body of each block of material will
+have a uniform potential. Let’s imagine an [eq]-axis in a direction
+perpendicular to the boundary surface. Then the electric potential
+will vary with [eq], as shown in Fig.  14–9 (b). We have also shown in
+part (c) of the figure the expected variation of the density [eq] of
+[eq]-carriers and the density [eq] of [eq]-carriers. Far away from the
+junction the carrier densities [eq] and [eq] should be just the
+equilibrium density we would expect for individual blocks of materials
+at the same temperature. (We have drawn the figure for a junction in
+which the [eq]-type material is more heavily doped than the [eq]-type
+material.) Because of the potential gradient at the junction, the
+positive carriers have to climb up a potential hill to get to the
+[eq]-type side. This means that under equilibrium conditions there can
+be fewer positive carriers in the [eq]-type material than there are in
+the [eq]-type material. Remembering the laws of statistical mechanics,
+we expect that the ratio of [eq]-type carriers on the two sides to be
+given by the following equation:
+\begin{equation}
+\label{Eq:III:14:10}
+\frac{N_p(\text{[eq]-side})}{N_p(\text{[eq]-side})}=
+e^{-q_pV/\kappa T}.
+\end{equation}
+
+The product [eq] in the numerator of the exponential is just the
+energy required to carry a charge of [eq] through a potential
+difference [eq].
+
+We have a precisely similar equation for the densities of the [eq]-type
+carriers:
+\begin{equation}
+\label{Eq:III:14:11}
+\frac{N_n(\text{[eq]-side})}{N_n(\text{[eq]-side})}=
+e^{-q_nV/\kappa T}.
+\end{equation}
+
+If we know the equilibrium densities in each of the two materials, we
+can use either of the two equations above to determine the potential
+difference across the junction.
+
+Notice that if Eqs. ( 14.10 ) and ( 14.11 ) are to give the same value for the potential difference [eq], the product [eq] must be the same for the [eq]-side as for the [eq]-side. (Remember that [eq].) We have seen earlier, however, that this product depends only on the temperature and the gap energy of the crystal. Provided both sides of the crystal are at the same temperature, the two equations are consistent with the same value of the potential difference.
+
+Since there is a potential difference from one side of the junction to
+the other, it looks something like a battery. Perhaps if we connect a
+wire from the [eq]-type side to the [eq]-type side we will get an
+electrical current. That would be nice because then the current would
+flow forever without using up any material and we would have an
+infinite source of energy in violation of the second law of
+thermodynamics! There is, however, no current if you connect a wire
+from the [eq]-side to the [eq]-side. And the reason is easy to
+see. Suppose we imagine first a wire made out of a piece of undoped
+material. When we connect this wire to the [eq]-type side, we have a
+junction. There will be a potential difference across this
+junction. Let’s say that it is just one-half the potential difference
+from the [eq]-type material to the [eq]-type material. When we connect
+our undoped wire to the [eq]-type side of the junction, there is also a
+potential difference at this junction—again, one-half the potential
+drop across the [eq]-[eq] junction. At all the junctions the potential
+differences adjust themselves so that there is no net current flow in
+the circuit. Whatever kind of wire you use to connect together the two
+sides of the [eq]-[eq] junction, you are producing two new junctions,
+and so long as all the junctions are at the same temperature, the
+potential jumps at the junctions all compensate each other and no
+current will flow in the circuit. It does turn out, however—if you
+work out the details—that if some of the junctions are at a
+different temperature than the other junctions, currents will
+flow. Some of the junctions will be heated and others will be cooled
+by this current and thermal energy will be converted into electrical
+energy. This effect is responsible for the operation of thermocouples
+which are used for measuring temperatures, and of thermoelectric
+generators. The same effect is also used to make small refrigerators.
+
+If we cannot measure the potential difference between the two sides of
+a [eq]-[eq] junction, how can we really be sure that the potential
+gradient shown in Fig.  14–9 really exists? One way is to
+shine light on the junction. When the light photons are absorbed they
+can produce an electron-hole pair. In the strong electric field that
+exists at the junction (equal to the slope of the potential curve of
+Fig.  14–9 ) the hole will be driven into the [eq]-type
+region and the electron will be driven into the [eq]-type region. If the
+two sides of the junction are now connected to an external circuit,
+these extra charges will provide a current. The energy of the light will
+be converted into electrical energy in the junction. The solar cells
+which generate electrical power for the operation of some of our
+satellites operate on this principle.
+
+In our discussion of the operation of a semiconductor junction we have
+been assuming that the holes and the electrons act more-or-less
+independently—except that they somehow get into proper statistical
+equilibrium. When we were describing the current produced by light
+shining on the junction, we were assuming that an electron or a hole
+produced in the junction region would get into the main body of the
+crystal before being annihilated by a carrier of the opposite
+polarity. In the immediate vicinity of the junction, where the density
+of carriers of both signs is approximately equal, the effect of
+electron-hole annihilation (or as it is often called,
+“recombination”) is an important effect, and in a detailed analysis
+of a semiconductor junction must be properly taken into account. We
+have been assuming that a hole or an electron produced in a junction
+region has a good chance of getting into the main body of the crystal
+before recombining. The typical time for an electron or a hole to find
+an opposite partner and annihilate it is for typical semiconductor
+materials in the range between [eq] and [eq] seconds. This
+time is, incidentally, much longer than the mean free time [eq]
+between collisions with scattering sites in the crystal which we used
+in the analysis of conductivity. In a typical [eq]-[eq] junction, the
+time for an electron or hole formed in the junction region to be swept
+away into the body of the crystal is generally much shorter than the
+recombination time. Most of the pairs will, therefore, contribute to
+an external current.
+
+We would like to show next how it is that a [eq]-[eq] junction can act
+like a rectifier. If we put a voltage across the junction, a large
+current will flow if the polarity is in one direction, but a very
+small current will flow if the same voltage is applied in the opposite
+direction. If an alternating voltage is applied across the junction, a
+net current will flow in one direction—the current is “rectified.”
+Let’s look again at what is going on in the equilibrium condition
+described by the graphs of Fig.  14–9 . In the [eq]-type material there
+is a large concentration [eq] of positive carriers. These carriers
+are diffusing around and a certain number of them each second approach
+the junction. This current of positive carriers which approaches the
+junction is proportional to [eq]. Most of them, however, are turned
+back by the high potential hill at the junction and only the
+fraction [eq] gets through. There is also a current of positive
+carriers approaching the junction from the other side. This current is
+also proportional to the density of positive carriers in the [eq]-type
+region, but the carrier density here is much smaller than the density
+on the [eq]-type side. When the positive carriers approach the junction
+from the [eq]-type side, they find a hill with a negative slope and
+immediately slide downhill to the p-type side of the junction. Let’s
+call this current [eq]. Under equilibrium the currents from the two
+directions are equal. We expect then the following relation:
+\begin{equation}
+\label{Eq:III:14:12}
+I_0\propto N_p(\text{[eq]-side})=
+N_p(\text{[eq]-side})e^{-qV/\kappa T}.
+\end{equation}
+
+You will notice that this equation is really just the same as
+Eq. ( 14.10 ). We have just derived it in a different way.
+
+Suppose, however, that we lower the voltage on the [eq]-side of the
+junction by an amount [eq]—which we can do by applying an
+external potential difference to the junction. Now the difference in
+potential across the potential hill is no longer [eq] but $V-\Delta
+V[eq]p[eq]n$-side
+will now have this potential difference in its exponential
+factor. Calling this current [eq], we have
+\begin{equation*}
+I_1\propto N_p(\text{[eq]-side})e^{-q(V-\Delta V)/\kappa T}.
+\end{equation*}
+
+This current is larger than [eq] by just the factor $e^{q\Delta
+V/\kappa T}[eq]I_1$
+and [eq]:
+\begin{equation}
+\label{Eq:III:14:13}
+I_1=I_0e^{+q\Delta V/\kappa T}.
+\end{equation}
+
+The current from the [eq]-side increases exponentially with the
+externally applied voltage [eq]. The current of positive
+carriers from the [eq]-side, however, remains constant so long
+as [eq] is not too large. When they approach the barrier, these
+carriers will still find a downhill potential and will all fall down
+to the [eq]-side. (If [eq] is larger than the natural potential
+difference [eq], the situation would change, but we will not consider
+what happens at such high voltages.) The net current [eq] of positive
+carriers which flows across the junction is then the difference
+between the currents from the two sides:
+\begin{equation}
+\label{Eq:III:14:14}
+I=I_0(e^{+q\Delta V/\kappa T}-1).
+\end{equation}
+
+The net current [eq] of holes flows into the [eq]-type region. There the
+holes diffuse into the body of the [eq]-region, where they are
+eventually annihilated by the majority [eq]-type carriers—the
+electrons. The electrons which are lost in this annihilation will be
+made up by a current of electrons from the external terminal of the
+[eq]-type material.
+
+When [eq] is zero, the net current in Eq. ( 14.14 )
+is zero. For positive [eq] the current increases rapidly with
+the applied voltage. For negative [eq] the current reverses in
+sign, but the exponential term soon becomes negligible and the
+negative current never exceeds [eq]—which under our assumptions is
+rather small. This back current [eq] is limited by the small density
+of the minority [eq]-type carriers on the [eq]-side of the junction.
+
+If you go through exactly the same analysis for the current of
+negative carriers which flows across the junction, first with no
+potential difference and then with a small externally applied
+potential difference [eq], you get again an equation just
+like ( 14.14 ) for the net electron current. Since the total
+current is the sum of the currents contributed by the two carriers,
+Eq. ( 14.14 ) still applies for the total current provided we
+identify [eq] as the maximum current which can flow for a reversed
+voltage.
+
+The voltage-current characteristic of Eq. ( 14.14 ) is
+shown in Fig.  14–10 . It shows the typical behavior of solid state
+diodes—such as those used in modern computers. We should remark that
+Eq. ( 14.14 ) is true only for small voltages. For
+voltages comparable to or larger than the natural internal voltage
+difference [eq], other effects come into play and the current no longer
+obeys the simple equation.
+
+You may remember, incidentally, that we got exactly the same equation we
+have found here in Eq. ( 14.14 ) when we discussed the
+“mechanical rectifier”—the ratchet and pawl—in
+Chapter  46 of Volume I. We get the same equations in the
+two situations because the basic physical processes are quite similar.
+
+Perhaps the most important application of semiconductors is in the
+transistor. The transistor consists of two semiconductor junctions very
+close together. Its operation is based in part on the same principles
+that we just described for the semiconductor diode—the rectifying
+junction. Suppose we make a little bar of germanium with three distinct
+regions, a [eq]-type region, an [eq]-type region, and another [eq]-type
+region, as shown in Fig.  14–11 (a). This combination is
+called a [eq]-[eq]-[eq] transistor. Each of the two junctions in the
+transistor will behave much in the way we have described in the last
+section. In particular, there will be a potential gradient at each
+junction having a certain potential drop from the [eq]-type region to
+each [eq]-type region. If the two [eq]-type regions have the same internal
+properties, the variation in potential as we go across the crystal will
+be as shown in the graph of Fig.  14–11 (b).
+
+Now let’s imagine that we connect each of the three regions to
+external voltage sources as shown in part (a) of Fig.  14–12 . We will
+refer all voltages to the terminal connected to the left-hand
+[eq]-region so it will be, by definition, at zero potential. We will
+call this terminal the emitter . The [eq]-type region is called
+the base and it is connected to a slightly negative
+potential. The right-hand [eq]-type region is called the
+ collector , and is connected to a somewhat larger negative
+potential. Under these circumstances the variation of potential across
+the crystal will be as shown in the graph of Fig.  14–12 (b).
+
+Let’s first see what happens to the positive carriers, since it is
+primarily their behavior which controls the operation of the
+[eq]-[eq]-[eq] transistor. Since the emitter is at a relatively more
+positive potential than the base, a current of positive carriers will
+flow from the emitter region into the base region. A relatively large
+current flows, since we have a junction operating with a “forward
+voltage”—corresponding to the right-hand half of the graph in
+Fig.  14–10 . With these conditions, positive carriers or holes are
+being “emitted” from the [eq]-type region into the [eq]-type
+region. You might think that this current would flow out of the
+[eq]-type region through the base terminal [eq]. Now, however, comes the
+secret of the transistor. The [eq]-type region is made very
+thin—typically [eq] cm or less, much narrower than its
+transverse dimensions. This means that as the holes enter the [eq]-type
+region they have a very good chance of diffusing across to the other
+junction before they are annihilated by the electrons in the [eq]-type
+region. When they get to the right-hand boundary of the [eq]-type
+region they find a steep downward potential hill and immediately fall
+into the right-hand [eq]-type region. This side of the crystal is
+called the collector because it “collects” the holes after they have
+diffused across the [eq]-type region. In a typical transistor, all but
+a fraction of a percent of the hole current which leaves the emitter
+and enters the base is collected in the collector region, and only the
+small remainder contributes to the net base current. The sum of the
+base and collector currents is, of course, equal to the emitter
+current.
+
+Now imagine what happens if we vary slightly the potential [eq] on
+the base terminal. Since we are on a relatively steep part of the
+curve of Fig.  14–10 , a small variation of the potential [eq] will
+cause a rather large change in the emitter current [eq]. Since the
+collector voltage [eq] is much more negative than the base voltage,
+these slight variations in potential will not affect appreciably the
+steep potential hill between the base and the collector. Most of the
+positive carriers emitted into the [eq]-region will still be caught by
+the collector. Thus as we vary the potential of the base electrode,
+there will be a corresponding variation in the collector current [eq].
+The essential point, however, is that the base current [eq]
+always remains a small fraction of the collector current. The
+transistor is an amplifier; a small current [eq] introduced into the
+base electrode gives a large current—[eq] or so times higher—at
+the collector electrode.
+
+What about the electrons—the negative carriers that we have been
+neglecting so far? First, note that we do not expect any significant
+electron current to flow between the base and the collector. With a
+large negative voltage on the collector, the electrons in the base
+would have to climb a very high potential energy hill and the
+probability of doing that is very small. There is a very small current
+of electrons to the collector.
+
+On the other hand, the electrons in the base can go into the
+emitter region. In fact, you might expect the electron current in this
+direction to be comparable to the hole current from the emitter into
+the base. Such an electron current isn’t useful, and, on the contrary,
+is bad because it increases the total base current required for a
+given current of holes to the collector. The transistor is, therefore,
+designed to minimize the electron current to the emitter. The electron
+current is proportional to [eq], the density of negative
+carriers in the base material while the hole current from the emitter
+depends on [eq], the density of positive carriers in
+the emitter region. By using relatively little doping in the [eq]-type
+material [eq] can be made much smaller
+than [eq]. (The very thin base region also helps a great
+deal because the sweeping out of the holes in this region by the
+collector increases significantly the average hole current from the
+emitter into the base, while leaving the electron current unchanged.)
+The net result is that the electron current across the emitter-base
+junction can be made much less than the hole current, so that the
+electrons do not play any significant role in operation of the
+[eq]-[eq]-[eq] transistor. The currents are dominated by motion of the
+holes, and the transistor performs as an amplifier as we have
+described above.
+
+It is also possible to make a transistor by interchanging the [eq]-type
+and [eq]-type materials in Fig.  14–11 . Then we have what is called an
+[eq]-[eq]-[eq] transistor. In the [eq]-[eq]-[eq] transistor the main
+currents are carried by the electrons which flow from the emitter into
+the base and from there to the collector. Obviously, all the arguments
+we have made for the [eq]-[eq]-[eq] transistor also apply to the
+[eq]-[eq]-[eq] transistor if the potentials of the electrodes are chosen
+with the opposite signs.

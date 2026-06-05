@@ -1,0 +1,1002 @@
+The Feynman Lectures on Physics Vol. II Ch. 8: Electrostatic Energy
+===================================================================
+
+Sections: 8–1 The electrostatic energy of charges. A uniform sphere | 8–2 The energy of a condenser. Forces on charged conductors | 8–3 The electrostatic energy of an ionic crystal | 8–4 Electrostatic energy in nuclei | 8–5 Energy in the electrostatic field | 8–6 The energy of a point charge
+
+
+
+In the study of mechanics, one of the most interesting and useful
+discoveries was the law of the conservation of energy. The expressions
+for the kinetic and potential energies of a mechanical system helped
+us to discover connections between the states of a system at two
+different times without having to look into the details of what was
+occurring in between. We wish now to consider the energy of
+electrostatic systems. In electricity also the principle of the
+conservation of energy will be useful for discovering a number of
+interesting things.
+
+The law of the energy of interaction in electrostatics is very simple;
+we have, in fact, already discussed it. Suppose we have two charges
+[eq] and [eq] separated by the distance [eq]. There is some
+energy in the system, because a certain amount of work was required to
+bring the charges together. We have already calculated the work done
+in bringing two charges together from a large distance. It is
+\begin{equation}
+\label{Eq:II:8:1}
+\frac{q_1q_2}{4\pi\epsO r_{12}}.
+\end{equation}
+
+We also know, from the principle of superposition, that if we have
+many charges present, the total force on any charge is the sum of the
+forces from the others. It follows, therefore, that the total energy
+of a system of a number of charges is the sum of terms due to the
+mutual interaction of each pair of charges. If [eq] and [eq] are any
+two of the charges and [eq] is the distance between them
+(Fig.  8–1 ), the energy of that particular pair is
+\begin{equation}
+\label{Eq:II:8:2}
+\frac{q_iq_j}{4\pi\epsO r_{ij}}.
+\end{equation}
+
+The total electrostatic energy [eq] is the sum of the energies of all
+possible pairs of charges:
+\begin{equation}
+\label{Eq:II:8:3}
+U=\underset{\text{all pairs}}{\sum}
+\frac{q_iq_j}{4\pi\epsO r_{ij}}.
+\end{equation}
+
+If we have a distribution of charge specified by a charge
+density [eq], the sum of Eq. ( 8.3 ) is, of course, to be
+replaced by an integral.
+
+We shall concern ourselves with two aspects of this energy. One is the
+ application of the concept of energy to electrostatic problems;
+the other is the evaluation of the energy in different
+ways. Sometimes it is easier to compute the work done for some special
+case than to evaluate the sum in Eq. ( 8.3 ), or the
+corresponding integral. As an example, let us calculate the energy
+required to assemble a sphere of charge with a uniform charge
+density. The energy is just the work done in gathering the charges
+together from infinity.
+
+Imagine that we assemble the sphere by building up a succession of
+thin spherical layers of infinitesimal thickness. At each stage of the
+process, we gather a small amount of charge and put it in a thin layer
+from [eq] to [eq]. We continue the process until we arrive at the
+final radius [eq] (Fig.  8–2 ). If [eq] is the charge of
+the sphere when it has been built up to the radius [eq], the work done
+in bringing a charge [eq] to it is
+\begin{equation}
+\label{Eq:II:8:4}
+dU=\frac{Q_r\,dQ}{4\pi\epsO r}.
+\end{equation}
+
+If the density of charge in the sphere is [eq], the charge [eq] is
+\begin{equation}
+Q_r=\rho\cdot\frac{4}{3}\,\pi r^3,\notag
+\end{equation}
+
+and the charge [eq] is
+\begin{equation}
+dQ=\rho\cdot4\pi r^2\,dr.\notag
+\end{equation}
+
+Equation ( 8.4 ) becomes
+\begin{equation}
+\label{Eq:II:8:5}
+dU=\frac{4\pi\rho^2r^4\,dr}{3\epsO}.
+\end{equation}
+
+The total energy required to assemble the sphere is the integral of [eq]
+from [eq] to [eq], or
+\begin{equation}
+\label{Eq:II:8:6}
+U=\frac{4\pi\rho^2a^5}{15\epsO}.
+\end{equation}
+
+Or if we wish to express the result in terms of the total charge [eq]
+of the sphere,
+\begin{equation}
+\label{Eq:II:8:7}
+U=\frac{3}{5}\,\frac{Q^2}{4\pi\epsO a}.
+\end{equation}
+
+The energy is proportional to the square of the total charge and
+inversely proportional to the radius.
+We can also interpret Eq. ( 8.7 ) as saying that the average
+of [eq] for all pairs of points in the sphere is [eq].
+
+We consider now the energy required to charge a condenser. If the
+charge [eq] has been taken from one of the conductors of a condenser
+and placed on the other, the potential difference between them is
+\begin{equation}
+\label{Eq:II:8:8}
+V=\frac{Q}{C},
+\end{equation}
+
+where [eq] is the capacity of the
+condenser.
+How much work is done in charging the condenser?
+Proceeding as for the sphere, we imagine that the condenser has been
+charged by transferring charge from one plate to the other in small
+increments [eq]. The work required to transfer the charge [eq] is
+\begin{equation*}
+dU=VdQ.
+\end{equation*}
+
+Taking [eq] from Eq. ( 8.8 ), we write
+\begin{equation*}
+dU=\frac{Q\,dQ}{C}.
+\end{equation*}
+
+Or integrating from zero charge to the final charge [eq], we have
+\begin{equation}
+\label{Eq:II:8:9}
+U=\frac{1}{2}\,\frac{Q^2}{C}.
+\end{equation}
+
+This energy can also be written as
+\begin{equation}
+\label{Eq:II:8:10}
+U=\tfrac{1}{2}CV^2.
+\end{equation}
+
+Recalling that the capacity of a conducting sphere (relative to
+infinity) is
+\begin{equation*}
+C_{\text{sphere}}=4\pi\epsO a,
+\end{equation*}
+
+we can immediately get from Eq. ( 8.9 ) the energy of a
+charged sphere,
+\begin{equation}
+\label{Eq:II:8:11}
+U=\frac{1}{2}\,\frac{Q^2}{4\pi\epsO a}.
+\end{equation}
+
+This, of course, is also the energy of a thin spherical shell 
+of total charge [eq] and is just [eq] of the energy of a
+ uniformly charged sphere, Eq. ( 8.7 ).
+
+We now consider applications of the idea of electrostatic
+energy. Consider the following questions: What is the force between
+the plates of a condenser? Or what is the torque about some axis of a
+charged conductor in the presence of another with opposite charge?
+Such questions are easily answered by using our result
+Eq. ( 8.9 ) for electrostatic energy of a condenser, together
+with the principle of virtual work (Chapters
+ 4 ,  13 , and  14 of Vol. I).
+
+Let’s use this method for determining the force between the plates of a
+parallel-plate condenser. If we imagine that the spacing of the plates is
+increased by the small amount [eq], then the mechanical work done
+from the outside in moving the plates would be
+\begin{equation}
+\label{Eq:II:8:12}
+\Delta W=F\,\Delta z,
+\end{equation}
+
+where [eq] is the force between the plates. This work must be equal to
+the change in the electrostatic energy of the condenser.
+
+By Eq. ( 8.9 ), the energy of the condenser was originally
+\begin{equation*}
+U=\frac{1}{2}\,\frac{Q^2}{C}.
+\end{equation*}
+
+The change in energy (if we do not let the charge change) is
+\begin{equation}
+\label{Eq:II:8:13}
+\Delta U=\frac{1}{2}\,Q^2\,\Delta\biggl(\frac{1}{C}\biggr).
+\end{equation}
+
+Equating ( 8.12 ) and ( 8.13 ), we have
+\begin{equation}
+\label{Eq:II:8:14}
+F\,\Delta z=\frac{Q^2}{2}\,\Delta\biggl(\frac{1}{C}\biggr).
+\end{equation}
+
+This can also be written as
+\begin{equation}
+\label{Eq:II:8:15}
+F\,\Delta z=-\frac{Q^2}{2C^2}\,\Delta C.
+\end{equation}
+
+The force, of course, results from the attraction of the charges on
+the plates, but we see that we do not have to worry in detail about
+how they are distributed; everything we need is taken care of in the
+capacity [eq].
+
+It is easy to see how the idea is extended to conductors of any shape,
+and for other components of the force. In Eq. ( 8.14 ), we
+replace [eq] by the component we are looking for, and we
+replace [eq] by a small displacement in the corresponding direction. Or
+if we have an electrode with a pivot and we want to know the
+torque [eq], we write the virtual work as
+\begin{equation*}
+\Delta W=\tau\,\Delta\theta,
+\end{equation*}
+
+where [eq] is a small angular displacement. Of course,
+[eq] must be the change in [eq] which corresponds
+to [eq]. We could, in this way, find the torque on the movable
+plates in a variable condenser of the type shown in
+Fig.  8–3 .
+
+Returning to the special case of a parallel-plate condenser, we can
+use the formula we derived in Chapter  6 for the
+capacity:
+\begin{equation}
+\label{Eq:II:8:16}
+\frac{1}{C}=\frac{d}{\epsO A},
+\end{equation}
+
+where [eq] is the area of each plate. If we increase the separation
+by [eq],
+\begin{equation*}
+\Delta\biggl(\frac{1}{C}\biggr)=\frac{\Delta z}{\epsO A}.
+\end{equation*}
+
+From Eq. ( 8.14 ) we get that the force between the plates
+is
+\begin{equation}
+\label{Eq:II:8:17}
+F=\frac{Q^2}{2\epsO A}.
+\end{equation}
+
+Let’s look at Eq. ( 8.17 ) a little more closely and see
+if we can tell how the force arises. If for the charge on one plate we
+write
+\begin{equation*}
+Q=\sigma A,
+\end{equation*}
+
+Eq. ( 8.17 ) can be rewritten as
+\begin{equation*}
+F=\frac{1}{2}\,Q\,\frac{\sigma}{\epsO}.
+\end{equation*}
+
+Or, since the electric field between the plates is
+\begin{equation}
+E_0=\frac{\sigma}{\epsO},\notag
+\end{equation}
+
+then
+\begin{equation}
+\label{Eq:II:8:18}
+F=\tfrac{1}{2}QE_0.
+\end{equation}
+
+One would immediately guess that the force acting on one plate is the
+charge [eq] on the plate times the field acting on the charge. But we
+have a surprising factor of one-half. The reason is that [eq] is not
+the field at the charges. If we imagine that the charge at the
+surface of the plate occupies a thin layer, as indicated in
+Fig.  8–4 , the field will vary from zero at the inner
+boundary of the layer to [eq] in the space outside of the plate. The
+average field acting on the surface charges is [eq]. That is why the
+factor one-half is in Eq. ( 8.18 ).
+
+You should notice that in computing the virtual work we have assumed
+that the charge on the condenser was constant—that it was not
+electrically connected to other objects, and so the total charge could
+not change.
+
+Suppose we had imagined that the condenser was held at a constant
+potential difference as we made the virtual displacement. Then we
+should have taken
+\begin{equation*}
+U=\tfrac{1}{2}CV^2
+\end{equation*}
+
+and in place of Eq. ( 8.15 ) we would have had
+\begin{equation*}
+F\Delta z=\tfrac{1}{2}V^2\,\Delta C,
+\end{equation*}
+
+which gives a force equal in magnitude to the one in
+Eq. ( 8.15 ) (because [eq]), but with the opposite sign!
+Surely the force between the condenser plates doesn’t reverse in sign as
+we disconnect it from its charging source. Also, we know that two plates
+with opposite electrical charges must attract. The principle of virtual
+work has been incorrectly applied in the second case—we have not taken
+into account the virtual work done on the charging source. That is, to
+keep the potential constant at [eq] as the capacity changes, a charge
+[eq] must be supplied by a source of charge. But this charge is
+supplied at a potential [eq], so the work done by the electrical system
+which keeps the potential constant is [eq]. The mechanical
+work [eq] plus this electrical work [eq]
+together make up the change in the total energy $\tfrac{1}{2}V^2\,\Delta
+C[eq]F\,\Delta z$ is
+[eq], as before.
+
+We now consider an application of the concept of electrostatic energy
+in atomic physics. We cannot easily measure the forces between atoms,
+but we are often interested in the energy differences between one
+atomic arrangement and another, as, for example, the energy of a
+chemical change. Since atomic forces are basically electrical,
+chemical energies are in large part just electrostatic energies.
+
+Let’s consider, for example, the electrostatic energy of an ionic
+lattice. An ionic crystal like NaCl consists of positive and negative
+ions which can be thought of as rigid spheres. They attract
+electrically until they begin to touch; then there is a repulsive
+force which goes up very rapidly if we try to push them closer
+together.
+
+For our first approximation, therefore, we imagine a set of rigid
+spheres that represent the atoms in a salt crystal. The structure of
+the lattice has been determined by x-ray diffraction. It is a cubic
+lattice—like a three-dimensional checkerboard. Figure  8–5 
+shows a cross-sectional view. The spacing of the ions is [eq] Å
+([eq] cm).
+
+If our picture of this system is correct, we should be able to check
+it by asking the following question: How much energy will it take to
+pull all these ions apart—that is, to separate the crystal
+completely into ions? This energy should be equal to the heat of
+vaporization of NaCl plus the energy required to dissociate the
+molecules into ions. This total energy to separate NaCl to ions is
+determined experimentally to be [eq] electron volts per
+molecule. Using the conversion
+\begin{equation*}
+1\text{ eV}=1.602\times10^{-19}\text{ joule},
+\end{equation*}
+
+and Avogadro’s number for the number of molecules in a mole,
+\begin{equation*}
+N_0=6.02\times10^{23},
+\end{equation*}
+
+the energy of dissociation can also be given as
+\begin{equation*}
+W=7.64\times10^5\text{ joules/mole}.
+\end{equation*}
+
+Physical chemists prefer for an energy unit the
+kilocalorie, which is [eq] joules; so that
+[eq] eV per molecule is [eq] kilocalories per mole. A chemist would then
+say that the dissociation energy of NaCl is
+\begin{equation*}
+W=183\text{ kcal/mole}.
+\end{equation*}
+
+Can we obtain this chemical energy theoretically by computing how much
+work it would take to pull apart the crystal? According to our theory,
+this work is the sum of the potential energies of all the pairs of
+ions. The easiest way to figure out this sum is to pick out a
+particular ion and compute its potential energy with each of the other
+ions. That will give us twice the energy per ion, because the
+energy belongs to the pairs of charges. If we want the energy
+to be associated with one particular ion, we should take half the sum.
+But we really want the energy per molecule , which contains two
+ions, so that the sum we compute will give directly the energy per
+molecule.
+
+The energy of an ion with one of its nearest neighbors is [eq],
+where [eq] and [eq] is the center-to-center spacing
+between ions. (We are considering monovalent ions.) This energy is
+[eq] eV, which we already see is going to give us a result of the
+correct order of magnitude. But it is still a long way from the
+infinite sum of terms we need.
+
+Let’s begin by summing all the terms from the ions along a straight
+line. Considering that the ion marked Na in Fig.  8–5 
+is our special ion, we shall consider first those ions on a horizontal
+line with it. There are two nearest Cl ions with negative charges,
+each at the distance [eq]. Then there are two positive ions at the
+distance [eq], etc. Calling the energy of this sum [eq], we write
+\begin{align}
+U_1&=\frac{e^2}{a}\biggl(
+-\frac{2}{1}+\frac{2}{2}-\frac{2}{3}+\frac{2}{4}\mp\dotsb
+\biggr)\notag\\[1.5ex]
+\label{Eq:II:8:19}
+&=-\frac{2e^2}{a}\biggl(
+1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}\pm\dotsb
+\biggr).
+\end{align}
+
+The series converges slowly, so it is difficult to evaluate
+numerically, but it is known to be equal to [eq]. So
+\begin{equation}
+\label{Eq:II:8:20}
+U_1=-\frac{2e^2}{a}\ln2=-1.386\:\frac{e^2}{a}.
+\end{equation}
+
+Now consider the next adjacent line of ions above. The nearest is
+negative and at the distance [eq]. Then there are two positives at the
+distance [eq]. The next pair are at the
+distance [eq], the next at [eq], and so on. So for the whole
+line we get the series
+\begin{equation}
+\label{Eq:II:8:21}
+\frac{e^2}{a}\biggl(
+-\frac{1}{1}+\frac{2}{\sqrt{2}}-\frac{2}{\sqrt{5}}+
+\frac{2}{\sqrt{10}}\mp\dotsb
+\biggr).
+\end{equation}
+
+There are four such lines: above, below, in front, and in
+back. Then there are the four lines which are the nearest lines on
+diagonals, and on and on.
+
+If you work patiently through for all the lines, and then take the
+sum, you find that the grand total is
+\begin{equation*}
+U=-1.747\,\frac{e^2}{a},
+\end{equation*}
+
+which is just somewhat more than what we obtained in ( 8.20 )
+for the first line. Using [eq] eV, we get
+\begin{equation*}
+U=-8.94\text{ eV}.
+\end{equation*}
+
+Our answer is about [eq] above the experimentally observed
+energy. It shows that our idea that the whole lattice is held together
+by electrical Coulomb forces is fundamentally correct. This is the
+first time that we have obtained a specific property of a macroscopic
+substance from a knowledge of atomic physics. We will do much more
+later. The subject that tries to understand the behavior of bulk
+matter in terms of the laws of atomic behavior is called
+ solid-state physics .
+
+Now what about the error in our calculation? Why is it not exactly
+right? It is because of the repulsion between the ions at close
+distances. They are not perfectly rigid spheres, so when they are
+close together they are partly squashed. They are not very soft, so
+they squash only a little bit. Some energy, however, is used in
+deforming them, and when the ions are pulled apart this energy is
+released. The actual energy needed to pull the ions apart is a little
+less than the energy that we calculated; the repulsion helps in
+overcoming the electrostatic attraction.
+
+Is there any way we can make an allowance for this contribution? We
+could if we knew the law of the repulsive force. We are not ready to
+analyze the details of this repulsive mechanism, but we can get some
+idea of its characteristics from some large-scale measurements. From a
+measurement of the compressibility of the whole crystal, it is
+possible to obtain a quantitative idea of the law of repulsion between
+the ions and therefore of its contribution to the energy. In this way
+it has been found that this contribution must be [eq] of the
+contribution from the electrostatic attraction and, of course, of
+opposite sign. If we subtract this contribution from the pure
+electrostatic energy, we obtain [eq] eV for the dissociation energy
+per molecule. It is much closer to the observed result of [eq] eV,
+but still not in perfect agreement. There is one more thing we haven’t
+taken into account: we have made no allowance for the kinetic energy
+of the crystal vibrations. If a correction is made for this effect,
+very good agreement with the experimental number is obtained. The
+ideas are then correct; the major contribution to the energy of a
+crystal like NaCl is electrostatic.
+
+We will now take up another example of electrostatic energy in atomic
+physics, the electrical energy of atomic nuclei. Before we do this we
+will have to discuss some properties of the main forces (called nuclear
+forces) that hold the
+protons and neutrons together in a nucleus. In the early days of the
+discovery of nuclei—and of the neutrons and protons that make them
+up—it was hoped that the law of the strong, nonelectrical part of the
+force between, say, a proton and another proton would have some simple
+law, like the inverse square law of electricity. For once one had
+determined this law of force, and the corresponding ones between a
+proton and a neutron, and a neutron and a neutron, it would be possible
+to describe theoretically the complete behavior of these particles in
+nuclei. Therefore a big program was started for the study of the
+scattering of protons, in the hope of finding the law of force between
+them; but after thirty years of effort, nothing simple has emerged. A
+considerable knowledge of the force between proton and proton has been
+accumulated, but we find that the force is as complicated as it can
+possibly be.
+
+What we mean by “as complicated as it can be” is that the force
+depends on as many things as it possibly can.
+
+First, the force is not a simple function of the distance between the
+two protons. At large distances there is an attraction, but at closer
+distances there is a repulsion. The distance dependence is a
+complicated function, still imperfectly known.
+
+Second, the force depends on the orientation of the protons’
+spin. The protons have a spin, and any two
+interacting protons may be spinning with their angular momenta in the
+same direction or in opposite directions. And the force is different
+when the spins are parallel from what it is when they are antiparallel,
+as in (a) and (b) of Fig.  8–6 . The difference is quite
+large; it is not a small effect.
+
+Third, the force is considerably different when the separation of the
+two protons is in the direction parallel to their spins, as in
+(c) and (d) of Fig.  8–6 , than it is when the separation
+is in a direction perpendicular to the spins, as in (a)
+and (b).
+
+Fourth, the force depends, as it does in magnetism, on the velocity of
+the protons, only much more strongly than in magnetism. And this
+velocity-dependent force is not a relativistic effect; it is strong
+even at speeds much less than the speed of light. Furthermore, this
+part of the force depends on other things besides the magnitude of the
+velocity. For instance, when a proton is moving near another proton,
+the force is different when the orbital motion has the same direction
+of rotation as the spin, as in (e) of Fig.  8–6 , than
+when it has the opposite direction of rotation, as in (f). This is
+called the “spin orbit” part of the force.
+
+The force between a proton and a neutron and between a neutron and a
+neutron are also equally complicated. To this day we do not know the
+machinery behind these forces—that is to say, any simple way of
+understanding them.
+
+There is, however, one important way in which the nucleon forces are
+ simpler than they could be. That is that the nuclear 
+force between two
+neutrons is the same as the force between a proton and a neutron, which
+is the same as the force between two protons! If, in any nuclear
+situation, we replace a proton by a neutron (or vice versa), the
+ nuclear interactions are not changed.
+The “fundamental reason” for this equality is not known, but it is an
+example of an important principle that can be extended also to the
+interaction laws of other strongly interacting particles—such as the
+[eq]-mesons and the “strange” particles.
+
+This fact is nicely illustrated by the locations of the energy levels
+in similar nuclei. Consider a nucleus like B[eq] (boron-eleven),
+which is composed of five protons and six neutrons. In the nucleus the
+eleven particles interact with one another in a most complicated
+dance. Now, there is one configuration of all the possible
+interactions which has the lowest possible energy; this is the normal
+state of the nucleus, and is called the ground state . If the nucleus is disturbed (for example, by being struck by a
+high-energy proton or other particle) it can be put into any number of
+other configurations, called excited states , each of which will have a
+characteristic energy that is higher than that of the ground state. In
+nuclear physics research, such as is carried on with Van de
+Graaff generators (for example, in
+Caltech’s Kellogg and Sloan Laboratories), the energies and other
+properties of these excited states are determined by experiment. The
+energies of the fifteen lowest known excited states of B[eq] are
+shown in a one-dimensional graph on the left half of
+Fig.  8–7 . The lowest horizontal line represents the ground
+state. The first excited state has an energy [eq] MeV higher than the
+ground state, the next an energy [eq] MeV higher than the ground
+state, and so on. The study of nuclear physics attempts to find an
+explanation for this rather complicated pattern of energies; there is as
+yet, however, no complete general theory of such nuclear energy levels.
+
+If we replace one of the neutrons in B[eq] with a proton, we have
+the nucleus of an isotope of carbon, C[eq]. The energies of the
+lowest sixteen excited states of C[eq] have also been measured;
+they are shown in the right half of Fig.  8–7 . (The
+broken lines indicate levels for which the experimental information is
+questionable.)
+
+Looking at Fig.  8–7 , we see a striking similarity
+between the pattern of the energy levels in the two nuclei. The first
+excited states are about [eq] MeV above the ground states. There is a
+large gap of about [eq] MeV to the second excited state, then a small
+jump of only [eq] MeV to the third level. Again, between the fourth
+and fifth levels, a big jump; but between the fifth and sixth a tiny
+separation of the order of [eq] MeV. And so on. After about the tenth
+level, the correspondence seems to become lost, but can still be seen
+if the levels are labeled with their other defining
+characteristics—for instance, their angular momentum and what they
+do to lose their extra energy.
+
+The striking similarity of the pattern of the energy levels of
+B[eq] and C[eq] is surely not just a coincidence. It must reveal
+some physical law. It shows, in fact, that even in the complicated
+situation in a nucleus, replacing a neutron by a proton makes very
+little change. This can mean only that the neutron-neutron and
+proton-proton forces must be nearly identical. Only then would we
+expect the nuclear configurations with five protons and six neutrons
+to be the same as with six protons and five neutrons.
+
+Notice that the properties of these two nuclei tell us nothing about
+the neutron-proton force; there are the same number of neutron-proton
+combinations in both nuclei. But if we compare two other nuclei, such
+as C[eq], which has six protons and eight neutrons, with N[eq],
+which has seven of each, we find a similar correspondence of energy
+levels. So we can conclude that the p-p, n-n, and p-n forces are
+identical in all their complexities. There is an unexpected principle
+in the laws of nuclear forces. Even though the force between each pair
+of nuclear particles is very complicated, the force between the three
+possible different pairs is the same.
+
+But there are some small differences. The levels do not correspond
+exactly; also, the ground state of C[eq] has an absolute energy
+(its mass) which is higher than the ground state of B[eq] by
+[eq] MeV. All the other levels are also higher in absolute energy
+by this same amount. So the forces are not exactly equal. But we know
+very well that the complete forces are not exactly equal; there
+is an electrical force between two protons because each has a
+positive charge, while between two neutrons there is no such
+electrical force. Can we perhaps explain the differences between
+B[eq] and C[eq] by the fact that the electrical interaction of
+the protons is different in the two cases? Perhaps even the remaining
+minor differences in the levels are caused by electrical effects?
+Since the nuclear forces are so much stronger than the electrical
+force, electrical effects would have only a small perturbing effect on
+the energies of the levels.
+
+In order to check this idea, or rather to find out what the
+consequences of this idea are, we first consider the difference in the
+ground-state energies of the two nuclei. To take a very simple model,
+we suppose that the nuclei are spheres of radius [eq] (to be
+determined), containing [eq] protons. If we consider that a nucleus is
+like a sphere with uniform charge density, we would expect the
+electrostatic energy (from Eq.  8.7 ) to be
+\begin{equation}
+\label{Eq:II:8:22}
+U=\frac{3}{5}\,\frac{(Zq_e)^2}{4\pi\epsO r}.
+\end{equation}
+
+where [eq] is the elementary charge of the proton. Since [eq] is five
+for B[eq] and six for C[eq], their electrostatic energies would
+be different.
+
+With such a small number of protons, however, Eq. ( 8.22 )
+is not quite correct. If we compute the electrical energy between all
+pairs of protons, considered as points which we assume to be nearly
+uniformly distributed throughout the sphere, we find that in
+Eq. ( 8.22 ) the quantity [eq] should be replaced
+by [eq], so the energy is
+\begin{equation}
+\label{Eq:II:8:23}
+U=\frac{3}{5}\,\frac{Z(Z-1)q_e^2}{4\pi\epsO r}=
+\frac{3}{5}\,\frac{Z(Z-1)e^2}{r}.
+\end{equation}
+
+If we knew the nuclear radius [eq], we could use ( 8.23 ) to
+find the electrostatic energy difference between B[eq] and
+C[eq]. But let’s do the opposite; let’s instead use the observed
+energy difference to compute the radius, assuming that the energy
+difference is all electrostatic in origin.
+
+That is, however, not quite right. The energy difference of [eq] MeV
+between the ground states of B[eq] and C[eq] includes the
+rest energies—that is, the energy [eq]—of all the particles. In
+going from B[eq] to C[eq], we replace a neutron by a proton and
+an electron, which have less mass. So part of the energy difference is
+the difference in the rest energies of a neutron and that of a proton
+plus an electron, which is [eq] MeV. The difference, to be
+accounted for by electrostatic energy, is thus more than [eq] MeV;
+it is
+\begin{equation*}
+1.982\text{ MeV}+0.784\text{ MeV}=2.766\text{ MeV}.
+\end{equation*}
+
+Using this energy in Eq. ( 8.23 ), for the radius of
+either B[eq] or C[eq] we find
+\begin{equation}
+\label{Eq:II:8:24}
+r=3.12\times10^{-13}\text{ cm}.
+\end{equation}
+
+Does this number have any meaning? To see whether it does, we should
+compare it with some other determination of the radius of these
+nuclei. For example, we can make another measurement of the radius of
+a nucleus by seeing how it scatters fast particles. From such
+measurements it has been found, in fact, that the density of
+matter in all nuclei is nearly the same, i.e., their volumes are
+proportional to the number of particles they contain. If we let [eq] be
+the number of protons and neutrons in a nucleus (a number very nearly
+proportional to its mass), it is found that its radius is given by
+\begin{equation}
+\label{Eq:II:8:25}
+r=A^{1/3}r_0,
+\end{equation}
+
+where
+\begin{equation}
+\label{Eq:II:8:26}
+r_0=1.2\times10^{-13}\text{ cm}.
+\end{equation}
+
+From these measurements we find that the radius of a B[eq] (or a
+C[eq]) nucleus is expected to be
+\begin{equation*}
+r=(11)^{1/3}(1.2\times10^{-13})\text{ cm}=
+2.7\times10^{-13}\text{ cm}.
+\end{equation*}
+
+Comparing this result with ( 8.24 ), we see that our
+assumptions that the energy difference between B[eq] and C[eq]
+is electrostatic is fairly good; the discrepancy is only about [eq]
+(not bad for our first nuclear computation!).
+
+The reason for the discrepancy is probably the following. According to
+the current understanding of nuclei, an even number of nuclear
+particles—in the case of B[eq], five neutrons together with five
+protons—makes a kind of core ; when one more particle is added
+to this core, it revolves around on the outside to make a new
+spherical nucleus, rather than being absorbed. If this is so, we
+should have taken a different electrostatic energy for the additional
+proton. We should have taken the excess energy of C[eq] over
+B[eq] to be just
+\begin{equation*}
+\frac{Z_Bq_e^2}{4\pi\epsO r}
+\end{equation*}
+
+which is the energy needed to add one more proton to the outside of
+the core. This number is just [eq] of what Eq. ( 8.23 )
+predicts, so the new prediction for the radius is [eq]
+of ( 8.24 ), which is in much closer agreement with what is
+directly measured.
+
+We can draw two conclusions from this agreement. One is that the
+electrical laws appear to be working at dimensions as small as
+[eq] cm. The other is that we have verified the remarkable
+coincidence that the nonelectrical part of the forces between proton
+and proton, neutron and neutron, and proton and neutron are all equal.
+
+We now consider other methods of calculating electrostatic
+energy. They can all be derived from the basic relation
+Eq. ( 8.3 ), the sum, over all pairs of charges, of the mutual
+energies of each charge-pair. First we wish to write an expression for
+the energy of a charge distribution. As usual, we consider that each
+volume element [eq] contains the element of charge [eq]. Then
+Eq. ( 8.3 ) should be written
+\begin{equation}
+\label{Eq:II:8:27}
+U=\frac{1}{2}\underset{\substack{\text{all}\\\text{space}}}{\int}
+\frac{\rho(1)\rho(2)}{4\pi\epsO r_{12}}\,dV_1dV_2.
+\end{equation}
+
+Notice the factor [eq], which is introduced because in the
+double integral over [eq] and [eq] we have counted all pairs of
+charge elements twice. (There is no convenient way of writing an
+integral that keeps track of the pairs so that each pair is counted
+only once.) Next we notice that the integral over [eq]
+in ( 8.27 ) is just the potential at [eq]. That is,
+\begin{equation*}
+\int\frac{\rho(2)}{4\pi\epsO r_{12}}\,dV_2=\phi(1),
+\end{equation*}
+
+so that ( 8.27 ) can be written as
+\begin{equation*}
+U=\frac{1}{2}\int\rho(1)\phi(1)\,dV_1.
+\end{equation*}
+
+Or, since the point [eq] no longer appears, we can simply write
+\begin{equation}
+\label{Eq:II:8:28}
+U=\frac{1}{2}\int\rho\phi\,dV.
+\end{equation}
+
+This equation can be interpreted as follows. The potential energy of
+the charge [eq] is the product of this charge and the potential
+at the same point. The total energy is therefore the integral
+over [eq]. But there is again the factor [eq]. It is
+still required because we are counting energies twice. The mutual
+energies of two charges is the charge of one times the potential at it
+due to the other. Or , it can be taken as the second charge
+times the potential at it from the first. Thus for two point charges
+we would write
+\begin{equation*}
+ U=q_1\phi(1)=q_1\,\frac{q_2}{4\pi\epsO r_{12}}
+\end{equation*}
+
+ or 
+\begin{equation*}
+ U=q_2\phi(2)=q_2\,\frac{q_1}{4\pi\epsO r_{12}}.
+\end{equation*}
+
+Notice that we could also write
+\begin{equation}
+\label{Eq:II:8:29}
+U=\tfrac{1}{2}[q_1\phi(1)+q_2\phi(2)].
+\end{equation}
+
+The integral in ( 8.28 ) corresponds to the sum of both
+terms in the brackets of ( 8.29 ). That is why we need the
+factor [eq].
+
+An interesting question is: Where is the electrostatic energy located?
+One might also ask: Who cares? What is the meaning of such a question?
+If there is a pair of interacting charges, the combination has a
+certain energy. Do we need to say that the energy is located at one of
+the charges or the other, or at both, or in between? These questions
+may not make sense because we really know only that the total energy
+is conserved. The idea that the energy is located somewhere is
+not necessary.
+
+Yet suppose that it did make sense to say, in general, that
+energy is located at a certain place, as it does for heat energy. We
+might then extend our principle of the conservation of energy
+with the idea that if the energy in a given volume changes, we should
+be able to account for the change by the flow of energy into or out of
+that volume. You realize that our early statement of the principle of
+the conservation of energy is still perfectly all right if some energy
+disappears at one place and appears somewhere else far away without
+anything passing (that is, without any special phenomena occurring) in
+the space between. We are, therefore, now discussing an extension of
+the idea of the conservation of energy. We might call it a principle
+of the local conservation of energy. Such a principle would say
+that the energy in any given volume changes only by the amount that
+flows into or out of the volume. It is indeed possible that energy is
+conserved locally in such a way. If it is, we would have a much more
+detailed law than the simple statement of the conservation of total
+energy. It does turn out that in nature energy is conserved
+locally . We can find formulas for where the energy is located and how
+it travels from place to place.
+
+There is also a physical reason why it is imperative that we be
+able to say where energy is located. According to the theory of
+gravitation, all mass is a source of gravitational attraction. We also
+know, by [eq], that mass and energy are equivalent. All energy is,
+therefore, a source of gravitational force. If we could not locate the
+energy, we could not locate all the mass. We would not be able to say
+where the sources of the gravitational field are located. The theory
+of gravitation would be incomplete.
+
+If we restrict ourselves to electrostatics there is really no way to
+tell where the energy is located. The complete Maxwell
+equations
+of electrodynamics give us much more information (although even then the
+answer is, strictly speaking, not unique.) We will therefore discuss
+this question in detail again in a later chapter. We will give you now
+only the result for the particular case of electrostatics. The energy
+is located in space, where the electric field is. This seems reasonable
+because we know that when charges are accelerated they radiate electric
+fields. We would like to say that when light or radiowaves travel from
+one point to another, they carry their energy with them. But there are
+no charges in the waves. So we would like to locate the energy where the
+electromagnetic field is and not at the charges from which it came. We
+thus describe the energy, not in terms of the charges, but in terms of
+the fields they produce. We can, in fact, show that
+Eq. ( 8.28 ) is numerically equal to
+\begin{equation}
+\label{Eq:II:8:30}
+U=\frac{\epsO}{2}\int\FLPE\cdot\FLPE\,dV.
+\end{equation}
+
+We can then interpret this formula as saying that when an electric
+field is present, there is located in space an energy whose
+ density (energy per unit volume) is
+\begin{equation}
+\label{Eq:II:8:31}
+u=\frac{\epsO}{2}\,\FLPE\cdot\FLPE=\frac{\epsO E^2}{2}.
+\end{equation}
+
+This idea is illustrated in Fig.  8–8 .
+
+To show that Eq. ( 8.30 ) is consistent with our laws of
+electrostatics, we begin by introducing into Eq. ( 8.28 )
+the relation between [eq] and [eq] that we obtained in
+Chapter  6 :
+\begin{equation}
+\rho=-\epsO\,\nabla^2\phi.\notag
+\end{equation}
+We get
+\begin{equation}
+\label{Eq:II:8:32}
+U=-\frac{\epsO}{2}\int\phi\,\nabla^2\phi\,dV.
+\end{equation}
+Writing out the components of the integrand, we see that
+ 
+\begin{align}
+\phi\,\nabla^2\phi&=\phi\biggl(
+\frac{\partial^2\phi}{\partial x^2}+
+\frac{\partial^2\phi}{\partial y^2}+
+\frac{\partial^2\phi}{\partial z^2}
+\biggr)\notag\\[.5ex]
+&=\ddp{}{x}\biggl(\!\phi\,\ddp{\phi}{x}\!\biggr)-
+\biggl(\!\ddp{\phi}{x}\!\biggr)^2+
+\ddp{}{y}\biggl(\!\phi\,\ddp{\phi}{y}\!\biggr)-
+\biggl(\!\ddp{\phi}{y}\!\biggr)^2+
+\ddp{}{z}\biggl(\!\phi\,\ddp{\phi}{z}\!\biggr)-
+\biggl(\!\ddp{\phi}{z}\!\biggr)^2
+\notag\\[1.5ex]
+\label{Eq:II:8:33}
+&=\FLPdiv{(\phi\,\FLPgrad{\phi})}-(\FLPgrad{\phi})\cdot(\FLPgrad{\phi}).
+\end{align}
+ 
+ 
+\begin{align}
+\phi\,\nabla^2\phi&=\phi\biggl(
+\frac{\partial^2\phi}{\partial x^2}+
+\frac{\partial^2\phi}{\partial y^2}+
+\frac{\partial^2\phi}{\partial z^2}
+\biggr)\notag\\[.5ex]
+&=\quad\ddp{}{x}\biggl(\!\phi\,\ddp{\phi}{x}\!\biggr)-
+\biggl(\!\ddp{\phi}{x}\!\biggr)^2\notag\\&\quad+
+\ddp{}{y}\biggl(\!\phi\,\ddp{\phi}{y}\!\biggr)-
+\biggl(\!\ddp{\phi}{y}\!\biggr)^2\notag\\&\quad+
+\ddp{}{z}\biggl(\!\phi\,\ddp{\phi}{z}\!\biggr)-
+\biggl(\!\ddp{\phi}{z}\!\biggr)^2
+\notag\\[1.5ex]
+\label{Eq:II:8:33}
+&=\FLPdiv{(\phi\,\FLPgrad{\phi})}-(\FLPgrad{\phi})\cdot(\FLPgrad{\phi}).
+\end{align}
+ 
+Our energy integral is then
+\begin{equation*}
+U=\frac{\epsO}{2}\int(\FLPgrad{\phi})\cdot(\FLPgrad{\phi})\,dV-
+\frac{\epsO}{2}\int\FLPdiv{(\phi\,\FLPgrad{\phi})}\,dV.
+\end{equation*}
+
+We can use Gauss’ theorem to change the second integral into a surface
+integral:
+\begin{equation}
+\label{Eq:II:8:34}
+\underset{\text{vol.}}{\int}\FLPdiv{(\phi\,\FLPgrad{\phi})}\,dV=
+\underset{\text{surface}}{\int}(\phi\,\FLPgrad{\phi})\cdot\FLPn\,da.
+\end{equation}
+
+We evaluate the surface integral in the case that the surface goes to
+infinity (so the volume integrals become integrals over all space),
+supposing that all the charges are located within some finite
+distance. The simple way to proceed is to take a spherical surface of
+enormous radius [eq] whose center is at the origin of coordinates. We
+know that when we are very far away from all charges, [eq] varies
+as [eq] and [eq] as [eq]. (Both will decrease even faster
+with [eq] if there the net charge in the distribution is zero.) Since
+the surface area of the large sphere increases as [eq], we see that
+the surface integral falls off as [eq] as the
+radius of the sphere increases. So if we include all space in our
+integration ([eq]), the surface integral goes to zero and we
+have that
+\begin{equation}
+\label{Eq:II:8:35}
+U=\frac{\epsO}{2}
+\underset{\substack{\text{all}\\\text{space}}}{\int}
+(\FLPgrad{\phi})\cdot(\FLPgrad{\phi})\,dV=
+\frac{\epsO}{2}
+\underset{\substack{\text{all}\\\text{space}}}{\int}
+\FLPE\cdot\FLPE\,dV.
+\end{equation}
+
+We see that it is possible for us to represent the energy of any
+charge distribution as being the integral over an energy density
+located in the field.
+
+Our new relation, Eq. ( 8.35 ), says that even a single
+point charge [eq] will have some electrostatic energy. In this case,
+the electric field is given by
+\begin{equation*}
+E=\frac{q}{4\pi\epsO r^2}.
+\end{equation*}
+
+So the energy density at the distance [eq] from the charge is
+\begin{equation*}
+\frac{\epsO E^2}{2}=\frac{q^2}{32\pi^2\epsO r^4}.
+\end{equation*}
+
+We can take for an element of volume a spherical shell of thickness [eq]
+and area [eq]. The total energy is
+\begin{equation}
+\label{Eq:II:8:36}
+U=\int\limits_{r=0}^\infty\frac{q^2}{8\pi\epsO r^2}\,dr=
+\left.-\frac{q^2}{8\pi\epsO}\,\frac{1}{r}\right|_{r=0}^{r=\infty}.
+\end{equation}
+
+Now the limit at [eq] gives no difficulty. But for a point
+charge we are supposed to integrate down to [eq], which gives an
+infinite integral. Equation ( 8.35 ) says that there is an
+infinite amount of energy in the field of a point charge, although we
+began with the idea that there was energy only between point
+charges. In our original energy formula for a collection of point
+charges (Eq.  8.3 ), we did not include any interaction
+energy of a charge with itself. What has happened is that when we went
+over to a continuous distribution of charge in Eq. ( 8.27 ),
+we counted the energy of interaction of every infinitesimal 
+charge with all other infinitesimal charges. The same account is
+included in Eq. ( 8.35 ), so when we apply it to a
+ finite point charge, we are including the energy it would take to
+assemble that charge from infinitesimal parts. You will notice, in fact,
+that we would also get the result in Eq. ( 8.36 ) if we used
+our expression ( 8.11 ) for the energy of a charged sphere and
+let the radius tend toward zero.
+
+We must conclude that the idea of locating the energy in the field is
+inconsistent with the assumption of the existence of point
+charges. One way out of the difficulty would be to say that elementary
+charges, such as an electron, are not points but are really small
+distributions of charge. Alternatively, we could say that there is
+something wrong in our theory of electricity at very small distances,
+or with the idea of the local conservation of energy. There are
+difficulties with either point of view. These difficulties have never
+been overcome; they exist to this day. Sometime later, when we have
+discussed some additional ideas, such as the momentum in an
+electromagnetic field, we will give a more complete account of these
+fundamental difficulties in our understanding of nature.

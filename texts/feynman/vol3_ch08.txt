@@ -1,0 +1,1132 @@
+The Feynman Lectures on Physics Vol. III Ch. 8: The Hamiltonian Matrix
+======================================================================
+
+Sections: 8–1 Amplitudes and vectors | 8–2 Resolving state vectors | 8–3 What are the base states of the world? | 8–4 How states change with time | 8–5 The Hamiltonian matrix | 8–6 The ammonia molecule
+
+
+
+Before we begin the main topic of this chapter, we would like to
+describe a number of mathematical ideas that are used a lot in the
+literature of quantum mechanics. Knowing them will make it easier for
+you to read other books or papers on the subject. The first idea is
+the close mathematical resemblance between the equations of quantum
+mechanics and those of the scalar product of two vectors. You remember
+that if [eq] and [eq] are two states, the amplitude to start
+in [eq] and end up in [eq] can be written as a sum over a complete
+set of base states of the amplitude to go from [eq] into one of the
+base states and then from that base state out again into [eq]:
+\begin{equation}
+\label{Eq:III:8:1}
+\braket{\chi}{\phi}=
+\sum_{\text{all [eq]}}\braket{\chi}{i}\braket{i}{\phi}.
+\end{equation}
+
+We explained this in terms of a Stern-Gerlach apparatus, but we remind
+you that there is no need to have the apparatus.
+Equation ( 8.1 ) is a mathematical law that is just as true
+whether we put the filtering equipment in or not—it is not always
+necessary to imagine that the apparatus is there. We can think of it
+simply as a formula for the amplitude [eq].
+
+We would like to compare Eq. ( 8.1 ) to the formula for
+the dot product of two vectors [eq] and [eq]. If [eq]
+and [eq] are ordinary vectors in three dimensions, we can write the dot
+product this way:
+\begin{equation}
+\label{Eq:III:8:2}
+\sum_{\text{all [eq]}}(\FLPB\cdot\FLPe_i)(\FLPe_i\cdot\FLPA),
+\end{equation}
+
+with the understanding that the symbol [eq] stands for the three
+unit vectors in the [eq], [eq], and [eq]-directions. Then
+[eq] is what we ordinarily call [eq];
+[eq] is what we ordinarily call [eq]; and so on. So
+Eq. ( 8.2 ) is equivalent to
+\begin{equation*}
+B_xA_x+B_yA_y+B_zA_z,
+\end{equation*}
+
+which is the dot product [eq].
+
+Comparing Eqs. ( 8.1 ) and ( 8.2 ), we can see the
+following analogy: The states [eq] and [eq] correspond to the two vectors
+[eq] and [eq]. The base states [eq] correspond to the special
+vectors [eq] to which we refer all other vectors. Any vector can be
+represented as a linear combination of the three “base vectors” [eq].
+Furthermore, if you know the coefficients of each “base vector” in this
+combination—that is, its three components—you know everything about a
+vector. In a similar way, any quantum mechanical state can be described
+completely by the amplitude [eq] to go into the base states; and
+if you know these coefficients, you know everything there is to know about the
+state. Because of this close analogy, what we have called a “state” is often
+also called a “state vector.”
+
+Since the base vectors [eq] are all at right angles, we have the
+relation
+\begin{equation}
+\label{Eq:III:8:3}
+\FLPe_i\cdot\FLPe_j=\delta_{ij}.
+\end{equation}
+
+This corresponds to the relations ( 5.25 ) among the base
+states [eq],
+\begin{equation}
+\label{Eq:III:8:4}
+\braket{i}{j}=\delta_{ij}.
+\end{equation}
+
+You see now why one says that the base states [eq] are all
+“orthogonal.”
+
+There is one minor difference between Eq. ( 8.1 ) and the
+dot product. We have that
+\begin{equation}
+\label{Eq:III:8:5}
+\braket{\phi}{\chi}=\braket{\chi}{\phi}\cconj.
+\end{equation}
+But in vector algebra
+\begin{equation*}
+\FLPA\cdot\FLPB=\FLPB\cdot\FLPA.\notag
+\end{equation*}
+
+With the complex numbers of quantum mechanics we have to keep straight
+the order of the terms, whereas in the dot product, the order doesn’t
+matter.
+
+Now consider the following vector equation:
+\begin{equation}
+\label{Eq:III:8:6}
+\FLPA=\sum_i\FLPe_i(\FLPe_i\cdot\FLPA).
+\end{equation}
+
+It’s a little unusual, but correct. It means the same thing as
+\begin{equation}
+\label{Eq:III:8:7}
+\FLPA=\sum_iA_i\FLPe_i=A_x\FLPe_x+A_y\FLPe_y+A_z\FLPe_z.
+\end{equation}
+
+Notice, though, that Eq. ( 8.6 ) involves a quantity
+which is different from a dot product. A dot product is just a
+ number , whereas Eq. ( 8.6 ) is a vector 
+equation. One of the great tricks of vector analysis was to abstract
+away from the equations the idea of a vector itself. One might
+be similarly inclined to abstract a thing that is the analog of a
+“vector” from the quantum mechanical formula
+Eq. ( 8.1 )—and one can indeed. We remove the [eq]
+from both sides of Eq. ( 8.1 ) and write the following
+equation (don’t get frightened—it’s just a notation and in a few
+minutes you will find out what the symbols mean):
+\begin{equation}
+\label{Eq:III:8:8}
+\ket{\phi}=\sum_i\ket{i}\braket{i}{\phi}.
+\end{equation}
+
+One thinks of the bracket [eq] as being divided into
+two pieces. The second piece [eq] is often called a
+ ket , and the first piece [eq] is called a bra 
+(put together, they make a “bra-ket”—a notation proposed by
+Dirac);
+the half-symbols [eq] and [eq] are also called
+ state vectors . In any case, they are not numbers, and,
+in general, we want the results of our calculations to come out as
+numbers; so such “unfinished” quantities are only part-way steps in
+our calculations.
+
+It happens that until now we have written all our results in terms of
+numbers. How have we managed to avoid vectors? It is amusing to note
+that even in ordinary vector
+algebra
+we could make all
+equations involve only numbers. For instance, instead of a vector
+equation like
+\begin{equation*}
+\FLPF=m\FLPa,
+\end{equation*}
+
+we could always have written
+\begin{equation*}
+\FLPC\cdot\FLPF=\FLPC\cdot(m\FLPa).
+\end{equation*}
+
+We have then an equation between dot products that is true for
+ any vector [eq]. But if it is true for any [eq], it
+hardly makes sense at all to keep writing the [eq]!
+
+Now look at Eq. ( 8.1 ). It is an equation that is true
+for any  [eq]. So to save writing, we should just leave
+ out the [eq] and write Eq. ( 8.8 ) instead. It
+has the same information provided we understand that it should
+always be “finished” by “multiplying on the left by”—which
+simply means reinserting—some [eq] on both sides. So
+Eq. ( 8.8 ) means exactly the same thing as
+Eq. ( 8.1 )—no more, no less. When you want numbers, you
+put in the [eq] you want.
+
+Maybe you have already wondered about the [eq] in
+Eq. ( 8.8 ). Since the equation is true for
+ any  [eq], why do we keep it ? Indeed,
+Dirac suggests that the [eq]
+also can just as well be abstracted away, so that we have only
+\begin{equation}
+\label{Eq:III:8:9}
+|=\sum_i\ket{i}\bra{i}.
+\end{equation}
+
+And this is the great law of quantum mechanics! (There is no analog in
+vector analysis.) It says that if you put in any two states
+[eq] and [eq] on the left and right of both sides, you get
+back Eq. ( 8.1 ). It is not really very useful, but it’s
+a nice reminder that the equation is true for any two states.
+
+Let’s look at Eq. ( 8.8 ) again; we can think of it in
+the following way. Any state vector [eq] can be represented as
+a linear combination with suitable coefficients of a set of base
+“vectors”—or, if you prefer, as a superposition of “unit
+vectors” in suitable proportions. To emphasize that the
+coefficients [eq] are just ordinary (complex) numbers, suppose we
+write
+\begin{equation}
+\braket{i}{\phi}=C_i.\notag
+\end{equation}
+
+Then Eq. ( 8.8 ) is the same as
+\begin{equation}
+\label{Eq:III:8:10}
+\ket{\phi}=\sum_i\ket{i}C_i.
+\end{equation}
+
+We can write a similar equation for any other state vector,
+say [eq], with, of course, different coefficients—say [eq].
+Then we have
+\begin{equation}
+\label{Eq:III:8:11}
+\ket{\chi}=\sum_i\ket{i}D_i.
+\end{equation}
+
+The [eq] are just the amplitudes [eq].
+
+Suppose we had started by abstracting the [eq] from
+Eq. ( 8.1 ). We would have had
+\begin{equation}
+\label{Eq:III:8:12}
+\bra{\chi}=\sum_i\braket{\chi}{i}\bra{i}.
+\end{equation}
+
+Remembering that [eq], we can
+write this as
+\begin{equation}
+\label{Eq:III:8:13}
+\bra{\chi}=\sum_iD_i\cconj\,\bra{i}.
+\end{equation}
+
+Now the interesting thing is that we can just multiply 
+Eq. ( 8.13 ) and Eq. ( 8.10 ) to get
+back [eq]. When we do that, we have to be careful of the
+summation indices, because they are quite distinct in the two equations.
+Let’s first rewrite Eq. ( 8.13 ) as
+\begin{equation*}
+\bra{\chi}=\sum_jD_j\cconj\,\bra{j},
+\end{equation*}
+
+which changes nothing. Then putting it together with
+Eq. ( 8.10 ), we have
+\begin{equation}
+\label{Eq:III:8:14}
+\braket{\chi}{\phi}=\sum_{ij}D_j\cconj\,\braket{j}{i}C_i.
+\end{equation}
+
+Remember, though, that [eq], so that in the sum
+we have left only the terms with [eq]. We get
+\begin{equation}
+\label{Eq:III:8:15}
+\braket{\chi}{\phi}=\sum_{i}D_i\cconj\,C_i,
+\end{equation}
+
+where, of course, [eq] [eq] [eq],
+and [eq]. Again we see the close analogy with the
+dot product
+\begin{equation*}
+\FLPB\cdot\FLPA=\sum_iB_iA_i.
+\end{equation*}
+
+The only difference is the complex conjugate on [eq]. So
+Eq. ( 8.15 ) says that if the state vectors [eq]
+and [eq] are expanded in terms of the base vectors [eq]
+or [eq], the amplitude to go from [eq] to [eq] is given by the
+kind of dot product in Eq. ( 8.15 ). This equation is, of
+course, just Eq. ( 8.1 ) written with different symbols. So
+we have just gone in a circle to get used to the new symbols.
+
+We should perhaps emphasize again that while space vectors in three
+dimensions are described in terms of three orthogonal unit
+vectors, the base vectors [eq] of the quantum mechanical states
+must range over the complete set applicable to any particular
+problem. Depending on the situation, two, or three, or five, or an
+infinite number of base states may be involved.
+
+We have also talked about what happens when particles go through an
+apparatus. If we start the particles out in a certain state [eq],
+then send them through an apparatus, and afterward make a measurement
+to see if they are in state [eq], the result is described by the
+amplitude
+\begin{equation}
+\label{Eq:III:8:16}
+\bracket{\chi}{A}{\phi}.
+\end{equation}
+
+Such a symbol doesn’t have a close analog in vector
+algebra. (It is
+closer to tensor algebra,
+but the analogy is not particularly useful.)
+We saw in Chapter  5 , Eq. ( 5.32 ), that we
+could write ( 8.16 ) as
+\begin{equation}
+\label{Eq:III:8:17}
+\bracket{\chi}{A}{\phi}=
+\sum_{ij}\braket{\chi}{i}\bracket{i}{A}{j}\braket{j}{\phi}.
+\end{equation}
+
+This is just an example of the fundamental rule Eq. ( 8.9 ),
+used twice.
+
+We also found that if another apparatus [eq] was added in series
+with [eq], then we could write
+\begin{equation}
+\label{Eq:III:8:18}
+\bracket{\chi}{BA}{\phi}=
+\sum_{ijk}\braket{\chi}{i}\bracket{i}{B}{j}
+\bracket{j}{A}{k}\braket{k}{\phi}.
+\end{equation}
+
+Again, this comes directly from Dirac’s method of writing Eq. ( 8.9 )—remember that we
+can always place a bar ([eq]), which is just like the factor [eq], between
+[eq] and [eq].
+
+Incidentally, we can think of Eq. ( 8.17 ) in another
+way. Suppose we think of the particle entering apparatus [eq] in the
+state [eq] and coming out of [eq] in the state [eq], (“psi”). In
+other words, we could ask ourselves this question: Can we find
+a [eq] such that the amplitude to get from [eq] to [eq] is always
+identically and everywhere the same as the
+amplitude [eq]? The answer is yes. We want
+Eq. ( 8.17 ) to be replaced by
+\begin{equation}
+\label{Eq:III:8:19}
+\braket{\chi}{\psi}=
+\sum_i\braket{\chi}{i}\braket{i}{\psi}.
+\end{equation}
+
+We can clearly do this if
+\begin{equation}
+\label{Eq:III:8:20}
+\braket{i}{\psi}=\sum_j\bracket{i}{A}{j}\braket{j}{\phi}=
+\bracket{i}{A}{\phi},
+\end{equation}
+
+which determines [eq]. “But it doesn’t determine [eq],” you say;
+“it only determines [eq].” However, [eq]
+ does determine [eq], because if you have all the coefficients
+that relate [eq] to the base states [eq], then [eq] is uniquely
+defined. In fact, we can play with our notation and write the last
+term of Eq. ( 8.20 ) as
+\begin{equation}
+\label{Eq:III:8:21}
+\braket{i}{\psi}=\sum_j\braket{i}{j}\bracket{j}{A}{\phi}.
+\end{equation}
+
+Then, since this equation is true for all [eq], we can write simply
+\begin{equation}
+\label{Eq:III:8:22}
+\ket{\psi}=\sum_j\ket{j}\bracket{j}{A}{\phi}.
+\end{equation}
+
+Then we can say: “The state [eq] is what we get if we start
+with [eq] and go through the apparatus [eq].”
+
+One final example of the tricks of the trade. We start again with
+Eq. ( 8.17 ). Since it is true for any [eq] and [eq],
+we can drop them both! We then get 1 
+\begin{equation}
+\label{Eq:III:8:23}
+A=\sum_{ij}\ket{i}\bracket{i}{A}{j}\bra{j}.
+\end{equation}
+
+What does it mean? It means no more, no less, than what you get if you
+put back the [eq] and [eq]. As it stands, it is an “open”
+equation and incomplete. If we multiply it “on the right”
+by [eq], it becomes
+\begin{equation}
+\label{Eq:III:8:24}
+A\,\ket{\phi}=\sum_{ij}\ket{i}\bracket{i}{A}{j}\braket{j}{\phi},
+\end{equation}
+
+which is just Eq. ( 8.22 ) all over again. In fact, we
+could have just dropped the [eq]’s from that equation and written
+\begin{equation}
+\label{Eq:III:8:25}
+\ket{\psi}=A\,\ket{\phi}.
+\end{equation}
+
+The symbol [eq] is neither an amplitude, nor a vector; it is a new kind
+of thing called an operator . It is something
+which “operates on” a state to produce a new
+state—Eq. ( 8.25 ) says that [eq] is what results
+if [eq] operates on [eq]. Again, it is still an open equation
+until it is completed with some bra like [eq] to give
+\begin{equation}
+\label{Eq:III:8:26}
+\braket{\chi}{\psi}=\bracket{\chi}{A}{\phi}.
+\end{equation}
+
+The operator [eq] is, of course, described completely if we give the
+matrix of amplitudes [eq]—also written [eq]—in
+terms of any set of base vectors.
+
+We have really added nothing new with all of this new mathematical
+notation. One reason for bringing it all up was to show you the way of
+writing pieces of equations, because in many books you will find the
+equations written in the incomplete forms, and there’s no reason for
+you to be paralyzed when you come across them. If you prefer, you can
+always add the missing pieces to make an equation between numbers that
+will look like something more familiar.
+
+Also, as you will see, the “bra” and “ket” notation is a very
+convenient one. For one thing, we can from now on identify a state by
+giving its state vector. When we want to refer to a state of definite
+momentum [eq] we can say: “the state [eq].” Or we may
+speak of some arbitrary state [eq]. For consistency we will
+always use the ket, writing [eq], to identify a state. (It is,
+of course an arbitrary choice; we could equally well have chosen to
+use the bra, [eq].)
+
+We have discovered that any state in the world can be represented as a
+superposition—a linear combination with suitable coefficients—of
+base states. You may ask, first of all, what base states? Well,
+there are many different possibilities. You can, for instance, project
+a spin in the [eq]-direction or in some other direction. There are
+many, many different representations , which are the analogs of
+the different coordinate systems one can use to represent
+ordinary vectors. Next, what coefficients? Well, that depends
+on the physical circumstances. Different sets of coefficients
+correspond to different physical conditions. The important thing to
+know about is the “space” in which you are working—in other words,
+what the base states mean physically. So the first thing you have to
+know about, in general, is what the base states are like. Then you can
+understand how to describe a situation in terms of these base states.
+
+We would like to look ahead a little and speak a bit about what the
+general quantum mechanical description of nature is going to be—in
+terms of the now current ideas of physics, anyway. First, one decides
+on a particular representation for the base states—different
+representations are always possible. For example, for a spin one-half
+particle we can use the plus and minus states with respect to the
+[eq]-axis. But there’s nothing special about the [eq]-axis—you can
+take any other axis you like. For consistency we’ll always pick the
+[eq]-axis, however. Suppose we begin with a situation with one
+electron. In addition to the two possibilities for the spin (“up”
+and “down” along the [eq]-direction), there is also the momentum of
+the electron. We pick a set of base states, each corresponding to one
+value of the momentum. What if the electron doesn’t have a definite
+momentum? That’s all right; we’re just saying what the base 
+states are. If the electron hasn’t got a definite momentum, it has
+some amplitude to have one momentum and another amplitude to have
+another momentum, and so on. And if it is not necessarily spinning up,
+it has some amplitude to be spinning up going at this momentum, and
+some amplitude to be spinning down going at that momentum, and so
+on. The complete description of an electron, so far as we know ,
+requires only that the base states be described by the momentum 
+and the spin . So one acceptable set of base states [eq]
+for a single electron refer to different values of the momentum and
+whether the spin is up or down. Different mixtures of
+amplitudes—that is, different combinations of the [eq]’s describe
+different circumstances. What any particular electron is doing is
+described by telling with what amplitude it has an up-spin or a
+down-spin and one momentum or another—for all possible momenta. So
+you can see what is involved in a complete quantum mechanical
+description of a single electron.
+
+What about systems with more than one electron? Then the base states
+get more complicated. Let’s suppose that we have two electrons. We
+have, first of all, four possible states with respect to spin: both
+electrons spinning up, the first one down and the second one up, the
+first one up and the second one down, or both down. Also we have to
+specify that the first electron has the momentum [eq], and the second
+electron, the momentum [eq]. The base states for two electrons
+require the specification of two momenta and two spin characters. With
+seven electrons, we have to specify seven of each.
+
+If we have a proton and an electron, we have to specify the spin
+direction of the proton and its momentum, and the spin direction of
+the electron and its momentum. At least that’s approximately
+true. We do not really know what the correct representation is
+for the world. It is all very well to start out by supposing that if
+you specify the spin in the electron and its momentum, and likewise
+for a proton, you will have the base states; but what about the
+“guts” of the proton? Let’s look at it this way. In a hydrogen atom
+which has one proton and one electron, we have many different base
+states to describe—up and down spins of the proton and electron and
+the various possible momenta of the proton and electron. Then there
+are different combinations of amplitudes [eq] which together describe
+the character of the hydrogen atom in different states. But suppose we
+look at the whole hydrogen atom as a “particle.” If we didn’t know
+that the hydrogen atom was made out of a proton and an electron, we
+might have started out and said: “Oh, I know what the base states
+are—they correspond to a particular momentum of the hydrogen atom.”
+No, because the hydrogen atom has internal parts. It may, therefore,
+have various states of different internal energy, and describing the
+real nature requires more detail.
+
+The question is: Does a proton have internal parts? Do we have to
+describe a proton by giving all possible states of protons, and
+mesons, and strange particles? We don’t know. And even though we
+suppose that the electron is simple, so that all we have to tell about
+it is its momentum and its spin, maybe tomorrow we will discover that
+the electron also has inner gears and wheels. It would mean that our
+representation is incomplete, or wrong, or approximate—in the same
+way that a representation of the hydrogen atom which describes only
+its momentum would be incomplete, because it disregarded the fact that
+the hydrogen atom could have become excited inside. If an electron
+could become excited inside and turn into something else like, for
+instance, a muon, then it would be described not just by giving the
+states of the new particle, but presumably in terms of some more
+complicated internal wheels. The main problem in the study of
+the fundamental particles today is to discover what are the correct
+representations for the description of nature. At the present time, we
+ guess that for the electron it is enough to specify its
+momentum and spin. We also guess that there is an idealized proton
+which has its [eq]-mesons, and K-mesons, and so on, that all have to
+be specified. Several dozen particles—that’s crazy! The question of
+what is a fundamental particle and what is not a
+fundamental particle—a subject you hear so much about these
+days—is the question of what is the final representation 
+going to look like in the ultimate quantum mechanical description of
+the world. Will the electron’s momentum still be the right thing with
+which to describe nature? Or even, should the whole question be put
+this way at all! This question must always come up in any scientific
+investigation. At any rate, we see a problem—how to find a
+representation. We don’t know the answer. We don’t even know whether
+we have the “right” problem, but if we do, we must first attempt to
+find out whether any particular particle is “fundamental” or not.
+
+In the nonrelativistic quantum mechanics—if the energies are not too
+high, so that you don’t disturb the inner workings of the strange
+particles and so forth—you can do a pretty good job without worrying
+about these details. You can just decide to specify the momenta and
+spins of the electrons and of the nuclei; then everything will be all
+right. In most chemical reactions and other low-energy happenings,
+nothing goes on in the nuclei; they don’t get excited. Furthermore, if
+a hydrogen atom is moving slowly and bumping quietly against other
+hydrogen atoms—never getting excited inside, or radiating, or
+anything complicated like that, but staying always in the ground state
+of energy for internal motion—you can use an approximation in which
+you talk about the hydrogen atom as one object, or particle, and not
+worry about the fact that it can do something inside. This will
+be a good approximation as long as the kinetic energy in any collision
+is well below [eq] electron volts—the energy required to excite the
+hydrogen atom to a different internal state. We will often be making
+an approximation in which we do not include the possibility of inner
+motion, thereby decreasing the number of details that we have to put
+into our base states. Of course, we then omit some phenomena which
+would appear (usually) at some higher energy, but by making such
+approximations we can simplify very much the analysis of physical
+problems. For example, we can discuss the collision of two hydrogen
+atoms at low energy—or any chemical process—without worrying about
+the fact that the atomic nuclei could be excited. To summarize, then,
+when we can neglect the effects of any internal excited states of a
+particle we can choose a base set which are the states of definite
+momentum and [eq]-component of angular momentum.
+
+One problem then in describing nature is to find a suitable
+representation for the base states. But that’s only the beginning. We
+still want to be able to say what “happens.” If we know the
+“condition” of the world at one moment, we would like to know the
+condition at a later moment. So we also have to find the laws that
+determine how things change with time. We now address ourselves to
+this second part of the framework of quantum mechanics—how states
+change with time.
+
+We have already talked about how we can represent a situation in which
+we put something through an apparatus. Now one convenient, delightful
+“apparatus” to consider is merely a wait of a few minutes; that is,
+you prepare a state [eq], and then before you analyze it, you just
+let it sit. Perhaps you let it sit in some particular electric or
+magnetic field—it depends on the physical circumstances in the
+world. At any rate, whatever the conditions are, you let the object
+sit from time [eq] to time [eq]. Suppose that it is let out of your
+first apparatus in the condition [eq] at [eq]. And then it goes
+through an “apparatus,” but the “apparatus” consists of just delay
+until [eq]. During the delay, various things could be going
+on—external forces applied or other shenanigans—so that something
+is happening. At the end of the delay, the amplitude to find the thing
+in some state [eq] is no longer exactly the same as it would have
+been without the delay. Since “waiting” is just a special case of an
+“apparatus,” we can describe what happens by giving an amplitude
+with the same form as Eq. ( 8.17 ). Because the operation
+of “waiting” is especially important, we’ll call it [eq] instead
+of [eq], and to specify the starting and finishing times [eq] and [eq],
+we’ll write [eq]. The amplitude we want is
+\begin{equation}
+\label{Eq:III:8:27}
+\bracket{\chi}{U(t_2,t_1)}{\phi}.
+\end{equation}
+
+Like any other such amplitude, it can be represented in some base
+system or other by writing it
+\begin{equation}
+\label{Eq:III:8:28}
+\sum_{ij}\braket{\chi}{i}\bracket{i}{U(t_2,t_1)}{j}
+\braket{j}{\phi}.
+\end{equation}
+
+Then [eq] is completely described by giving the whole set of
+amplitudes—the matrix
+\begin{equation}
+\label{Eq:III:8:29}
+\bracket{i}{U(t_2,t_1)}{j}.
+\end{equation}
+
+We can point out, incidentally, that the
+matrix [eq] gives much more detail than may be
+needed. The high-class theoretical physicist working in high-energy
+physics considers problems of the following general nature (because
+it’s the way experiments are usually done). He starts with a couple of
+particles, like a proton and a proton, coming together from
+infinity. (In the lab, usually one particle is standing still, and the
+other comes from an accelerator that is practically at infinity on
+atomic level.) The things go crash and out come, say, two K-mesons,
+six [eq]-mesons, and two neutrons in certain directions with certain
+momenta. What’s the amplitude for this to happen? The mathematics
+looks like this: The [eq]-state specifies the spins and momenta of
+the incoming particles. The [eq] would be the question about what
+comes out. For instance, with what amplitude do you get the six mesons
+going in such-and-such directions, and the two neutrons going off in
+these directions, with their spins so-and-so. In other words, [eq]
+would be specified by giving all the momenta, and spins, and so on of
+the final products. Then the job of the theorist is to calculate the
+amplitude ( 8.27 ). However, he is really only interested
+in the special case that [eq] is [eq] and [eq]
+is [eq]. (There is no experimental evidence on the details of the
+process, only on what comes in and what goes out.) The limiting case
+of [eq] as [eq] and [eq] is called [eq],
+and what he wants is
+\begin{equation*}
+\bracket{\chi}{S}{\phi}.
+\end{equation*}
+
+Or, using the form ( 8.28 ), he would calculate the matrix
+\begin{equation*}
+\bracket{i}{S}{j},
+\end{equation*}
+
+which is called the [eq]- matrix . So if you see a theoretical
+physicist pacing the floor and saying, “All I have to do is calculate
+the [eq]-matrix,” you will know what he is worried about.
+
+How to analyze—how to specify the laws for—the [eq]-matrix is an
+interesting question. In relativistic quantum mechanics for high
+energies, it is done one way, but in nonrelativistic quantum mechanics
+it can be done another way, which is very convenient. (This other way
+can also be done in the relativistic case, but then it is not so
+convenient.) It is to work out the [eq]-matrix for a small interval of
+time—in other words for [eq] and [eq] close together. If we can
+find a sequence of such [eq]’s for successive intervals of time we can
+watch how things go as a function of time. You can appreciate
+immediately that this way is not so good for relativity, because you
+don’t want to have to specify how everything looks “simultaneously”
+everywhere. But we won’t worry about that—we’re just going to worry
+about nonrelativistic mechanics.
+
+Suppose we think of the matrix [eq] for a delay from [eq] until [eq]
+which is greater than [eq]. In other words, let’s take three
+successive times: [eq] less than [eq] less than [eq]. Then we claim
+that the matrix that goes between [eq] and [eq] is the
+ product in succession of what happens when you delay from [eq]
+until [eq] and then from [eq] until [eq]. It’s just like the
+situation when we had two apparatuses [eq] and [eq] in series. We can
+then write, following the notation of Section  5–6 ,
+\begin{equation}
+\label{Eq:III:8:30}
+U(t_3,t_1)=U(t_3,t_2)\cdot U(t_2,t_1).
+\end{equation}
+
+In other words, we can analyze any time interval if we can analyze a
+sequence of short time intervals in between. We just multiply together
+all the pieces; that’s the way that quantum mechanics is analyzed
+nonrelativistically.
+
+Our problem, then, is to understand the matrix [eq] for an
+infinitesimal time interval—for [eq]. We ask ourselves
+this: If we have a state [eq] now, what does the state look like an
+infinitesimal time [eq] later? Let’s see how we write that
+out. Call the state at the time [eq], [eq] (we show the time
+dependence of [eq] to be perfectly clear that we mean the condition
+at the time [eq]). Now we ask the question: What is the condition after
+the small interval of time [eq] later? The answer is
+\begin{equation}
+\label{Eq:III:8:31}
+\ket{\psi(t+\Delta t)}=U(t+\Delta t,t)\,\ket{\psi(t)}.
+\end{equation}
+
+This means the same as we meant by ( 8.25 ), namely, that
+the amplitude to find [eq] at the time [eq], is
+\begin{equation}
+\label{Eq:III:8:32}
+\braket{\chi}{\psi(t+\Delta t)}=\bracket{\chi}{U(t+\Delta t,t)}{\psi(t)}.
+\end{equation}
+
+Since we’re not yet too good at these abstract things, let’s project
+our amplitudes into a definite representation. If we multiply both
+sides of Eq. ( 8.31 ) by [eq], we get
+\begin{equation}
+\label{Eq:III:8:33}
+\braket{i}{\psi(t+\Delta t)}=\bracket{i}{U(t+\Delta t,t)}{\psi(t)}.
+\end{equation}
+
+We can also resolve the [eq] into base states and write
+\begin{equation}
+\label{Eq:III:8:34}
+\braket{i}{\psi(t+\Delta t)}=\sum_j
+\bracket{i}{U(t+\Delta t,t)}{j}\braket{j}{\psi(t)}.
+\end{equation}
+
+We can understand Eq. ( 8.34 ) in the following way. If
+we let [eq] stand for the amplitude to be in
+the base state [eq] at the time [eq], then we can think of this
+amplitude (just a number , remember!) varying with time.
+Each [eq] becomes a function of [eq]. And we also have some information on
+ how the amplitudes [eq] vary with time. Each amplitude
+at [eq] is proportional to all of the other amplitudes
+at [eq] multiplied by a set of coefficients. Let’s call the [eq]-matrix
+[eq], by which we mean
+\begin{equation*}
+U_{ij}=\bracket{i}{U}{j}.
+\end{equation*}
+
+Then we can write Eq. ( 8.34 ) as
+\begin{equation}
+\label{Eq:III:8:35}
+C_i(t+\Delta t)=\sum_jU_{ij}(t+\Delta t,t)C_j(t).
+\end{equation}
+
+This, then, is how the dynamics of quantum mechanics is going to look.
+
+We don’t know much about the [eq] yet, except for one thing. We
+know that if [eq] goes to zero, nothing can happen—we should
+get just the original state. So, [eq] and [eq], if
+[eq]. In other words, [eq] for $\Delta
+t\to0[eq]\Delta t$, each of the
+coefficients [eq] should differ from [eq] by amounts
+proportional to [eq]; so we can write
+\begin{equation}
+\label{Eq:III:8:36}
+U_{ij}=\delta_{ij}+K_{ij}\,\Delta t.
+\end{equation}
+
+However, it is usual to take the factor [eq] 2 out of the coefficients [eq], for
+historical and other reasons; we prefer to write
+\begin{equation}
+\label{Eq:III:8:37}
+U_{ij}(t+\Delta t,t)=\delta_{ij}-\frac{i}{\hbar}\,H_{ij}(t)\,\Delta t.
+\end{equation}
+
+It is, of course, the same as Eq. ( 8.36 ) and, if you
+wish, just defines the coefficients [eq]. The terms [eq]
+are just the derivatives with respect to [eq] of the
+coefficients [eq], evaluated at [eq].
+
+Using this form for [eq] in Eq. ( 8.35 ), we have
+\begin{equation}
+\label{Eq:III:8:38}
+C_i(t+\Delta t)=\sum_j\biggl[
+\delta_{ij}-\frac{i}{\hbar}\,H_{ij}(t)\,\Delta t
+\biggr]C_j(t).
+\end{equation}
+
+Taking the sum over the [eq] term, we get just [eq],
+which we can put on the other side of the equation. Then dividing
+by [eq], we have what we recognize as a derivative
+\begin{equation}
+\frac{C_i(t+\Delta t)-C_i(t)}{\Delta t}=
+-\frac{i}{\hbar}\sum_jH_{ij}(t)C_j(t)\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:III:8:39}
+i\hbar\,\ddt{C_i(t)}{t}=\sum_jH_{ij}(t)C_j(t).
+\end{equation}
+
+You remember that [eq] is the amplitude [eq] to find
+the state [eq] in one of the base states [eq] (at the time [eq]). So
+Eq. ( 8.39 ) tells us how each of the
+coefficients [eq] varies with time. But that is the same as saying
+that Eq. ( 8.39 ) tells us how the state [eq] varies
+with time, since we are describing [eq] in terms of the
+amplitudes [eq]. The variation of [eq] in time is described in
+terms of the matrix [eq], which has to include, of course, the
+things we are doing to the system to cause it to change. If we know
+the [eq]—which contains the physics of the situation and can, in
+general, depend on the time—we have a complete description of the
+behavior in time of the system. Equation ( 8.39 ) is then
+the quantum mechanical law for the dynamics of the world.
+
+(We should say that we will always take a set of base states which are
+fixed and do not vary with time. There are people who use base states
+that also vary. However, that’s like using a rotating coordinate
+system in mechanics, and we don’t want to get involved in such
+complications.)
+
+The idea, then, is that to describe the quantum mechanical world we
+need to pick a set of base states [eq] and to write the physical laws
+by giving the matrix of coefficients [eq]. Then we have
+everything—we can answer any question about what will happen. So we
+have to learn what the rules are for finding the [eq]’s to go with any
+physical situation—what corresponds to a magnetic field, or an
+electric field, and so on. And that’s the hardest part. For instance,
+for the new strange particles, we have no idea what [eq]’s to
+use. In other words, no one knows the complete  [eq] for the
+whole world. (Part of the difficulty is that one can hardly hope to
+discover the [eq] when no one even knows what the base states
+are!) We do have excellent approximations for nonrelativistic
+phenomena and for some other special cases. In particular, we have the
+forms that are needed for the motions of electrons in atoms—to
+describe chemistry. But we don’t know the full true [eq] for the whole
+universe.
+
+The coefficients [eq] are called the Hamiltonian matrix or,
+for short, just the Hamiltonian . (How
+Hamilton, who worked in
+the 1830s, got his name on a quantum mechanical matrix is a tale of
+history.) It would be much better called the energy matrix , for
+reasons that will become apparent as we work with it. So the 
+problem is: Know your Hamiltonian!
+
+The Hamiltonian has one property that can be deduced right away,
+namely, that
+\begin{equation}
+\label{Eq:III:8:40}
+H_{ij}\cconj=H_{ji}.
+\end{equation}
+
+This follows from the condition that the total probability that the
+system is in some state does not change. If you start with a
+particle—an object or the world—then you’ve still got it as time
+goes on. The total probability of finding it somewhere is
+\begin{equation*}
+\sum_i\abs{C_i(t)}^2,
+\end{equation*}
+
+which must not vary with time. If this is to be true for any starting
+condition [eq], then Eq. ( 8.40 ) must also be true.
+
+As our first example, we take a situation in which the physical
+circumstances are not changing with time; we mean the external 
+physical conditions, so that [eq] is independent of time. Nobody is
+turning magnets on and off. We also pick a system for which only one
+base state is required for the description; it is an approximation we
+could make for a hydrogen atom at rest, or something similar.
+Equation ( 8.39 ) then says
+\begin{equation}
+\label{Eq:III:8:41}
+i\hbar\,\ddt{C_1}{t}=H_{11}C_1.
+\end{equation}
+
+Only one equation—that’s all! And if [eq] is constant, this
+differential equation is easily solved to give
+\begin{equation}
+\label{Eq:III:8:42}
+C_1=(\text{const})e^{-(i/\hbar)H_{11}t}.
+\end{equation}
+
+This is the time dependence of a state with a definite
+energy [eq]. You see why [eq] ought to be called the energy
+matrix. It is the generalization of the energy for more complex
+situations.
+
+Next, to understand a little more about what the equations mean, we
+look at a system which has two base states. Then Eq. ( 8.39 )
+reads
+\begin{equation}
+\begin{aligned}
+i\hbar\,\ddt{C_1}{t}&=H_{11}C_1+H_{12}C_2,\\[1ex]
+i\hbar\,\ddt{C_2}{t}&=H_{21}C_1+H_{22}C_2.
+\end{aligned}
+\label{Eq:III:8:43}
+\end{equation}
+
+If the [eq]’s are again independent of time, you can easily solve these
+equations. We leave you to try for fun, and we’ll come back and do
+them later. Yes, you can solve the quantum mechanics without knowing
+the [eq]’s, so long as they are independent of time.
+
+We want now to show you how the dynamical equation of quantum
+mechanics can be used to describe a particular physical
+circumstance. We have picked an interesting but simple example in
+which, by making some reasonable guesses about the Hamiltonian, we can
+work out some important—and even practical—results. We are going
+to take a situation describable by two states: the ammonia molecule.
+
+The ammonia molecule has one nitrogen atom and three hydrogen atoms
+located in a plane below the nitrogen so that the molecule has the
+form of a pyramid, as drawn in Fig.  8–1 (a). Now this molecule,
+like
+any other, has an infinite number of states. It can spin around any
+possible axis; it can be moving in any direction; it can be vibrating
+inside, and so on, and so on. It is, therefore, not a two-state system
+at all. But we want to make an approximation that all other states
+remain fixed, because they don’t enter into what we are concerned with
+at the moment. We will consider only that the molecule is spinning
+around its axis of symmetry (as shown in the figure), that it has zero
+translational momentum, and that it is vibrating as little as
+possible. That specifies all conditions except one: there are
+still the two possible positions for the nitrogen atom —the nitrogen
+may be on one side of the plane of hydrogen atoms or on the other, as
+shown in Fig.  8–1 (a) and (b). So we will discuss the molecule as
+though it were a two-state system. We mean that there are only two
+states we are going to really worry about, all other things being
+assumed to stay put. You see, even if we know that it is spinning with
+a certain angular momentum around the axis and that it is moving with
+a certain momentum and vibrating in a definite way, there are still
+two possible states. We will say that the molecule is in the
+state [eq] when the nitrogen is “up,” as in
+Fig.  8–1 (a),
+and is in the state [eq] when the nitrogen is “down,” as in (b).
+The states [eq] and [eq] will be taken as the
+set of base states for our analysis of the behavior of the ammonia
+molecule. At any moment, the actual state [eq] of the molecule
+can be represented by giving [eq], the
+amplitude to be in state [eq], and
+[eq], the amplitude to be in
+state [eq]. Then, using Eq. ( 8.8 ) we can write the
+state vector [eq] as
+\begin{equation}
+\ket{\psi} =
+\ketsl{\slOne}\braket{\slOne}{\psi}+
+\ketsl{\slTwo}\braket{\slTwo}{\psi}\notag
+\end{equation}
+
+or
+\begin{equation}
+\label{Eq:III:8:44}
+\ket{\psi} =\ketsl{\slOne}C_1+\ketsl{\slTwo}C_2.
+\end{equation}
+
+Now the interesting thing is that if the molecule is known to be in
+some state at some instant, it will not be in the same state a
+little while later. The two [eq]-coefficients will be changing with
+time according to the equations ( 8.43 )—which hold for
+any two-state system. Suppose, for example, that you had made some
+observation—or had made some selection of the molecules—so that
+you know that the molecule is initially in the
+state [eq]. At some later time, there is some chance that it will
+be found in state [eq]. To find out what this chance is, we
+have to solve the differential equation which tells us how the
+amplitudes change with time.
+
+The only trouble is that we don’t know what to use for the
+coefficients [eq] in Eq. ( 8.43 ). There are some
+things we can say, however. Suppose that once the molecule was
+in the state [eq] there was no chance that it could ever get
+into [eq], and vice versa. Then [eq] and [eq] would
+both be zero, and Eq. ( 8.43 ) would read
+\begin{equation*}
+i\hbar\,\ddt{C_1}{t}=H_{11}C_1,\quad
+i\hbar\,\ddt{C_2}{t}=H_{22}C_2.
+\end{equation*}
+
+We can easily solve these two equations; we get
+\begin{equation}
+\label{Eq:III:8:45}
+C_1=(\text{const})e^{-(i/\hbar)H_{11}t},\quad
+C_2=(\text{const})e^{-(i/\hbar)H_{22}t}.
+\end{equation}
+
+These are just the amplitudes for stationary states with the
+energies [eq] and [eq]. We note, however, that for the
+ammonia molecule the two states [eq] and [eq] have
+a definite symmetry. If nature is at all reasonable, the matrix
+elements [eq] and [eq] must be equal. We’ll call them
+both [eq], because they correspond to the energy the states would have if
+[eq] and [eq] were zero. But Eqs. ( 8.45 ) do not
+tell us what ammonia really does. It turns out that it is possible for
+the nitrogen to push its way through the three hydrogens and flip to
+the other side. It is quite difficult; to get half-way through
+requires a lot of energy. How can it get through if it hasn’t got
+enough energy? There is some amplitude that it will 
+penetrate the energy barrier. It is possible in quantum mechanics to
+sneak quickly across a region which is illegal energetically. There
+is, therefore, some small amplitude that a molecule which starts
+in [eq] will get to the state [eq]. The coefficients
+[eq] and [eq] are not really zero. Again, by symmetry, they
+should both be the same—at least in magnitude. In fact, we already
+know that, in general, [eq] must be equal to the complex conjugate
+of [eq], so they can differ only by a phase. It turns out, as you
+will see, that there is no loss of generality if we take them equal to
+each other. For later convenience we set them equal to a negative
+number; we take [eq]. We then have the following pair of
+equations:
+\begin{align}
+\label{Eq:III:8:46}
+i\hbar\,\ddt{C_1}{t}&=E_0C_1-AC_2,\\[1ex]
+\label{Eq:III:8:47}
+i\hbar\,\ddt{C_2}{t}&=E_0C_2-AC_1.
+\end{align}
+
+These equations are simple enough and can be solved in any number of
+ways. One convenient way is the following. Taking the sum of the two,
+we get
+\begin{equation}
+i\hbar\,\ddt{}{t}\,(C_1+C_2)=(E_0-A)(C_1+C_2),\notag
+\end{equation}
+
+whose solution is
+\begin{equation}
+\label{Eq:III:8:48}
+C_1+C_2=ae^{-(i/\hbar)(E_0-A)t}.
+\end{equation}
+
+
+Then, taking the difference of ( 8.46 )
+and ( 8.47 ), we find that
+\begin{equation}
+i\hbar\,\ddt{}{t}\,(C_1-C_2)=(E_0+A)(C_1-C_2),\notag
+\end{equation}
+
+which gives
+\begin{equation}
+\label{Eq:III:8:49}
+C_1-C_2=be^{-(i/\hbar)(E_0+A)t}.
+\end{equation}
+
+We have called the two integration constants [eq] and [eq]; they are, of
+course, to be chosen to give the appropriate starting condition for
+any particular physical problem. Now, by adding and subtracting
+( 8.48 ) and ( 8.49 ), we get [eq] and [eq]:
+\begin{align}
+\label{Eq:III:8:50}
+C_1(t)&=\frac{a}{2}\,e^{-(i/\hbar)(E_0-A)t}+
+\frac{b}{2}\,e^{-(i/\hbar)(E_0+A)t},\\[1ex]
+\label{Eq:III:8:51}
+C_2(t)&=\frac{a}{2}\,e^{-(i/\hbar)(E_0-A)t}-
+\frac{b}{2}\,e^{-(i/\hbar)(E_0+A)t}.
+\end{align}
+
+They are the same except for the sign of the second term.
+
+We have the solutions; now what do they mean? (The trouble with
+quantum mechanics is not only in solving the equations but in
+understanding what the solutions mean!) First, notice that if [eq],
+both terms have the same frequency [eq]. If
+everything changes at one frequency, it means that the system is in a
+state of definite energy—here, the energy [eq]. So there is a
+stationary state of this energy in which the two amplitudes [eq]
+and [eq] are equal. We get the result that the ammonia molecule has
+a definite energy  [eq] if there are equal amplitudes for the
+nitrogen atom to be “up” and to be “down.”
+
+There is another stationary state possible if [eq]; both amplitudes
+then have the frequency [eq]. So there is another state
+with the definite energy [eq] if the two amplitudes are equal but
+with the opposite sign; [eq]. These are the only two states of
+definite energy. We will discuss the states of the ammonia molecule in
+more detail in the next chapter; we will mention here only a couple of
+things.
+
+We conclude that because there is some chance that the nitrogen
+atom can flip from one position to the other, the energy of the
+molecule is not just [eq], as we would have expected, but that there
+are two energy levels [eq] and [eq]. Every one of the
+possible states of the molecule, whatever energy it has, is “split”
+into two levels. We say every one of the states because, you
+remember, we picked out one particular state of rotation, and internal
+energy, and so on. For each possible condition of that kind there is a
+doublet of energy levels because of the flip-flop of the molecule.
+
+Let’s now ask the following question about an ammonia molecule. Suppose that
+at [eq], we know that a molecule is in the state [eq] or, in other
+words, that [eq] and [eq]. What is the probability that the molecule
+will be found in the state [eq] at the time [eq], or will still be
+found in state [eq] at the time [eq]? Our starting condition tells us
+what [eq] and [eq] are in Eqs. ( 8.50 ) and ( 8.51 ).
+Letting [eq], we have that
+\begin{equation*}
+C_1(0)=\frac{a+b}{2}=1,\quad
+C_2(0)=\frac{a-b}{2}=0.
+\end{equation*}
+
+Clearly, [eq]. Putting these values into the formulas for [eq]
+and [eq] and rearranging some terms, we have
+\begin{align*}
+C_1(t)&=e^{-(i/\hbar)E_0t}\biggl(
+\frac{e^{(i/\hbar)At}+e^{-(i/\hbar)At}}{2}
+\biggr),\\[1ex]
+C_2(t)&=e^{-(i/\hbar)E_0t}\biggl(
+\frac{e^{(i/\hbar)At}-e^{-(i/\hbar)At}}{2}
+\biggr).
+\end{align*}
+
+We can rewrite these as
+\begin{align}
+\label{Eq:III:8:52}
+C_1(t)&=\phantom{i}e^{-(i/\hbar)E_0t}\cos\frac{At}{\hbar},\\[1ex]
+\label{Eq:III:8:53}
+C_2(t)&=ie^{-(i/\hbar)E_0t}\sin\frac{At}{\hbar}.
+\end{align}
+
+The two amplitudes have a magnitude that varies harmonically with
+time.
+
+The probability that the molecule is found in state [eq] at
+the time [eq] is the absolute square of [eq]:
+\begin{equation}
+\label{Eq:III:8:54}
+\abs{C_2(t)}^2=\sin^2\frac{At}{\hbar}.
+\end{equation}
+
+The probability starts at zero (as it should), rises to one, and then
+oscillates back and forth between zero and one, as shown in the curve
+marked [eq] of Fig.  8–2 . The probability of being in
+the [eq] state does not, of course, stay at one. It “dumps”
+into the second state until the probability of finding the molecule in
+the first state is zero, as shown by the curve [eq] of
+Fig.  8–2 . The probability sloshes back and forth between
+the two.
+
+A long time ago we saw what happens when we have two equal pendulums
+with a slight coupling. (See Chapter  49 , Vol. I.) When we
+lift one back and let go, it swings, but then gradually the other one
+starts to swing. Pretty soon the second pendulum has picked up all the
+energy. Then, the process reverses, and pendulum number one picks up the
+energy. It is exactly the same kind of a thing. The speed at which the
+energy is swapped back and forth depends on the coupling between the two
+pendulums—the rate at which the “oscillation” is able to leak
+across. Also, you remember, with the two pendulums there are two special
+motions—each with a definite frequency—which we call the fundamental
+modes. If we pull both pendulums out together, they swing together at
+one frequency. On the other hand, if we pull one out one way and the
+other out the other way, there is another stationary mode also at a
+definite frequency.
+
+Well, here we have a similar situation—the ammonia molecule is
+mathematically like the pair of pendulums. These are the two
+frequencies—[eq] and [eq]—for when they are
+oscillating together, or oscillating opposite.
+
+The pendulum analogy is not much deeper than the principle that the
+same equations have the same solutions. The linear equations for the
+amplitudes ( 8.39 ) are very much like the linear equations
+of harmonic oscillators. (In fact, this is the reason behind the
+success of our classical theory of the index of refraction, in which
+we replaced the quantum mechanical atom by a harmonic oscillator, even
+though, classically, this is not a reasonable view of electrons
+circulating about a nucleus.) If you pull the nitrogen to one side,
+then you get a superposition of these two frequencies, and you
+get a kind of beat note, because the system is not in
+one or the other states of definite frequency. The splitting of the
+energy levels of the ammonia molecule is, however, strictly a quantum
+mechanical effect.
+
+The splitting of the energy levels of the ammonia molecule has
+important practical applications which we will describe in the next
+chapter. At long last we have an example of a practical physical
+problem that you can understand with the quantum mechanics!
